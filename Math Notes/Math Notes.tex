@@ -1,7 +1,8 @@
 \documentclass[12pt, english]{book}
 \usepackage[letterpaper, portrait, margin=2cm]{geometry} %Set paper type, format, margin
 \usepackage{%abstract, 
-	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, gensymb, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, lscape, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, xcolor}
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, xcolor}
+
 %\renewcommand{\abstractname}{}    % clear the title
 %\renewcommand{\absnamepos}{empty} % originally center 
 \setlength{\parindent}{0em} %Set indent on paragraph
@@ -47,9 +48,100 @@
 	These are math notes made by a student (with a physics major and math minor) based off text books. It may contain misconceptions and misinterpretations, thus should not be viewed in the same light of a text book. Use at your own risk and mental sanity.
 	
 	\section*{Symbols}
-	
-	
-	\tableofcontents{}
+	\begin{tabularx}{\textwidth}{ l c p{0.6\linewidth}}
+		\multicolumn{3}{l}{\textbf{{\large Logic}}} \\ [10pt]
+		\hline
+		\textbf{Name} & \textbf{Symbol} & \textbf{Comment} \\
+		\hline
+		Exists 					& $\exists$ 		& There exists at least one\\
+		For all 				& $\forall$ 		& \\
+		Not exists 				& $\nexists$ 		& There does not exist\\ 
+		Exists one				& $\exists!$ 		& There only exists one and only one \\
+		And 					& $\land$			& \\
+		Or						& $\lor$			& Inclusive or \\
+		Not 					& $\neg$			& \\
+		Logically implies 		& $\implies$ 		& If \\
+		Logically implied by 	& $\Longleftarrow$ 	& Only if \\  
+		Logically equivalent 	& $\iff$ 			& If and only if \\
+		Implies 				& $\longrightarrow$	& \\
+		Implied by 				& $\longleftarrow$ 	& \\  
+		Equivalent? 			& $\longleftrightarrow$	& \\
+		\hline	
+		
+		& & \\
+		\multicolumn{3}{l}{\textbf{{\large Set Notation}}} \\ [10pt]
+		\hline
+		\textbf{Name} & \textbf{Symbol} & \textbf{Comment} \\
+		\hline
+ 		Empty Set 				& $\emptyset$ 		& The set that is empty \\
+ 		Natural Numbers 		& $\mathbb{N}$		& Set of natural numbers not containing 0, equivalent to the set of positive integers \\
+ 		Integers 				& $\mathbb{Z}$		& Set of integers \\
+ 		Rational Numbers 		& $\mathbb{Q}$		& \\
+ 		Real Numbers 			& $\mathbb{R}$		& \\
+ 		Complex Numbers 		& $\mathbb{C}$		& \\
+ 		
+ 		In 						& $\in$ 			& \\
+ 		Not in 					& $\nin$			& \\
+ 		Owns 					& $\ni$				& Has an element \\
+ 		
+ 		Proper Subset 			& $\subset$			& Subset that is not itself \\
+ 		Subset 					& $\subseteq$		& \\
+ 		Superset 				& $\supset$ 		& Superset that is not itself\\
+ 		Proper Superset 		& $\supseteq$		& \\
+ 		Power set				& $\wp$				& \\
+ 		Union 					& $\cup$			& \\
+ 		Intersection			& $\cap$			& \\
+ 		Difference				& $\setminus$		& \\
+ 		\hline
+ 		
+ 		& & \\
+ 		\multicolumn{3}{l}{\textbf{{\large Relationships}}} \\ [10pt]
+ 		\hline
+ 		\textbf{Name} & \textbf{Symbol} & \textbf{Comment} \\
+ 		\hline
+ 		Defined 				& $\doteq$ 			& \\
+ 		Approximate 			& $\approx$			& \\
+ 		Equivalent				& $\equiv$	 		& Isomorphic (Group Theory) \\
+ 		Congruent 				& $\cong$			& Homomorphic (Group Theory) \\
+ 		Proportional 			& $\propto$			& \\
+ 		
+ 		& & \\
+ 		\multicolumn{3}{l}{\textbf{{\large Operators}}} \\ [10pt]
+ 		\hline
+ 		\textbf{Name} & \textbf{Symbol} & \textbf{Comment} \\
+ 		\hline
+ 		& $\oplus$ & \\
+ 		& $\otimes$ & \\
+ 		& $\odot$ & \\
+ 		& $\circ$ & Convolution \\
+ 		Dagger& $\dagger$ & Complex conjugate transpose of a matrix \\
+ 		\hline
+ 		
+ 		& & \\
+ 		\multicolumn{3}{l}{\textbf{{\large Arrows}}} \\ [10pt]
+ 		\hline
+ 		\textbf{Name} & \textbf{Symbol} & \textbf{Comment} \\
+ 		\hline
+ 		Maps to 				& $\mapsto$			& \\
+ 		
+ 		& & \\
+ 		\multicolumn{3}{l}{\textbf{{\large Hebrew}}} \\ [10pt]
+ 		\hline
+ 		\textbf{Name} & \textbf{Symbol} & \textbf{Comment} \\
+ 		\hline
+ 		Aleph					& $\aleph$			& Carnality of infinite sets that can be well ordered \\
+ 		
+ 		& & \\
+ 		\multicolumn{3}{l}{\textbf{{\large Other}}} \\ [10pt]
+ 		\hline
+ 		\textbf{Name} & \textbf{Symbol} & \textbf{Comment} \\
+ 		\hline
+ 		Real part 				& $\Re$				& Real part of a number \\
+ 		Imaginary part 			& $\Im$				& Imaginary part of a number 
+	\end{tabularx}
+
+	\section*{}
+	\tableofcontents
 	
 	\mainmatter
 
@@ -87,7 +179,10 @@
 	
 	\part{Galois Theory}
 	
+	\part{Set Theory}
 	
+	\part{Model Theory}
 	
+	\part{Tips and Tricks}
 
 \end{document}
