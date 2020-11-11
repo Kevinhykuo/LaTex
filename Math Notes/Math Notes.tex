@@ -2,6 +2,7 @@
 \usepackage[letterpaper, portrait, margin=2cm]{geometry} %Set paper type, format, margin
 \usepackage{%abstract, 
 	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, xcolor}
+\usepackage{cleveref}
 
 %\renewcommand{\abstractname}{}    % clear the title
 %\renewcommand{\absnamepos}{empty} % originally center 
@@ -149,9 +150,18 @@
 
 	
 	\part{Real Analysis}
-	
+	Books Used: 
+	\begin{itemize}
+		\item[1.] Kenneth A. Ross - Elementary Analysis (2nd Ed.) \cite{Ross.K-Elementary-Analysis-2013}
+	\end{itemize}
 	
 	\part{Complex Analysis}
+	
+	Books Used: 
+	\begin{itemize}
+		\item[1.] Brown and Churchill - Complex Variables and Applications \cite{Brown.J;Churchill.R-Complex-Variables-2014}
+	\end{itemize}
+
 	
 	
 	\chapter{Conformal Mapping}
@@ -184,5 +194,13 @@
 	\part{Model Theory}
 	
 	\part{Tips and Tricks}
+	
+	\part{Bibliography}
+	
+	\bibliographystyle{unsrt}
+	\typeout{}
+	\bibliography{Bibliography}
+	
+	
 
 \end{document}
