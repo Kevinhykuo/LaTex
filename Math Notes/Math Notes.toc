@@ -1,0 +1,13 @@
+\babel@toc {english}{}
+\contentsline {part}{I\hspace {1em}Logic}{1}{}%
+\contentsline {part}{II\hspace {1em}Real Analysis}{3}{}%
+\contentsline {part}{III\hspace {1em}Complex Analysis}{5}{}%
+\contentsline {chapter}{\numberline {1}Conformal Mapping}{7}{}%
+\contentsline {part}{IV\hspace {1em}Differential Equations}{9}{}%
+\contentsline {part}{V\hspace {1em}Partial Differential Equations}{11}{}%
+\contentsline {part}{VI\hspace {1em}Linear Algebra}{13}{}%
+\contentsline {chapter}{\numberline {2}Markov Chains}{15}{}%
+\contentsline {part}{VII\hspace {1em}Tensors}{17}{}%
+\contentsline {part}{VIII\hspace {1em}Riemann Geometry}{19}{}%
+\contentsline {part}{IX\hspace {1em}Group Theory}{21}{}%
+\contentsline {part}{X\hspace {1em}Galois Theory}{23}{}%

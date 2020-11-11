@@ -1,0 +1,93 @@
+\documentclass[12pt, english]{book}
+\usepackage[letterpaper, portrait, margin=2cm]{geometry} %Set paper type, format, margin
+\usepackage{%abstract, 
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, gensymb, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, lscape, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, xcolor}
+%\renewcommand{\abstractname}{}    % clear the title
+%\renewcommand{\absnamepos}{empty} % originally center 
+\setlength{\parindent}{0em} %Set indent on paragraph
+\setlength{\parskip}{0.5em} %Set spaces between paragraphs
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+
+\newcommand\showdiv[1]{\overline{\smash{\hstretch{.5}{)}\mkern-3.2mu\hstretch{.5}{)}}#1}}
+\newcommand\ph[1]{\textcolor{white}{#1}}
+\setstackgap{S}{1.5pt}
+
+% Swap the definition of \abs* and \norm*, so that \abs
+% and \norm resizes the size of the brackets, and the 
+% starred version does not.
+
+
+\begin{document}
+	\title{The Book of Math (Notes)}
+	\author{Kevin Kuo}
+%	\renewcommand{\abstractname}{\vspace{-\baselineskip}}
+	
+	\pagestyle{fancy}
+	\fancyhead{} % clear all header fields
+	\fancyhead[LO]{  }
+	\fancyhead[CO]{  }
+	\fancyhead[RO]{  }
+	\renewcommand{\headrulewidth}{0pt}
+	
+	\fancyfoot{} % clear all footer fields
+	\fancyfoot[LO]{}
+	\fancyfoot[CO]{\thepage}
+	\fancyfoot[RO]{}
+	\renewcommand{\footrulewidth}{0pt}
+	\vspace{0cm}	
+	
+	\frontmatter
+	
+	\maketitle
+	
+	\newpage
+	\section*{Forward and Disclaimer}
+	These are math notes made by a student (with a physics major and math minor) based off text books. It may contain misconceptions and misinterpretations, thus should not be viewed in the same light of a text book. Use at your own risk and mental sanity.
+	
+	\section*{Symbols}
+	
+	
+	\tableofcontents{}
+	
+	\mainmatter
+
+	\part{Logic}
+
+	
+	\part{Real Analysis}
+	
+	
+	\part{Complex Analysis}
+	
+	
+	\chapter{Conformal Mapping}
+	
+	
+	\part{Differential Equations}
+	
+	
+	\part{Partial Differential Equations}
+	
+	
+	\part{Linear Algebra}
+	
+	\chapter{Markov Chains}
+	
+	
+	\part{Tensors}
+	
+	
+	\part{Riemann Geometry}
+	
+	
+	\part{Group Theory}
+	
+	
+	\part{Galois Theory}
+	
+	
+	
+
+\end{document}
