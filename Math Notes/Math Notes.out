@@ -1,16 +1,25 @@
 \BOOKMARK [-1][-]{part.1}{I Logic}{}% 1
-\BOOKMARK [-1][-]{part.2}{II Real Analysis}{}% 2
-\BOOKMARK [-1][-]{part.3}{III Complex Analysis}{}% 3
-\BOOKMARK [0][-]{chapter.1}{Conformal Mapping}{part.3}% 4
-\BOOKMARK [-1][-]{part.4}{IV Differential Equations}{}% 5
-\BOOKMARK [-1][-]{part.5}{V Partial Differential Equations}{}% 6
-\BOOKMARK [-1][-]{part.6}{VI Linear Algebra}{}% 7
-\BOOKMARK [0][-]{chapter.2}{Markov Chains}{part.6}% 8
-\BOOKMARK [-1][-]{part.7}{VII Tensors}{}% 9
-\BOOKMARK [-1][-]{part.8}{VIII Riemann Geometry}{}% 10
-\BOOKMARK [-1][-]{part.9}{IX Group Theory}{}% 11
-\BOOKMARK [-1][-]{part.10}{X Galois Theory}{}% 12
-\BOOKMARK [-1][-]{part.11}{XI Set Theory}{}% 13
-\BOOKMARK [-1][-]{part.12}{XII Model Theory}{}% 14
-\BOOKMARK [-1][-]{part.13}{XIII Tips and Tricks}{}% 15
-\BOOKMARK [-1][-]{part.14}{XIV Bibliography}{}% 16
+\BOOKMARK [-1][-]{part.2}{II Numbers}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Natural Numbers N}{part.2}% 3
+\BOOKMARK [0][-]{chapter.2}{Integers Z}{part.2}% 4
+\BOOKMARK [0][-]{chapter.3}{Rationals Q}{part.2}% 5
+\BOOKMARK [0][-]{chapter.4}{Reals R}{part.2}% 6
+\BOOKMARK [0][-]{chapter.5}{Complex C}{part.2}% 7
+\BOOKMARK [-1][-]{part.3}{III Real Analysis}{}% 8
+\BOOKMARK [-1][-]{part.4}{IV Complex Analysis}{}% 9
+\BOOKMARK [0][-]{chapter.6}{Conformal Mapping}{part.4}% 10
+\BOOKMARK [-1][-]{part.5}{V Differential Equations}{}% 11
+\BOOKMARK [-1][-]{part.6}{VI Partial Differential Equations}{}% 12
+\BOOKMARK [-1][-]{part.7}{VII Linear Algebra}{}% 13
+\BOOKMARK [0][-]{chapter.7}{Markov Chains}{part.7}% 14
+\BOOKMARK [-1][-]{part.8}{VIII Tensors}{}% 15
+\BOOKMARK [-1][-]{part.9}{IX Riemann Geometry}{}% 16
+\BOOKMARK [-1][-]{part.10}{X Group Theory}{}% 17
+\BOOKMARK [-1][-]{part.11}{XI Galois Theory}{}% 18
+\BOOKMARK [-1][-]{part.12}{XII Set Theory}{}% 19
+\BOOKMARK [-1][-]{part.13}{XIII Model Theory}{}% 20
+\BOOKMARK [-1][-]{part.14}{XIV Tips and Tricks}{}% 21
+\BOOKMARK [0][-]{chapter.8}{Integration Techniques}{part.14}% 22
+\BOOKMARK [1][-]{section.8.1}{DI Method \(Integration Table\)}{chapter.8}% 23
+\BOOKMARK [1][-]{section.8.2}{Feynman Integration}{chapter.8}% 24
+\BOOKMARK [-1][-]{part.15}{XV Bibliography}{}% 25
