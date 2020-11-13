@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.23)  12 NOV 2020 18:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.23)  13 NOV 2020 01:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1292,13 +1292,17 @@ Package cleveref Info: loaded `english' language definitions on input line 1.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5])
+ [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6])
 \tf@toc=\write5
 \openout5 = `"Math Notes.toc"'.
 
 
-[6] [1
+[7] [8
 
+] [1
 
 ] [2] [3
 
@@ -1402,59 +1406,95 @@ Chapter 9.
 
 ] [40] [41
 
-] [42] [43
+] [42]
+Chapter 10.
+[43
 
-] [44] [45
-
-] [46] [47
-
-] [48] [49
+] [44
 
 ]
-[50] [51
+Chapter 11.
+[45] [46
 
-] [52]
-Chapter 10.
-[53
+]
+Chapter 12.
+[47] [48
 
-] [54
+]
+Chapter 13.
+[49] [50
 
-] [55
+]
+Chapter 14.
+[51] [52
 
-] [56]
+]
+Chapter 15.
+[53] [54
 
-(./Math Notes.bbl) [57
+]
+Chapter 16.
+[55] [56
+
+] [57] [58] [59
+
+] [60] [61
+
+] [62] [63
+
+] [64] [65
+
+] [66]
+Chapter 17.
+[67
+
+] [68
+
+] [69
+
+] [70]
+
+(./Math Notes.bbl) [71
 
 ] (./Math Notes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
-Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
-(rerunfilecheck)             Checksum: 7E193CF560D43D7784492F009A7FEB45;1502.
+
+Package rerunfilecheck Warning: File `"Math Notes".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Math Notes".out':
+(rerunfilecheck)             Before: C4CFE25C46F1C3556CFD60D046BE0FCC;2024
+(rerunfilecheck)             After:  2E399D3BAF4849F8BFA5F3252D0CF473;1964.
  ) 
 Here is how much of TeX's memory you used:
- 36607 strings out of 479917
- 826011 string characters out of 5882726
- 1267965 words of memory out of 5000000
- 52425 multiletter control sequences out of 15000+600000
+ 36641 strings out of 479917
+ 826322 string characters out of 5882726
+ 1267964 words of memory out of 5000000
+ 52434 multiletter control sequences out of 15000+600000
  568074 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,109p,729b,785s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/u
-sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/l
-ocal/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (63 pages, 124823 bytes).
+pdfTeX warning (dest): name{part.17} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
+/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr
+/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/loc
+al/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "Math Notes.pdf" (79 pages, 130024 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 411 compressed objects within 5 object streams
- 97 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 513 compressed objects within 6 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 

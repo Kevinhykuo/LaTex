@@ -17,13 +17,21 @@
 \contentsline {chapter}{\numberline {9}Markov Chains}{35}{chapter.9}%
 \contentsline {part}{VIII\hspace {1em}Tensors}{37}{part.8}%
 \contentsline {part}{IX\hspace {1em}Riemann Geometry}{39}{part.9}%
-\contentsline {part}{X\hspace {1em}Group Theory}{41}{part.10}%
-\contentsline {part}{XI\hspace {1em}Galois Theory}{43}{part.11}%
-\contentsline {part}{XII\hspace {1em}Set Theory}{45}{part.12}%
-\contentsline {part}{XIII\hspace {1em}Model Theory}{47}{part.13}%
-\contentsline {part}{XIV\hspace {1em}Statistics}{49}{part.14}%
-\contentsline {part}{XV\hspace {1em}Tips and Tricks}{51}{part.15}%
-\contentsline {chapter}{\numberline {10}Integration Techniques}{53}{chapter.10}%
-\contentsline {section}{\numberline {10.1}DI Method (Integration Table)}{53}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Feynman Integration}{53}{section.10.2}%
-\contentsline {part}{XVI\hspace {1em}Bibliography}{55}{part.16}%
+\contentsline {part}{X\hspace {1em}Abstract Algebra}{41}{part.10}%
+\contentsline {chapter}{\numberline {10}Groups}{43}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Rings}{45}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Ideals}{45}{section.11.1}%
+\contentsline {chapter}{\numberline {12}Integral Domains}{47}{chapter.12}%
+\contentsline {chapter}{\numberline {13}GCD Domains}{49}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Unique Factorization Domains}{51}{chapter.14}%
+\contentsline {chapter}{\numberline {15}Principal Ideal Domains}{53}{chapter.15}%
+\contentsline {chapter}{\numberline {16}Fields}{55}{chapter.16}%
+\contentsline {part}{XI\hspace {1em}Galois Theory}{57}{part.11}%
+\contentsline {part}{XII\hspace {1em}Set Theory}{59}{part.12}%
+\contentsline {part}{XIII\hspace {1em}Model Theory}{61}{part.13}%
+\contentsline {part}{XIV\hspace {1em}Statistics}{63}{part.14}%
+\contentsline {part}{XV\hspace {1em}Tips and Tricks}{65}{part.15}%
+\contentsline {chapter}{\numberline {17}Integration Techniques}{67}{chapter.17}%
+\contentsline {section}{\numberline {17.1}DI Method (Integration Table)}{67}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Feynman Integration}{67}{section.17.2}%
+\contentsline {part}{XVI\hspace {1em}Bibliography}{69}{part.16}%
