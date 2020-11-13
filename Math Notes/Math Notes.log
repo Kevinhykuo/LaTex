@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.23)  12 NOV 2020 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.23)  12 NOV 2020 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1306,11 +1306,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 154.
+(hyperref)                removing `math shift' on input line 158.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 154.
+(hyperref)                removing `math shift' on input line 158.
 
 [5
 
@@ -1320,11 +1320,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 156.
+(hyperref)                removing `math shift' on input line 160.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 156.
+(hyperref)                removing `math shift' on input line 160.
 
 [7] [8
 
@@ -1332,11 +1332,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 158.
+(hyperref)                removing `math shift' on input line 162.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 158.
+(hyperref)                removing `math shift' on input line 162.
 
 [9] [10
 
@@ -1348,11 +1348,11 @@ Chapter 4.
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 162.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 162.
+(hyperref)                removing `math shift' on input line 166.
 
 [13] [14
 
@@ -1360,11 +1360,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 164.
+(hyperref)                removing `math shift' on input line 168.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 164.
+(hyperref)                removing `math shift' on input line 168.
 
 [15] [16
 
@@ -1372,11 +1372,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 166.
+(hyperref)                removing `math shift' on input line 170.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 166.
+(hyperref)                removing `math shift' on input line 170.
 
 [17] [18
 
@@ -1419,26 +1419,22 @@ Chapter 10.
 
 ] [54
 
-] [55] [56]
+] [55
+
+] [56]
 
 (./Math Notes.bbl) [57
 
 ] (./Math Notes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
-
-Package rerunfilecheck Warning: File `"Math Notes".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Math Notes".out':
-(rerunfilecheck)             Before: B19A7B14B84DCBC60CB11FDB27CC997E;1526
-(rerunfilecheck)             After:  7E193CF560D43D7784492F009A7FEB45;1502.
+Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
+(rerunfilecheck)             Checksum: 7E193CF560D43D7784492F009A7FEB45;1502.
  ) 
 Here is how much of TeX's memory you used:
  36607 strings out of 479917
  826011 string characters out of 5882726
- 1266965 words of memory out of 5000000
+ 1267965 words of memory out of 5000000
  52425 multiletter control sequences out of 15000+600000
  568074 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1455,7 +1451,7 @@ ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
 /texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (63 pages, 124787 bytes).
+Output written on "Math Notes.pdf" (63 pages, 124823 bytes).
 PDF statistics:
  489 PDF objects out of 1000 (max. 8388607)
  411 compressed objects within 5 object streams
