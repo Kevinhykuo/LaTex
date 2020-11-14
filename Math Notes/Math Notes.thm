@@ -1,10 +1,10 @@
 \contentsline {axiom}{{Axiom}{0.{1}}{Axiom name}}{iv}{axiom.0.1}%
-\contentsline {definition}{{Definition}{1}{}}{iv}{definition.1}%
 \contentsline {thm}{{Theorem}{0.0.{1}}{Theorem name or citation}}{iv}{thm.0.0.1}%
 \contentsline {conj}{{Conjecture}{0.0.{2}}{Name of conjecture or citation}}{iv}{thm.0.0.2}%
 \contentsline {cor}{{Corollary}{0.0.{2}.{1}}{}}{iv}{cor.0.0.2.1}%
 \contentsline {lem}{{Lemma}{0.0.{3}}{}}{iv}{thm.0.0.3}%
-\contentsline {proof}{{Proof}{1}{}}{iv}{proof.1}%
+\contentsline {definition}{{Definition}{1}{Word}}{iv}{definition.1}%
+\contentsline {example}{{Example}{1}{}}{iv}{example.1}%
 \contentsline {rmk}{{Remark}{1}{}}{iv}{rmk.1}%
 \contentsline {obs}{{Observation}{1}{}}{iv}{obs.1}%
 \contentsline {qtn}{{Question}{1}{}}{iv}{qtn.1}%

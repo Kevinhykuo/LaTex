@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.23)  13 NOV 2020 18:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.23)  13 NOV 2020 19:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -251,6 +251,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box52
 )
+(/usr/local/texlive/2020/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip74
+\fb@frw=\dimen181
+\fb@frh=\dimen182
+\FrameRule=\dimen183
+\FrameSep=\dimen184
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
@@ -292,7 +300,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen181
+\@linkdim=\dimen185
 \Hy@linkcounter=\count277
 \Hy@pagecounter=\count278
 
@@ -322,7 +330,7 @@ Package hyperref Info: Bookmarks ON on input line 4717.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen182
+\XeTeXLinkMargin=\dimen186
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -332,8 +340,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count281
-\Field@Width=\dimen183
-\Fld@charsize=\dimen184
+\Field@Width=\dimen187
+\Fld@charsize=\dimen188
 Package hyperref Info: Hyper figures OFF on input line 6347.
 Package hyperref Info: Link nesting OFF on input line 6352.
 Package hyperref Info: Hyper index ON on input line 6355.
@@ -375,7 +383,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip74
+\Hy@SectionHShift=\skip75
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks25
@@ -395,16 +403,16 @@ LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \g_MT_multlinerow_int=\count287
-\l_MT_multwidth_dim=\dimen185
-\origjot=\skip75
-\l_MT_shortvdotswithinadjustabove_dim=\dimen186
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen187
-\l_MT_above_intertext_sep=\dimen188
-\l_MT_below_intertext_sep=\dimen189
-\l_MT_above_shortintertext_sep=\dimen190
-\l_MT_below_shortintertext_sep=\dimen191
+\l_MT_multwidth_dim=\dimen189
+\origjot=\skip76
+\l_MT_shortvdotswithinadjustabove_dim=\dimen190
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen191
+\l_MT_above_intertext_sep=\dimen192
+\l_MT_below_intertext_sep=\dimen193
+\l_MT_above_shortintertext_sep=\dimen194
+\l_MT_below_shortintertext_sep=\dimen195
 \xmathstrut@box=\box53
-\xmathstrut@dim=\dimen192
+\xmathstrut@dim=\dimen196
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
 Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
@@ -491,21 +499,21 @@ LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@tracingmulticols=\count288
 \mult@box=\box54
-\multicol@leftmargin=\dimen193
+\multicol@leftmargin=\dimen197
 \c@unbalance=\count289
 \c@collectmore=\count290
 \doublecol@number=\count291
 \multicoltolerance=\count292
 \multicolpretolerance=\count293
-\full@width=\dimen194
-\page@free=\dimen195
-\premulticols=\dimen196
-\postmulticols=\dimen197
-\multicolsep=\skip76
-\multicolbaselineskip=\skip77
+\full@width=\dimen198
+\page@free=\dimen199
+\premulticols=\dimen256
+\postmulticols=\dimen257
+\multicolsep=\skip77
+\multicolbaselineskip=\skip78
 \partial@page=\box55
 \last@line=\box56
-\maxbalancingoverflow=\dimen198
+\maxbalancingoverflow=\dimen258
 \mult@rightbox=\box57
 \mult@grightbox=\box58
 \mult@gfirstbox=\box59
@@ -550,28 +558,28 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@minrows=\count294
 \c@columnbadness=\count295
 \c@finalcolumnbadness=\count296
-\last@try=\dimen199
-\multicolovershoot=\dimen256
-\multicolundershoot=\dimen257
+\last@try=\dimen259
+\multicolovershoot=\dimen260
+\multicolundershoot=\dimen261
 \mult@nat@firstbox=\box98
 \colbreak@box=\box99
 \mc@col@check@num=\count297
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip78
+\multirow@colwidth=\skip79
 \multirow@cntb=\count298
-\multirow@dima=\skip79
-\bigstrutjot=\dimen258
+\multirow@dima=\skip80
+\bigstrutjot=\dimen262
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip80
-\LTright=\skip81
-\LTpre=\skip82
-\LTpost=\skip83
+\LTleft=\skip81
+\LTright=\skip82
+\LTpre=\skip83
+\LTpost=\skip84
 \LTchunksize=\count299
-\LTcapwidth=\dimen259
+\LTcapwidth=\dimen263
 \LT@head=\box100
 \LT@firsthead=\box101
 \LT@foot=\box102
@@ -604,11 +612,11 @@ Package: ltablex 2014/08/13 v1.1 Modified tabularx
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen260
-\TX@old@table=\dimen261
-\TX@old@col=\dimen262
-\TX@target=\dimen263
-\TX@delta=\dimen264
+\TX@col@width=\dimen264
+\TX@old@table=\dimen265
+\TX@old@col=\dimen266
+\TX@target=\dimen267
+\TX@delta=\dimen268
 \TX@cols=\count304
 \TX@ftn=\toks28
 ))
@@ -621,8 +629,8 @@ Package: polynom 2017/07/17 0.19 (CH,HA)
 Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen265
-\Gin@req@width=\dimen266
+\Gin@req@height=\dimen269
+\Gin@req@width=\dimen270
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -630,8 +638,8 @@ Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen267
-\pgfutil@tempdimb=\dimen268
+\pgfutil@tempdima=\dimen271
+\pgfutil@tempdimb=\dimen272
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
@@ -655,16 +663,16 @@ Package: pgfsys 2020/10/01 v3.1.6a (3.1.6a)
 ode.tex
 \pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen269
-\pgf@y=\dimen270
-\pgf@xa=\dimen271
-\pgf@ya=\dimen272
-\pgf@xb=\dimen273
-\pgf@yb=\dimen274
-\pgf@xc=\dimen275
-\pgf@yc=\dimen276
-\pgf@xd=\dimen277
-\pgf@yd=\dimen278
+\pgf@x=\dimen273
+\pgf@y=\dimen274
+\pgf@xa=\dimen275
+\pgf@ya=\dimen276
+\pgf@xb=\dimen277
+\pgf@yb=\dimen278
+\pgf@xc=\dimen279
+\pgf@yc=\dimen280
+\pgf@xd=\dimen281
+\pgf@yd=\dimen282
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
 \c@pgf@counta=\count306
@@ -721,7 +729,7 @@ Package: pgfcore 2020/10/01 v3.1.6a (3.1.6a)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen279
+\pgfmath@dimen=\dimen283
 \pgfmath@count=\count313
 \pgfmath@box=\box105
 \pgfmath@toks=\toks36
@@ -752,32 +760,32 @@ erarithmetics.code.tex)))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgf@picminx=\dimen280
-\pgf@picmaxx=\dimen281
-\pgf@picminy=\dimen282
-\pgf@picmaxy=\dimen283
-\pgf@pathminx=\dimen284
-\pgf@pathmaxx=\dimen285
-\pgf@pathminy=\dimen286
-\pgf@pathmaxy=\dimen287
-\pgf@xx=\dimen288
-\pgf@xy=\dimen289
-\pgf@yx=\dimen290
-\pgf@yy=\dimen291
-\pgf@zx=\dimen292
-\pgf@zy=\dimen293
+\pgf@picminx=\dimen284
+\pgf@picmaxx=\dimen285
+\pgf@picminy=\dimen286
+\pgf@picmaxy=\dimen287
+\pgf@pathminx=\dimen288
+\pgf@pathmaxx=\dimen289
+\pgf@pathminy=\dimen290
+\pgf@pathmaxy=\dimen291
+\pgf@xx=\dimen292
+\pgf@xy=\dimen293
+\pgf@yx=\dimen294
+\pgf@yy=\dimen295
+\pgf@zx=\dimen296
+\pgf@zy=\dimen297
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgf@path@lastx=\dimen294
-\pgf@path@lasty=\dimen295
+\pgf@path@lastx=\dimen298
+\pgf@path@lasty=\dimen299
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgf@shorten@end@additional=\dimen296
-\pgf@shorten@start@additional=\dimen297
+\pgf@shorten@end@additional=\dimen300
+\pgf@shorten@start@additional=\dimen301
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
@@ -790,14 +798,14 @@ File: pgfcorescopes.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgflinewidth=\dimen298
+\pgflinewidth=\dimen302
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgf@pt@x=\dimen299
-\pgf@pt@y=\dimen300
-\pgf@pt@temp=\dimen301
+\pgf@pt@x=\dimen303
+\pgf@pt@y=\dimen304
+\pgf@pt@temp=\dimen305
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -814,12 +822,12 @@ File: pgfcorepathprocessing.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgfarrowsep=\dimen302
+\pgfarrowsep=\dimen306
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgf@max=\dimen303
+\pgf@max=\dimen307
 \pgf@sys@shading@range@num=\count316
 \pgf@shadingcount=\count317
 )
@@ -860,8 +868,8 @@ File: pgfmoduleplot.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2020/10/01 v3.1.6a (3.1.6a)
-\pgf@nodesepstart=\dimen304
-\pgf@nodesepend=\dimen305
+\pgf@nodesepstart=\dimen308
+\pgf@nodesepend=\dimen309
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -876,8 +884,8 @@ Package: pgfcomp-version-1-18 2020/10/01 v3.1.6a (3.1.6a)
 Package: pgffor 2020/10/01 v3.1.6a (3.1.6a)
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen306
-\pgffor@skip=\dimen307
+\pgffor@iter=\dimen310
+\pgffor@skip=\dimen311
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
 ))
@@ -889,16 +897,16 @@ Package: tikz 2020/10/01 v3.1.6a (3.1.6a)
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 \pgf@plot@mark@count=\count318
-\pgfplotmarksize=\dimen308
+\pgfplotmarksize=\dimen312
 )
-\tikz@lastx=\dimen309
-\tikz@lasty=\dimen310
-\tikz@lastxsaved=\dimen311
-\tikz@lastysaved=\dimen312
-\tikz@lastmovetox=\dimen313
-\tikz@lastmovetoy=\dimen314
-\tikzleveldistance=\dimen315
-\tikzsiblingdistance=\dimen316
+\tikz@lastx=\dimen313
+\tikz@lasty=\dimen314
+\tikz@lastxsaved=\dimen315
+\tikz@lastysaved=\dimen316
+\tikz@lastmovetox=\dimen317
+\tikz@lastmovetoy=\dimen318
+\tikzleveldistance=\dimen319
+\tikzsiblingdistance=\dimen320
 \tikz@figbox=\box111
 \tikz@figbox@bg=\box112
 \tikz@tempbox=\box113
@@ -926,7 +934,7 @@ File: tikzlibrarytopaths.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 \t@pgfplots@toka=\toks41
 \t@pgfplots@tokb=\toks42
 \t@pgfplots@tokc=\toks43
-\pgfplots@tmpa=\dimen317
+\pgfplots@tmpa=\dimen321
 \c@pgfplots@coordindex=\count327
 \c@pgfplots@scanlineindex=\count328
 
@@ -997,14 +1005,14 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen318
-\pgfdecoratedremainingdistance=\dimen319
-\pgfdecoratedinputsegmentcompleteddistance=\dimen320
-\pgfdecoratedinputsegmentremainingdistance=\dimen321
-\pgf@decorate@distancetomove=\dimen322
+\pgfdecoratedcompleteddistance=\dimen322
+\pgfdecoratedremainingdistance=\dimen323
+\pgfdecoratedinputsegmentcompleteddistance=\dimen324
+\pgfdecoratedinputsegmentremainingdistance=\dimen325
+\pgf@decorate@distancetomove=\dimen326
 \pgf@decorate@repeatstate=\count332
-\pgfdecorationsegmentamplitude=\dimen323
-\pgfdecorationsegmentlength=\dimen324
+\pgfdecorationsegmentamplitude=\dimen327
+\pgfdecorationsegmentlength=\dimen328
 )
 \tikz@lib@dec@box=\box115
 )
@@ -1017,12 +1025,12 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
 \pgfplots@numplots=\count333
-\pgfplots@xmin@reg=\dimen325
-\pgfplots@xmax@reg=\dimen326
-\pgfplots@ymin@reg=\dimen327
-\pgfplots@ymax@reg=\dimen328
-\pgfplots@zmin@reg=\dimen329
-\pgfplots@zmax@reg=\dimen330
+\pgfplots@xmin@reg=\dimen329
+\pgfplots@xmax@reg=\dimen330
+\pgfplots@ymin@reg=\dimen331
+\pgfplots@ymax@reg=\dimen332
+\pgfplots@zmin@reg=\dimen333
+\pgfplots@zmax@reg=\dimen334
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -1038,8 +1046,8 @@ Package: placeins 2005/04/18  v 2.2
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \c@r@tfl@t=\count334
-\rotFPtop=\skip84
-\rotFPbot=\skip85
+\rotFPtop=\skip85
+\rotFPbot=\skip86
 \rot@float@box=\box116
 \rot@mess@toks=\toks45
 )
@@ -1051,13 +1059,13 @@ ng of objects, relative to a reference object or in absolute terms
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count335
 )
-\thesrwidth=\skip86
-\thesrheight=\skip87
-\srblobheight=\skip88
-\srblobdepth=\skip89
-\mnxsrwidth=\skip90
-\LMex=\skip91
-\LMpt=\skip92
+\thesrwidth=\skip87
+\thesrheight=\skip88
+\srblobheight=\skip89
+\srblobdepth=\skip90
+\mnxsrwidth=\skip91
+\LMex=\skip92
+\LMpt=\skip93
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -1075,10 +1083,10 @@ Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified
 sep char (CT)
 )
 \c@@stackindex=\count338
-\@boxshift=\skip93
-\stack@tmplength=\skip94
-\temp@stkl=\skip95
-\@stackedboxwidth=\skip96
+\@boxshift=\skip94
+\stack@tmplength=\skip95
+\temp@stkl=\skip96
+\@stackedboxwidth=\skip97
 \@addedbox=\box117
 \@anchorbox=\box118
 \stackedbox=\box119
@@ -1091,20 +1099,20 @@ Package: threeparttable 2003/06/13  v 3.0
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box122
-\beforetitleunit=\skip97
-\aftertitleunit=\skip98
-\ttl@plus=\dimen331
-\ttl@minus=\dimen332
+\beforetitleunit=\skip98
+\aftertitleunit=\skip99
+\ttl@plus=\dimen335
+\ttl@minus=\dimen336
 \ttl@toksa=\toks46
-\titlewidth=\dimen333
-\titlewidthlast=\dimen334
-\titlewidthfirst=\dimen335
+\titlewidth=\dimen337
+\titlewidthlast=\dimen338
+\titlewidthfirst=\dimen339
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip99
-\thanksmargin=\skip100
-\droptitle=\skip101
+\thanksmarkwidth=\skip100
+\thanksmargin=\skip101
+\droptitle=\skip102
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/wasysym.sty
 Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
@@ -1134,22 +1142,22 @@ Package: ntheorem 2011/08/15 1.33
 \theorem@@style=\toks48
 \theorembodyfont=\toks49
 \theoremnumbering=\toks50
-\theorempreskipamount=\skip102
-\theorempostskipamount=\skip103
-\theoremframepreskipamount=\skip104
-\theoremframepostskipamount=\skip105
-\theoreminframepreskipamount=\skip106
-\theoreminframepostskipamount=\skip107
+\theorempreskipamount=\skip103
+\theorempostskipamount=\skip104
+\theoremframepreskipamount=\skip105
+\theoremframepostskipamount=\skip106
+\theoreminframepreskipamount=\skip107
+\theoreminframepostskipamount=\skip108
 \theorem@preskip=\toks51
 \theorem@postskip=\toks52
 \theorem@framepreskip=\toks53
 \theorem@framepostskip=\toks54
 \theorem@inframepreskip=\toks55
 \theorem@inframepostskip=\toks56
-\theoremindent=\dimen336
-\theorem@indent=\dimen337
-\theoremrightindent=\dimen338
-\theorem@rightindent=\dimen339
+\theoremindent=\dimen340
+\theorem@indent=\dimen341
+\theoremrightindent=\dimen342
+\theorem@rightindent=\dimen343
 \theoremheaderfont=\toks57
 \theoremseparator=\toks58
 \theoremprework=\toks59
@@ -1158,8 +1166,8 @@ Package: ntheorem 2011/08/15 1.33
 \qedsymbol=\toks62
 \theoremkeyword=\toks63
 \qedsymbol=\toks64
-\thm@topsep=\skip108
-\thm@topsepadd=\skip109
+\thm@topsep=\skip109
+\thm@topsepadd=\skip110
 Package ntheorem Info: Standard config file ntheorem.std used on input line 118
 4.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/ntheorem/ntheorem.std
@@ -1310,13 +1318,13 @@ LaTeX Info: Redefining \nameref on input line 53.
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count376
-\scratchdimen=\dimen340
+\scratchdimen=\dimen344
 \scratchbox=\box124
 \nofMPsegments=\count377
 \nofMParguments=\count378
 \everyMPshowfont=\toks65
 \MPscratchCnt=\count379
-\MPscratchDim=\dimen341
+\MPscratchDim=\dimen345
 \MPnumerator=\count380
 \makeMPintoPDFobject=\count381
 \everyMPtoPDFconversion=\toks66
@@ -1372,24 +1380,24 @@ This may cause the page layout to be inconsistent, however.
 [3]
 Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
 line 188.
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 193.
 Package hyperref Info: bookmark level for unknown thm defaults to 0 on input li
-ne 197.
+ne 192.
 Package hyperref Info: bookmark level for unknown conj defaults to 0 on input l
-ine 201.
+ine 196.
 Package hyperref Info: bookmark level for unknown cor defaults to 0 on input li
-ne 205.
+ne 200.
 Package hyperref Info: bookmark level for unknown lem defaults to 0 on input li
-ne 209.
-Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 214.
+ne 204.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
+nput line 213.
+Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
+t line 218.
 Package hyperref Info: bookmark level for unknown rmk defaults to 0 on input li
-ne 217.
-Package hyperref Info: bookmark level for unknown obs defaults to 0 on input li
 ne 221.
-Package hyperref Info: bookmark level for unknown qtn defaults to 0 on input li
+Package hyperref Info: bookmark level for unknown obs defaults to 0 on input li
 ne 225.
+Package hyperref Info: bookmark level for unknown qtn defaults to 0 on input li
+ne 229.
  [4] (./Math Notes.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
 
@@ -1419,11 +1427,11 @@ Chapter 1.
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 245.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 245.
 
 [7
 
@@ -1433,11 +1441,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 247.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 247.
 
 [9] [10
 
@@ -1445,11 +1453,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 249.
 
 [11] [12
 
@@ -1461,11 +1469,11 @@ Chapter 5.
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 248.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 248.
+(hyperref)                removing `math shift' on input line 253.
 
 [15] [16
 
@@ -1473,11 +1481,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 250.
+(hyperref)                removing `math shift' on input line 255.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 250.
+(hyperref)                removing `math shift' on input line 255.
 
 [17] [18
 
@@ -1485,11 +1493,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 8.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 252.
+(hyperref)                removing `math shift' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 252.
+(hyperref)                removing `math shift' on input line 257.
 
 [19] [20
 
@@ -1589,10 +1597,10 @@ Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
 (rerunfilecheck)             Checksum: 9CF9FB7039ED64F0D925695C54FB597B;2291.
  ) 
 Here is how much of TeX's memory you used:
- 37613 strings out of 479917
- 839528 string characters out of 5882726
- 1267965 words of memory out of 5000000
- 53356 multiletter control sequences out of 15000+600000
+ 37664 strings out of 479917
+ 840252 string characters out of 5882726
+ 1269470 words of memory out of 5000000
+ 53402 multiletter control sequences out of 15000+600000
  569329 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,109p,729b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1609,10 +1617,10 @@ ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
 /texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (95 pages, 148978 bytes).
+Output written on "Math Notes.pdf" (95 pages, 149276 bytes).
 PDF statistics:
- 720 PDF objects out of 1000 (max. 8388607)
- 607 compressed objects within 7 object streams
- 153 named destinations out of 1000 (max. 500000)
+ 721 PDF objects out of 1000 (max. 8388607)
+ 608 compressed objects within 7 object streams
+ 154 named destinations out of 1000 (max. 500000)
  349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

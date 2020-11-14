@@ -1,7 +1,7 @@
 \documentclass[12pt, english]{book}
 \usepackage[letterpaper, portrait, margin=2.5cm]{geometry} %Set paper type, format, margin
 \usepackage{%abstract, 
-	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, xcolor}
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, xcolor}
 \usepackage{cleveref}
 %\usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
 \usepackage[standard]{ntheorem}
@@ -37,13 +37,13 @@
 \newtheorem{cor}{Corollary}[thm]
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{conj}[thm]{Conjecture}
-%\theoremstyle{definition}
-%\newtheorem{definition}{Definition}[section]
 
 \theoremstyle{plain}
 \newtheorem*{rmk}{Remark}
 \newtheorem*{obs}{Observation}
 \newtheorem*{qtn}{Question}
+
+
 
 %\theoremclass{Proof}
 %\theoremstyle{break}
@@ -189,11 +189,6 @@
 		Axioms are the ``ground rules" of the set.
 	\end{axiom}
 
-%	\theoremstyle{break}
-	\begin{definition}{Example Definition}
-		The definition of a word.
-	\end{definition}
-%	
 	\begin{thm}[Theorem name or citation]{Example Theorem}
 		An important logical result from the axioms, with proof.
 	\end{thm}
@@ -210,9 +205,18 @@
 		Small theorems that build up to a larger theorem. 
 	\end{lem}
 	
-	\begin{proof}
+	\begin{proof*}
 		Logical deductions that results in a theorem.
-	\end{proof}
+	\end{proof*}
+
+%	\theoremstyle{break}
+	\begin{definition}[Word]{Example Definition}
+		The definition of a word.
+	\end{definition}	
+
+	\begin{example}
+		An example.
+	\end{example}
 
 	\begin{rmk}{Remark}
 		A comment by the author in the textbooks used.
@@ -225,6 +229,7 @@
 	\begin{qtn}{Example Question}
 		A question from me for a mystery to be answered later. 
 	\end{qtn}
+
 	
 	\section*{}
 	\tableofcontents
