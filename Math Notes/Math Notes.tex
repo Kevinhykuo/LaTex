@@ -1,10 +1,13 @@
 \documentclass[12pt, english]{book}
 \usepackage[letterpaper, portrait, margin=2.5cm]{geometry} %Set paper type, format, margin
+\usepackage[svgnames]{xcolor}
 \usepackage{%abstract, 
-	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, xcolor}
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym}
 \usepackage{cleveref}
-%\usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
-\usepackage[standard]{ntheorem}
+
+\usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
+\usepackage{thmtools}
+%\usepackage[standard]{ntheorem}
 
 %\renewcommand{\abstractname}{}    % clear the title
 %\renewcommand{\absnamepos}{empty} % originally center 
@@ -31,23 +34,83 @@
 %	{\bfseries}{}%
 %	{\newline}{}%
 
-\theoremstyle{break}
-\newtheorem{axiom}{Axiom}[chapter]
-\newtheorem{thm}{Theorem}[section]
-\newtheorem{cor}{Corollary}[thm]
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{conj}[thm]{Conjecture}
-
-\theoremstyle{plain}
-\newtheorem*{rmk}{Remark}
-\newtheorem*{obs}{Observation}
-\newtheorem*{qtn}{Question}
-
-
-
-%\theoremclass{Proof}
 %\theoremstyle{break}
-%\newframedtheorem{proof}[Proof]{Proof}
+%\newtheorem{axiom}{Axiom}[chapter]
+%\newtheorem{thm}{Theorem}[section]
+%\newtheorem{cor}{Corollary}[thm]
+%\newtheorem{lem}[thm]{Lemma}
+%\newtheorem{conj}[thm]{Conjecture}
+%\newtheorem{definition}{Definition}[section]
+%
+%\theoremstyle{plain}
+%\newtheorem*{rmk}{Remark}
+%\newtheorem*{obs}{Observation}
+%\newtheorem*{qtn}{Question}
+%\newtheorem*{example}{Example}
+
+%\colorlet{headcolour}{DarkOrange}
+%\colorlet{rulecolour}{Orange}
+%\renewenvironment{leftbar}{%
+%	\def\FrameCommand{{\color{rulecolour}\vrule width 3pt} \hspace{10pt}}%
+%	\MakeFramed {\advance\hsize-\width \FrameRestore}}%
+%{\endMakeFramed}
+
+
+\declaretheoremstyle[
+%	spaceabove=6pt, 		
+%	spacebelow=6pt,
+%	headfont=\normalfont\bfseries,
+	notefont=\bfseries, notebraces={}{},
+	bodyfont=\normalfont,
+	postheadspace=1em,
+	headpunct=,
+	headformat={\NAME~\NUMBER~\NOTE \hfill \smallskip\linebreak},%
+	]{theoremstyle}
+	
+\declaretheoremstyle[
+	headfont=\bfseries,%\color{Blue},%
+	notefont=\bfseries,%
+	notebraces={}{},%
+	headpunct=,%
+	bodyfont=\normalfont,%
+	headformat={\NAME~\NUMBER~\NOTE \hfill \smallskip\linebreak},%
+%	preheadhook=\begin{leftbar},%
+%	postfoothook=\end{leftbar},%
+	]{defstyle}
+	
+
+\declaretheorem{axiom}[
+	numberwithin=chapter, style=theoremstyle
+	]
+\declaretheorem{theorem, conjecture}[
+	numberwithin=section, style=theoremstyle
+	]
+\declaretheorem{lemma, proposition, corollary}[
+	style=plain,
+	numberwithin=theorem
+	]
+
+\declaretheorem{definition}[sibling=section, style=defstyle]
+
+\declaretheorem{remark, observation, question}[numbered=no]
+
+\declaretheorem{example}[numberwithin=section]
+
+% Indenting the Proof enviroment
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\list{}{%
+		\settowidth{\leftmargin}{\itshape\proofname:\hskip\labelsep}%
+		\setlength{\labelwidth}{0pt}%
+		\setlength{\itemindent}{-\leftmargin}%
+	}%
+	\item[\hskip\labelsep\itshape#1\@addpunct{:}]\ignorespaces
+}{%
+	\popQED\endlist\@endpefalse
+}
+\makeatother
 
 
 \begin{document}
@@ -189,25 +252,26 @@
 		Axioms are the ``ground rules" of the set.
 	\end{axiom}
 
-	\begin{thm}[Theorem name or citation]{Example Theorem}
+	\begin{theorem}[Theorem name or citation]{Example Theorem}
 		An important logical result from the axioms, with proof.
-	\end{thm}
+	\end{theorem}
 
-	\begin{conj}[Name of conjecture or citation]{Example Conjecture}
+	\begin{conjecture}[Name of conjecture or citation]{Example Conjecture}
 		A hypothesis, without proof.
-	\end{conj}
+	\end{conjecture}
 	
-	\begin{cor}{Example Corollary}
+	\begin{corollary}{Example Corollary}
 		An implication as a result of a theorem.
-	\end{cor}
+	\end{corollary}
 
-	\begin{lem}{Example Lemma}
+	\begin{lemma}{Example Lemma}
 		Small theorems that build up to a larger theorem. 
-	\end{lem}
+	\end{lemma}
 	
-	\begin{proof*}
+	\begin{proof}
 		Logical deductions that results in a theorem.
-	\end{proof*}
+		\textcolor{Grey}{Proofs I've written are in grey.}
+	\end{proof}
 
 %	\theoremstyle{break}
 	\begin{definition}[Word]{Example Definition}
@@ -218,17 +282,17 @@
 		An example.
 	\end{example}
 
-	\begin{rmk}{Remark}
+	\begin{remark}{Remark}
 		A comment by the author in the textbooks used.
-	\end{rmk}
+	\end{remark}
 	
-	\begin{obs}{Example Observation}
+	\begin{observation}{Example Observation}
 		A remark by me.
-	\end{obs}
+	\end{observation}
 
-	\begin{qtn}{Example Question}
+	\begin{question}{Example Question}
 		A question from me for a mystery to be answered later. 
-	\end{qtn}
+	\end{question}
 
 	
 	\section*{}
