@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.23)  13 NOV 2020 03:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.23)  13 NOV 2020 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1127,30 +1127,108 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2370.
 LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
 )
+(/usr/local/texlive/2020/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+\theorem@style=\toks47
+\theorem@@style=\toks48
+\theorembodyfont=\toks49
+\theoremnumbering=\toks50
+\theorempreskipamount=\skip102
+\theorempostskipamount=\skip103
+\theoremframepreskipamount=\skip104
+\theoremframepostskipamount=\skip105
+\theoreminframepreskipamount=\skip106
+\theoreminframepostskipamount=\skip107
+\theorem@preskip=\toks51
+\theorem@postskip=\toks52
+\theorem@framepreskip=\toks53
+\theorem@framepostskip=\toks54
+\theorem@inframepreskip=\toks55
+\theorem@inframepostskip=\toks56
+\theoremindent=\dimen336
+\theorem@indent=\dimen337
+\theoremrightindent=\dimen338
+\theorem@rightindent=\dimen339
+\theoremheaderfont=\toks57
+\theoremseparator=\toks58
+\theoremprework=\toks59
+\theorempostwork=\toks60
+\theoremsymbol=\toks61
+\qedsymbol=\toks62
+\theoremkeyword=\toks63
+\qedsymbol=\toks64
+\thm@topsep=\skip108
+\thm@topsepadd=\skip109
+Package ntheorem Info: Standard config file ntheorem.std used on input line 118
+4.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/ntheorem/ntheorem.std
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup11
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+\c@Theorem=\count340
+\c@theorem=\count341
+\c@Satz=\count342
+\c@satz=\count343
+\c@Proposition=\count344
+\c@proposition=\count345
+\c@Lemma=\count346
+\c@lemma=\count347
+\c@Korollar=\count348
+\c@korollar=\count349
+\c@Corollary=\count350
+\c@corollary=\count351
+\c@Example=\count352
+\c@example=\count353
+\c@Beispiel=\count354
+\c@beispiel=\count355
+\c@Bemerkung=\count356
+\c@bemerkung=\count357
+\c@Anmerkung=\count358
+\c@anmerkung=\count359
+\c@Remark=\count360
+\c@remark=\count361
+\c@Definition=\count362
+\c@definition=\count363
+\c@Proof=\count364
+\c@proof=\count365
+\c@Beweis=\count366
+\c@beweis=\count367
+))
+\c@axiom=\count368
+\c@thm=\count369
+\c@cor=\count370
+\c@rmk=\count371
+\c@obs=\count372
+\c@qtn=\count373
+
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count340
+\l__kernel_color_stack_int=\count374
 \l__pdf_internal_box=\box123
 )
 (./Math Notes.aux)
 \openout1 = `"Math Notes.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1196,18 +1274,18 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\symgns@font=\mathgroup11
+\symgns@font=\mathgroup12
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 24.
-Package gensymb Info: Math companion symbols declared on input line 24.
-LaTeX Info: Redefining \degree on input line 24.
-LaTeX Info: Redefining \celsius on input line 24.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 53.
+Package gensymb Info: Math companion symbols declared on input line 53.
+LaTeX Info: Redefining \degree on input line 53.
+LaTeX Info: Redefining \celsius on input line 53.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 24.
-LaTeX Info: Redefining \ohm on input line 24.
-Package gensymb Info: Using \textohm for \ohm on input line 24.
-Package gensymb Info: Using \textmu for \micro on input line 24.
-Package hyperref Info: Link coloring OFF on input line 24.
+erthousand on input line 53.
+LaTeX Info: Redefining \ohm on input line 53.
+Package gensymb Info: Using \textohm for \ohm on input line 53.
+Package gensymb Info: Using \textmu for \micro on input line 53.
+Package hyperref Info: Link coloring OFF on input line 53.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1219,11 +1297,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count341
+\c@section@level=\count375
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
  (./Math Notes.out) (./Math Notes.out)
 \@outlinefile=\write4
 \openout4 = `"Math Notes.out"'.
@@ -1231,17 +1309,17 @@ LaTeX Info: Redefining \nameref on input line 24.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count342
-\scratchdimen=\dimen336
+\scratchcounter=\count376
+\scratchdimen=\dimen340
 \scratchbox=\box124
-\nofMPsegments=\count343
-\nofMParguments=\count344
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count345
-\MPscratchDim=\dimen337
-\MPnumerator=\count346
-\makeMPintoPDFobject=\count347
-\everyMPtoPDFconversion=\toks48
+\nofMPsegments=\count377
+\nofMParguments=\count378
+\everyMPshowfont=\toks65
+\MPscratchCnt=\count379
+\MPscratchDim=\dimen341
+\MPnumerator=\count380
+\makeMPintoPDFobject=\count381
+\everyMPtoPDFconversion=\toks66
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1255,24 +1333,30 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 24.
+ on input line 53.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 45
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 74
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 74
+.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
 
@@ -1285,10 +1369,31 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[3] [4] (./Math Notes.toc
+[3]
+Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
+line 188.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
+nput line 193.
+Package hyperref Info: bookmark level for unknown thm defaults to 0 on input li
+ne 197.
+Package hyperref Info: bookmark level for unknown conj defaults to 0 on input l
+ine 201.
+Package hyperref Info: bookmark level for unknown cor defaults to 0 on input li
+ne 205.
+Package hyperref Info: bookmark level for unknown lem defaults to 0 on input li
+ne 209.
+Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
+line 214.
+Package hyperref Info: bookmark level for unknown rmk defaults to 0 on input li
+ne 217.
+Package hyperref Info: bookmark level for unknown obs defaults to 0 on input li
+ne 221.
+Package hyperref Info: bookmark level for unknown qtn defaults to 0 on input li
+ne 225.
+ [4] (./Math Notes.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1596) has occurred while \output is active []
 
  [5
 
@@ -1314,11 +1419,11 @@ Chapter 1.
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 170.
+(hyperref)                removing `math shift' on input line 240.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 170.
+(hyperref)                removing `math shift' on input line 240.
 
 [7
 
@@ -1328,11 +1433,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 172.
+(hyperref)                removing `math shift' on input line 242.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 172.
+(hyperref)                removing `math shift' on input line 242.
 
 [9] [10
 
@@ -1340,11 +1445,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 174.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 174.
+(hyperref)                removing `math shift' on input line 244.
 
 [11] [12
 
@@ -1356,11 +1461,11 @@ Chapter 5.
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 178.
+(hyperref)                removing `math shift' on input line 248.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 178.
+(hyperref)                removing `math shift' on input line 248.
 
 [15] [16
 
@@ -1368,11 +1473,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 250.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 250.
 
 [17] [18
 
@@ -1380,11 +1485,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 8.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 182.
+(hyperref)                removing `math shift' on input line 252.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 182.
+(hyperref)                removing `math shift' on input line 252.
 
 [19] [20
 
@@ -1396,33 +1501,33 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 9.
 [29] [30
 
-] [31] [32] [33
-
-] [34] [35
-
-] [36] [37] [38
-
-] [39] [40] [41
-
-] [42]
-Chapter 10.
-[43
-
-] [44
-
-] [45] [46] [47
-
-] [48] [49
-
-] [50]
-Chapter 11.
-[51
-
-] [52
-
 ]
+Chapter 10.
+[31] [32
+
+] [33] [34] [35
+
+] [36] [37
+
+] [38] [39] [40
+
+] [41] [42] [43
+
+] [44]
+Chapter 11.
+[45
+
+] [46
+
+] [47] [48] [49
+
+] [50] [51
+
+] [52]
 Chapter 12.
-[53] [54
+[53
+
+] [54
 
 ]
 Chapter 13.
@@ -1444,43 +1549,51 @@ Chapter 16.
 Chapter 17.
 [63] [64
 
-] [65] [66] [67] [68
+]
+Chapter 18.
+[65] [66
 
-] [69] [70] [71
+] [67] [68] [69] [70
 
-] [72] [73
+] [71] [72] [73
 
 ] [74] [75
 
 ] [76] [77
 
+] [78] [79
+
 ]
-[78]
-Chapter 18.
-[79
+[80]
+Chapter 19.
+[81
 
-] [80
+] [82
 
-] [81
+] [83
 
-] [82] [83
+] [84] [85
 
-] [84]
+] [86]
 
-(./Math Notes.bbl) [85
+(./Math Notes.bbl)
+\tf@thm=\write6
+\openout6 = `"Math Notes.thm"'.
+
+ [87
 
 ] (./Math Notes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
-(rerunfilecheck)             Checksum: CFFA0319B334D422CC16A0D2CA8B8386;2235.
+(rerunfilecheck)             Checksum: 9CF9FB7039ED64F0D925695C54FB597B;2291.
  ) 
 Here is how much of TeX's memory you used:
- 36665 strings out of 479917
- 826524 string characters out of 5882726
- 1267964 words of memory out of 5000000
- 52440 multiletter control sequences out of 15000+600000
- 568074 words of font info for 144 fonts, out of 8000000 for 9000
+ 37613 strings out of 479917
+ 839528 string characters out of 5882726
+ 1267965 words of memory out of 5000000
+ 53356 multiletter control sequences out of 15000+600000
+ 569329 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,109p,729b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
@@ -1489,16 +1602,17 @@ sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/l
 ocal/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/local
 /texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/local
 /texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
+texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/
 texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
 ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
 /texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (93 pages, 134941 bytes).
+Output written on "Math Notes.pdf" (95 pages, 148978 bytes).
 PDF statistics:
- 689 PDF objects out of 1000 (max. 8388607)
- 580 compressed objects within 6 object streams
- 140 named destinations out of 1000 (max. 500000)
- 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 720 PDF objects out of 1000 (max. 8388607)
+ 607 compressed objects within 7 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

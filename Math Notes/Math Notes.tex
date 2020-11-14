@@ -3,6 +3,8 @@
 \usepackage{%abstract, 
 	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, xcolor}
 \usepackage{cleveref}
+%\usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
+\usepackage[standard]{ntheorem}
 
 %\renewcommand{\abstractname}{}    % clear the title
 %\renewcommand{\absnamepos}{empty} % originally center 
@@ -19,6 +21,33 @@
 % Swap the definition of \abs* and \norm*, so that \abs
 % and \norm resizes the size of the brackets, and the 
 % starred version does not.
+
+% Variables for costomizing theorem enviroment
+% \newtheoremstyle{style name}{space above}{space below}{body font}{indent amount}{head font}{head punct}{after head space}{head spec}
+
+%\newtheoremstyle{break}
+%	{\topsep}{\topsep}%
+%	{\itshape}{}%
+%	{\bfseries}{}%
+%	{\newline}{}%
+
+\theoremstyle{break}
+\newtheorem{axiom}{Axiom}[chapter]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Corollary}[thm]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{conj}[thm]{Conjecture}
+%\theoremstyle{definition}
+%\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{plain}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+\newtheorem*{qtn}{Question}
+
+%\theoremclass{Proof}
+%\theoremstyle{break}
+%\newframedtheorem{proof}[Proof]{Proof}
 
 
 \begin{document}
@@ -154,7 +183,48 @@
 	\subsection*{Layout and Organization}
 	The book is split into parts each containing a field of study mathematics, or a topic large enough to justify giving it its own part. Each part contains chapters that focuses on a particular topic required to understand the field, with sections dedicated to describing a particular knowledge required for the topic. 
 	
-	As axioms, definitions, theorems, corollary, and proofs are integral and abundant to the study of mathematics, each will have a unique style.  
+	As axioms, definitions, theorems, corollary, and proofs are integral and abundant to the study of mathematics, each will have a unique style. Each environment and its styles are displayed as follows: 
+	
+	\begin{axiom}[Axiom name]{Example Axiom}
+		Axioms are the ``ground rules" of the set.
+	\end{axiom}
+
+%	\theoremstyle{break}
+	\begin{definition}{Example Definition}
+		The definition of a word.
+	\end{definition}
+%	
+	\begin{thm}[Theorem name or citation]{Example Theorem}
+		An important logical result from the axioms, with proof.
+	\end{thm}
+
+	\begin{conj}[Name of conjecture or citation]{Example Conjecture}
+		A hypothesis, without proof.
+	\end{conj}
+	
+	\begin{cor}{Example Corollary}
+		An implication as a result of a theorem.
+	\end{cor}
+
+	\begin{lem}{Example Lemma}
+		Small theorems that build up to a larger theorem. 
+	\end{lem}
+	
+	\begin{proof}
+		Logical deductions that results in a theorem.
+	\end{proof}
+
+	\begin{rmk}{Remark}
+		A comment by the author in the textbooks used.
+	\end{rmk}
+	
+	\begin{obs}{Example Observation}
+		A remark by me.
+	\end{obs}
+
+	\begin{qtn}{Example Question}
+		A question from me for a mystery to be answered later. 
+	\end{qtn}
 	
 	\section*{}
 	\tableofcontents
@@ -195,7 +265,8 @@
 		\item[1.] Brown and Churchill - Complex Variables and Applications \cite{Brown.J;Churchill.R-Complex-Variables-2014}
 	\end{itemize}
 
-	
+
+	\chapter{Metric Spaces}	
 	
 	\chapter{Conformal Mapping}
 	
