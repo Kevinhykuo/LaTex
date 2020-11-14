@@ -61,10 +61,10 @@
 %	spacebelow=6pt,
 %	headfont=\normalfont\bfseries,
 	notefont=\bfseries, notebraces={}{},
-	bodyfont=\normalfont,
+	bodyfont=\slshape,
 	postheadspace=1em,
 	headpunct=,
-	headformat={\NAME~\NUMBER~\NOTE \hfill \smallskip\linebreak},%
+	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
 	]{theoremstyle}
 	
 \declaretheoremstyle[
@@ -72,22 +72,33 @@
 	notefont=\bfseries,%
 	notebraces={}{},%
 	headpunct=,%
-	bodyfont=\normalfont,%
-	headformat={\NAME~\NUMBER~\NOTE \hfill \smallskip\linebreak},%
+	bodyfont=\itshape,%
+	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
+	%	preheadhook=\begin{leftbar},%
+	%	postfoothook=\end{leftbar},%
+	]{minorstyle}
+	
+\declaretheoremstyle[
+	headfont=\bfseries,%\color{Blue},%
+	notefont=\bfseries,%
+	notebraces={}{},%
+	headpunct=,%
+	bodyfont=\slshape,%
+	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
 %	preheadhook=\begin{leftbar},%
 %	postfoothook=\end{leftbar},%
 	]{defstyle}
 	
 
 \declaretheorem{axiom}[
-	numberwithin=chapter, style=theoremstyle
+	numberwithin=chapter, style=theoremstyle,
 	]
 \declaretheorem{theorem, conjecture}[
-	numberwithin=section, style=theoremstyle
+	numberwithin=section, style=theoremstyle, parent=axiom,
 	]
 \declaretheorem{lemma, proposition, corollary}[
-	style=plain,
-	numberwithin=theorem
+	style=minorstyle,
+	parent=theorem,
 	]
 
 \declaretheorem{definition}[sibling=section, style=defstyle]
@@ -268,9 +279,13 @@
 		Small theorems that build up to a larger theorem. 
 	\end{lemma}
 	
+	\begin{proposition}{Example Proposition}
+		Example proposition.
+	\end{proposition}
+	
 	\begin{proof}
 		Logical deductions that results in a theorem.
-		\textcolor{Grey}{Proofs I've written are in grey.}
+		\textcolor{Grey}{Proofs I've written will be in grey, which may or may not be correct.}
 	\end{proof}
 
 %	\theoremstyle{break}
