@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.23)  14 NOV 2020 02:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  17 NOV 2020 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Math Notes.tex"
 (./Math Notes.tex
-LaTeX2e <2020-10-01> patch level 1
-L3 programming layer <2020-10-05> xparse <2020-03-03>
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/bk12.clo
@@ -154,10 +154,10 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \ar@cellbox=\box50
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/10/06 3.50 The Babel package
+Package: babel 2020/10/27 3.51 The Babel package
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/10/06 3.50 Babel common definitions
+File: babel.def 2020/10/27 3.51 Babel common definitions
 \babel@savecnt=\count199
 \U@D=\dimen158
 \l@babelnohyphens=\language86
@@ -197,10 +197,10 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisrulewidth=\dimen171
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/09/12 v3.5b Customizing captions (AR)
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/09/17 v2.1b caption3 kernel (AR)
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen172
 \captionmargin@=\dimen173
 \captionwidth=\dimen174
@@ -1201,22 +1201,22 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 (./Math Notes.aux)
 \openout1 = `"Math Notes.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1287,16 +1287,16 @@ Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \symgns@font=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 131.
-Package gensymb Info: Math companion symbols declared on input line 131.
-LaTeX Info: Redefining \degree on input line 131.
-LaTeX Info: Redefining \celsius on input line 131.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 143.
+Package gensymb Info: Math companion symbols declared on input line 143.
+LaTeX Info: Redefining \degree on input line 143.
+LaTeX Info: Redefining \celsius on input line 143.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 131.
-LaTeX Info: Redefining \ohm on input line 131.
-Package gensymb Info: Using \textohm for \ohm on input line 131.
-Package gensymb Info: Using \textmu for \micro on input line 131.
-Package hyperref Info: Link coloring OFF on input line 131.
+erthousand on input line 143.
+LaTeX Info: Redefining \ohm on input line 143.
+Package gensymb Info: Using \textohm for \ohm on input line 143.
+Package gensymb Info: Using \textmu for \micro on input line 143.
+Package hyperref Info: Link coloring OFF on input line 143.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1310,9 +1310,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count355
 )
-LaTeX Info: Redefining \ref on input line 131.
-LaTeX Info: Redefining \pageref on input line 131.
-LaTeX Info: Redefining \nameref on input line 131.
+LaTeX Info: Redefining \ref on input line 143.
+LaTeX Info: Redefining \pageref on input line 143.
+LaTeX Info: Redefining \nameref on input line 143.
  (./Math Notes.out) (./Math Notes.out)
 \@outlinefile=\write4
 \openout4 = `"Math Notes.out"'.
@@ -1322,21 +1322,21 @@ LaTeX Info: Redefining \nameref on input line 131.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 131.
+ on input line 143.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 152
+LaTeX Font Info:    Trying to load font information for U+msa on input line 164
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 152
+LaTeX Font Info:    Trying to load font information for U+msb on input line 164
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 15
-2.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16
+4.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
@@ -1354,28 +1354,28 @@ This may cause the page layout to be inconsistent, however.
 
 [3]
 Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
-line 266.
+line 278.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 270.
+t line 282.
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on i
-nput line 274.
+nput line 286.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 278.
+put line 290.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 282.
+line 294.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 286.
+input line 298.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 296.
+nput line 308.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 301.
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 304.
-Package hyperref Info: bookmark level for unknown observation defaults to 0 on 
-input line 308.
+t line 313.
  [4]
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
+ line 316.
+Package hyperref Info: bookmark level for unknown observation defaults to 0 on 
+input line 320.
 Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
-ut line 312.
+ut line 324.
  [5] [6
 
 ] (./Math Notes.toc
@@ -1405,11 +1405,11 @@ Chapter 1.
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 328.
+(hyperref)                removing `math shift' on input line 340.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 328.
+(hyperref)                removing `math shift' on input line 340.
 
 [7
 
@@ -1419,11 +1419,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 330.
+(hyperref)                removing `math shift' on input line 342.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 330.
+(hyperref)                removing `math shift' on input line 342.
 
 [9] [10
 
@@ -1431,11 +1431,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 332.
+(hyperref)                removing `math shift' on input line 344.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 332.
+(hyperref)                removing `math shift' on input line 344.
 
 [11] [12
 
@@ -1447,11 +1447,11 @@ Chapter 5.
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 348.
 
 [15] [16
 
@@ -1459,11 +1459,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 338.
+(hyperref)                removing `math shift' on input line 350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 338.
+(hyperref)                removing `math shift' on input line 350.
 
 [17] [18
 
@@ -1471,11 +1471,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 8.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 340.
+(hyperref)                removing `math shift' on input line 352.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 340.
+(hyperref)                removing `math shift' on input line 352.
 
 [19] [20
 
@@ -1571,10 +1571,10 @@ Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
 (rerunfilecheck)             Checksum: 9CF9FB7039ED64F0D925695C54FB597B;2291.
  ) 
 Here is how much of TeX's memory you used:
- 37538 strings out of 479917
- 842278 string characters out of 5882726
- 1278601 words of memory out of 5000000
- 53249 multiletter control sequences out of 15000+600000
+ 37562 strings out of 479485
+ 842784 string characters out of 5871977
+ 1282824 words of memory out of 5000000
+ 53707 multiletter control sequences out of 15000+600000
  568426 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,109p,729b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1591,7 +1591,7 @@ ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texl
 ive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/
 texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (97 pages, 155140 bytes).
+Output written on "Math Notes.pdf" (97 pages, 155251 bytes).
 PDF statistics:
  740 PDF objects out of 1000 (max. 8388607)
  625 compressed objects within 7 object streams

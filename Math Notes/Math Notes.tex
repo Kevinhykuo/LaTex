@@ -55,13 +55,23 @@
 %	\MakeFramed {\advance\hsize-\width \FrameRestore}}%
 %{\endMakeFramed}
 
+\declaretheoremstyle[
+	spaceabove=6pt, 		
+	spacebelow=6pt,
+	%	headfont=\normalfont\bfseries,
+	notefont=\bfseries, notebraces={}{},
+	bodyfont=\slshape,
+	postheadspace=1em,
+	headpunct=,
+	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
+	]{axiomstyle}
 
 \declaretheoremstyle[
 	spaceabove=6pt, 		
 	spacebelow=6pt,
-%	headfont=\normalfont\bfseries,
+	headfont=\bfseries, %\color{blue},
 	notefont=\bfseries, notebraces={}{},
-	bodyfont=\slshape,
+	bodyfont=\slshape \color{DarkBlue},
 	postheadspace=1em,
 	headpunct=,
 	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
@@ -70,11 +80,11 @@
 \declaretheoremstyle[
 	spaceabove=6pt, 		
 	spacebelow=6pt,
-	headfont=\bfseries,%\color{Blue},%
+	headfont=\bfseries, %\color{Blue}%
 	notefont=\bfseries,%
 	notebraces={}{},%
 	headpunct=,%
-	bodyfont=\itshape,%
+	bodyfont=\itshape\color{DarkGreen},%
 	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
 	%	preheadhook=\begin{leftbar},%
 	%	postfoothook=\end{leftbar},%
@@ -87,7 +97,7 @@
 	notefont=\bfseries,%
 	notebraces={}{},%
 	headpunct=,%
-	bodyfont=\slshape,%
+	bodyfont=\slshape \color{OrangeRed},%
 	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
 %	preheadhook=\begin{leftbar},%
 %	postfoothook=\end{leftbar},%
@@ -95,11 +105,13 @@
 	
 
 \declaretheorem{axiom}[
-	numberwithin=chapter, style=theoremstyle,
+	numberwithin=chapter, style=axiomstyle,
 	]
+	
 \declaretheorem{theorem, conjecture}[
 	numberwithin=section, style=theoremstyle, parent=axiom,
 	]
+	
 \declaretheorem{lemma, proposition, corollary}[
 	style=minorstyle,
 	parent=theorem,
