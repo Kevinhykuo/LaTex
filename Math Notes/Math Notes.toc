@@ -14,7 +14,7 @@
 \contentsline {part}{IV\hspace {1em}Complex Analysis}{27}{part.4}%
 \contentsline {chapter}{\numberline {10}Basics}{31}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Complex Numbers}{31}{section.10.1}%
-\contentsline {section}{\numberline {10.3}Triangle Inequality}{32}{section.10.3}%
+\contentsline {section}{\numberline {10.2}Triangle Inequality}{32}{section.10.2}%
 \contentsline {chapter}{\numberline {11}Conformal Mapping}{35}{chapter.11}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{37}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{39}{part.6}%

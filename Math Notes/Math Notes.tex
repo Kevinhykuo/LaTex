@@ -105,19 +105,20 @@
 	
 
 \declaretheorem{axiom}[
-	numberwithin=chapter, style=axiomstyle,
+	numberwithin=chapter, style=axiomstyle, parent=chapter,
 	]
 	
 \declaretheorem{theorem, conjecture}[
-	numberwithin=section, style=theoremstyle, parent=axiom,
+	numberwithin=section, style=theoremstyle, parent=section,
 	]
 	
 \declaretheorem{lemma, proposition, corollary}[
 	style=minorstyle,
 	parent=theorem,
+%	numberwithin=section
 	]
 
-\declaretheorem{definition}[sibling=section, style=defstyle]
+\declaretheorem{definition}[parent=section, style=defstyle]
 
 \declaretheorem{remark, observation, question}[numbered=no]
 
@@ -480,10 +481,16 @@
 	
 	An important property of polynomials is observed when \cref{Triange Inequality - Complex} is applied to polynomial.
 	
-	Consider the polynomial $P(z)$ where $a_n \in \mathbb{C}$, $n \in \mathbb{N}$, and $a_0 \neq 0$.
-	$$P(z) = a_0 + a_1 z + a_2 z^2 + \ldots + a_n z^n$$
-	Then $\forall \abs{z} < R, R \in \mathbb{R}_{>0}$: 
-	$$\abs*{\frac{1}{P(z)} < \frac{2}{\abs{a_n} R^n}}$$
+	\begin{corollary}
+		Consider the polynomial $P(z)$ where $a_n \in \mathbb{C}$, $n \in \mathbb{N}$, $a_0 \neq 0$, and $z \in \mathbb{C}$.
+		$$P(z) = a_0 + a_1 z + a_2 z^2 + \ldots + a_n z^n$$
+		Then $\forall z, \exists R \in \mathbb{R}_{>0}, \abs{z} < R$ such that
+		$$\abs*{\frac{1}{P(z)} < \frac{2}{\abs{a_n} R^n}}$$
+	\end{corollary}
+	\begin{proof}
+		content...
+	\end{proof}
+	
 	
 	\chapter{Conformal Mapping}
 	
