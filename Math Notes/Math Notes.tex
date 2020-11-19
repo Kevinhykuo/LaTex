@@ -2,7 +2,7 @@
 \usepackage[letterpaper, portrait, margin=2.5cm]{geometry} %Set paper type, format, margin
 \usepackage[svgnames]{xcolor}
 \usepackage{%abstract, 
-	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym}
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, wrapfig}
 \usepackage{cleveref}
 
 \usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
@@ -358,15 +358,113 @@
 	\begin{itemize}
 		\item[1.] Kenneth A. Ross - Elementary Analysis (2nd Ed.) \cite{Ross.K-Elementary-Analysis-2013}
 	\end{itemize}
+
+	\chapter{Metric Spaces}	
 	
 	\part{Complex Analysis}
 	Books Used: 
 	\begin{itemize}
 		\item[1.] Brown and Churchill - Complex Variables and Applications \cite{Brown.J;Churchill.R-Complex-Variables-2014}
 	\end{itemize}
-
-
-	\chapter{Metric Spaces}	
+	
+	\chapter{Basics}
+	\section{Complex Numbers}
+	Complex numbers are elements of the complex field $(\mathbb{C})$, therefore, they obey all the properties of a field. 
+	
+	We will denote complex numbers by $z = x + iy$ with $x, y \in \mathbb{R}$, and refer the real part as $\Re(z) = \operatorname{Re}(z) = x$ and imaginary part as $\Im(z) = \operatorname{Im}(z) = y$. Complex numbers can also be defined as an ordered pair $z = (x, y)$ which is interpreted as points in the complex plane. $(x, 0)$ are points on the real axis while $(0 , y)$ are points in the imaginary axis. 
+	
+	\begin{center}
+		\begin{tikzpicture}
+		\begin{axis}[
+			small,
+			%			title={},
+			xlabel={$x$},
+			ylabel={$y$},
+			xmin=0, xmax=10,
+			ymin=0, ymax=10,
+			xtick={100},
+			ytick={100},
+			axis lines = left,
+%			legend pos=north west,
+%			ymajorgrids=true,
+%			grid style=dashed,
+			]
+			
+			\addplot[
+			only marks,
+			nodes near coords,
+			point meta = explicit symbolic, 
+			color=Black,
+			mark=*,
+			]
+			coordinates {
+				(7, 5) [$z = x + iy$]
+			};
+%			\legend{$z = x + iy$}
+		\end{axis}
+	\end{tikzpicture}
+	\end{center}
+	We add and multiply complex numbers in the usual way: 
+	\begin{align*}
+		z_1 + z_2 &= (x_1 + iy_1) + (x_2 + iy_2) & z_1 z_2 &= (x_1 + iy_1) (x_2 + iy_2) \\
+			&= (x_1 + x_2) + i(y_1 + y_2) & &=(x_1 x_2 - y_1 y_2) + i(x_1 y_2 + x_2 y_1)
+	\end{align*}
+	
+	For all $z \in \mathbb{C}\setminus\{0\}$, there is an unique additive inverse $(-z)$ and unique multiplicative inverse $(z^{-1})$ such that 
+	\begin{align*}
+		&z + (-z) = 0  & &zz^{-1} = 1 \\
+		&\implies -z = -x - iy & &\implies (x_1 x_2 - y_1 y_2) = 1 \land (x_1 y_2 + x_2 y_1) = 0 \\
+		& & &\implies z^{-1} = \frac{x_1}{x_1^2 + y_1^2} - i \frac{y_1}{x_1^2 + y_1^2}
+	\end{align*}
+	The existence and uniqueness of the inverses can be easily proven. 
+	
+	The addition of complex numbers may also be interpreted as akin to vector addition. 
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				small,
+				%			title={},
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=10,
+				xtick={100},
+				ytick={100},
+				axis lines = left,
+				%			legend pos=north west,
+				%			ymajorgrids=true,
+				%			grid style=dashed,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(7, 5) [$z_1$]
+					(1, 4) [$z_2$]
+					(8, 9) [$z_1 + z_2$]
+				};
+				%			\legend{$z = x + iy$}
+				\draw[line width=1pt,Grey,-stealth](0,0)--(70,50);
+				\draw[line width=1pt,Grey,-stealth](0,0)--(10,40);
+				\draw[line width=1pt,Grey,-stealth](70,50)--(80,90);
+				\draw[line width=1pt,black,-stealth](0,0)--(80,90);
+			\end{axis}
+	\end{tikzpicture}
+	\end{center}
+	Likewise, naturally extends to the definition of a modulus of a complex number. 
+	\begin{definition}[Modulus]
+		The absolute value of a real number:
+		$\abs{z} = \sqrt{x^2 + y^2}$
+	\end{definition}
+	It is obvious why the definition is not $\abs{z} = \sqrt{x^2 + (iy)^2}$ as problems arise when $x = y$. The modulus is the distance of $z$ from $(0, 0)$.
+	
+	\section{Triangle Inequality}
+	It is not analysis without a section dedicated to the triangle inequality.
 	
 	\chapter{Conformal Mapping}
 	

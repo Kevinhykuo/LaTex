@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  17 NOV 2020 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  18 NOV 2020 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1126,6 +1126,14 @@ LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 LaTeX Font Info:    Redeclaring math symbol \invneg on input line 242.
 )
+(/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen340
+\WF@size=\dimen341
+\c@WF@wrappedlines=\count340
+\WF@box=\box123
+\WF@everypar=\toks47
+Package: wrapfig 2003/01/31  v 3.6
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -1142,27 +1150,27 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks47
-\thm@bodyfont=\toks48
-\thm@headfont=\toks49
-\thm@notefont=\toks50
-\thm@headpunct=\toks51
+\thm@style=\toks48
+\thm@bodyfont=\toks49
+\thm@headfont=\toks50
+\thm@notefont=\toks51
+\thm@headpunct=\toks52
 \thm@preskip=\skip103
 \thm@postskip=\skip104
 \thm@headsep=\skip105
-\dth@everypar=\toks52
+\dth@everypar=\toks53
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2020/08/01 v0.72
-\thmt@toks=\toks53
-\c@thmt@dummyctr=\count340
+\thmt@toks=\toks54
+\c@thmt@dummyctr=\count341
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2020/08/01 v0.72
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2020/08/01 v0.72
-\@parsespec=\toks54
+\@parsespec=\toks55
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2020/08/01 v0.72
@@ -1183,20 +1191,20 @@ Package: thm-restate 2020/08/01 v0.72
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2020/08/01 v0.72
-\thmt@style@headstyle=\toks55
+\thmt@style@headstyle=\toks56
 ))
-\c@axiom=\count341
-\c@theorem=\count342
-\c@conjecture=\count343
-\c@lemma=\count344
-\c@proposition=\count345
-\c@corollary=\count346
-\c@example=\count347
+\c@axiom=\count342
+\c@theorem=\count343
+\c@conjecture=\count344
+\c@lemma=\count345
+\c@proposition=\count346
+\c@corollary=\count347
+\c@example=\count348
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count348
-\l__pdf_internal_box=\box123
+\l__kernel_color_stack_int=\count349
+\l__pdf_internal_box=\box124
 )
 (./Math Notes.aux)
 \openout1 = `"Math Notes.aux"'.
@@ -1254,17 +1262,17 @@ LaTeX Font Info:    ... okay on input line 143.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count349
-\scratchdimen=\dimen340
-\scratchbox=\box124
-\nofMPsegments=\count350
-\nofMParguments=\count351
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count352
-\MPscratchDim=\dimen341
-\MPnumerator=\count353
-\makeMPintoPDFobject=\count354
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count350
+\scratchdimen=\dimen342
+\scratchbox=\box125
+\nofMPsegments=\count351
+\nofMParguments=\count352
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count353
+\MPscratchDim=\dimen343
+\MPnumerator=\count354
+\makeMPintoPDFobject=\count355
+\everyMPtoPDFconversion=\toks58
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1284,6 +1292,7 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \symgns@font=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
@@ -1308,7 +1317,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count355
+\c@section@level=\count356
 )
 LaTeX Info: Redefining \ref on input line 143.
 LaTeX Info: Redefining \pageref on input line 143.
@@ -1380,18 +1389,11 @@ ut line 324.
 
 ] (./Math Notes.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
-
-Underfull \vbox (badness 1596) has occurred while \output is active []
-
- [7]
-Underfull \vbox (badness 1286) has occurred while \output is active []
-
- [8])
+ [7] [8])
 \tf@toc=\write5
 \openout5 = `"Math Notes.toc"'.
 
-
-[9] [10
+ [9] [10
 
 ] [1
 
@@ -1481,43 +1483,47 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [21] [22] [23] [24
 
-] [25] [26] [27] [28
-
 ]
 Chapter 9.
-[29] [30
+[25] [26
+
+] [27] [28] [29] [30
 
 ]
 Chapter 10.
-[31] [32
 
-] [33] [34] [35
+Underfull \vbox (badness 1173) has occurred while \output is active []
 
-] [36] [37
-
-] [38] [39] [40
-
-] [41] [42] [43
-
-] [44]
+ [31]
+[32]
 Chapter 11.
-[45
+[33
 
-] [46
+] [34
 
-] [47] [48] [49
+] [35] [36] [37
 
-] [50] [51
+] [38] [39
 
-] [52]
+] [40] [41] [42
+
+] [43] [44] [45
+
+] [46]
 Chapter 12.
-[53
+[47
 
-] [54
+] [48
 
-]
+] [49] [50] [51
+
+] [52] [53
+
+] [54]
 Chapter 13.
-[55] [56
+[55
+
+] [56
 
 ]
 Chapter 14.
@@ -1539,62 +1545,77 @@ Chapter 17.
 Chapter 18.
 [65] [66
 
-] [67] [68] [69] [70
+]
+Chapter 19.
+[67] [68
 
-] [71] [72] [73
+] [69] [70] [71] [72
 
-] [74] [75
+] [73] [74] [75
 
 ] [76] [77
 
 ] [78] [79
 
+] [80] [81
+
 ]
-[80]
-Chapter 19.
-[81
+[82]
+Chapter 20.
+[83
 
-] [82
+] [84
 
-] [83
+] [85
 
-] [84] [85
+] [86] [87
 
-] [86]
+] [88]
 
-(./Math Notes.bbl) [87
+(./Math Notes.bbl) [89
 
 ] (./Math Notes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
-Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
-(rerunfilecheck)             Checksum: 9CF9FB7039ED64F0D925695C54FB597B;2291.
+
+Package rerunfilecheck Warning: File `"Math Notes".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Math Notes".out':
+(rerunfilecheck)             Before: 225F39C34B303A8C31EF8E53FE57E3F0;2404
+(rerunfilecheck)             After:  7C2647F40EF4D50F87B64654E3788EBA;2472.
  ) 
 Here is how much of TeX's memory you used:
- 37562 strings out of 479485
- 842784 string characters out of 5871977
- 1282824 words of memory out of 5000000
- 53707 multiletter control sequences out of 15000+600000
- 568426 words of font info for 145 fonts, out of 8000000 for 9000
+ 38088 strings out of 479485
+ 856669 string characters out of 5871977
+ 1284427 words of memory out of 5000000
+ 54221 multiletter control sequences out of 15000+600000
+ 572142 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,109p,729b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/u
-sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/l
-ocal/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (97 pages, 155251 bytes).
+ 99i,11n,109p,729b,2175s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/
+usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/
+local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/l
+ocal/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/local
+/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}</usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "Math Notes.pdf" (99 pages, 197200 bytes).
 PDF statistics:
- 740 PDF objects out of 1000 (max. 8388607)
- 625 compressed objects within 7 object streams
- 164 named destinations out of 1000 (max. 500000)
- 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 781 PDF objects out of 1000 (max. 8388607)
+ 660 compressed objects within 7 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 365 words of extra memory for PDF output out of 10000 (max. 10000000)
 
