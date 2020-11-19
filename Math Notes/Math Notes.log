@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  18 NOV 2020 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  18 NOV 2020 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1577,20 +1577,14 @@ Chapter 20.
 ] (./Math Notes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
-
-Package rerunfilecheck Warning: File `"Math Notes".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Math Notes".out':
-(rerunfilecheck)             Before: 225F39C34B303A8C31EF8E53FE57E3F0;2404
-(rerunfilecheck)             After:  7C2647F40EF4D50F87B64654E3788EBA;2472.
+Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
+(rerunfilecheck)             Checksum: 7C2647F40EF4D50F87B64654E3788EBA;2472.
  ) 
 Here is how much of TeX's memory you used:
- 38088 strings out of 479485
- 856669 string characters out of 5871977
+ 38092 strings out of 479485
+ 856753 string characters out of 5871977
  1284427 words of memory out of 5000000
- 54221 multiletter control sequences out of 15000+600000
+ 54223 multiletter control sequences out of 15000+600000
  572142 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,109p,729b,2175s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1612,10 +1606,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (99 pages, 197200 bytes).
+Output written on "Math Notes.pdf" (99 pages, 197879 bytes).
 PDF statistics:
- 781 PDF objects out of 1000 (max. 8388607)
- 660 compressed objects within 7 object streams
- 171 named destinations out of 1000 (max. 500000)
- 365 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 787 PDF objects out of 1000 (max. 8388607)
+ 666 compressed objects within 7 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 373 words of extra memory for PDF output out of 10000 (max. 10000000)
 
