@@ -140,6 +140,21 @@
 }
 \makeatother
 
+% Letters after part
+\makeatletter
+\renewcommand{\@endpart}{\vfil\newpage}
+\makeatother
+\newenvironment{partintro}
+{\vspace*{\fill}
+	\section*{\centering Books used in part \thepart}
+	\begin{quotation}}
+	{\end{quotation}\vspace*{\fill}\newpage}
+\newcommand{\nopartintro}{%
+	\vspace*{\fill}
+	\thispagestyle{empty}
+	\newpage
+}
+
 
 \begin{document}
 	\title{The Book of Math (Notes)}
@@ -337,6 +352,9 @@
 	
 	
 	\part{Numbers}
+	\begin{partintro}
+		content...
+	\end{partintro}
 	
 	\chapter{Natural $\mathbb{N}$}
 	
@@ -355,18 +373,20 @@
 
 	
 	\part{Real Analysis}
-	Books Used: 
-	\begin{itemize}
-		\item[1.] Kenneth A. Ross - Elementary Analysis (2nd Ed.) \cite{Ross.K-Elementary-Analysis-2013}
-	\end{itemize}
+	\begin{partintro}
+		\begin{itemize}
+			\item[1.] Kenneth A. Ross - Elementary Analysis (2nd Ed.) \cite{Ross.K-Elementary-Analysis-2013}
+		\end{itemize}
+	\end{partintro}
 
 	\chapter{Metric Spaces}	
 	
 	\part{Complex Analysis}
-	Books Used: 
-	\begin{itemize}
-		\item[1.] Brown and Churchill - Complex Variables and Applications \cite{Brown.J;Churchill.R-Complex-Variables-2014}
-	\end{itemize}
+	\begin{partintro}
+		\begin{itemize}
+			\item[1.] Brown and Churchill - Complex Variables and Applications \cite{Brown.J;Churchill.R-Complex-Variables-2014}
+		\end{itemize}
+	\end{partintro}
 	
 	\chapter{Basics}
 	\section{Complex Numbers}
@@ -488,7 +508,7 @@
 		$$\abs*{\frac{1}{P(z)}} < \abs*{\frac{2}{\abs{a_n} R^n}}$$
 	\end{corollary}
 	\begin{proof}
-		content...
+		content... 
 	\end{proof}
 	
 	
