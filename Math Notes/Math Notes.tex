@@ -530,11 +530,48 @@
 	This tells us that if $z$ is a solution to a polynomial $P(z)$, then the reciprocal of the polynomial $1/P(z)$ is bounded above by $R = \abs{z}$. (i.e. It is bounded by a circle of radius $\abs{z}$.)
 	
 	\section{Polar and Exponential Form}
-	\begin{definition}[Polar Form of $z$]
-		Consider $z \in \mathbb{C}$. Let $r = \abs{z}$, and $\theta$ be the angle between $z$ and the real axis in radians. 
-		The angle $\theta$ is undefined at $z=0$, so for $\forall z \in \mathbb{C}, z \neq 0$:
-		$$z = x + iy = r(\cos(\theta) + i \sin(\theta))$$
+	\begin{definition}[Argument of $z$]
+		Consider any $z \in \mathbb{C}$ where $z \neq 0$.
+		Let $\theta$ be the angle in radians between $z$ and the real axis .
+		Then $\forall n \in \mathbb{N}$, $0 \leq \theta < 2\pi$, the argument of $z$:
+		$$ \operatorname{arg}(z) = \theta + 2 n \pi$$
+		\label{Argument - Complex}
 	\end{definition}
+	
+	We know $\forall n \in \mathbb{N}$, $\theta + 2 \pi n = \theta$. This leads us to the definition of the principal argument of $z$.
+	\begin{definition}[Principal Argument of $z$]
+		Consider any $z \in \mathbb{C}$ where $z \neq 0$.
+		Let $\theta$ be the angle in radians between $z$ and the real axis.
+		Then for $0 \leq \theta < 2\pi$, the principal argument of $z$:
+		$$\operatorname{Arg}(z) = \theta$$
+		\label{Principal Argument - Complex}
+	\end{definition}
+	It is clear that $\operatorname{arg}(z) = \operatorname{Arg}(z) + 2n \pi$.
+	\begin{definition}[Polar Form of $z$]
+		Consider $z \in \mathbb{C}$. Let $r = \abs{z}$, and $\theta = \operatorname{arg}(z)$. 
+		Then $\forall z \in \mathbb{C}, z \neq 0$:
+		$$z = x + iy = r(\cos(\theta) + i \sin(\theta))$$
+		\label{Polar Form of z - Complex}
+	\end{definition}
+
+	Notice that all three definitions require that $z \neq 0$ as $\theta$ is undefined at $z = 0$.
+	
+	\begin{theorem}[Euler's Formula]
+		$$e^{i \theta} = \cos(\theta) + i \sin(\theta)$$
+		\label{Euler's Formula - Complex}
+	\end{theorem}
+	Combining \cref{Polar Form of z - Complex} with \cref{Euler's Formula - Complex}, we obtain the Exponential Form of $z$: 
+	
+	\begin{definition}[Exponential Form of $z$]
+	Consider any $z \in \mathbb{C}$, and let $r = \abs{z}$ and $\theta = \operatorname{arg}(z)$. Then the exponential form of $z$:
+		$$z = r e^{i \theta}$$
+	\end{definition}
+	
+	
+	\subsection{Properties of Polar Form}
+	
+	
+	\subsection{Properties of Exponential Form}
 	
 	\section{Complex Conjugates}
 	\begin{definition}[Complex Conjugate]
