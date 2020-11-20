@@ -4,7 +4,7 @@
 \usepackage{%abstract, 
 	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, wrapfig}
 \usepackage{cleveref}
-
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings,backgrounds,patterns}
 \usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
 \usepackage{thmtools}
 %\usepackage[standard]{ntheorem}
@@ -400,8 +400,8 @@
 		\begin{axis}[
 			small,
 			%			title={},
-			xlabel={$x$},
-			ylabel={$y$},
+			xlabel={$\Re$},
+			ylabel={$\Im$},
 			xmin=0, xmax=10,
 			ymin=0, ymax=10,
 			xtick={100},
@@ -446,8 +446,8 @@
 			\begin{axis}[
 				small,
 				%			title={},
-				xlabel={$x$},
-				ylabel={$y$},
+				xlabel={$\Re$},
+				ylabel={$\Im$},
 				xmin=0, xmax=10,
 				ymin=0, ymax=10,
 				xtick={100},
@@ -567,6 +567,42 @@
 		$$z = r e^{i \theta}$$
 		\label{Exponential Form of z}
 	\end{definition}
+
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				small,
+				%			title={},
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=10,
+				xtick={100},
+				ytick={100},
+				axis lines = left,
+				%			legend pos=north west,
+				%			ymajorgrids=true,
+				%			grid style=dashed,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(7, 5) [$z = x + iy = re^{i\theta}$]
+				};
+				%			\legend{$z = x + iy$}
+				\draw[thick]  (0,0) to ["$r=\abs{z}$"] (70,50);
+				% angle
+				\draw[draw=blue] (0,0) ++(35:50) arc (35:0:50)
+				node[midway,above right,inner sep=2pt,font={\footnotesize}]{$\theta$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
 	
 	
 	\subsection{Properties of Polar Form}
@@ -585,8 +621,8 @@
 			\begin{axis}[
 				small,
 				%			title={},
-				xlabel={$x$},
-				ylabel={$y$},
+				xlabel={$\Re$},
+				ylabel={$\Im$},
 				xmin=0, xmax=10,
 				ymin=-10, ymax=10,
 				xtick={100},

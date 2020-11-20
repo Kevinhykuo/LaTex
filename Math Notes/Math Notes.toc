@@ -16,9 +16,9 @@
 \contentsline {section}{\numberline {10.1}Complex Numbers}{27}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Triangle Inequality}{28}{section.10.2}%
 \contentsline {section}{\numberline {10.3}Polar and Exponential Form}{29}{section.10.3}%
-\contentsline {subsection}{\numberline {10.3.1}Properties of Polar Form}{30}{subsection.10.3.1}%
-\contentsline {subsection}{\numberline {10.3.2}Properties of Exponential Form}{30}{subsection.10.3.2}%
-\contentsline {section}{\numberline {10.4}Complex Conjugates}{30}{section.10.4}%
+\contentsline {subsection}{\numberline {10.3.1}Properties of Polar Form}{31}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Properties of Exponential Form}{31}{subsection.10.3.2}%
+\contentsline {section}{\numberline {10.4}Complex Conjugates}{31}{section.10.4}%
 \contentsline {chapter}{\numberline {11}Conformal Mapping}{33}{chapter.11}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{35}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{37}{part.6}%
