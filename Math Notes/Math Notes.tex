@@ -146,7 +146,7 @@
 \makeatother
 \newenvironment{partintro}
 {\vspace*{\fill}
-	\section*{\centering Books used in part \thepart}
+	\section*{\centering Resources used in part \thepart}
 	\begin{quotation}}
 	{\end{quotation}\vspace*{\fill}\newpage}
 \newcommand{\nopartintro}{%
@@ -505,12 +505,80 @@
 		Consider the polynomial $P(z)$ where $a_n \in \mathbb{C}$, $n \in \mathbb{N}$, $a_0 \neq 0$, and $z \in \mathbb{C}$.
 		$$P(z) = a_0 + a_1 z + a_2 z^2 + \ldots + a_n z^n$$
 		Then $\forall z, \exists R \in \mathbb{R}_{>0}, \abs{z} < R$ such that
-		$$\abs*{\frac{1}{P(z)}} < \abs*{\frac{2}{\abs{a_n} R^n}}$$
+		$$\abs*{\frac{1}{P(z)}} < \frac{2}{\abs{a_n} R^n}$$
+		\label{Complex Poly Reciprocal Bounded}
 	\end{corollary}
 	\begin{proof}
-		content... 
+		Consider 
+		\begin{align*}
+			w &= \frac{P(z)}{z_n} - a_n = \frac{a_0}{z^n} + \frac{a_1}{z^{n-1}} + \ldots + \frac{a_{n-1}}{z} 
+				& z \neq 0 \\
+			&\implies wz^n = a_0 + a_1 z + \ldots + a_{n-1}z^{n-1} \\
+			&\implies \abs{w}\abs{z}^n \leq \abs{a_0} + \abs{a_1}\abs{z} + \ldots + \abs{a_{n-1}}\abs{z}^{n-1} \\
+			&\implies \abs{w} \leq \frac{\abs{a_0}}{\abs{z}^n} + \frac{\abs{a_1}}{\abs{z}^{n-1}} + \ldots + \frac{\abs{a_{n-1}}}{\abs{z}} 
+				& \\
+			&\implies \abs{w} < n\frac{\abs{a_n}}{2n} = \frac{\abs{a_n}}{2} 
+				& \exists \text{ sufficiently large } R < \abs{z}  \text{ s.t.}\\
+			& 	& \forall m, \ 0 \leq m \leq n-1, \ \frac{\abs{a_m}}{\abs{z}^{n-m}} < \frac{\abs{a_n}}{2n} \\
+			&\implies \abs{a_n + w} \geq \abs{\abs{a_n} - \abs{w}} > \frac{\abs{a_n}}{2}
+				& R < \abs{z} \\
+			&\implies \abs{P_n(z)} = \abs{a_n + w} \abs{z}^n > \frac{\abs{a_n}}{2}\abs{z}^n > \frac{\abs{a_n}}{2} R^n 
+				& R < \abs{z} \\
+			&\implies \abs*{\frac{1}{P(z)}} < \frac{2}{\abs{a_n} R^n}
+		\end{align*}
 	\end{proof}
+	This tells us that if $z$ is a solution to a polynomial $P(z)$, then the reciprocal of the polynomial $1/P(z)$ is bounded above by $R = \abs{z}$. (i.e. It is bounded by a circle of radius $\abs{z}$.)
 	
+	\section{Polar and Exponential Form}
+	\begin{definition}[Polar Form of $z$]
+		Consider $z \in \mathbb{C}$. Let $r = \abs{z}$, and $\theta$ be the angle between $z$ and the real axis in radians. 
+		The angle $\theta$ is undefined at $z=0$, so for $\forall z \in \mathbb{C}, z \neq 0$:
+		$$z = x + iy = r(\cos(\theta) + i \sin(\theta))$$
+	\end{definition}
+	
+	\section{Complex Conjugates}
+	\begin{definition}[Complex Conjugate]
+		The complex conjugate of $z \in \mathbb{C}$ is denoted $\bar{z}$.
+		$$\bar{z} = x - iy$$
+	\end{definition}
+	Graphically, it is the reflection of $z$ across the real axis.
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				small,
+				%			title={},
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=0, xmax=10,
+				ymin=-10, ymax=10,
+				xtick={100},
+				ytick={100},
+				axis lines = middle,
+				%			legend pos=north west,
+				%			ymajorgrids=true,
+				%			grid style=dashed,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(7, 5) [$z = x + iy$]
+					(7, -5) [$\bar{z} = x - iy$]
+				};
+				%			\legend{$z = x + iy$}
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	It is then easy to see
+	\begin{align*}
+		\operatorname{Re}(z) &= \frac{z + \bar{z}}{2} & \operatorname{Im}(z) &= \frac{z - \bar{z}}{2i} & \abs{z}^2 = z \bar{z}
+	\end{align*}
+
 	
 	\chapter{Conformal Mapping}
 	

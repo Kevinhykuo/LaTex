@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  19 NOV 2020 01:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  19 NOV 2020 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1492,11 +1492,11 @@ Chapter 9.
 Chapter 10.
 [27
 
-] [28] [29] [30
-
-]
+] [28] [29] [30]
 Chapter 11.
-[31] [32
+[31
+
+] [32
 
 ] [33] [34
 
@@ -1573,14 +1573,20 @@ Chapter 20.
 ]) [83] (./Math Notes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
-Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
-(rerunfilecheck)             Checksum: 770E6B603910F32FAA2330425FE45321;2472.
+
+Package rerunfilecheck Warning: File `"Math Notes".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Math Notes".out':
+(rerunfilecheck)             Before: 910F2D262A24A2CA6A5F44B43FB407D5;2614
+(rerunfilecheck)             After:  82426D084D908E6377A801D8E29CDF7A;2614.
  ) 
 Here is how much of TeX's memory you used:
- 38094 strings out of 479485
- 856856 string characters out of 5871977
- 1284426 words of memory out of 5000000
- 54229 multiletter control sequences out of 15000+600000
+ 38129 strings out of 479485
+ 857747 string characters out of 5871977
+ 1284427 words of memory out of 5000000
+ 54258 multiletter control sequences out of 15000+600000
  572142 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,109p,729b,2175s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1603,10 +1609,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020
 /texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (93 pages, 207983 bytes).
+Output written on "Math Notes.pdf" (93 pages, 214285 bytes).
 PDF statistics:
- 771 PDF objects out of 1000 (max. 8388607)
- 655 compressed objects within 7 object streams
- 169 named destinations out of 1000 (max. 500000)
- 373 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 786 PDF objects out of 1000 (max. 8388607)
+ 670 compressed objects within 7 object streams
+ 175 named destinations out of 1000 (max. 500000)
+ 389 words of extra memory for PDF output out of 10000 (max. 10000000)
 

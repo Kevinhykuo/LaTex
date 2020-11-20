@@ -15,6 +15,8 @@
 \contentsline {chapter}{\numberline {10}Basics}{27}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Complex Numbers}{27}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Triangle Inequality}{28}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Polar and Exponential Form}{29}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Complex Conjugates}{30}{section.10.4}%
 \contentsline {chapter}{\numberline {11}Conformal Mapping}{31}{chapter.11}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{33}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{35}{part.6}%
