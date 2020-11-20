@@ -565,6 +565,7 @@
 	\begin{definition}[Exponential Form of $z$]
 	Consider any $z \in \mathbb{C}$, and let $r = \abs{z}$ and $\theta = \operatorname{arg}(z)$. Then the exponential form of $z$:
 		$$z = r e^{i \theta}$$
+		\label{Exponential Form of z}
 	\end{definition}
 	
 	
@@ -615,7 +616,11 @@
 	\begin{align*}
 		\operatorname{Re}(z) &= \frac{z + \bar{z}}{2} & \operatorname{Im}(z) &= \frac{z - \bar{z}}{2i} & \abs{z}^2 = z \bar{z}
 	\end{align*}
-
+	As $\operatorname{Re}(z) = x = r \cos(\theta)$ and $\operatorname{Im}(z) = y = r \sin(\theta)$ and using \cref{Exponential Form of z}, we can obtain the complex forms of sine and cosine: 
+	\begin{align*}
+		\cos(\theta) &= \frac{e^{i \theta} + e^{-i \theta}}{2} 
+			&\sin(\theta) &= \frac{e^{i \theta} - e^{-i \theta}}{2i}
+	\end{align*}
 	
 	\chapter{Conformal Mapping}
 	
