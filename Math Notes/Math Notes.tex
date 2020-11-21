@@ -714,10 +714,8 @@
 			\centering
 			\begin{tikzpicture}[remember picture]
 				\begin{axis}[
-%					small,
 					width=8.9cm,
 					unit vector ratio=1 1 1,
-					%			title={},
 					xlabel={$\Re$},
 					ylabel={$\Im$},
 					xmin=-30, xmax=30,
@@ -725,9 +723,6 @@
 					xtick={100},
 					ytick={100},
 					axis lines = middle,
-					%			legend pos=north west,
-					%			ymajorgrids=true,
-					%			grid style=dashed,
 					]
 					
 					\addplot[
@@ -740,7 +735,6 @@
 					coordinates {
 						(-27.7128, 16) [$z = 32e^{i(5/6)\pi}$]
 					};
-					%			\legend{$z = x + iy$}
 				\end{axis}
 				\path (current bounding box.north east) -- 
 				(current bounding box.south east) coordinate[midway] (2BL);
@@ -751,7 +745,6 @@
 %					small,
 					width=8.9cm,
 					unit vector ratio=1 1 1,
-					%			title={},
 					xlabel={$\Re$},
 					ylabel={$\Im$},
 					xmin=-3.25, xmax=3.25,
@@ -760,9 +753,6 @@
 					ytick={100},
 					axis lines = middle,
 					axis line style = Black,
-					%			legend pos=north west,
-					%			ymajorgrids=true,
-					%			grid style=dashed,
 					]
 					\addplot[
 					only marks,
@@ -784,7 +774,6 @@
 					\draw[line width=1pt,LightGrey](axis cs:0,0)--(axis cs:-1.9890, 0.20906);
 					\draw[line width=1pt,LightGrey](axis cs:0,0)--(axis cs:-0.8135, -1.8271);
 					\draw[line width=1pt,LightGrey](axis cs:0,0)--(axis cs:1.4863, -1.3383);
-					%			\legend{$z = x + iy$}
 				\end{axis}
 				\path (current bounding box.north west) -- 
 				(current bounding box.south west) coordinate[midway] (2BR);
@@ -794,6 +783,8 @@
 			($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
 			node[midway,above,text width=2cm]{$f(z) = z^\frac{1}{5}$};} 
 	\end{example} 
+	
+	
 	
 	\section{Complex Conjugate} \label{Complex Conjugate Section - Complex}
 	\begin{definition}[Complex Conjugate]
@@ -806,7 +797,6 @@
 		\begin{tikzpicture}
 			\begin{axis}[
 				small,
-				%			title={},
 				xlabel={$\Re$},
 				ylabel={$\Im$},
 				xmin=0, xmax=10,
@@ -814,11 +804,7 @@
 				xtick={100},
 				ytick={100},
 				axis lines = middle,
-				%			legend pos=north west,
-				%			ymajorgrids=true,
-				%			grid style=dashed,
 				]
-				
 				\addplot[
 				only marks,
 				nodes near coords,
@@ -830,7 +816,6 @@
 					(7, 5) [$z = x + iy$]
 					(7, -5) [$\bar{z} = x - iy$]
 				};
-				%			\legend{$z = x + iy$}
 			\end{axis}
 		\end{tikzpicture}
 	\end{center}
