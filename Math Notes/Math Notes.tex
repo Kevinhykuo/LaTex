@@ -603,14 +603,80 @@
 		\end{tikzpicture}
 	\end{center}
 	
-	\subsection{Properties of Polar and Exponential Form}
-	\label{Properties of Polar and Exponential Form Subsection - Complex}
-	
-	
-	
-	
-%	\subsection{Properties of Exponential Form}
-	
+	\subsection{Properties of Polar and Exponential Form} \label{Properties of Polar and Exponential Form Subsection - Complex}
+	It would be easier to work with the exponential form of $z$ then convert it to the polar form later. The exponential form of a complex number is part of the exponential family of functions, thus possess all the properties of the family. Consider any complex number $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$.
+	\begin{align*}
+		z_1  z_2 &= r_1 r_2 e^{i(\theta_1 + \theta_2)} 
+			& z^n &= r^n e^{i n \theta} \qquad \forall n \in \mathbb{Z}
+	\end{align*}
+	A special case arrives for integer exponential of $z$ on the unit circle.
+	\begin{theorem}[de Moivre's Formula]
+		Consider any $z = e^{i \theta} \in \mathbb{C}$ on the unit circle, and let $n \in \mathbb{Z}$.
+		\begin{align*}
+			\forall z\in \mathbb{C} \ \forall n \in \mathbb{Z}
+			\left[\abs{z} = 1 \implies (\cos(\theta) + i\sin(\theta))^n = \cos(n \theta) + i\sin(n \theta)\right]
+		\end{align*}
+		\label{de Moivre's Formula Theorem - Complex}
+	\end{theorem}
+	\begin{proof}
+		Consider $z = e^{i \theta}$ and let $n \in \mathbb{Z}$. 
+		\begin{align*}
+			z^n = (e^{i \theta})^n = e^{in\theta} = \cos(n\theta) + i\sin(n\theta)
+		\end{align*}
+	\end{proof}
+
+	The proof hints that \cref{de Moivre's Formula Theorem - Complex} can be generalized to $\forall n \in \mathbb{R}$, which we will see shortly in \cref{Roots of $z$ Section - Complex}. Using \cref{de Moivre's Formula Theorem - Complex}, we can obtain the double angle identities.
+	\begin{corollary}[Double Angle Identities]
+		\begin{align*}
+			\cos(2 \theta) &= \cos^2(\theta) - \sin^2(\theta) 
+				& \sin(2\theta) &= 2\sin(\theta)\cos(\theta)
+		\end{align*}
+	\end{corollary}
+	\begin{proof}
+		Consider any $z$ on the unit circle, that is $z=e^{i\theta}$.
+		\begin{align*}
+			&(\cos(\theta) + i \sin(\theta))^2 = \cos(2\theta) + i \sin(2\theta)
+				&\text{\cref{de Moivre's Formula Theorem - Complex}} \\
+			&\implies \cos^2(\theta) - \sin^2(\theta) + i2\sin(\theta)\cos(\theta) = cos(2\theta) + i\sin(2\theta) 
+		\end{align*}
+		Equating the real and imaginary parts yield the desired results. 
+	\end{proof}
+
+	\subsection{Properties of Arguments} \label{Properties of Argumetns Subsection - Complex}
+	Recall from \cref{Properties of Polar and Exponential Form Subsection - Complex}: 
+	\begin{align*}
+		z_1  z_2 &= r_1 r_2 e^{i(\theta_1 + \theta_2)} 
+		& z^n &= r^n e^{i n \theta} \qquad \forall n \in \mathbb{Z}
+	\end{align*}
+	The arguments for the arguments of products of any $z_1, z_2 \in \mathbb{C}$ follows immediately from the properties of the exponential.
+	\begin{corollary}[Arguments of Products]
+		\begin{align*}
+			\arg(z_1 z_2) &= \arg(z_1) + \arg(z_2)
+				& \operatorname{Arg}(z_1 z_2) = \operatorname{Arg}(z_1) + \operatorname{Arg}(z_2) \\
+			\arg(z^n) &= n\arg(z)  
+				& \operatorname{Arg}(z^n) = n\operatorname{Arg}(z)
+		\end{align*}
+		\label{Argumetns of Products Corollary - Complex}
+	\end{corollary}
+	\begin{proof}
+		\begin{align*}
+			z_1  z_2 &= r_1 r_2 e^{i(\theta_1 + \theta_2)} & \\
+			&\implies \arg(z_1 z_2) = \arg(z_1) + 2n_1 \pi + \arg(z_2) + 2n_2\pi
+				& n_1, n_2 \in \mathbb{Z} \\
+			&\implies \arg(z_1 z_2) = \arg(z_1) + \arg(z_2) & \\
+			&\implies \operatorname{Arg}(z_1 z_2) = \operatorname{Arg}(z_1) = \operatorname{Arg}(z_2)  \\
+			\\
+			z^n &= r^n e^{i n\theta} & \\
+			&\implies \arg(z^n) = n\arg(z) + 2n\pi & n \in \mathbb{Z} \\
+			&\implies \arg(z^n) = n\arg(z)  \\
+			&\implies \operatorname{z^n} = n\operatorname{Arg}(z)
+		\end{align*}
+	\end{proof}
+	It is clear that: 
+	\begin{align*}
+		\arg\left(\frac{z_1}{z_2}\right) &= \arg(z_1) - \arg(z_2)
+			& \operatorname{Arg}\left(\frac{z_1}{z_2}\right) &= \operatorname{Arg}(z_1) - \operatorname{Arg}(z_2)
+	\end{align*}
 	
 	\section{Complex Conjugate} \label{Complex Conjugate Section - Complex}
 	\begin{definition}[Complex Conjugate]
@@ -655,12 +721,30 @@
 	\begin{align*}
 		\operatorname{Re}(z) &= \frac{z + \bar{z}}{2} & \operatorname{Im}(z) &= \frac{z - \bar{z}}{2i} & \abs{z}^2 = z \bar{z}
 	\end{align*}
-	As $\operatorname{Re}(z) = x = r \cos(\theta)$ and $\operatorname{Im}(z) = y = r \sin(\theta)$ and using \cref{Exponential Form of z}, we can obtain the complex forms of sine and cosine: 
-	\begin{align*}
-		\cos(\theta) &= \frac{e^{i \theta} + e^{-i \theta}}{2} 
+	As $\operatorname{Re}(z) = x = r \cos(\theta)$ and $\operatorname{Im}(z) = y = r \sin(\theta)$ and using \cref{Exponential Form of z - Complex}, we can obtain the complex forms of sine and cosine: 
+	\begin{definition}[Complex Sine and Cosine]
+		\begin{align*}
+			\cos(\theta) &= \frac{e^{i \theta} + e^{-i \theta}}{2} 
 			&\sin(\theta) &= \frac{e^{i \theta} - e^{-i \theta}}{2i}
+		\end{align*}
 		\label{Trig Identities - Complex}
-	\end{align*}
+	\end{definition}
+	
+
+	\section{Roots of $z$} \label{Roots of $z$ Sectios - Complex}
+	In \cref{Exponential Form of z - Complex}, you might be wondering why $z^n = r^n e^{i n \theta}$ is not for $n \in \mathbb{R}$. That is because there is more things to consider, which we will explore in this section. Recall that $z = re^(i \theta) = re^{i (\theta + 2n \pi)}$ for $n \in \mathbb{Z}$. 
+	\begin{definition}[Exponential of $z$]
+		Consider any $z \in \mathbb{C}$ and any $x \in \mathbb{R}$
+		$$z^x = \left(r e^{i(\theta + 2 n \pi)} \right)^x = r^x e^{i x(\theta + 2n \pi)}$$
+		\label{Exponential of z Definiion - Complex}
+	\end{definition}
+	For $x \nin \mathbb{Z}$, it is clear that $z^x =  r^x e^{ix(\theta + 2 n \pi)} \neq r^x e^{ix\theta}$, since $2nx\pi = 0 \iff nx \in \mathbb{Z}$. In order to define the roots of $z$ we must need a more general and proper definition of $z$.
+	\begin{definition}[Roots of $z$]
+		\label{Roots of z Definition - Complex}
+		Consider any $z \in \mathbb{C}$ and any $m \in \mathbb{N}$.
+		$$z^{\frac{1}{m}} = r^\frac{1}{m} e^{i\left(\frac{\theta + 2n \pi}{m}\right)} = r^\frac{1}{m} e^{i \left(\frac{\theta}{m} + \frac{2n \pi}{m}\right)}$$
+	\end{definition}  
+
 
 	\section{Operations as Transformations} \label{Operations as Transformations Section - Complex}
 	
