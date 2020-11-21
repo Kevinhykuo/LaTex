@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  20 NOV 2020 00:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  20 NOV 2020 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1531,7 +1531,12 @@ Chapter 9.
 Chapter 10.
 [27
 
-] [28] [29] [30] [31] [32
+] [28] [29] [30]
+
+LaTeX Warning: Reference `Exponential Form of z' on page 1 undefined on input l
+ine 658.
+
+[31] [32
 
 ]
 Chapter 11.
@@ -1585,9 +1590,9 @@ Chapter 18.
 Chapter 19.
 [65] [66
 
-] [67] [68] [69
+] [67] [68
 
-] [70
+] [69] [70
 
 ] [71] [72
 
@@ -1597,64 +1602,62 @@ Chapter 19.
 
 ] [77] [78
 
+] [79]
+[80
+
 ]
 Chapter 20.
-[79] [80
+[81] [82
 
-] [81
+] [83
 
-] [82
+] [84
 
-] [83]
+] [85]
 
-(./Math Notes.bbl [84
+(./Math Notes.bbl [86
 
-]) [85] (./Math Notes.aux
+]) [87] (./Math Notes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
+Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
+(rerunfilecheck)             Checksum: 0D0131161103EB33F16B7C54FEB87A45;2837.
 
-Package rerunfilecheck Warning: File `"Math Notes".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `"Math Notes".out':
-(rerunfilecheck)             Before: A2BC6883225A9F7727D38910522ADC73;2858
-(rerunfilecheck)             After:  104CF05188B2DA366AAA08C8CDBD4D38;2788.
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 38852 strings out of 479485
- 878957 string characters out of 5871977
- 1297325 words of memory out of 5000000
- 54924 multiletter control sequences out of 15000+600000
+ 38951 strings out of 479485
+ 882215 string characters out of 5871977
+ 1301306 words of memory out of 5000000
+ 55021 multiletter control sequences out of 15000+600000
  575679 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,109p,729b,2299s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.10.3.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/us
-r/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/lo
-cal/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/local/
-texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/t
-exlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}</usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (95 pages, 218947 bytes).
+ 99i,12n,109p,729b,2301s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/
+usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/
+local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/loca
+l/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local
+/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}</usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "Math Notes.pdf" (97 pages, 219523 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
- 705 compressed objects within 8 object streams
- 188 named destinations out of 1000 (max. 500000)
+ 833 PDF objects out of 1000 (max. 8388607)
+ 712 compressed objects within 8 object streams
+ 190 named destinations out of 1000 (max. 500000)
  413 words of extra memory for PDF output out of 10000 (max. 10000000)
 

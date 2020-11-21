@@ -346,33 +346,33 @@
 	\tableofcontents
 	
 	\mainmatter
-	\part{Logic}
+	\part{Logic} \label{Logic Part}
 	
 	\chapter{Proofs}
 	
 	
-	\part{Numbers}
+	\part{Numbers} \label{Numbers Part}
 	\begin{partintro}
 		content...
 	\end{partintro}
 	
-	\chapter{Natural $\mathbb{N}$}
+	\chapter{Natural $\mathbb{N}$} \label{Natural Chapter - Numbers}
 	
-	\chapter{Integers $\mathbb{Z}$}
+	\chapter{Integers $\mathbb{Z}$} \label{Integers Chapter - Numbers}
 	
-	\chapter{Rationals $\mathbb{Q}$}
+	\chapter{Rationals $\mathbb{Q}$} \label{Rationals Chapter - Numebers}
 	
-	\chapter{Constructible}
+	\chapter{Constructible} \label{Constructible Chapter - Numbers}
 	
-	\chapter{Algebraic $\mathbb{A}$}
+	\chapter{Algebraic $\mathbb{A}$} \label{Algebraic Chapter - Numbers}
 	
-	\chapter{Reals $\mathbb{R}$}
+	\chapter{Reals $\mathbb{R}$} \label{Reals Chapter - Numbers}
 	
-	\chapter{Complex $\mathbb{C}$}
+	\chapter{Complex $\mathbb{C}$} \label{Complex Chapter - Numbers}
 	
 
 	
-	\part{Real Analysis}
+	\part{Real Analysis} \label{Real Analysis Part}
 	\begin{partintro}
 		\begin{itemize}
 			\item[1.] Kenneth A. Ross - Elementary Analysis (2nd Ed.) \cite{Ross.K-Elementary-Analysis-2013}
@@ -381,15 +381,15 @@
 
 	\chapter{Metric Spaces}	
 	
-	\part{Complex Analysis}
+	\part{Complex Analysis} \label{Complex Analysis Part}
 	\begin{partintro}
 		\begin{itemize}
 			\item[1.] Brown and Churchill - Complex Variables and Applications \cite{Brown.J;Churchill.R-Complex-Variables-2014}
 		\end{itemize}
 	\end{partintro}
 	
-	\chapter{Basics}
-	\section{Complex Numbers}
+	\chapter{Basics} \label{Basics Chapter - Complex}
+	\section{Complex Numbers} \label{Complex Numbers Section - Complex}
 	$$\mathbb{C} = \{x + iy \mid x, y \in \mathbb{R}, i = \sqrt{-1}\}$$
 	Complex numbers are elements of the complex field $(\mathbb{C})$, therefore, they obey all the properties of a field. 
 	
@@ -478,15 +478,14 @@
 			\end{axis}
 	\end{tikzpicture}
 	\end{center}
-	Likewise, this naturally extends to the definition of a modulus of a complex number. 
-	\begin{definition}[Modulus]
-		The absolute value of a real number:
-		$\abs{z} = \sqrt{x^2 + y^2}$
-	\end{definition}
-	It is obvious why the definition is not $\abs{z} = \sqrt{x^2 + (iy)^2}$ as problems arise when $x = y$. The modulus is the distance of $z$ from $(0, 0)$.
 	
-	\section{Triangle Inequality}
+	\section{Triangle Inequality} \label{Triangle Inequality Section - Complex}
 	It is not analysis without a section dedicated to the triangle inequality.
+	
+	\begin{definition}[Modulus]
+		$\abs{z} = \sqrt{x^2 + y^2} = \sqrt{z \bar{z}}$
+	\end{definition}
+	It is obvious why the definition is not $\abs{z} = \sqrt{x^2 + (iy)^2}$ as problems arise when $x = y$. The modulus is the distance of $z$ from $(0, 0)$. $\bar{z}$ is the complex conjugate of $z$, which is explored in \cref{Complex Conjugate Section - Complex}
 	
 	\begin{theorem}[Triangle Inequality]
 		$\forall z_1, z_2 \in \mathbb{C} [\abs{z_1 + z_2} \leq \abs{z_1} + \abs{z_2}]$
@@ -529,7 +528,7 @@
 	\end{proof}
 	This tells us that if $z$ is a solution to a polynomial $P(z)$, then the reciprocal of the polynomial $1/P(z)$ is bounded above by $R = \abs{z}$. (i.e. It is bounded by a circle of radius $\abs{z}$.)
 	
-	\section{Polar and Exponential Form}
+	\section{Polar and Exponential Form} \label{Polar and Exponential Form Section - Complex}
 	\begin{definition}[Argument of $z$]
 		Consider any $z \in \mathbb{C}$ where $z \neq 0$.
 		Let $\theta$ be the angle in radians between $z$ and the real axis .
@@ -565,7 +564,7 @@
 	\begin{definition}[Exponential Form of $z$]
 	Consider any $z \in \mathbb{C}$, and let $r = \abs{z}$ and $\theta = \operatorname{arg}(z)$. Then the exponential form of $z$:
 		$$z = r e^{i \theta}$$
-		\label{Exponential Form of z}
+		\label{Exponential Form of z - Complex}
 	\end{definition}
 	Note: $\theta = \tan^{-1}(y/x)$ and $r = \sqrt{x^2 + y^2}$.
 	\begin{center}
@@ -605,12 +604,15 @@
 	\end{center}
 	
 	\subsection{Properties of Polar and Exponential Form}
+	\label{Properties of Polar and Exponential Form Subsection - Complex}
+	
+	
 	
 	
 %	\subsection{Properties of Exponential Form}
 	
 	
-	\section{Complex Conjugates}
+	\section{Complex Conjugate} \label{Complex Conjugate Section - Complex}
 	\begin{definition}[Complex Conjugate]
 		The complex conjugate of $z \in \mathbb{C}$ is denoted $\bar{z}$.
 		$$\bar{z} = x - iy = r(\cos(\theta) - i\sin(\theta)) = re^{-i\theta}$$
@@ -657,78 +659,78 @@
 	\begin{align*}
 		\cos(\theta) &= \frac{e^{i \theta} + e^{-i \theta}}{2} 
 			&\sin(\theta) &= \frac{e^{i \theta} - e^{-i \theta}}{2i}
-		\label{Complex Trig Identities}
+		\label{Trig Identities - Complex}
 	\end{align*}
 
-	\section{Operations as Transformations}
+	\section{Operations as Transformations} \label{Operations as Transformations Section - Complex}
 	
-	\chapter{Conformal Mapping}
-	
-	
-	\part{Ordinary Differential Equations}
-	
-	\part{Nonlinear Dynamics}
+	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
 	
-	\part{Partial Differential Equations}
+	\part{Ordinary Differential Equations} \label{Ordinary Differential Equations Part}
 	
-	\paragraph{Calculus of Variations}
-	
-	\part{Integral Equations}
+	\part{Nonlinear Dynamics} \label{Nonlinear Dynamics Part}
 	
 	
-	\part{Linear Algebra}
+	\part{Partial Differential Equations} \label{Partial Differential Equations Part}
 	
-	\chapter{Markov Chains}
+	\paragraph{Calculus of Variations} \label{Calculus of Variations Part}
 	
-	
-	\part{Tensors}
-	
-	
-	\part{Riemann Geometry}
+	\part{Integral Equations} \label{Integral Equations Part}
 	
 	
-	\part{Abstract Algebra}
+	\part{Linear Algebra} \label{Linear Algebra Part}
 	
-	\chapter{Groups}
-	
-	
-	\chapter{Rings}
-	
-	\section{Ideals}
-	
-	\chapter{Integral Domains}
-	
-	\chapter{GCD Domains}
-	
-	\chapter{Unique Factorization Domains}
-	
-	\chapter{Principal Ideal Domains}
-	
-	\chapter{Fields}
+	\chapter{Markov Chains} \label{Markov Chains Chapter - Linear Algebra}
 	
 	
-	\part{Galois Theory}
+	\part{Tensors} \label{Tensors Part}
 	
-	\paragraph{Lie Algebra}
 	
-	\part{C-Star Algebra}
+	\part{Riemann Geometry} \label{Reimann Geometry Part}
 	
-	\part{Set Theory}
 	
-	\part{Model Theory}
+	\part{Abstract Algebra} \label{Abstract Algebra Part}
 	
-	\part{Statistics}
-	\part{Tips and Tricks}
+	\chapter{Groups} \label{Groups Chapter - Abstract Algebra}
 	
-	\chapter{Integration Techniques}
 	
-	\section{DI Method (Integration Table)}
+	\chapter{Rings} \label{Rings Chapter - Abstract Algebra}
 	
-	\section{Feynman Integration}
+	\section{Ideals} \label{Ideals Section - Abstract Algebra}
+	
+	\chapter{Integral Domains} \label{Integral Domains Chapter - Abstract Algebra}
+	
+	\chapter{GCD Domains} \label{GCD Domains Chapter - Abstract Algebra}
+	
+	\chapter{Unique Factorization Domains} \label{Unique Factorization Domains Chapter - Abstract Algebra}
+	
+	\chapter{Principal Ideal Domains} \label{Principal Ideal Domains Chapter - Abstract Algebra}
+	
+	\chapter{Fields} \label{Fields Chapter - Abstract Algebra}
+	
+	
+	\part{Galois Theory} \label{Galois Theory Part}
+	
+	\part{Lie Algebra} \label{Lie Algebra Part}
+	
+	\part{C-Star Algebra} \label{C-Star Algebra Part}
+	
+	\part{Set Theory} \label{Set Theory Part}
+	
+	\part{Model Theory} \label{Model Theory Part}
+	
+	\part{Statistics} \label{Statistics Part}
+	\part{Tips and Tricks} \label{Tips and Tricks Part}
+	
+	\chapter{Integration Techniques} \label{Integration Techniques Chapter - Tips and Tricks}
+	
+	\section{DI Method (Integration Table)} \label{DI Method Section - Tips and Tricks}
+	
+	\section{Feynman Integration} \label{Feynman Integration Section - Tips and Tricks}
 	
 	\backmatter
-	\part{Index}
+	\part{Index} \label{Index Part}
 	
 	\part{Bibliography}
 	\bibliographystyle{unsrt}
