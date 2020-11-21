@@ -562,7 +562,7 @@
 	Combining \cref{Polar Form of z - Complex} with \cref{Euler's Formula - Complex}, we obtain the Exponential Form of $z$: 
 	
 	\begin{definition}[Exponential Form of $z$]
-	Consider any $z \in \mathbb{C}$, and let $r = \abs{z}$ and $\theta = \operatorname{arg}(z)$. Then the exponential form of $z$:
+	Consider any $z \in \mathbb{C}$, and let $r = \abs{z}$ and $\theta = \operatorname{Arg}(z)$. Then the exponential form of $z$:
 		$$z = r e^{i \theta}$$
 		\label{Exponential Form of z - Complex}
 	\end{definition}
@@ -625,7 +625,8 @@
 		\end{align*}
 	\end{proof}
 
-	The proof hints that \cref{de Moivre's Formula Theorem - Complex} can be generalized to $\forall n \in \mathbb{R}$, which we will see shortly in \cref{Roots of $z$ Section - Complex}. Using \cref{de Moivre's Formula Theorem - Complex}, we can obtain the double angle identities.
+	The proof hints that \cref{de Moivre's Formula Theorem - Complex} can be generalized to $\forall n \in \mathbb{R}$, which we will see shortly in \cref{Roots of z Section - Complex}. Using \cref{de Moivre's Formula Theorem - Complex}, we can obtain the double angle identities.
+	
 	\begin{corollary}[Double Angle Identities]
 		\begin{align*}
 			\cos(2 \theta) &= \cos^2(\theta) - \sin^2(\theta) 
@@ -636,7 +637,7 @@
 		Consider any $z$ on the unit circle, that is $z=e^{i\theta}$.
 		\begin{align*}
 			&(\cos(\theta) + i \sin(\theta))^2 = \cos(2\theta) + i \sin(2\theta)
-				&\text{\cref{de Moivre's Formula Theorem - Complex}} \\
+				&\text{\Cref{de Moivre's Formula Theorem - Complex}} \\
 			&\implies \cos^2(\theta) - \sin^2(\theta) + i2\sin(\theta)\cos(\theta) = cos(2\theta) + i\sin(2\theta) 
 		\end{align*}
 		Equating the real and imaginary parts yield the desired results. 
@@ -656,7 +657,7 @@
 			\arg(z^n) &= n\arg(z)  
 				& \operatorname{Arg}(z^n) = n\operatorname{Arg}(z)
 		\end{align*}
-		\label{Argumetns of Products Corollary - Complex}
+		\label{Arguments of Products Corollary - Complex}
 	\end{corollary}
 	\begin{proof}
 		\begin{align*}
@@ -677,6 +678,23 @@
 		\arg\left(\frac{z_1}{z_2}\right) &= \arg(z_1) - \arg(z_2)
 			& \operatorname{Arg}\left(\frac{z_1}{z_2}\right) &= \operatorname{Arg}(z_1) - \operatorname{Arg}(z_2)
 	\end{align*}
+
+	\section{Roots of $z$} \label{Roots of z Sections - Complex}
+	In \cref{Exponential Form of z - Complex}, you might be wondering why $z^n = r^n e^{i n \theta}$ is not for $n \in \mathbb{R}$. That is because there is more things to consider, which we will explore in this section. Recall that $z = re^(i \theta) = re^{i (\theta + 2n \pi)}$ for $n \in \mathbb{Z}$. 
+	
+	\begin{definition}[Exponential of $z$]
+		Consider any $z \in \mathbb{C}$ and any $x \in \mathbb{R}$
+		$$z^x = \left(r e^{i(\theta + 2 n \pi)} \right)^x = r^x e^{i x(\theta + 2n \pi)}$$
+		\label{Exponential of z Definiion - Complex}
+	\end{definition}
+
+	For $x \nin \mathbb{Z}$, it is clear that $z^x =  r^x e^{ix(\theta + 2 n \pi)} \neq r^x e^{ix\theta}$, since $2nx\pi = 0 \iff nx \in \mathbb{Z}$. In order to define the roots of $z$ we must need a more general and proper definition of $z$.
+	
+	\begin{definition}[Roots of $z$]
+		\label{Roots of z Definition - Complex}
+		Consider any $z \in \mathbb{C}$ and any $m \in \mathbb{N}$.
+		$$z^{\frac{1}{m}} = r^\frac{1}{m} e^{i\left(\frac{\theta + 2n \pi}{m}\right)} = r^\frac{1}{m} e^{i \left(\frac{\theta}{m} + \frac{2n \pi}{m}\right)}$$
+	\end{definition}  
 	
 	\section{Complex Conjugate} \label{Complex Conjugate Section - Complex}
 	\begin{definition}[Complex Conjugate]
@@ -729,21 +747,6 @@
 		\end{align*}
 		\label{Trig Identities - Complex}
 	\end{definition}
-	
-
-	\section{Roots of $z$} \label{Roots of $z$ Sectios - Complex}
-	In \cref{Exponential Form of z - Complex}, you might be wondering why $z^n = r^n e^{i n \theta}$ is not for $n \in \mathbb{R}$. That is because there is more things to consider, which we will explore in this section. Recall that $z = re^(i \theta) = re^{i (\theta + 2n \pi)}$ for $n \in \mathbb{Z}$. 
-	\begin{definition}[Exponential of $z$]
-		Consider any $z \in \mathbb{C}$ and any $x \in \mathbb{R}$
-		$$z^x = \left(r e^{i(\theta + 2 n \pi)} \right)^x = r^x e^{i x(\theta + 2n \pi)}$$
-		\label{Exponential of z Definiion - Complex}
-	\end{definition}
-	For $x \nin \mathbb{Z}$, it is clear that $z^x =  r^x e^{ix(\theta + 2 n \pi)} \neq r^x e^{ix\theta}$, since $2nx\pi = 0 \iff nx \in \mathbb{Z}$. In order to define the roots of $z$ we must need a more general and proper definition of $z$.
-	\begin{definition}[Roots of $z$]
-		\label{Roots of z Definition - Complex}
-		Consider any $z \in \mathbb{C}$ and any $m \in \mathbb{N}$.
-		$$z^{\frac{1}{m}} = r^\frac{1}{m} e^{i\left(\frac{\theta + 2n \pi}{m}\right)} = r^\frac{1}{m} e^{i \left(\frac{\theta}{m} + \frac{2n \pi}{m}\right)}$$
-	\end{definition}  
 
 
 	\section{Operations as Transformations} \label{Operations as Transformations Section - Complex}

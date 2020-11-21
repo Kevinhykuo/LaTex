@@ -18,8 +18,8 @@
 \contentsline {section}{\numberline {10.3}Polar and Exponential Form}{29}{section.10.3}%
 \contentsline {subsection}{\numberline {10.3.1}Properties of Polar and Exponential Form}{31}{subsection.10.3.1}%
 \contentsline {subsection}{\numberline {10.3.2}Properties of Arguments}{31}{subsection.10.3.2}%
-\contentsline {section}{\numberline {10.4}Complex Conjugate}{32}{section.10.4}%
-\contentsline {section}{\numberline {10.5}Roots of $z$}{33}{section.10.5}%
+\contentsline {section}{\numberline {10.4}Roots of $z$}{32}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Complex Conjugate}{33}{section.10.5}%
 \contentsline {section}{\numberline {10.6}Operations as Transformations}{33}{section.10.6}%
 \contentsline {chapter}{\numberline {11}Conformal Mapping}{35}{chapter.11}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{37}{part.5}%

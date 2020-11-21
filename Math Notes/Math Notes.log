@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  20 NOV 2020 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  20 NOV 2020 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1536,19 +1536,19 @@ Chapter 10.
 
 ] [28] [29] [30]
 
-LaTeX Warning: Reference `Roots of $z$ Section - Complex' on page 1 undefined o
-n input line 628.
+LaTeX Warning: Reference `Roots of z Section - Complex' on page 1 undefined on 
+input line 628.
 
-[31] [32]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 734.
-
+[31]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 734.
+(hyperref)                removing `math shift' on input line 682.
 
-[33] [34
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 682.
+
+[32] [33] [34
 
 ]
 Chapter 11.
@@ -1633,7 +1633,7 @@ Chapter 20.
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
-(rerunfilecheck)             Checksum: 5042BD546C1E50BE41A4BF6962910BF3;2975.
+(rerunfilecheck)             Checksum: FC80ADD11C3D6077157B5CF71E9FB08B;2975.
 
 
 LaTeX Warning: There were undefined references.
@@ -1641,8 +1641,8 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  38989 strings out of 479485
- 883290 string characters out of 5871977
- 1301601 words of memory out of 5000000
+ 883286 string characters out of 5871977
+ 1300963 words of memory out of 5000000
  55043 multiletter control sequences out of 15000+600000
  575679 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1669,7 +1669,7 @@ t/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/texmf-dist
 fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (99 pages, 253640 bytes).
+Output written on "Math Notes.pdf" (99 pages, 253567 bytes).
 PDF statistics:
  893 PDF objects out of 1000 (max. 8388607)
  760 compressed objects within 8 object streams
