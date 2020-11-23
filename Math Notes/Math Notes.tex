@@ -700,16 +700,16 @@
 
 	For $x \nin \mathbb{Z}$, it is clear that $z^x =  r^x e^{ix(\theta + 2 n \pi)} \neq r^x e^{ix\theta}$, since $2nx\pi = 0 \iff nx \in \mathbb{Z}$. In order to define the roots of $z$ we must need a more general and proper definition of $z$.
 	
-	\begin{definition}[Roots of $z$]
+	\begin{definition}[Roots of $z_0$]
 		\label{Roots of z Definition - Complex}
-		Consider any $z \in \mathbb{C}$ and any $m \in \mathbb{N}$.
-		$$z^{\frac{1}{m}} = r^\frac{1}{m} e^{i\left(\frac{\theta + 2n \pi}{m}\right)} = r^\frac{1}{m} e^{i \left(\frac{\theta}{m} + \frac{2n \pi}{m}\right)}$$
+		Consider any $z_0 \in \mathbb{C}$ and any $m \in \mathbb{N}$.
+		$$z_0^{\frac{1}{m}} = r_0^\frac{1}{m} e^{i\left(\frac{\theta_0 + 2n \pi}{m}\right)} = r_0^\frac{1}{m} e^{i \left(\frac{\theta_0}{m} + \frac{2n \pi}{m}\right)}$$
 	\end{definition}  
 	
-	Taking the $m$-th root of $z \in C$ scales $r$ and $\theta$ by $1/m$, and provides solutions at equally spaced by $2\pi / m$ on the circle. 
+	Taking the $m$-th root of $z_0 \in C$ scales $\theta_0$ by $1/m$, and provides solutions at equally spaced by $2\pi / m$ on a circle of radius $r^{1/m}$. That is, the roots lie on the vertices of a regular n-sided polygon inscribed in a circle of radius $\abs{z}^{1/m}$. 
 	
 	\begin{example}
-		Consider $z = 32 e^{i(5/6)\pi}$, then $z^{(1/5)} = 3e^{i(\pi/6) + i(2/5) n \pi}$ for $n \in \mathbb{Z}$. The radius went from $35$ to $35^{(1/5)} = 2$, and five roots appear equally spaced with distance of $(2/5)\pi$ on a circle with radius $2$. Before and after graphs are as follows, note graph on right is zoomed in: 
+		Consider $z_0 = 32 e^{i(5/6)\pi}$, then $z_0^{(1/5)} = 3e^{i(\pi/6) + i(2/5) n \pi}$ for $n \in \mathbb{Z}$. The radius went from $35$ to $35^{(1/5)} = 2$, and five roots appear equally spaced with distance of $(2/5)\pi$ on a circle with radius $2$. Before and after graphs are as follows, note graph on right is zoomed in: 
 		\begin{figure}[H]
 			\centering
 			\begin{tikzpicture}[remember picture]
@@ -735,13 +735,13 @@
 					mark=*,
 					]
 					coordinates {
-						(-27.7128, 16) [$z = 32e^{i(5/6)\pi}$]
+						(-27.7128, 16) [$z_0 = 32e^{i(5/6)\pi}$]
 					};
 				\end{axis}
 				\path (current bounding box.north east) -- 
 				(current bounding box.south east) coordinate[midway] (2BL);
 			\end{tikzpicture}
-			\hspace*{3cm}
+			\hspace*{2.8cm}
 			\begin{tikzpicture}[remember picture]
 				\begin{axis}[
 %					small,
@@ -766,11 +766,11 @@
 					mark=*,
 					]
 					coordinates {
-						(1.73205, 1) [$z = 2e^{i\pi/6}$]
-						(-0.4158, 1.9563) [$z = 2e^{i17\pi/30}$]
-						(-1.9890, 0.20906) [$z = 2e^{i29\pi/30}$]
-						(-0.8135, -1.8271) [$z = 2e^{-i19\pi/30}$]
-						(1.4863, -1.3383) [$z = 2e^{-i7\pi/30}$]
+						(1.73205, 1) [$2e^{i\pi/6}$]
+						(-0.4158, 1.9563) [$2e^{i17\pi/30}$]
+						(-1.9890, 0.20906) [$2e^{i29\pi/30}$]
+						(-0.8135, -1.8271) [$2e^{-i19\pi/30}$]
+						(1.4863, -1.3383) [$2e^{-i7\pi/30}$]
 					};
 					\draw[line width=1pt,LightGrey](axis cs: 0, 0) circle [radius=200];
 					\draw[line width=1pt,LightGrey](axis cs: 0,0)--(axis cs: 1.73205, 1);
@@ -788,6 +788,84 @@
 			node[midway,above,text width=2cm]{$f(z) = z^\frac{1}{5}$};} 
 	\end{example} 
 	
+	We can see that the roots of $z_0$ form a set:
+	\begin{definition}[Set of roots of $z_0$]
+		\label{Set of roots of z - Complex}
+		Consider the $m$-th root of any $z_0 \in \mathbb{C}$. Let: 
+		\begin{align*}
+			z_0 &= r_0 e^{i\theta_0}
+			&c_0 &= r_0^{1/m} e^{i\theta_0/m} 
+			&\omega_n &= e^{\frac{i2\pi}{m}} & \ m \in \mathbb{N}
+		\end{align*}
+		Then the set of roots of $z_0$:
+		\begin{align*}
+			z_0^{1/m} = \left\{c_k = c_0 \omega_m^k \mid k\in \mathbb{N}, \ 0 \leq k < m\right\}
+		\end{align*}
+	\end{definition}
+	$c_0$ is the principal root. The root corresponding to the principal argument of $z$.
+	\begin{definition}[Principal Root]
+	Consider the $m$-th root of any $z_0 \in \mathbb{C}$. The principal root of $z_0$ is defined as:
+		$$c_0 = r_0^{\frac{1}{m}} e^{i\frac{\theta_0}{m}}$$
+	\end{definition}
+	
+	\begin{example}
+		Recall from the previous example: $z_0 = 32 e^{i(5/6)\pi}$. This gives us
+		\begin{align*}
+			c_0 &= 32^{1/5} e^{i\pi/6}= 2 e^{i\pi/6}
+				&\omega_5 &= e^{i2\pi/5}
+		\end{align*}
+		Then
+		\begin{align*}
+			c_0 &= c_0 \omega_5^0 = 2 e^{i\pi/6} \\
+			c_1 &= c_0 \omega_5^1 = 2 e^{i\pi/6} e^{i2\pi/5} = 2 e^{i17\pi/30} \\
+			c_2 &= c_0 \omega_5^1 = 2 e^{i\pi/6} e^{i4\pi/5} = 2 e^{i29\pi/30} \\
+			c_3 &= c_0 \omega_5^1 = 2 e^{i\pi/6} e^{i6\pi/5} = 2 e^{i41\pi/30} = 2 e^{-i19\pi/30}\\
+			c_4 &= c_0 \omega_5^1 = 2 e^{i\pi/6} e^{i8\pi/5} = 2 e^{i53\pi/30} = 2 e^{-i7\pi/30}\\
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					%					small,
+					width=10cm,
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-3.1, xmax=3.1,
+					ymin=-3.1, ymax=3.1,
+					%					xtick distance=2,
+					%					ytick distance=2,
+					xtick=10,
+					ytick=10,
+					axis lines = middle,
+					axis line style = Black,
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					color=Black,
+					mark=*,
+					]
+					coordinates {
+						(1.73205, 1) [$c_0 = 2e^{i\pi/6}$]
+						(-0.4158, 1.9563) [$c_1 = 2e^{i17\pi/30}$]
+						(-1.9890, 0.20906) [$c_2 = 2e^{i29\pi/30}$]
+						(-0.8135, -1.8271) [$c_3 = 2e^{-i19\pi/30}$]
+						(1.4863, -1.3383) [$c_4 = 2e^{-i7\pi/30}$]
+					};
+					\draw[line width=1pt,LightGrey](axis cs: 0, 0) circle [radius=200];
+					\draw[line width=1pt,LightGrey](axis cs: 0,0)--(axis cs: 1.73205, 1);
+					\draw[line width=1pt,LightGrey](axis cs:0,0)--(axis cs:-0.4158, 1.9563);
+					\draw[line width=1pt,LightGrey](axis cs:0,0)--(axis cs:-1.9890, 0.20906);
+					\draw[line width=1pt,LightGrey](axis cs:0,0)--(axis cs:-0.8135, -1.8271);
+					\draw[line width=1pt,LightGrey](axis cs:0,0)--(axis cs:1.4863, -1.3383);
+				\end{axis}
+				\path (current bounding box.north west) -- 
+				(current bounding box.south west) coordinate[midway] (2BR);
+			\end{tikzpicture}
+		\end{figure}
+	\end{example}
 	
 	
 	\section{Complex Conjugate} \label{Complex Conjugate Section - Complex}
@@ -838,6 +916,8 @@
 
 
 	\section{Operations as Transformations} \label{Operations as Transformations Section - Complex}
+	
+	\section{Complex Analysis Definitions} \label{Complex Analysis Definitions Section - Complex}
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
