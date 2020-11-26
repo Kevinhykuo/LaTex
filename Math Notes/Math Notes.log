@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  22 NOV 2020 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  26 NOV 2020 02:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1558,11 +1558,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 692.
 
-[32] [33] [34] [35] [36
-
-]
+[32] [33] [34] [35] [36]
 Chapter 11.
-[37] [38
+[37
+
+] [38
 
 ] [39] [40
 
@@ -1650,13 +1650,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39252 strings out of 479485
- 891839 string characters out of 5871977
- 1313417 words of memory out of 5000000
- 55290 multiletter control sequences out of 15000+600000
+ 39338 strings out of 479485
+ 893601 string characters out of 5871977
+ 1327314 words of memory out of 5000000
+ 55370 multiletter control sequences out of 15000+600000
  575679 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,109p,729b,2496s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,13n,109p,729b,2536s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/
 usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/
 local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/loca
@@ -1679,10 +1679,10 @@ t/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/texmf-dist
 fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (101 pages, 264664 bytes).
+Output written on "Math Notes.pdf" (101 pages, 270358 bytes).
 PDF statistics:
- 921 PDF objects out of 1000 (max. 8388607)
- 786 compressed objects within 8 object streams
- 219 named destinations out of 1000 (max. 500000)
+ 928 PDF objects out of 1000 (max. 8388607)
+ 793 compressed objects within 8 object streams
+ 225 named destinations out of 1000 (max. 500000)
  437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

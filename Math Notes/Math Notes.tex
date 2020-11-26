@@ -917,6 +917,177 @@
 
 	\section{Operations as Transformations} \label{Operations as Transformations Section - Complex}
 	
+	Consider any $z \in \mathbb{C}$. A function $f: \mathbb{C} \rightarrow \mathbb{C}$ can be viewed as transformations of the complex plane. 
+	
+	\begin{example}[Addition as sliding]
+		Consider any $z_0 \in \mathbb{C}$, $z_0 = a + ib$ for $a, b \in \mathbb{R}$. Addition by $z_0$ can be seen as a shift in the complex plane by $a + bi$. (i.e. It takes the origin and shifts it by $z_0$.)
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					width=8.9cm,
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-10, xmax=10,
+					ymin=-10, ymax=10,
+					axis lines = middle,
+					xticklabels={}, yticklabels={},
+					grid=both,
+					axis lines=middle,
+					minor tick num=4,
+					minor tick style={draw=none},
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					color=Blue,
+					mark=*,
+					]
+					coordinates {
+						(0,0)
+					};
+				\end{axis}
+				\path (current bounding box.north east) -- 
+				(current bounding box.south east) coordinate[midway] (2BL);
+			\end{tikzpicture}
+			\hspace*{2.8cm}
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					%					small,
+					width=8.9cm,
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-10, xmax=10,
+					ymin=-10, ymax=10,
+					xticklabels={}, yticklabels={},
+					grid=both,
+					axis lines=middle,
+					minor tick num=4,
+					minor tick style={draw=none},
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					color=Blue,
+					mark=*,
+					]
+					coordinates {
+						(4, 3) [$z_0=a+bi$]
+					};
+					\draw[->, very thick](axis cs:0,0)--(axis cs:4, 3);
+				\end{axis}
+				\path (current bounding box.north west) -- 
+				(current bounding box.south west) coordinate[midway] (2BR);
+			\end{tikzpicture}
+			\tikz[overlay,remember picture]{\draw[->, very thick] 
+				($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
+				node[midway,above,text width=2.5cm]{$f(z_0) = z + z_0$};}
+		\end{figure}
+	\end{example}
+
+	\begin{example}[Multiplication as scaling and rotation]
+		Consider any $z_0 \in \mathbb{C}$, $z_0 = re^{i\theta}$. Multiplication by $z_0$ scales the entire complex plane by $r$ and rotates it by $\theta$. (Imagine rotating and stretching out a net.)
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					width=8.9cm,
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-10, xmax=10,
+					ymin=-10, ymax=10,
+					axis lines = middle,
+					xticklabels={}, yticklabels={},
+					grid=both,
+					axis lines=middle,
+					minor tick num=4,
+					minor tick style={draw=none},
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					color=Blue,
+					mark=*,
+					]
+					coordinates {
+						(1,0) [$1 = e^{0}$]
+					};
+				\draw[->, very thick](axis cs:0,0)--(axis cs:1, 0);
+				\end{axis}
+				\path (current bounding box.north east) -- 
+				(current bounding box.south east) coordinate[midway] (2BL);
+			\end{tikzpicture}
+			\hspace*{2.8cm}
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					width=8.9cm,
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-10, xmax=10,
+					ymin=-10, ymax=10,
+					xticklabels={}, yticklabels={},
+%					ytick distance={3},
+%					xtick distance={4},
+%					grid=both,
+					axis lines=middle,
+					minor tick num=0,
+					minor tick style={draw=none},
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					color=Blue,
+					mark=*,
+					]
+					coordinates {
+						(4, 3) [$z_0=re^{i\theta}$]
+					};
+%					\draw[->,thick] (axis cs:0,0)--(axis cs:4,3);
+					\draw[->,thick,draw=Blue]  (axis cs: 0,0) to ["$r$"] (axis cs: 4,3);
+					% angle
+					\draw[->, draw=Blue] (axis cs:0,0)++(0:30) arc (0:35:30)
+					node[midway,above right,inner sep=2pt,font={\footnotesize}]{$\theta$};
+				\end{axis}
+%				\begin{axis}[
+%					anchor=center, % Shift the axis so its origin is at (0,0)
+%					rotate around={36.87:(current axis.origin)}, % Rotate around the origin
+%					width=8.9cm,
+%					unit vector ratio=1 1 1,
+%					xmin=-10, xmax=10,
+%					ymin=-10, ymax=10,
+%					xticklabels={}, yticklabels={},
+%					grid=both,
+%					axis lines=middle,
+%					minor tick num=0,
+%					minor tick style={draw=none},
+%					]
+%				\end{axis}
+				\path (current bounding box.north west) -- 
+				(current bounding box.south west) coordinate[midway] (2BR);
+%				\pgftransformrotate{36.87}
+%				\pgfpathgrid[stepx=50,stepy=50]{\pgfpoint{0}{-50}}{\pgfpoint{200}{150}}
+%				\pgfusepath{stroke}
+			\end{tikzpicture}
+			\tikz[overlay,remember picture]{\draw[->, very thick] 
+			($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
+			node[midway,above,text width=2.5cm]{$f(z_0) = z \cdot z_0$};}
+		\end{figure}
+	\end{example}
+
+%	\begin{example}[Logarithm as compression (Speculation)]
+%		content...
+%	\end{example}
+	
 	\section{Complex Analysis Definitions} \label{Complex Analysis Definitions Section - Complex}
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}

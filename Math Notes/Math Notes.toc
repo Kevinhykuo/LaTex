@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {10.4}Roots of $z$}{32}{section.10.4}%
 \contentsline {section}{\numberline {10.5}Complex Conjugate}{34}{section.10.5}%
 \contentsline {section}{\numberline {10.6}Operations as Transformations}{35}{section.10.6}%
-\contentsline {section}{\numberline {10.7}Complex Analysis Definitions}{35}{section.10.7}%
+\contentsline {section}{\numberline {10.7}Complex Analysis Definitions}{36}{section.10.7}%
 \contentsline {chapter}{\numberline {11}Conformal Mapping}{37}{chapter.11}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{39}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{41}{part.6}%
