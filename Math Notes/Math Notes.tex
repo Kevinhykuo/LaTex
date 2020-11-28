@@ -1096,39 +1096,228 @@
 	\section{Complex Analysis Definitions} \label{Complex Analysis Definitions Section - Complex}
 	
 	\begin{definition}[Neighbourhood]
-		content...
+		A neighbourhood of a point $z_0$ is the set of all points $z$ with distance less than $\epsilon$. 
+		$$\{z : \abs{z-z_0} < \epsilon \}$$
+		i.e. It is the set of all points that lie within a circle centred at $z_0$ with radius $\epsilon$. Points on the circumference not included. 
 	\end{definition}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				small,
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(7, 4) [$z_0$]
+				};
+				\draw[dashed,line width=1pt,LightGrey](axis cs: 7, 4) circle [radius=20];
+				\draw[-,draw=Grey]  (axis cs: 7,4) to ["$\epsilon$"] (axis cs: 5,4);;
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 
 	\begin{definition}[Deleted Neighbourhood]
-		content...
+		A deleted neighbourhood is the set of all points $z$ with distance less than $\epsilon$ from a point $z_0$, not including $z_0$. That is, it is a neighbourhood of $z_0$ without $z_0$.
+		$$\{z : \abs{z-z_0} < \epsilon, \ z \neq z_0 \}$$
 	\end{definition}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				small,
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=o,
+				]
+				coordinates {
+					(7, 4) [$z_0$]
+				};
+				\draw[dashed,line width=1pt,LightGrey](axis cs: 7, 4) circle [radius=20];
+				\draw[-,draw=Grey]  (axis cs: 7,4) to ["$\epsilon$"] (axis cs: 5,4);;
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 
 	\begin{definition}[Interior Point]
-		content...
+		Let $S$ be a set. A point $z_0$ is an interior point of $S$ if $\exists \epsilon$ such that $\forall z$, $\abs{z-z_0} < \epsilon \implies z \in S$. That is, $z_0$ is an interior point of $S$ if it has a neighbourhood where all points in the neighbourhood is an element of $S$.
 	\end{definition}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				small,
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(7, 4) [$z_0$]
+				};
+				\draw[dashed,line width=1pt,LightGrey](axis cs: 7, 4) circle [radius=10];
+				\draw[line width=1pt, Black](axis cs: 5.2, 3.5) circle [radius=30];
+				\draw[-,draw=Grey]  (axis cs: 7,4) to ["$\epsilon$"] (axis cs: 6,4);
+				\draw[]  (axis cs: 5,2) to ["$S$"] (axis cs: 5,2);
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 
 	\begin{definition}[Exterior Point]
-		content...
+		Let $S$ be a set. A point $z_0$ is an exterior point of $S$ if $\exists \epsilon$ such that $\forall z$, $\abs{z - z_0}<\epsilon \implies z \notin S$. That is, $z_0$is an exterior point of $S$ if it has neighbourhood that does not contain any element of $S$. 
 	\end{definition}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				small,
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(9, 5) [$z_0$]
+				};
+				\draw[dashed,line width=1pt,LightGrey](axis cs: 9, 5) circle [radius=10];
+				\draw[line width=1pt, Black](axis cs: 5.2, 3.5) circle [radius=30];
+				\draw[-,draw=Grey]  (axis cs: 9,5) to ["$\epsilon$"] (axis cs: 8,5);
+				\draw[]  (axis cs: 5,2) to ["$S$"] (axis cs: 5,2);
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 
 	\begin{definition}[Boundary Point]
-		content...
+		Let $S$ be a set. A point $z_0$ is a boundary point of $S$ if $\forall \epsilon$, $\exists z \in S, z' \notin S$, such that $\abs{z - z_0} \epsilon$ and $\abs{z' - z_0} < \epsilon$. That is, for all neighbourhoods of $z_0$ there exists a point that is in $S$ and a point not in $S$.
 	\end{definition}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				small,
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(5.2, 6.5) [$z_0$]
+				};
+				\draw[dashed,line width=1pt,LightGrey](axis cs: 5.2, 6.5) circle [radius=10];
+				\draw[line width=1pt, Black](axis cs: 5.2, 3.5) circle [radius=30];
+				\draw[-,draw=Grey]  (axis cs: 5.2,6.5) to ["$\epsilon$"] (axis cs: 4.2,6.5);
+				\draw[]  (axis cs: 5,2) to ["$S$"] (axis cs: 5,2);
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+
+	Note: A boundary point of $S$ may or may not be in $S$.
 
 	\begin{definition}[Boundary of a Set]
-		content...
+		A boundary of a set $S$ is the set of all boundary points of $S$. The set containing all boundary points of $S$.
+		$$\{z_0 : \forall \epsilon \exists z\in S, z'\notin S(\abs{z-z_0}<\epsilon \land \abs{z'-z_0}<\epsilon )\}$$ 
 	\end{definition}
 
 	\begin{definition}[Open Set]
-		content...
+		A set that does not contain any boundary points. 
 	\end{definition}
 
+	\begin{theorem}
+		Set $S$ is open $\iff$ $\forall s \in S$, $s$ is an interior point of $S$ 
+	\end{theorem}
+	\begin{proof}
+		\textcolor{Grey}{
+		\underline{$\implies$}:
+		Suppose $S$ is open $\nRightarrow$ $\forall s \in S$, $s$ is an interior point of $S$, for contradiction. That is, $\exists s \in S$ that is either a boundary point or an exterior point. $s \in S$ implies $s$ is not an exterior point of $S$, so $s$ has to be a boundary point of $S$. This contradicts that $S$ is an open set. 
+		$$S \text{ is open } \implies \forall s \in S (s \text{ is an interioir point of }S)$$
+		\underline{$\impliedby$:}
+		\begin{align*}
+			&\forall s \in S (s \text{ is an interior point of S}) \\
+			&\implies \forall s' \forall \epsilon (\abs{s'-s} < \epsilon \implies s' \in S)\\
+			&\implies S \text{ does not contain boundary points} \implies S \text{ is open}
+		\end{align*}
+		}
+	\end{proof}
+	
 	\begin{definition}[Closed Set]
-		content...
+		A set that contains all of its boundary points. 
 	\end{definition}
 
 	\begin{definition}[Closure of a Set]
-		content...
+		Let $S$ be a set. The closure of S is a closed set containing all points of $S$ and all boundary points of $S$. 
 	\end{definition}
 
 	\begin{definition}[Connected Set]
