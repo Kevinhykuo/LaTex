@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  26 NOV 2020 14:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  27 NOV 2020 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1570,7 +1570,7 @@ t/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/texmf-dist
 fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (101 pages, 270375 bytes).
+Output written on "Math Notes.pdf" (101 pages, 270359 bytes).
 PDF statistics:
  928 PDF objects out of 1000 (max. 8388607)
  793 compressed objects within 8 object streams
