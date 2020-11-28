@@ -22,34 +22,34 @@
 \contentsline {section}{\numberline {10.5}Complex Conjugate}{34}{section.10.5}%
 \contentsline {section}{\numberline {10.6}Operations as Transformations}{35}{section.10.6}%
 \contentsline {section}{\numberline {10.7}Complex Analysis Definitions}{36}{section.10.7}%
-\contentsline {chapter}{\numberline {11}Conformal Mapping}{37}{chapter.11}%
-\contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{39}{part.5}%
-\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{41}{part.6}%
-\contentsline {part}{VII\hspace {1em}Partial Differential Equations}{43}{part.7}%
-\contentsline {paragraph}{Calculus of Variations}{44}{part.7}%
-\contentsline {part}{VIII\hspace {1em}Integral Equations}{45}{part.8}%
-\contentsline {part}{IX\hspace {1em}Linear Algebra}{47}{part.9}%
-\contentsline {chapter}{\numberline {12}Markov Chains}{49}{chapter.12}%
-\contentsline {part}{X\hspace {1em}Tensors}{51}{part.10}%
-\contentsline {part}{XI\hspace {1em}Riemann Geometry}{53}{part.11}%
-\contentsline {part}{XII\hspace {1em}Abstract Algebra}{55}{part.12}%
-\contentsline {chapter}{\numberline {13}Groups}{57}{chapter.13}%
-\contentsline {chapter}{\numberline {14}Rings}{59}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Ideals}{59}{section.14.1}%
-\contentsline {chapter}{\numberline {15}Integral Domains}{61}{chapter.15}%
-\contentsline {chapter}{\numberline {16}GCD Domains}{63}{chapter.16}%
-\contentsline {chapter}{\numberline {17}Unique Factorization Domains}{65}{chapter.17}%
-\contentsline {chapter}{\numberline {18}Principal Ideal Domains}{67}{chapter.18}%
-\contentsline {chapter}{\numberline {19}Fields}{69}{chapter.19}%
-\contentsline {part}{XIII\hspace {1em}Galois Theory}{71}{part.13}%
-\contentsline {part}{XIV\hspace {1em}Lie Algebra}{73}{part.14}%
-\contentsline {part}{XV\hspace {1em}C-Star Algebra}{75}{part.15}%
-\contentsline {part}{XVI\hspace {1em}Set Theory}{77}{part.16}%
-\contentsline {part}{XVII\hspace {1em}Model Theory}{79}{part.17}%
-\contentsline {part}{XVIII\hspace {1em}Statistics}{81}{part.18}%
-\contentsline {part}{XIX\hspace {1em}Tips and Tricks}{83}{part.19}%
-\contentsline {chapter}{\numberline {20}Integration Techniques}{85}{chapter.20}%
-\contentsline {section}{\numberline {20.1}DI Method (Integration Table)}{85}{section.20.1}%
-\contentsline {section}{\numberline {20.2}Feynman Integration}{85}{section.20.2}%
-\contentsline {part}{XX\hspace {1em}Index}{87}{part.20}%
-\contentsline {part}{XXI\hspace {1em}Bibliography}{89}{part.21}%
+\contentsline {chapter}{\numberline {11}Conformal Mapping}{39}{chapter.11}%
+\contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{41}{part.5}%
+\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{43}{part.6}%
+\contentsline {part}{VII\hspace {1em}Partial Differential Equations}{45}{part.7}%
+\contentsline {paragraph}{Calculus of Variations}{46}{part.7}%
+\contentsline {part}{VIII\hspace {1em}Integral Equations}{47}{part.8}%
+\contentsline {part}{IX\hspace {1em}Linear Algebra}{49}{part.9}%
+\contentsline {chapter}{\numberline {12}Markov Chains}{51}{chapter.12}%
+\contentsline {part}{X\hspace {1em}Tensors}{53}{part.10}%
+\contentsline {part}{XI\hspace {1em}Riemann Geometry}{55}{part.11}%
+\contentsline {part}{XII\hspace {1em}Abstract Algebra}{57}{part.12}%
+\contentsline {chapter}{\numberline {13}Groups}{59}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Rings}{61}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Ideals}{61}{section.14.1}%
+\contentsline {chapter}{\numberline {15}Integral Domains}{63}{chapter.15}%
+\contentsline {chapter}{\numberline {16}GCD Domains}{65}{chapter.16}%
+\contentsline {chapter}{\numberline {17}Unique Factorization Domains}{67}{chapter.17}%
+\contentsline {chapter}{\numberline {18}Principal Ideal Domains}{69}{chapter.18}%
+\contentsline {chapter}{\numberline {19}Fields}{71}{chapter.19}%
+\contentsline {part}{XIII\hspace {1em}Galois Theory}{73}{part.13}%
+\contentsline {part}{XIV\hspace {1em}Lie Algebra}{75}{part.14}%
+\contentsline {part}{XV\hspace {1em}C-Star Algebra}{77}{part.15}%
+\contentsline {part}{XVI\hspace {1em}Set Theory}{79}{part.16}%
+\contentsline {part}{XVII\hspace {1em}Model Theory}{81}{part.17}%
+\contentsline {part}{XVIII\hspace {1em}Statistics}{83}{part.18}%
+\contentsline {part}{XIX\hspace {1em}Tips and Tricks}{85}{part.19}%
+\contentsline {chapter}{\numberline {20}Integration Techniques}{87}{chapter.20}%
+\contentsline {section}{\numberline {20.1}DI Method (Integration Table)}{87}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Feynman Integration}{87}{section.20.2}%
+\contentsline {part}{XX\hspace {1em}Index}{89}{part.20}%
+\contentsline {part}{XXI\hspace {1em}Bibliography}{91}{part.21}%
