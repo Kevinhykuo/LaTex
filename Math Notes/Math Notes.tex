@@ -1379,9 +1379,26 @@
 		A set S is bounded if $\exists R$ such that $\forall s \in S$, $s < R$.
 	\end{definition}
 
-	\begin{definition}[Accumulation Point]
-		content...
+	\begin{definition}[Accumulation/Limit Point]
+		A point $z_0$ is a accumulation point of a set $S$ if all deleted neighbourhood of $z_0$ contains an element of $S$. 
+		$$\forall \epsilon \exists s \in S (s \neq z_0 \land \abs{z-s} < \epsilon)$$
 	\end{definition}
+	Note: Unlike a boundary point, an accumulation point does not require that all neighbourhood of $z_0$ contain an element not in $S$.
+	
+	\begin{theorem}
+		Set $S$ is closed $\iff$ $\forall$ accumulation points $z_0$ of $S$, $z_0 \in S$
+	\end{theorem}
+	\begin{proof}
+		\underline{$\implies$:}
+		Let $S$ is closed and $z_0$ is an accumulation point of a set $S$ where $z_0 \notin S$ for contradiction. If $\exists z_0 \notin S$, then $z_0$ is a boundary point of $S$. Contradicts closed set contains all boundary points. 
+		
+		\textcolor{Grey}{
+		\underline{$\impliedby$:}
+		Suppose all accumulation points of $S$ are elements of $S$ but $S$ is not closed for contradiction. Then $S$ does not contain one or more boundary points. Suppose $z_0$ is a boundary point of $S$ that is not in $S$. Then $\forall \epsilon \ \exists s\in S$ where $\abs{s-z_0} < \epsilon$, so by considering the deleted neighbourhood of $z_0$, this makes $z_0$ an accumulation point of $S$. This contradicts that all accumulation points of $S$ is in $S$. 		
+		}
+	\end{proof}
+
+	\chapter{Analytic Functions} \label{Analytic Functions Chapter - Complex}
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
