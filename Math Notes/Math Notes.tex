@@ -1311,6 +1311,8 @@
 		\end{align*}
 		}
 	\end{proof}
+
+	A set can be neither open or closed. Consider the set $S = \{z : 0 < \abs{z} \leq 1\}$. $S$ is not closed since it does not contain the boundary point $0$, and it is not open since it contains boundary points where $\abs{z} = 1$. The set $\mathbb{C}$ is both open and closed since it has no boundary points. 
 	
 	\begin{definition}[Closed Set]
 		A set that contains all of its boundary points. 
@@ -1321,19 +1323,60 @@
 	\end{definition}
 
 	\begin{definition}[Connected Set]
-		content...
+		An opens set $S$ is connected if $\forall z_1, z_2 \in S$, $z_1$ and $z_2$ can be connected by a polygonal line lying within $S$.
+	\end{definition}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				small,
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(3, 3) [$z_1$]
+					(6, 6) [$z_2$]
+				};
+				\draw[line width=1pt, Black](axis cs: 5, 4) circle [radius=10];
+				\draw[line width=1pt, Black](axis cs: 5, 4) circle [radius=35];
+				\draw[-,draw=Grey]  (axis cs: 3,3) -- (axis cs: 4,5);
+				\draw[-,draw=Grey]  (axis cs: 4,5) -- (axis cs: 6,6);
+				\draw[]  (axis cs: 5,2) to ["$S$"] (axis cs: 5,2);
+44			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+
+	\begin{definition}[Polygonal Line]
+		A finite set of line segments joined end to end. 
 	\end{definition}
 
 	\begin{definition}[Domain]
-		content...
+		A nonempty connected set. 
 	\end{definition}
+	Note: All neighbourhoods are domains. 
 
 	\begin{definition}[Region]
-		content...
+		A domain with none, some, or all of its boundary points. 
 	\end{definition}
 	
 	\begin{definition}[Bounded Set]
-		content...
+		A set S is bounded if $\exists R$ such that $\forall s \in S$, $s < R$.
 	\end{definition}
 
 	\begin{definition}[Accumulation Point]
