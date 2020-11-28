@@ -42,14 +42,16 @@
 \contentsline {chapter}{\numberline {18}Principal Ideal Domains}{69}{chapter.18}%
 \contentsline {chapter}{\numberline {19}Fields}{71}{chapter.19}%
 \contentsline {part}{XIII\hspace {1em}Galois Theory}{73}{part.13}%
-\contentsline {part}{XIV\hspace {1em}Lie Algebra}{75}{part.14}%
-\contentsline {part}{XV\hspace {1em}C-Star Algebra}{77}{part.15}%
-\contentsline {part}{XVI\hspace {1em}Set Theory}{79}{part.16}%
-\contentsline {part}{XVII\hspace {1em}Model Theory}{81}{part.17}%
-\contentsline {part}{XVIII\hspace {1em}Statistics}{83}{part.18}%
-\contentsline {part}{XIX\hspace {1em}Tips and Tricks}{85}{part.19}%
-\contentsline {chapter}{\numberline {20}Integration Techniques}{87}{chapter.20}%
-\contentsline {section}{\numberline {20.1}DI Method (Integration Table)}{87}{section.20.1}%
-\contentsline {section}{\numberline {20.2}Feynman Integration}{87}{section.20.2}%
-\contentsline {part}{XX\hspace {1em}Index}{89}{part.20}%
-\contentsline {part}{XXI\hspace {1em}Bibliography}{91}{part.21}%
+\contentsline {part}{XIV\hspace {1em}Lie Theory}{75}{part.14}%
+\contentsline {chapter}{\numberline {20}Lie Groups}{77}{chapter.20}%
+\contentsline {chapter}{\numberline {21}Lie Algebra}{79}{chapter.21}%
+\contentsline {part}{XV\hspace {1em}C-Star Algebra}{81}{part.15}%
+\contentsline {part}{XVI\hspace {1em}Set Theory}{83}{part.16}%
+\contentsline {part}{XVII\hspace {1em}Model Theory}{85}{part.17}%
+\contentsline {part}{XVIII\hspace {1em}Statistics}{87}{part.18}%
+\contentsline {part}{XIX\hspace {1em}Tips and Tricks}{89}{part.19}%
+\contentsline {chapter}{\numberline {22}Integration Techniques}{91}{chapter.22}%
+\contentsline {section}{\numberline {22.1}DI Method (Integration Table)}{91}{section.22.1}%
+\contentsline {section}{\numberline {22.2}Feynman Integration}{91}{section.22.2}%
+\contentsline {part}{XX\hspace {1em}Index}{93}{part.20}%
+\contentsline {part}{XXI\hspace {1em}Bibliography}{95}{part.21}%
