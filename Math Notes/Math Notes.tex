@@ -408,7 +408,7 @@
 	$$\mathbb{C} = \{x + iy \mid x, y \in \mathbb{R}, i = \sqrt{-1}\}$$
 	Complex numbers are elements of the complex field $(\mathbb{C})$, therefore, they obey all the properties of a field. 
 	
-	We will denote complex numbers by $z = x + iy$ with $x, y \in \mathbb{R}$, and refer the real part as $\Re(z) = \operatorname{Re}(z) = x$ and imaginary part as $\Im(z) = \operatorname{Im}(z) = y$. Complex numbers can also be defined as an ordered pair $z = (x, y)$ which is interpreted as points in the complex plane. $(x, 0)$ are points on the real axis while $(0 , y)$ are points in the imaginary axis. 
+	We will denote complex numbers by $z = x + iy$ with $x, y \in \mathbb{R}$, and refer the real part as $\Re(z) = \operatorname{Re}(z) = x$ and imaginary part as $\Im(z) = \operatorname{Im}(z) = y$. Complex numbers can also be defined as an ordered pair $z = (x, y)$ which is interpreted as points in the complex plane. $(x, 0)$ are points on the real axis while $(0 , y)$ are points in the imaginary axis. This expression is often called a Couple, and was presented in 1833 by mathematician William Rowan Hamilton (1805 - 1865).
 	
 	\begin{center}
 		\begin{tikzpicture}
@@ -441,12 +441,11 @@
 		\end{axis}
 	\end{tikzpicture}
 	\end{center}
-	We add and multiply complex numbers in the usual way: 
+	Like numbers in $\mathbb{R}$, numbers in $\mathbb{C}$ obey the commutative, distributive, and associative laws. We add and multiply complex numbers in the usual way: 
 	\begin{align*}
 		z_1 + z_2 &= (x_1 + iy_1) + (x_2 + iy_2) & z_1 z_2 &= (x_1 + iy_1) (x_2 + iy_2) \\
 			&= (x_1 + x_2) + i(y_1 + y_2) & &=(x_1 x_2 - y_1 y_2) + i(x_1 y_2 + x_2 y_1)
 	\end{align*}
-	
 	$\forall z \in \mathbb{C}$, there is an unique additive inverse $(-z)$ and $\forall z \in \mathbb{C}\setminus\{0\}$, there is an unique multiplicative inverse $(z^{-1})$ such that 
 	\begin{align*}
 		&z + (-z) = 0  & &zz^{-1} = 1 \\
@@ -489,13 +488,14 @@
 				\draw[line width=1pt,Grey,-stealth](0,0)--(70,50);
 				\draw[line width=1pt,Grey,-stealth](0,0)--(10,40);
 				\draw[line width=1pt,Grey,-stealth](70,50)--(80,90);
+				\draw[line width=1pt,Grey,-stealth](10,40)--(80,90);
 				\draw[line width=1pt,black,-stealth](0,0)--(80,90);
 			\end{axis}
 	\end{tikzpicture}
 	\end{center}
 	
 	\section{Triangle Inequality} \label{Triangle Inequality Section - Complex}
-	It is not analysis without a section dedicated to the triangle inequality.
+	It is not analysis without a section dedicated to the triangle inequality. For any given number $z_1, z_2 \in \mathbb{C}$ it makes no sense to write an inequality $z_1 = a_1 + ib_1 <  a_2 + ib_2 = z_2$. Thus, we need have a different notion of size. 
 	
 	\begin{definition}[Modulus]
 		$\abs{z} = \sqrt{x^2 + y^2} = \sqrt{z \bar{z}}$
