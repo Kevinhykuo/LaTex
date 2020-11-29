@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  28 NOV 2020 19:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  29 NOV 2020 00:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1461,77 +1461,86 @@ Missing character: There is no 4 in font nullfont!
 Chapter 11.
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1421.
+age 1 undefined on input line 1433.
 
 [41
 
-] [42
+]
+NOTE: coordinate (1Y2.23e0],3Y0.0e0]) has been dropped because it is unbounded 
+(in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1Y2.23e0],3Y0.0e0]) has been dropped because it is unbounded 
+(in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2308308e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2308308e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+[42]
+Missing character: There is no ; in font nullfont!
+[43] [44
 
 ]
 Chapter 12.
-[43] [44
-
-] [45] [46
+[45] [46
 
 ] [47] [48
 
-] [49] [50] [51
+] [49] [50
 
-] [52
+] [51] [52] [53
 
-] [53] [54
+] [54
+
+] [55] [56
 
 ]
 Chapter 13.
-[55] [56
-
-] [57] [58
+[57] [58
 
 ] [59] [60
 
 ] [61] [62
 
-]
-Chapter 14.
-[63] [64
+] [63] [64
 
 ]
-Chapter 15.
+Chapter 14.
 [65] [66
 
 ]
-Chapter 16.
+Chapter 15.
 [67] [68
 
 ]
-Chapter 17.
+Chapter 16.
 [69] [70
 
 ]
-Chapter 18.
+Chapter 17.
 [71] [72
 
 ]
-Chapter 19.
+Chapter 18.
 [73] [74
 
 ]
-Chapter 20.
+Chapter 19.
 [75] [76
 
-] [77] [78
+]
+Chapter 20.
+[77] [78
 
 ] [79] [80
 
+] [81] [82
+
 ]
 Chapter 21.
-[81] [82
+[83] [84
 
 ]
 Chapter 22.
-[83] [84
-
-] [85] [86
+[85] [86
 
 ] [87] [88
 
@@ -1541,62 +1550,65 @@ Chapter 22.
 
 ] [93] [94
 
+] [95] [96
+
 ]
 Chapter 23.
-[95] [96
+[97] [98
 
-] [97
+] [99
 
-] [98
+] [100
 
-] [99]
+] [101]
 
-(./Math Notes.bbl [100
+(./Math Notes.bbl [102
 
-]) [101] (./Math Notes.aux
+]) [103] (./Math Notes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
-(rerunfilecheck)             Checksum: 14F423A9F135264D80AC5C91ACAA6D56;3291.
+(rerunfilecheck)             Checksum: B1A3B18D0069B5814034799B65225B9D;3346.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39487 strings out of 479485
- 896611 string characters out of 5871977
- 1328135 words of memory out of 5000000
- 55460 multiletter control sequences out of 15000+600000
+ 39659 strings out of 479485
+ 900246 string characters out of 5871977
+ 1845700 words of memory out of 5000000
+ 55613 multiletter control sequences out of 15000+600000
  575679 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,109p,729b,2536s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolB.enc}{/
-usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/
-local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/loca
-l/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/local/te
-xlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/tex
-live/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}</usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol6.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (111 pages, 288288 bytes).
+ 99i,21n,109p,729b,2536s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/
+usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/
+local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolB.enc}{/usr/loca
+l/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/local/te
+xlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/local/texliv
+e/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/local/texlive/20
+20/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol6.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "Math Notes.pdf" (113 pages, 332741 bytes).
 PDF statistics:
- 1053 PDF objects out of 1200 (max. 8388607)
- 906 compressed objects within 10 object streams
- 284 named destinations out of 1000 (max. 500000)
- 469 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1093 PDF objects out of 1200 (max. 8388607)
+ 944 compressed objects within 10 object streams
+ 303 named destinations out of 1000 (max. 500000)
+ 477 words of extra memory for PDF output out of 10000 (max. 10000000)
 

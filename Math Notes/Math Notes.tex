@@ -1409,17 +1409,207 @@
 
 	\chapter{Analytic Functions} \label{Analytic Functions Chapter - Complex}
 	\section{Functions as mappings} \label{Functions as Mappings Section - Complex}
-	A function $f: S \rightarrow S'$ is a function that maps elements from $S$ to elements on $S'$. The value of $f$ at $z$ is denoted $f(z)$ and the set $S$ is the domain of $f$. 
+	A function $f: S \rightarrow S'$ is a function that maps elements from $S$ to elements on $S'$. The value of $f$ at $z$ is denoted $f(z)$ and the set $S$ is the domain of $f$ while $S'$ is the image of $f$. Recall \cref{Operations as Transformations Section - Complex}, a function can likewise be viewed as a transformation or mapping, that maps $z \in \operatorname{dom}(f) = S$ to values $z' \in \operatorname{img}(f) = S'$.
+	
+	\begin{definition}[Range]
+		Let $f$ be a function with domain $S$ and image $S'$. The range of $f$ is the entire image of $S$.
+	\end{definition}
+
+	Note: Image is a subset of range, and can be a single point or a set of points.
+
+	\begin{definition}[Inverse Range]
+		The set of all points $s \in S$ with the value $f(s) = s'$ for some $s' \in S'$.
+		$$\{s : f(s) = s', \ s' \in S'\}$$
+	\end{definition}
 	
 	Note: The domain of a function is often a domain, but it does not need to be a domain. 
 	
 	We will consider functions $f: S \rightarrow S'$ where both $S, S' \subseteq \mathbb{C}$. For such functions we can break it into a two real valued functions: 
 	\begin{align*}
 		f(z) &= u(x, y) + i v(x, y)
-			& \operatorname{dom}(u) \subseteq \mathbb{R}, \operatorname{dom}(v) \subseteq \mathbb{R}
+			& \operatorname{dom}(u) \subseteq \mathbb{R}, \operatorname{dom}(v) \subseteq \mathbb{R} \\
+			&= u(r, \theta) + i v(r, \theta)
 	\end{align*}
 	Recall that a real-valued function is a function with a domain that is a subset of $\mathbb{R}$ (\cref{Real-Valued Function Definition - Real Analysis}).
 	If $\forall z$, $v(x, y) = 0$, then $f$ is called a real-valued function of a complex variable. 
+	
+	\begin{definition}[Polynomial]
+		\label{Polynomial Definition - Complex}
+		Let $a_i \in \mathbb{C}$, $0 \leq i \leq n$ where $i, n \in \mathbb{N}\cup\{0\}$. If $a_n \neq 0$, then a polynomial of degree n is
+		$$P(z) = a_0 + a_1 z + a_2 z^2 + \ldots + a_n z^n = \sum_{i=0}^n a_i z^i$$
+	\end{definition}
+
+	\begin{definition}[Rational Functions]
+		\label{Rational Functions Definition - Complex}
+		Let $P(z)$ and $Q(z)$ are polynomials, then rational functions are quotients:
+		$$\frac{P(z)}{Q(z)}$$
+		Defined for all $z$ where $Q(z) \neq 0$.
+	\end{definition}
+	
+	\begin{definition}[Multiple-Valued Function]
+		\label{Multiple-Valued Function Definition - Complex}
+		Let $f$ be a function and $z \in \operatorname{dom}(f)$. $f$ is a multiple-valued function if it assigns more than one value to a point $z$.
+	\end{definition}
+	"When multiple-valued functions are studied, usually just one of the possible values assigned at each point is taken, in a systematic manner and a (single-valued) function is constructed from the multiple-valued one" - Brown and Churchill \cite{Brown.J;Churchill.R-Complex-Variables-2014}
+	
+	What this means that for $z \in \mathbb{C}$ a function $f$ assigns $u(z)$ and $v(z)$ to to $z$. By taking just $u$ or $v$, we create a single-valued function from a multiple-valued function. 
+	
+	\begin{example}[$f(z) = z^2$]
+		\begin{align*}
+			f(z) &= z^2  = x^2 - y^2 + i2xy \\
+				&\implies u(x,y) = x^2 - y^2 \qquad v(x,y) = 2xy
+		\end{align*}
+		By setting $u = x^2 - y^2 = c_1$ where $c_1 \in \mathbb{R}_{>0}$ we can see that
+		\begin{align*}
+			u &= x^2 - y^2 = c_1 & v &= 2xy = \pm 2y \sqrt{y^2 + c_1}
+		\end{align*}
+		This tells us that in the complex plane of $u$ and $v$, if we fix $u$ to a constant $c_1$ and move along $v = \pm 2 y \sqrt{y^2 + c_1}$ by incrementing $y$ we draw out two hyperbolas in the complex plane of $x$ and $y$.  This means that the function $f(z) = z^2$ takes points on hyperbolas the complex plane of $x$ and $y$ and translates them onto a vertical line in the complex plane of $u$ and $v$ where $u$ is a constant.
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					width=8.9cm,
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-10, xmax=10,
+					ymin=-10, ymax=10,
+					axis lines = middle,
+					xticklabels={}, yticklabels={},
+					grid=none,
+					axis lines=middle,
+					minor tick num=4,
+					minor tick style={draw=none},
+					legend pos = south west,
+					]
+					
+					\addplot [domain=2.23:10, samples=1000, color=blue,]
+					{(x^2 - 5)^(0.5)};
+					\addlegendentry{$x^2 - y^2 = c_1$}
+					
+					\addplot [domain=2.23:10, samples=1000, color=blue,]
+					{-(x^2 - 5)^(0.5)};
+					
+					\addplot [domain=-10:-2.23, samples=1000, color=blue,]
+					{(x^2 - 5)^(0.5)};
+					
+					\addplot [domain=-10:-2.23, samples=1000, color=blue,]
+					{-(x^2 - 5)^(0.5)};
+					
+					\draw[->, draw=Blue] (axis cs:6.02,-5.6) -- (axis cs:5.5,-5);
+					\draw[->, draw=Blue] (axis cs:-6.02,5.6) -- (axis cs:-5.5,5);
+				\end{axis}
+				\path (current bounding box.north east) -- 
+				(current bounding box.south east) coordinate[midway] (2BL);
+			\end{tikzpicture}
+			\hspace*{2.8cm}
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					width=8.9cm,
+					unit vector ratio=1 1 1
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-10, xmax=10,
+					ymin=-10, ymax=10,
+					xticklabels={}, yticklabels={},
+					axis lines=middle,
+					minor tick num=0,
+					minor tick style={draw=none},
+					legend pos = south west,
+					]
+					
+					\addplot [mark=none, color=Blue] coordinates {(5, -10) (5, 10)};
+					\addlegendentry{$u = c_1, \ v = \pm 2y \sqrt{y^2 + c_1}$}
+					
+					\draw[->, draw=Blue] (axis cs:5,-10) -- (axis cs:5,-5);
+%					node[midway,above right,inner sep=2pt,font={\footnotesize}]{$\theta$};
+				\end{axis}
+				\path (current bounding box.north west) -- 
+				(current bounding box.south west) coordinate[midway] (2BR);
+			\end{tikzpicture}
+			\tikz[overlay,remember picture]{\draw[->, very thick] 
+				($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
+				node[midway,above,text width=2.5cm]{$f(z) = z^2$};}
+		\end{figure}
+		Likewise if we set $v = c_2$ where $c_2 \in \mathbb{R}_{>0}$, we get:
+		\begin{align*}
+			u &= x^2 - \frac{c_2^2}{4x^2} 
+			& v &= 2xy = c_2
+		\end{align*}
+		Taking the limits: 
+		\begin{align}
+			\lim_{x\rightarrow 0^+} u &= -\infty 
+				& \lim_{x \rightarrow \infty, x>0} u &= \infty \\
+			\lim_{x\rightarrow -\infty, x<0} u &= \infty 
+				& \lim_{x \rightarrow 0^-} u &= -\infty 
+		\end{align}
+		Equation 11.1 tells us as $x$ goes from $0$ to $\infty$, $u$ moves from $-\infty$ to $\infty$, which corresponds to the hyperbola in the first quadrant of the $x$$y$ complex plane. Similarly for equations 11.2.
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					width=8.9cm,
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-10, xmax=10,
+					ymin=-10, ymax=10,
+					axis lines = middle,
+					xticklabels={}, yticklabels={},
+					grid=none,
+					axis lines=middle,
+					minor tick num=4,
+					minor tick style={draw=none},
+					legend pos = south west,
+					]
+					\addplot [domain=0.01:10, samples=50, color=Red,]
+					{5/(2*x)};
+					
+					\addplot [domain=-10:-0.01, samples=50, color=Red,]
+					{5/(2*x)};
+					\addlegendentry{$2xy = c_2$};
+					
+					\draw[->, draw=Red] (axis cs:0.485,5.1) -- (axis cs:0.51,5);
+					\draw[->, draw=Red] (axis cs:-0.485,-5.1) -- (axis cs:-0.51,-5);
+				\end{axis}
+				\path (current bounding box.north east) -- 
+				(current bounding box.south east) coordinate[midway] (2BL);
+			\end{tikzpicture}
+			\hspace*{2.8cm}
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					width=8.9cm,
+					unit vector ratio=1 1 1
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-10, xmax=10,
+					ymin=-10, ymax=10,
+					xticklabels={}, yticklabels={},
+					axis lines=middle,
+					minor tick num=0,
+					minor tick style={draw=none},
+					legend pos = south west,
+					]
+					
+					\addplot [domain=-10:10, samples=10, color=Red,]
+					{5};
+					\addlegendentry{$u = x^2 - c_2^2/(4x^2), \ v=c_2$}
+					
+					\draw[->, draw=Red] (axis cs:-10,5) -- (axis cs:-5,5);
+					%					node[midway,above right,inner sep=2pt,font={\footnotesize}]{$\theta$};
+				\end{axis}
+				\path (current bounding box.north west) -- 
+				(current bounding box.south west) coordinate[midway] (2BR);
+			\end{tikzpicture}
+			\tikz[overlay,remember picture]{\draw[->, very thick] 
+				($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
+				node[midway,above,text width=2.5cm]{$f(z) = z^2$};}
+		\end{figure}
+		If we look at $f$ using the polar representation, we get $f(z) = r^2 e^{i2\theta}$. This tells us $\forall r \geq 0$, $r \mapsto r^2 = \rho \geq 0$, and $\forall \theta$, $\theta \mapsto \phi = 2\theta$. It is worth noting that mapping of points between $0 \leq 0 < 2\pi$ is not one-to-one, since points in $0 \leq \theta < \pi$ and points in $\pi \leq \theta < 2\pi$ both get mapped to $0 \leq \phi < 2\pi$. 
+	\end{example}
+
+	\section{Limits} \label{Limits Section - Complex}
+	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
