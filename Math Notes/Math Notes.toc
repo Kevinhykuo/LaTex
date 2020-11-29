@@ -23,6 +23,7 @@
 \contentsline {section}{\numberline {10.6}Operations as Transformations}{35}{section.10.6}%
 \contentsline {section}{\numberline {10.7}Complex Analysis Definitions}{36}{section.10.7}%
 \contentsline {chapter}{\numberline {11}Analytic Functions}{41}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Functions as mappings}{41}{section.11.1}%
 \contentsline {chapter}{\numberline {12}Conformal Mapping}{43}{chapter.12}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{45}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{47}{part.6}%

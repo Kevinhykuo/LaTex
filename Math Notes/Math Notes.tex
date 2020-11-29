@@ -547,7 +547,7 @@
 	\begin{definition}[Argument of $z$]
 		Consider any $z \in \mathbb{C}$ where $z \neq 0$.
 		Let $\theta$ be the angle in radians between $z$ and the real axis .
-		Then $\forall n \in \mathbb{N}$, $0 \leq \theta < 2\pi$, the argument of $z$:
+		Then $\forall n \in \mathbb{N}$, $-\pi < \theta \leq \pi$, the argument of $z$:
 		$$ \operatorname{arg}(z) = \theta + 2 n \pi$$
 		\label{Argument - Complex}
 	\end{definition}
@@ -556,11 +556,12 @@
 	\begin{definition}[Principal Argument of $z$]
 		Consider any $z \in \mathbb{C}$ where $z \neq 0$.
 		Let $\theta$ be the angle in radians between $z$ and the real axis.
-		Then for $0 \leq \theta < 2\pi$, the principal argument of $z$:
+		Then for $-pi < \theta \leq \pi$, the principal argument of $z$:
 		$$\operatorname{Arg}(z) = \theta$$
 		\label{Principal Argument - Complex}
 	\end{definition}
-	It is clear that $\operatorname{arg}(z) = \operatorname{Arg}(z) + 2n \pi$.
+	It is clear that $\operatorname{arg}(z) = \operatorname{Arg}(z) + 2n \pi$. It is common for the principal argument to be defined $-\pi < \theta \leq \pi$, although other definitions use $0 \leq \theta < 2\pi$.
+	
 	\begin{definition}[Polar Form of $z$]
 		Consider $z \in \mathbb{C}$. Let $r = \abs{z}$, and $\theta = \operatorname{arg}(z)$. 
 		Then $\forall z \in \mathbb{C}, z \neq 0$:
@@ -924,7 +925,7 @@
 	
 	Consider any $z \in \mathbb{C}$. A function $f: \mathbb{C} \rightarrow \mathbb{C}$ can be viewed as transformations of the complex plane. 
 	
-	\begin{example}[Addition as sliding]
+	\begin{example}[Addition as translation]
 		Consider any $z_0 \in \mathbb{C}$, $z_0 = a + ib$ for $a, b \in \mathbb{R}$. Addition by $z_0$ can be seen as a shift in the complex plane by $a + bi$. (i.e. It takes the origin and shifts it by $z_0$.)
 		\begin{figure}[H]
 			\centering
@@ -1375,8 +1376,16 @@
 		A domain with none, some, or all of its boundary points. 
 	\end{definition}
 	
+	\begin{definition}[Closed Region]
+		A domain with all of its boundary points. 
+	\end{definition}
+	
 	\begin{definition}[Bounded Set]
 		A set S is bounded if $\exists R$ such that $\forall s \in S$, $s < R$.
+	\end{definition}
+
+	\begin{definition}[Closed Region]
+		A bounded and closed region.
 	\end{definition}
 
 	\begin{definition}[Accumulation/Limit Point]
@@ -1399,8 +1408,18 @@
 	\end{proof}
 
 	\chapter{Analytic Functions} \label{Analytic Functions Chapter - Complex}
+	\section{Functions as mappings} \label{Functions as Mappings Section - Complex}
+	A function $f: S \rightarrow S'$ is a function that maps elements from $S$ to elements on $S'$. The value of $f$ at $z$ is denoted $f(z)$ and the set $S$ is the domain of $f$. 
 	
+	Note: The domain of a function is often a domain, but it does not need to be a domain. 
 	
+	We will consider functions $f: S \rightarrow S'$ where both $S, S' \subseteq \mathbb{C}$. For such functions we can break it into a two real valued functions: 
+	\begin{align*}
+		f(z) &= u(x, y) + i v(x, y)
+			& \operatorname{dom}(u) \subseteq \mathbb{R}, \operatorname{dom}(v) \subseteq \mathbb{R}
+	\end{align*}
+	Recall that a real-valued function is a function with a domain that is a subset of $\mathbb{R}$ (\cref{Real-Valued Function Definition - Real Analysis}).
+	If $\forall z$, $v(x, y) = 0$, then $f$ is called a real-valued function of a complex variable. 
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
