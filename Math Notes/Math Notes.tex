@@ -1708,7 +1708,7 @@
 		$$w_1 - w_0 = 0 \implies w_1 = w_0$$
 	\end{proof}
 
-	\Cref{Limit Definition - Complex} requires that $f$ be defined at all points in the deleted neighbourhood of $z_0$. That is, $z_0$ is interior to the region which $f$ is defined. We can extend the definition by agreeing that $0<\abs{z-z_0} < \delta \implies \abs{f(z) - w_0} < \epsilon$ also holds for $z$ that lie in the region where $f$ is defined and the deleted neighbourhood of $z_0$.  That is $f(z_0)$ need not be defined for a limit to exist.
+	\Cref{Limit Definition - Complex} requires that $f$ be defined at all points in the deleted neighbourhood of $z_0$. That is, $z_0$ is interior to the region which $f$ is defined. We can extend the definition by agreeing that $0<\abs{z-z_0} < \delta \implies \abs{f(z) - w_0} < \epsilon$ also holds for $z$ that lie in the region where $f$ is defined and the deleted neighbourhood of $z_0$.  That is $f(z_0)$ need not be defined for a limit at $z_0$ to exist.
 	
 	\begin{example}
 		Show $(f(z) = iz/2) \land (\abs{z} < 1) \implies \lim_{z\rightarrow 1} f(z) = i/2$.
@@ -1748,9 +1748,26 @@
 	\end{theorem}
 	\begin{proof}
 		\underline{$\implies$:}
-		
+		\begin{align*}
+			&\left[\lim_{(x,y) \rightarrow (x_0, y_0)} u(x,y) = u_0 \right] \land
+			 \left[\lim_{(x,y) \rightarrow (x_0, y_0)} v(x,y) = v_0 \right] \\
+			&\implies \forall \epsilon \exists \delta_1, \delta_2
+			 \left[\left(0< \sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta_1 \implies \abs{u-u_0} < \frac{\epsilon}{2}\right) \right.\\
+			&\qquad \qquad \qquad \land \left.
+			 \left(0< \sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta_2 \implies \abs{v-v_0} < \frac{\epsilon}{2}\right)
+			 \right]
+		\end{align*}
+		\begin{align*}
+			\abs{(u+iv) - (u_0 - iv_0)} &= \abs{(u-u_0) + i(v-v_0)} \leq \abs{u-u_0} + \abs{v-v_0} \\
+			\sqrt{(x-x_0)^2 + (y-y_0)^2} &= \abs{(x-x_0) + i(v-v_0)} = \abs{(x+iy) - (x_0 - iy_0)}
+		\end{align*}
+		Let $\delta = \min\{\delta_1, \delta_2\}$: 
+		$$0 < \abs{(x+iy) - (x_0 + iy_0)} < \delta 
+			\implies \abs{(u+iv)-(u_0 - iv_0)} < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon$$
+		Thus, $\lim_{z \rightarrow z_0} f(z) = w_0$.
 		
 		\underline{$\impliedby$:}
+		
 	\end{proof}
 
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
