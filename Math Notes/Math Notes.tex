@@ -788,10 +788,10 @@
 				\path (current bounding box.north west) -- 
 				(current bounding box.south west) coordinate[midway] (2BR);
 			\end{tikzpicture}
-		\end{figure}
-		\tikz[overlay,remember picture]{\draw[->, very thick] 
+			\tikz[overlay,remember picture]{\draw[->, very thick] 
 			($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
 			node[midway,above,text width=2cm]{$f(z) = z^\frac{1}{5}$};} 
+		\end{figure}
 	\end{example} 
 	
 	We can see that the roots of $z_0$ form a set:
@@ -1129,7 +1129,7 @@
 					(7, 4) [$z_0$]
 				};
 				\draw[dashed,line width=1pt,LightGrey](axis cs: 7, 4) circle [radius=20];
-				\draw[-,draw=Grey]  (axis cs: 7,4) to ["$\epsilon$"] (axis cs: 5,4);;
+				\draw[-,draw=Grey]  (axis cs: 7,4) to ["$\epsilon$"] (axis cs: 5,4);
 			\end{axis}
 		\end{tikzpicture}
 	\end{figure}
@@ -1609,8 +1609,149 @@
 	\end{example}
 
 	\section{Limits} \label{Limits Section - Complex}
+	\begin{definition}[Limit]
+		\label{Limit Definition - Complex}
+		Let $z, z_0, w_0 \in \mathbb{C}$ and $f$ be a function. We say $f(z)$ has limit $w_0$ as $z$ approaches $z_0$ if: 
+		\begin{align*}
+			\forall \epsilon \exists \delta [0<\abs{z-z_0} < \delta \implies \abs{f(z) - w_0} < \epsilon]
+		\end{align*} 
+		We then denote: $\lim_{z \rightarrow z_0} f(z) = w_0$
+	\end{definition}
+	This tells us that $\lim_{z \rightarrow z_0} f(z) = w_0$ if some deleted neighbourhood $\abs{z-z_0} < \delta$ corresponds to a neighbourhood $\abs{f(z) - w_0} < \epsilon$. Note that the mapping of all points $z$ in $\abs{z-z_0} < \delta$ to $\abs{f(z) - w_0} < \epsilon$ need not be subjective. It just needs to be mapped less than distance $\epsilon$ from $w_0$.
 	
+	Note: \Cref{Limit Definition - Complex} allows us to verify if a limit exists, but it is not a method for determining a limit. 
 	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				width=8cm,
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-10, xmax=10,
+				ymin=-1, ymax=10,
+				ticks = none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=o,
+				]
+				coordinates {
+					(8, 8) [$z_0$]
+				};
+				\draw[dashed, line width=1pt,Black](axis cs: 8, 8) circle [radius=20];
+				\draw[-,draw=Black]  (axis cs: 8,8) to ["$\delta$"] (axis cs: 6,8);
+			\end{axis}
+			\path (current bounding box.north east) -- 
+			(current bounding box.south east) coordinate[midway] (2BL);
+		\end{tikzpicture}
+		\hspace*{2.8cm}
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				width=8cm,
+				unit vector ratio=1 1 1,
+				xlabel={$v$},
+				ylabel={$u$},
+				xmin=-10, xmax=10,
+				ymin=-1, ymax=10,
+				ticks = none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(-4, 5) [$w_0$]
+				};
+				\draw[dashed, line width=1pt,Black](axis cs: -4, 5) circle [radius=30];
+				\draw[-,draw=Black]  (axis cs: -4,5) to ["$\epsilon$"] (axis cs: -7,5);
+			\end{axis}
+			\path (current bounding box.north west) -- 
+			(current bounding box.south west) coordinate[midway] (2BR);
+		\end{tikzpicture}
+		\tikz[overlay,remember picture]{\draw[->, very thick] 
+			($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
+			node[midway,above]{$f$};} 
+		\label{Limit Definition Figure - Complex}
+	\end{figure}
+	
+	\begin{theorem}[Uniqueness of Limits]
+		\label{Uniqueness of Limits Theorem - Complex}
+		Suppose the limit of $f$ at $z_0$ exists, then it is unique.
+	\end{theorem}
+	\begin{proof}
+		Suppose two limits of $f$ at $z_0$ exists for contradiction.
+		\begin{align*}
+			&[\lim_{z \rightarrow z_0} f(z) = w_0] \land [\lim_{z \rightarrow z_0} f(z) = w_1] \\
+			&\implies [0 < \abs{z - z_0} < \delta_0 \implies \abs{f(z) - w_0} < \epsilon] 
+				\land [0 < \abs{z - z_0} < \delta_0 \implies \abs{f(z) - w_0} < \epsilon] \\
+			\\
+			&w_1 - w_0 = [f(z) - w_0] + [w_1 - f(z)]\\
+			&\implies \abs{w_1 - w_0} = \abs{[f(z) - w_0] + [w_1 - f(z)]} 
+				\leq \abs{f(z) - w_0} + \abs{f(z) - w_1} 
+		\end{align*}
+		Now choosing $\delta = \min\{\delta_1, \delta_2\}$, we get:
+		$$\abs{w_1 - w_0} < \epsilon + \epsilon = 2 \epsilon$$
+		Choosing $\epsilon$ to be arbitrary small, we end up with: 
+		$$w_1 - w_0 = 0 \implies w_1 = w_0$$
+	\end{proof}
+
+	\Cref{Limit Definition - Complex} requires that $f$ be defined at all points in the deleted neighbourhood of $z_0$. That is, $z_0$ is interior to the region which $f$ is defined. We can extend the definition by agreeing that $0<\abs{z-z_0} < \delta \implies \abs{f(z) - w_0} < \epsilon$ also holds for $z$ that lie in the region where $f$ is defined and the deleted neighbourhood of $z_0$. 
+	
+	\begin{example}
+		Show $(f(z) = iz/2) \land (\abs{z} < 1) \implies \lim_{z\rightarrow 1} f(z) = i/2$.
+		
+		We can see that we have restricted the domain of $f$ to the region $\abs{z} < 1$, this puts $z = 1$ right at the boundary of the domain of definition of $f$.
+		\begin{align*}
+			\abs{z} < 1 \implies& \abs*{f(z) - \frac{i}{2}} = \abs*{\frac{iz}{2} - \frac{i}{2}} = \frac{\abs{z - 1}}{2} \\
+			\implies& \forall z \forall \epsilon \exists \delta \left[ 0 < \abs{z - 1} < \delta = 2\epsilon \implies \abs*{f(z) - \frac{i}{2}} < \epsilon \right] \\
+			\implies& \lim_{z \rightarrow 1} f(z) = \frac{i}{2}
+		\end{align*}
+	\end{example}
+	
+	This highlights the fact that if the limit exists, then $z$ is allowed to approach $z_0$ from any arbitrary direction. 
+	
+	\begin{example}
+		Limit of $f(z) = z /\bar{z}$ does not exist at $z = 0$
+		
+		Consider $\lim_{z \rightarrow 0} f(z)$. Let us approach the limit from the $x$-axis and the $y$-axis. 
+		\begin{align*}
+			\lim_{z = (x, 0) \rightarrow 0} f(z) &= \frac{x + i0}{x - i0} = 1
+			& \lim_{z = (0, y) \rightarrow 0} f(z) &= \frac{0 + iy}{0 - iy} = -1
+		\end{align*} 
+		We end up with two different limits. As limits are unique, we conclude that $\lim_{z\rightarrow0} f(z)$ does not exist. 
+	\end{example}
+
+	\subsection{Limit Theorems} \label{Limit Theorems Subsection - Complex}
+	
+	\begin{theorem}
+		\label{Limit of u(z), v(z), and f(z) Theorem - Complex}
+		Consider $f(z) = u(x, y) + iv(x,y)$. Let $z_0 = x_0 + iy_0$ and $w_0 = u_0 + iv_0$.
+		\begin{align*}
+			\left[\lim_{(x,y) \rightarrow (x_0, y_0)} u(x,y) = u_0 \right] \land
+			\left[\lim_{(x,y) \rightarrow (x_0, y_0)} v(x,y) = v_0 \right]
+			\iff
+			\lim_{z \rightarrow z_0} f(z) = w_0
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\underline{$\implies$:}
+		
+		
+		\underline{$\impliedby$:}
+	\end{proof}
+
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
 	
