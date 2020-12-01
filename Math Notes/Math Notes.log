@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  30 NOV 2020 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  30 NOV 2020 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1475,11 +1475,11 @@ NOTE: coordinate (2Y2.2308308e0],3Y0.0e0]) has been dropped because it is unbou
 nded (in y). (see also unbounded coords=jump). 
 [42]
 Missing character: There is no ; in font nullfont!
-[43] [44] [45] [46] [47] [48
-
-]
+[43] [44] [45] [46] [47] [48]
 Chapter 12.
-[49] [50
+[49
+
+] [50
 
 ] [51] [52
 
@@ -1567,16 +1567,16 @@ Chapter 23.
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `"Math Notes".out' has not changed.
-(rerunfilecheck)             Checksum: EB40DD54724AC01A31D971C895C568D7;3500.
+(rerunfilecheck)             Checksum: 3F10970682E9E878CA92EBB8EED19B78;3559.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39734 strings out of 479485
- 902188 string characters out of 5871977
- 1845878 words of memory out of 5000000
- 55663 multiletter control sequences out of 15000+600000
+ 39747 strings out of 479485
+ 902503 string characters out of 5871977
+ 1845955 words of memory out of 5000000
+ 55669 multiletter control sequences out of 15000+600000
  575679 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,21n,109p,729b,2536s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1604,10 +1604,10 @@ ype1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Math Notes.pdf" (117 pages, 353268 bytes).
+Output written on "Math Notes.pdf" (117 pages, 354782 bytes).
 PDF statistics:
- 1152 PDF objects out of 1200 (max. 8388607)
- 999 compressed objects within 10 object streams
- 328 named destinations out of 1000 (max. 500000)
- 493 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1165 PDF objects out of 1200 (max. 8388607)
+ 1011 compressed objects within 11 object streams
+ 335 named destinations out of 1000 (max. 500000)
+ 501 words of extra memory for PDF output out of 10000 (max. 10000000)
 
