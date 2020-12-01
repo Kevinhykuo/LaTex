@@ -9,6 +9,9 @@
 \usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
 \usepackage{thmtools}
 %\usepackage[standard]{ntheorem}
+\pgfplotsset{compat=1.9}
+\usepgfplotslibrary{external}
+%\tikzexternalize[prefix=tikz/] 
 
 %\renewcommand{\abstractname}{}    % clear the title
 %\renewcommand{\absnamepos}{empty} % originally center 
@@ -394,13 +397,13 @@
 	\part{Complex Analysis} \label{Complex Analysis Part}
 	\begin{partintro}
 	\noindent Primary:
-			\begin{itemize}
-				\item[1.] Brown and Churchill - Complex Variables and Applications \cite{Brown.J;Churchill.R-Complex-Variables-2014}
-			\end{itemize}
-			Supplement: 
-			\begin{itemize}
-				\item[1.] A. David Wunsch - Complex Variables with Applications \cite{Wunsh.A-Complex-Variables-2005}
-			\end{itemize}
+		\begin{itemize}
+			\item[1.] Brown and Churchill - Complex Variables and Applications \cite{Brown.J;Churchill.R-Complex-Variables-2014}
+		\end{itemize}
+		Supplement: 
+		\begin{itemize}
+			\item[1.] A. David Wunsch - Complex Variables with Applications \cite{Wunsh.A-Complex-Variables-2005}
+		\end{itemize}
 	\end{partintro}
 	
 	\chapter{Basics} \label{Basics Chapter - Complex}
@@ -1360,7 +1363,7 @@
 				\draw[-,draw=Grey]  (axis cs: 3,3) -- (axis cs: 4,5);
 				\draw[-,draw=Grey]  (axis cs: 4,5) -- (axis cs: 6,6);
 				\draw[]  (axis cs: 5,2) to ["$S$"] (axis cs: 5,2);
-44			\end{axis}
+			\end{axis}
 		\end{tikzpicture}
 	\end{figure}
 
@@ -1881,6 +1884,75 @@
 		Consider the Riemann Sphere. Let $N$ be the northern point of the sphere (the point on the sphere above the origin of the complex plane) and $z$ be any point in the complex plane. Let $l$ be a line that goes through $N$ and $z$, then $l$ will intersect the Riemann Sphere. Let $P$ be the point where $l$ intersects the Riemann Sphere. If we let $N$ correspond to the points at infinity, then there is a one-to-one correspondence between points on the sphere and the points on the extended complex plane. This correspondence called the Stereographic Projection. 
 	\end{definition}
 
+	\begin{figure}[H]
+		\label{Riemann Sphere and Stereographic Projection Figure - Complex}
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				axis equal,
+				height=20cm,
+				axis lines = center,
+				xlabel = {$x$},
+				ylabel = {$y$},
+				zlabel = {$h$},
+				xmin=-3, xmax=3,
+				ymin=-3, ymax=3,
+				zmin=-2, zmax=2,
+				ticks = none,
+				axis lines = middle,
+				axis line style = Grey,
+%				enlargelimits=0.3,
+				view/h=45,
+				scale uniformly strategy=units only,
+				]
+				\addplot3[
+				opacity = 0.2,
+				surf,
+				z buffer = sort,
+				samples = 25,
+				domain = 0:360,
+				y domain = 0:180,
+				]
+				({cos(x)*sin(y)}, {sin(x)*sin(y)}, {cos(y)});
+				
+				\addplot3[
+				samples = 25,
+				domain = 0:360,
+				y domain = 0:180,
+				color = Grey,
+				]
+				({cos(x)}, {sin(x)}, {0});
+				
+				\addplot3[
+				samples = 2,
+				domain = 0:1,
+				color = Black,
+				]
+				({1.5*x}, {2*x}, {1-x});
+				
+				\addplot3[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(1.5, 2, 0) [$z$]
+					(0, 0, 1) [$N$]
+					(0.413793, 0.551724, 0.724138) [$P$]
+				};
+				\draw[dashed,draw=Grey] (axis cs: 1.5,0,0)--(axis cs: 1.5,2,0);
+				\draw[dashed,draw=Grey] (axis cs: 0,2,0)--(axis cs: 1.5,2,0);
+				\draw[dashed,draw=Grey] (axis cs: (0.413793, 0, 0)--(axis cs: (0.413793, 0.551724, 0);
+				\draw[dashed,draw=Grey] (axis cs: (0, 0.551724, 0)--(axis cs: (0.413793, 0.551724, 0);
+				\draw[dashed,draw=Grey] (axis cs: (0.413793, 0.551724, 0)--(axis cs: (0.413793, 0.551724, 0.724138);
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	Test
+	
 	\section{Continuity} \label{Continuinty Section - Complex}
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
