@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  1 DEC 2020 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  1 DEC 2020 15:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1569,211 +1569,37 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 702.
 
 [32]
-\openout3 = `tikz/MathNotes-figure3.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure3" "\def\tikzexte
-rnalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure3" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes}
-")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure3' is up-to-date. ======
 
 LaTeX Font Warning: Command \Large invalid in math mode on input line 754.
 
-\openout3 = `tikz/MathNotes-figure4.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure4" "\def\tikzexte
-rnalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure4" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes}
-")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure4' is up-to-date. ======
 [33 <./tikz/MathNotes-figure3.pdf> <./tikz/MathNotes-figure4.pdf>]
-\openout3 = `tikz/MathNotes-figure5.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure5" "\def\tikzexte
-rnalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure5" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes}
-")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-\openout3 = `tikz/MathNotes-figure6.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure6" "\def\tikzexte
-rnalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure6" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes}
-")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure5' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure6' is up-to-date. ======
 [34 <./tikz/MathNotes-figure5.pdf>]
-\openout3 = `tikz/MathNotes-figure7.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure7" "\def\tikzexte
-rnalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure7" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes}
-")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure7' is up-to-date. ======
 
 LaTeX Font Warning: Command \Large invalid in math mode on input line 965.
 
-\openout3 = `tikz/MathNotes-figure8.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure8" "\def\tikzexte
-rnalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure8" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes}
-")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-\openout3 = `tikz/MathNotes-figure9.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure9" "\def\tikzexte
-rnalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure9" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes}
-")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure8' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure9' is up-to-date. ======
 
 LaTeX Font Warning: Command \Large invalid in math mode on input line 1030.
 
-\openout3 = `tikz/MathNotes-figure10.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure10" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure10" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure10' is up-to-date. ======
 [35 <./tikz/MathNotes-figure6.pdf> <./tikz/MathNotes-figure7.pdf> <./tikz/MathN
 otes-figure8.pdf>]
-\openout3 = `tikz/MathNotes-figure11.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure11" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure11" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-\openout3 = `tikz/MathNotes-figure12.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure12" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure12" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure11' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure12' is up-to-date. ======
 [36 <./tikz/MathNotes-figure9.pdf> <./tikz/MathNotes-figure10.pdf> <./tikz/Math
 Notes-figure11.pdf>]
-\openout3 = `tikz/MathNotes-figure13.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure13" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure13" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-\openout3 = `tikz/MathNotes-figure14.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure14" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure14" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-\openout3 = `tikz/MathNotes-figure15.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure15" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure15" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure13' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure14' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure15' is up-to-date. ======
 [37 <./tikz/MathNotes-figure12.pdf> <./tikz/MathNotes-figure13.pdf> <./tikz/Mat
 hNotes-figure14.pdf>] [38 <./tikz/MathNotes-figure15.pdf>]
-\openout3 = `tikz/MathNotes-figure16.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure16" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure16" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure16' is up-to-date. ======
 [39 <./tikz/MathNotes-figure16.pdf>] [40]
 Chapter 11.
 
@@ -1783,112 +1609,25 @@ age 1 undefined on input line 1424.
 [41
 
 ]
-\openout3 = `tikz/MathNotes-figure17.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure17" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure17" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure17' is up-to-date. ======
 
 LaTeX Font Warning: Command \Large invalid in math mode on input line 1496.
 
-\openout3 = `tikz/MathNotes-figure18.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure18" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure18" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure18' is up-to-date. ======
 [42 <./tikz/MathNotes-figure17.pdf> <./tikz/MathNotes-figure18.pdf>]
-\openout3 = `tikz/MathNotes-figure19.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure19" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure19" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure19' is up-to-date. ======
 
 LaTeX Font Warning: Command \Large invalid in math mode on input line 1568.
 
-\openout3 = `tikz/MathNotes-figure20.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure20" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure20" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-\openout3 = `tikz/MathNotes-figure21.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure21" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure21" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure20' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure21' is up-to-date. ======
 
 LaTeX Font Warning: Command \Large invalid in math mode on input line 1639.
 
-\openout3 = `tikz/MathNotes-figure22.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure22" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure22" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure22' is up-to-date. ======
 [43 <./tikz/MathNotes-figure19.pdf> <./tikz/MathNotes-figure20.pdf>] [44 <./tik
 z/MathNotes-figure21.pdf> <./tikz/MathNotes-figure22.pdf>] [45] [46]
-\openout3 = `tikz/MathNotes-figure23.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure23" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure23" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure23' is up-to-date. ======
 [47] [48 <./tikz/MathNotes-figure23.pdf>]
 Chapter 12.
 [49
@@ -1988,10 +1727,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39248 strings out of 479485
- 893602 string characters out of 5871977
+ 39172 strings out of 479485
+ 891974 string characters out of 5871977
  1312615 words of memory out of 5000000
- 55142 multiletter control sequences out of 15000+600000
+ 55066 multiletter control sequences out of 15000+600000
  568662 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,109p,726b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2021,7 +1760,7 @@ e1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (117 pages, 407361 bytes).
+Output written on MathNotes.pdf (117 pages, 407333 bytes).
 PDF statistics:
  1537 PDF objects out of 1728 (max. 8388607)
  1354 compressed objects within 14 object streams
