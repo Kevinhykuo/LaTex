@@ -1830,14 +1830,14 @@
 	\end{definition}
 
 	\begin{definition}[Stereographic Projection]
-		Consider the Riemann Sphere. Let $N$ be the northern point of the sphere (the point on the sphere above the origin of the complex plane) and $z$ be any point in the complex plane. Let $l$ be a line that goes through $N$ and $z$, then $l$ will intersect the Riemann Sphere. Let $P$ be the point where $l$ intersects the Riemann Sphere. If we let $N$ correspond to the points at infinity, then there is a one-to-one correspondence between points on the sphere and the points on the extended complex plane. This correspondence called the Stereographic Projection. 
+		Consider the Riemann Sphere. Let $N$ be the northern point of the sphere (the point on the sphere above the origin of the complex plane) and $z$ be any point in the complex plane. Let $l$ be a line that goes through $N$ and $z$, then $l$ will intersect the Riemann Sphere. Let $P$ be the point where $l$ intersects the Riemann Sphere. If we let $N$ correspond to the points at infinity, then there is a one-to-one correspondence between points on the sphere and the points on the extended complex plane. This correspondence called the Stereographic Projection. (\Cref{Riemann Sphere and Stereographic Projection Figure - Complex})
 	\end{definition}
 
 	\begin{figure}[H]
-		\label{Riemann Sphere and Stereographic Projection Figure - Complex}
 		\centering
 		\begin{tikzpicture}
 			\begin{axis}[
+%				title = Riemann Sphere with Stereographic Projection,
 				axis equal,
 				height=20cm,
 				axis lines = center,
@@ -1858,14 +1858,14 @@
 				opacity = 0.2,
 				surf,
 				z buffer = sort,
-				samples = 25,
+				samples = 50,
 				domain = 0:360,
 				y domain = 0:180,
 				]
 				({cos(x)*sin(y)}, {sin(x)*sin(y)}, {cos(y)});
 				
 				\addplot3[
-				samples = 25,
+				samples = 50,
 				domain = 0:360,
 				y domain = 0:180,
 				color = Grey,
@@ -1898,6 +1898,8 @@
 				\draw[dashed,draw=Grey] (axis cs: (0.413793, 0.551724, 0)--(axis cs: (0.413793, 0.551724, 0.724138);
 			\end{axis}
 		\end{tikzpicture}
+	    \caption{Riemann Sphere and Stereographic Projection}
+		\label{Riemann Sphere and Stereographic Projection Figure - Complex}
 	\end{figure}
 	
 	
