@@ -8,13 +8,10 @@
 \usepgfplotslibrary{groupplots}
 \usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
 \usepackage{thmtools}
-%\usepackage[standard]{ntheorem}
 \pgfplotsset{compat=1.9}
 \usepgfplotslibrary{external}
 \tikzexternalize[prefix=tikz/] 
 
-%\renewcommand{\abstractname}{}    % clear the title
-%\renewcommand{\absnamepos}{empty} % originally center 
 \setlength{\parindent}{0em} %Set indent on paragraph
 \setlength{\parskip}{0.5em} %Set spaces between paragraphs
 
@@ -29,35 +26,6 @@
 % and \norm resizes the size of the brackets, and the 
 % starred version does not.
 
-% Variables for costomizing theorem enviroment
-% \newtheoremstyle{style name}{space above}{space below}{body font}{indent amount}{head font}{head punct}{after head space}{head spec}
-
-%\newtheoremstyle{break}
-%	{\topsep}{\topsep}%
-%	{\itshape}{}%
-%	{\bfseries}{}%
-%	{\newline}{}%
-
-%\theoremstyle{break}
-%\newtheorem{axiom}{Axiom}[chapter]
-%\newtheorem{thm}{Theorem}[section]
-%\newtheorem{cor}{Corollary}[thm]
-%\newtheorem{lem}[thm]{Lemma}
-%\newtheorem{conj}[thm]{Conjecture}
-%\newtheorem{definition}{Definition}[section]
-%
-%\theoremstyle{plain}
-%\newtheorem*{rmk}{Remark}
-%\newtheorem*{obs}{Observation}
-%\newtheorem*{qtn}{Question}
-%\newtheorem*{example}{Example}
-
-%\colorlet{headcolour}{DarkOrange}
-%\colorlet{rulecolour}{Orange}
-%\renewenvironment{leftbar}{%
-%	\def\FrameCommand{{\color{rulecolour}\vrule width 3pt} \hspace{10pt}}%
-%	\MakeFramed {\advance\hsize-\width \FrameRestore}}%
-%{\endMakeFramed}
 
 \declaretheoremstyle[
 	spaceabove=6pt, 		
@@ -172,7 +140,6 @@
 \begin{document}
 	\title{The Book of Math (Notes)}
 	\author{Kevin Kuo}
-%	\renewcommand{\abstractname}{\vspace{-\baselineskip}}
 	
 	\pagestyle{fancy}
 	\fancyhead{} % clear all header fields
@@ -1932,6 +1899,7 @@
 			\end{axis}
 		\end{tikzpicture}
 	\end{figure}
+	
 	
 	
 	
