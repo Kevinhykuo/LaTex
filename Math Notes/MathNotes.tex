@@ -11,7 +11,7 @@
 %\usepackage[standard]{ntheorem}
 \pgfplotsset{compat=1.9}
 \usepgfplotslibrary{external}
-%\tikzexternalize[prefix=tikz/] 
+\tikzexternalize[prefix=tikz/] 
 
 %\renewcommand{\abstractname}{}    % clear the title
 %\renewcommand{\absnamepos}{empty} % originally center 
@@ -722,7 +722,7 @@
 		Consider $z_0 = 32 e^{i(5/6)\pi}$, then $z_0^{(1/5)} = 3e^{i(\pi/6) + i(2/5) n \pi}$ for $n \in \mathbb{Z}$. The radius went from $35$ to $35^{(1/5)} = 2$, and five roots appear equally spaced with distance of $(2/5)\pi$ on a circle with radius $2$. Before and after graphs are as follows, note graph on right is zoomed in: 
 		\begin{figure}[H]
 			\centering
-			\begin{tikzpicture}[remember picture]
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
 					unit vector ratio=1 1 1,
@@ -748,11 +748,12 @@
 						(-27.7128, 16) [$z_0 = 32e^{i(5/6)\pi}$]
 					};
 				\end{axis}
-				\path (current bounding box.north east) -- 
-				(current bounding box.south east) coordinate[midway] (2BL);
+%				\path (current bounding box.north east) -- 
+%				(current bounding box.south east) coordinate[midway] (2BL);
 			\end{tikzpicture}
-			\hspace*{2.8cm}
-			\begin{tikzpicture}[remember picture]
+			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z) = z^{1/5}}}$}
+%			\hspace*{2.8cm}
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 %					small,
 					width=8.9cm,
@@ -789,12 +790,12 @@
 					\draw[line width=1pt,LightGrey](axis cs:0,0)--(axis cs:-0.8135, -1.8271);
 					\draw[line width=1pt,LightGrey](axis cs:0,0)--(axis cs:1.4863, -1.3383);
 				\end{axis}
-				\path (current bounding box.north west) -- 
-				(current bounding box.south west) coordinate[midway] (2BR);
+%				\path (current bounding box.north west) -- 
+%				(current bounding box.south west) coordinate[midway] (2BR);
 			\end{tikzpicture}
-			\tikz[overlay,remember picture]{\draw[->, very thick] 
-			($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
-			node[midway,above,text width=2cm]{$f(z) = z^\frac{1}{5}$};} 
+%			\tikz[overlay,remember picture]{\draw[->, very thick] 
+%			($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
+%			node[midway,above,text width=2cm]{$f(z) = z^\frac{1}{5}$};} 
 		\end{figure}
 	\end{example} 
 	
@@ -933,7 +934,7 @@
 		Consider any $z_0 \in \mathbb{C}$, $z_0 = a + ib$ for $a, b \in \mathbb{R}$. Addition by $z_0$ can be seen as a shift in the complex plane by $a + bi$. (i.e. It takes the origin and shifts it by $z_0$.)
 		\begin{figure}[H]
 			\centering
-			\begin{tikzpicture}[remember picture]
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
 					unit vector ratio=1 1 1,
@@ -960,11 +961,9 @@
 						(0,0)
 					};
 				\end{axis}
-				\path (current bounding box.north east) -- 
-				(current bounding box.south east) coordinate[midway] (2BL);
 			\end{tikzpicture}
-			\hspace*{2.8cm}
-			\begin{tikzpicture}[remember picture]
+			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z_0) = z + z_0}}$}
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					%					small,
 					width=8.9cm,
@@ -991,12 +990,7 @@
 					};
 					\draw[->, very thick](axis cs:0,0)--(axis cs:4, 3);
 				\end{axis}
-				\path (current bounding box.north west) -- 
-				(current bounding box.south west) coordinate[midway] (2BR);
 			\end{tikzpicture}
-			\tikz[overlay,remember picture]{\draw[->, very thick] 
-				($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
-				node[midway,above,text width=2.5cm]{$f(z_0) = z + z_0$};}
 		\end{figure}
 	\end{example}
 
@@ -1004,7 +998,7 @@
 		Consider any $z_0 \in \mathbb{C}$, $z_0 = re^{i\theta}$. Multiplication by $z_0$ scales the entire complex plane by $r$ and rotates it by $\theta$. (Imagine rotating and stretching out a net.)
 		\begin{figure}[H]
 			\centering
-			\begin{tikzpicture}[remember picture]
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
 					unit vector ratio=1 1 1,
@@ -1032,11 +1026,9 @@
 					};
 				\draw[->, very thick](axis cs:0,0)--(axis cs:1, 0);
 				\end{axis}
-				\path (current bounding box.north east) -- 
-				(current bounding box.south east) coordinate[midway] (2BL);
 			\end{tikzpicture}
-			\hspace*{2.8cm}
-			\begin{tikzpicture}[remember picture]
+			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z_0) = z \cdot z_0}}$}
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
 					unit vector ratio=1 1 1,
@@ -1082,15 +1074,10 @@
 %					minor tick style={draw=none},
 %					]
 %				\end{axis}
-				\path (current bounding box.north west) -- 
-				(current bounding box.south west) coordinate[midway] (2BR);
 %				\pgftransformrotate{36.87}
 %				\pgfpathgrid[stepx=50,stepy=50]{\pgfpoint{0}{-50}}{\pgfpoint{200}{150}}
 %				\pgfusepath{stroke}
 			\end{tikzpicture}
-			\tikz[overlay,remember picture]{\draw[->, very thick] 
-			($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
-			node[midway,above,text width=2.5cm]{$f(z_0) = z \cdot z_0$};}
 		\end{figure}
 	\end{example}
 
@@ -1470,7 +1457,7 @@
 		This tells us that in the complex plane of $u$ and $v$, if we fix $u$ to a constant $c_1$ and move along $v = \pm 2 y \sqrt{y^2 + c_1}$ by incrementing $y$ we draw out two hyperbolas in the complex plane of $x$ and $y$.  This means that the function $f(z) = z^2$ takes points on hyperbolas the complex plane of $x$ and $y$ and translates them onto a vertical line in the complex plane of $u$ and $v$ where $u$ is a constant.
 		\begin{figure}[H]
 			\centering
-			\begin{tikzpicture}[remember picture]
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
 					unit vector ratio=1 1 1,
@@ -1503,11 +1490,12 @@
 					\draw[->, draw=Blue] (axis cs:6.02,-5.6) -- (axis cs:5.5,-5);
 					\draw[->, draw=Blue] (axis cs:-6.02,5.6) -- (axis cs:-5.5,5);
 				\end{axis}
-				\path (current bounding box.north east) -- 
-				(current bounding box.south east) coordinate[midway] (2BL);
+%				\path (current bounding box.north east) -- 
+%				(current bounding box.south east) coordinate[midway] (2BL);
 			\end{tikzpicture}
-			\hspace*{2.8cm}
-			\begin{tikzpicture}[remember picture]
+			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z)=z^2}}$}
+%			\hspace*{2.8cm}
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
 					unit vector ratio=1 1 1
@@ -1528,12 +1516,12 @@
 					\draw[->, draw=Blue] (axis cs:5,-10) -- (axis cs:5,-5);
 %					node[midway,above right,inner sep=2pt,font={\footnotesize}]{$\theta$};
 				\end{axis}
-				\path (current bounding box.north west) -- 
-				(current bounding box.south west) coordinate[midway] (2BR);
+%				\path (current bounding box.north west) -- 
+%				(current bounding box.south west) coordinate[midway] (2BR);
 			\end{tikzpicture}
-			\tikz[overlay,remember picture]{\draw[->, very thick] 
-				($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
-				node[midway,above,text width=2.5cm]{$f(z) = z^2$};}
+%			\tikz[overlay,remember picture]{\draw[->, very thick] 
+%				($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
+%				node[midway,above,text width=2.5cm]{$f(z) = z^2$};}
 		\end{figure}
 		Likewise if we set $v = c_2$ where $c_2 \in \mathbb{R}_{>0}$, we get:
 		\begin{align*}
@@ -1550,7 +1538,7 @@
 		Equation 11.1 tells us as $x$ goes from $0$ to $\infty$, $u$ moves from $-\infty$ to $\infty$, which corresponds to the hyperbola in the first quadrant of the $x$$y$ complex plane. Similarly for equations 11.2.
 		\begin{figure}[H]
 			\centering
-			\begin{tikzpicture}[remember picture]
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
 					unit vector ratio=1 1 1,
@@ -1576,11 +1564,9 @@
 					\draw[->, draw=Red] (axis cs:0.485,5.1) -- (axis cs:0.51,5);
 					\draw[->, draw=Red] (axis cs:-0.485,-5.1) -- (axis cs:-0.51,-5);
 				\end{axis}
-				\path (current bounding box.north east) -- 
-				(current bounding box.south east) coordinate[midway] (2BL);
 			\end{tikzpicture}
-			\hspace*{2.8cm}
-			\begin{tikzpicture}[remember picture]
+			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z)=z^2}}$}
+			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
 					unit vector ratio=1 1 1
@@ -1602,12 +1588,7 @@
 					\draw[->, draw=Red] (axis cs:-10,5) -- (axis cs:-5,5);
 					%					node[midway,above right,inner sep=2pt,font={\footnotesize}]{$\theta$};
 				\end{axis}
-				\path (current bounding box.north west) -- 
-				(current bounding box.south west) coordinate[midway] (2BR);
 			\end{tikzpicture}
-			\tikz[overlay,remember picture]{\draw[->, very thick] 
-				($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
-				node[midway,above,text width=2.5cm]{$f(z) = z^2$};}
 		\end{figure}
 		If we look at $f$ using the polar representation, we get $f(z) = r^2 e^{i2\theta}$. This tells us $\forall r \geq 0$, $r \mapsto r^2 = \rho \geq 0$, and $\forall \theta$, $\theta \mapsto \phi = 2\theta$. It is worth noting that mapping of points between $0 \leq 0 < 2\pi$ is not one-to-one, since points in $0 \leq \theta < \pi$ and points in $\pi \leq \theta < 2\pi$ both get mapped to $0 \leq \phi < 2\pi$. 
 	\end{example}
@@ -1627,7 +1608,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		\begin{tikzpicture}[remember picture]
+		\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 			\begin{axis}[
 				width=8cm,
 				unit vector ratio=1 1 1,
@@ -1655,8 +1636,9 @@
 			\path (current bounding box.north east) -- 
 			(current bounding box.south east) coordinate[midway] (2BL);
 		\end{tikzpicture}
-		\hspace*{2.8cm}
-		\begin{tikzpicture}[remember picture]
+		{$\Large \xrightarrow{\mathmakebox[2.8cm]f}$}
+%		\hspace*{2.8cm}
+		\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 			\begin{axis}[
 				width=8cm,
 				unit vector ratio=1 1 1,
@@ -1684,9 +1666,9 @@
 			\path (current bounding box.north west) -- 
 			(current bounding box.south west) coordinate[midway] (2BR);
 		\end{tikzpicture}
-		\tikz[overlay,remember picture]{\draw[->, very thick] 
-			($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
-			node[midway,above]{$f$};} 
+%		\tikz[overlay,remember picture]{\draw[->, very thick] 
+%			($(2BL)+(0.5, 0)$) -- ($(2BR)+(-0.5,0)$)
+%			node[midway,above]{$f$};} 
 		\label{Limit Definition Figure - Complex}
 	\end{figure}
 	

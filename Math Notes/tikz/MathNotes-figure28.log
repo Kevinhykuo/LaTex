@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  1 DEC 2020 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  1 DEC 2020 14:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1518,24 +1518,71 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+
+LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
+put line 1715.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 1 - Complex' on pag
+e 1 undefined on input line 1773.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 2 - Complex' on pag
+e 1 undefined on input line 1792.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1833.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1837.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1851.
+
+
+LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 44 undefined 
+on input line 1867.
+
 \openout4 = `tikz/MathNotes-figure28.dpth'.
 
+[45
 
-! Package pgf Error: No shape named `2BL' is known.
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Chapter 12.
+Chapter 13.
+Chapter 14.
+Chapter 15.
+Chapter 16.
+Chapter 17.
+Chapter 18.
+Chapter 19.
+Chapter 20.
+Chapter 21.
+Chapter 22.
+Chapter 23.
 
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1689 			node[midway,above]{$f$};}
-                                    
+No file tikz/MathNotes-figure28.bbl.
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 38606 strings out of 479485
- 881276 string characters out of 5871977
- 1305490 words of memory out of 5000000
- 54869 multiletter control sequences out of 15000+600000
- 569584 words of font info for 149 fonts, out of 8000000 for 9000
+ 40310 strings out of 479485
+ 921418 string characters out of 5871977
+ 1835184 words of memory out of 5000000
+ 56570 multiletter control sequences out of 15000+600000
+ 569820 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,12n,111p,765b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,13n,111p,765b,4795s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+>
+Output written on tikz/MathNotes-figure28.pdf (1 page, 23429 bytes).
+PDF statistics:
+ 20 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!

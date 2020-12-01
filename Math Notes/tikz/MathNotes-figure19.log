@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  1 DEC 2020 13:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  1 DEC 2020 14:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1449,8 +1449,9 @@ on input line 703.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 754.
+
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
@@ -1459,7 +1460,19 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Exponential Form of z - Complex' on page 1 undefined 
-on input line 918.
+on input line 919.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 965.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1030.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1475,84 +1488,78 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+Chapter 11.
+
+LaTeX Warning: Reference `Operations as Transformations Section - Complex' on p
+age 1 undefined on input line 1403.
+
+
+LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
+age 1 undefined on input line 1424.
+
+
+LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 40
+ undefined on input line 1444.
+
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1496.
+
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 \openout4 = `tikz/MathNotes-figure19.dpth'.
 
-[36
+Missing character: There is no ; in font nullfont!
+[40
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-\pgfsyspdfmark {pgfid2}{13107}{13107}
-\pgfsyspdfmark {pgfid1}{13107}{13107}
+\pgfsyspdfmark {pgfid2}{256652}{256652}
+\pgfsyspdfmark {pgfid1}{256652}{256652}
 ]
-Chapter 11.
 
-LaTeX Warning: Reference `Operations as Transformations Section - Complex' on p
-age 1 undefined on input line 1416.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1568.
 
-
-LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1437.
-
-
-LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 40
- undefined on input line 1457.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
-put line 1626.
+put line 1607.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1639.
+
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
-put line 1714.
+put line 1696.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 1 - Complex' on pag
-e 1 undefined on input line 1772.
+e 1 undefined on input line 1754.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 2 - Complex' on pag
-e 1 undefined on input line 1791.
+e 1 undefined on input line 1773.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1814.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1818.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
 d on input line 1832.
 
 
-LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1836.
-
-
-LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1850.
-
-
 LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 44 undefined 
-on input line 1866.
+on input line 1848.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1575,20 +1582,22 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39050 strings out of 479485
- 894304 string characters out of 5871977
- 1320847 words of memory out of 5000000
- 55310 multiletter control sequences out of 15000+600000
+ 39094 strings out of 479485
+ 895083 string characters out of 5871977
+ 1339578 words of memory out of 5000000
+ 55354 multiletter control sequences out of 15000+600000
  569584 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,111p,765b,2433s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on tikz/MathNotes-figure19.pdf (1 page, 19825 bytes).
+ 102i,22n,111p,765b,2579s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}</
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on tikz/MathNotes-figure19.pdf (1 page, 38739 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
