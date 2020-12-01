@@ -1737,7 +1737,7 @@
 	\subsection{Limit Theorems} \label{Limit Theorems Subsection - Complex}
 	
 	\begin{theorem}
-		\label{Limit of u(z), v(z), and f(z) Theorem - Complex}
+		\label{Limit of f=u+iv Theorem - Complex}
 		Consider $f(z) = u(x, y) + iv(x,y)$. Let $z_0 = x_0 + iy_0$ and $w_0 = u_0 + iv_0$.
 		\begin{align*}
 			\left[\lim_{(x,y) \rightarrow (x_0, y_0)} u(x,y) = u_0 \right] \land
@@ -1748,28 +1748,129 @@
 	\end{theorem}
 	\begin{proof}
 		\underline{$\implies$:}
-		\begin{align*}
+		
+		By definition: 
+		\begin{align}
+			\label{Limit of f=u+iv Theorem Proof Eqn 1 - Complex}
 			&\left[\lim_{(x,y) \rightarrow (x_0, y_0)} u(x,y) = u_0 \right] \land
-			 \left[\lim_{(x,y) \rightarrow (x_0, y_0)} v(x,y) = v_0 \right] \\
+			 \left[\lim_{(x,y) \rightarrow (x_0, y_0)} v(x,y) = v_0 \right] \\ \nonumber
 			&\implies \forall \epsilon \exists \delta_1, \delta_2
-			 \left[\left(0< \sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta_1 \implies \abs{u-u_0} < \frac{\epsilon}{2}\right) \right.\\
+			 \left[\left(0< \sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta_1 \implies \abs{u-u_0} < \frac{\epsilon}{2}\right) \right.\\ \nonumber
 			&\qquad \qquad \qquad \land \left.
 			 \left(0< \sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta_2 \implies \abs{v-v_0} < \frac{\epsilon}{2}\right)
 			 \right]
-		\end{align*}
+		\end{align}
+		Triangle inequality for the distance between points:
 		\begin{align*}
 			\abs{(u+iv) - (u_0 - iv_0)} &= \abs{(u-u_0) + i(v-v_0)} \leq \abs{u-u_0} + \abs{v-v_0} \\
 			\sqrt{(x-x_0)^2 + (y-y_0)^2} &= \abs{(x-x_0) + i(v-v_0)} = \abs{(x+iy) - (x_0 - iy_0)}
 		\end{align*}
-		Let $\delta = \min\{\delta_1, \delta_2\}$: 
+		Let $\delta = \min\{\delta_1, \delta_2\}$, it follows from 
+		\cref{Limit of f=u+iv Theorem Proof Eqn 1 - Complex}: 
 		$$0 < \abs{(x+iy) - (x_0 + iy_0)} < \delta 
 			\implies \abs{(u+iv)-(u_0 - iv_0)} < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon$$
 		Thus, $\lim_{z \rightarrow z_0} f(z) = w_0$.
 		
 		\underline{$\impliedby$:}
 		
+		Suppose $\lim_{z \rightarrow z_0} f(z) = w_0$.
+		\begin{align}
+			\label{Limit of f=u+iv Theorem Proof Eqn 2 - Complex}
+			&\lim_{z \rightarrow z_0} f(z) = w_0 \\ \nonumber
+			&\implies \forall \epsilon \exists \delta>0 [\abs{(x+iy)-(x_0-iy_0)}<\delta \implies \abs{(u+iv) - (u_0+iv_0)}<\epsilon]
+		\end{align}
+		By the triangle inequality: 
+		\begin{align*}
+			\abs{u-u_0} &\leq \abs{(u-u_0) + i(v-v_0)} = \abs{(u+iv) - (u_0 + iv_0)} \\
+			\abs{v-v_0} &\leq \abs{(u-u_0) + i(v-v_0)} = \abs{(u+iv) - (u_0 + iv_0)} 
+		\end{align*}
+		$$\abs{(x+iy) - (x_0 + iy_0)} = \abs{(x-x_0) + i(y-y_0)} = \sqrt{(x-x_0)^2 + (y-y_0)^2}$$
+		Thus, it follows from the inequalities in \cref{Limit of f=u+iv Theorem Proof Eqn 2 - Complex}:
+		\begin{align*}
+			&0 < \sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta  \\
+			&\implies [\abs{u-u_0} < \epsilon ]\land [\abs{v-v_0} < \epsilon] \\
+			&\implies \left[\lim_{(x,y) \rightarrow (x_0, y_0)} u(x,y) = u_0 \right] \land
+			\left[\lim_{(x,y) \rightarrow (x_0, y_0)} v(x,y) = v_0 \right]
+		\end{align*}
 	\end{proof}
 
+	\begin{theorem}
+		\label{Limit of f(z)+F(z), f(z)F(z), and f(z)/F(z) Theorem - Complex}
+		Suppose
+		\begin{align*}
+		\left[\lim_{z\rightarrow z_0} f(z) = w_0 \right] \land \left[\lim_{z\rightarrow z_0} F(z) = W_0 \right]
+		\end{align*}
+		Then
+		\begin{align*}
+%			\label{Limit of f(z)+F(z) Theorem Equation - Complex}
+			\lim_{z \rightarrow z_0} [f(z) + F(z)] &= w_0 + W_0 & \\
+%			\label{Limit of f(z)F(z) Theorem Equation - Complex} 
+			\lim_{z \rightarrow z_0} [f(z)F(z)] &= w_0 W_0  & \\
+%			\label{Limit of f(z)/F(z) Theorem Equation - Complex}
+			\lim_{z \rightarrow z_0} \frac{f(z)}{F(z)} &= \frac{w_0}{W_0} & W_0 \neq 0
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Let: 
+		\begin{align*}
+			f(z) &= u(x,y) + iv(x,y) & F(z) &= U(x,y) + iV(x,y) 
+		\end{align*}
+		\begin{align*}
+			z_0 &= x_0 + iy_0 	& w_0 &= u_0 + iv_0 & W_0 &= U_0 + iV_0
+		\end{align*}
+		\underline{$\lim_{z \rightarrow z_0} [f(z) + F(z)] = w_0 + W_0$}
+		
+		\textcolor{Grey}{
+		From \Cref{Limit of f=u+iv Theorem - Complex}:
+		\begin{align*}
+			&f(z) + F(z) = (u + U) + i(v + V) \\
+			&\implies \lim_{(x,y) \rightarrow (x_0, y_0)} f(z)F(Z) = (u_0 + U_0) + i(v_0 + V_0) = w_0 + W_0
+		\end{align*}
+		}
+		
+		\underline{$\lim_{z \rightarrow z_0} [f(z)F(z)] = w_0 W_0$}
+		
+		From \Cref{Limit of f=u+iv Theorem - Complex}:
+		\begin{align*}
+			&f(z)F(z) = (uU - vV) + i(vU + uV) \\
+			&\implies \lim_{(x,y) \rightarrow (x_0, y_0)} f(z)F(Z) = (u_0 U_0 - v_0 V_0) + i(v_0 U_0 + u_0 V_0) = w_0 W_0
+		\end{align*}
+		
+		\underline{$\lim_{z \rightarrow z_0} \frac{f(z)}{F(z)} = \frac{w_0}{W_0}$ if $W_0 \neq 0$}
+		
+		\textcolor{Grey}{
+		From \Cref{Limit of f=u+iv Theorem - Complex}:
+		\begin{align*}
+			&\frac{f(z)}{F(z)} = \frac{u+iv}{U+iV} 
+			\implies \lim_{(x, y) \rightarrow (x_0, y_0)} \frac{f(z)}{F(z_0)} = \frac{u_0 + v_0}{U_0 + iV_0} = \frac{w_0}{W_0}
+		\end{align*}
+		}
+	\end{proof}
+
+	\begin{corollary}
+		\label{Limits of f=u+iv Theorem Corollary - Complex}
+		Let $c$ be a constant, $z, z_0 \in \mathbb{C}$, and $P(z)$ be a polynomial. Then
+		\begin{align*}
+			\lim_{z \rightarrow z_0} c &= c & \lim_{z \rightarrow z_0} z &= z_0 &
+			\lim_{z \rightarrow z_0} z^n &= z_0^n & n \in \mathbb{N}
+		\end{align*}
+		\begin{align*}
+			\lim_{z \rightarrow z_0} P(z) = P(z_0)
+		\end{align*}
+	\end{corollary}
+
+	\begin{observation}
+		It is surprisingly quick that Brown and Churchill went from $\epsilon - \delta$ proofs straight to proving with limits. This is different to the approach in Sequences of Limits Theorem for Sequences Section by Kennith A. Ross. \cite{Ross.K-Elementary-Analysis-2013}. 
+	\end{observation}
+	\begin{question}
+		It might be possible use a series approach to prove limit theorems for $z \in \mathbb{C}$ by having separate series for $x$ and $y$ (real and imaginary components of $z$), or a series in the form of $s_n = (x_n, y_n)$. Which would be the proper approach?
+	\end{question}
+	
+	\subsection{Limits of Points at Infinity} \label{Limits of Points at Infinity Subsection - Complex}
+	
+	
+	
+	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
 	
