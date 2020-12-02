@@ -1826,7 +1826,7 @@
 	\end{definition}
 	
 	\begin{definition}[Riemann Sphere]
-		A sphere centred at the origin of the complex plane, which is consequently bisected by the complex plane.
+		A unit sphere centred at the origin of the complex plane, which is consequently bisected by the complex plane.
 	\end{definition}
 
 	\begin{definition}[Stereographic Projection]
@@ -1902,7 +1902,30 @@
 		\label{Riemann Sphere and Stereographic Projection Figure - Complex}
 	\end{figure}
 	
+	The region outside the unit circle enveloped by the Riemann sphere corresponds to the upper hemisphere of the Riemann sphere, with the point $N$ deleted. $N$ corresponds to the points at infinity, since $l$ will be parallel to the complex plane. 
 	
+	\begin{definition}[Neighbourhood of $\infty$]
+		The set: $\{\abs{z} > 1/\epsilon : \epsilon \in \mathbb{R}_{>0} \}$
+	\end{definition}
+	Note that since $\epsilon$ is a small positive number, $\abs{z} > 1/\epsilon$ corresponds to points far away from the unit circle, hence $P$ is close to $N$. 
+	
+	\textcolor{red}{Note: When referring to any point $z$, it is referring to a point in the finite plane. Points at infinity will be specifically mentioned.}
+	
+	\begin{theorem}
+		\label{Properties of Limits at Infinity Theorem - Complex}
+		Let $z_0, w_0 \in \mathbb{C}$, then
+		\begin{align}
+			\lim_{z \rightarrow z_0} \frac{1}{f(z)} = 0
+			&\implies \lim_{z \rightarrow z_0} f(z) = \infty \\
+			\lim_{z \rightarrow 0} f\left(\frac{1}{z}\right) = w_0
+			&\implies \lim_{z \rightarrow \infty} f(z) = w_0 \\
+			\lim_{z \rightarrow 0} \frac{1}{f(1/z)} = 0 
+			&\implies \lim_{z \rightarrow \infty} f(z) = \infty
+		\end{align}
+	\end{theorem}
+	\begin{proof}
+		content...
+	\end{proof}
 	
 	
 	\section{Continuity} \label{Continuinty Section - Complex}
