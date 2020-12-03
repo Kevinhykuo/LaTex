@@ -1623,13 +1623,13 @@
 				coordinates {
 					(8, 8) [$z_0$]
 				};
-				\draw[dashed, line width=1pt,Black](axis cs: 8, 8) circle [radius=20];
+				\draw[dashed, line width=1pt,Grey](axis cs: 8, 8) circle (2);
 				\draw[-,draw=Black]  (axis cs: 8,8) to ["$\delta$"] (axis cs: 6,8);
 			\end{axis}
 			\path (current bounding box.north east) -- 
 			(current bounding box.south east) coordinate[midway] (2BL);
 		\end{tikzpicture}
-		{$\Large \xrightarrow{\mathmakebox[2.8cm]f}$}
+		{$\Large \xrightarrow{\mathmakebox[2cm]f}$}
 %		\hspace*{2.8cm}
 		\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 			\begin{axis}[
@@ -1653,7 +1653,7 @@
 				coordinates {
 					(-4, 5) [$w_0$]
 				};
-				\draw[dashed, line width=1pt,Black](axis cs: -4, 5) circle [radius=30];
+				\draw[dashed, line width=1pt,Grey](axis cs: -4, 5) circle (3);
 				\draw[-,draw=Black]  (axis cs: -4,5) to ["$\epsilon$"] (axis cs: -7,5);
 			\end{axis}
 			\path (current bounding box.north west) -- 
