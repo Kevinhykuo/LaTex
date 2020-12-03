@@ -1977,8 +1977,26 @@
 	\end{observation}
 	
 	\section{Continuity} \label{Continuinty Section - Complex}
+	\begin{definition}[Continuous]
+		\label{Continuous Function Definition - Complex}
+		Let $f$ be a function. We say $f$ is continuous at all point $z_0 \in \mathbb{C}$ if it satisfies the following: 
+		\begin{align*}
+			\lim_{z \rightarrow z_0} f(z) \text{ exists } \land f(z_0) \text{ exists } \land
+			\lim_{z\rightarrow z_0} f(z) &= f(z_0)
+		\end{align*} 
+	\end{definition}
+	Note: 
+	\begin{align*}
+		&\lim_{z \rightarrow z_0} f(z) = f(z_0) \implies \lim_{z \rightarrow z_0} f(z) \text{ exists } \land f(z_0) \text{ exists } \\
+		&\forall \epsilon \exists \delta>0 \left[\abs{z-z_0} < \delta \implies \abs{f(z) - f(z_0)} < \epsilon \right] \iff \lim_{z \rightarrow z_0} f(z) = f(z_0)
+	\end{align*}
 	
-	
+	\begin{definition}[Continuous at a Region]
+		Let $f$ be a function, $R \subset \mathbb{C}$ be a region, and $z \in R$: 
+		\begin{center}
+			$f$ is continuous in $R \iff$ $\forall z \in R$($f$ is continuous)
+		\end{center}
+	\end{definition}
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
