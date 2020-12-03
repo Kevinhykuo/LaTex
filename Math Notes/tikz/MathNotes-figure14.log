@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  1 DEC 2020 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  2 DEC 2020 16:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1274,7 +1274,7 @@ LaTeX Info: Redefining \ref on input line 140.
 LaTeX Info: Redefining \pageref on input line 140.
 LaTeX Info: Redefining \nameref on input line 140.
 Package pgfplots notification 'compat/show suggested version=true': you might b
-enefit from \pgfplotsset{compat=1.17} (current compat level: 1.9).
+enefit from \pgfplotsset{compat=1.17} (current compat level: 1.8).
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 160
 .
@@ -1381,76 +1381,134 @@ on input line 358.
 
 Chapter 9.
 
-LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 26
- undefined on input line 368.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
 
 
-LaTeX Warning: Citation `Wunsh.A-Complex-Variables-2005' on page 26 undefined o
-n input line 372.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathop' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathgroup' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\symoperators' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nmlimits@' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathop' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathgroup' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\symoperators' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nmlimits@' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
 
 Chapter 10.
+Chapter 11.
+
+LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 30
+ undefined on input line 394.
+
+
+LaTeX Warning: Citation `Wunsh.A-Complex-Variables-2005' on page 30 undefined o
+n input line 398.
+
+Chapter 12.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Complex Conjugate Section - Complex' on page 1 undefi
-ned on input line 474.
+ned on input line 500.
 
 
 LaTeX Warning: Reference `Triange Inequality - Complex' on page 1 undefined on 
-input line 487.
+input line 513.
 
 
 LaTeX Warning: Reference `Polar Form of z - Complex' on page 1 undefined on inp
-ut line 549.
+ut line 575.
 
 
 LaTeX Warning: Reference `Euler's Formula - Complex' on page 1 undefined on inp
-ut line 549.
+ut line 575.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 615.
+fined on input line 641.
 
 
 LaTeX Warning: Reference `Roots of z Section - Complex' on page 1 undefined on 
-input line 615.
+input line 641.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 615.
+fined on input line 641.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 629.
+fined on input line 655.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 629.
+fined on input line 655.
 
 
 LaTeX Warning: Reference `Properties of Polar and Exponential Form Subsection -
- Complex' on page 1 undefined on input line 634.
+ Complex' on page 1 undefined on input line 660.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 669.
+(hyperref)                removing `math shift' on input line 695.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 669.
+(hyperref)                removing `math shift' on input line 695.
 
 
 LaTeX Warning: Reference `Exponential Form of z - Complex' on page 1 undefined 
-on input line 670.
+on input line 696.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 721.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 747.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1460,19 +1518,19 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Exponential Form of z - Complex' on page 1 undefined 
-on input line 886.
+on input line 912.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 932.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 958.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 997.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1023.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1484,7 +1542,7 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 \openout4 = `tikz/MathNotes-figure14.dpth'.
 
-[35
+[39
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 \pgfsyspdfmark {pgfid2}{13107}{13107}
@@ -1494,80 +1552,90 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-Chapter 11.
+Chapter 13.
 
 LaTeX Warning: Reference `Operations as Transformations Section - Complex' on p
-age 1 undefined on input line 1370.
+age 1 undefined on input line 1396.
 
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1391.
+age 1 undefined on input line 1417.
 
 
-LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 40
- undefined on input line 1411.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1463.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1535.
+LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 44
+ undefined on input line 1437.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
-put line 1574.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1489.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1606.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1561.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
-put line 1663.
+put line 1600.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1632.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
+put line 1689.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 1 - Complex' on pag
-e 1 undefined on input line 1721.
+e 1 undefined on input line 1747.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 2 - Complex' on pag
-e 1 undefined on input line 1740.
+e 1 undefined on input line 1766.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1781.
+d on input line 1807.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1785.
+d on input line 1811.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1799.
+d on input line 1825.
 
 
-LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 44 undefined 
-on input line 1815.
+LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 48 undefined 
+on input line 1841.
+
+
+LaTeX Warning: Reference `Limit Theorems Subsection - Real Analysis' on page 1 
+undefined on input line 1841.
 
 
 LaTeX Warning: Reference `Riemann Sphere and Stereographic Projection Figure - 
-Complex' on page 1 undefined on input line 1833.
+Complex' on page 1 undefined on input line 1859.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-Chapter 12.
-Chapter 13.
+
+LaTeX Warning: Reference `Properties of Limits at Infinity Theorem - Complex' o
+n page 1 undefined on input line 1976.
+
+
+LaTeX Warning: Reference `Limit Theorems Subsection - Real Analysis' on page 1 
+undefined on input line 1976.
+
 Chapter 14.
 Chapter 15.
 Chapter 16.
@@ -1578,6 +1646,8 @@ Chapter 20.
 Chapter 21.
 Chapter 22.
 Chapter 23.
+Chapter 24.
+Chapter 25.
 
 No file tikz/MathNotes-figure14.bbl.
 
@@ -1585,17 +1655,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39049 strings out of 479485
- 894362 string characters out of 5871977
- 1319962 words of memory out of 5000000
- 55309 multiletter control sequences out of 15000+600000
+ 39051 strings out of 479485
+ 894470 string characters out of 5871977
+ 1319822 words of memory out of 5000000
+ 55311 multiletter control sequences out of 15000+600000
  569584 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,14n,111p,765b,2433s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 ></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on tikz/MathNotes-figure14.pdf (1 page, 19990 bytes).
+Output written on tikz/MathNotes-figure14.pdf (1 page, 19974 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream

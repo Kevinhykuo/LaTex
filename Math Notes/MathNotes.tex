@@ -8,7 +8,7 @@
 \usepgfplotslibrary{groupplots}
 \usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
 \usepackage{thmtools}
-\pgfplotsset{compat=1.9}
+\pgfplotsset{compat=1.8}
 \usepgfplotslibrary{external}
 \tikzexternalize[prefix=tikz/] 
 
@@ -361,9 +361,29 @@
 
 	\chapter{Sequences} \label{Sequences Chapter - Real Analysis}
 	
-	\subsection{Limits} \label{Limits Subsection - Real Analysis}
+	\section{Limits} \label{Limits Section - Real Analysis}
 	
-	\subsubsection{Limit Theorems} \label{Limit Theorems Subsubsection - Real Analysis}
+	\subsection{Limit Theorems} \label{Limit Theorems Subsection - Real Analysis}
+	
+	\section{Monotone and Cauchy Sequences} \label{Monotone and Cauchy Sequences Section - Real Analysis}
+	
+	\section{Subsequences} \label{Subsequences Section - Real Analysis}
+	
+	\section{$\lim \operatorname{sup}$ and $\lim \operatorname{inf}$} \label{lim sup and lim inf Section - Real Analysis}
+	
+	\section{Series} \label{Series Section - Real Analysis}
+	
+	\section{Alternating Series and Integral Tests} \label{Alternating Series and Integral Tests Section - Real Analysis}
+	
+	\chapter{Continuity} \label{Continuity Chapter - Real Analysis}
+	
+	\section{Continuous Functions} \label{Continuous Functions Section - Real Analysis}
+	
+	\subsection{Properties} \label{Properties of Continuous Functions Subsection - Real Analysis}
+	
+	\section{Uniform Continuity} \label{Uniform Continuity Section - Real Analysis}
+	
+	\section{Limits of Functions} \label{Limits of Functions Section - Real Analysis}
 
 	\chapter{Metric Spaces}	
 	
@@ -1092,7 +1112,7 @@
 				coordinates {
 					(7, 4) [$z_0$]
 				};
-				\draw[dashed,line width=1pt,LightGrey](axis cs: 7, 4) circle [radius=20];
+				\draw[dashed,line width=1pt,Grey](axis cs: 7, 4) circle (2);
 				\draw[-,draw=Grey]  (axis cs: 7,4) to ["$\epsilon$"] (axis cs: 5,4);
 			\end{axis}
 		\end{tikzpicture}
@@ -1129,7 +1149,7 @@
 				coordinates {
 					(7, 4) [$z_0$]
 				};
-				\draw[dashed,line width=1pt,LightGrey](axis cs: 7, 4) circle [radius=20];
+				\draw[dashed,line width=1pt,Grey](axis cs: 7, 4) circle (2);
 				\draw[-,draw=Grey]  (axis cs: 7,4) to ["$\epsilon$"] (axis cs: 5,4);;
 			\end{axis}
 		\end{tikzpicture}
@@ -1165,8 +1185,8 @@
 				coordinates {
 					(7, 4) [$z_0$]
 				};
-				\draw[dashed,line width=1pt,LightGrey](axis cs: 7, 4) circle [radius=10];
-				\draw[line width=1pt, Black](axis cs: 5.2, 3.5) circle [radius=30];
+				\draw[dashed,line width=1pt,Grey](axis cs: 7, 4) circle (1);
+				\draw[line width=1pt, Black](axis cs: 5.2, 3.5) circle (3);
 				\draw[-,draw=Grey]  (axis cs: 7,4) to ["$\epsilon$"] (axis cs: 6,4);
 				\draw[]  (axis cs: 5,2) to ["$S$"] (axis cs: 5,2);
 			\end{axis}
@@ -1203,8 +1223,8 @@
 				coordinates {
 					(9, 5) [$z_0$]
 				};
-				\draw[dashed,line width=1pt,LightGrey](axis cs: 9, 5) circle [radius=10];
-				\draw[line width=1pt, Black](axis cs: 5.2, 3.5) circle [radius=30];
+				\draw[dashed,line width=1pt,Grey](axis cs: 9, 5) circle (1);
+				\draw[line width=1pt, Black](axis cs: 5.2, 3.5) circle (3);
 				\draw[-,draw=Grey]  (axis cs: 9,5) to ["$\epsilon$"] (axis cs: 8,5);
 				\draw[]  (axis cs: 5,2) to ["$S$"] (axis cs: 5,2);
 			\end{axis}
@@ -1241,8 +1261,8 @@
 				coordinates {
 					(5.2, 6.5) [$z_0$]
 				};
-				\draw[dashed,line width=1pt,LightGrey](axis cs: 5.2, 6.5) circle [radius=10];
-				\draw[line width=1pt, Black](axis cs: 5.2, 3.5) circle [radius=30];
+				\draw[dashed,line width=1pt,Grey](axis cs: 5.2, 6.5) circle (1);
+				\draw[line width=1pt, Black](axis cs: 5.2, 3.5) circle (3);
 				\draw[-,draw=Grey]  (axis cs: 5.2,6.5) to ["$\epsilon$"] (axis cs: 4.2,6.5);
 				\draw[]  (axis cs: 5,2) to ["$S$"] (axis cs: 5,2);
 			\end{axis}
@@ -1318,8 +1338,8 @@
 					(3, 3) [$z_1$]
 					(6, 6) [$z_2$]
 				};
-				\draw[line width=1pt, Black](axis cs: 5, 4) circle [radius=10];
-				\draw[line width=1pt, Black](axis cs: 5, 4) circle [radius=35];
+				\draw[line width=1pt, Black](axis cs: 5, 4) circle (1);
+				\draw[line width=1pt, Black](axis cs: 5, 4) circle (3.5);
 				\draw[-,draw=Grey]  (axis cs: 3,3) -- (axis cs: 4,5);
 				\draw[-,draw=Grey]  (axis cs: 4,5) -- (axis cs: 6,6);
 				\draw[]  (axis cs: 5,2) to ["$S$"] (axis cs: 5,2);
@@ -1441,8 +1461,7 @@
 					axis lines = middle,
 					xticklabels={}, yticklabels={},
 					grid=none,
-					axis lines=middle,
-					minor tick num=4,
+					major tick style={draw=none},
 					minor tick style={draw=none},
 					legend pos = south west,
 					]
@@ -1471,14 +1490,15 @@
 			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
-					unit vector ratio=1 1 1
+					unit vector ratio=1 1 1,
 					xlabel={$u$},
 					ylabel={$v$},
 					xmin=-10, xmax=10,
 					ymin=-10, ymax=10,
+					axis lines = middle,
 					xticklabels={}, yticklabels={},
-					axis lines=middle,
-					minor tick num=0,
+					grid=none,
+					major tick style={draw=none},
 					minor tick style={draw=none},
 					legend pos = south west,
 					]
@@ -1522,8 +1542,7 @@
 					axis lines = middle,
 					xticklabels={}, yticklabels={},
 					grid=none,
-					axis lines=middle,
-					minor tick num=4,
+					major tick style={draw=none},
 					minor tick style={draw=none},
 					legend pos = south west,
 					]
@@ -1542,14 +1561,15 @@
 			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
-					unit vector ratio=1 1 1
+					unit vector ratio=1 1 1,
 					xlabel={$u$},
 					ylabel={$v$},
 					xmin=-10, xmax=10,
 					ymin=-10, ymax=10,
+					axis lines = middle,
 					xticklabels={}, yticklabels={},
-					axis lines=middle,
-					minor tick num=0,
+					grid=none,
+					major tick style={draw=none},
 					minor tick style={draw=none},
 					legend pos = south west,
 					]
@@ -1818,7 +1838,7 @@
 	\end{corollary}
 
 	\begin{observation}
-		It is surprisingly quick that Brown and Churchill went from $\epsilon - \delta$ proofs straight to proving with limits. This is different to the approach in Sequences of Limits Theorem for Sequences Section by Kennith A. Ross. \cite{Ross.K-Elementary-Analysis-2013}. (\Cref{Limit Theorems Subsubsection - Real Analysis})
+		It is surprisingly quick that Brown and Churchill went from $\epsilon - \delta$ proofs straight to proving with limits. This is different to the approach in Sequences of Limits Theorem for Sequences Section by Kennith A. Ross. \cite{Ross.K-Elementary-Analysis-2013}. (\Cref{Limit Theorems Subsection - Real Analysis})
 	\end{observation}
 	\begin{question}
 		It might be possible use a series approach to prove limit theorems for $z \in \mathbb{C}$ by having separate series for $x$ and $y$ (real and imaginary components of $z$), or a series in the form of $s_n = (x_n, y_n)$. Which would be the proper approach?
@@ -1953,7 +1973,7 @@
 	\end{proof}
 	Note: As $\delta$ goes to $0$, $1/\delta$ goes to $\infty$, hence $\abs{z}$ goes to $\infty$ if $\abs{z} > 1/\delta$. 
 	\begin{observation}
-		As expected, \cref{Properties of Limits at Infinity Theorem - Complex} is consistent if $z \in \mathbb{R}$. (Check: \Cref{Limit Theorems Subsubsection - Real Analysis}).
+		As expected, \cref{Properties of Limits at Infinity Theorem - Complex} is consistent if $z \in \mathbb{R}$. (Check: \Cref{Limit Theorems Subsection - Real Analysis}).
 	\end{observation}
 	
 	\section{Continuity} \label{Continuinty Section - Complex}
