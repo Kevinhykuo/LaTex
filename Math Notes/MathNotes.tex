@@ -359,6 +359,12 @@
 		\end{itemize}
 	\end{partintro}
 
+	\chapter{Sequences} \label{Sequences Chapter - Real Analysis}
+	
+	\subsection{Limits} \label{Limits Subsection - Real Analysis}
+	
+	\subsubsection{Limit Theorems} \label{Limit Theorems Subsubsection - Real Analysis}
+
 	\chapter{Metric Spaces}	
 	
 	\part{Complex Analysis} \label{Complex Analysis Part}
@@ -1812,7 +1818,7 @@
 	\end{corollary}
 
 	\begin{observation}
-		It is surprisingly quick that Brown and Churchill went from $\epsilon - \delta$ proofs straight to proving with limits. This is different to the approach in Sequences of Limits Theorem for Sequences Section by Kennith A. Ross. \cite{Ross.K-Elementary-Analysis-2013}. 
+		It is surprisingly quick that Brown and Churchill went from $\epsilon - \delta$ proofs straight to proving with limits. This is different to the approach in Sequences of Limits Theorem for Sequences Section by Kennith A. Ross. \cite{Ross.K-Elementary-Analysis-2013}. (\Cref{Limit Theorems Subsubsection - Real Analysis})
 	\end{observation}
 	\begin{question}
 		It might be possible use a series approach to prove limit theorems for $z \in \mathbb{C}$ by having separate series for $x$ and $y$ (real and imaginary components of $z$), or a series in the form of $s_n = (x_n, y_n)$. Which would be the proper approach?
@@ -1839,7 +1845,7 @@
 			\begin{axis}[
 %				title = Riemann Sphere with Stereographic Projection,
 				axis equal,
-				height=20cm,
+				width=20cm,
 				axis lines = center,
 				xlabel = {$x$},
 				ylabel = {$y$},
@@ -1849,7 +1855,7 @@
 				zmin=-2, zmax=2,
 				ticks = none,
 				axis lines = middle,
-				axis line style = Grey,
+				axis line style = Black,
 %				enlargelimits=0.3,
 				view/h=45,
 				scale uniformly strategy=units only,
@@ -1868,16 +1874,9 @@
 				samples = 50,
 				domain = 0:360,
 				y domain = 0:180,
-				color = Grey,
-				]
-				({cos(x)}, {sin(x)}, {0});
-				
-				\addplot3[
-				samples = 2,
-				domain = 0:1,
 				color = Black,
 				]
-				({1.5*x}, {2*x}, {1-x});
+				({cos(x)}, {sin(x)}, {0});
 				
 				\addplot3[
 				only marks,
@@ -1891,6 +1890,7 @@
 					(0, 0, 1) [$N$]
 					(0.413793, 0.551724, 0.724138) [$P$]
 				};
+				\draw[very thick,draw=Black] (axis cs: 0,0,1)--(axis cs: 1.5,2,0);
 				\draw[dashed,draw=Grey] (axis cs: 1.5,0,0)--(axis cs: 1.5,2,0);
 				\draw[dashed,draw=Grey] (axis cs: 0,2,0)--(axis cs: 1.5,2,0);
 				\draw[dashed,draw=Grey] (axis cs: (0.413793, 0, 0)--(axis cs: (0.413793, 0.551724, 0);
@@ -1914,21 +1914,51 @@
 	\begin{theorem}
 		\label{Properties of Limits at Infinity Theorem - Complex}
 		Let $z_0, w_0 \in \mathbb{C}$, then
-		\begin{align}
+		\begin{align*}
 			\lim_{z \rightarrow z_0} \frac{1}{f(z)} = 0
 			&\implies \lim_{z \rightarrow z_0} f(z) = \infty \\
 			\lim_{z \rightarrow 0} f\left(\frac{1}{z}\right) = w_0
 			&\implies \lim_{z \rightarrow \infty} f(z) = w_0 \\
 			\lim_{z \rightarrow 0} \frac{1}{f(1/z)} = 0 
 			&\implies \lim_{z \rightarrow \infty} f(z) = \infty
-		\end{align}
+		\end{align*}
 	\end{theorem}
 	\begin{proof}
-		content...
-	\end{proof}
+		\underline{$\lim_{z \rightarrow z_0} \frac{1}{f(z)} = 0 
+		\implies \lim_{z \rightarrow z_0} f(z) = \infty$}
+		\begin{align*}
+			\lim_{z \rightarrow z_0} \frac{1}{f(z)} = 0 
+			&\implies \forall \epsilon \exists \delta>0 \left[\abs{z-z_0} < \delta \implies \abs*{\frac{1}{f{z}} - 0} < \epsilon \right] \\
+			&\implies \forall \epsilon \exists \delta>0 \left[\abs{z-z_0} < \delta \implies \abs*{f(z)} > \frac{1}{\epsilon} \right]  \\
+			&\implies \lim_{z \rightarrow z_0} f(z) = \infty 
+		\end{align*}
 	
+		\underline{$\lim_{z \rightarrow 0} f\left(\frac{1}{z}\right) = w_0
+		\implies \lim_{z \rightarrow \infty} f(z) = w_0$}
+		\begin{align*}
+			\lim_{z \rightarrow 0} f\left(\frac{1}{z}\right) = w_0
+			&\implies \forall \epsilon \exists \delta>0 \left[ \abs{z-0} < \delta \implies \abs*{f\left(\frac{1}{z}\right) - w_0} < \epsilon \right] \\
+			&\implies \forall \epsilon \exists \delta>0 \left[ \abs{z} > \frac{1}{\delta} \implies \abs*{f(z) - w_0} < \epsilon \right] \\
+			&\implies \lim_{z \rightarrow \infty} f(z) = w_0
+		\end{align*}
+	
+		\underline{$\lim_{z \rightarrow 0} \frac{1}{f(1/z)} = 0 
+		\implies \lim_{z \rightarrow \infty} f(z) = \infty$}
+		\begin{align*}
+			\lim_{z \rightarrow 0} \frac{1}{f(1/z)} = 0 
+			&\implies \forall \epsilon \exists \delta > 0 \left[ \abs{z - 0} < \delta \implies \abs*{\frac{1}{f(1/z)} - 0} < \epsilon \right] \\
+			&\implies \forall \epsilon \exists \delta > 0 \left[ \abs{z} > \frac{1}{\delta} \implies \abs{f(z)} > \frac{1}{\epsilon} \right] \\
+			&\implies \lim_{z \rightarrow \infty} f(z) = \infty 
+		\end{align*}
+	\end{proof}
+	Note: As $\delta$ goes to $0$, $1/\delta$ goes to $\infty$, hence $\abs{z}$ goes to $\infty$ if $\abs{z} > 1/\delta$. 
+	\begin{observation}
+		As expected, \cref{Properties of Limits at Infinity Theorem - Complex} is consistent if $z \in \mathbb{R}$. (Check: \Cref{Limit Theorems Subsubsection - Real Analysis}).
+	\end{observation}
 	
 	\section{Continuity} \label{Continuinty Section - Complex}
+	
+	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	

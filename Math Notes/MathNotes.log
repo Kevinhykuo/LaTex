@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  1 DEC 2020 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  2 DEC 2020 16:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1441,11 +1441,14 @@ ut line 320.
 
 ] (./MathNotes.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [9])
 \tf@toc=\write5
@@ -1541,125 +1544,139 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [21] [22]
 Chapter 9.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 364.
+
 [23
 
 ] [24
 
-] [25] [26]
+]
 Chapter 10.
+[25] [26
+
+] [27] [28]
+Chapter 11.
 ===== Image 'tikz/MathNotes-figure0' is up-to-date. ======
-[27
+[29
 
  <./tikz/MathNotes-figure0.pdf>]
 ===== Image 'tikz/MathNotes-figure1' is up-to-date. ======
-[28 <./tikz/MathNotes-figure1.pdf>] [29]
+[30 <./tikz/MathNotes-figure1.pdf>] [31]
 ===== Image 'tikz/MathNotes-figure2' is up-to-date. ======
-[30 <./tikz/MathNotes-figure2.pdf>]
+[32 <./tikz/MathNotes-figure2.pdf>]
 
 LaTeX Warning: Reference `Roots of z Section - Complex' on page 1 undefined on 
-input line 615.
+input line 621.
 
-[31]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 669.
-
+[33]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 669.
+(hyperref)                removing `math shift' on input line 675.
 
-[32]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 675.
+
+[34]
 ===== Image 'tikz/MathNotes-figure3' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 721.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 727.
 
 ===== Image 'tikz/MathNotes-figure4' is up-to-date. ======
-[33 <./tikz/MathNotes-figure3.pdf> <./tikz/MathNotes-figure4.pdf>]
+[35 <./tikz/MathNotes-figure3.pdf> <./tikz/MathNotes-figure4.pdf>]
 ===== Image 'tikz/MathNotes-figure5' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure6' is up-to-date. ======
-[34 <./tikz/MathNotes-figure5.pdf>]
+[36 <./tikz/MathNotes-figure5.pdf>]
 ===== Image 'tikz/MathNotes-figure7' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 932.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 938.
 
 ===== Image 'tikz/MathNotes-figure8' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure9' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 997.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1003.
 
 ===== Image 'tikz/MathNotes-figure10' is up-to-date. ======
-[35 <./tikz/MathNotes-figure6.pdf> <./tikz/MathNotes-figure7.pdf> <./tikz/MathN
+[37 <./tikz/MathNotes-figure6.pdf> <./tikz/MathNotes-figure7.pdf> <./tikz/MathN
 otes-figure8.pdf>]
 ===== Image 'tikz/MathNotes-figure11' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure12' is up-to-date. ======
-[36 <./tikz/MathNotes-figure9.pdf> <./tikz/MathNotes-figure10.pdf> <./tikz/Math
+[38 <./tikz/MathNotes-figure9.pdf> <./tikz/MathNotes-figure10.pdf> <./tikz/Math
 Notes-figure11.pdf>]
 ===== Image 'tikz/MathNotes-figure13' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure14' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure15' is up-to-date. ======
-[37 <./tikz/MathNotes-figure12.pdf> <./tikz/MathNotes-figure13.pdf> <./tikz/Mat
-hNotes-figure14.pdf>] [38 <./tikz/MathNotes-figure15.pdf>]
+[39 <./tikz/MathNotes-figure12.pdf> <./tikz/MathNotes-figure13.pdf> <./tikz/Mat
+hNotes-figure14.pdf>] [40 <./tikz/MathNotes-figure15.pdf>]
 ===== Image 'tikz/MathNotes-figure16' is up-to-date. ======
-[39 <./tikz/MathNotes-figure16.pdf>] [40]
-Chapter 11.
+[41 <./tikz/MathNotes-figure16.pdf>] [42]
+Chapter 12.
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1391.
+age 1 undefined on input line 1397.
 
-[41
+[43
 
 ]
 ===== Image 'tikz/MathNotes-figure17' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1463.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1469.
 
 ===== Image 'tikz/MathNotes-figure18' is up-to-date. ======
-[42 <./tikz/MathNotes-figure17.pdf> <./tikz/MathNotes-figure18.pdf>]
+[44 <./tikz/MathNotes-figure17.pdf> <./tikz/MathNotes-figure18.pdf>]
 ===== Image 'tikz/MathNotes-figure19' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1535.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1541.
 
 ===== Image 'tikz/MathNotes-figure20' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure21' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1606.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1612.
 
 ===== Image 'tikz/MathNotes-figure22' is up-to-date. ======
-[43 <./tikz/MathNotes-figure19.pdf> <./tikz/MathNotes-figure20.pdf>] [44 <./tik
-z/MathNotes-figure21.pdf> <./tikz/MathNotes-figure22.pdf>] [45] [46]
-===== Image 'tikz/MathNotes-figure23' is up-to-date. ======
-[47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[45 <./tikz/MathNotes-figure19.pdf> <./tikz/MathNotes-figure20.pdf>] [46 <./tik
+z/MathNotes-figure21.pdf> <./tikz/MathNotes-figure22.pdf>] [47] [48]
+\openout3 = `tikz/MathNotes-figure23.md5'.
 
- [48 <./tikz/MathNotes-figure23.pdf>] [49] [50
+\openout3 = `MathNotes.auxlock'.
 
-]
-Chapter 12.
-[51] [52
 
-] [53] [54
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "tikz/MathNotes-figure23" "\def\tikzext
+ernalrealjob{MathNotes}\input{MathNotes}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "tikz/MathNotes-figure23" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
+}")...executed.
 
-] [55] [56
+\openout3 = `MathNotes.auxlock'.
 
-] [57] [58] [59
-
-] [60
-
-] [61] [62
+[49] [50 <./tikz/MathNotes-figure23.pdf>] [51] [52
 
 ]
 Chapter 13.
-[63] [64
+[53] [54
 
-] [65] [66
+] [55] [56
+
+] [57] [58
+
+] [59] [60] [61
+
+] [62
+
+] [63] [64
+
+]
+Chapter 14.
+[65] [66
 
 ] [67] [68
 
 ] [69] [70
 
-]
-Chapter 14.
-[71] [72
+] [71] [72
 
 ]
 Chapter 15.
@@ -1685,19 +1702,21 @@ Chapter 19.
 Chapter 20.
 [83] [84
 
-] [85] [86
+]
+Chapter 21.
+[85] [86
 
 ] [87] [88
 
-]
-Chapter 21.
-[89] [90
+] [89] [90
 
 ]
 Chapter 22.
 [91] [92
 
-] [93] [94
+]
+Chapter 23.
+[93] [94
 
 ] [95] [96
 
@@ -1707,33 +1726,35 @@ Chapter 22.
 
 ] [101] [102
 
+] [103] [104
+
 ]
-Chapter 23.
-[103] [104
+Chapter 24.
+[105] [106
 
-] [105
+] [107
 
-] [106
+] [108
 
-] [107]
+] [109]
 
-(./MathNotes.bbl [108
+(./MathNotes.bbl [110
 
-]) [109] (./MathNotes.aux
+]) [111] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 3F10970682E9E878CA92EBB8EED19B78;3559.
+(rerunfilecheck)             Checksum: B3CCEE355B1F9AE6619A7574626D31C6;3669.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39187 strings out of 479485
- 892316 string characters out of 5871977
+ 39199 strings out of 479485
+ 892654 string characters out of 5871977
  1312615 words of memory out of 5000000
- 55072 multiletter control sequences out of 15000+600000
+ 55082 multiletter control sequences out of 15000+600000
  568662 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,109p,726b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1763,10 +1784,10 @@ e1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (119 pages, 453778 bytes).
+Output written on MathNotes.pdf (121 pages, 457700 bytes).
 PDF statistics:
- 1555 PDF objects out of 1728 (max. 8388607)
- 1370 compressed objects within 14 object streams
- 345 named destinations out of 1000 (max. 500000)
- 621 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1575 PDF objects out of 1728 (max. 8388607)
+ 1388 compressed objects within 14 object streams
+ 347 named destinations out of 1000 (max. 500000)
+ 637 words of extra memory for PDF output out of 10000 (max. 10000000)
 
