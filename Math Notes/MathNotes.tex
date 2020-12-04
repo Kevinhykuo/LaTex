@@ -2208,7 +2208,23 @@
 
 	\section{Differentiation} \label{Differentiation - Complex}
 	
-	
+	\begin{definition}[Derivative]
+		\label{Derivative Definition - Complex}
+		Let $f$ be a function where $\abs{z - z_0} < \epsilon$ and $z \in \operatorname{dom}(f)$. Then the derivative of $f$ at point $z_0$:
+		\begin{align*}
+			f'(z_0) = \lim_{z \rightarrow z_0} \frac{f(z) - f(z_0)}{z - z_0}
+		\end{align*}
+	\end{definition}
+
+	\begin{definition}[Differentiable]
+		\label{Differentiable Definition - Complex}
+		A function $f$ is differentiable at $z_0 \in \mathbb{C}$ if $f'(z_0)$ exists.
+	\end{definition}
+
+	If we let $\Delta z = z - z_0$ where $z \neq z_0$: 
+	\begin{align*}
+		f'(z_0) = \lim_{\Delta z \rightarrow 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z}
+	\end{align*}
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
