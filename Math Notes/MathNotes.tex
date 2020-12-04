@@ -2,7 +2,7 @@
 \usepackage[letterpaper, portrait, margin=2.5cm]{geometry} %Set paper type, format, margin
 \usepackage[svgnames]{xcolor}
 \usepackage{%abstract, 
-	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, wrapfig}
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, wrapfig}
 \usepackage{cleveref}
 \usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings,backgrounds,patterns}
 \usepgfplotslibrary{groupplots}
@@ -15,8 +15,8 @@
 \setlength{\parindent}{0em} %Set indent on paragraph
 \setlength{\parskip}{0.5em} %Set spaces between paragraphs
 
-\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
-\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+%\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+%\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
 
 \newcommand\showdiv[1]{\overline{\smash{\hstretch{.5}{)}\mkern-3.2mu\hstretch{.5}{)}}#1}}
 \newcommand\ph[1]{\textcolor{white}{#1}}
@@ -516,7 +516,7 @@
 		Consider the polynomial $P(z)$ where $a_n \in \mathbb{C}$, $n \in \mathbb{N}$, $a_0 \neq 0$, and $z \in \mathbb{C}$.
 		$$P(z) = a_0 + a_1 z + a_2 z^2 + \ldots + a_n z^n$$
 		Then $\forall z, \exists R \in \mathbb{R}_{>0}, \abs{z} < R$ such that
-		$$\abs*{\frac{1}{P(z)}} < \frac{2}{\abs{a_n} R^n}$$
+		$$\abs{\frac{1}{P(z)}} < \frac{2}{\abs{a_n} R^n}$$
 		\label{Complex Poly Reciprocal Bounded}
 	\end{corollary}
 	\begin{proof}
@@ -535,7 +535,7 @@
 				& R < \abs{z} \\
 			&\implies \abs{P_n(z)} = \abs{a_n + w} \abs{z}^n > \frac{\abs{a_n}}{2}\abs{z}^n > \frac{\abs{a_n}}{2} R^n 
 				& R < \abs{z} \\
-			&\implies \abs*{\frac{1}{P(z)}} < \frac{2}{\abs{a_n} R^n}
+			&\implies \abs{\frac{1}{P(z)}} < \frac{2}{\abs{a_n} R^n}
 		\end{align*}
 	\end{proof}
 	This tells us that if $z$ is a solution to a polynomial $P(z)$, then the reciprocal of the polynomial $1/P(z)$ is bounded above by $R = \abs{z}$. (i.e. It is bounded by a circle of radius $\abs{z}$.)
@@ -1693,8 +1693,8 @@
 		
 		We can see that we have restricted the domain of $f$ to the region $\abs{z} < 1$, this puts $z = 1$ right at the boundary of the domain of definition of $f$.
 		\begin{align*}
-			\abs{z} < 1 \implies& \abs*{f(z) - \frac{i}{2}} = \abs*{\frac{iz}{2} - \frac{i}{2}} = \frac{\abs{z - 1}}{2} \\
-			\implies& \forall z \forall \epsilon \exists \delta \left[ 0 < \abs{z - 1} < \delta = 2\epsilon \implies \abs*{f(z) - \frac{i}{2}} < \epsilon \right] \\
+			\abs{z} < 1 \implies& \abs{f(z) - \frac{i}{2}} = \abs{\frac{iz}{2} - \frac{i}{2}} = \frac{\abs{z - 1}}{2} \\
+			\implies& \forall z \forall \epsilon \exists \delta \left[ 0 < \abs{z - 1} < \delta = 2\epsilon \implies \abs{f(z) - \frac{i}{2}} < \epsilon \right] \\
 			\implies& \lim_{z \rightarrow 1} f(z) = \frac{i}{2}
 		\end{align*}
 	\end{example}
@@ -1950,8 +1950,8 @@
 		\implies \lim_{z \rightarrow z_0} f(z) = \infty$}
 		\begin{align*}
 			\lim_{z \rightarrow z_0} \frac{1}{f(z)} = 0 
-			&\implies \forall \epsilon \exists \delta>0 \left[\abs{z-z_0} < \delta \implies \abs*{\frac{1}{f{z}} - 0} < \epsilon \right] \\
-			&\implies \forall \epsilon \exists \delta>0 \left[\abs{z-z_0} < \delta \implies \abs*{f(z)} > \frac{1}{\epsilon} \right]  \\
+			&\implies \forall \epsilon \exists \delta>0 \left[\abs{z-z_0} < \delta \implies \abs{\frac{1}{f{z}} - 0} < \epsilon \right] \\
+			&\implies \forall \epsilon \exists \delta>0 \left[\abs{z-z_0} < \delta \implies \abs{f(z)} > \frac{1}{\epsilon} \right]  \\
 			&\implies \lim_{z \rightarrow z_0} f(z) = \infty 
 		\end{align*}
 	
@@ -1959,8 +1959,8 @@
 		\implies \lim_{z \rightarrow \infty} f(z) = w_0$}
 		\begin{align*}
 			\lim_{z \rightarrow 0} f\left(\frac{1}{z}\right) = w_0
-			&\implies \forall \epsilon \exists \delta>0 \left[ \abs{z-0} < \delta \implies \abs*{f\left(\frac{1}{z}\right) - w_0} < \epsilon \right] \\
-			&\implies \forall \epsilon \exists \delta>0 \left[ \abs{z} > \frac{1}{\delta} \implies \abs*{f(z) - w_0} < \epsilon \right] \\
+			&\implies \forall \epsilon \exists \delta>0 \left[ \abs{z-0} < \delta \implies \abs{f\left(\frac{1}{z}\right) - w_0} < \epsilon \right] \\
+			&\implies \forall \epsilon \exists \delta>0 \left[ \abs{z} > \frac{1}{\delta} \implies \abs{f(z) - w_0} < \epsilon \right] \\
 			&\implies \lim_{z \rightarrow \infty} f(z) = w_0
 		\end{align*}
 	
@@ -1968,7 +1968,7 @@
 		\implies \lim_{z \rightarrow \infty} f(z) = \infty$}
 		\begin{align*}
 			\lim_{z \rightarrow 0} \frac{1}{f(1/z)} = 0 
-			&\implies \forall \epsilon \exists \delta > 0 \left[ \abs{z - 0} < \delta \implies \abs*{\frac{1}{f(1/z)} - 0} < \epsilon \right] \\
+			&\implies \forall \epsilon \exists \delta > 0 \left[ \abs{z - 0} < \delta \implies \abs{\frac{1}{f(1/z)} - 0} < \epsilon \right] \\
 			&\implies \forall \epsilon \exists \delta > 0 \left[ \abs{z} > \frac{1}{\delta} \implies \abs{f(z)} > \frac{1}{\epsilon} \right] \\
 			&\implies \lim_{z \rightarrow \infty} f(z) = \infty 
 		\end{align*}
@@ -2191,7 +2191,7 @@
 	\begin{example}
 		Prove:
 		\begin{align*}
-			S \text{ is unbounded } \iff \forall \epsilon \exists z [ z \in S : \abs{z} > \frac{1}{\epsilon}]
+			S \text{ is unbounded } \iff \forall \epsilon \exists z \left[ z \in S : \abs{z} > \frac{1}{\epsilon} \right]
 		\end{align*}
 		That is, $S$ is unbounded $\iff$ every neighbourhood of the point at infinity contains at least one point in $S$
 	\end{example}
@@ -2225,6 +2225,114 @@
 	\begin{align*}
 		f'(z_0) = \lim_{\Delta z \rightarrow 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z}
 	\end{align*}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				small,
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=20,
+				ymin=0, ymax=16,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(12, 10) [$z_0$]
+					(14, 7)
+				};
+				\draw[dashed,line width=1pt,Grey](axis cs: 12, 10) circle (5);
+				\draw[-,draw=Grey]  (axis cs: 12,10)--(axis cs: 7,10)
+				node[midway,above] {$\epsilon$};
+				\draw[->,draw=Black]  (axis cs: 12,10) to ["$\Delta z$"] (axis cs: 14,7);
+				\draw[->, thick, draw=Black]  (axis cs: 0,0)--(axis cs: 12,10)
+				node[midway,sloped,above] {$z_0$};
+				\draw[->, thick, draw=Black]  (axis cs: 0,0)--(axis cs: 14,7) node[midway,sloped,below]  {$z_0 + \Delta z$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	There's another notation by letting $\Delta w = f(z + \Delta z) - f(z)$:
+	\begin{align*}
+		f'(z) = \dv{w}{z}  = \lim_{\Delta z \rightarrow 0} \frac{\Delta w}{\Delta z}
+	\end{align*}
+	
+	\begin{example}
+		Let $f(z) = \bar{z}$:
+		\begin{align*}
+			\frac{\Delta w}{\Delta z} = \frac{\overline{z + \Delta z} - \bar{z}}{\Delta z} = \frac{\bar{z} + \overline{\Delta z} - \bar{z}}{\Delta z} = \frac{\overline{\Delta z}}{\Delta z}
+		\end{align*}
+	Consider $\Delta z = (\Delta x, \Delta y) \rightarrow (0,0)$. If we move on the real axis, that is $(\Delta x, 0)$:
+	\begin{align*}
+		\overline{\Delta z} = \overline{\Delta x + i0} = \Delta x - i0  = \Delta x + i0 = \Delta z 
+		\implies \frac{\Delta w}{\Delta z} = \frac{\overline{\Delta z}}{\Delta z} = \frac{\Delta z}{\Delta z} = 1
+	\end{align*}
+	If we move on the imaginary axis, that is $(0, \Delta y)$:
+	\begin{align*}
+		\overline{\Delta z} = \overline{0 + i\Delta y} = 0 - i \Delta y = - \Delta z
+		\implies \frac{\Delta w}{\Delta z} = \frac{\overline{\Delta z}}{\Delta y} = \frac{-\Delta z}{\Delta z} =  -1
+	\end{align*}
+	Limits are unique, so the limit of $\dd w / \dd z$ does not exist anywhere. 
+	\end{example}
+
+	\begin{example}
+		Consider $f(z) = \abs{z}^2$:
+		\begin{align*}
+			\frac{\Delta w}{\Delta z} &= \frac{\abs{z + \Delta z}^2 - \abs{z}^2}{\Delta z}
+				= \frac{(z + \Delta z)(\overline{z + \Delta z}) - z \bar{z}}{\Delta z} \\
+				&= \frac{(z + \Delta z)(\bar{z} + \overline{\Delta z}) - z \bar{z}}{\Delta z} 
+				= \frac{z\bar{z} + \Delta z \bar{z} + \overline{\Delta z} z + \overline{\Delta z} \Delta z - z \bar{z}}{\Delta z}
+				= \bar{z} + \overline{\Delta z} + z\frac{\overline{\Delta z}}{\Delta z}
+		\end{align*}
+		As in the previous example, as $(\Delta x, \Delta y) \rightarrow (0,0)$:
+		\begin{align*}
+			\overline{\Delta z} &= \Delta z  & &\text{From the real axis} \\
+			\overline{\Delta z} &= -\Delta z & &\text{From the imaginary axis}
+		\end{align*}
+		Thus
+		\begin{align*}
+			\frac{\Delta w}{\Delta z} &= \bar{z} + \Delta z + z & \Delta z &= (\Delta x, 0) \\
+			\frac{\Delta w}{\Delta z} &= \bar{z} - \Delta z - z & \Delta z &= (0, \Delta y)
+		\end{align*}
+		Therefore, by uniqueness of limits as $\Delta z \rightarrow 0$:
+		\begin{align*}
+			\lim_{\Delta z \rightarrow 0} (\bar{z} + \Delta z + z) = \lim_{\Delta z \rightarrow 0} (\bar{z} - \Delta z - z )
+			\implies  z = - z   \implies z = 0
+		\end{align*}
+		Hence, $\dd w /\dd z$ does not exist for $z \neq 0$.
+		We can also see that:
+		\begin{align*}
+			\frac{\Delta w}{\Delta z}
+			&= \bar{z} + \overline{\Delta z} + z\frac{\overline{\Delta z}}{\Delta z}
+			= \overline{\Delta z}  & z = 0
+		\end{align*}
+		Thus, $\dd w /\dd z $ only exists at $z = 0$: 
+		$$\eval{\dv{w}{z}}_{z=0} = 0$$
+	\end{example}
+	
+	\begin{remark}
+		The following are facts:
+		\begin{itemize}
+			\item[(1)] 
+			\item[(2)] 
+			\item[(3)] 
+		\end{itemize}
+	\end{remark}
+
+	\subsection{Differentiation Rules} \label{Differentiation Rules Subsection - Complex}
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
