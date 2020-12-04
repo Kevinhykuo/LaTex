@@ -41,7 +41,8 @@
 \contentsline {subsection}{\numberline {13.2.1}Limit Theorems}{49}{subsection.13.2.1}%
 \contentsline {subsection}{\numberline {13.2.2}Limits of Points at Infinity}{51}{subsection.13.2.2}%
 \contentsline {section}{\numberline {13.3}Continuity}{53}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Differentiation}{55}{section.13.4}%
+\contentsline {subsection}{\numberline {13.3.1}Exercises}{56}{subsection.13.3.1}%
+\contentsline {section}{\numberline {13.4}Differentiation}{56}{section.13.4}%
 \contentsline {chapter}{\numberline {14}Conformal Mapping}{57}{chapter.14}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{59}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{61}{part.6}%

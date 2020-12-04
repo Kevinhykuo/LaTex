@@ -1853,10 +1853,12 @@
 	
 	\begin{definition}[Riemann Sphere]
 		A unit sphere centred at the origin of the complex plane, which is consequently bisected by the complex plane.
+		\label{Riemann Sphere Definition - Complex}
 	\end{definition}
 
 	\begin{definition}[Stereographic Projection]
 		Consider the Riemann Sphere. Let $N$ be the northern point of the sphere (the point on the sphere above the origin of the complex plane) and $z$ be any point in the complex plane. Let $l$ be a line that goes through $N$ and $z$, then $l$ will intersect the Riemann Sphere. Let $P$ be the point where $l$ intersects the Riemann Sphere. If we let $N$ correspond to the points at infinity, then there is a one-to-one correspondence between points on the sphere and the points on the extended complex plane. This correspondence called the Stereographic Projection. (\Cref{Riemann Sphere and Stereographic Projection Figure - Complex})
+		\label{Stereographic Projection Definition - Complex}
 	\end{definition}
 
 	\begin{figure}[H]
@@ -2165,6 +2167,43 @@
 		\begin{align*}
 			\left( \abs{f(z)} = \sqrt{[u(x,y)]^2 + [v(x,y)]^2} \text{ is continuous in } R \right) \land \left( \exists M \in \mathbb{R}_{>0} [\abs{f(z)}<M] \right)
 		\end{align*}
+	\end{proof}
+
+	\subsection{Exercises}
+	
+	\begin{example}
+		Prove: $$ \lim_{z \rightarrow z_0} f(z) = w_0 \implies \lim_{z \rightarrow z_0} \abs{f(z)} = \abs{w_0}$$
+		Note: $\abs{\abs{f(z_0)} - \abs{w_0}} \leq \abs{f(z) - w_0}$
+	\end{example}
+	\begin{proof}
+		\textcolor{Grey}{Use definition of limit, then plug and chug.}
+	\end{proof}
+	
+	\begin{example}
+		Prove: Limits involving points at infinity are unique.
+	\end{example}
+	\begin{proof}
+		\textcolor{Grey}{
+		Suppose that limit of the point at infinity is not unique, that is there is two neighbourhoods of infinity. Using he definition of the limit, we will arrive at a contradiction where the two neighbourhoods are the same. 
+		}
+	\end{proof}
+	
+	\begin{example}
+		Prove:
+		\begin{align*}
+			S \text{ is unbounded } \iff \forall \epsilon \exists z [ z \in S : \abs{z} > \frac{1}{\epsilon}]
+		\end{align*}
+		That is, $S$ is unbounded $\iff$ every neighbourhood of the point at infinity contains at least one point in $S$
+	\end{example}
+	\begin{proof}
+		\textcolor{Grey}{
+		Proof Sketch: 
+		Recall the Riemann Sphere. (\Cref{Riemann Sphere Definition - Complex}). The set $\abs{z} > 1/\epsilon$ corresponds to the points close to $N$, which is the neighbourhood of the point at infinity. If we let $\gamma = 2\epsilon$, $\exists z$ where $\abs{z} > 1/\gamma$ holds. This along with $z \in \mathbb{C}$ (which is $S$ in our case), implies the direction $\impliedby$ is true. That is, we can still find elements in $S$ as we shrink the circle around $N$. 
+		}
+		
+		\textcolor{Grey}{
+		$S$ is unbounded implies that for all circle with radius $R$ centred at the origin there is at least one element of $s \in S$ where $\abs{s} > R$. Suppose for contradiction that there is a neighbourhood of the point at infinity that does not contain any points in $S$. We will arrive at a contradiction, where there is $M \in \mathbb{R}_{>0}$ such that $\forall s \in S [\abs{s} < M]$. Thus $S$ is bounded, a contradiction. This implies that the direction $\implies$ is true. 
+		}
 	\end{proof}
 
 	\section{Differentiation} \label{Differentiation - Complex}

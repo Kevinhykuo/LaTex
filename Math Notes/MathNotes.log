@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  3 DEC 2020 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  3 DEC 2020 19:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1441,10 +1441,7 @@ ut line 320.
 
 ] (./MathNotes.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
- [7]
-Underfull \vbox (badness 1708) has occurred while \output is active []
-
- [8]
+ [7] [8]
 Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [9])
@@ -1695,19 +1692,19 @@ z/MathNotes-figure21.pdf> <./tikz/MathNotes-figure22.pdf>] [49] [50]
 [51] [52 <./tikz/MathNotes-figure23.pdf>] [53]
 ===== Image 'tikz/MathNotes-figure24' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2069.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2071.
 
 ===== Image 'tikz/MathNotes-figure25' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2096.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2098.
 
 ===== Image 'tikz/MathNotes-figure26' is up-to-date. ======
 [54] [55 <./tikz/MathNotes-figure24.pdf> <./tikz/MathNotes-figure25.pdf> <./tik
-z/MathNotes-figure26.pdf>] [56
-
-]
+z/MathNotes-figure26.pdf>] [56]
 Chapter 14.
-[57] [58
+[57
+
+] [58
 
 ] [59] [60
 
@@ -1795,17 +1792,17 @@ Chapter 25.
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: C255B5EFB9A514818B876423DBF82AA5;4455.
+(rerunfilecheck)             Checksum: E78BD1F853D4CEA3B73D982123A6B7F9;4520.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39292 strings out of 479485
- 895295 string characters out of 5871977
+ 39304 strings out of 479485
+ 895617 string characters out of 5871977
  1312547 words of memory out of 5000000
- 55135 multiletter control sequences out of 15000+600000
+ 55140 multiletter control sequences out of 15000+600000
  570067 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,109p,726b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1835,10 +1832,10 @@ e1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (125 pages, 472173 bytes).
+Output written on MathNotes.pdf (125 pages, 474964 bytes).
 PDF statistics:
- 1710 PDF objects out of 1728 (max. 8388607)
- 1514 compressed objects within 16 object streams
- 381 named destinations out of 1000 (max. 500000)
- 748 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1723 PDF objects out of 1728 (max. 8388607)
+ 1527 compressed objects within 16 object streams
+ 388 named destinations out of 1000 (max. 500000)
+ 756 words of extra memory for PDF output out of 10000 (max. 10000000)
 
