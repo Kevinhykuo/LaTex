@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  1 DEC 2020 13:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  3 DEC 2020 15:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1166,22 +1166,22 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box126
 )
 No file tikz/MathNotes-figure26.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
 *geometry* detected driver: <none>
 *geometry* verbose mode - [ preamble ] result:
 * driver: \Gm@driver 
@@ -1249,16 +1249,16 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \symgns@font=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 172.
-Package gensymb Info: Math companion symbols declared on input line 172.
-LaTeX Info: Redefining \degree on input line 172.
-LaTeX Info: Redefining \celsius on input line 172.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 140.
+Package gensymb Info: Math companion symbols declared on input line 140.
+LaTeX Info: Redefining \degree on input line 140.
+LaTeX Info: Redefining \celsius on input line 140.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 172.
-LaTeX Info: Redefining \ohm on input line 172.
-Package gensymb Info: Using \textohm for \ohm on input line 172.
-Package gensymb Info: Using \textmu for \micro on input line 172.
-Package hyperref Info: Link coloring OFF on input line 172.
+erthousand on input line 140.
+LaTeX Info: Redefining \ohm on input line 140.
+Package gensymb Info: Using \textohm for \ohm on input line 140.
+Package gensymb Info: Using \textmu for \micro on input line 140.
+Package hyperref Info: Link coloring OFF on input line 140.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1270,24 +1270,24 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count361
 )
-LaTeX Info: Redefining \ref on input line 172.
-LaTeX Info: Redefining \pageref on input line 172.
-LaTeX Info: Redefining \nameref on input line 172.
+LaTeX Info: Redefining \ref on input line 140.
+LaTeX Info: Redefining \pageref on input line 140.
+LaTeX Info: Redefining \nameref on input line 140.
 Package pgfplots notification 'compat/show suggested version=true': you might b
-enefit from \pgfplotsset{compat=1.17} (current compat level: 1.9).
+enefit from \pgfplotsset{compat=1.17} (current compat level: 1.8).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 193
+LaTeX Font Info:    Trying to load font information for U+msa on input line 160
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 193
+LaTeX Font Info:    Trying to load font information for U+msb on input line 160
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 19
-3.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16
+0.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd)
@@ -1298,159 +1298,218 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
-line 307.
+line 274.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 311.
+t line 278.
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on i
-nput line 315.
+nput line 282.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 319.
+put line 286.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 323.
+line 290.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 327.
+input line 294.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 337.
+nput line 304.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 342.
+t line 309.
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 345.
+ line 312.
 Package hyperref Info: bookmark level for unknown observation defaults to 0 on 
-input line 349.
+input line 316.
 Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
-ut line 353.
+ut line 320.
 Chapter 1.
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 372.
+(hyperref)                removing `math shift' on input line 339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 372.
+(hyperref)                removing `math shift' on input line 339.
 
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 374.
+(hyperref)                removing `math shift' on input line 341.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 374.
+(hyperref)                removing `math shift' on input line 341.
 
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 343.
 
 Chapter 5.
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 380.
+(hyperref)                removing `math shift' on input line 347.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 380.
+(hyperref)                removing `math shift' on input line 347.
 
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 382.
+(hyperref)                removing `math shift' on input line 349.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 382.
+(hyperref)                removing `math shift' on input line 349.
 
 Chapter 8.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 384.
+(hyperref)                removing `math shift' on input line 351.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 384.
+(hyperref)                removing `math shift' on input line 351.
 
 
 LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 22 undefined 
-on input line 391.
+on input line 358.
 
 Chapter 9.
 
-LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 26
- undefined on input line 401.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
 
 
-LaTeX Warning: Citation `Wunsh.A-Complex-Variables-2005' on page 26 undefined o
-n input line 405.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathop' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathgroup' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\symoperators' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nmlimits@' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathop' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathgroup' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\symoperators' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nmlimits@' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
 
 Chapter 10.
+Chapter 11.
+
+LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 30
+ undefined on input line 394.
+
+
+LaTeX Warning: Citation `Wunsh.A-Complex-Variables-2005' on page 30 undefined o
+n input line 398.
+
+Chapter 12.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Complex Conjugate Section - Complex' on page 1 undefi
-ned on input line 507.
+ned on input line 500.
 
 
 LaTeX Warning: Reference `Triange Inequality - Complex' on page 1 undefined on 
-input line 520.
+input line 513.
 
 
 LaTeX Warning: Reference `Polar Form of z - Complex' on page 1 undefined on inp
-ut line 582.
+ut line 575.
 
 
 LaTeX Warning: Reference `Euler's Formula - Complex' on page 1 undefined on inp
-ut line 582.
+ut line 575.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 648.
+fined on input line 641.
 
 
 LaTeX Warning: Reference `Roots of z Section - Complex' on page 1 undefined on 
-input line 648.
+input line 641.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 648.
+fined on input line 641.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 662.
+fined on input line 655.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 662.
+fined on input line 655.
 
 
 LaTeX Warning: Reference `Properties of Polar and Exponential Form Subsection -
- Complex' on page 1 undefined on input line 667.
+ Complex' on page 1 undefined on input line 660.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 702.
+(hyperref)                removing `math shift' on input line 695.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 702.
+(hyperref)                removing `math shift' on input line 695.
 
 
 LaTeX Warning: Reference `Exponential Form of z - Complex' on page 1 undefined 
-on input line 703.
+on input line 696.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 747.
+
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
@@ -1459,7 +1518,19 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Exponential Form of z - Complex' on page 1 undefined 
-on input line 918.
+on input line 912.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 958.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1023.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1475,89 +1546,136 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-Chapter 11.
+Chapter 13.
 
 LaTeX Warning: Reference `Operations as Transformations Section - Complex' on p
-age 1 undefined on input line 1416.
+age 1 undefined on input line 1396.
 
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1437.
+age 1 undefined on input line 1417.
 
 
-LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 40
- undefined on input line 1457.
+LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 44
+ undefined on input line 1437.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1488.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1560.
+
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
-put line 1626.
+put line 1600.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1632.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
+put line 1689.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 1 - Complex' on pag
+e 1 undefined on input line 1747.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 2 - Complex' on pag
+e 1 undefined on input line 1766.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1807.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1811.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1825.
+
+
+LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 48 undefined 
+on input line 1841.
+
+
+LaTeX Warning: Reference `Limit Theorems Subsection - Real Analysis' on page 1 
+undefined on input line 1841.
+
+
+LaTeX Warning: Reference `Riemann Sphere and Stereographic Projection Figure - 
+Complex' on page 1 undefined on input line 1859.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Properties of Limits at Infinity Theorem - Complex' o
+n page 1 undefined on input line 1976.
+
+
+LaTeX Warning: Reference `Limit Theorems Subsection - Real Analysis' on page 1 
+undefined on input line 1976.
+
+
+LaTeX Warning: Reference `Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - C
+omplex' on page 1 undefined on input line 2009.
+
+
+LaTeX Warning: Reference `Limits of f=u+iv Theorem Corollary - Complex' on page
+ 1 undefined on input line 2017.
+
+
+LaTeX Warning: Reference `Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Theore
+m - Complex' on page 1 undefined on input line 2021.
+
+
+LaTeX Warning: Reference `Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Coroll
+ary - Complex' on page 1 undefined on input line 2021.
+
+
+LaTeX Warning: Reference `Continuous Function Definition - Complex' on page 1 u
+ndefined on input line 2021.
+
+
+LaTeX Warning: Reference `Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - C
+omplex' on page 1 undefined on input line 2023.
+
+
+LaTeX Warning: Reference `Limits of f=u+iv Theorem Corollary - Complex' on page
+ 1 undefined on input line 2023.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2069.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2096.
 
 \openout4 = `tikz/MathNotes-figure26.dpth'.
 
-[41
+[52
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 \pgfsyspdfmark {pgfid2}{13107}{13107}
 \pgfsyspdfmark {pgfid1}{13107}{13107}
 ]
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
-put line 1714.
-
-
-LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 1 - Complex' on pag
-e 1 undefined on input line 1772.
-
-
-LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 2 - Complex' on pag
-e 1 undefined on input line 1791.
-
-
-LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1832.
-
-
-LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1836.
-
-
-LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1850.
-
-
-LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 44 undefined 
-on input line 1866.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-Chapter 12.
-Chapter 13.
 Chapter 14.
 Chapter 15.
 Chapter 16.
@@ -1568,6 +1686,8 @@ Chapter 20.
 Chapter 21.
 Chapter 22.
 Chapter 23.
+Chapter 24.
+Chapter 25.
 
 No file tikz/MathNotes-figure26.bbl.
 
@@ -1575,16 +1695,16 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39060 strings out of 479485
- 894470 string characters out of 5871977
- 1318321 words of memory out of 5000000
- 55320 multiletter control sequences out of 15000+600000
- 569584 words of font info for 149 fonts, out of 8000000 for 9000
+ 39065 strings out of 479485
+ 894925 string characters out of 5871977
+ 1317862 words of memory out of 5000000
+ 55322 multiletter control sequences out of 15000+600000
+ 570989 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,111p,765b,2434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,14n,111p,765b,2442s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 ></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on tikz/MathNotes-figure26.pdf (1 page, 18381 bytes).
+Output written on tikz/MathNotes-figure26.pdf (1 page, 18228 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream

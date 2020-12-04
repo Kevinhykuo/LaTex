@@ -1364,8 +1364,8 @@
 		A domain with all of its boundary points. 
 	\end{definition}
 	
-	\begin{definition}[Bounded Set]
-		A set S is bounded if $\exists R$ such that $\forall s \in S$, $s < R$.
+	\begin{definition}[Bounded Set/Region]
+		A set $S$ is bounded if $\exists R = \abs{z} > 0$ such that $\forall s \in S$, $\abs{s} < R$. That is, $S$ is bounded if $\forall s \in S$, $s$ is contained in some circle of radius $R$ centred at the origin. 
 	\end{definition}
 
 	\begin{definition}[Closed Region]
@@ -1773,7 +1773,6 @@
 	\end{proof}
 
 	\begin{theorem}
-		\label{Limit of f(z)+F(z), f(z)F(z), and f(z)/F(z) Theorem - Complex}
 		Suppose
 		\begin{align*}
 		\left[\lim_{z\rightarrow z_0} f(z) = w_0 \right] \land \left[\lim_{z\rightarrow z_0} F(z) = W_0 \right]
@@ -1787,6 +1786,7 @@
 %			\label{Limit of f(z)/F(z) Theorem Equation - Complex}
 			\lim_{z \rightarrow z_0} \frac{f(z)}{F(z)} &= \frac{w_0}{W_0} & W_0 \neq 0
 		\end{align*}
+		\label{Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - Complex}
 	\end{theorem}
 	\begin{proof}
 		Let: 
@@ -1997,6 +1997,180 @@
 			$f$ is continuous in $R \iff$ $\forall z \in R$($f$ is continuous)
 		\end{center}
 	\end{definition}
+	
+	\begin{theorem}
+		Let $f(z)$ and $g(z)$ be continuous functions at $z_0 \in \mathbb{C}$. Then the following are also continuous at $z_0$:
+		\begin{align*}
+			f(z_0) + g(z_0) \qquad f(z_0)g(z_0) \qquad \frac{f(z_0)}{g(z_0)} \qquad g(z_0) \neq 0
+		\end{align*}
+		\label{Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Theorem - Complex}
+	\end{theorem}
+	\begin{proof}
+		Consequence of \cref{Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - Complex}.
+	\end{proof}
+
+	\begin{corollary}
+		Let $P(z)$ be a polynomial, then $P(z)$ is continuous $\forall z \in \mathbb{C}$. That is $P(z)$ is continuous in the entire plane of $\mathbb{C}$.
+		\label{Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Corollary - Complex}
+	\end{corollary}
+	\begin{proof}
+		Consequence of \cref{Limits of f=u+iv Theorem Corollary - Complex}.
+	\end{proof}
+	
+	\begin{observation}
+		Both \cref{Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Theorem - Complex} and \cref{Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Corollary - Complex} rely on \cref{Continuous Function Definition - Complex}, which state for a function $f$ and point $z_0 \in \mathbb{C}$:
+		$$\lim_{z \rightarrow z_0} f(z) \text{ exists } \implies f(z) \text{ is continuous at } z_0$$
+		This is why the proofs cite the results of \cref{Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - Complex} and \cref{Limits of f=u+iv Theorem Corollary - Complex}.
+	\end{observation}
+
+	\begin{theorem}
+		Let $f(z)$ and $g(z)$ be functions.
+		$$f(z) \text{ and } g(z) \text{ continuous} \implies g(f(z)) \text{ continuous}$$
+		\label{Continuity of Composition of Functions Theorem - Complex}
+	\end{theorem}
+	\begin{proof}
+		Let $f(z) = w$ be defined in the neighbourhood $\forall z[\abs{z-z-0}<\delta]$, and $g(w) = W$ where $\operatorname{dom} (g) = \operatorname{img}(f)$. Suppose that $f$ is continuous at $z_0$ and $g$ is continuous at $f(z_0)$.
+		\begin{align*}
+			f \text{ continuous at } z_0 
+			&\iff \forall \gamma \exists \delta>0 \left[ \abs{z-z_0} < \delta \implies \abs{f(z) - f(z_0)}<\gamma \right] \\
+			&\implies \forall \epsilon \exists \gamma>0 \left[ \abs{f(z) - f(z_0)} < \gamma \implies \abs{g(f(z)) - g(f(z_0))} < \epsilon \right]
+		\end{align*} 
+		We can always find a small enough $\delta$ for $\gamma$ to satisfy $\abs{g(f(z)) - g(f(z_0))} < \epsilon$.
+	\end{proof}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
+			\begin{axis}[
+				width=6cm,
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-1, xmax=10,
+				ymin=-1, ymax=10,
+				ticks = none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(8, 8) [$z_0$]
+				};
+				\draw[dashed, line width=1pt,Grey](axis cs: 8, 8) circle (2);
+				\draw[-,draw=Black]  (axis cs: 8,8) to ["$\delta$"] (axis cs: 6,8);
+			\end{axis}
+		\end{tikzpicture}
+		{$\Large \xrightarrow{\mathmakebox[1cm]f}$}
+		\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
+			\begin{axis}[
+				width=6cm,
+				unit vector ratio=1 1 1,
+				xlabel={$v$},
+				ylabel={$u$},
+				xmin=-10, xmax=2,
+				ymin=-1, ymax=10,
+				ticks = none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(-4, 2) [$w_0$]
+				};
+				\draw[dashed, line width=1pt,Grey](axis cs: -4, 2) circle (3);
+				\draw[-,draw=Black]  (axis cs: -4,2) to ["$\gamma$"] (axis cs: -7,2);
+			\end{axis}
+		\end{tikzpicture}
+		{$\Large \xrightarrow{\mathmakebox[1cm]{g(f)}}$}
+		\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
+			\begin{axis}[
+				width=6cm,
+				unit vector ratio=1 1 1,
+				xlabel={$V$},
+				ylabel={$U$},
+				xmin=-1, xmax=10,
+				ymin=-1, ymax=10,
+				ticks = none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(5, 5) [$w_0$]
+				};
+				\draw[dashed, line width=1pt,Grey](axis cs: 5, 5) circle (4);
+				\draw[-,draw=Black]  (axis cs: 5,5) to ["$\epsilon$"] (axis cs: 1,5);
+			\end{axis}
+		\end{tikzpicture}
+		\label{Limit Composition of Functions Figure - Complex}
+	\end{figure}
+	
+	\begin{theorem}
+		\label{f(z) neq 0 Neighbourhood Theorem - Complex}
+		Let $f(z)$ be a function and $f(z_0) \neq 0$.
+		\begin{align*}
+			f(z_0) \neq 0 
+			\implies \exists \epsilon \forall z [\abs{f(z) - f(z_0)}<\epsilon \implies f(z) \neq 0]
+		\end{align*}
+		That is, if $f(z_0) \neq 0$ then it has a neighbourhood where $f(z) \neq 0$.
+	\end{theorem}
+	\begin{proof}
+		Suppose $f(z)$ is continuous and non-zero at $z_0$, and let $\epsilon = \abs{f(z_0)}/2$:
+		\begin{align*}
+			&\exists z [f(z) = 0]  \land 
+			\forall \epsilon \exists \delta>0 \left[ \abs{z-z_0}<\delta \implies \abs{f(z) - f(z_0)}  < \frac{\abs{f(z_0)}}{2} \right] & \\
+			&\implies \abs{f(z_0)} < \frac{\abs{f(z_0)}}{2} & \text{Contradiction!}
+		\end{align*}
+	\end{proof}
+
+	\begin{theorem}
+		Let $f(z) = u(x,y) + iv(x,y)$ be a function, and $z = x + iy$, $z \in \mathbb{C}$. 
+		\begin{align*}
+			f \text{ continuous at } z_0 \iff \left[ u \text{ continuous at } z_0 \right] \land \left[ v \text{ continuous at } z_0 \right]
+		\end{align*}
+		\label{Continuity of f=u+iv Theorem - Complex}
+	\end{theorem}
+	\begin{proof}
+		Direct consequence of \cref{Limit of f=u+iv Theorem - Complex}
+	\end{proof}
+	
+	\begin{theorem}
+		Let $f$ be continuous in a closed and bounded region $R$, then
+		\begin{align*}
+			\forall z \in R, \exists M \in \mathbb{R}_{>0}  \left[\abs{f(z) \leq M}\right] 
+			\land \abs{\{z : f(z) = M \}} \geq 1
+		\end{align*}
+		That is, for $\forall z \in R$, $\abs{f(z)} \leq M$ and there is at least one point $z$ where $\abs{f(z)}= M$. $f(z)$ is bounded in $R$.
+	\end{theorem}
+	\begin{proof}
+		Let $f(z) = u(x,y) + iv(x,y)$ be continuous, then 
+		\begin{align*}
+			\left( \abs{f(z)} = \sqrt{[u(x,y)]^2 + [v(x,y)]^2} \text{ is continuous in } R \right) \land \left( \exists M \in \mathbb{R}_{>0} [\abs{f(z)}<M] \right)
+		\end{align*}
+	\end{proof}
+
+	\section{Differentiation} \label{Differentiation - Complex}
+	
+	
+	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
