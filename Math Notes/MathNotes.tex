@@ -2342,6 +2342,62 @@
 	\end{remark}
 
 	\subsection{Differentiation Rules} \label{Differentiation Rules Subsection - Complex}
+	Definition of derivative in \(\mathbb{C}\) (\cref{Derivative Definition - Complex}) is the same of that in \(\mathbb{R}\), so rules remain the same.
+	
+	Let \(c \in \mathbb{C}\) be a constant and functions \(f\) and \(g\) be differentiable at point \(z\). Then
+	\begin{align*}
+		\dv{z} c &= 0 & \dv{z} z &= 1 & \dv{z} [cf(z)] &= cf'(z) & \dv{z} z^n &= nz^{n-1} & n \in \mathbb{Z}\setminus\{0\}
+	\end{align*}
+	Let functions \(f\) and \(g\) be differentiable at point \(z\). Then
+	\begin{align*}
+		\dv{z} [f(z) + g(z)] &= f'(z) + g'(z) & \dv{z}[f(z)g(z)] &= f(z)g'(z) + f'(z)g(z) 
+	\end{align*}
+	\begin{align*}
+		\dv{z}\left[\frac{f(z)}{g(z)}\right] = \frac{g(z)f'(z) - f(z)g'(z)}{[g(z)]^2}
+	\end{align*}
+	
+	\begin{proof}
+		Deriving: \( \dv{z}[f(z)g(z)] = f(z)g'(z) + f'(z)g(z) \)
+		
+		Let \(w = f(z) g(z)\): 
+		\begin{align*}
+			\Delta w &= f(z + \Delta z) g(z + \Delta z ) - f(z) g(z)\\
+				&=f(z)[g(z + \Delta z) - g(z)] + [f(z + \Delta z) - f(z)] g(z + \Delta z)
+		\end{align*}
+		Thus
+		\begin{align*}
+			\frac{\Delta w}{\Delta z}
+			= f(z)\frac{g(z + \Delta z) - g(z)}{\Delta z} + \frac{f(z + \Delta z) - f(z)}{\Delta z} g(z + \Delta z)
+		\end{align*}
+		Hence
+		\begin{align*}
+			\dv{w}{z} =	\lim_{\Delta z \rightarrow 0} \frac{\Delta w}{\Delta z} = f(z)g'(z) + f'(z)g(z)
+		\end{align*}
+	\end{proof}
+	
+	\begin{theorem}[Chain Rule for Composite Functions]
+		\label{Chain Rule for Composite Functions Theorem - Complex}
+		Let function $f$ be differentiable at $z_0$ and function $g$ be differentiable at \(f(z_0)\). Then \(F(z) = g[f(z)] \text{ is differentiable at } z_0\).
+		\begin{align*}
+			F'(z_0) = g'[f(z_0)]f'(z_0) 
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Suppose $f$ is differentiable at \(z_0\). Let \(w_0 = f(z_0)\) and assume that \(g'(w_0)\) exists. Then 
+		\[ \forall w \exists \epsilon [\abs{w - w_0} < \epsilon \implies \Phi(w_0) = 0 ] \]
+		Where 
+		\begin{align*}
+			\Phi(w) &= \frac{g(w) - g(w_0)}{w - w_0} - g'(w_0) & w \neq w_0
+		\end{align*}
+		Note: \(\lim_{w \rightarrow w_0} \Phi(w) = 0 \), so \(\Phi\) is continuous at \(w_0\).
+		Then 
+		\begin{align*}
+			g(w) - g(w_0) &= [g'(w_0) + \Phi(w)](w - w_0)	&	 \abs{w-w_0}<\epsilon
+		\end{align*}
+	\end{proof}
+	Alternatively, if we let \(w = f(z) \) and \(W = F(z)\), then the Chain Rule becomes:
+	\[ \dv{W}{z} = \dv{W}{w} \dv{w}{z }\]
+	Note: Although this looks like a fraction, it is not a fraction and should not be treated as such! (Logical inconsistency when infinitesimals when viewed as ratios.)
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
