@@ -2323,9 +2323,21 @@
 	\begin{remark}
 		The following are facts:
 		\begin{itemize}
-			\item[(1)] 
-			\item[(2)] 
-			\item[(3)] 
+			\item[(1)] A function $f(z)$ can be differentiable at a point $z_0$, but nowhere else in the neighbourhood of $z_0$.
+			\item[(2)] \(f(z) = \abs{z}^2 \implies u(x,y) = x^2 + y^2 \land v(x,y) = 0 \), hence $u(x,y)$ and $v(x,y)$ can have continuous partial derivatives of all orders at a point $z_0$, even though $f$ may not be differentiable at $z_0$.
+			\item[(3)]
+			\( f(z) \text{ differentiable at } z_0 \implies f(z) \text{ continuous at } z_0 \)
+			\begin{proof}
+				Assume \( f'(z_0) \) exists: 
+				\begin{align*}
+					&\lim_{z \rightarrow z_0} [f(z) - f(z_0)] = \lim_{z \rightarrow z_0} \frac{f(z) - f(z_0)}{z - z_0} \lim_{z \rightarrow z_0} (z - z_0) = f'(z_0) \cdot 0 = 0\\
+					&\implies \lim_{z \rightarrow z_0} f(z) = f(z_0)
+				\end{align*}
+			So, $f$ is differentiable at \(z_0 \implies f \) is continuous at \(z_0\).
+			\end{proof}
+			Note: Continuity of a function  at \(z_0 \in \mathbb{C}\) $\nRightarrow$ existence of derivative at point \(z_0\). 
+			
+			Ex: \(f(z) = \abs{z}^2 \) is continuous everywhere in $\mathbb{C}$ for \(z_0 \neq 0\), but \(f(z_0) \) does not exist at \(z_0\). 
 		\end{itemize}
 	\end{remark}
 
