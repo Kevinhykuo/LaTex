@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  6 DEC 2020 00:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  6 DEC 2020 01:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1273,22 +1273,22 @@ s/tikzexternalshared.code.tex)))
  (./MathNotes.aux)
 \openout1 = `MathNotes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1360,16 +1360,16 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \symgns@font=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 137.
-Package gensymb Info: Math companion symbols declared on input line 137.
-LaTeX Info: Redefining \degree on input line 137.
-LaTeX Info: Redefining \celsius on input line 137.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 138.
+Package gensymb Info: Math companion symbols declared on input line 138.
+LaTeX Info: Redefining \degree on input line 138.
+LaTeX Info: Redefining \celsius on input line 138.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 137.
-LaTeX Info: Redefining \ohm on input line 137.
-Package gensymb Info: Using \textohm for \ohm on input line 137.
-Package gensymb Info: Using \textmu for \micro on input line 137.
-Package hyperref Info: Link coloring OFF on input line 137.
+erthousand on input line 138.
+LaTeX Info: Redefining \ohm on input line 138.
+Package gensymb Info: Using \textohm for \ohm on input line 138.
+Package gensymb Info: Using \textmu for \micro on input line 138.
+Package hyperref Info: Link coloring OFF on input line 138.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1383,9 +1383,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count361
 )
-LaTeX Info: Redefining \ref on input line 137.
-LaTeX Info: Redefining \pageref on input line 137.
-LaTeX Info: Redefining \nameref on input line 137.
+LaTeX Info: Redefining \ref on input line 138.
+LaTeX Info: Redefining \pageref on input line 138.
+LaTeX Info: Redefining \nameref on input line 138.
  (./MathNotes.out) (./MathNotes.out)
 \@outlinefile=\write4
 \openout4 = `MathNotes.out'.
@@ -1394,19 +1394,19 @@ LaTeX Info: Redefining \nameref on input line 137.
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.17} (current compat level: 1.8).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 157
+LaTeX Font Info:    Trying to load font information for U+msa on input line 158
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 157
+LaTeX Font Info:    Trying to load font information for U+msb on input line 158
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 15
-7.
+8.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
@@ -1423,28 +1423,28 @@ This may cause the page layout to be inconsistent, however.
 
 [3]
 Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
-line 271.
+line 272.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 275.
+t line 276.
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on i
-nput line 279.
+nput line 280.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 283.
+put line 284.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 287.
+line 288.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 291.
+input line 292.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 301.
+nput line 302.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 306.
+t line 307.
  [4]
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 309.
+ line 310.
 Package hyperref Info: bookmark level for unknown observation defaults to 0 on 
-input line 313.
+input line 314.
 Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
-ut line 317.
+ut line 318.
  [5] [6
 
 ] (./MathNotes.toc
@@ -1466,11 +1466,11 @@ Chapter 1.
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 337.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 337.
 
 [7
 
@@ -1480,11 +1480,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 338.
+(hyperref)                removing `math shift' on input line 339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 338.
+(hyperref)                removing `math shift' on input line 339.
 
 [9] [10
 
@@ -1492,11 +1492,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 340.
+(hyperref)                removing `math shift' on input line 341.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 340.
+(hyperref)                removing `math shift' on input line 341.
 
 [11] [12
 
@@ -1508,11 +1508,11 @@ Chapter 5.
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 344.
+(hyperref)                removing `math shift' on input line 345.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 344.
+(hyperref)                removing `math shift' on input line 345.
 
 [15] [16
 
@@ -1520,11 +1520,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 346.
+(hyperref)                removing `math shift' on input line 347.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 346.
+(hyperref)                removing `math shift' on input line 347.
 
 [17] [18
 
@@ -1532,11 +1532,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 8.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 348.
+(hyperref)                removing `math shift' on input line 349.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 348.
+(hyperref)                removing `math shift' on input line 349.
 
 [19] [20
 
@@ -1544,59 +1544,59 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 9.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 369.
+(hyperref)                removing `math shift' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathop' on input line 369.
+(hyperref)                removing `\mathop' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathgroup' on input line 369.
+(hyperref)                removing `\mathgroup' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\symoperators' on input line 369.
+(hyperref)                removing `\symoperators' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nmlimits@' on input line 369.
+(hyperref)                removing `\nmlimits@' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 369.
+(hyperref)                removing `\new@ifnextchar' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 369.
+(hyperref)                removing `math shift' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 369.
+(hyperref)                removing `math shift' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathop' on input line 369.
+(hyperref)                removing `\mathop' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathgroup' on input line 369.
+(hyperref)                removing `\mathgroup' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\symoperators' on input line 369.
+(hyperref)                removing `\symoperators' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nmlimits@' on input line 369.
+(hyperref)                removing `\nmlimits@' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 369.
+(hyperref)                removing `\new@ifnextchar' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 369.
+(hyperref)                removing `math shift' on input line 370.
 
 [23
 
@@ -1622,21 +1622,21 @@ Chapter 12.
 [34 <./tikz/MathNotes-figure2.pdf>]
 
 LaTeX Warning: Reference `Roots of z Section - Complex' on page 1 undefined on 
-input line 638.
+input line 639.
 
 [35]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 692.
+(hyperref)                removing `math shift' on input line 693.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 692.
+(hyperref)                removing `math shift' on input line 693.
 
 [36]
 ===== Image 'tikz/MathNotes-figure3' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 744.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 745.
 
 ===== Image 'tikz/MathNotes-figure4' is up-to-date. ======
 [37 <./tikz/MathNotes-figure3.pdf> <./tikz/MathNotes-figure4.pdf>]
@@ -1645,12 +1645,12 @@ LaTeX Font Warning: Command \Large invalid in math mode on input line 744.
 [38 <./tikz/MathNotes-figure5.pdf>]
 ===== Image 'tikz/MathNotes-figure7' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 955.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 956.
 
 ===== Image 'tikz/MathNotes-figure8' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure9' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1020.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1021.
 
 ===== Image 'tikz/MathNotes-figure10' is up-to-date. ======
 [39 <./tikz/MathNotes-figure6.pdf> <./tikz/MathNotes-figure7.pdf> <./tikz/MathN
@@ -1669,25 +1669,25 @@ hNotes-figure14.pdf>] [42 <./tikz/MathNotes-figure15.pdf>]
 Chapter 13.
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1414.
+age 1 undefined on input line 1415.
 
 [45
 
 ]
 ===== Image 'tikz/MathNotes-figure17' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1485.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1486.
 
 ===== Image 'tikz/MathNotes-figure18' is up-to-date. ======
 [46 <./tikz/MathNotes-figure17.pdf> <./tikz/MathNotes-figure18.pdf>]
 ===== Image 'tikz/MathNotes-figure19' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1557.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1558.
 
 ===== Image 'tikz/MathNotes-figure20' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure21' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1629.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1630.
 
 ===== Image 'tikz/MathNotes-figure22' is up-to-date. ======
 [47 <./tikz/MathNotes-figure19.pdf> <./tikz/MathNotes-figure20.pdf>] [48 <./tik
@@ -1696,84 +1696,82 @@ z/MathNotes-figure21.pdf> <./tikz/MathNotes-figure22.pdf>] [49] [50]
 [51] [52 <./tikz/MathNotes-figure23.pdf>] [53]
 ===== Image 'tikz/MathNotes-figure24' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2068.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2069.
 
 ===== Image 'tikz/MathNotes-figure25' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2095.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2096.
 
 ===== Image 'tikz/MathNotes-figure26' is up-to-date. ======
 [54] [55 <./tikz/MathNotes-figure24.pdf> <./tikz/MathNotes-figure25.pdf> <./tik
 z/MathNotes-figure26.pdf>]
 ===== Image 'tikz/MathNotes-figure27' is up-to-date. ======
 [56] [57 <./tikz/MathNotes-figure27.pdf>] [58] [59] [60] [61] [62] [63]
-[64]
+[64] [65] [66
+
+]
 Chapter 14.
-[65
-
-] [66
-
-] [67] [68
+[67] [68
 
 ] [69] [70
 
-] [71] [72] [73
+] [71] [72
 
-] [74
+] [73] [74] [75
 
-] [75] [76
+] [76
+
+] [77] [78
 
 ]
 Chapter 15.
-[77] [78
-
-] [79] [80
+[79] [80
 
 ] [81] [82
 
 ] [83] [84
 
-]
-Chapter 16.
-[85] [86
+] [85] [86
 
 ]
-Chapter 17.
+Chapter 16.
 [87] [88
 
 ]
-Chapter 18.
+Chapter 17.
 [89] [90
 
 ]
-Chapter 19.
+Chapter 18.
 [91] [92
 
 ]
-Chapter 20.
+Chapter 19.
 [93] [94
 
 ]
-Chapter 21.
+Chapter 20.
 [95] [96
 
 ]
-Chapter 22.
+Chapter 21.
 [97] [98
 
-] [99] [100
+]
+Chapter 22.
+[99] [100
 
 ] [101] [102
 
+] [103] [104
+
 ]
 Chapter 23.
-[103] [104
+[105] [106
 
 ]
 Chapter 24.
-[105] [106
-
-] [107] [108
+[107] [108
 
 ] [109] [110
 
@@ -1783,33 +1781,35 @@ Chapter 24.
 
 ] [115] [116
 
+] [117] [118
+
 ]
 Chapter 25.
-[117] [118
+[119] [120
 
-] [119
+] [121
 
-] [120
+] [122
 
-] [121]
+] [123]
 
-(./MathNotes.bbl [122
+(./MathNotes.bbl [124
 
-]) [123] (./MathNotes.aux
+]) [125] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: B41A3A4E7BBA80E8CBF5EC9FD65E3E51;4758.
+(rerunfilecheck)             Checksum: 95282C2AFA9450432EBCDDDB4EAEBF49;4858.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39949 strings out of 479485
- 903656 string characters out of 5871977
+ 39960 strings out of 479485
+ 904029 string characters out of 5871977
  1324115 words of memory out of 5000000
- 55742 multiletter control sequences out of 15000+600000
+ 55748 multiletter control sequences out of 15000+600000
  568774 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,109p,726b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1840,10 +1840,10 @@ pe1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (133 pages, 516561 bytes).
+Output written on MathNotes.pdf (135 pages, 518756 bytes).
 PDF statistics:
- 1831 PDF objects out of 2073 (max. 8388607)
- 1624 compressed objects within 17 object streams
- 424 named destinations out of 1000 (max. 500000)
- 785 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1848 PDF objects out of 2073 (max. 8388607)
+ 1639 compressed objects within 17 object streams
+ 429 named destinations out of 1000 (max. 500000)
+ 793 words of extra memory for PDF output out of 10000 (max. 10000000)
 

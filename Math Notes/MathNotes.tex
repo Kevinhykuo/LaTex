@@ -102,6 +102,7 @@
 
 \declaretheorem{example}[numberwithin=section, style=examplestyle]
 
+
 % Indenting the Proof enviroment
 \makeatletter
 \renewenvironment{proof}[1][\proofname]{\par
@@ -2426,6 +2427,7 @@
 	
 	
 	\section{Cauchy-Riemann Equations} \label{Cauchy-Riemann Equations Section - Complex}
+%	\subsection{Cartesian and Polar Forms of the Cauchy-Riemann Equations} \label{Cauchy-Riemann Equations (Cartesian and Polar) Subsection - Complex}
 	\begin{theorem}[Cauchy-Riemann Equations (Cartesian)]
 		\label{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}
 		Let \( f(z) = u(x, y) + iv(x,y) \).
@@ -2493,8 +2495,8 @@
 		\end{align*}
 		Then \(f'(z_0)\) exists:
 		\begin{align*}
-			f'(z_0) = \eval{e^{i\theta}(u_r + iv_r)}_{(r_0, \theta_0)}
-					= \eval{\frac{e^{i\theta}}{r}(v_\theta - iu_\theta)}_{(r_0, \theta_0)}
+			f'(z_0) = \eval{e^{-i\theta}(u_r + iv_r)}_{(r_0, \theta_0)}
+					= \eval{\frac{e^{-i\theta}}{r}(v_\theta - iu_\theta)}_{(r_0, \theta_0)}
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
@@ -2525,7 +2527,29 @@
 		\begin{align*}
 			ru_r &= v_\theta 	&	u_\theta &= -rv_r
 		\end{align*}
-		Which are the Cauchy Riemann equations in polar form.
+		Which are the Cauchy Riemann equations in polar form. Let's verify it without relying on the Cauchy-Riemann equations in Cartesian form: 
+		
+		{\color{Grey}
+			Recall:
+			\begin{align*}
+				u_r &= u_x \cos \theta + u_y \sin \theta 
+				&	u_\theta &= -u_x r \sin \theta + u_y r \cos \theta \\
+				v_r &= v_x \cos \theta + v_y \sin \theta 
+				&	v_\theta &= -v_x r \sin \theta + v_y r \cos \theta \\
+			\end{align*}
+		}
+		
+		Show \(f'(z_0) = e^{-i\theta}(u_r + iv_r)\):
+		
+		{\color{Grey}
+			Recall from \cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}:
+			\begin{align*}
+				f'(z_0) =  u_x + iv_y
+			\end{align*}
+		}
+		
+		
+		
 	\end{proof}
 
 	\begin{question}
@@ -2533,10 +2557,10 @@
 		\begin{align*}
 			&f'(z_0) \text{ exists} \implies \forall z_0[(u_x = v_y)\land(u_y = -v_x)] \\
 			&(z_0 \neq 0) \land \forall z_0 [(ru_r = v_\theta) \land (u_\theta = -r v_r)] 
-			\implies f'(z_0) \text{ exists }
+			\iff f'(z_0) \text{ exists }
 		\end{align*}
-		Should these be $\iff$ instead of $\implies$? 
-		No! As we will see in \cref{f(z) satisfy Cauchy-Riemann but f'(z_0) does not exist Example - Complex}.
+		Should the Cartesian one also be $\iff$ instead of $\implies$? 
+		Yes, but only under the condition \(z_0 \neq 0\) as we will see in \cref{f(z) satisfy Cauchy-Riemann but f'(z_0) does not exist Example - Complex}.
 	\end{question}
 
 	\begin{example}[Solving the \(f'(z)\) using the partial derivative with respect to one variable] 
@@ -2621,14 +2645,14 @@
 		
 		Let \(\Delta w = f(z + \Delta z) - f(z)\). We need to show for all nonzero points on the real and imaginary axis, \(\Delta w/\Delta z = -1\), but for all nonzero points on the line \(\Delta x = \Delta y\), \(\Delta w / \Delta z = -1\). Hence, a contradiction, so \(f('0)\) does not exist.
 		
-		\textcolor{Grey}{\textbf{Along the real axis:}}
+		{\color{Grey}
+			\textbf{Along the real axis:}
+			
+			\textbf{Along the imaginary axis:}
 		
-	
-		\textcolor{Grey}{\textbf{Along the imaginary axis:}}
+			\textbf{Along the axis \(\Delta x = \Delta y\):}
 		
-		
-		\textcolor{Grey}{\textbf{Along \(\Delta x = \Delta y\):}}
-		
+		}
 		
 	
 	\end{example}
@@ -2658,9 +2682,21 @@
 		\end{align*}
 	\end{example}
 
+	\subsection{Complex Form of the Cauchy-Riemann Equations}
+	\label{Cauchy-Riemann Equations (Complex) Subsection - Complex}
+	
+	\begin{theorem}[Cauchy-Riemann Equation (Complex Form)]
+		\label{Cauchy-Riemann Equations (Complex) Theorem - Complex}
+		Let \(f(z) = u(x,y) + iv(x,y)\). If the first order partial derivatives of \(u\) and \(v\) with respect to \(x\) and \(y\) exists and satisfy the Cauchy-Riemann equations. Then
+		\[\pdv{\bar{z}} f(z) = 0\]
+	\end{theorem}
+	\begin{proof}{\color{Grey}
+		Recall:
+		}
+	\end{proof}
+	
 	\subsection{Conditions for Differentiability}
 	\label{Conditions for Differentiablity Subsection - Complex}
-	
 	
 	
 	
