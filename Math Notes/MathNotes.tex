@@ -2425,6 +2425,59 @@
 	Note: Although this looks like a fraction, it is not a fraction and should not be treated as such! (Logical inconsistency when infinitesimals when viewed as ratios.)
 	
 	
+	\section{Cauchy-Riemann Equations} \label{Cauchy-Riemann Equations Section - Complex}
+	\begin{theorem}[Cauchy-Riemann Equations (Cartesian)]
+		\label{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}
+		Let \( f(z) = u(x, y) + iv(x,y) \) 
+		If \(f'(z)\) exists at a point \(z_0 = x_0 + iy_0\), then \(u'(x_0, y_0)\) and \(v'(x_0, y_0)\) exists and satisfy Cauchy-Riemann equations:
+		\begin{align*}
+			u_x &= v_y	&	u_y = -v_x
+		\end{align*}
+		Also
+		\begin{align*}
+			f(z_0) = \eval{[u_x + iv_x]}_{(x_0, y_0)}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Let \(f(z) = u(x,y) + iv(x,y)\), and suppose $f'(z)$ exists at $z_0$. Then 
+		\begin{align*}
+			z_0 &= x_0 + iy_0	&	\Delta z &= \Delta x + i\Delta y
+			&	\Delta w &= f(z_0 + \Delta z) - f(z_0)
+		\end{align*}
+		So that
+		\begin{align*}
+			\Delta w = [u(x_0 + \Delta x, y_0 + \Delta y) + iv(x_0 + \Delta x, y_0 + \Delta y)] - [u(x_0, y_0) + iv(x_0, y_0)]
+		\end{align*}
+		Therefore
+		\begin{align*}
+			\frac{\Delta w}{\Delta z}
+			&= \frac{u(x_0 + \Delta x, y_0 + \Delta y) - u(x_0, y_0)}{\Delta x + i\Delta y} + i\frac{v(x_0 + \Delta x, y_0 + \Delta y) - v(x_0, y_0)}{\Delta x + i\Delta y}
+		\end{align*}
+		Note: This equation remains valid as \((\Delta x, \Delta y) \rightarrow (0,0)\).
+		
+		\textbf{Horizontal Approach:}
+		
+		
+		
+		\textbf{Vertical Approach:}
+		
+		
+		
+	\end{proof}
+	
+	\begin{theorem}[Cauchy-Riemann Equations (Polar)]
+		\label{Cauchy-Reimann Equations (Polar) Theorem - Complex}
+	\end{theorem}
+	\begin{proof}
+		content...
+	\end{proof}
+
+	\subsection{Conditions for Differentiability}
+	\label{Conditions for Differentiablity Subsection - Complex}
+	
+	
+	
+	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
 	
