@@ -2457,16 +2457,35 @@
 		
 		\textbf{Horizontal Approach:}
 		
-		
+		Let \((\Delta x, 0) \rightarrow (0,0)\) in the horizontal direction, then 
+		\begin{align*}
+			f'(z_0) 
+			=& \lim_{\Delta x \rightarrow 0} \frac{u(x_0 + \Delta x, y_0) - u(x_0, y_0)}{\Delta x} + i \lim_{\Delta x \rightarrow 0} \frac{v(x_0 + \Delta x, y_0) - v(x_0, y_0)}{\Delta x} \\
+			\implies& f'(z_0) = u_x(x_0, y_0) + iv_x(x_0, y_0)
+		\end{align*}
 		
 		\textbf{Vertical Approach:}
 		
+		Let \((0, \Delta y) \rightarrow (0,0)\) in the vertical direction, then
+		\begin{align*}
+			f'(z_0) 
+			=& \lim_{\Delta x \rightarrow 0} \frac{u(x_0, y_0 + \Delta y) - u(x_0, y_0)}{i \Delta y} + i \lim_{\Delta x \rightarrow 0} \frac{v(x_0, y_0+\Delta y) - v(x_0, y_0)}{i \Delta y} \\
+			=& - i \lim_{\Delta x \rightarrow 0} \frac{u(x_0, y_0 + \Delta y) - u(x_0, y_0)}{ \Delta y} + \lim_{\Delta x \rightarrow 0} \frac{v(x_0, y_0+\Delta y) - v(x_0, y_0)}{\Delta y} \\
+			\implies& f'(z_0) = v_y(x_0, y_0) - iu_y(x_0, y_0)
+		\end{align*}
 		
+		\textbf{Putting it together:}
+		
+		For \(f'(z)\) to exists at \(z_0\), \(f(z_0)\) from the horizontal approach must equal that of the vertical approach. By equating the real and imaginary parts: 
+		\begin{align*}
+			&u_x(x_0, y_0) + iv_x(x_0, y_0) = v_y(x_0, y_0) - iu_y(x_0, y_0)\\
+			&\implies (u_x = v_y) \land (u_y = - v_x)
+		\end{align*}
 		
 	\end{proof}
 	
 	\begin{theorem}[Cauchy-Riemann Equations (Polar)]
-		\label{Cauchy-Reimann Equations (Polar) Theorem - Complex}
+		\label{Cauchy-Riemann Equations (Polar) Theorem - Complex}
 	\end{theorem}
 	\begin{proof}
 		content...
