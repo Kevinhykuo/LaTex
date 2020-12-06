@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  5 DEC 2020 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  6 DEC 2020 00:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1706,73 +1706,72 @@ LaTeX Font Warning: Command \Large invalid in math mode on input line 2095.
 [54] [55 <./tikz/MathNotes-figure24.pdf> <./tikz/MathNotes-figure25.pdf> <./tik
 z/MathNotes-figure26.pdf>]
 ===== Image 'tikz/MathNotes-figure27' is up-to-date. ======
-[56] [57 <./tikz/MathNotes-figure27.pdf>] [58] [59] [60] [61] [62
-
-]
+[56] [57 <./tikz/MathNotes-figure27.pdf>] [58] [59] [60] [61] [62] [63]
+[64]
 Chapter 14.
-[63] [64
+[65
 
-] [65] [66
+] [66
 
 ] [67] [68
 
-] [69] [70] [71
+] [69] [70
 
-] [72
+] [71] [72] [73
 
-] [73] [74
+] [74
+
+] [75] [76
 
 ]
 Chapter 15.
-[75] [76
-
-] [77] [78
+[77] [78
 
 ] [79] [80
 
 ] [81] [82
 
-]
-Chapter 16.
-[83] [84
+] [83] [84
 
 ]
-Chapter 17.
+Chapter 16.
 [85] [86
 
 ]
-Chapter 18.
+Chapter 17.
 [87] [88
 
 ]
-Chapter 19.
+Chapter 18.
 [89] [90
 
 ]
-Chapter 20.
+Chapter 19.
 [91] [92
 
 ]
-Chapter 21.
+Chapter 20.
 [93] [94
 
 ]
-Chapter 22.
+Chapter 21.
 [95] [96
 
-] [97] [98
+]
+Chapter 22.
+[97] [98
 
 ] [99] [100
 
+] [101] [102
+
 ]
 Chapter 23.
-[101] [102
+[103] [104
 
 ]
 Chapter 24.
-[103] [104
-
-] [105] [106
+[105] [106
 
 ] [107] [108
 
@@ -1782,19 +1781,21 @@ Chapter 24.
 
 ] [113] [114
 
+] [115] [116
+
 ]
 Chapter 25.
-[115] [116
+[117] [118
 
-] [117
+] [119
 
-] [118
+] [120
 
-] [119]
+] [121]
 
-(./MathNotes.bbl [120
+(./MathNotes.bbl [122
 
-]) [121] (./MathNotes.aux
+]) [123] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
@@ -1805,13 +1806,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39929 strings out of 479485
- 902991 string characters out of 5871977
- 1324116 words of memory out of 5000000
- 55734 multiletter control sequences out of 15000+600000
- 568415 words of font info for 143 fonts, out of 8000000 for 9000
+ 39949 strings out of 479485
+ 903656 string characters out of 5871977
+ 1324115 words of memory out of 5000000
+ 55742 multiletter control sequences out of 15000+600000
+ 568774 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,109p,726b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,15n,109p,726b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/
 usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/
 local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolB.enc}{/usr/loca
@@ -1824,24 +1825,25 @@ e/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/local/texlive/20
 0/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol6.pfb></usr/local/texlive/2020
 /texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/local/texlive/2020/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
-1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (131 pages, 493151 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/cm-super/sfrm1200.pfb>
+Output written on MathNotes.pdf (133 pages, 516544 bytes).
 PDF statistics:
- 1800 PDF objects out of 2073 (max. 8388607)
- 1597 compressed objects within 16 object streams
- 413 named destinations out of 1000 (max. 500000)
+ 1830 PDF objects out of 2073 (max. 8388607)
+ 1623 compressed objects within 17 object streams
+ 424 named destinations out of 1000 (max. 500000)
  785 words of extra memory for PDF output out of 10000 (max. 10000000)
 

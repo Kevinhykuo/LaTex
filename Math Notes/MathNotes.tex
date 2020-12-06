@@ -2428,14 +2428,15 @@
 	\section{Cauchy-Riemann Equations} \label{Cauchy-Riemann Equations Section - Complex}
 	\begin{theorem}[Cauchy-Riemann Equations (Cartesian)]
 		\label{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}
-		Let \( f(z) = u(x, y) + iv(x,y) \) 
+		Let \( f(z) = u(x, y) + iv(x,y) \).
 		If \(f'(z)\) exists at a point \(z_0 = x_0 + iy_0\), then \(u'(x_0, y_0)\) and \(v'(x_0, y_0)\) exists and satisfy Cauchy-Riemann equations:
 		\begin{align*}
 			u_x &= v_y	&	u_y = -v_x
 		\end{align*}
-		Also
+		Also, as a result of evaluating \(f'(z)\) from the horizontal and vertical direction:
 		\begin{align*}
-			f(z_0) = \eval{[u_x + iv_x]}_{(x_0, y_0)}
+			f'(z_0) &= \eval{[u_x + iv_x]}_{(x_0, y_0)} 
+					 = \eval{[v_y - i u_y]}_{(x_0, y_0)}
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
@@ -2469,8 +2470,8 @@
 		Let \((0, \Delta y) \rightarrow (0,0)\) in the vertical direction, then
 		\begin{align*}
 			f'(z_0) 
-			=& \lim_{\Delta x \rightarrow 0} \frac{u(x_0, y_0 + \Delta y) - u(x_0, y_0)}{i \Delta y} + i \lim_{\Delta x \rightarrow 0} \frac{v(x_0, y_0+\Delta y) - v(x_0, y_0)}{i \Delta y} \\
-			=& - i \lim_{\Delta x \rightarrow 0} \frac{u(x_0, y_0 + \Delta y) - u(x_0, y_0)}{ \Delta y} + \lim_{\Delta x \rightarrow 0} \frac{v(x_0, y_0+\Delta y) - v(x_0, y_0)}{\Delta y} \\
+			=& \lim_{\Delta y \rightarrow 0} \frac{u(x_0, y_0 + \Delta y) - u(x_0, y_0)}{i \Delta y} + i \lim_{\Delta x \rightarrow 0} \frac{v(x_0, y_0+\Delta y) - v(x_0, y_0)}{i \Delta y} \\
+			=& - i \lim_{\Delta y \rightarrow 0} \frac{u(x_0, y_0 + \Delta y) - u(x_0, y_0)}{ \Delta y} + \lim_{\Delta x \rightarrow 0} \frac{v(x_0, y_0+\Delta y) - v(x_0, y_0)}{\Delta y} \\
 			\implies& f'(z_0) = v_y(x_0, y_0) - iu_y(x_0, y_0)
 		\end{align*}
 		
@@ -2486,10 +2487,176 @@
 	
 	\begin{theorem}[Cauchy-Riemann Equations (Polar)]
 		\label{Cauchy-Riemann Equations (Polar) Theorem - Complex}
+		Let \(f(z) = u(r, \theta) + iv(r,\theta)\) be defined in some neighbourhood \(\epsilon\) of \(z_0 = r_0 e^{i\theta_0}\), $z_0 \neq 0$. If the first order partials derivatives of \(u\) and \(v\) with respect to \(r\) and \(\theta\) exists and satisfies the polar form of the Cauchy-Riemann equations: 
+		\begin{align*}
+			ru_r &= v_\theta	&	u_\theta &= -r v_r
+		\end{align*}
+		Then \(f'(z_0)\) exists:
+		\begin{align*}
+			f'(z_0) = \eval{e^{i\theta}(u_r + iv_r)}_{(r_0, \theta_0)}
+					= \eval{\frac{e^{i\theta}}{r}(v_\theta - iu_\theta)}_{(r_0, \theta_0)}
+		\end{align*}
 	\end{theorem}
 	\begin{proof}
-		content...
+		Let \(f(z) = u(r,\theta) + iv(r,\theta)\). Suppose that the first order partial derivatives of \(u\) and \(v\) exists in some neighbourhood \(\epsilon \) of \(z_0\) and is continuous at \(z_0\). By differentiating \(u\) and \(v\) with respect to \(x\) and \(y\):
+		\begin{align*}
+			\pdv{u}{r} &= \pdv{u}{x} \pdv{x}{r} + \pdv{u}{y}\pdv{y}{r} &
+			\pdv{u}{\theta} &= \pdv{u}{x} \pdv{x}{\theta} + \pdv{u}{y}\pdv{y}{\theta} 
+		\end{align*}
+		As \(x = r \cos\theta \) and \(y = r\sin \theta\):
+		\begin{align*}
+			u_r &= u_x \cos \theta + u_y \sin \theta 
+				&	u_\theta &= -u_x r \sin \theta + u_y r \cos \theta \\
+			v_r &= v_x \cos \theta + v_y \sin \theta 
+			&	v_\theta &= -v_x r \sin \theta + v_y r \cos \theta \\
+		\end{align*}
+		From \cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex} we have: 
+		\begin{align*}
+			u_x &= v_y	&	u_y = -v_x
+		\end{align*}
+		Subbing the Cauchy-Riemann equations into \(v_r\) and \(v_\theta\):
+		\begin{align*}
+			u_r &= u_x \cos \theta + u_y \sin \theta 
+			&	u_\theta &= -u_x r \sin \theta + u_y r \cos \theta \\
+			v_r &= -u_y \cos \theta + u_x \sin \theta 
+			&	v_\theta &= u_y r \sin \theta + u_x r \cos \theta \\
+		\end{align*}
+		We can see that: 
+		\begin{align*}
+			ru_r &= v_\theta 	&	u_\theta &= -rv_r
+		\end{align*}
+		Which are the Cauchy Riemann equations in polar form.
 	\end{proof}
+
+	\begin{question}
+		When comparing the Cartesian form to the polar form of the Cauchy-Riemann equations:
+		\begin{align*}
+			&f'(z_0) \text{ exists} \implies \forall z_0[(u_x = v_y)\land(u_y = -v_x)] \\
+			&(z_0 \neq 0) \land \forall z_0 [(ru_r = v_\theta) \land (u_\theta = -r v_r)] 
+			\implies f'(z_0) \text{ exists }
+		\end{align*}
+		Should these be $\iff$ instead of $\implies$? 
+		No! As we will see in \cref{f(z) satisfy Cauchy-Riemann but f'(z_0) does not exist Example - Complex}.
+	\end{question}
+
+	\begin{example}[Solving the \(f'(z)\) using the partial derivative with respect to one variable] 
+		Recall in \cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}: 
+		\begin{align*}
+			f'(z_0) &= \eval{[u_x + iv_x]}_{(x_0, y_0)} 
+			= \eval{[v_y - i u_y]}_{(x_0, y_0)}
+		\end{align*}
+		This implies we can solve \(\dd{f(z)} /\dd{z}\) by taking the partial of \(f(z)\) with respect to \(x\) or \(y\). Consider \(f(z) = z^2\):
+		\begin{align*}
+			f(z) = z^2 = x^2 - y^2 + i2xy
+		\end{align*}
+		We then have:
+		\begin{align*}
+			u(x,y) &= x^2 - y^2	& v(x,y) &= 2xy
+		\end{align*}
+		Hence
+		\begin{align*}
+			u_x &= 2x = v_y	&
+			u_y &= -2y = -v_x	
+		\end{align*}
+		Thus
+		\begin{align*}
+			f'(z) = 2x + i2y = 2(x+iy) = 2z 
+		\end{align*}
+	\end{example}
+	
+	\begin{example}[Using Cauchy-Riemann equations to find where \(f(z)\) is not differentiable]
+		Using the contrapositive of \(f'(z_0) \text{ exists} \implies \exists u' \exists v' [(u_x = v_y)\land(u_y = -v_x)]\):
+		\begin{align*}
+			\exists z_0 [(u_x \neq v_y)\lor(u_y \neq -v_x)] \implies f(z) \text{ not differentiable at } z_0 
+		\end{align*}
+		Consider \(f(z) = \abs{z}^2\):
+		\begin{align*}
+			u(x,y) &= x^2 + y^2	&
+			v(x,y) = 0
+		\end{align*}
+		By Cauchy-Riemann: 
+		\begin{align*}
+			2x &= 0 & 2y &= 0
+		\end{align*}
+		Therefore, \(f'(z)\) only exists at \((0,0)\) and does not exist elsewhere. 
+	\end{example}	
+
+	Note: \Cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex} does not guarantee the existence of \(f'(z)\) at \(z_0\).
+	
+	\begin{example}[\(f(z)\) satisfy Cauchy-Riemann equations at (0,0), but \(f'(0)\) does not exist]
+	\label{f(z) satisfy Cauchy-Riemann but f'(z_0) does not exist Example - Complex}
+		Consider
+		\begin{align*}
+			f(z) = 
+			\begin{cases}
+				\bar{z}^2 / z & z \neq 0 \\
+				0			  & z = 0
+			\end{cases}
+		\end{align*}
+		Then
+		\begin{align*}
+			u(x,y) &= \frac{x^3 - 3xy^2}{x^2 + y^2} &
+			v(x,y) &= \frac{y^3 - 3x^2y}{x^2 + y^2} & (x,y) \neq (0,0)
+		\end{align*}
+		Checking differentiability at \((0,0)\), note \(u(0,0) = 0\) and \(v(0,0) = 0\):
+		\begin{align*}
+			u_x(0,0) 
+			&= \lim_{\Delta x \rightarrow 0} \frac{u(0+\Delta x, 0) - u(0,0)}{\Delta x}
+			 = \lim_{\Delta x \rightarrow 0} \frac{\Delta x}{\Delta x} = 1 \\
+			v_y(0,0) 
+			&= \lim_{\Delta y \rightarrow 0} \frac{v(0, 0+\Delta y) - v(0,0)}{\Delta y}
+			 = \lim_{\Delta y \rightarrow 0} \frac{\Delta y}{\Delta y} = 1 \\
+			u_y(0,0) 
+			 &= \lim_{\Delta y \rightarrow 0} \frac{u(0, 0+\Delta y) - u(0,0)}{\Delta y}
+			  = \lim_{\Delta y \rightarrow 0} \frac{0/(\Delta y)^2}{\Delta y} = 0 \\
+			v_x(0,0) 
+			 &= \lim_{\Delta x \rightarrow 0} \frac{v(0+\Delta x, 0) - v(0,0)}{\Delta x}
+			  = \lim_{\Delta x \rightarrow 0} \frac{0/(\Delta x)^2}{\Delta x} = 0
+		\end{align*}
+		We can see that the Cauchy-Riemann equations are satisfied: 
+		\begin{align*}
+			u_x &= v_y = 1	&	u_y &= -v_x = 0
+		\end{align*}
+		However, \(f'(0)\) does not exist: (Brown and Churchill - Complex Variables and Applications, Section 20, Exercise 9 \cite{Brown.J;Churchill.R-Complex-Variables-2014})
+		
+		Let \(\Delta w = f(z + \Delta z) - f(z)\). We need to show for all nonzero points on the real and imaginary axis, \(\Delta w/\Delta z = -1\), but for all nonzero points on the line \(\Delta x = \Delta y\), \(\Delta w / \Delta z = -1\). Hence, a contradiction, so \(f('0)\) does not exist.
+		
+		\textcolor{Grey}{\textbf{Along the real axis:}}
+		
+	
+		\textcolor{Grey}{\textbf{Along the imaginary axis:}}
+		
+		
+		\textcolor{Grey}{\textbf{Along \(\Delta x = \Delta y\):}}
+		
+		
+	
+	\end{example}
+
+	\begin{example}(Any branch of \(f(z) = z^{1/2}\) is differentiable everywhere in domain of definition)
+		Let 
+		\begin{align*}
+			f(z) = z^{1/2} &= \sqrt{r}e^{i\theta}	&	r>0, \ \alpha<\theta<\alpha+2\pi
+		\end{align*}
+		Hence
+		\begin{align*}
+			u(r, \theta) &= \sqrt{r}\cos \left(\frac{\theta}{2}\right) &
+			v(r, \theta) &= \sqrt{r}\sin \left(\frac{\theta}{2}\right)
+		\end{align*}
+		By Cauchy-Riemann: 
+		\begin{align*}
+			ru_r &= \frac{\sqrt{r}}{2} \cos \left(\frac{\theta}{2}\right) = v_\theta &
+			u_\theta &= - \frac{\sqrt{r}}{2} \sin \left(\frac{\theta}{2}\right) = -r v_r
+		\end{align*}
+		Thus, the derivative exists wherever \(f(z)\) is defined. Also
+		\begin{align*}
+			f'(z) 
+				&= \eval{e^{i\theta} (u_r + iv_r)}_{(r_0, \theta_0)} \\
+				&= e^{-i\theta} \left[\frac{1}{2\sqrt{r}}\cos\left(\frac{\theta}{2}\right) + i \frac{1}{2\sqrt{r}}\sin\left(\frac{\theta}{2}\right)\right] 
+				= \frac{1}{2\sqrt{r}} e^{-i\theta} \left[\cos \left(\frac{\theta}{2}\right) + i \sin \left(\frac{\theta}{2}\right)\right] \\
+				&= \frac{1}{2\sqrt{r}e^{i\theta/2}} = \frac{1}{2f(z)} = \frac{1}{2} z^{-1/2}
+		\end{align*}
+	\end{example}
 
 	\subsection{Conditions for Differentiability}
 	\label{Conditions for Differentiablity Subsection - Complex}
