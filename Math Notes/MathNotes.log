@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  4 DEC 2020 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  5 DEC 2020 16:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1706,11 +1706,11 @@ LaTeX Font Warning: Command \Large invalid in math mode on input line 2095.
 [54] [55 <./tikz/MathNotes-figure24.pdf> <./tikz/MathNotes-figure25.pdf> <./tik
 z/MathNotes-figure26.pdf>]
 ===== Image 'tikz/MathNotes-figure27' is up-to-date. ======
-[56] [57 <./tikz/MathNotes-figure27.pdf>] [58] [59] [60
-
-]
+[56] [57 <./tikz/MathNotes-figure27.pdf>] [58] [59] [60]
 Chapter 14.
-[61] [62
+[61
+
+] [62
 
 ] [63] [64
 
@@ -1838,7 +1838,7 @@ e1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (129 pages, 487803 bytes).
+Output written on MathNotes.pdf (129 pages, 489250 bytes).
 PDF statistics:
  1777 PDF objects out of 2073 (max. 8388607)
  1576 compressed objects within 16 object streams

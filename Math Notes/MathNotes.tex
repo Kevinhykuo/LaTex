@@ -2394,6 +2394,31 @@
 		\begin{align*}
 			g(w) - g(w_0) &= [g'(w_0) + \Phi(w)](w - w_0)	&	 \abs{w-w_0}<\epsilon
 		\end{align*}
+		Note: This is valid for \(w = w_0\). 
+		\begin{align*}
+			f'(z_0) \text{ exists } &\implies f \text{ continuous at } z_0 \\
+			&\implies \forall \epsilon \exists \delta>0 [ \abs{z - z_0} < \delta \implies \abs{w - w_0}< \epsilon]
+		\end{align*}
+		Hence, we can replace \(w\) by \(f(z)\) when \(\abs{z - z_0} < \delta\). Subbing \(w = f(z)\) and \(w_0 = f(z_0)\):
+		\begin{align*}
+			\frac{g[f(z)] - g[f(z_0)]}{z - z_0} &= \{g'[f(z_0)] + \Phi[f(z)]\} \frac{f(z) - f(z_0)}{z - z_0} 	& 0 < \abs{z-z_0} < \delta, \ z\neq z_0
+		\end{align*}
+		Then
+		\begin{align*}
+			(f \text{ continous at } z_0) \land (\Phi \text{ continuoust at } w_0 = f(z_0))
+			\implies \Phi[f(z)] \text{ continuous at } z_0
+		\end{align*}
+		\[\Phi(w_0) = 0 \implies \lim_{z \rightarrow z_0} \Phi[f(z) = 0] \]
+		Thus
+		\begin{align*}
+			\lim_{z \rightarrow z_0} \frac{g[f(z)] - g[f(z_0)]}{z - z_0} 
+			&= \lim_{z \rightarrow z_0} \{g'[f(z_0)] + \Phi[f(z)]\} \frac{f(z) - f(z_0)}{z - z_0} \\
+			&= g'[f(z_0)] f'(z_0)
+		\end{align*}
+		We then get
+		\begin{align*}
+			F'(z_0) = g'[f(z_0)]f'(z_0) 
+		\end{align*}
 	\end{proof}
 	Alternatively, if we let \(w = f(z) \) and \(W = F(z)\), then the Chain Rule becomes:
 	\[ \dv{W}{z} = \dv{W}{w} \dv{w}{z }\]
