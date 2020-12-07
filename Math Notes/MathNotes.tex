@@ -2739,6 +2739,46 @@
 		However, \(f'(0)\) does not exist: (Brown and Churchill - Complex Variables and Applications, Section 20, Exercise 9 \cite{Brown.J;Churchill.R-Complex-Variables-2014})
 		
 		Let \(\Delta w = f(z + \Delta z) - f(z)\). We need to show for all nonzero points on the real and imaginary axis, \(\Delta w/\Delta z = -1\), but for all nonzero points on the line \(\Delta x = \Delta y\), \(\Delta w / \Delta z = -1\). Hence, a contradiction, so \(f('0)\) does not exist.
+		
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-1, xmax=12,
+					ymin=-1, ymax=12,
+					%					xtick distance=2,
+					%					ytick distance=2,
+					xtick=100,
+					ytick=100,
+					axis lines = middle,
+					axis line style = Black,
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					color=Black,
+					mark=*,
+					]
+					coordinates {
+						(7, 7) []
+						(7, 0) [$(\Delta x, 0)$]
+						(0, 7) [$(0, \Delta y)$]
+						(0, 0) [$(0, 0)$]
+					};
+					\draw[->, very thick, draw=Black]  (axis cs: 7,0)--(axis cs: 5,0)
+					node[midway,above] {};
+					\draw[->, very thick, draw=Black]  (axis cs: 0,7)--(axis cs: 0,5);
+					\draw[->, very thick, draw=Black]  (axis cs: 7,7)--(axis cs: 5,5)
+					node[midway,sloped,above] {$\Delta y = \Delta x$};
+					\draw[draw=Black]  (axis cs: 10,10)--(axis cs: 0,0);
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+		
 		{\color{Grey}
 			\begin{align*}
 				\frac{\Delta w}{\Delta z}
