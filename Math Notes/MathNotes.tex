@@ -2739,14 +2739,46 @@
 		However, \(f'(0)\) does not exist: (Brown and Churchill - Complex Variables and Applications, Section 20, Exercise 9 \cite{Brown.J;Churchill.R-Complex-Variables-2014})
 		
 		Let \(\Delta w = f(z + \Delta z) - f(z)\). We need to show for all nonzero points on the real and imaginary axis, \(\Delta w/\Delta z = -1\), but for all nonzero points on the line \(\Delta x = \Delta y\), \(\Delta w / \Delta z = -1\). Hence, a contradiction, so \(f('0)\) does not exist.
-		
 		{\color{Grey}
+			\begin{align*}
+				\frac{\Delta w}{\Delta z}
+					&=\frac{f(z+\Delta z) - f(z)}{\Delta z}
+					 =\frac{u(x+\Delta x, y+\Delta y) + v(x+\Delta x, y+\Delta y)}{\Delta x + \Delta y} - \frac{u(x,y) + v(x,y)}{\Delta x + \Delta y}
+			\end{align*}
+		
 			\textbf{Along the real axis:}
 			
+			Evaluating along \((\Delta x, 0) \rightarrow (0,0)\).
+			\begin{align*}
+				\lim_{(\Delta x, 0) \rightarrow (0,0)} \frac{\Delta w}{\Delta z}
+					&= \frac{u(\Delta x, 0) + v(\Delta x, 0)}{\Delta x}
+						- \frac{u(0,0) + v(0,0)}{\Delta x} \\
+					&= \frac{1}{\Delta x} \left[ \frac{(\Delta x)^3}{(\Delta x)^2} + \frac{0}{(\Delta x)^2}\right] - 0
+					 = \frac{\Delta x}{\Delta x} = 1
+			\end{align*}
+			
 			\textbf{Along the imaginary axis:}
+			
+			Evaluating along \((0, \Delta y) \rightarrow (0,0)\).
+			\begin{align*}
+				\lim_{(0,\Delta y) \rightarrow (0,0)} \frac{\Delta w}{\Delta z}
+					&= \frac{u(0,\Delta y) + v(0, \Delta y)}{\Delta y}
+						- \frac{u(0,0) + v(0,0)}{\Delta y} \\
+					&= \frac{1}{\Delta y} \left[ \frac{0}{(\Delta y)^2} + \frac{(\Delta y)^3}{(\Delta y)^2}\right] - 0 
+					 = \frac{\Delta y}{\Delta y} = 1
+			\end{align*}
 		
 			\textbf{Along the axis \(\Delta x = \Delta y\):}
-		
+			
+			Evaluating along \((\Delta x, \Delta x) \rightarrow (0,0)\).
+			\begin{align*}
+				\lim_{(\Delta x,\Delta x) \rightarrow (0,0)} \frac{\Delta w}{\Delta z}
+					&= \frac{u(\Delta x, \Delta x)}{\Delta x + \Delta x} - \frac{u(0,0) + v(0,0)}{\Delta x + \Delta x} \\
+					&= \frac{1}{2\Delta x} \left[ \frac{(\Delta x)^3 - 3(\Delta x)^3}{2(\Delta x)^2} + \frac{(\Delta x)^3 - 3(\Delta x)^3}{2(\Delta x)^2}\right] \\
+					&= \frac{1}{2\Delta x}  \left[ - \frac{2(\Delta x)^3}{2(\Delta x)^2} - \frac{2(\Delta x)^3}{2(\Delta x)^2} \right] 
+					= \frac{1}{2\Delta x} \left[-\Delta x - \Delta x \right] = -\frac{2\Delta x}{2\Delta x} = -1
+			\end{align*}
+			As we can see, the limits are not unique regardless of the path we take to approach \((0,0)\), hence \(f'(0)\) does not exist. Therefore, an equation can satisfy the Cauchy-Riemann equations at \(0,0\), yet have a derivative that does not exist. The Cauchy-Riemann equations does not guarantee differentiability at \(z_0 = 0\).
 		}
 		
 	
