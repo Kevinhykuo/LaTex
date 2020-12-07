@@ -45,8 +45,8 @@
 \contentsline {section}{\numberline {13.4}Differentiation}{56}{section.13.4}%
 \contentsline {subsection}{\numberline {13.4.1}Differentiation Rules}{58}{subsection.13.4.1}%
 \contentsline {section}{\numberline {13.5}Cauchy-Riemann Equations}{60}{section.13.5}%
-\contentsline {subsection}{\numberline {13.5.1}Complex Form of the Cauchy-Riemann Equations}{65}{subsection.13.5.1}%
-\contentsline {subsection}{\numberline {13.5.2}Conditions for Differentiability}{65}{subsection.13.5.2}%
+\contentsline {subsection}{\numberline {13.5.1}Complex Form of the Cauchy-Riemann Equations}{66}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.2}Conditions for Differentiability}{66}{subsection.13.5.2}%
 \contentsline {chapter}{\numberline {14}Conformal Mapping}{67}{chapter.14}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{69}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{71}{part.6}%

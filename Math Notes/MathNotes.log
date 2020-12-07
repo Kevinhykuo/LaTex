@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  6 DEC 2020 01:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  6 DEC 2020 17:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1707,11 +1707,11 @@ LaTeX Font Warning: Command \Large invalid in math mode on input line 2096.
 z/MathNotes-figure26.pdf>]
 ===== Image 'tikz/MathNotes-figure27' is up-to-date. ======
 [56] [57 <./tikz/MathNotes-figure27.pdf>] [58] [59] [60] [61] [62] [63]
-[64] [65] [66
-
-]
+[64] [65] [66]
 Chapter 14.
-[67] [68
+[67
+
+] [68
 
 ] [69] [70
 
@@ -1806,10 +1806,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39960 strings out of 479485
- 904029 string characters out of 5871977
- 1324115 words of memory out of 5000000
- 55748 multiletter control sequences out of 15000+600000
+ 39966 strings out of 479485
+ 904325 string characters out of 5871977
+ 1324116 words of memory out of 5000000
+ 55752 multiletter control sequences out of 15000+600000
  568774 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,109p,726b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1840,10 +1840,10 @@ pe1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (135 pages, 518756 bytes).
+Output written on MathNotes.pdf (135 pages, 522125 bytes).
 PDF statistics:
- 1848 PDF objects out of 2073 (max. 8388607)
- 1639 compressed objects within 17 object streams
- 429 named destinations out of 1000 (max. 500000)
+ 1852 PDF objects out of 2073 (max. 8388607)
+ 1643 compressed objects within 17 object streams
+ 431 named destinations out of 1000 (max. 500000)
  793 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2496,16 +2496,16 @@
 		Then \(f'(z_0)\) exists:
 		\begin{align*}
 			f'(z_0) = \eval{e^{-i\theta}(u_r + iv_r)}_{(r_0, \theta_0)}
-					= \eval{\frac{e^{-i\theta}}{r}(v_\theta - iu_\theta)}_{(r_0, \theta_0)}
+					= \eval{\frac{-i}{z_0}(u_\theta + iv_\theta )}_{(r_0, \theta_0)}
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
-		Let \(f(z) = u(r,\theta) + iv(r,\theta)\). Suppose that the first order partial derivatives of \(u\) and \(v\) exists in some neighbourhood \(\epsilon \) of \(z_0\) and is continuous at \(z_0\). By differentiating \(u\) and \(v\) with respect to \(x\) and \(y\):
+		Let \(f(z) = u(r,\theta) + iv(r,\theta)\). Suppose that the first order partial derivatives of \(u\) and \(v\) exists in some neighbourhood \(\epsilon \) of \(z_0\) and is continuous at \(z_0\). By differentiating \(u\) with respect to \(x\) and \(y\):
 		\begin{align*}
 			\pdv{u}{r} &= \pdv{u}{x} \pdv{x}{r} + \pdv{u}{y}\pdv{y}{r} &
 			\pdv{u}{\theta} &= \pdv{u}{x} \pdv{x}{\theta} + \pdv{u}{y}\pdv{y}{\theta} 
 		\end{align*}
-		As \(x = r \cos\theta \) and \(y = r\sin \theta\):
+		Likewise for \(v\). As \(x = r \cos\theta \) and \(y = r\sin \theta\):
 		\begin{align*}
 			u_r &= u_x \cos \theta + u_y \sin \theta 
 				&	u_\theta &= -u_x r \sin \theta + u_y r \cos \theta \\
@@ -2537,6 +2537,84 @@
 				v_r &= v_x \cos \theta + v_y \sin \theta 
 				&	v_\theta &= -v_x r \sin \theta + v_y r \cos \theta \\
 			\end{align*}
+			Writing \(u_r\) and \(v_r\) in matrix notation: 
+			\begin{align*}
+				\begin{bmatrix}
+					u_r \\ u_\theta
+				\end{bmatrix}
+				&= 
+				\begin{bmatrix}
+					\cos\theta & \sin\theta \\
+					-r\sin\theta & r\cos\theta
+				\end{bmatrix}
+				\begin{bmatrix}
+					u_x \\ u_y
+				\end{bmatrix}
+			\end{align*}
+			Solving for \(u_x\) and \(u_y\):
+			\begin{align*}
+				\begin{bmatrix}
+					u_x \\ u_y
+				\end{bmatrix}
+				&=
+					\begin{bmatrix}
+						\cos\theta & \sin\theta \\
+						-r\sin\theta & r\cos\theta
+					\end{bmatrix}^{-1}
+					\begin{bmatrix}
+						u_r \\ u_\theta
+					\end{bmatrix} & \\
+				&= \frac{1}{r \cos^2\theta + r \sin^2\theta}
+					\begin{bmatrix}
+						r\cos\theta & -\sin\theta \\
+						-r\sin\theta & \cos\theta
+					\end{bmatrix}
+					\begin{bmatrix}
+						u_r \\ u_\theta
+					\end{bmatrix} 
+					& \begin{bmatrix}
+						a & b \\
+						c & d \\
+					  \end{bmatrix}^{-1}
+				  	  &=
+				  	  \frac{1}{ad - cb}
+				  	  \begin{bmatrix}
+				  	  	d & -b \\
+				  	  	-c & a
+				  	  \end{bmatrix} \\
+				&= \frac{1}{r}
+					\begin{bmatrix}
+						r\cos\theta & -\sin\theta \\
+						r\sin\theta & \cos\theta
+					\end{bmatrix}
+					\begin{bmatrix}
+						u_r \\ u_\theta
+					\end{bmatrix} & \\
+			\end{align*}
+		
+			It is clear that for \(u_x\) and \(u_y\), and likewise for \(v_x\) and \(v_y\):
+			\begin{align}
+				\label{Cauchy-Riemann Equations (Polar) Theorem Proof Eqn 1 - Complex}
+				u_x &= u_r \cos\theta - \frac{1}{r} u_\theta \sin\theta & 
+				u_y &= u_r \sin\theta + \frac{1}{r} u_\theta \cos\theta \\
+				\label{Cauchy-Riemann Equations (Polar) Theorem Proof Eqn 2 - Complex}
+				v_x &= v_r \cos\theta - \frac{1}{r} v_\theta \sin\theta & 
+				v_y &= v_r \sin\theta + \frac{1}{r} v_\theta \cos\theta 
+			\end{align}
+		
+			Using the Cauchy-Riemann equations \(u_x = v_y\) and \(u_y = -v_x\), we see:
+			\begin{align*}
+				u_r \cos\theta - \frac{1}{r}u_\theta \sin\theta 
+					&= v_r \sin\theta + \frac{1}{r} v_\theta \cos\theta \\
+				u_r \sin\theta + \frac{1}{r}u_\theta \cos\theta 
+					&= -v_r \cos\theta + \frac{1}{r} v_\theta \sin\theta
+			\end{align*}
+		
+			Clearly, the equations are equal only if 
+			\begin{align*}
+				ru_r &= v_\theta & u_\theta = -rv_r
+			\end{align*}
+			Which are the polar forms of the Cauchy-Riemann equations.	
 		}
 		
 		Show \(f'(z_0) = e^{-i\theta}(u_r + iv_r)\):
@@ -2545,6 +2623,23 @@
 			Recall from \cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}:
 			\begin{align*}
 				f'(z_0) =  u_x + iv_y
+			\end{align*}
+			Using \cref{Cauchy-Riemann Equations (Polar) Theorem Proof Eqn 1 - Complex} and \cref{Cauchy-Riemann Equations (Polar) Theorem Proof Eqn 2 - Complex} from before and substituting them into \(f'(z_0)\):
+			\begin{align*}
+				f'(z_0) &= \eval{\left(u_r \cos\theta - \frac{1}{r}u_\theta \sin\theta + iv_r \cos\theta - \frac{i}{r} v_\theta \sin\theta \right)}_{(r_0, \theta_0)} \\
+				&= \eval{\left(u_r \cos\theta + v_r \sin\theta + iv_r \cos\theta -iu_r \sin\theta \right)}_{(r_0, \theta_0)} \\
+				&= \eval{\left[u_r(\cos\theta - i\sin\theta) + v_r(\sin\theta + i\cos\theta)\right]}_{(r_0,\theta_0)} \\
+				&= \eval{\left[u_r(\cos\theta - i\sin\theta) + i v_r(\cos\theta - i\sin\theta)\right]}_{(r_0,\theta_0)} \\
+				&= \eval{\left[\left(\frac{e^{i\theta} + e^{-i \theta}}{2} - \frac{e^{i\theta} - e^{-i \theta}}{2} \right)(u_r+iv_r)\right]}_{(r_0, \theta_0)} \\
+				&= \eval{e^{-i\theta}(u_r + iv_r)}_{(r_0,\theta_0)} \\
+				&= \eval{\frac{-i}{re^{i\theta}} (u_\theta + iv_\theta)}_{(r_0, \theta_0)}
+				 = \eval{\frac{-i}{z_0} (u_\theta + iv_\theta)}_{(r_0, \theta_0)}
+					& (ru_r = v_\theta) \land (u_\theta = -rv_r)
+			\end{align*}
+			Thus
+			\begin{align*}
+				f'(z_0) &= \eval{e^{-i\theta}(u_r + iv_r)}_{(r_0,\theta_0)} 
+						 = \eval{\frac{-i}{z_0} (u_\theta + iv_\theta)}_{(r_0, \theta_0)}
 			\end{align*}
 		}
 		
