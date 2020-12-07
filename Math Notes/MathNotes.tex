@@ -2819,6 +2819,31 @@
 	\end{theorem}
 	\begin{proof}{\color{Grey}
 		Recall:
+		\begin{align*}
+			x &= \frac{z + \bar{z}}{2} & y &= \frac{z - \bar{z}}{2i}
+		\end{align*}
+		Let \(F\) be a real valued function, that is \(x, y \in \mathbb{R}\). Then
+		\begin{align*}
+			\pdv{F}{\bar{z}} &= \pdv{F}{x} \pdv{x}{\bar{z}} + \pdv{F}{y} \pdv{y}{\bar{z}}
+		\end{align*}
+		Substituting \(\pdv{x}{\bar{z}} = 1/2\) and \(\pdv{y}{\bar{z}} = i/2\):
+		\begin{align*}
+			\pdv{F}{\bar{z}} &= \frac{1}{2} \left(\pdv{F}{x} + i \pdv{F}{y} \right)
+		\end{align*}
+		Define the operator:
+		\begin{align*}
+			\pdv{\bar{z}} &= \frac{1}{2} \left(\pdv{x} + i \pdv{y} \right)
+		\end{align*}
+		Then 
+		\begin{align*}
+			\pdv{f}{\bar{z}} &= \frac{1}{2} \left(\pdv{f}{x} + i \pdv{f}{y} \right)
+				= \frac{1}{2} \left(\pdv{u}{x} + i \pdv{v}{x} + i\pdv{u}{y} -  \pdv{v}{y}  \right) \\
+				&= \frac{1}{2} \left[ (u_x - v_y) + i (u_y + v_x)\right]
+		\end{align*}
+		We can see that if \(\pdv{f}{\bar{z}}\) satisfies the Cauchy-Riemann equations (\cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}):
+		\begin{align*}
+			\pdv{\bar{z}} f(z) = 0
+		\end{align*}
 		}
 	\end{proof}
 	
