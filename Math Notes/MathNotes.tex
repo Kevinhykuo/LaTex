@@ -2489,7 +2489,7 @@
 	
 	\begin{theorem}[Cauchy-Riemann Equations (Polar)]
 		\label{Cauchy-Riemann Equations (Polar) Theorem - Complex}
-		Let \(f(z) = u(r, \theta) + iv(r,\theta)\) be defined in some neighbourhood \(\epsilon\) of \(z_0 = r_0 e^{i\theta_0}\), $z_0 \neq 0$. If the first order partials derivatives of \(u\) and \(v\) with respect to \(r\) and \(\theta\) exists and satisfies the polar form of the Cauchy-Riemann equations: 
+		Let \(f(z) = u(r, \theta) + iv(r,\theta)\) be defined in some neighbourhood \(\epsilon\) of \(z_0 = r_0 e^{i\theta_0}\), $z_0 \neq 0$. If the first order partials derivatives of \(u\) and \(v\) with respect to \(r\) and \(\theta\) exists and are continuous at \(z_0\), and satisfies the polar form of the Cauchy-Riemann equations: 
 		\begin{align*}
 			ru_r &= v_\theta	&	u_\theta &= -r v_r
 		\end{align*}
@@ -2651,11 +2651,11 @@
 		When comparing the Cartesian form to the polar form of the Cauchy-Riemann equations:
 		\begin{align*}
 			&f'(z_0) \text{ exists} \implies \forall z_0[(u_x = v_y)\land(u_y = -v_x)] \\
-			&(z_0 \neq 0) \land \forall z_0 [(ru_r = v_\theta) \land (u_\theta = -r v_r)] 
-			\iff f'(z_0) \text{ exists }
+			&(z_0 \neq 0) \land \forall z_0 [(ru_r = v_\theta) \land (u_\theta = -r v_r)]  
+				\implies f'(z_0) \text{ exists }
 		\end{align*}
-		Should the Cartesian one also be $\iff$ instead of $\implies$? 
-		Yes, but only under the condition \(z_0 \neq 0\) as we will see in \cref{f(z) satisfy Cauchy-Riemann but f'(z_0) does not exist Example - Complex}.
+		Should both be $\iff$ instead of $\implies$? 
+		No, satisfying Cauchy-Riemann equations does not guarantee differentiability at a point as we will see in \cref{f(z) satisfy Cauchy-Riemann but f'(z_0) does not exist Example - Complex}. However, satisfying certain conditions allows allows differentiability to exist (\cref{Cauchy-Riemann Differentiablity Conditions Theorem - Complex}). 
 	\end{question}
 
 	\begin{example}[Solving the \(f'(z)\) using the partial derivative with respect to one variable] 
@@ -2818,7 +2818,7 @@
 					&= \frac{1}{2\Delta x}  \left[ - \frac{2(\Delta x)^3}{2(\Delta x)^2} - \frac{2(\Delta x)^3}{2(\Delta x)^2} \right] 
 					= \frac{1}{2\Delta x} \left[-\Delta x - \Delta x \right] = -\frac{2\Delta x}{2\Delta x} = -1
 			\end{align*}
-			As we can see, the limits are not unique regardless of the path we take to approach \((0,0)\), hence \(f'(0)\) does not exist. Therefore, an equation can satisfy the Cauchy-Riemann equations at \(0,0\), yet have a derivative that does not exist. The Cauchy-Riemann equations does not guarantee differentiability at \(z_0 = 0\).
+			As we can see, the limits are not unique regardless of the path we take to approach \((0,0)\), hence \(f'(0)\) does not exist. Therefore, an equation can satisfy the Cauchy-Riemann equations at \(0,0\), yet have a derivative that does not exist. The Cauchy-Riemann equations does not guarantee differentiability at \(z_0\).
 		}
 		
 	
@@ -2890,9 +2890,89 @@
 	\subsection{Conditions for Differentiability}
 	\label{Conditions for Differentiablity Subsection - Complex}
 	
+	\begin{theorem}
+		\label{Cauchy-Riemann Differentiablity Conditions Theorem - Complex}
+		Let \(f(z) = u(x,y) + iv(x,y)\) be defined in some neighbourhood \(\epsilon\) of point \(z_0 = x_0 + iy_0\). Consider the first order partial derivatives of \(u\) and \(v\) with respect to \(x\) and \(y\). If they 
+		\begin{itemize}
+			\item[(1)] Exist for all \(z\), \(\abs{z-z_0}<\epsilon\).
+			\item[(2)] Are continuous at \(z_0\).
+			\item[(3)] Satisfies the Cauchy-Riemann equations at \(z_0\).
+		\end{itemize}
+		Then \(f'(z_0)\) exists:
+		\[f'(z_0) = \eval{(u_x + iv_x)}_{(x_0, y_0)}\]
+	\end{theorem}
+	\begin{proof}
+		Assume the first order partial derivatives of \(u\) and \(v\) with respect to \(x\) and \(y\) exists \(\forall z [\abs{z-z_0}<\epsilon]\), are continuous at \(z_0\), and satisfies the Cauchy-Riemann equations. 
+		Let \(\Delta z = \Delta x + i\Delta y\), \(0<\abs{\Delta z}<\epsilon\), and \(\Delta w = f(z_0 + \Delta z) - f(z_0)\).
+		We then have \[\Delta w = \Delta u + i\Delta v\]
+		Where
+		\begin{align*}
+			\Delta u &= u(x_0 + \Delta x, y_0 + \Delta y) - u(x_0, y_0) \\
+			\Delta v &= v(x_0 + \Delta x, y_0 + \Delta y) - v(x_0, y_0) 
+		\end{align*}
+		Since first order partials of \(u\) and \(v\) are continuous at \(z_0\):
+		\begin{align*}
+			\Delta u &= u_x(x_0, y_0)\Delta x + u_y(x_0, y_0)\Delta y + \epsilon_1\Delta x + \epsilon_2 \Delta y \\
+			\Delta v &= v_x(x_0, y_0)\Delta x + v_y(x_0, y_0)\Delta y + \epsilon_3\Delta x + \epsilon_4 \Delta y
+		\end{align*}
+		\[(\epsilon_1, \epsilon_2, \epsilon_3, \epsilon_4) \rightarrow (0,0,0,0) \text{ as } (\Delta x, \Delta y) \rightarrow (0,0)\]
+		Substituting \(\Delta u\) and \(\Delta v\) into \(\Delta w\):
+		\begin{align*}
+			\Delta w 
+				=& u_x(x_0, y_0)\Delta x + u_y(x_0, y_0)\Delta y + \epsilon_1\Delta x + \epsilon_2 \Delta y \\
+				&+ i[v_x(x_0, y_0)\Delta x + v_y(x_0, y_0)\Delta y + \epsilon_3\Delta x + \epsilon_4 \Delta y]
+		\end{align*}
+		Using the Cauchy-Riemann equations and dividing by \(\Delta z\):
+		\begin{align*}
+			\frac{\Delta w}{\Delta z}
+			&= u_x(x_0, y_0) + iv_x(x_0, y_0) + (\epsilon_1 + i\epsilon_3) \frac{\Delta x}{\Delta z} + (\epsilon_2 + i\epsilon_4) \frac{\Delta y}{\Delta z}
+		\end{align*}
+		From the inequalities \(\abs{\Delta x} \leq \abs{\Delta z}\) and \(\abs{\Delta y} \leq \abs{\Delta z}\):
+		\begin{align*}
+			\abs{\frac{\Delta x}{\Delta z}} &\leq 1		&
+			\abs{\frac{\Delta y}{\Delta z}} &\leq 1	
+		\end{align*}
+		So
+		\begin{align*}
+			\abs{(\epsilon_1 + i\epsilon_3 )\frac{\Delta x}{\Delta z}} 
+				&\leq \abs{\epsilon_1 + i \epsilon_3} \leq \abs{\epsilon_1} + \abs{\epsilon_3} \\
+			\abs{(\epsilon_2 + i\epsilon_4 )\frac{\Delta y}{\Delta z}} 
+				&\leq \abs{\epsilon_2 + i \epsilon_4} \leq \abs{\epsilon_2} + \abs{\epsilon_4}
+		\end{align*}
+		Then \(\abs{\epsilon_2} + \abs{\epsilon_4} \rightarrow 0\) and \(\abs{\epsilon_1} + \abs{\epsilon_3} \rightarrow 0\) as \(\Delta z = \Delta x + i\Delta y \rightarrow 0\).
+		\begin{align*}
+			\implies& \frac{\Delta w}{\Delta z} = u_x(x_0, y_0) + iv_x(x_0, y_0) 
+			\implies f'(z_0) \text{ exists}
+		\end{align*}
+	\end{proof}
+
+	\begin{example}[All 3 conditions must be satisfied for \(f'(z_0)\) to exist]
+		Do not use expression of \(f'(z)\) before existence of \(f'(z_0)\)  is established.
+		Consider \(f(z) = x^3 + i(1-y)^3\).
+		\begin{align*}
+			u(x,y) &= x^3	& 	v(x,y) &= (1-y)^3
+		\end{align*}
+		Taking the partial derivatives:
+		\begin{align*}
+			u_x &= 3x^2	& 	v_x &= 0\\
+			u_y &= 0	&	v_y &= -3(1-y)^2
+		\end{align*}
+		It would be foolish to ignore Cauchy-Riemann and directly use :
+		\begin{align*}
+			f'(z) = u_x + iv_x = 3x^2
+		\end{align*}
+		We can see that the Cauchy-Riemann equations are satisfied only if:
+		\begin{align*}
+			3x^2 = -3(1-y)^2 \implies  x^2 + (1-y)^2 = 0 \implies (x=0)\land(y=1)
+		\end{align*}
+		Therefore, \(f'(z)\) exists only if \(z = i\), and that \(f'(i) = 0\)
+	\end{example}
+	
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
+	
+	
 	
 	
 	\part{Ordinary Differential Equations} \label{Ordinary Differential Equations Part}
