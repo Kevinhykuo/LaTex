@@ -44,10 +44,11 @@
 \contentsline {subsection}{\numberline {13.3.1}Exercises}{56}{subsection.13.3.1}%
 \contentsline {section}{\numberline {13.4}Differentiation}{56}{section.13.4}%
 \contentsline {subsection}{\numberline {13.4.1}Differentiation Rules}{58}{subsection.13.4.1}%
-\contentsline {section}{\numberline {13.5}Cauchy-Riemann Equations}{60}{section.13.5}%
-\contentsline {subsection}{\numberline {13.5.1}Complex Form of the Cauchy-Riemann Equations}{67}{subsection.13.5.1}%
-\contentsline {subsection}{\numberline {13.5.2}Conditions for Differentiability}{68}{subsection.13.5.2}%
-\contentsline {section}{\numberline {13.6}Analytic Functions}{69}{section.13.6}%
+\contentsline {subsection}{\numberline {13.4.2}Exercises}{60}{subsection.13.4.2}%
+\contentsline {section}{\numberline {13.5}Cauchy-Riemann Equations}{61}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}Complex Form of the Cauchy-Riemann Equations}{68}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.2}Conditions for Differentiability}{69}{subsection.13.5.2}%
+\contentsline {section}{\numberline {13.6}Analytic Functions}{70}{section.13.6}%
 \contentsline {chapter}{\numberline {14}Conformal Mapping}{71}{chapter.14}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{73}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{75}{part.6}%

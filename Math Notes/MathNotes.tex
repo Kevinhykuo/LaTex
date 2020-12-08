@@ -2426,6 +2426,60 @@
 	Note: Although this looks like a fraction, it is not a fraction and should not be treated as such! (Logical inconsistency when infinitesimals when viewed as ratios.)
 	
 	
+	\subsection{Exercises}
+	
+	\begin{example}
+		Show that \(f'(z)\) does not exist for all points \(z \in \mathbb{C}\) when:
+		\begin{itemize}
+			\item[(a)] \(f(z) = \Re{z}\)
+			\item[(b)] \(f(z) = \Im{z}\)
+		\end{itemize}
+		\begin{proof}
+			{\color{Grey}
+			Let \(f(z) = u(x,y) + iv(x,y)\), \(\Delta w = f(x+\Delta x, y + \Delta y) - f(x,y)\).
+			
+			\underline{\(f(z) = \Re{z}\)}
+			
+			Recall \(\Re{z} = x + i0\).
+			\begin{align*}
+				\frac{\Delta w}{\Delta z}
+					&= \frac{\Re{z + \Delta z} - \Re{z}}{\Delta z} 
+					 = \frac{x + \Delta x - x }{\Delta z} 
+					 = \frac{\Delta x}{\Delta x + \Delta y}
+			\end{align*}
+			Now as \((\Delta x, 0) \rightarrow (0,0)\):
+			\begin{align*}
+				\lim_{(\Delta x, 0) \rightarrow (0,0)} \frac{\Delta w}{\Delta z} = \lim_{(\Delta x, 0) \rightarrow (0,0)} \frac{\Delta x}{\Delta x} = 1
+			\end{align*} 
+			Now as \((0, \Delta y) \rightarrow (0,0)\):
+			\begin{align*}
+				\lim_{(0, \Delta y) \rightarrow (0,0)} \frac{\Delta w}{\Delta z} = \lim_{(0,\Delta y) \rightarrow (0,0)} \frac{0}{\Delta y} = 0
+			\end{align*}
+			Limits are unique, but this isn't the case, so we conclude that \(f'(z)\) when \(f(z) = \Re{z}\) does not exist.
+			
+			\underline{\(f(z) = \Im{z}\)}
+			
+			Recall \(\Im{z} = 0 + iy\).
+			\begin{align*}
+				\frac{\Delta w}{\Delta z}
+					&= \frac{\Im{z + \Delta z} - \Im{z} }{\Delta z}
+					 = \frac{y + \Delta y - y}{\Delta z}
+					 = \frac{\Delta y}{\Delta x + \Delta y}
+			\end{align*}
+			Now as \((\Delta x, 0) \rightarrow (0,0)\):
+			\begin{align*}
+				\lim_{(\Delta x, 0) \rightarrow (0,0)}  \frac{\Delta w}{\Delta z} = \lim_{(\Delta x, 0) \rightarrow (0,0)}  \frac{0}{\Delta x} = 0
+			\end{align*} 
+			Now as \((0, \Delta y) \rightarrow (0,0)\):
+			\begin{align*}
+				\lim_{(0,\Delta y) \rightarrow (0,0)} \frac{\Delta w}{\Delta z} = \lim_{(0,\Delta y) \rightarrow (0,0)} \frac{\Delta y}{\Delta y} = 1
+			\end{align*}
+			Limits are unique, but this isn't the case, so we conclude that \(f'(z)\) when \(f(z) = \Im{z}\) does not exist.
+			}
+		\end{proof}
+	\end{example}
+
+	
 	\section{Cauchy-Riemann Equations} \label{Cauchy-Riemann Equations Section - Complex}
 %	\subsection{Cartesian and Polar Forms of the Cauchy-Riemann Equations} \label{Cauchy-Riemann Equations (Cartesian and Polar) Subsection - Complex}
 	\begin{theorem}[Cauchy-Riemann Equations (Cartesian)]
