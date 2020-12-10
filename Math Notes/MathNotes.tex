@@ -2267,6 +2267,34 @@
 	\begin{align*}
 		f'(z) = \dv{w}{z}  = \lim_{\Delta z \rightarrow 0} \frac{\Delta w}{\Delta z}
 	\end{align*}
+	\begin{observation}
+		The definition of a derivative in \cref{Derivative Definition - Complex} looks similar to that of a derivative for the real numbers:
+		\begin{align*}
+			F'(x_0) = \lim_{x \rightarrow x_0} \frac{f(x) - f(x_0)}{x - x_0}
+		\end{align*}
+		However, the existence of $f'(z)$ possesses a much stronger requirement than the existence of $F'(z)$. That is, let $f(z) = u(x,y) + iv(x,y)$. The existence of $f'(z)$ at point $z_0$ requires the existence of both $u'(x,y)$ and $v'(x,y)$.
+		\begin{align*}
+			f'(z_0) &= \lim_{(x,y) \rightarrow (x_0, y_0)} \frac{f(z) - f(z_0)}{z - z_0} = \lim_{(x,y) \rightarrow (x_0, y_0)} \frac{u(z) - u(z_0)}{z - z_0} + i \frac{v(z) - v(z_0)}{z - z_0}
+		\end{align*}
+		and that 
+		\begin{align*}
+			\lim_{(x,y_0) \rightarrow (x_0, y_0)} \frac{u(x, y_0) - u(x_0, y_0)}{x - x_0} + i \frac{v(x_0, y_0) - v(x_0, y_0)}{x-x_0} \\ 
+			= 
+			\lim_{(x_0,y) \rightarrow (x_0, y_0)} \frac{u(x_0, y) - u(x_0, y_0)}{x - x_0} + i \frac{v(x_0,y) - v(x_0,y_0)}{x-x_0}
+		\end{align*}
+		That is
+		\begin{align*}
+			\lim_{(\Delta x, 0) \rightarrow (0,0)} \frac{u(x_0+\Delta x, y_0) - u(x_0,y_0)}{\Delta x}
+			&= \lim_{(0, \Delta y) \rightarrow (0,0)} \frac{u(x_0, y_0 +\Delta y) - u(x_0,y_0)}{\Delta y} \\
+			\lim_{(\Delta x, 0) \rightarrow (0,0)} \frac{v(x+\Delta x, y_0) - v(x_0,y_0)}{\Delta x}
+			&= \lim_{(0, \Delta y) \rightarrow (0,0)} \frac{v(x_0, y+\Delta y) - v(x_0,y_0)}{\Delta y}
+		\end{align*}
+		This tells us that the existence of a derivative for a real valued function $F(x)$ does not imply the existence of a derivative for a similar function $f(z)$ in the complex plane, which we will see later. (i.e. Take $f(z) = \abs{z}^2$ and $F(x) = \abs{x}^2$.) We are dealing with a two-dimensional limit instead of a one dimensional limit.
+	\end{observation}
+
+	\begin{question}
+		Under what conditions will differentiability in\(\mathbb{C}\) imply differentiability in \(\mathbb{R}\), and vice versa?
+	\end{question}
 	
 	\begin{example}
 		Let $f(z) = \bar{z}$:
@@ -3024,7 +3052,10 @@
 	
 	\section{Analytic Functions} \label{Analytic Functions - Complex}
 	
-	
+	\begin{definition}[Analytic]
+		\label{Analytic Definition - Complex}
+		A function is 
+	\end{definition}
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
