@@ -3052,10 +3052,115 @@
 	
 	\section{Analytic Functions} \label{Analytic Functions - Complex}
 	
-	\begin{definition}[Analytic]
+	\begin{definition}[Analytic/Regular/Holomorphic]
 		\label{Analytic Definition - Complex}
-		A function is 
+		Let $S$ be an open set, \(S \subset \mathbb{C}\). Let \(f\) be a function.
+		\begin{align*}
+			f \text{ is analytic in } S \iff \forall z \in S[ f'(z) \text{ exists }]
+		\end{align*}
+		We say \(f(z)\) is analytic at a point \(z_0\) if it is analytic in some neighbourhood of \(z_0\). If we say that \(f(z)\) is analytic in a closed set \(S'\) then we mean that it is analytic in an open set \(S\) where \(S' \subset S\).
 	\end{definition}
+	
+	\begin{definition}[Entire]
+		A function \(f(z)\) is entire if it is analytic at all points in the plane. 
+	\end{definition}
+
+	\begin{example}
+		\begin{align*}
+			\text{Derivative of polynomial exists everywhere} \implies \text{All polynomials are entire functions}
+		\end{align*}
+	\end{example}
+	
+	See \cref{Conditions for Differentiablity Subsection - Complex} for conditions for a function te be differentiable, hence analytic in a set \(S\).
+	
+	\begin{corollary}
+		Let \(f(z)\) and \(g(z)\) be analytic in a domain \(D\). Then the following are analytic in \(D\):
+		\begin{align*}
+			&f(z)  + g(z) 		& \\
+			&f(z)g(z)	 		& \\
+			&\frac{f(z)}{g(z)} 	& g(z) \neq 0 \forall z \in D
+		\end{align*}
+		Likewise, if \(P(z)\) and \(Q(z)\) are polynomials, then \(P(z)/Q(z)\) is analytic if \(\forall z \in D[Q(z) \neq 0]\).
+	\end{corollary}
+
+	\begin{corollary}
+		Let \(w\) be the image of \(D\) under \(f(z)\) and \(w\) be the domain of \(g\). Then \(g(f(z))\) is analytic in \(D\) and 
+		\begin{align*}
+			\dv{z} g[f(z)] = g'[f(z)]f'(z)
+		\end{align*}
+	\end{corollary}
+
+	\begin{theorem}
+		Let \(D\) be the domain of a function \(f(z)\).
+		\begin{align*}
+			\forall z \in D[f'(z) = 0] \implies f(z) \text{ is constant in } D
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Let \(f(z) = u(x,y) + iv(x,y)\) with domain \(D\), and \(P\), \(P'\), and \(Q\) be points in \(D\). Let \(\vec{U}\) be the unit vector on the line segment \(L\) connecting \(P\) and \(P'\), and \(s\) be the distance along \(L\).
+		\begin{align*}
+			f'(z) = 0 &\implies \forall z \in D [u_x = u_y = v_x = v_y = 0]
+		\end{align*}
+			\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=0, xmax=20,
+					ymin=0, ymax=12,
+					%					xtick distance=2,
+					%					ytick distance=2,
+					xtick=100,
+					ytick=100,
+					axis lines = middle,
+					axis line style = Black,
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					color=Black,
+					mark=*,
+					]
+					coordinates {
+						(3, 3) [$P$]
+						(12, 9) [$P'$]
+						(16, 5) [$Q$]
+					};
+					\draw[->, draw=Black]  (axis cs: 6,5)--(axis cs: 11,8.333)
+					node[midway,sloped,above] {$L$};
+					\draw[->, very thick, draw=Black]  (axis cs: 4,3.667)--(axis cs: 6,5)
+					node[midway,above] {$\vec{U}$};
+					\draw[-,draw=Grey]  (axis cs: 3,3) -- (axis cs: 12,9) ;
+					\draw[-,draw=Grey]  (axis cs: 12,9) -- (axis cs: 16,5);
+					\draw[]  (axis cs: 7,2) to ["$D$"] (axis cs: 7,2);
+					\draw[]  (axis cs: 11,8.333)--(axis cs: 11,8.333) node[midway, below] {$s$};
+					\draw[dashed, draw=Grey] plot [smooth cycle] coordinates {(axis cs: 1,3) (axis cs: 10,1) (axis cs: 18,3) (axis cs: 12,11)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+		We know that the directional derivative:
+		\begin{align*}
+			\dv{u}{s} &= \grad{u} \cdot \vec{U} & \grad{u} &= u_x \hat{i} + u_y \hat{j}
+		\end{align*}
+		Previously, \(u_x = u_y = 0\), so for all points on \(L\):
+		\begin{align*}
+			u_x = u_y = 0 \implies \grad{u} = 0 \implies \dv{u}{s} = 0 
+			\implies u \text{ constant on } L
+		\end{align*}
+		Now, that we have established that \(u\) is constant on any given line \(L\) in \(D\), we can see that since \(D\) is simply connected and there are finitely many lines connecting \(P\) and \(Q\), the values of \(u\) at \(P\) and \(Q\) must be equal and constant. Hence, \(\exists a \in \mathbb{R}\) such that \(u(x,y) = a \) in \(D\). Likewise, \(v(x,y) = b\) in \(D\). Thus
+		\begin{align*}
+			f(z) &= a + bi = c & c \text{ is constant}
+		\end{align*}
+	\end{proof}
+	
+	\begin{definition}[Singular Point]
+		\label{Singular Point Definition - Complex}
+		Let \(\epsilon\) be a neighbourhood of point \(z_0\), and \(f(z)\) be a function. \(z_0\) is a singular point if \(f'(z_0)\) does not exist, but \(f(z)\) is differentiable in all neighbourhoods of \(z_0\).
+	\end{definition}
+	
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
