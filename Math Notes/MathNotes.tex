@@ -3219,6 +3219,12 @@
 		\begin{align*}
 			\pdv[2]{x} F + \pdv[2]{y} F = 0
 		\end{align*}
+		In polar form:
+		\begin{align*}
+			r^2 u_{rr}(r, \theta) + ru_r(r, \theta) + u_{\theta \theta}(r, \theta) &= 0 \\
+			r^2 v_{rr}(r, \theta) + rv_r(r, \theta) + v_{\theta \theta}(r, \theta) &= 0
+		\end{align*}
+		See \cref{Laplace's Equation (Polar) Exercise - Complex}
 	\end{definition}
 
 	\begin{definition}[Harmonic]
@@ -3232,8 +3238,51 @@
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
-		
+		\(f\) is analytic in \(D\), so its component functions must satisfy the Cauchy-Riemann equations: 
+		\begin{align*}
+			(u_x = v_y)\land(u_y = -v_x) 
+				&\implies (u_{xy} = v_{yy})\land(u_{yx} = -v_{xx})  \\
+			(u_x = v_y)\land(u_y = -v_x) 
+				&\implies (u_{xx} = v_{yx})\land(u_{yy} = -v_{xy}) 
+		\end{align*}
+		Now, we know from calculus that \(u_{xy} = u_{yx}\) and \(v_{yx} = v_{xy}\), so we conclude
+		\begin{align*}
+			u_{xx} + u_{yy} &= 0 & v_{xx} + v_{yy} = 0
+		\end{align*}
 	\end{proof}
+	
+	\begin{example}
+		\label{Laplace's Equation (Polar) Exercise - Complex}
+		Let \(f(z) = u(r, \theta) + iv(r, \theta)\) be analytic in domain \(D' = D \setminus \{0\}\). Show \(u(r, \theta)\) and \(v(r, \theta)\) satisfies the polar form of Laplace's equation.
+		\begin{proof}
+			We know from the Polar form of the Cauchy-Riemann equation:
+			\begin{align*}
+				ru_r &= v_\theta & u_\theta &= -rv_r
+			\end{align*}
+			Operating by \(r \pdv{r}\) and \(\pdv{\theta}\), we obtain:
+			\begin{align*}
+				\left(r \pdv{r}\right) r u_r &= ru_r + r^2 u_{rr} = r v_{\theta r} \\
+				\left(r \pdv{r}\right) u_\theta &= ru_{\theta r} = \left(r \pdv{r}\right) -rv_r = -rv_r - r^2v_{rr} \\
+				\left(\pdv{\theta}\right) ru_{r} &= r u_{\theta r} = v_{\theta \theta} \\
+				\left(\pdv{\theta}\right) u_\theta &= u_{\theta \theta} = -r v_{r \theta}
+			\end{align*}
+			We can see that 
+			\begin{align*}
+				\begin{cases}
+					ru_r + r^2 u_{rr} = -u_{\theta \theta} \\
+					rv_r + r^2 v_{rr} = -v_{\theta \theta}
+				\end{cases}
+				\implies
+				\begin{cases}
+					r^2 u_{rr} + ru_r + u_{\theta \theta} = 0 \\
+					r^2 v_{rr} + rv_r + v_{\theta \theta} = 0
+				\end{cases}
+			\end{align*}
+		\end{proof}
+	\end{example}
+	
+	
+	\section{Uniquely Determined Analytic Functions} \label{Uniquely Determined Analytic Functions Section - Complex}
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
