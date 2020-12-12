@@ -3161,6 +3161,79 @@
 		Let \(\epsilon\) be a neighbourhood of point \(z_0\), and \(f(z)\) be a function. \(z_0\) is a singular point if \(f'(z_0)\) does not exist, but \(f(z)\) is differentiable in all neighbourhoods of \(z_0\).
 	\end{definition}
 	
+	\subsection{Examples} \label{Analytic Functions Examples Subsection - Complex}
+	
+	\begin{example}[Determining analyticity using Cauchy-Riemann equations]
+		Consider \(f(z) = \sin(x)\cosh(y) + i\cos(x)\sinh(y) \).
+		\begin{align*}
+			u(x,y) &= \sin(x)\cosh(y)	& 	v(x,y) = \cos(x)\sinh(y)
+		\end{align*}
+		Cauchy-Riemann:
+		\begin{align*}
+			u_x &= \cos(x)\cosh(y) = v_y	&	u_y = \sin(x)\sinh(y) = -v_x
+		\end{align*}
+		Therefore, it is clear that \(f(z)\) is entire.
+		\begin{align*}
+			f'(z) = u_x + iv_x = \cos(x)\cosh(y) - i\sin(x)\sinh(y) 
+		\end{align*}
+		Another application of Cauchy-Riemann see that \(f'(z)\) is also entire.
+	\end{example}
+
+	\begin{example}[\(f(z)\) and \(\overline{f(z)}\) is analytic in \(D \implies f(z)\) is constant in \(D\)]
+		Let 
+		\begin{align*}
+			f(z) &= u(x,y) + iv(x,y) & \overline{f(z)} &= u(x,y) - iv(x,y) = U(x,y) + iV(x,y)
+		\end{align*}
+		Because of \(f(z)\) and \(\overline{f(z)}\) is analytic in \(D\), the Cauchy-Riemann equations hold:
+		\begin{align*}
+			u_x &= v_y		&	u_y &= -v_x \\
+			U_x &= V_y		&	U_y &= -V_x
+		\end{align*}
+		We can see that:
+		\begin{align*}
+			u_x &= -v_y	= v_y &	u_y &= v_x = -v_x
+		\end{align*}
+		Hence, \(u_x = 0\) and \(v_x = 0\), then we can conclude
+		\begin{align*}
+			f'(z) = 0 \implies f(z) \text{ is constant in } D
+		\end{align*}
+	\end{example}
+
+	\begin{example}[\(f(z)\) is analytic in \(D\) and \(\abs{f(z)}\) is constant in \(D \implies f(z)\) is constant in \(D\)]
+		Let \(\forall z \in D[\abs{f(z)} = c]\), where \(c\) is a constant. It is easy to see that \(c = 0 \implies \forall z \in D[f(z) = 0]\), so consider \(c \neq 0\). Then
+		\begin{align*}
+			f(z)\overline{f(z)} = c^2 \neq 0 \implies \forall z \in D[f(z) \neq 0]
+		\end{align*}
+		Thus
+		\begin{align*}
+			\overline{f(z)} = \frac{c^2}{f(z)} \qquad \forall z \in D
+		\end{align*}
+		Hence \(\overline{f(z)}\) is analytic everywhere in \(D\), so \(f(z)\) is constant in \(D\).
+	\end{example}
+	
+	\section{Harmonic Functions} \label{Harmonic Functions - Complex}
+	
+	\begin{definition}[Laplace's Equation]
+		\label{Laplace's Equation Definition - Complex}
+		Let \(F(x,y)\) be a real-valued function. That is \(x,y \in \mathbb{R}\). Laplace's equation: 
+		\begin{align*}
+			\pdv[2]{x} F + \pdv[2]{y} F = 0
+		\end{align*}
+	\end{definition}
+
+	\begin{definition}[Harmonic]
+		A real-valued function \(F(x,y)\) is harmonic in the \(xy\)-plane if it satisfies Laplace's equation.
+	\end{definition}
+
+	\begin{theorem}
+		Let \(D\) be the domain of a function \(f(z) = u(x,y) + iv(x,y)  \).
+		\begin{align*}
+			f(z) \text{ is analytic in } D \implies u(x,y) \land v(x,y) \text{ are harmonic in } D
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		
+	\end{proof}
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
