@@ -1,0 +1,264 @@
+\documentclass[12pt, english]{book}
+\usepackage[letterpaper, portrait, margin=2.5cm]{geometry} %Set paper type, format, margin
+\usepackage[svgnames]{xcolor}
+\usepackage{%abstract, 
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, wrapfig}
+\usepackage{cleveref}
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings,backgrounds,patterns}
+\usepgfplotslibrary{groupplots}
+\usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
+\usepackage{thmtools}
+\pgfplotsset{compat=1.8}
+\usepgfplotslibrary{external}
+\tikzexternalize[prefix=tikz/] 
+
+\setlength{\parindent}{0em} %Set indent on paragraph
+\setlength{\parskip}{0.5em} %Set spaces between paragraphs
+
+\newcommand\showdiv[1]{\overline{\smash{\hstretch{.5}{)}\mkern-3.2mu\hstretch{.5}{)}}#1}}
+\newcommand\ph[1]{\textcolor{white}{#1}}
+\setstackgap{S}{1.5pt}
+
+% Swap the definition of \abs* and \norm*, so that \abs
+% and \norm resizes the size of the brackets, and the 
+% starred version does not.
+
+
+\declaretheoremstyle[
+	spaceabove=6pt, 		
+	spacebelow=6pt,
+	%	headfont=\normalfont\bfseries,
+	notefont=\bfseries, notebraces={}{},
+	bodyfont=\slshape,
+	postheadspace=1em,
+	headpunct=,
+	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
+	]{axiomstyle}
+
+\declaretheoremstyle[
+	spaceabove=6pt, 		
+	spacebelow=6pt,
+	headfont=\bfseries, %\color{blue},
+	notefont=\bfseries, notebraces={}{},
+	bodyfont=\slshape \color{DarkBlue},
+	postheadspace=1em,
+	headpunct=,
+	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
+	]{theoremstyle}
+	
+\declaretheoremstyle[
+	spaceabove=6pt, 		
+	spacebelow=6pt,
+	headfont=\bfseries, %\color{Blue}%
+	notefont=\bfseries,%
+	notebraces={}{},%
+	headpunct=,%
+	bodyfont=\itshape\color{DarkGreen},%
+	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
+	%	preheadhook=\begin{leftbar},%
+	%	postfoothook=\end{leftbar},%
+	]{minorstyle}
+	
+\declaretheoremstyle[
+	spaceabove=6pt, 		
+	spacebelow=6pt,
+	headfont=\bfseries,%\color{Blue},%
+	notefont=\bfseries,%
+	notebraces={}{},%
+	headpunct=,%
+	bodyfont=\slshape \color{OrangeRed},%
+	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
+%	preheadhook=\begin{leftbar},%
+%	postfoothook=\end{leftbar},%
+	]{defstyle}
+	
+\declaretheoremstyle[
+	spaceabove=6pt, 		
+	spacebelow=6pt,
+	%	headfont=\normalfont\bfseries,
+	bodyfont=\slshape,
+%	postheadspace=1em,
+	headpunct=,
+%	headformat={\NAME~\NUMBER:\NOTE \hfill \smallskip\linebreak},%
+	]{examplestyle}
+
+\declaretheorem{axiom}[
+	numberwithin=chapter, style=axiomstyle, parent=chapter,
+	]
+	
+\declaretheorem{theorem, conjecture}[
+	numberwithin=section, style=theoremstyle, parent=section,
+	]
+	
+\declaretheorem{lemma, proposition, corollary}[
+	style=minorstyle,
+	parent=theorem,
+%	numberwithin=section
+	]
+
+\declaretheorem{definition}[parent=section, style=defstyle]
+
+\declaretheorem{remark, observation, question}[numbered=no]
+
+\declaretheorem{example}[numberwithin=section, style=examplestyle]
+
+
+% Indenting the Proof enviroment
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\list{}{%
+		\settowidth{\leftmargin}{\itshape\proofname:\hskip\labelsep}%
+		\setlength{\labelwidth}{0pt}%
+		\setlength{\itemindent}{-\leftmargin}%
+	}%
+	\item[\hskip\labelsep\itshape#1\@addpunct{:}]\ignorespaces
+}{%
+	\popQED\endlist\@endpefalse
+}
+\makeatother
+
+% Letters after part
+\makeatletter
+\renewcommand{\@endpart}{\vfil\newpage}
+\makeatother
+\newenvironment{partintro}
+{\vspace*{\fill}
+	\section*{\centering Resources used in part \thepart}
+	\begin{quotation}}
+	{\end{quotation}\vspace*{\fill}\newpage}
+\newcommand{\nopartintro}{%
+	\vspace*{\fill}
+	\thispagestyle{empty}
+	\newpage
+}
+
+
+\begin{document}
+	\title{The Book of Physics (Notes)}
+	\author{Kevin Kuo}
+	
+	\pagestyle{fancy}
+	\fancyhead{} % clear all header fields
+	\fancyhead[LO]{  }
+	\fancyhead[CO]{  }
+	\fancyhead[RO]{  }
+	\renewcommand{\headrulewidth}{0pt}
+	
+	\fancyfoot{} % clear all footer fields
+	\fancyfoot[LO]{}
+	\fancyfoot[CO]{\thepage}
+	\fancyfoot[RO]{}
+	\renewcommand{\footrulewidth}{0pt}
+	\vspace{0cm}	
+	
+	\frontmatter
+	
+	\maketitle
+	
+	\newpage
+	\section*{Forward and Disclaimer}
+	
+	
+	\section*{Symbols}
+	
+
+	\newpage
+	\section*{Book Constitution}
+	\subsection*{Intents and Purpose}
+	
+	
+	\subsection*{Layout and Organization}
+	
+
+	
+	\section*{}
+	\tableofcontents
+	
+	\mainmatter
+	
+	\part{Classical Mechanics} \label{Classical Mechanics Part}
+	\begin{partintro}
+		\noindent Primary:
+		\begin{itemize}
+			\item[1.] Brown and Churchill - Complex Variables and Applications
+		\end{itemize}
+		Supplement: 
+		\begin{itemize}
+			\item[1.] A. David Wunsch - Complex Variables with Applications
+		\end{itemize}
+	\end{partintro}
+
+	\part{Electromagnetism} \label{Electromagnetism Part}
+	\begin{partintro}
+		\noindent Primary:
+		\begin{itemize}
+			\item[1.] Brown and Churchill - Complex Variables and Applications
+		\end{itemize}
+		Supplement: 
+		\begin{itemize}
+			\item[1.] A. David Wunsch - Complex Variables with Applications
+		\end{itemize}
+	\end{partintro}
+
+	\part{Thermodynamics} \label{Thermodynamics Part}
+	\begin{partintro}
+		\noindent Primary:
+		\begin{itemize}
+			\item[1.] Brown and Churchill - Complex Variables and Applications
+		\end{itemize}
+		Supplement: 
+		\begin{itemize}
+			\item[1.] A. David Wunsch - Complex Variables with Applications
+		\end{itemize}
+	\end{partintro}
+
+	\part{Statistical Mechanics} \label{Statistical Mechanics Part}
+	\begin{partintro}
+		\noindent Primary:
+		\begin{itemize}
+			\item[1.] Brown and Churchill - Complex Variables and Applications
+		\end{itemize}
+		Supplement: 
+		\begin{itemize}
+			\item[1.] A. David Wunsch - Complex Variables with Applications
+		\end{itemize}
+	\end{partintro}
+
+	\part{Quantum Mechanics} \label{Quantum Mechanics Part}
+	\begin{partintro}
+		\noindent Primary:
+		\begin{itemize}
+			\item[1.] Brown and Churchill - Complex Variables and Applications
+		\end{itemize}
+		Supplement: 
+		\begin{itemize}
+			\item[1.] A. David Wunsch - Complex Variables with Applications
+		\end{itemize}
+	\end{partintro}
+
+	\part{General Reletivity} \label{General Reletivity Part}
+	\begin{partintro}
+		\noindent Primary:
+		\begin{itemize}
+			\item[1.] Brown and Churchill - Complex Variables and Applications
+		\end{itemize}
+		Supplement: 
+		\begin{itemize}
+			\item[1.] A. David Wunsch - Complex Variables with Applications
+		\end{itemize}
+	\end{partintro}
+	
+	
+	
+	\backmatter
+	\part{Index} \label{Index Part}
+	
+	\part{Bibliography}
+	\bibliographystyle{unsrt}
+	\typeout{}
+	\bibliography{Bibliography}
+	
+
+\end{document}
