@@ -3281,6 +3281,38 @@
 			}
 		\end{proof}
 	\end{example}
+
+	\begin{example}
+		\label{f' neq 0 implies level curve are orthogonal Example - Complex}
+		Let \(f(z) = u(x,y) + iv(x,y)\) be analytic in domain \(D\). Consider the families of level curves \(u(x,y) = c_1\) and \(v(x,y) = c_2\), with \(c_1, c_2 \in \mathbb{R}\) being constants. Show for \(z_0 = (x_0, y_0) \in \mathbb{C}\) common to \(u(x,y) = c_1\) and \(v(x,y) = c_2\) and \(f'(z_0) \neq 0\), then the lines tangent to \(u(x,y) = c_1\) and \(v(x,y) = c_2\) at \(z_0\) are orthogonal. 
+		
+		Note: 
+		\begin{align*}
+			[u(x,y) = c_1] \land [v(x,y) = c_2] \implies 
+			\left(\pdv{u}{x} + \pdv{u}{y} \dv{y}{x} = 0\right) \land 
+			\left(\pdv{v}{x} + \pdv{v}{y} \dv{y}{x} = 0\right)
+		\end{align*}
+	
+		\begin{proof}{\color{Grey}
+			The tangent lines of \(u(x,y)\) and \(v(x,y)\) are
+			\begin{align*}
+				\grad{u} &= \left(\pdv{u}{x}, \pdv{u}{y}\right) = (u_x, u_y)&
+				\grad{v} &= \left(\pdv{v}{x}, \pdv{v}{y}\right) = (v_x, v_y)
+			\end{align*}
+			Taking the dot product, and applying the Cauchy-Riemann equations: 
+			\begin{align*}
+				u_x v_x + u_y v_y = u_x (-u_y) + u_y (u_x) = 0
+			\end{align*}
+			Hence, \(u(x,y)\) and \(v(x,y)\) are orthogonal.
+			
+			Note:
+			\begin{align*}
+				f'(z_0) = 0 \implies u_x + iv_x = 0 \implies v_y - iu_y = 0 \implies u_x = u_y = v_x = v_y = 0
+			\end{align*}
+			Hence, we can see that \(f'(z_0)\) is required for \(u(x,y)\) and \(v(x,y)\) to exist and be orthogonal.
+		}
+		\end{proof}
+	\end{example}
 	
 	
 	\section{Uniquely Determined Analytic Functions} \label{Uniquely Determined Analytic Functions Section - Complex}
