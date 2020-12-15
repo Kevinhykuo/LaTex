@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  13 DEC 2020 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  14 DEC 2020 20:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1624,24 +1624,24 @@ Chapter 12.
 ===== Image 'tikz/MathNotes-figure1' is up-to-date. ======
 [32 <./tikz/MathNotes-figure1.pdf>] [33]
 ===== Image 'tikz/MathNotes-figure2' is up-to-date. ======
-[34 <./tikz/MathNotes-figure2.pdf>]
+[34]
 
 LaTeX Warning: Reference `Roots of z Section - Complex' on page 1 undefined on 
-input line 639.
+input line 640.
 
-[35]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 693.
-
+[35 <./tikz/MathNotes-figure2.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 693.
+(hyperref)                removing `math shift' on input line 694.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 694.
 
 [36]
 ===== Image 'tikz/MathNotes-figure3' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 745.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 746.
 
 ===== Image 'tikz/MathNotes-figure4' is up-to-date. ======
 [37 <./tikz/MathNotes-figure3.pdf> <./tikz/MathNotes-figure4.pdf>]
@@ -1650,16 +1650,16 @@ LaTeX Font Warning: Command \Large invalid in math mode on input line 745.
 [38 <./tikz/MathNotes-figure5.pdf>]
 ===== Image 'tikz/MathNotes-figure7' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 956.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 957.
 
 ===== Image 'tikz/MathNotes-figure8' is up-to-date. ======
-===== Image 'tikz/MathNotes-figure9' is up-to-date. ======
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1021.
-
-===== Image 'tikz/MathNotes-figure10' is up-to-date. ======
 [39 <./tikz/MathNotes-figure6.pdf> <./tikz/MathNotes-figure7.pdf> <./tikz/MathN
 otes-figure8.pdf>]
+===== Image 'tikz/MathNotes-figure9' is up-to-date. ======
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1022.
+
+===== Image 'tikz/MathNotes-figure10' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure11' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure12' is up-to-date. ======
 [40 <./tikz/MathNotes-figure9.pdf> <./tikz/MathNotes-figure10.pdf> <./tikz/Math
@@ -1674,25 +1674,25 @@ hNotes-figure14.pdf>] [42 <./tikz/MathNotes-figure15.pdf>]
 Chapter 13.
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1415.
+age 1 undefined on input line 1416.
 
 [45
 
 ]
 ===== Image 'tikz/MathNotes-figure17' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1486.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1487.
 
 ===== Image 'tikz/MathNotes-figure18' is up-to-date. ======
 [46 <./tikz/MathNotes-figure17.pdf> <./tikz/MathNotes-figure18.pdf>]
 ===== Image 'tikz/MathNotes-figure19' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1558.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1559.
 
 ===== Image 'tikz/MathNotes-figure20' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure21' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1630.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1631.
 
 ===== Image 'tikz/MathNotes-figure22' is up-to-date. ======
 [47 <./tikz/MathNotes-figure19.pdf> <./tikz/MathNotes-figure20.pdf>] [48 <./tik
@@ -1701,11 +1701,11 @@ z/MathNotes-figure21.pdf> <./tikz/MathNotes-figure22.pdf>] [49] [50]
 [51] [52 <./tikz/MathNotes-figure23.pdf>] [53]
 ===== Image 'tikz/MathNotes-figure24' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2069.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2070.
 
 ===== Image 'tikz/MathNotes-figure25' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2096.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2097.
 
 ===== Image 'tikz/MathNotes-figure26' is up-to-date. ======
 [54] [55 <./tikz/MathNotes-figure24.pdf> <./tikz/MathNotes-figure25.pdf> <./tik
@@ -1718,25 +1718,25 @@ z/MathNotes-figure26.pdf>]
 ===== Image 'tikz/MathNotes-figure29' is up-to-date. ======
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 3147.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 3148.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 3147.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 3148.
 
 
-Overfull \hbox (5.51305pt too wide) in paragraph at lines 3167--3168
+Overfull \hbox (5.51305pt too wide) in paragraph at lines 3168--3169
 []\OT1/cmr/bx/n/12 Example 13.6.2 \OT1/cmr/m/n/12 (De-ter-min-ing an-a-lyt-ic-i
 ty us-ing Cauchy-Rie-mann equa-tions) []\OT1/cmr/m/sl/12 Con-sider $\OML/cmm/m/
 it/12 f\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 z\OMX/MnSymbolE/m/n/12 ç \U/MnSy
 mbolD/m/n/12 ^^@
  []
 
-[72 <./tikz/MathNotes-figure29.pdf>] [73] [74] [75] [76
-
-]
+[72 <./tikz/MathNotes-figure29.pdf>] [73] [74] [75] [76]
 Chapter 14.
-[77] [78
+[77
+
+] [78
 
 ] [79] [80
 
@@ -1831,8 +1831,8 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39549 strings out of 479383
- 885913 string characters out of 5869387
+ 39551 strings out of 479383
+ 885950 string characters out of 5869387
  1324915 words of memory out of 5000000
  55351 multiletter control sequences out of 15000+600000
  445613 words of font info for 169 fonts, out of 8000000 for 9000
@@ -1866,10 +1866,10 @@ ts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (147 pages, 560876 bytes).
+Output written on MathNotes.pdf (147 pages, 561711 bytes).
 PDF statistics:
- 2016 PDF objects out of 2073 (max. 8388607)
- 1791 compressed objects within 18 object streams
- 488 named destinations out of 1000 (max. 500000)
+ 2018 PDF objects out of 2073 (max. 8388607)
+ 1793 compressed objects within 18 object streams
+ 490 named destinations out of 1000 (max. 500000)
  843 words of extra memory for PDF output out of 10000 (max. 10000000)
 
