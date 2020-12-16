@@ -52,6 +52,7 @@
 \contentsline {subsection}{\numberline {13.6.1}Examples}{73}{subsection.13.6.1}%
 \contentsline {section}{\numberline {13.7}Harmonic Functions}{74}{section.13.7}%
 \contentsline {section}{\numberline {13.8}Uniquely Determined Analytic Functions}{76}{section.13.8}%
+\contentsline {subsection}{\numberline {13.8.1}Reflection Principle}{77}{subsection.13.8.1}%
 \contentsline {chapter}{\numberline {14}Conformal Mapping}{79}{chapter.14}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{81}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{83}{part.6}%
