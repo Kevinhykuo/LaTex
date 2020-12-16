@@ -3463,12 +3463,79 @@
 	
 	\subsection{Reflection Principle} \label{Reflection Principle Subsection - Complex}
 	
+	Generally, \(\overline{f(z)} \neq f(\bar{z})\) for all \(z\), but....
+	
+	\begin{theorem}[Reflection Principle]
+		\label{Reflection Principle Theorem - Complex}
+		Let \(f\) be a function with domain \(D\) containing a segment of the real axis \(R \subset D\). Then 
+		\begin{align*}
+			\forall z \in D[ \overline{f(z)} = f(\bar{z}) ]
+			\iff
+			\forall x \in R [f(x) \in \mathbb{R}]
+		\end{align*}
+	\end{theorem}
+	\begin{proof} 
+		Let \(f(z)\) and \(F(z)\) be analytic functions: 
+		\begin{align*}
+			f(z) &= u(x,y) + iv(x,y) & F(z) &= U(x,y) + iV(x,y)
+		\end{align*}
+		\underline{\((\impliedby):\)} \newline
+		Suppose \(\forall x \in R[f(x) \in \mathbb{R}]\), and that \(F(z) = \overline{f(\bar{z})}\).
+		\begin{align*}
+			f(z) &= u(x,y) + iv(x,y) & F(z) &= U(x,y) + iV(x,y)
+		\end{align*}
+		Then
+		\begin{align*}
+			\overline{f(\bar{z})} = u(x, -y) - iv(x,-y)
+		\end{align*}
+		Therefore
+		\begin{align*}
+			U(x,y) &= u(x,t) & V(x,y) &= -v(x,t) & t = -y
+		\end{align*}
+		\(f(x,t)\) is analytic, so it satisfies the Cauchy-Riemann equations:
+		\begin{align*}
+			u_x &= v_t & u_t &= -v_x
+		\end{align*}
+		Hence 
+		\begin{align*}
+			U_x &= u_x & V_y &= -v_t \dv{t}{y} = v_t \\
+			U_y &= u_t \dv{t}{y} = -u_t & V_x &= -v_x
+		\end{align*}
+		Thus, we can see that \(F(z)\) also satisfies the Cauchy Riemann equations 
+		\begin{align*}
+			U_x &= V_y  & U_y = -V_x
+		\end{align*}
+		Since, the partial derivatives of \(U\) and \(V\) are continuous in \(D\), we can say hat \(F(z)\) is analytic in \(D\). On the segment of the real axis \(R \subset D\), \(f(z)\) is real, so \(v(x,0) = 0\). 
+		\begin{align*}
+			F(x) &= U(x, 0) + iV(x,0) = u(x,0) - iv(x, 0) = u(x, 0)\\
+			&\implies \forall z \in R[F(z) = f(z) ]\\
+			&\implies \forall z \in D [\overline{f(\bar{z})} = f(z)] 
+				& \Cref{Uniquely determined analytic functions Theorem - Complex}
+		\end{align*}
+		
+		
+		\underline{\((\implies):\)} \newline
+		Suppose \(\overline{f(z)} = f(\bar{z})\). Then 
+		\begin{align*}
+			u(x, -y) - iv(x, -y) = u(x,y) + iv(x,y)
+		\end{align*}
+		Consider any point \((x, 0) \in R \subset D\):
+		\begin{align*}
+			u(x,0) - iv(x, 0) = u(x, 0) + iv(x, 0) \implies v(x, 0) = 0
+		\end{align*}
+		Hence, \(f(x)\) is real \(\forall x \in R \subset D\).
+	\end{proof}
+
+	\Cref{Reflection Principle Theorem - Complex} tells us that if a complex function is real for all points on the real axis, then it will obey the Reflection Principle, and vice versa.
+	
+	\subsection{Examples} 
+	\begin{example}
+		content...
+	\end{example}
 	
 	
 	
-	
-	
-	
+	\chapter{Elementary Functions} \label{Elementary Functions Chapter - Complex}
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
