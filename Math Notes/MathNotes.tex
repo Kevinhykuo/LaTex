@@ -3102,7 +3102,7 @@
 		\begin{align*}
 			f'(z) = 0 &\implies \forall z \in D [u_x = u_y = v_x = v_y = 0]
 		\end{align*}
-			\begin{figure}[H]
+		\begin{figure}[H]
 			\centering
 			\begin{tikzpicture}[remember picture]
 				\begin{axis}[
@@ -3324,9 +3324,90 @@
 		Suppose a function \(f\) is analytic throughout domain \(D\), and \(f(z) = 0\) \(\forall z \in D' \subset D\)  or line segment contained in \(D\). Then \(f(z) \equiv 0\) throughout \(D\).
 	\end{lemma}
 	\begin{proof}
-		content...
+		Let \(f\) be a function analytic in domain \(D\) and \(f(z) = 0\) for all point or line segment in \(D\). Let \(z_0\) in the subdomain of \(D\) or on a line segment in \(D\).
+		
+		\(D\) is connected open set, so there is a polygonal line \(L\) jointing any point \(P\) in \(D\) to \(z_0\) lying entirely in \(D\). (Recall: A polygonal line consists of a finite number of lines connected end-to-end.) Let \(d\) be the shortest distance from points on \(L\) to the boundary on \(D\), so \(d > 0\), unless \(D\) is the entire plane. Then there is a sequence of points along \(L\):
+		\[ \{z_0, z_1, z_2, \ldots, z_{n-1}, z_n = P\} \qquad \abs{z_k - z_{k+1}}< d \qquad k \in \mathbb{N}\]
+		That is, each point is sufficiently close to each other. We construct neighbourhoods of each point with radius \(d\), all of which are in \(D\), so points \(z_{k-1}\) and \(z_{k+1}\) lie in the neighbourhood of \(z_k\), \(k \in \mathbb{N}\):
+		\[\{N_0, N_1, N_2, \ldots, N_{n-1}, N_n\}\]
+		
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[remember picture]
+				\begin{axis}[
+					height=12cm,
+					rotate around={-10:(current axis.origin)},
+					clip=false,
+%					enlarge y limits={upper, value=0.1},
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=0, xmax=100,
+					ymin=0, ymax=50,
+					%					xtick distance=2,
+					%					ytick distance=2,
+					xtick=100,
+					ytick=100,
+					axis lines = none,
+					axis line style = Black,
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					color=Black,
+					mark=*,
+					]
+					coordinates {
+						(10, 10) [$z_0$]
+						(15, 15) [$z_1$]
+						(20, 20) [$z_2$]
+						(80, 40) [$z_n = P$]
+					};
+					\draw[draw=Black]  (axis cs: 10,10)--(axis cs: 30,30)
+					node[midway,sloped,above] {};
+					\draw[draw=Black]  (axis cs: 30,30)--(axis cs: 40,20)
+					node[midway,above] {$L$};
+					\draw[-,draw=Black]  (axis cs: 40,20) -- (axis cs: 80,40);
+					\draw[dashed, draw=Grey] (axis cs: 10, 10) circle (10);
+					\draw[dashed, draw=Grey] (axis cs: 15, 15) circle (10);
+					\draw[dashed, draw=Grey] (axis cs: 20, 20) circle (10);
+					\draw[dashed, draw=Grey] (axis cs: 80, 40) circle (10);
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					color=Black,
+					mark=none,
+					]
+					coordinates {
+						(10, 0) [$N_0$]
+						(15, 5) [$N_1$]
+						(20, 10) [$N_2$]
+						(80, 30) [$N_n$]
+					};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+		
+		Now as \(f\) is analytic in \(N_0\) and \(f(z) = 0\) in a domain or line segment containing \(z_0\), then \(f(z) \equiv 0 \) in \(N_0\). \(z_1\) is in \(N_0\), so \(f(z_0) \equiv 0\) in \(N_1\). Continuing this we can see that \(f(z_n) \equiv 0\) in \(N_n\), hence, \(f(z) \equiv 0\) in \(D\).
 	\end{proof}
 	
+	\begin{theorem}
+		\label{Uniquely determined analytic functions Theorem - Complex}
+		Let \(f\) be analytic in domain \(D\). Then it's uniquely determined over \(D\) by its values in \(D\) or along a line segment in \(D\).
+	\end{theorem}
+	\begin{proof}
+		Let functions \(f\) and \(g\) be analytic in some domain \(D\), and \(f(z) = g(z)\) \(\forall z \in D\). Then \(h(z) = f(z) - g(z))\) is also analytic in \(D\), and \(h(z) = 0\) in the subdomain or along the line segment, so \(h(z) \equiv 0\) throughout \(D\). 
+	\end{proof}
+
+	\begin{theorem}[Coincidence Principle]
+		\label{Coincidence Principle Theorem - Complex}
+		If functions \(f\) and \(g\) are analytic in \(D\) and \(f(z) = g(z)\) in \(D' \subset D\) with limit point \(z_0 \in D\), then \(f(z) = g(z)\) everywhere in \(D\).
+		
+		This is a more generalized version of \cref{Uniquely determined analytic functions Theorem - Complex}
+	\end{theorem}
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
