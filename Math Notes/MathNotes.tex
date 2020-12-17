@@ -1866,7 +1866,7 @@
 			\begin{axis}[
 %				title = Riemann Sphere with Stereographic Projection,
 				axis equal,
-				width=20cm,
+				width=28cm,
 				axis lines = center,
 				xlabel = {$x$},
 				ylabel = {$y$},
@@ -1925,12 +1925,23 @@
 	
 	The region outside the unit circle enveloped by the Riemann sphere corresponds to the upper hemisphere of the Riemann sphere, with the point $N$ deleted. $N$ corresponds to the points at infinity, since $l$ will be parallel to the complex plane. 
 	
+	Note: In some texts, the  Riemann Sphere is a sphere of unit diameter (not a unit sphere, which is of unit radius) sitting on top of the Complex Plane. That is, with the south pole sitting at \((0,0)\). The definitions for line \(L\), and points \(N\), \(P\), and \(z\) remains the same. In either case, the Stereographic Projection maps to a unique point \(P\) on the sphere, and the definition of the point at infinity remains unchanged.
+	
 	\begin{definition}[Neighbourhood of $\infty$]
 		The set: $\{\abs{z} > 1/\epsilon : \epsilon \in \mathbb{R}_{>0} \}$
 	\end{definition}
 	Note that since $\epsilon$ is a small positive number, $\abs{z} > 1/\epsilon$ corresponds to points far away from the unit circle, hence $P$ is close to $N$. 
 	
 	\textcolor{red}{Note: When referring to any point $z$, it is referring to a point in the finite plane. Points at infinity will be specifically mentioned.}
+	
+	\begin{definition}[Limit at Infinity]
+		\label{Limit at Infinity Definition - Complex}
+		Let \(f(z)\) be a function, and \(z, z_0 \in \mathbb{C}\).
+		\begin{align*}
+			\forall \epsilon \in \mathbb{R}_{>0}, \exists r \in \mathbb{R}_{>0}[\abs{z} > r \implies \abs{f(z)-z_0}<\epsilon] \iff \lim_{z\rightarrow \infty} f(z) = z_0
+		\end{align*}
+		That is, if \(\forall z\) in the neighbourhood of infinity implies \(\abs{f(z) - z_0} < \epsilon\), then \(\lim_{z \rightarrow \infty} f(z) = z_0\).
+	\end{definition}
 	
 	\begin{theorem}
 		\label{Properties of Limits at Infinity Theorem - Complex}
@@ -2453,6 +2464,24 @@
 	Alternatively, if we let \(w = f(z) \) and \(W = F(z)\), then the Chain Rule becomes:
 	\[ \dv{W}{z} = \dv{W}{w} \dv{w}{z }\]
 	Note: Although this looks like a fraction, it is not a fraction and should not be treated as such! (Logical inconsistency when infinitesimals when viewed as ratios.)
+	
+	\begin{theorem}[L'Hopital's Rule]
+		\label{L'Hopital's Rule - Complex}
+		Suppose \(f(z_0) = 0\) and \(g(z_0) = 0\), \(f'(z_0)\) and \(g(z_0)\) exists, with \(g'(z_0) \neq 0\). Then 
+		\begin{align*}
+			\lim_{z \rightarrow z_0} \frac{f(z)}{g(z)} = \frac{f'(z_0)}{g'(z_0)}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Let \(f(z_0) = 0\), \(g(z_0) = 0\), and \(z \neq z_0\).
+		\begin{align*}
+			\lim_{z \rightarrow z_0} \frac{f(z)}{g(z)}
+				&= \lim_{z \rightarrow z_0} \frac{\frac{f(z)-f(z_0)}{z-z_0}}{\frac{g(z)-g(z_0)}{z-z_0}}
+				= \lim_{\Delta z \rightarrow 0}
+				\frac{\frac{f(z_0 + \Delta z)-f(z_0)}{\Delta z}}{\frac{g(z_0 + \Delta z)-g(z_0)}{\Delta z}}
+				=\frac{f'(z_0)}{g'(z_0)}
+		\end{align*}
+	\end{proof}
 	
 	
 	\subsection{Exercises}
@@ -3233,6 +3262,7 @@
 	\end{definition}
 
 	\begin{theorem}
+		\label{Analytic implies Harmonic Theorem - Complex}
 		Let \(D\) be the domain of a function \(f(z) = u(x,y) + iv(x,y)  \).
 		\begin{align*}
 			f(z) \text{ is analytic in } D \implies u(x,y) \land v(x,y) \text{ are harmonic in } D
@@ -3251,6 +3281,17 @@
 			u_{xx} + u_{yy} &= 0 & v_{xx} + v_{yy} = 0
 		\end{align*}
 	\end{proof}
+
+	Note: The converse (\(\impliedby\)) is true for simply connected domains, hence, \cref{Analytic implies Harmonic Theorem - Complex} becomes \(\iff\) in simply connected domains. (R, Boas - Invitation to Complex Analysis. (1987) Section 19.)
+	
+	\begin{corollary}
+		Let \(F(x,y)\) is a real-valued function in a simply connected domain \(D\). Then there exists a function \(f(z)\) and \(g(z)\) in \(D\) such that \(f(z) = F(x,y) + iv(x,y)\) and \(g(z) = u(x,y) + iF(x,y)\). That is, there exists a function where the real part equals \(F\) and a function where the imaginary part equals \(F\).
+	\end{corollary}
+
+	\begin{definition}[Harmonic Conjugate]
+		\label{Harmonic Conjugate Definition - Complex}
+		If \(f(z) = u(x,y) + iv(x,y)\) is analytic in a domain \(D\), then \(v(x,y)\) is the harmonic conjugate of \(v(x,y)\). This is not to be confused with the complex conjugate.
+	\end{definition}
 	
 	\begin{example}
 		\label{Laplace's Equation (Polar) Exercise - Complex}
