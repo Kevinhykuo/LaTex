@@ -3446,7 +3446,7 @@
 		\end{tikzpicture}
 	\end{figure}
 
-	\Cref{Uniquely determined analytic functions Theorem - Complex} tells us that if such analytic continuation exists, then it is unique. Now if there exists \(f_3\) in \(D_3\) that is an analytic continuation of \(f_2\), then it is not necessarily true that \(f_3(z) = f_1(z)\) for all \(z \in D_1 \cap D_3\).
+	\Cref{Uniquely determined analytic functions Theorem - Complex} tells us that if such analytic continuation exists, then it is unique. Now if there exists \(f_3\) in \(D_3\) that is an analytic continuation of \(f_2\), then it is not necessarily true that \(f_3(z) = f_1(z)\) for all \(z \in D_1 \cap D_3\). (See \cref{f_1 neq f_3 in analytic continuation Example - Complex}.)
 	
 	\begin{definition}[Elements of a function]
 		\label{Elements of a function Definition - Complex}
@@ -3473,6 +3473,7 @@
 			\iff
 			\forall x \in R [f(x) \in \mathbb{R}]
 		\end{align*}
+		See \cref{Reflection Principle f(x) purely imaginary Example - Complex} for the case when \(f(x)\) is purely imaginary.
 	\end{theorem}
 	\begin{proof} 
 		Let \(f(z)\) and \(F(z)\) be analytic functions: 
@@ -3530,7 +3531,42 @@
 	
 	\subsection{Examples} 
 	\begin{example}
-		content...
+		\label{f_1 neq f_3 in analytic continuation Example - Complex}
+		Consider 
+		\begin{align*}
+			f_1(z) &= \sqrt{r} e^{i\theta / 2} & r>0,&\ 0<\theta<\pi \\
+			f_2(z) &= \sqrt{r} e^{i\theta / 2} & r>0,&\ \frac{\pi}{2}<\theta<2\pi \\
+			f_3(z) &= \sqrt{r} e^{i\theta / 2} & r>0,&\ \pi<\theta<\frac{5\pi}{2} 
+		\end{align*}
+		{\color{Grey}
+		It is clear that \(f_1, \ f_2, \ f_3\) are continuous and satisfies the Cauchy-Riemann equations throughout their domain of definition, since they have a derivative everywhere in their domain of definition. Hence, they are analytic continuations of each other. Let \(D_1, \ D_2\), and \(D_3\) be the domains of \(f_1, \ f_2\), and \(f_3\), respectively. Consider \(f_1\) and \(f_3\) in the domain \(D_1 \cap D_3\), and any \(z\) in the first quadrant of the complex plane. Then \(z = re^{i \theta} = re^{i(\theta + 2\pi)}\)
+		and we have
+		\begin{align*}
+			f_1(z) &= \sqrt{r} e^{i(\theta/2)}  &  0<\theta<\pi \\
+			f_3(z) &= \sqrt{r} e^{i(\theta/2 + \pi)}  & 0<\theta<\pi 
+		\end{align*}
+		Hence, 
+		\begin{align*}
+			f_1(z) &= \sqrt{r}[\cos(\theta/2) + i\sin(\theta/2)] &  0<\theta<\pi \\
+			f_3(z) &= \sqrt{r}[\cos(\theta/2 + \pi) + i\sin(\theta/2+\pi)] & 0<\theta<\pi \\
+				   &= - \sqrt{r}[\cos(\theta/2) + i\sin(\theta/2)] 
+		\end{align*}
+		Thus we can see that \(f_1 = -f_3\) in \(D_1 \cap D_3\).
+		}
+	\end{example}
+
+	\begin{example}
+		\label{Reflection Principle f(x) purely imaginary Example - Complex}
+		{\color{Grey}
+		Consider \cref{Reflection Principle Theorem - Complex}, but \(f(x)\) is purely imaginary \(\forall x \in \mathbb{R}\). We know that \(\impliedby\) holds, and that \(F(z) = \overline{f(\bar{z})}\) satisfies the Cauchy-Riemann equations. We have 
+		\begin{align*}
+			F(x) &= U(x,0) + iV(x,0) = u(x,0) - iv(x,0) = -iv(x,0) = -f(x)
+		\end{align*}
+		Hence
+		\begin{align*}
+			\overline{f(\bar{z})} = -f(z) \implies \overline{f(z)} = -f(\bar{z})
+		\end{align*}
+		}
 	\end{example}
 	
 	
