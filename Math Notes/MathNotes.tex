@@ -3620,11 +3620,53 @@
 		\label{Exponential Function Definiton - Complex}
 		Consider \(z \in \mathbb{C}\), the exponential function is defined:
 		\begin{align*}
-			f(z) = e^z = e{x + iy} = e^x [\cos(y) + i\sin(y)]
+			f(z) = e^z = e^{x + iy} = e^x [\cos(y) + i\sin(y)]
 		\end{align*}
 		Where \(y\) is taken in radians. 
 	\end{definition}
 	Note: This is not the same as the polar form of a complex number (\cref{Polar Form of z - Complex}).
+	
+	It is clear that the set of \(n\)-th roots of \(e\):
+	\[\{e^{1/n} : n \in \mathbb{N} \} \]
+	and 
+	\begin{align*}
+		\abs{e^z} &= e^x & \operatorname{arg}(e^z) &= y + 2n\pi & n \in \mathbb{N}\cup \{0\}
+	\end{align*}
+	The exponential function follows from the usual properties of exponentials. We also know that 
+	\begin{align*}
+		\dv{z} e^z &= e^z & \forall z \in \mathbb{C}
+	\end{align*}
+	so, \(e^z\) is entire. We should also note that \(e^z\) is periodic due to \(e^{iy}\).
+	
+	\section{Logarithmic Function} \label{Logarithmic Function Section - Complex}
+	
+	\begin{definition}[Logarithmic Function]
+		\label{Logarithmic Function Definition - Complex}
+		Consider any \(z \in \mathbb{C}\) in exponential form:
+		\begin{align*}
+			\log(z) &= \ln(r) + i(\theta + 2n\pi) = \ln(\abs{z}) + i\arg(z) & n \in \mathbb{Z }
+		\end{align*}
+		Note: This is a multi-valued function.
+	\end{definition}
+	
+	\begin{definition}[Principal Value of the Logarithmic Function]
+		\label{Principal Value of the Logarithmic Function Definition - Complex}
+		Let \(z \in \mathbb{C}\), the principal value of the logarithmic function is denoted by \(\operatorname{Log}(z)\).
+		\begin{align*}
+			\operatorname{Log}(z) = \ln(r) + i\theta
+		\end{align*}
+	\end{definition}
+	
+	It is clear that 
+	\[\log(z) = \operatorname{Log}(z) + 2n \pi \qquad n \in \mathbb{Z}\]
+	
+	and for any \(z\) on the real axis, the logarithmic function reduces to 
+	\[\operatorname{Log}(z) = \ln(x) \qquad x \in \mathbb{R}\]
+	
+	\subsection{Branches and Derivatives of Logarithms} \label{Branches and Derivatives of Logarithms Subsection - Complex}
+	
+	
+	
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
