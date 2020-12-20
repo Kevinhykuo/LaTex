@@ -3746,8 +3746,56 @@
 
 	\subsection{Identities of Logarithms} \label{Identities of Logarithms Subsection - Complex}
 	
+	Let \(z_1, z_2 \in \mathbb{C}\), then 
+	\begin{align*}
+		\log(z_1 z_2) = \log(z_1) + \log(z_2)
+	\end{align*}
+	can be interpreted as 
+	\begin{align*}
+		\arg(z_1 z_2) = \arg(z_1) + \arg(z_2)
+	\end{align*}
+	therefore
+	\begin{align*}
+		\ln\abs{z_1 z_2} + i\arg(z_1 z_2) = (\ln\abs{z_1} + i\arg(z_1)) + (\ln\abs{z_2} + i\arg(z_2))
+	\end{align*}
+	Rest of the identities are the same as for elements in \(\mathbb{R}\), but beware of branches and arguments.
 	
+	\begin{example}
+		Show \(\forall z_1, z_2 \in \mathbb{C}\)
+		\begin{align*}
+			\operatorname{Log}(z_1 z_2) &= \operatorname{Log}(z_1) + \operatorname{Log}(z_2) + 2N\pi i & N &\in \{0, \pm 1\}
+		\end{align*}
+		{\color{Grey}
+		Consider:
+		\begin{align*}
+			\log(z_1 z_2) 
+			&= \ln\abs{z_1 z_2} + i\arg(z_1 z_2) \\
+			&= \ln(r_1) + \ln(r_2) + i\arg(z_1) + i\arg(z_2) \\
+			&= \ln(r_1) + \ln(r_2) + i\theta_1 + i\theta_2 + 2n\pi i & \ n\in \mathbb{Z} \\
+			&= \ln(r_1) + \ln(r_2) + i\operatorname{Arg}(z_1) + i\operatorname{Arg}(z_2) + 2n \pi i & \ n\in \mathbb{Z}
+		\end{align*}
+		Then, since \(-\pi < \operatorname{Arg}(z_1)<\pi\) and \(-\pi < \operatorname{Arg}(z_2)<\pi\):
+		\begin{align*}
+			\operatorname{Log}(z_1 z_2) 
+			&= \ln(r_1) + \ln(r_2) + i\operatorname{Arg}(z_1) + i\operatorname{Arg}(z_2) + 2N \pi i & \ N\in \{0, \pm 1\} \\
+			&=\operatorname{Log}(z_1) + \operatorname{Log}(z_2) + 2N \pi i & \ N\in \{0, \pm 1\} \\
+		\end{align*}
+		}
+	\end{example}
+
+	\subsection{Power Function} \label{Power Function Subsection - Complex}
 	
+	\begin{definition}[Power Function]
+		\label{Power Function Definition - Complex}
+		Let \(z, c \in \mathbb{C}\) and \(z \neq 0\). The Power Function: 
+		\begin{align*}
+			z^c &= e^{c \ln(z)} & z\neq 0
+		\end{align*}
+	\end{definition}
+	The logarithm is multi-valued \(\implies\) the power function is multi-valued.
+
+
+
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
