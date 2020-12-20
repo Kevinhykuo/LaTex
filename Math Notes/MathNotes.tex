@@ -3778,7 +3778,7 @@
 		\begin{align*}
 			\operatorname{Log}(z_1 z_2) 
 			&= \ln(r_1) + \ln(r_2) + i\operatorname{Arg}(z_1) + i\operatorname{Arg}(z_2) + 2N \pi i & \ N\in \{0, \pm 1\} \\
-			&=\operatorname{Log}(z_1) + \operatorname{Log}(z_2) + 2N \pi i & \ N\in \{0, \pm 1\} \\
+			&=\operatorname{Log}(z_1) + \operatorname{Log}(z_2) + 2N \pi i & \ N\in \{0, \pm 1\} 
 		\end{align*}
 		}
 	\end{example}
@@ -3787,15 +3787,35 @@
 	
 	\begin{definition}[Power Function]
 		\label{Power Function Definition - Complex}
-		Let \(z, c \in \mathbb{C}\) and \(z \neq 0\). The Power Function: 
+		Let \(z, c \in \mathbb{C}\). The Power Function: 
 		\begin{align*}
-			z^c &= e^{c \ln(z)} & z\neq 0
+			z^c &= e^{c \log(z)} & z\neq 0
+		\end{align*}
+		Likewise
+		\begin{align*}
+			c^z &= e^{z \log(c)} & c\neq 0
 		\end{align*}
 	\end{definition}
 	The logarithm is multi-valued \(\implies\) the power function is multi-valued.
+	
+	The principle branch of the Power Function is \(\log\) being replaced by \(\operatorname{Log}\):
+	\begin{align*}
+		z^c &= e^{c \operatorname{Log}(z)} & z\neq 0 \\
+		c^z &= e^{z \operatorname{Log}(c)} & c\neq 0
+	\end{align*}
 
-
-
+	When a branch is specified, \(\log(z)\) becomes single-valued and analytic. Hence the derivatives: 
+	\begin{align*}
+		\dv{z} z^c &= \dv{z} e^{c\log(z)} = \frac{c}{z} e^{c \log(z)} = cz^{z-1}
+		& \abs{z}>0,& \ \alpha < \arg(z) < \alpha + 2 \pi, \ \alpha \in \mathbb{R}
+	\end{align*}
+	When value of \(\log(c)\) is specified, \(c^z\) is entire function of \(z\) and
+	\begin{align*}
+		\dv{z}c^z = \dv{z}e^{z\log(c)} = e^{z\log(c)} \log(c) = c^z \log(c)
+	\end{align*}
+	
+	\section{Trignometric Functions} \label{Trignometric Functions Section - Complex}
+	
 	
 	
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}

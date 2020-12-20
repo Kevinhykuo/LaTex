@@ -60,6 +60,7 @@
 \contentsline {subsection}{\numberline {14.2.1}Branches and Derivatives of Logarithms}{82}{subsection.14.2.1}%
 \contentsline {subsection}{\numberline {14.2.2}Identities of Logarithms}{83}{subsection.14.2.2}%
 \contentsline {subsection}{\numberline {14.2.3}Power Function}{84}{subsection.14.2.3}%
+\contentsline {section}{\numberline {14.3}Trignometric Functions}{84}{section.14.3}%
 \contentsline {chapter}{\numberline {15}Conformal Mapping}{85}{chapter.15}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{87}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{89}{part.6}%
