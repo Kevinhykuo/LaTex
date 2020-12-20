@@ -61,6 +61,7 @@
 \contentsline {subsection}{\numberline {14.2.2}Identities of Logarithms}{83}{subsection.14.2.2}%
 \contentsline {subsection}{\numberline {14.2.3}Power Function}{84}{subsection.14.2.3}%
 \contentsline {section}{\numberline {14.3}Trigonometric Functions}{85}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Zeros and Singularities}{85}{subsection.14.3.1}%
 \contentsline {chapter}{\numberline {15}Conformal Mapping}{87}{chapter.15}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{89}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{91}{part.6}%

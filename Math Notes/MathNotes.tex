@@ -3826,10 +3826,43 @@
 			\sin(z) &= \frac{e^{iz} - e^{-iz}}{2i} 
 		\end{align*}
 	\end{definition}
+	Sine and cosine are entire functions as \(e^{iz}\) and \(e^{-iz}\) are entire.
 	
+	Taking the derivatives:
+	\begin{align*}
+		\dv{z} e^{iz} = ie^{iz}
+		&\implies \left(\dv{z} \sin(z) = \cos{z} \right) \land \left( \dv{z} \cos(z) = -\sin(z)\right)
+	\end{align*}
+	It's also easy to see that:
+	\begin{align*}
+		\sin(-z) &= \sin(z)  & \cos(-z) &= -\cos(z) & e^{iz} &= \cos(z) + i\sin(z)
+	\end{align*}
+	The usual trigonometric identities apply.
 	
+	Now suppose \(y \in \mathbb{R}\), and take the hyperbolic functions:
+	\begin{align*}
+		\sinh(y) &= \frac{e^y - e^{-y}}{2} & \cosh(y) &= \frac{e^y + e^{-y}}{2}
+	\end{align*}
+	Then we get: 
+	\begin{align*}
+		\sin(iy) &= i\sinh(y) & \cos(iy) &= \cosh(y)
+	\end{align*}
+
+	If we let \(z = x + iy\), we can define:
+	\begin{align*}
+		\sin(z) &= \sin(x) \cosh(y) + i\cos(x) \sinh(y) \\
+		\cos(z) &= \cos(x) \cosh(y) - i\sin(x) \sinh(y)
+	\end{align*}
+	and that 
+	\begin{align*}
+		\abs{\sin(z)}^2 &= \sin[2](x) + \sinh[2](y)\\
+		\abs{\cos(z)}^2 &= \cos[2](x) + \sinh[2](y)
+	\end{align*}
+	Note: Unlike in \(\mathbb{R}\) where sine and cosine are bounded by \(1\) and \(-1\), 
+	it is clear that sine and cosine are not bounded in the complex plane, since \(\sinh\) is unbounded for all values of \(y\). 
 	
-	
+	\subsection{Zeros and Singularities} \label{Zeros and Singularities (Trig) Subsection - Complex}
+
 	
 	
 	
