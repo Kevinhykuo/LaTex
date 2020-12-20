@@ -3665,6 +3665,87 @@
 	
 	\subsection{Branches and Derivatives of Logarithms} \label{Branches and Derivatives of Logarithms Subsection - Complex}
 	
+	\(\log(z)\) is a multi-valued function. Let \(\alpha \in \mathbb{R}\):
+	\begin{align*}
+		\log(z) &= \ln(r) + i \theta = u(r, \theta) + i v(r,\theta) &
+			r>0, \alpha < \theta < \alpha + 2 \pi
+	\end{align*}
+	
+	Note: If \(\log(z)\) is defined on \(\theta = \alpha\), then it is not continuous there, as there is a discontinuity between points near \(\alpha\) and \(\alpha + 2\pi\).
+	
+	The first order partials of \(u\) and \(v\) are continuous in the domain, and satisfies the Cauchy-Riemann equations:
+	\begin{align*}
+		ru_r &= v_\theta & u_\theta &= -rv_\theta
+	\end{align*}
+	So its derivative exists everywhere in the domain. 
+	\begin{align*}
+		\dv{z} \log(z) &= e^{-i\theta} (u_r + iv_r) = e^{i\theta} \left(\frac{1}{r} + i0\right) = \frac{1}{re^{i\theta}} \\
+		&\implies \dv{z} \log(z) = \frac{1}{z} & \abs{z}>0,& \ \alpha < \arg(z) < \alpha + 2\pi\\
+		&\implies \dv{z} \operatorname{Log}(z) = \frac{1}{z} & \abs{z}>0,& \ -\pi < \operatorname{Arg}(z) < \pi
+	\end{align*}
+
+	\begin{definition}[Branch]
+		\label{Branch Definition - Complex}
+		A branch is a single-valued function \(F\) of a multi-valued function \(f\). \(F\) is analytic throughout some domain of \(f\) and assumes the one of the values of \(f\).
+	\end{definition}
+	
+	\begin{definition}[Principal Branch]
+		\label{Principal Branch Definition - Complex}
+		\begin{align*}
+			\operatorname{Log}(z) &= \ln(r) + i\theta & r>0, \ -\pi < \theta < \pi
+		\end{align*}
+	\end{definition}
+
+	\begin{definition}[Branch Cut]	
+		\label{Branch Cut Definition - Complex}
+		A portion of a line or curved introduced to define a branch \(F\) of a multi-valued function \(f\). Points on the branch cut of \(F\) are singular points of \(F\).
+	\end{definition}
+
+	\begin{definition}[Branch Point]
+		\label{Branch Point Definition - Complex}
+		A singular point common to all branch cuts of a multi-valued function \(f\).
+	\end{definition}
+
+	\begin{example}
+		The branch cut for \(\operatorname{Log}(z) = \ln(r) + i\theta\), \(r>0,\ -\pi<\theta<\pi\), is the origin and \(\theta = \pi\).
+		
+		Branch points for all branches of \(\log(z)\) is the origin.
+	\end{example}
+	
+	Different branches may result in different values.
+	\begin{example}
+		Consider \(\log(i^2)\) in the branch: 
+		\begin{align*}
+			\log(z) &= \ln(r) + i\theta & r>0, \ \frac{\pi}{4}<\theta<\frac{9\pi}{4}
+		\end{align*}
+		Then
+		\begin{align*}
+			\log(i^2) &= \log(-1) = \ln(1) + i\pi = i\pi \\
+			2\log(i) &= 2\left(\ln(1) + i\frac{\pi}{2}\right) = \pi i
+		\end{align*}
+		Therefore
+		\begin{align*}
+			\log(i^2) &= 2\log(i) & r>0, \ \frac{\pi}{4}<\theta<\frac{9\pi}{4}
+		\end{align*}
+		Now consider the branch:
+		\begin{align*}
+			\log(z) &= \ln(r) + i\theta & r>0, \ \frac{3\pi}{4}<\theta<\frac{11\pi}{4}
+		\end{align*}
+		{\color{Grey}
+		Then 
+		\begin{align*}
+			\log(i^2) &= \log(-1) = \ln(1) + i\pi = i\pi\\
+			2\log(i) &= 2\left(\ln(1) + i\frac{5\pi}{2}\right) = 5\pi i
+		\end{align*}
+		Therefore,
+		\begin{align*}
+			\log(i^2) &\neq 2\log(i) & r>0, \ \frac{3\pi}{4}<\theta<\frac{11\pi}{4}
+		\end{align*}
+		}
+	\end{example}
+
+	\subsection{Identities of Logarithms} \label{Identities of Logarithms Subsection - Complex}
+	
 	
 	
 	
