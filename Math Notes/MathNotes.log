@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  19 DEC 2020 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  19 DEC 2020 19:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1740,73 +1740,71 @@ mbolD/m/n/12 ^^@
 Chapter 14.
 [81
 
-] [82] [83] [84]
+] [82] [83] [84] [85] [86
+
+]
 Chapter 15.
-[85
-
-] [86
-
-] [87] [88
+[87] [88
 
 ] [89] [90
 
-] [91] [92] [93
+] [91] [92
 
-] [94
+] [93] [94] [95
 
-] [95] [96
+] [96
+
+] [97] [98
 
 ]
 Chapter 16.
-[97] [98
-
-] [99] [100
+[99] [100
 
 ] [101] [102
 
 ] [103] [104
 
-]
-Chapter 17.
-[105] [106
+] [105] [106
 
 ]
-Chapter 18.
+Chapter 17.
 [107] [108
 
 ]
-Chapter 19.
+Chapter 18.
 [109] [110
 
 ]
-Chapter 20.
+Chapter 19.
 [111] [112
 
 ]
-Chapter 21.
+Chapter 20.
 [113] [114
 
 ]
-Chapter 22.
+Chapter 21.
 [115] [116
 
 ]
-Chapter 23.
+Chapter 22.
 [117] [118
 
-] [119] [120
+]
+Chapter 23.
+[119] [120
 
 ] [121] [122
 
+] [123] [124
+
 ]
 Chapter 24.
-[123] [124
+[125] [126
 
 ]
 Chapter 25.
-[125] [126
-
-] [127] [128
+[127] [128
 
 ] [129] [130
 
@@ -1816,33 +1814,35 @@ Chapter 25.
 
 ] [135] [136
 
+] [137] [138
+
 ]
 Chapter 26.
-[137] [138
+[139] [140
 
-] [139
+] [141
 
-] [140
+] [142
 
-] [141]
+] [143]
 
-(./MathNotes.bbl [142
+(./MathNotes.bbl [144
 
-]) [143] (./MathNotes.aux
+]) [145] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 332166B6EB0329FF054296048E535E6F;5864.
+(rerunfilecheck)             Checksum: 87B2DBC9EA11EBD2F8B8D8A25A5A44DA;5865.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39694 strings out of 479383
- 890230 string characters out of 5869387
- 1327135 words of memory out of 5000000
- 55429 multiletter control sequences out of 15000+600000
+ 39701 strings out of 479383
+ 890415 string characters out of 5869387
+ 1327250 words of memory out of 5000000
+ 55432 multiletter control sequences out of 15000+600000
  445613 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,15n,98p,726b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1874,10 +1874,10 @@ ts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (155 pages, 593155 bytes).
+Output written on MathNotes.pdf (157 pages, 594285 bytes).
 PDF statistics:
- 2189 PDF objects out of 2487 (max. 8388607)
- 1951 compressed objects within 20 object streams
- 553 named destinations out of 1000 (max. 500000)
+ 2201 PDF objects out of 2487 (max. 8388607)
+ 1961 compressed objects within 20 object streams
+ 557 named destinations out of 1000 (max. 500000)
  925 words of extra memory for PDF output out of 10000 (max. 10000000)
 
