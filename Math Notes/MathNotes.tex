@@ -916,7 +916,11 @@
 		\end{align*}
 		\label{Trig Identities - Complex}
 	\end{definition}
-
+	It is easy to prove \(\forall z_1, z_2 \in \mathbb{C}\): 
+	\begin{align*}
+		\overline{z_1 + z_2} &= \overline{z_1} + \overline{z_2} &
+		\overline{z_1 \cdot z_2} &= \overline{z_1} \cdot \overline{z_2}
+	\end{align*}
 
 	\section{Operations as Transformations} \label{Operations as Transformations Section - Complex}
 	
@@ -3867,12 +3871,229 @@
 	
 	\subsection{Zeros and Singularities} \label{Zeros and Singularities (Trig) Subsection - Complex}
 	
+	\begin{definition}[Zero (function)]
+		\label{Zero (function) Definition - Complex}
+		Let \(f(z)\) be a function. A zero of \(f\) is a point \(z_0\) such that 
+		\[f(z_0) = 0\]
+	\end{definition}
 	
+	\begin{theorem}
+		The zeros of \(\cos(z)\) and \(\sin(z)\) for \(z \in \mathbb{C}\) is the same as the zeros of \(\cos(x)\) and \(\sin(x)\) for \(x \in \mathbb{R}\), that is 
+		\begin{align*}
+			&\forall x \in \mathbb{R} \forall z \in \mathbb{C} \forall n \in \mathbb{Z}
+			\left[(\cos(x) = 0) \land (\cos(z) = 0) \iff z = x = \frac{\pi}{2} + n \pi \right] \\
+			&\forall x \in \mathbb{R} \forall z \in \mathbb{C} \forall n \in \mathbb{Z}
+			\left[(\sin(x) = 0) \land (\sin(z) = 0) \iff z = x = n\pi \right]
+		\end{align*}
+	\end{theorem}	
+	\begin{proof}
+		Let \(z = x + iy\) and consider \(\sin(z) = 0\):
+		\begin{align*}
+			\sin(z) = 0 
+			&\implies \sin[2](x) + \sinh[2](y) = 0 & \abs{\sin(z)}^2 = \sin[2](x) + \sinh[2](y) \\
+			&\implies [\sin(x) = 0] \land [\sinh(y) = 0] \\
+			&\implies [x = n\pi] \land [y = 0] & n \in \mathbb{Z}\\
+			&\implies z = x = n \pi & n \in \mathbb{Z}
+		\end{align*}
+		As for cosine, we know that:
+		\begin{align*}
+			\cos(z) = \sin \left(z + \frac{\pi}{2}\right)
+		\end{align*}
+		Thus
+		\begin{align*}
+			\cos(z) = 0 &\implies z = x = n \pi + \frac{\pi}{2} & n \in \mathbb{Z}
+		\end{align*}
+	\end{proof}
 
+	\begin{example}
+		Show \(\forall z \in \mathbb{C}\):\newline
+		The Reflection Principle:
+		\begin{align*}
+			\forall z \in D\subset \mathbb{C} [\overline{f(z)} = f(\bar{z})] \iff \forall x \in \mathbb{R}[f(x) \in \mathbb{R}]
+		\end{align*}
+		\begin{itemize}
+			\item[(a)] \(\overline{\cos(z)} = \cos(\bar{z})\) 
+			\begin{proof}
+			{\color{Grey}
+				It is clear that \(\forall x \in \mathbb{R}\), \(\sin(x) \in \mathbb{R}\). The result follows from the Reflection Principle. Also
+				\begin{align*}
+					\overline{\sin(z)} &= \overline{\frac{z - \bar{z}}{2i}} = \frac{\bar{z} 
+						- z}{2i} = \sin(\bar{z})
+				\end{align*}
+			}
+			\end{proof}
+			
+			\item[(b)] \(\overline{\sin(z)} = \sin(\bar{z})\) 
+			\begin{proof}
+			{\color{Grey}
+				It is clear that \(\forall x \in \mathbb{R}\), \(\cos(x) \in \mathbb{R}\). The result follows from the Reflection Principle. Also
+				\begin{align*}
+					\overline{\cos(z)} &= \overline{\frac{z + \bar{z}}{2}} = \frac{\bar{z} 
+						+ z}{2} = \cos(\bar{z})
+				\end{align*}
+			}
+			\end{proof}
+		\end{itemize}
+	\end{example}
+
+	\begin{example}
+		Show: 
+		\begin{itemize}
+			\item[(a)] \(\forall z \in \mathbb{C}[\overline{\cos(iz)} = \cos(i\bar{z})]\) 
+			\begin{proof}
+			{\color{Grey}
+				\begin{align*}
+					\overline{\cos(iz)} 
+					&= \overline{\frac{iz + \overline{iz}}{2}} = \frac{\overline{iz} + iz}{2} = \frac{-i\bar{z} + iz}{2} = i\frac{z - \bar{z}}{2} = i \Im{z}\\
+					\cos(i\bar{z}) 
+					&= \frac{i\bar{z} + \overline{i\bar{z}}}{2} = \frac{i\bar{z} - i z}{2} = i\frac{\bar{z} - z}{2} = i\Im{z}
+				\end{align*}
+				Hence \(\forall z \in \mathbb{C}\)
+				\begin{align*}
+					\overline{\cos(iz)} = \cos(i\bar{z})
+				\end{align*}
+			}
+			\end{proof}
+			
+			\item[(b)] \(\forall z \in \mathbb{C} \forall n \in \mathbb{Z} [\overline{\sin(iz)} = \sin(i\bar{z}) \iff z = n \pi i]\) 
+			\begin{proof}
+			{\color{Grey}
+				\begin{align*}
+					\overline{\sin(iz)} 
+					&= \overline{\frac{iz - \overline{iz}}{2i}} = \frac{-i\bar{z} - iz}{2i} = -\frac{z + \bar{z}}{2} = -\Re{z} \\
+					\sin(i\bar{z})
+					&= \frac{i\bar{z} - \overline{i\bar{z}}}{2i} = \frac{i \bar{z} + iz}{2i} = \frac{z + \bar{z}}{2} = \Re{z}
+				\end{align*}
+				We know that 
+				\begin{align*}
+					\Re{z} = -\Re{z} \implies \Re{z} = 0 \implies \overline{\sin(iz)} = \sin(i\bar{z}) = 0 \iff z = n\pi i
+				\end{align*}
+			}
+			\end{proof}
+		\end{itemize}
+	\end{example}
+
+	\section{Hyperbolic Functions} \label{Hyperbolic Functions Section - Complex}
 	
+	\begin{definition}[Hyperbolic Sine and Cosine Functions]
+		\label{Hyperbolic Sine and Cosine Functions Definition - Complex}
+		Let \(z \in \mathbb{C}\):
+		\begin{align*}
+			\sinh(z) &= \frac{e^z - e^{-z}}{2} & \cosh(z) &= \frac{e^z + e^{-z}}{2}
+		\end{align*}
+	\end{definition}
 	
+	It is clear that the derivatives: 
+	\begin{align*}
+		\dv{z} \sinh(z) &= \cosh(z) & \dv{z} \cosh(z) = \sinh(z)
+	\end{align*}
 	
+	The relationships with sine and cosine:
+	\begin{align*}
+		-i\sinh(iz) &= \sin(z) & \cosh(iz) &= \cos(z) \\
+		-i\sin(iz) &= \sinh(z) & \cos(iz) &= \cosh(z)
+	\end{align*}
 	
+	Hence in the complex plane, \(\sinh\) and \(\cosh\) are periodic with period \(2\pi i\).
+	
+	Identities: 
+	\begin{align*}
+		\sinh(-z) &= -\sinh(z) & \cosh(-z) &= \cosh(z) & \cosh[2](z) - \sinh[2](z) = 1 
+	\end{align*}
+	\begin{align*}
+		\sinh(z_1 + z_2) &= \sinh(z_1) \cosh(z_2) + \cosh(z_1) \sinh(z_2) \\
+		\cosh(z_1 + z_2) &= \cosh(z_2)\cosh(z_2) + \sinh(z_1)\sinh(z_2) \\
+		\\
+		\sinh(z) &= \sinh(x) \cos(y) + i \cosh(x) \sin(y) \\
+		\cosh(z) &= \cosh(x) \cos(y) + i \sinh(x) \sin(y) \\
+		\\
+		\abs{\sinh(z)}^2 &= \sinh[2](x) + \sin[2](y) \\
+		\abs{\cosh(z)}^2 &= \sinh[2](x) + \cos[2](y)
+	\end{align*}
+	
+	\begin{theorem}
+		\label{Zeros of Hyperbolic Sine and Cosine Theorem - Complex}
+		The zeros of hyperbolic zine and cosine:
+		\begin{align*}
+			\sinh(z) = 0 &\iff z = n \pi i & n \in \mathbb{Z} \\
+			\cosh(z) = 0 &\iff z = \left(\frac{\pi}{2} + n\pi\right)i & n \in \mathbb{Z}
+		\end{align*}
+	\end{theorem}
+
+	\begin{example}
+		Show: 
+		\begin{itemize}
+			\item[(a)] \(\sinh(z + \pi i) = -\sinh(z)\)
+			\begin{proof}
+				{\color{Grey}
+					\begin{align*}
+						\sinh(z + \pi i) 
+						&= \frac{e^{z + \pi i} - e^{-z - \pi i}}{2}
+						 = \frac{-e^z + e^{-z}}{2}
+						 = -\frac{e^z - e^{-z}}{2} = -\sinh(z)
+					\end{align*}
+				}
+			\end{proof}
+			\item[(b)] \(\cosh(z + \pi i) = - \cosh(z) \)
+			\begin{proof}
+				{\color{Grey}
+				\begin{align*}
+					\cosh(z + \pi i) 
+					&= \frac{e^{z + \pi i} + e^{-z - \pi i}}{2} 
+					 = -\frac{e^z + e^{-z}}{2} = -\cosh(z)
+				\end{align*}
+				}
+			\end{proof}
+			\item[(c)] \(\tanh(z + \pi i) = \tanh(z)\)
+			\begin{proof}
+				{\color{Grey}
+				\begin{align*}
+					\tanh(z + \pi i) = \frac{\sinh(z + \pi i)}{\cosh(z + \pi i)} = \frac{-\sinh(z)}{-\cosh(z)} = \tanh(z)
+				\end{align*}
+				}
+			\end{proof}
+		\end{itemize}
+	\end{example}
+	
+	\begin{example}
+		Show \(\forall z \in \mathbb{C}\):
+		\begin{align*}
+			\overline{\sinh(z)} &= \sinh(\bar{z}) & \overline{\cosh(z)} &= \cosh(\bar{z}) &
+			\forall z \neq 0 &\left[\overline{\tanh(z)} = \tanh(\bar{z})\right]
+		\end{align*}
+		\begin{proof}
+		{\color{Grey}
+			We can see that \(\forall x \in \mathbb{R}\), \(\sinh(x) \in \mathbb{R}\) and \(\cosh(x) \in \mathbb{R}\), so we can conclude from the Reflection Principle (\cref{Reflection Principle Theorem - Complex}) that \(\forall z \in \mathbb{C}\):
+			\begin{align*}
+				\overline{\sinh(z)} &= \sinh(\bar{z}) & \overline{\cosh(z)} &= \cosh(\bar{z})
+			\end{align*}
+			Thus it follows that 
+			\begin{align*}
+				\forall z \neq 0 &\left[\overline{\tanh(z)} = \tanh(\bar{z})\right]
+			\end{align*}
+		}
+		\end{proof}
+	\end{example}
+	
+	\section{Inverse Trigonometric and Hyperbolic Functions} \label{Inverse Trigonometric and Hyperbolic Functions Section - Complex}
+	
+	\begin{theorem}
+		\label{Inverse Trigonometric Functions Definition - Complex}
+		Let \(z \in \mathbb{C}\):
+		\begin{align*}
+			\sin[-1](z) &= -i \log[iz + (1-z^2)^{1/2}] \\
+			\cos[-1](z) &= -i \log[z + i(i-z^2)^{1/2}] \\
+			\tan[-1](z) &= \frac{i}{2} \log\left(\frac{i + z}{i - z}\right)
+		\end{align*}
+		\(\cos[-1](z)\) and \(\tan[-1](z)\) are multi-valued. All inverse trigonometric functions become single-valued and analytic when in specific branches of the square root and logarithmic functions. 
+	\end{theorem}
+	\begin{proof}
+	\underline{\(\sin[-1](z) = -i \log[iz + (1-z^2)^{1/2}] \)} \newline
+	Let \(w = \sin[-1](z)\) whenever \(z = \sin(w)\)
+	\begin{align*}
+		h
+	\end{align*}
+	\end{proof}
 	
 	
 	

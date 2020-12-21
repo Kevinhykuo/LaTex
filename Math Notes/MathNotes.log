@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  19 DEC 2020 22:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  20 DEC 2020 19:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1653,49 +1653,52 @@ LaTeX Font Warning: Command \Large invalid in math mode on input line 746.
 [38 <./tikz/MathNotes-figure5.pdf>]
 ===== Image 'tikz/MathNotes-figure7' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 957.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 961.
 
 ===== Image 'tikz/MathNotes-figure8' is up-to-date. ======
-[39 <./tikz/MathNotes-figure6.pdf> <./tikz/MathNotes-figure7.pdf> <./tikz/MathN
-otes-figure8.pdf>]
+
+Underfull \vbox (badness 4832) has occurred while \output is active []
+
+ [39 <./tikz/MathNotes-figure6.pdf>]
 ===== Image 'tikz/MathNotes-figure9' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1022.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1026.
 
 ===== Image 'tikz/MathNotes-figure10' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure11' is up-to-date. ======
+[40 <./tikz/MathNotes-figure7.pdf> <./tikz/MathNotes-figure8.pdf> <./tikz/MathN
+otes-figure9.pdf> <./tikz/MathNotes-figure10.pdf>]
 ===== Image 'tikz/MathNotes-figure12' is up-to-date. ======
-[40 <./tikz/MathNotes-figure9.pdf> <./tikz/MathNotes-figure10.pdf> <./tikz/Math
-Notes-figure11.pdf>]
 ===== Image 'tikz/MathNotes-figure13' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure14' is up-to-date. ======
+[41 <./tikz/MathNotes-figure11.pdf> <./tikz/MathNotes-figure12.pdf> <./tikz/Mat
+hNotes-figure13.pdf>]
 ===== Image 'tikz/MathNotes-figure15' is up-to-date. ======
-[41 <./tikz/MathNotes-figure12.pdf> <./tikz/MathNotes-figure13.pdf> <./tikz/Mat
-hNotes-figure14.pdf>] [42 <./tikz/MathNotes-figure15.pdf>]
+[42 <./tikz/MathNotes-figure14.pdf> <./tikz/MathNotes-figure15.pdf>]
 ===== Image 'tikz/MathNotes-figure16' is up-to-date. ======
 [43 <./tikz/MathNotes-figure16.pdf>] [44]
 Chapter 13.
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1416.
+age 1 undefined on input line 1420.
 
 [45
 
 ]
 ===== Image 'tikz/MathNotes-figure17' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1487.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1491.
 
 ===== Image 'tikz/MathNotes-figure18' is up-to-date. ======
 [46 <./tikz/MathNotes-figure17.pdf> <./tikz/MathNotes-figure18.pdf>]
 ===== Image 'tikz/MathNotes-figure19' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1559.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1563.
 
 ===== Image 'tikz/MathNotes-figure20' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure21' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1631.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1635.
 
 ===== Image 'tikz/MathNotes-figure22' is up-to-date. ======
 [47 <./tikz/MathNotes-figure19.pdf> <./tikz/MathNotes-figure20.pdf>] [48 <./tik
@@ -1704,11 +1707,11 @@ z/MathNotes-figure21.pdf> <./tikz/MathNotes-figure22.pdf>] [49] [50]
 [51] [52 <./tikz/MathNotes-figure23.pdf>] [53] [54]
 ===== Image 'tikz/MathNotes-figure24' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2081.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2085.
 
 ===== Image 'tikz/MathNotes-figure25' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2108.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2112.
 
 ===== Image 'tikz/MathNotes-figure26' is up-to-date. ======
 [55 <./tikz/MathNotes-figure24.pdf> <./tikz/MathNotes-figure25.pdf> <./tikz/Mat
@@ -1721,14 +1724,14 @@ hNotes-figure26.pdf>] [56]
 ===== Image 'tikz/MathNotes-figure29' is up-to-date. ======
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 3177.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 3181.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 3177.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 3181.
 
 
-Overfull \hbox (5.51305pt too wide) in paragraph at lines 3197--3198
+Overfull \hbox (5.51305pt too wide) in paragraph at lines 3201--3202
 []\OT1/cmr/bx/n/12 Example 13.6.2 \OT1/cmr/m/n/12 (De-ter-min-ing an-a-lyt-ic-i
 ty us-ing Cauchy-Rie-mann equa-tions) []\OT1/cmr/m/sl/12 Con-sider $\OML/cmm/m/
 it/12 f\OMX/MnSymbolE/m/n/12 ˆ\OML/cmm/m/it/12 z\OMX/MnSymbolE/m/n/12  \U/MnSy
@@ -1743,75 +1746,71 @@ mbolD/m/n/12 ^^@
 Chapter 14.
 [81
 
-] [82] [83] [84] [85] [86
+] [82] [83] [84] [85] [86] [87] [88] [89] [90
 
 ]
 Chapter 15.
-[87] [88
+[91] [92
 
-] [89] [90
+] [93] [94
 
-] [91] [92
+] [95] [96
 
-] [93] [94] [95
+] [97] [98] [99
 
-] [96
-
-] [97] [98
-
-]
-Chapter 16.
-[99] [100
+] [100
 
 ] [101] [102
 
-] [103] [104
+]
+Chapter 16.
+[103] [104
 
 ] [105] [106
 
+] [107] [108
+
+] [109] [110
+
 ]
 Chapter 17.
-[107] [108
-
-]
-Chapter 18.
-[109] [110
-
-]
-Chapter 19.
 [111] [112
 
 ]
-Chapter 20.
+Chapter 18.
 [113] [114
 
 ]
-Chapter 21.
+Chapter 19.
 [115] [116
 
 ]
-Chapter 22.
+Chapter 20.
 [117] [118
 
 ]
-Chapter 23.
+Chapter 21.
 [119] [120
 
-] [121] [122
+]
+Chapter 22.
+[121] [122
 
-] [123] [124
+]
+Chapter 23.
+[123] [124
+
+] [125] [126
+
+] [127] [128
 
 ]
 Chapter 24.
-[125] [126
+[129] [130
 
 ]
 Chapter 25.
-[127] [128
-
-] [129] [130
-
-] [131] [132
+[131] [132
 
 ] [133] [134
 
@@ -1819,33 +1818,37 @@ Chapter 25.
 
 ] [137] [138
 
+] [139] [140
+
+] [141] [142
+
 ]
 Chapter 26.
-[139] [140
+[143] [144
 
-] [141
+] [145
 
-] [142
+] [146
 
-] [143]
+] [147]
 
-(./MathNotes.bbl [144
+(./MathNotes.bbl [148
 
-]) [145] (./MathNotes.aux
+]) [149] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 6B37D959538F6E0B8A34AE9C94FDBEBD;5944.
+(rerunfilecheck)             Checksum: 1F75E1FC1677DF0509B6E754C4C3AA57;6108.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39705 strings out of 479383
- 890562 string characters out of 5869387
- 1327357 words of memory out of 5000000
- 55435 multiletter control sequences out of 15000+600000
+ 39745 strings out of 479383
+ 891720 string characters out of 5869387
+ 1327929 words of memory out of 5000000
+ 55451 multiletter control sequences out of 15000+600000
  445613 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,15n,98p,726b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1877,10 +1880,10 @@ ts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (157 pages, 596186 bytes).
+Output written on MathNotes.pdf (161 pages, 606970 bytes).
 PDF statistics:
- 2206 PDF objects out of 2487 (max. 8388607)
- 1966 compressed objects within 20 object streams
- 558 named destinations out of 1000 (max. 500000)
- 933 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2257 PDF objects out of 2487 (max. 8388607)
+ 2012 compressed objects within 21 object streams
+ 582 named destinations out of 1000 (max. 500000)
+ 949 words of extra memory for PDF output out of 10000 (max. 10000000)
 
