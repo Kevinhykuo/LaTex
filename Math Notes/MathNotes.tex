@@ -4077,7 +4077,7 @@
 	
 	\section{Inverse Trigonometric and Hyperbolic Functions} \label{Inverse Trigonometric and Hyperbolic Functions Section - Complex}
 	
-	\begin{theorem}
+	\begin{definition}[Inverse Trigonometric Functions]
 		\label{Inverse Trigonometric Functions Definition - Complex}
 		Let \(z \in \mathbb{C}\):
 		\begin{align*}
@@ -4086,14 +4086,77 @@
 			\tan[-1](z) &= \frac{i}{2} \log\left(\frac{i + z}{i - z}\right)
 		\end{align*}
 		\(\cos[-1](z)\) and \(\tan[-1](z)\) are multi-valued. All inverse trigonometric functions become single-valued and analytic when in specific branches of the square root and logarithmic functions. 
-	\end{theorem}
+	\end{definition}
 	\begin{proof}
 	\underline{\(\sin[-1](z) = -i \log[iz + (1-z^2)^{1/2}] \)} \newline
 	Let \(w = \sin[-1](z)\) whenever \(z = \sin(w)\)
 	\begin{align*}
-		h
+		z = \sin(w)
+		&\implies z = \frac{e^{iw} - e^{-iw}}{2i}
+		 \implies (e^{iw})^2 - 2iz e^{iw} - 1 = 0
 	\end{align*}
+	Using the quadratic formula to solve for \(e^{iw}\): 
+	\begin{align*}
+		e^{iw} = iz + (1 - z^2)^{1/2} 
+		&\implies iw = \log\left( iz + (1 - z^2)^{1/2} \right) \\
+		&\implies \sin[-1](z) = -i \log\left[ iz + (1 - z^2)^{1/2} \right]
+	\end{align*}
+
+	\underline{\(\cos[-1](z) = -i \log[z + i(i-z^2)^{1/2}]\)} \newline
+	{\color{Grey}
+	Likewise, let \(w = \cos[-1](z)\) whenever \(z = \cos(w)\)
+	\begin{align*}
+		z = \cos(w)
+		&\implies z = \frac{e^{iw} + e^{-iw}}{2}
+		 \implies (e^{iw})^2 - 2ze^{iw} + 1 = 0
+	\end{align*}
+	Using the quadratic formula to solve for \(e^{iw}\): 
+	\begin{align*}
+		e^{iw} 
+		&= \frac{2z \pm \sqrt{4z^2 - 4}}{2} = z \pm \sqrt{z^2 - 1} = z \pm i (1-z^2)^{1/2} \\
+		&\implies iw = \log\left[z \pm i(1-z^2)^{i/2}\right] \\
+		&\implies  w = -i\log\left[z \pm i(1-z^2)^{i/2}\right] 
+	\end{align*}
+	}
+	\underline{\(\tan[-1](z) = \frac{i}{2} \log\left(\frac{i + z}{i - z}\right)\)} \newline
+	{\color{Grey}
+	Again, let \(w = \tan[-1](z)\) whenever \(z = \tan(w)\)
+	\begin{align*}
+		z &= \tan(w) = \frac{e^{iw} - e^{-iw}}{i(e^{iw} + e^{iw})} \\
+		&\implies iz = \frac{e^{iw} - e^{-iw}}{e^{iw} + e^{iw}}
+		\implies iz e^{iw} + iz e^{-iw} = e^{iw} - e^{-iw} \\
+		&\implies (iz - 1)e^{iw} + (iz + 1)e^{-iw} = 0 
+		\implies (iz - 1)e^{2iw} + (iz + 1) = 0 \\
+		&\implies e^{iw} = \left(\frac{-iz - 1}{iz - 1}\right)^\frac{1}{2} 
+		 \implies iw = \frac{1}{2} \log\left(\frac{-iz - 1}{iz - 1}\right) 
+	 	 \implies w = -\frac{i}{2} \log\left(\frac{-(iz + 1)}{iz - 1}\right) \\
+		&\implies w = \tan[-1](z) = \frac{i}{2} \log\left(\frac{i + z}{i - z}\right)
+	\end{align*}
+	}
 	\end{proof}
+	Derivatives:
+	\begin{align*}
+		\dv{z} \sin[-1](z) &= \frac{1}{(1-z^2)^{1/2}}
+			& &\text{Depends on value coosen for square root} \\
+		\dv{z} \cos[-1](z) &= -\frac{1}{(1-z^2)^{1/2}}
+			& &\text{Depends on value chosen for square root} \\
+		\dv{z} \tan[-1](z) &= \frac{1}{1 + z^2}
+			& &\text{Independent on value chosen for square root}
+	\end{align*}
+
+	Using the same procedures on the hyperbolic functions, we obtain the inverse hyperbolic functions:
+	\begin{definition}[Inverse Hyperbolic Functions]
+		\label{Inverse Hyperbolic Functions Definition - Complex}
+		Let \(z \in \mathbb{C}\):
+		\begin{align*}
+			\sinh[-1](z) &= \log\left[z + (z^2 + 1)^{1/2}\right] \\
+			\cosh[-1](z) &= \log\left[z + (z^2 - 1)^{1/2}\right] \\
+			\tanh[-1](z) &= \frac{1}{2}\log\left(\frac{1+z}{1-z}\right)
+		\end{align*}
+	\end{definition} 
+
+
+	\chapter{Integrals} \label{Integrals Chapter - Complex}
 	
 	
 	
