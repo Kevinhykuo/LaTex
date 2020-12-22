@@ -64,6 +64,7 @@
 \contentsline {subsection}{\numberline {14.3.1}Zeros and Singularities}{86}{subsection.14.3.1}%
 \contentsline {section}{\numberline {14.4}Hyperbolic Functions}{87}{section.14.4}%
 \contentsline {section}{\numberline {14.5}Inverse Trigonometric and Hyperbolic Functions}{89}{section.14.5}%
+\contentsline {section}{\numberline {14.6}Phasors}{91}{section.14.6}%
 \contentsline {chapter}{\numberline {15}Integrals}{93}{chapter.15}%
 \contentsline {chapter}{\numberline {16}Conformal Mapping}{95}{chapter.16}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{97}{part.5}%

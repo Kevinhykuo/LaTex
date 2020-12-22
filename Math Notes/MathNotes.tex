@@ -4156,7 +4156,72 @@
 	\end{definition} 
 
 
+
+	\section{Phasors} \label{Phasors Section - Complex}
+	
+	\begin{definition}[Phasor]
+		Consider the function 
+		\begin{align*}
+			f(t) &= \Re{Fe^{st}} & F &= F_0 e^{i\theta} & s = \sigma + i \omega, \ \sigma, \omega \in \mathbb{R}
+		\end{align*}
+		\(F\) is the phasor associated with \(f(t)\).
+	\end{definition}
+	We can see tha \(f(t)\) grows exponentially according to the value of \(\sigma\), has a phase of \(\theta\), and a phase frequency of \(\omega\). (It is clear why engineers love this.)
+	
+	Properties: 
+	\begin{itemize}
+		\item[1.] 
+		\begin{align*}
+			f(t) = \Re{Fe^{st}} \implies 
+			\begin{cases}
+				F \text{ is unique } & \omega \neq 0 \\
+				\text{ Only } \Re{F} \text{ is unique } & \omega = 0
+			\end{cases}
+		\end{align*}
+		\item[2.] 
+		\begin{align*}
+			\forall t\in \mathbb{R} [f(t) = g(t)] \implies 
+			\begin{cases}
+				F = G & \omega \neq 0 \\
+				\Re{F} = \Re{G} & \omega = 0
+			\end{cases}
+		\end{align*}
+		\item[3.] For any given \(s = \sigma + i \omega \), there is only one function of \(t\) corresponding to a phasor.
+		\item[4.] Let \(f(t)\) and \(g(t)\) have the same complex frequency, that is, \(\omega_1 = \omega_2\), then the phasor for \(f(t) + g(t)\) is \(F + G\).
+		\item[5.] \(\forall M \in \mathbb{R}\). The phasor for \(Mf(t)\) is \(MF\).
+		\item[6.] ``For a given complex frequency, the function of \(t\) corresponding to the sum of two or more phasors is the sum of the time functions for each.'' -Wunsch
+		\item[7.] Let \(n \in \mathbb{N}\).
+		\begin{align*}
+			(f(t) \text{ has phasor } F) \land (\dv*{f}{t} \text{ has phasor } sF) \implies \dv*[n]{f}{t} \text{ has phasor } s^n F
+		\end{align*}
+		\item[8.] 
+		\begin{align*}
+			f(t) \text{ has phasor } F &\implies \int^t f(t') dt'  \text{ has phasor } \frac{F}{s} & s\neq 0
+		\end{align*}
+	\end{itemize}
+	These properties follow from the properties of \(e\).
+	
+	\begin{example}
+		Consider:
+		\begin{align*}
+			R\mathtt{i}(t) + L \dv{\mathtt{i}}{t} = V_0 \cos(\omega t)
+		\end{align*}
+		Suppose the complex frequency is \(s = i\omega\). If \(I\) is the phasor for \(\mathtt{i}\), then substituting it into the differential equation:
+		\begin{align*}
+			RI + iwLI &= (R + i \omega L)I = V_0 & \text{Phasors on both side must equal}
+		\end{align*}
+		Then solving for the phasor:
+		\begin{align*}
+			I &= \frac{V_0}{R + i\omega L} = \frac{V_0 e^{i\theta}}{\sqrt{R^2 + \omega^2 L^2}} & \theta = - \tan[-1](\frac{\omega L}{R}) 
+		\end{align*}
+		Using \(s = i\omega\) to obtain \(\mathtt{i}(t)\), we have
+		\begin{align*}
+			\mathtt{i}(t) = \Re{\frac{V_0 e^{i\theta}}{\sqrt{R^2 + (\omega L)^2}}e^{i\omega t}}
+		\end{align*}
+	\end{example}
+
 	\chapter{Integrals} \label{Integrals Chapter - Complex}
+	
 	
 	
 	
