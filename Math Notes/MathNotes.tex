@@ -4222,12 +4222,58 @@
 
 	\chapter{Integrals} \label{Integrals Chapter - Complex}
 	
+	\section{Derivatives of Functions} \label{Derivatives of Functions Section - Complex}
 	
+	\begin{definition}[Derivative of Complex-Valued Function]
+		\label{Derivative of Complex-Valued Function Definition - Complex}
+		Consider a complex-valued function \(w(t) = u(t) + iv(t)\), with \(u\) and \(v\) being real-valued functions. If \(w(t)\) is differentiable at \(t\), then it's derivative with respect to \(t\):
+		\begin{align*}
+			w'(t) = \dv{t} w(t) = u'(t) + iv'(t)
+		\end{align*}
+	\end{definition}
+	The rules for calculus in \(\mathbb{R}\) still applies.
 	
+	Note: The mean value theorem for derivatives no longer apply for complex-valued functions. 
+	\begin{example}
+		Let \(w(t)= e^{it}\) be continuous on \([0, 2\pi]\), so \(u(t)\) and \(v(t)\) are also continuous on \([0,2\pi]\). For the mean value theorem to hold, there must exist \(a, b, c \in \mathbb{C}\), where \(a < c < b\), such that 
+		\begin{align*}
+			w'(c) = \frac{w(b) - w(a)}{b-a}
+		\end{align*}
+		We can see that 
+		\begin{align*}
+			\abs{w'(t)} &= \abs{ie^{it}} = 1 &
+			\frac{w(b) - w(a)}{b-a} &= \frac{w(2\pi) - w(0)}{2\pi - 0} = \frac{e^{i2\pi} - e^{i0}}{2\pi} = \frac{1 - 1}{2\pi} = 0
+		\end{align*}
+		So we can see that there does not exist a \(c \in \mathbb{C}\) such that the mean value theorem holds.
+	\end{example}
 	
+	\section{Definite Integrals of Functions} \label{Definite Integrals of Functions Section - Complex}
 	
+	\begin{definition}[Definite Integral of Complex-Valued Function]
+		\label{Definite Integral of Complex-Valued Function Definition - Complex}
+		Consider a complex-valued function \(w(t) = u(t) + iv(t)\), with \(u\) and \(v\) being real-valued functions. If \(u\) and \(v\) are piecewise continuous on interval \([a,b]\), then the definite integral of \(w(t)\) over interval \([a, b]\):
+		\begin{align*}
+			\int_{a}^{b} w(t) dt = \int_{a}^{b} u(t) dt + i \int_{a}^{b} v(t) dt
+		\end{align*}
+	\end{definition}
+	The rules for integrals in \(\mathbb{R}\) and the Fundamental Theorem of Calculus still applies.
 	
+	Likewise with derivatives of complex-valued functions, the mean value theorem does not hold for complex-valued integrals.
+	\begin{example}
+		Let \(w(t) = e^{it}\) be a complex-valued function of \(t\). For \(w(t)\) to hold on \([a, b]\), this must hold for some \(a < c < b\):
+		\begin{align*}
+			\int_{a}^{b} w(t) dt = w(c)(b-a)
+		\end{align*}
+		Consider \(w(t)\) on \([0, 2\pi]\). Then
+		\begin{align*}
+			\int_{a}^{b} w(t) dt 
+			&= \int_{0}^{2\pi} e^{it} dt = \eval{\frac{e^it}{i}}_{0}^{2\pi} = 0 &
+			\abs{w(c)(b-a)} &= \abs{e^{ic}} 2 \pi = 2\pi
+		\end{align*}
+		 We can see there does not exist \(c\), \(0 < c < 2\pi\), such that both sides of the equations are equal. 
+	\end{example}
 	
+	\section{Contours} \label{Contours Section - Complex}
 	
 	
 	

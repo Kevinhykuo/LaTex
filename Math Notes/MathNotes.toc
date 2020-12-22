@@ -66,6 +66,9 @@
 \contentsline {section}{\numberline {14.5}Inverse Trigonometric and Hyperbolic Functions}{89}{section.14.5}%
 \contentsline {section}{\numberline {14.6}Phasors}{91}{section.14.6}%
 \contentsline {chapter}{\numberline {15}Integrals}{93}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Derivatives of Functions}{93}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Definite Integrals of Functions}{93}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Contours}{94}{section.15.3}%
 \contentsline {chapter}{\numberline {16}Conformal Mapping}{95}{chapter.16}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{97}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{99}{part.6}%
