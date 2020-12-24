@@ -4275,6 +4275,170 @@
 	
 	\section{Contours} \label{Contours Section - Complex}
 	
+	\begin{definition}[Arc]
+		\label{Arc Definition - Complex}
+		An arc is a set of points dependent on a parameter \(t \in \mathbb{R}\).
+		\begin{align*}
+			\{z = (x(t),y(t)) : t \in [a,b]\}
+		\end{align*}
+		Where \(x(t)\) and \(y(t)\) are continuous functions. 
+	\end{definition}
+	It is convenient in \(\mathbb{C}\) to use: 
+	\begin{align*}
+		 z = z(t) &= x(t) + iy(t)  & a \leq t \leq b
+	\end{align*}
+	
+	\begin{definition}[Simple/Jordan Arc]
+		\label{Simple/Jordan Arc Definition - Complex}
+		An arc is simple if it does not cross itself. That is:
+		\(t_1 \neq t_2 \implies z(t_1) \neq z(t_2)\)
+	\end{definition}
+	
+	\begin{definition}[Simple Closed Curve / Jordan Curve]
+		A simple curve, but endpoints gets mapped to equal values. That is, \(z(a) = z(b)\) for \(a \leq t \leq b\).
+		It is positively oriented if it is counterclockwise. 
+	\end{definition}
+
+	The interval for which the arc is parameterized is not unique. Consider 
+	\begin{align*}
+		t &= \phi(\tau) & \alpha \leq \tau \leq \beta
+	\end{align*}
+	Then \(\phi(\alpha) = a\) and \(\phi(\beta)=b\). We have 
+	\begin{align*}
+		z(t) &= Z(\tau) = z[\phi(\tau)]& \alpha \leq \tau \leq \beta
+	\end{align*}
+	
+	\begin{definition}[Differentiable Arc]
+		\label{Differentiable Arc Definition - Complex}
+		Suppose \(\dv*{t}z(t) = z'(t) = x'(t) + iy'(t)\) exists and is continuous. Then \(z'(t)\) is a differentiable arc.
+	\end{definition}
+	
+	We can integrate over the differential arc in the interval \([a,b]\):
+	\begin{align*}
+		L &= \int_{a}^{b} \abs{z'(t)} dt	&	\abs{z'(t)} &= \sqrt{[x'(t)]^2 + [y'(t)]^2}
+	\end{align*}
+	Note: \(\abs{z'(t)}\) is a real-valued function. 
+	
+	Again, due to the curve being invariant under the representation for the arc:
+	\begin{align*}
+		L &= \int_{a}^{b} \abs{z'(t)} dt = \int_{\alpha}^{\beta} \abs{z'[\phi(t)]} \phi'(t) dt = \int_{\alpha}^{\beta} \abs{Z'(\tau)} d\tau 
+			& Z'(\tau) &= z'[\phi(\tau)] \phi'(\tau)
+	\end{align*} 
+
+	If the differentiable arc \(z'(t) \neq 0\) in the interval \([a,b]\), then the unit tangent vector is defined in said interval: 
+	\begin{align*}
+		\vu{T} = \frac{z'(t)}{\abs{z'(t)}}
+	\end{align*}
+	Recall: The gradient of a function is perpendicular to the function, so \(\vu{T}\) is  normal to \(z(t)\), over the interval \([a,b]\).
+	
+	\begin{definition}[Smooth]
+		\label{Smooth Definition - Complex}
+		An arc \(z(t)\) is smooth in the interval \([a,b]\) if \(z'(t)\) is continuous \(\forall t \in [a,b]\) and non-zero \(\forall t \in (a,b)\).
+	\end{definition}
+	
+	\begin{definition}[Contour]
+		\label{Contour Definition - Complex}
+		A piecewise smooth arc.
+	\end{definition}
+
+	\begin{definition}[Simple Closed Contour]
+		\label{Simple Closed Contour Definition - Complex}
+		A contour where only \(z(a) = z(b)\) in the interval \([a,b]\).
+	\end{definition}
+	
+	\begin{theorem}[Jordan Curve Theorem]
+		\label{Jordan Curve Theorem - Complex}
+		All points on a simple close curve or simple closed contour \(z(t)\) are boundary points of two distinct domains. One is bounded and interior to \(z(t)\) and the other is unbounded and exterior to \(z(t)\).  That is, \(z(t)\) as a boundary line of two domains. 
+	\end{theorem}
+	\begin{proof}
+		Good luck!
+	\end{proof}
+	i.e. If \(z(t)\) is a circle, then one domain is within the circle and contains the points on the parameter, and one is exterior to the circle.
+	
+	\section{Contour Integrals} \label{Contour Integrals Section - Complex}
+	
+	Evaluating an integral over a contour. 
+	
+	\begin{definition}[Contour Integral]
+		\label{Contour Integral Definition - Complex}
+		Let \(z(t)\) in \(C = [a, b]\) be a contour, and \(f[z(t)]\) be a piecewise continuous function on \(C\). Then the contour integral:
+		\begin{align*}
+			\int_{C} f(z) dz = \int_{a}^{b} f[(z(t))] z'(t) dt
+		\end{align*}
+		Note: \(C\) is contour \(\implies z'(t)\) is piecewise continuous on \(C \implies\) Existence of integral on \(C\)
+	\end{definition}
+	
+	Notation: 
+	Let \(f(z)\) be a function evaluated over the contour \(C\).
+	\begin{align*}
+		\int_{C} f(z) dz &&& \int_{z_1}^{z_2} f(z) dz
+	\end{align*}
+	\(\int_{z_1}^{z_2}\) is often used when the integral is independent of the path between end points. \(-C\) represents the same contour, but in reverse.
+	
+	Following from the contours, the integral is invariant under change in representation of the contour. 
+	
+	\begin{definition}[Sum (Contour)]
+		\label{Sum (Contour) Definition - Complex}
+		Let \(C_1\) be contour from \(z_1\) to \(z_2\), and \(C_2\) be from \(z_2\) to \(z_3\), then the sum is contour \(C\) from \(z_1\) to \(z_3\).
+	\end{definition}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{scope}[
+				thick,
+				decoration={
+					markings,
+					mark=at position 0.3 with {\arrow{>}},
+					mark=at position 0.8 with {\arrow{>}}}
+				] 
+				
+				\node[label=below:$z_1$] (A) at (0,0) {};
+				\node[label=below:$z_3$] (B) at (5,1) {};
+				\node[label=below:$z_2$] (C) at (2.5,0.5) {};
+				\node[label=below:$C_1$] (D) at (1.25,0.66) {};
+				\node[label=below:$C_2$] (E) at (3.75,0.33) {};
+				
+				\draw[thick,postaction={decorate}] plot [smooth] coordinates {(0,0) (1.25,0.66) (2.5,0.5) (3.75,0.33) (5,1)};
+			\end{scope}
+			
+			\draw [fill=black] (A) circle (1pt);
+			\draw [fill=black] (B) circle (1pt);
+			\draw [fill=black] (C) circle (1pt);  
+		\end{tikzpicture}
+	\end{figure}
+	
+	Some properties (which follows from integrals):
+	\begin{align*}
+		\int_{C} = z_0 f(z) dz &= z_0 \int_{C} f(z) dz &
+		\int_{C} f(z) + g(z) dz &= \int_{C} f(z) dz + \int_{C} g(z) dz 
+	\end{align*}
+	\begin{align*}
+		\int_{-C} f(z) dz 
+		&= \int_{-b}^{-a} f([z(-t)]) \dv{t} z(-t) dt = -\int_{-b}^{-a} f[z(-t)] z'(-t) dt \\
+		&= -\int_{-b}^{-a} f[z(\tau)] z'(\tau) d\tau \\
+		&= -\int_{C} f(z) dz
+	\end{align*}
+	\begin{align*}
+		\int_{a}^{b} f[z(t)] z'(t) dt &= \int_{a}^{c} f[z(t)] z'(t) dt + \int_{c}^{b} f[z(t)] z'(t) dt\\
+		\int_{C} f(z) dz &= \int_{C_1} f(z) dz + \int_{C_2} f(z) dz
+	\end{align*}
+	
+	\subsection{Upper Bounds for the Moduli} \label{Upper Bounds for the Moduli Subsection - Complex}
+	
+	It is not analysis without inequality involving modulus.
+	
+	\begin{lemma}
+		Let \(w(t)\) be a piecewise smooth function defined on \([a,b]\). Then
+		\begin{align*}
+			\abs{ \int_{a}^{b} w(t) dt} \leq \int_{a}^{b} \abs{w(t)} dt
+		\end{align*}
+	\end{lemma}
+	
+	
+	
+	
+	
 	
 	
 	
