@@ -4434,7 +4434,145 @@
 			\abs{ \int_{a}^{b} w(t) dt} \leq \int_{a}^{b} \abs{w(t)} dt
 		\end{align*}
 	\end{lemma}
+	\begin{proof}
+		Assume \(\int_{a}^{b} w(t) dt\) is non-zero, otherwise the inequality is trivial. 
+		\begin{align*}
+			\int_{a}^{b} w(t) dt = r_0 e^{i\theta_0}
+				&\implies r_0 = e^{-i\theta_0} \int_{a}^{b} w(t) dt\\
+				&\implies r_0 = \Re{e^{-i\theta_0} \int_{a}^{b} w(t) dt} & r_0 &\in \mathbb{R} \\
+				&\implies r_0 = \int_{a}^{b} \Re{e^{i\theta_0} w(t)} dt
+		\end{align*}
+		Now
+		\begin{align*}
+			\Re{e^{-i\theta_0} w(t)} 
+			&\leq \abs{e^{-i\theta_0} w(t)} = \abs{e^{-i\theta_0}} \abs{w(t)} = \abs{w(t)} \\
+			&\implies r_0 \leq \int_{a}^{b} \abs{w(t)} dt \\
+			&\implies \abs{ \int_{a}^{b} w(t) dt} \leq \int_{a}^{b} \abs{w(t)} dt
+				& r_0 = \abs{ \int_{a}^{b} w(t) dt}
+		\end{align*}
+	\end{proof}
 	
+	\begin{theorem}
+		Let \(f(z)\) be piecewise continuous function on contour \(C\) with length \(L\).
+		\begin{align*}
+			\forall z \in C \ \exists M \in \mathbb{R} 
+			\left[\abs{f(z)} \leq M \right] \implies \abs{\int_{C} f(z) dz} \leq ML 
+		\end{align*}
+		That is, if \(f(z)\) is bounded on the contour, then the value of it's integral is bounded. 
+	\end{theorem}
+	\begin{proof}
+		Let \(z = z(t)\) in \([a, b]\) be a parametric representation of \(C\). Then
+		\begin{align*}
+			\abs{\int_{C} f(z) dz} = \abs{\int_{a}^{b} f[z(t)] z'(t) dt} 
+			&\leq \int_{a}^{b} \abs{f[z(t)] z'(t)} dt = \int_{a}^{b}  \abs{f[z(t)]} \abs{z'(t)} dt  \\
+			&\leq M \int_{a}^{b} z'(t) dt = M z(t) = ML
+		\end{align*}
+	\end{proof}
+
+	Note: According to the Extreme Value Theorem, any continuous real-valued function on a closed interval is bounded, so such \(M \in \mathbb{R}\) will always exist. 
+	
+	\begin{observation}
+		Let \(l\) be the length along the contour \(C\). Graphically, what this is telling us:
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$l$},
+					ylabel={$f(z)$},
+					xmin=0, xmax=10,
+					ymin=-1, ymax=6,
+					xtick=100,
+					ytick=100,
+					axis lines = middle,
+					axis line style = Black,
+					]
+					\addplot[
+						only marks,
+						nodes near coords,
+						point meta = explicit symbolic, 
+						mark=none,
+						]
+						coordinates {
+							(9, 2.5) [$M$]
+							(4.5, 5) [$L$]
+						};
+					
+					\draw[thick] plot [smooth] coordinates {
+						(axis cs: 0,-1) 
+						(axis cs: 1.25,3) 
+						(axis cs: 2.5,1) 
+						(axis cs: 3.75,2) 
+						(axis cs: 5,5) 
+						(axis cs: 7,0) 
+						(axis cs: 9, -1)
+					};
+					
+					\draw[dashed] plot [smooth] coordinates {
+						(axis cs: 0,5) 
+						(axis cs: 9,5) 
+					};
+				
+					\draw[dashed] plot [smooth] coordinates {
+						(axis cs: 9,5) 
+						(axis cs: 9,0) 
+					};
+				
+				\end{axis}
+%				\begin{scope}[
+%					thick
+%					] 
+%					\draw[thick] plot [smooth] coordinates {(0,-1) (1.25,0.66) (2.5,0.5) (3.75,0.33) (5,1) (7,0) (8, -1)};
+%				\end{scope} 
+			\end{tikzpicture}
+		\end{figure}
+	\end{observation}
+
+	This is useful in evaluating the size of the integral, and if we are lucky:
+
+	\begin{example}
+		Let \(C_R\) be the semicircle:
+		\begin{align*}
+			z &= Re^{i\theta} & 0 \leq \theta \leq \pi, \ R>3
+		\end{align*}
+		Consider 
+		\begin{align*}
+			\lim_{r \rightarrow \infty} \int_{C_R} \frac{z+1}{(z^2 + 4)(z^2 + 9)} dz 
+		\end{align*}
+		We know that:
+		\begin{align*}
+			\abs{z+1} &\leq \abs{z} + 1 = R + 1\\
+			\abs{z^2 + 4} &\geq \abs{\abs{z}^2 - 4} = R^2 - 4\\
+			\abs{z^2 + 9} &\geq \abs{\abs{z^2} - 9} = R^2 - 9
+		\end{align*}
+		Then 
+		\begin{align*}
+			\abs{f(z)} 
+			= \abs{\frac{z+1}{(z^2 + 4)(z^2 + 9)}} = \frac{\abs{z+1}}{\abs{z^2 + 4} \abs{z^2 + 9}} 
+			\leq \frac{R+1}{(R^2 - 4) (R^2 - 9)}  = M_R
+		\end{align*}
+		Now we have
+		\begin{align*}
+			M_R &= \frac{R+1}{(R^2 - 4) (R^2 - 9)} & L = \pi R
+		\end{align*}
+		Since
+		\begin{align*}
+			\abs{\int_{C_R} \frac{z+1}{(z^2 + 4)(z^2 + 9)} dz} \leq M_R L 
+		\end{align*}
+		Hence
+		\begin{align*}
+			\lim_{R \rightarrow \infty} M_R L 
+			= \lim_{R \rightarrow \infty} \frac{R^2+R}{(R^2 - 4) (R^2 - 9)} \pi
+			= \lim_{R \rightarrow \infty} \frac{\frac{1}{R^2} + \frac{1}{R^3}}{\left(1 - \frac{4}{R^2}\right) \left(1-\frac{9}{R^2}\right)} \pi
+			= 0
+		\end{align*}
+		Thus
+		\begin{align*}
+			\lim_{r \rightarrow \infty} \int_{C_R} \frac{z+1}{(z^2 + 4)(z^2 + 9)} dz = 0
+		\end{align*} 
+	\end{example}
+	
+	\section{Antiderivatives} \label{Antiderivatives Section - Complex}
 	
 	
 	
