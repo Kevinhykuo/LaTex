@@ -4607,13 +4607,148 @@
 	\end{theorem}
 	\begin{proof}
 		\underline{(a) \(\implies\) (b):} \newline
+		Suppose \(F'(z)\) exists for \(f(z)\) for all \(z \in D\). We know:
+		\begin{align*}
+			\dv{t} F[z(t)] &= F'(z(t)) z'(t) = f[z(t)]z'(t) & t \in [a,b]
+		\end{align*}
+		Then 
+		\begin{align*}
+			\int_{C} f(z) dz = \int_{a}^{b} f[z(t)] z'(t) dt = \eval{F[z(t)]}_{a}^{b} = F[z(b)] - F[z(a)] = F(z_2) - F(z_1) 
+		\end{align*}
+		If \(C\) consists of a finite number of smooth arc \(C_k\), \(k \in \{1, 2, 3, \ldots, n\}\):
+		\begin{align*}
+			\int_{C} f(z) dz = \sum_{k=1}^{n} \int_{C} f(z) dz = \sum_{k=1}^{n} \int_{z_k}^{z_{k+1}} f(z) dz = \sum_{k=1}^{n}[F(z_{k+1}) - F(z_k)]
+ 		\end{align*}
+		Then 
+		\begin{align*}
+			\int_{C} f(z) dz = F(z_{n+1}) - F(z_1)
+		\end{align*}
+		Thus 
+		\begin{align*}
+			\forall z \in D [F'(z) = f(z)] 
+			\implies \int_{z_1}^{z_2} f(z) dz = \eval{F(z)}_{z_1}^{z_2}
+		\end{align*}
 		
 		\underline{(b) \(\implies\) (c):} \newline
+		Let \(C_1\) and \(C_2\) be contours with endpoints \(z_1\) and \(z_2\). Suppose that integration is path independent, then
+		\begin{align*}
+			\int_{C_1} f(z) dz = \int_{C_2} f(z) dz
+			\implies \int_{C_1} f(z) dz + \int_{-C_2} f(z) dz = 0 
+			\implies \int_{C = C_1 - C_2} f(z) dz = 0
+		\end{align*}
+		Thus 
+		\begin{align*}
+			\int_{z_1}^{z_2} f(z) dz = \eval{F(z)}_{z_1}^{z_2}
+			\implies \oint_{C} f(z) dz = 0
+		\end{align*}
 		
 		\underline{(c) \(\implies\) (a):} \newline
-		
-		
+		Suppose integration around a closed contour \(C\) in \(D\) is zero. Since integration is path independent in \(D\), we can define the function:
+		\begin{align*}
+			F(z) = \int_{z_0}^{z} f(z) ds
+		\end{align*}
+		Let \(z + \Delta z\) be any point in the neighbourhood of \(z\) contained in \(D\), then
+		\begin{align*}
+			F(z + \Delta z ) - F(z) = \int_{z_0}^{z + \Delta z} f(z) ds - \int_{z_0}^{z} f(z) ds = \int_{z}^{z + \Delta z} f(s) ds
+		\end{align*}
+		Since
+		\begin{align*}
+			\int_{z}^{z + \Delta z} ds = \Delta z
+			&\implies f(z) = \frac{1}{\Delta z} \int_{z}^{z + \Delta z} f(z) ds 
+		\end{align*}
+		Then 
+		\begin{align*}
+			\frac{F(z + \Delta z) - F(z)}{\Delta z} - f(z) 
+			= \frac{1}{\Delta z} \int_{z}^{z + \Delta z} f(s) - f(z) ds
+		\end{align*}
+		As \(f\) is continuous at the point \(z\):
+		\begin{align*}
+			\forall \epsilon \exists \delta [\abs{s - z} < \delta \implies \abs{f(s) - f(z)} < \epsilon]
+		\end{align*}
+		If \(\abs{\Delta z}<\delta\):
+		\begin{align*}
+			\abs{\frac{F(z + \Delta z) - F(z)}{\Delta z} - f(z)} < \frac{1}{\abs{\Delta z}} \epsilon \abs{\Delta z} = \epsilon
+		\end{align*}
+		Then 
+		\begin{align*}
+			\lim_{\Delta z \rightarrow 0}
+			\frac{F(z + \Delta z) - F(z)}{\Delta z} = f(z) \implies F'(z) = f(z)
+		\end{align*}
+		Thus
+		\begin{align*}
+			\oint_{C} f(z) dz = 0 \implies \forall z \in D [F'(z) = f(z)] 
+		\end{align*}
 	\end{proof}
+	
+	\begin{example}
+		Let \(f(z) = z^{-2}\). We can see that \(f\) is continuous everywhere except at the origin, and has antiderivative \(F(z) = -z^{-1}\) in \(\abs{z}>0\). Thus around the unit circle:
+		\begin{align*}
+			\int_{C} z^{-2} dz &= 0 & z=e^{i\theta}, \ \theta \in [-\pi, \pi]
+		\end{align*}
+	\end{example}
+
+	\begin{example}
+		Consider \(f(z) = z^{-1}\). It has an antiderivative \(F(z) = \log(z)\), which is not differentiable or defined along its branch cut. To evaluate the integral along the unit circle, we can break it up into two domains to avoid this issue. First consider \(C_1\):
+		\begin{align*}
+			z &= e^{i\theta} & -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2}
+		\end{align*}
+		Then  
+		\begin{align*}
+			\int_{C_1} z^{-1} dz
+			&= \int_{-i}^{i} z^{-1} dz = \eval{\operatorname{Log}(z)}_{-i}^{i} = \operatorname{Log}(i) - \operatorname{Log}(-i) \\
+			&= \left(\ln(1) + i\frac{\pi}{2}\right) - \left(\ln(1) - i\frac{\pi}{2}\right) = \pi i
+		\end{align*}
+		Now consider \(C_2\):
+		\begin{align*}
+			z &= e^{i\theta} & \frac{\pi}{2} \leq \theta \leq \frac{3\pi}{2}
+		\end{align*}
+		Then 
+		\begin{align*}
+			\int_{C_2} = z^{-1} dz 
+			&= \int_{i}^{-i} z^{-1} dz = \eval{\log(z)}_{i}^{-i} = \log(-i) - \log(i) \\
+			&= \left(\ln(1) + i\frac{3\pi}{2}\right) - \left(\ln(1) + i\frac{\pi}{2}\right) = \pi i
+		\end{align*}
+		Thus around the circle \(C = C_1 + C_2\):
+		\begin{align*}
+			\int_{C} z^{-1} dz = \int_{C_1} z^{-1} dz + \int_{C_2} z^{-1} dz = \pi i + \pi i = 2 \pi i
+		\end{align*}
+	\end{example}
+	
+	\section{Cauchy-Goursat Theorem} \label{Cauchy-Goursat Theorem Section - Complex}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  26 DEC 2020 17:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  26 DEC 2020 19:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1449,10 +1449,7 @@ ut line 318.
 
 ] (./MathNotes.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
- [7] [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
+ [7] [8] [9]
 Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [10])
@@ -1754,88 +1751,76 @@ Chapter 15.
 ===== Image 'tikz/MathNotes-figure32' is up-to-date. ======
 [96 <./tikz/MathNotes-figure32.pdf>]
 ===== Image 'tikz/MathNotes-figure33' is up-to-date. ======
-[97] [98 <./tikz/MathNotes-figure33.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4609--4610
-
+[97] [98 <./tikz/MathNotes-figure33.pdf>] [99]
+Overfull \hbox (0.18661pt too wide) detected at line 4638
+[]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 4611--4612
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4613--4614
-
- []
-
-[99] [100
+[100] [101] [102
 
 ]
 Chapter 16.
-[101] [102
-
-] [103] [104
+[103] [104
 
 ] [105] [106
 
-] [107] [108] [109
+] [107] [108
 
-] [110
+] [109] [110] [111
 
-] [111] [112
+] [112
+
+] [113] [114
 
 ]
 Chapter 17.
-[113] [114
-
-] [115] [116
+[115] [116
 
 ] [117] [118
 
 ] [119] [120
 
-]
-Chapter 18.
-[121] [122
+] [121] [122
 
 ]
-Chapter 19.
+Chapter 18.
 [123] [124
 
 ]
-Chapter 20.
+Chapter 19.
 [125] [126
 
 ]
-Chapter 21.
+Chapter 20.
 [127] [128
 
 ]
-Chapter 22.
+Chapter 21.
 [129] [130
 
 ]
-Chapter 23.
+Chapter 22.
 [131] [132
 
 ]
-Chapter 24.
+Chapter 23.
 [133] [134
 
-] [135] [136
+]
+Chapter 24.
+[135] [136
 
 ] [137] [138
 
+] [139] [140
+
 ]
 Chapter 25.
-[139] [140
+[141] [142
 
 ]
 Chapter 26.
-[141] [142
-
-] [143] [144
+[143] [144
 
 ] [145] [146
 
@@ -1845,33 +1830,35 @@ Chapter 26.
 
 ] [151] [152
 
+] [153] [154
+
 ]
 Chapter 27.
-[153] [154
+[155] [156
 
-] [155
+] [157
 
-] [156
+] [158
 
-] [157]
+] [159]
 
-(./MathNotes.bbl [158
+(./MathNotes.bbl [160
 
-]) [159] (./MathNotes.aux
+]) [161] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 94E6FB7B49113AADFA9CAB671C25022A;6645.
+(rerunfilecheck)             Checksum: DB388BC7B4B041070BA76B12FEA902FB;6717.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39889 strings out of 479382
- 895464 string characters out of 5869369
- 1329746 words of memory out of 5000000
- 55527 multiletter control sequences out of 15000+600000
+ 39899 strings out of 479382
+ 895669 string characters out of 5869369
+ 1329838 words of memory out of 5000000
+ 55530 multiletter control sequences out of 15000+600000
  446118 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,98p,726b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1904,10 +1891,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (171 pages, 642350 bytes).
+Output written on MathNotes.pdf (173 pages, 648464 bytes).
 PDF statistics:
- 2419 PDF objects out of 2487 (max. 8388607)
- 2160 compressed objects within 22 object streams
- 647 named destinations out of 1000 (max. 500000)
- 1023 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2439 PDF objects out of 2487 (max. 8388607)
+ 2178 compressed objects within 22 object streams
+ 654 named destinations out of 1000 (max. 500000)
+ 1031 words of extra memory for PDF output out of 10000 (max. 10000000)
 
