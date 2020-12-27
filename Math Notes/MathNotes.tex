@@ -4574,9 +4574,46 @@
 	
 	\section{Antiderivatives} \label{Antiderivatives Section - Complex}
 	
+	\begin{definition}[Antiderivative]
+		\label{Antiderivative Definition - Complex}
+		Let \(f(z)\) be a continuous function on domain \(D\), the antiderivative is a function \(F(z)\) such that 
+		\begin{align*}
+			F'(z) &= f(z) & \forall z \in D
+		\end{align*}
+	\end{definition}
+	Note: By definition, \(F(z)\) is an analytic function, and an antiderivative is unique up to an additive constant. An indefinite integral is the family of functions that are the antiderivative of a particular function. 
 	
-	
-	
+	\begin{theorem}
+		Let \(f(z)\) be a continuous function on domain \(D\). TFAE:
+		\begin{itemize}
+			\item[(a)] There is a function \(F(z)\) such that 
+			\[\forall z \in D [F'(z) = f(z)]\]
+			(\(f(z)\) has an antiderivative throughout \(D\).)
+			\item[(b)] All contours of \(f(z)\) in \(D\) from any point \(z_1\) to \(z_2\) all have the same value. That is 
+			\begin{align*}
+				\int_{z_1}^{z_2} f(z) dz = \eval{F(z)}_{z_1}^{z_2} = F(z_2) - F(z_1)
+			\end{align*}
+			\item[(c)] For all closed contours \(C\) lying in \(D\):
+			\begin{align*}
+				\oint_{C} f(z) dz = 0
+			\end{align*}
+		\end{itemize}
+		Simply:
+		\begin{align*}
+			\forall z \in D [F'(z) = f(z)] 
+			\iff \int_{z_1}^{z_2} f(z) dz = \eval{F(z)}_{z_1}^{z_2}
+			\iff \oint_{C} f(z) dz = 0
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\underline{(a) \(\implies\) (b):} \newline
+		
+		\underline{(b) \(\implies\) (c):} \newline
+		
+		\underline{(c) \(\implies\) (a):} \newline
+		
+		
+	\end{proof}
 	
 	
 	
