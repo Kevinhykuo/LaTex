@@ -4772,7 +4772,7 @@
 		\end{align*}
 		As \(f(z)\) is continuous throughout subregion \(\sigma\),  \(\delta_j(z)\) is continuous in \(\sigma\) and 
 		\begin{align*}
-			\lim_{z \rightarrow z_j} \delta_j(z = f'(z_j) - f'(z_j) = 0
+			\lim_{z \rightarrow z_j} \delta_j(z) = f'(z_j) - f'(z_j) = 0
 		\end{align*}
 		Now, let \(C_j\) denote the positively oriented contours on the boundaries of the squares and partial squares covering \(R\). Then on any \(C_j\) be definition of \(\delta_j(z)\):
 		\begin{align*}
@@ -4829,12 +4829,15 @@
 			\int_{C} f(z) dz = 0
 		\end{align*}
 	
-		\underline{\textbf{TLDR:}} \newline \newline
-		
+		\underline{\textbf{TLDR:}} \newline 
+		We found that the upper bound for \(f\) around the contour integral \(C\) is less than or equal to the sum of all the contours around the squares covering the region bounded by \(C\). Since \(f\) is analytic in \(R\), the sum of the contours of the squares in \(R\) is a function of the neighbourhood \(\delta_j (z)\) surrounding \(z_j\) in each square, which is chosen to be less than some \(\epsilon\), the error between the derivative of \(f\) and the finite difference of \(f\). 
+		As \(\epsilon\) can be made arbitrary small and the inequality must hold for all values of \(\epsilon\), we find \(\int_{C} f(z) dz = 0\).
 	\end{proof}
 
 	\section{Simply Closed Domains} \label{Simply Closed Domains Section - Complex}
 
+
+	\section{Multiply Closed Domains} \label{Multiply Closed Domains Section - Complex}
 	
 	
 	
