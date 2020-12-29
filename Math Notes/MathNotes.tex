@@ -1376,6 +1376,7 @@
 	\end{definition}
 
 	\begin{definition}[Accumulation/Limit Point]
+		\label{Accumulation/Limit Point Definition - Complex}
 		A point $z_0$ is a accumulation point of a set $S$ if all deleted neighbourhood of $z_0$ contains an element of $S$. 
 		$$\forall \epsilon \exists s \in S (s \neq z_0 \land \abs{z-s} < \epsilon)$$
 	\end{definition}
@@ -4584,6 +4585,7 @@
 	Note: By definition, \(F(z)\) is an analytic function, and an antiderivative is unique up to an additive constant. An indefinite integral is the family of functions that are the antiderivative of a particular function. 
 	
 	\begin{theorem}
+		\label{Antiderivative and contour integrals theorem - Complex}
 		Let \(f(z)\) be a continuous function on domain \(D\). TFAE:
 		\begin{itemize}
 			\item[(a)] There is a function \(F(z)\) such that 
@@ -4716,8 +4718,123 @@
 	
 	\section{Cauchy-Goursat Theorem} \label{Cauchy-Goursat Theorem Section - Complex}
 	
+	Previously: A function \(f\) that has an antiderivative in any domain \(D\), then the integral of \(f\) around any closed contour in \(D\) is zero. (\Cref{Antiderivative and contour integrals theorem - Complex}) Now, it's for simple closed contours. 
 	
+	\begin{theorem}[Cauchy-Goursat Theorem]
+		Let \(C\) be a simple closed contour. If a function \(f\) is analytic for all set of points \(z\) on and in \(C\), then 
+		\begin{align*}
+			\int_{C} f(z) dz = 0
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\underline{First, a lemma:} \newline
+		\begin{lemma}
+			Let \(C\) be a closed contour, \(R\) denote the region enclosed and on the contour, and \(f\) be a function analytic in \(R\). The region \(R\) can be covered by a finite number of squares or partial squares, indexed \(j = 1, 2, \ldots, n\), such that for some \(\epsilon > 0\): 
+			\begin{align*}
+				\abs{\frac{f(z) - f(z_j)}{z - z_j} - f'(z_j)} < \epsilon
+			\end{align*}
+			Holds for all points \(z\) other than a fixed point \(z_j\) in that square or partial square. We let a square denote a region with boundary points included with points interior to it. If a square has points not in \(R\), then we remove those points and it becomes a partial square.
+		\end{lemma}
+		\begin{proof}
+			Suppose there does not exist a \(z_j\) where 
+			\begin{align*}
+				\abs{\frac{f(z) - f(z_j)}{z - z_j} - f'(z_j)} < \epsilon
+			\end{align*}
+			holds after subdividing a square a finite number of times for contradiction.
+			Let \(\sigma_0\) denote the original square or the entire square of the partial square, \(\sigma_1\) denote the squares after subdividing \(\sigma_0\) into four equal smaller squares, and so on. After subdividing \(\sigma_0\), one of the \(\sigma_1\) must contain points of \(R\) but still no such \(z_j\) exists, so we continue to subdivide such \(\sigma_1\) since the inequality does not hold. We will then obtain an infinite sequence
+			\[\sigma_0, \sigma_1, \sigma_2, \ldots, \sigma_{k-1}, \sigma_k, \ldots\]
+			There is a point \(z_0\) that is common to each of these squares and each of these squares contain points of \(R\) other than \(z_0\). As the size of the squares are decreasing, there exists a neighbourhood \(\delta > \abs{z - z_0}\) containing the squares with diagonals less than \(\delta\), so each neighbourhood \(\delta\) contains points of \(R\) distinct from \(z_0\). Thus \(z_0\) is an accumulation point of \(R\) (\cref{Accumulation/Limit Point Definition - Complex}), and since \(R\) is a closed set, \(z_0 \in R\).
+			
+			Now, since \(f\) is analytic in \(R\) and \(z_0\), \(f'(z_0)\) exists and according to \cref{Derivative Definition - Complex}:
+			\begin{align*}
+				\forall \epsilon \exists \delta >0 
+				\left[\abs{z - z_0}< \delta \implies \abs{\frac{f(z) - f(z_0)}{z - z_0} - f'(z_0)} < \epsilon \right]
+			\end{align*}
+			However, such neighbourhood \(\abs{z-z_0}<\delta\) contains \(\sigma_K\) for some sufficiently large \(K\), so \(z_0\) serves as \(z_j\) for a the subregion of \(\sigma_K\) or part of \(\sigma_K\), thus there is no need to subdivide \(\sigma_K\). We have reached a contradiction.
+		\end{proof}
 	
+		\underline{Upper bound for modulus of an integral:} \newline \newline
+		Given some \(\epsilon\) we cover region \(R\) with squares such that
+		\begin{align*}
+			\abs{\frac{f(z) - f(z_j)}{z - z_j} - f'(z_j)} < \epsilon
+		\end{align*}
+		We define a neighbourhood \(\delta_j(z)\) enclosing the \(j\)-th square or partial square by
+		\begin{align*}
+			\delta_j(z) = 
+			\begin{cases}
+				\frac{f(z) - f(z_j)}{z-z_j} - f'(z_j) & z \neq z_j \\
+				0 & z = z_j
+			\end{cases}
+		\end{align*}
+		Then 
+		\begin{align*}
+			\forall z \in \sigma \subset R [\abs{\delta_j (z)} < \epsilon]
+		\end{align*}
+		As \(f(z)\) is continuous throughout subregion \(\sigma\),  \(\delta_j(z)\) is continuous in \(\sigma\) and 
+		\begin{align*}
+			\lim_{z \rightarrow z_j} \delta_j(z = f'(z_j) - f'(z_j) = 0
+		\end{align*}
+		Now, let \(C_j\) denote the positively oriented contours on the boundaries of the squares and partial squares covering \(R\). Then on any \(C_j\) be definition of \(\delta_j(z)\):
+		\begin{align*}
+			&f(z) = f(z_j) - z_j f'(z_j) + f'(z_j) z + (z - z_j) \delta_j(z) \\
+			&\implies \int_{C_j} f(z) dz = [f(z_j) - z_j f'(z_j)] \int_{C_j} dz + f'(z_j) \int_{C_j} z dz + \int_{C_j} (z - z_j) \delta_j(z) dz
+		\end{align*}
+		However, according to \cref{Antiderivative and contour integrals theorem - Complex}:
+		\begin{align*}
+			\int_{C_j} dz &= 0 & \int_{C_j} z dz &= 0
+		\end{align*}
+		So
+		\begin{align*}
+			&\int_{C_j} f(z) dz = \int_{C_j} (z - z_j) \delta_j(z) dz & j = 1, 2, 3, \ldots, n \\
+			&\implies \sum_{j=1}^{n} \int_{C_j} f(z) dz  = \sum_{j=1}^{n} \int_{C_j} (z - z_j) \delta_j (z) dz
+		\end{align*}
+		Now as boundaries of adjacent subregions cancel each other out, since they are taken along opposite senses to each other, only those on \(C\) remain, so
+		\begin{align*}
+			&\int_{C} f(z) dz = \sum_{j=1}^{n} \int_{C_j} (z - z_j) \delta_j (z) dz  
+			\implies \abs{\int_{C} f(z) dz} \leq \sum_{j=1}^{n} \abs{\int_{C_j} (z - z_j) \delta_j (z) dz}
+		\end{align*}
+	
+		\underline{Endgame:} \newline \newline
+		Let \(s_j\) denote the length of the sides of the square or partial square \(\sigma_j\), since \(C_j\) is on the boundary or part of the boundary of the square.
+		\begin{align*}
+			\abs{z - z_j} &\leq \sqrt{2} s_j & \sqrt{2} s_j \text{ is diagonal of square}
+		\end{align*}
+		Then 
+		\begin{align*}
+			\abs{\delta_j(z)} < \epsilon 
+			\implies \abs{(z - z_j) \delta_j(z)} = \abs{z - z_j} \abs{\delta_j(z)} < \sqrt{2} s_j \epsilon
+		\end{align*}
+		Let \(A_j\) be the area of the square. If \(C_j\) is the boundary of a square, then the length of \(C_j\) is \(4s_j\)  and we have
+		\begin{align*}
+			\abs{\int_{C_j} (z - z_j) \delta_j (z) dz} < \sqrt{2}s_j \epsilon 4 s_j = 4\sqrt{2} A_j \epsilon
+		\end{align*}
+		Now, if \(C_j\) is the boundary of a partial square, then the length of \(C_j\) is less than \(4s_j + L_j\), where \(L_j\) is the length of \(C_j\) that is a part of \(C\). Let \(S\) be the length of the sides of some square that entirely encloses \(C\), so sum of \(A_j\) is less then \(S^2\). Then we have: 
+		\begin{align*}
+			\abs{\int_{C_j} (z - z_j) \delta_j(z) dz} < \sqrt{2} s_j \epsilon (4s_j + L_j) < 4 \sqrt{2} A_j \epsilon + \sqrt{2} SL_j \epsilon
+		\end{align*}
+		If \(L\) is the length of \(C\), then
+		\begin{align*}
+			\abs{\int_{C} f(z) dz} 
+			&\leq \sum_{j=1}^{n} \abs{\int_{C_j} (z - z_j) \delta_j (z) dz} 
+			< \sum_{j=1}^{n} \left( 4 \sqrt{2} A_j \epsilon + \sqrt{2} SL_j \epsilon \right) \\
+			&< \left(4 \sqrt{2} S^2 + \sqrt{2 SL} \right) \epsilon
+		\end{align*}
+		Since \(\epsilon\) is arbitrary, we can choose it to be as small as we like, so 
+		\begin{align*}
+			\forall \epsilon > 0
+			\left[\abs{\int_{C} f(z) dz} < \left(4 \sqrt{2} S^2 + \sqrt{2 SL} \right) \epsilon \right] \implies \abs{\int_{C} f(z) dz} = 0
+		\end{align*}
+		Hence, if function \(f\) is analytic on all \(z \in C\) where \(C\) is a simple closed contour, then
+		\begin{align*}
+			\int_{C} f(z) dz = 0
+		\end{align*}
+	
+		\underline{\textbf{TLDR:}} \newline \newline
+		
+	\end{proof}
+
+	\section{Simply Closed Domains} \label{Simply Closed Domains Section - Complex}
+
 	
 	
 	
