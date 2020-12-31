@@ -74,35 +74,37 @@
 \BOOKMARK [1][-]{section.15.6}{Cauchy-Goursat Theorem}{chapter.15}% 74
 \BOOKMARK [2][-]{subsection.15.6.1}{Simply Connected Domains}{section.15.6}% 75
 \BOOKMARK [2][-]{subsection.15.6.2}{Multiply Connected Domains}{section.15.6}% 76
-\BOOKMARK [0][-]{chapter.16}{Conformal Mapping}{part.4}% 77
-\BOOKMARK [-1][-]{part.5}{V Ordinary Differential Equations}{}% 78
-\BOOKMARK [-1][-]{part.6}{VI Nonlinear Dynamics}{}% 79
-\BOOKMARK [-1][-]{part.7}{VII Partial Differential Equations}{}% 80
-\BOOKMARK [-1][-]{part.8}{VIII Integral Equations}{}% 81
-\BOOKMARK [-1][-]{part.9}{IX Linear Algebra}{}% 82
-\BOOKMARK [0][-]{chapter.17}{Markov Chains}{part.9}% 83
-\BOOKMARK [-1][-]{part.10}{X Tensors}{}% 84
-\BOOKMARK [-1][-]{part.11}{XI Riemann Geometry}{}% 85
-\BOOKMARK [-1][-]{part.12}{XII Abstract Algebra}{}% 86
-\BOOKMARK [0][-]{chapter.18}{Groups}{part.12}% 87
-\BOOKMARK [0][-]{chapter.19}{Rings}{part.12}% 88
-\BOOKMARK [1][-]{section.19.1}{Ideals}{chapter.19}% 89
-\BOOKMARK [0][-]{chapter.20}{Integral Domains}{part.12}% 90
-\BOOKMARK [0][-]{chapter.21}{GCD Domains}{part.12}% 91
-\BOOKMARK [0][-]{chapter.22}{Unique Factorization Domains}{part.12}% 92
-\BOOKMARK [0][-]{chapter.23}{Principal Ideal Domains}{part.12}% 93
-\BOOKMARK [0][-]{chapter.24}{Fields}{part.12}% 94
-\BOOKMARK [-1][-]{part.13}{XIII Galois Theory}{}% 95
-\BOOKMARK [-1][-]{part.14}{XIV Lie Theory}{}% 96
-\BOOKMARK [0][-]{chapter.25}{Lie Groups}{part.14}% 97
-\BOOKMARK [0][-]{chapter.26}{Lie Algebra}{part.14}% 98
-\BOOKMARK [-1][-]{part.15}{XV C-Star Algebra}{}% 99
-\BOOKMARK [-1][-]{part.16}{XVI Set Theory}{}% 100
-\BOOKMARK [-1][-]{part.17}{XVII Model Theory}{}% 101
-\BOOKMARK [-1][-]{part.18}{XVIII Statistics}{}% 102
-\BOOKMARK [-1][-]{part.19}{XIX Tips and Tricks}{}% 103
-\BOOKMARK [0][-]{chapter.27}{Integration Techniques}{part.19}% 104
-\BOOKMARK [1][-]{section.27.1}{DI Method \(Integration Table\)}{chapter.27}% 105
-\BOOKMARK [1][-]{section.27.2}{Feynman Integration}{chapter.27}% 106
-\BOOKMARK [-1][-]{part.20}{XX Index}{}% 107
-\BOOKMARK [-1][-]{part.21}{XXI Bibliography}{}% 108
+\BOOKMARK [1][-]{section.15.7}{Cauchy Integral Formula}{chapter.15}% 77
+\BOOKMARK [2][-]{subsection.15.7.1}{Extension}{section.15.7}% 78
+\BOOKMARK [0][-]{chapter.16}{Conformal Mapping}{part.4}% 79
+\BOOKMARK [-1][-]{part.5}{V Ordinary Differential Equations}{}% 80
+\BOOKMARK [-1][-]{part.6}{VI Nonlinear Dynamics}{}% 81
+\BOOKMARK [-1][-]{part.7}{VII Partial Differential Equations}{}% 82
+\BOOKMARK [-1][-]{part.8}{VIII Integral Equations}{}% 83
+\BOOKMARK [-1][-]{part.9}{IX Linear Algebra}{}% 84
+\BOOKMARK [0][-]{chapter.17}{Markov Chains}{part.9}% 85
+\BOOKMARK [-1][-]{part.10}{X Tensors}{}% 86
+\BOOKMARK [-1][-]{part.11}{XI Riemann Geometry}{}% 87
+\BOOKMARK [-1][-]{part.12}{XII Abstract Algebra}{}% 88
+\BOOKMARK [0][-]{chapter.18}{Groups}{part.12}% 89
+\BOOKMARK [0][-]{chapter.19}{Rings}{part.12}% 90
+\BOOKMARK [1][-]{section.19.1}{Ideals}{chapter.19}% 91
+\BOOKMARK [0][-]{chapter.20}{Integral Domains}{part.12}% 92
+\BOOKMARK [0][-]{chapter.21}{GCD Domains}{part.12}% 93
+\BOOKMARK [0][-]{chapter.22}{Unique Factorization Domains}{part.12}% 94
+\BOOKMARK [0][-]{chapter.23}{Principal Ideal Domains}{part.12}% 95
+\BOOKMARK [0][-]{chapter.24}{Fields}{part.12}% 96
+\BOOKMARK [-1][-]{part.13}{XIII Galois Theory}{}% 97
+\BOOKMARK [-1][-]{part.14}{XIV Lie Theory}{}% 98
+\BOOKMARK [0][-]{chapter.25}{Lie Groups}{part.14}% 99
+\BOOKMARK [0][-]{chapter.26}{Lie Algebra}{part.14}% 100
+\BOOKMARK [-1][-]{part.15}{XV C-Star Algebra}{}% 101
+\BOOKMARK [-1][-]{part.16}{XVI Set Theory}{}% 102
+\BOOKMARK [-1][-]{part.17}{XVII Model Theory}{}% 103
+\BOOKMARK [-1][-]{part.18}{XVIII Statistics}{}% 104
+\BOOKMARK [-1][-]{part.19}{XIX Tips and Tricks}{}% 105
+\BOOKMARK [0][-]{chapter.27}{Integration Techniques}{part.19}% 106
+\BOOKMARK [1][-]{section.27.1}{DI Method \(Integration Table\)}{chapter.27}% 107
+\BOOKMARK [1][-]{section.27.2}{Feynman Integration}{chapter.27}% 108
+\BOOKMARK [-1][-]{part.20}{XX Index}{}% 109
+\BOOKMARK [-1][-]{part.21}{XXI Bibliography}{}% 110

@@ -3,7 +3,7 @@
 \usepackage[letterpaper, portrait, margin=2.5cm]{geometry} %Set paper type, format, margin
 \usepackage[svgnames]{xcolor}
 \usepackage{%abstract, 
-	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, placeins, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wasysym, wrapfig}
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wrapfig}
 \usepackage{cleveref}
 \usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings,backgrounds,patterns}
 \usepgfplotslibrary{groupplots}
@@ -4880,6 +4880,76 @@
 	\begin{definition}[Multiply Connected Domains]
 		A domain that is not simply connected.
 	\end{definition}
+
+	\begin{theorem}
+		\label{Contour integral over Multiply Connected Domains Theorem - Complex}
+		Let \(C\) be a simple closed contour in the positive direction, and \(C_k\) (\(k \in \{1,2,3,\ldots, n\}\)) be simple closed contours in \(C\) taken in the negative direction that hare disjoint with no common interior points. If a function \(f\) is analytic on \(C\) and \(C_k\) and throughout the multiply connected domain consisting of points inside \(C\) but exterior to all \(C_k\), then
+		\begin{align*}
+			\int_{C} f(z) dz + \sum_{k=1}^{n} \int_{C_k} f(z) dz = 0
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Let a polygonal path \(L_1\) connect \(C\) to the inner contour \(C_1\), \(L_2\) connecting \(C_1\) to \(C_2\), and continue in this manner. Finally, let \(L_{n+1}\) connect \(C_n\) to \(C\). Then we have two contours \(\Gamma_1\) and \(\Gamma_2\). \(\Gamma_1\) consisting of parts of the contours \(C\), \(C_k\), and \(L_k\). \(\Gamma_2\) consisting of the remaining parts of contours \(C\), \(C_k\), and \(-L_k\). If we apply the Cauchy-Goursat theorem to \(\Gamma_1\) and \(\Gamma_2\), then
+		\begin{align*}
+			\int_{\Gamma_1} f(z) dz + \int_{\Gamma_2} f(z) dz = 0
+		\end{align*}
+		Now, since the integrals along \(L_k\) cancel (due to being taken in the opposite direction), only integrals along \(C\) and \(C_k\) remain. Hence
+		\begin{align*}
+			&\int_{\Gamma_1} f(z) dz + \int_{\Gamma_2} f(z) dz = 0 \\
+			&\implies \int_{C} f(z) dz + \sum_{k=1}^{n+1} \int_{L_k} f(z) dz - \sum_{k=1}^{n+1} \int_{L_k} f(z) dz + \sum_{k=1}^{n} \int_{C_k} f(z) dz = 0 \\
+			&\implies \int_{C} f(z) dz + \sum_{k=1}^{n} \int_{C_k} f(z) dz = 0
+		\end{align*}
+	\end{proof}
+
+	\begin{observation}
+		Basically, imagine a slice of Swiss cheese. We took a knife and cut a single path though all of the holes in order. Another way of saying it is that we cut through each hole only once. This way we end up with two slices each consisting a part of the outer edge of the original slice, a part of the edge of the holes, and the edges introduced by our cut. Since we have cut through all of the holes, our two slices will not have holes so we can integrate along the outer edge of each of those slices. The Cauchy-Goursat theorem tells us that the value for the sum will be zero, since they are now simply connected domains. 
+	\end{observation}
+	
+	\begin{question}
+		We pretty much end up with two simply connected domains, right? If so then shouldn't it be:
+		\begin{align*}
+			\left( \int_{\Gamma_1} f(z) dz = 0 \right) \land \left( \int_{\Gamma_2} f(z) dz = 0 \right) \implies \int_{\Gamma_1} f(z) dz + \int_{\Gamma_2} f(z) dz = 0
+		\end{align*}
+		As apposed to just 
+		\begin{align*}
+			\int_{\Gamma_1} f(z) dz + \int_{\Gamma_2} f(z) dz = 0
+		\end{align*}
+		which does not imply
+		\begin{align*}
+			\left( \int_{\Gamma_1} f(z) dz = 0 \right) \land \left( \int_{\Gamma_2} f(z) dz = 0 \right)
+		\end{align*}
+	\end{question}
+
+	\begin{corollary}[Principle of Deformation of Paths]
+		\label{Principle of Deformation of Paths Corollary - Complex}
+		Let \(C_1\) and \(C_2\) be positively oriented simple closed contours, with \(C_1\) interior to \(C_2\). If a function \(f\) is analytic on \(C_1\), \(C_2\), and the regions between them, then 
+		\begin{align*}
+			\int_{C_1} f(z) dz = \int_{C_2} f(z) dz
+		\end{align*}
+	\end{corollary}
+	\begin{proof}
+		It follows from \cref{Contour integral over Multiply Connected Domains Theorem - Complex} that 
+		\begin{align*}
+			\int_{C_1} f(z) dz - \int_{-C_2} f(z) dz = 0
+			\implies \int_{C_1} f(z) dz = \int_{C_2} f(z) dz
+		\end{align*}
+	\end{proof}
+
+
+	\section{Cauchy Integral Formula} \label{Cauchy Integral Formula Section - Complex}
+	
+	\begin{theorem}[Cauchy Integral Formula]
+		\label{Cauchy Integral Formula}
+		Let a function \(f\) be analytic on and inside a simple closed contour \(C\) oriented positively. Then for all \(z_0\) interior to \(C\):
+		\begin{align*}
+			f(z_0) = \frac{1}{2\pi i} \int_{C} \frac{f(z)}{z - z_0} dz
+		\end{align*}
+		That is, if \(f\) is analytic within and on a simple closed contour \(C\), then values of \(f\) interior to \(C\) is determined by values of \(f\) on \(C\).
+	\end{theorem}
+	
+	
+	\subsection{Extension} \label{Cauchy Integral Formula (Extension) Subsection - Complex}
+	
 
 	
 	
