@@ -4721,6 +4721,7 @@
 	Previously: A function \(f\) that has an antiderivative in any domain \(D\), then the integral of \(f\) around any closed contour in \(D\) is zero. (\Cref{Antiderivative and contour integrals theorem - Complex}) Now, it's for simple closed contours. 
 	
 	\begin{theorem}[Cauchy-Goursat Theorem]
+		\label{Cauchy-Goursat Theorem - Complex}
 		Let \(C\) be a simple closed contour. If a function \(f\) is analytic for all set of points \(z\) on and in \(C\), then 
 		\begin{align*}
 			\int_{C} f(z) dz = 0
@@ -4834,10 +4835,53 @@
 		As \(\epsilon\) can be made arbitrary small and the inequality must hold for all values of \(\epsilon\), we find \(\int_{C} f(z) dz = 0\).
 	\end{proof}
 
-	\section{Simply Closed Domains} \label{Simply Closed Domains Section - Complex}
+	\subsection{Simply Connected Domains} \label{Simply Connected Domains Subsection - Complex}
+	
+	\begin{definition}[Simply Connected Domain]
+		\label{Simply Connected (Domain) Definition - Complex}
+		A domain \(D\) which every simple closed contour that lies within it only encloses points in \(D\).
+	\end{definition}
 
+	\begin{theorem}
+		\label{Contour integral in simply connected domain Theorem - Complex}
+		Let \(f\) be a function that is analytic throughout a simply connected domain \(D\). Then for every closed contour \(C\) lying in \(D\):
+		\begin{align*}
+			\int_{C} f(z) dz = 0
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Suppose \(C\) is simple and lies entirely in \(D\). The result follows from the Cauchy-Goursat theorem (\cref{Cauchy-Goursat Theorem - Complex}).
+		
+		Suppose that \(C\) is closed, but intersects itself a finite number of times, then it consists of a finite number of simple closed contours. Result again follows from the Cauchy-Goursat Theorem. 
+		
+		Note: There are subtleties for infinite number of self-intersection points. 
+	\end{proof}
 
-	\section{Multiply Closed Domains} \label{Multiply Closed Domains Section - Complex}
+	\begin{corollary}
+		If \(f\) is a function analytic throughout a simply connected domain \(D\), then it has antiderivatives everywhere in \(D\).
+	\end{corollary}
+	\begin{proof}
+		If \(f\) is analytic in a simply connected domain \(D\) then it is continuous in \(D\). Then
+		\begin{align*}
+			\int_{C} f(z) dz = 0 &\iff \forall z \in D \ \exists F(z)[F'(z) = f(z)] 
+				&\Cref{Antiderivative and contour integrals theorem - Complex}
+		\end{align*}
+	\end{proof}
+
+	\begin{corollary}
+		Entire functions have antideriviatives everywhere in their domain of definition.
+	\end{corollary}
+	\begin{proof}
+		Consequence of previous corollary and that finite plane is simply connected.
+	\end{proof}
+
+	\subsection{Multiply Connected Domains} \label{Multiply Connected Domains Subsection - Complex}
+	
+	\begin{definition}[Multiply Connected Domains]
+		A domain that is not simply connected.
+	\end{definition}
+
+	
 	
 	
 	

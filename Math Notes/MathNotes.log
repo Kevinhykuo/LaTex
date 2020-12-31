@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  28 DEC 2020 20:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  30 DEC 2020 17:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1753,12 +1753,12 @@ Overfull \hbox (0.18661pt too wide) detected at line 4640
  []
 
 [100] [101] [102]
-Underfull \hbox (badness 10000) in paragraph at lines 4756--4758
+Underfull \hbox (badness 10000) in paragraph at lines 4757--4759
 
  []
 
 [103]
-Underfull \hbox (badness 10000) in paragraph at lines 4797--4799
+Underfull \hbox (badness 10000) in paragraph at lines 4798--4800
 
  []
 
@@ -1854,17 +1854,17 @@ Chapter 27.
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: B8D2F9EA9E0C8AD854E533AADF1C14EB;6861.
+(rerunfilecheck)             Checksum: 4D86966BD1D6E9CE83B6247397271F8F;6881.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39920 strings out of 479382
- 896258 string characters out of 5869369
- 1330206 words of memory out of 5000000
- 55541 multiletter control sequences out of 15000+600000
+ 39938 strings out of 479382
+ 896885 string characters out of 5869369
+ 1330528 words of memory out of 5000000
+ 55549 multiletter control sequences out of 15000+600000
  446118 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,98p,726b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1897,10 +1897,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (177 pages, 660099 bytes).
+Output written on MathNotes.pdf (177 pages, 662503 bytes).
 PDF statistics:
- 2477 PDF objects out of 2487 (max. 8388607)
- 2211 compressed objects within 23 object streams
- 664 named destinations out of 1000 (max. 500000)
+ 2492 PDF objects out of 2984 (max. 8388607)
+ 2225 compressed objects within 23 object streams
+ 674 named destinations out of 1000 (max. 500000)
  1047 words of extra memory for PDF output out of 10000 (max. 10000000)
 
