@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  31 DEC 2020 02:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  31 DEC 2020 02:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1839,7 +1839,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  39728 strings out of 479382
  894994 string characters out of 5869369
- 1329067 words of memory out of 5000000
+ 1330067 words of memory out of 5000000
  55343 multiletter control sequences out of 15000+600000
  443926 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1873,7 +1873,7 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (179 pages, 667988 bytes).
+Output written on MathNotes.pdf (179 pages, 667991 bytes).
 PDF statistics:
  2522 PDF objects out of 2984 (max. 8388607)
  2253 compressed objects within 23 object streams
