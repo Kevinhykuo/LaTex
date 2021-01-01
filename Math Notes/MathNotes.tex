@@ -4948,18 +4948,71 @@
 		That is, if \(f\) is analytic within and on a simple closed contour \(C\), then values of \(f\) interior to \(C\) is determined by values of \(f\) on \(C\).
 	\end{theorem}
 	\begin{proof}
-		content
+		Let  \(C\) be a positively oriented contour and \(z_0\) be any point interior to \(C\). Let \(C_\rho\) be a positively oriented circular contour lying inside \(C\) centered at \(z_0\). That is, \(C_\rho\) lies on points \(\abs{z - z_0)} = \rho\). Then from \cref{Principle of Deformation of Paths Corollary - Complex}, we can write: 
+		\begin{align*}
+			&\int_{C} \frac{f(z)}{z-z_0} dz = \int_{C_\rho} \frac{f(z)}{z-z_0} dz  \\
+			&\implies \int_{C} \frac{f(z)}{z-z_0} dz - f(z_0) \int_{C_\rho} \frac{1}{z-z_0} dz = \int_{C} \frac{f(z) - f(z_0)}{z-z_0} dz 
+		\end{align*}
+		Now
+		\begin{align*}
+			\int_{C_\rho} \frac{1}{z-z_0} dz 
+			&= \int_{C_\rho} \frac{1}{re^{i\theta}} ire^{i\theta} d\theta & z = z_0 + re^{i\theta} \\
+			&= \int_{C_\rho} i d\theta = 2\pi i
+		\end{align*}
+		So
+		\begin{align*}
+			\int_{C} \frac{f(z)}{z - z_0}dz - 2\pi i f(z_0) = \int_{C_\rho} \frac{f(z) - f(z_0)}{z - z_0} dz
+		\end{align*}
+		Since \(f\) is analytic, thus continuous:
+		\begin{align*}
+			\forall \epsilon>0, \exists \delta>0 [\abs{z-z_0}<\delta \implies \abs{f(z) - f(z_0)}<\epsilon]
+		\end{align*}
+		Now, \(\abs{z - z_0} = \rho < \delta\) for all \(z\) on \(C_\rho\), so according to \cref{Antiderivative and contour integrals theorem - Complex}:
+		\begin{align*}
+			\abs{\int_{C_\rho} \frac{f(z) - f(z_0)}{z - z_0} dz} &< \frac{\epsilon}{\rho} (2 \pi \rho) = 2 \pi \epsilon & \abs{\frac{f(z) - f(z_0)}{z - z_0}} < \frac{\epsilon}{\delta}
+		\end{align*}
+		Then
+		\begin{align*}
+			\abs{\int_{C} \frac{f(z)}{z - z_0}dz - 2\pi i f(z_0)} < 2 \pi \epsilon
+		\end{align*}
+		This inequality must hold for all values of \(\epsilon > 0\), so
+		\begin{align*}
+			\int_{C} \frac{f(z)}{z - z_0}dz - 2\pi i f(z_0) = 0 \implies \int_{C} \frac{f(z)}{z - z_0} dz = 2 \pi i f(z_0)
+		\end{align*}
 	\end{proof}
 	
+%	\subsection{Extension} \label{Cauchy Integral Formula (Extension) Subsection - Complex}
 	
-	\subsection{Extension} \label{Cauchy Integral Formula (Extension) Subsection - Complex}
+	The Cauchy Integral Theorem links \(f(z_0)\) to a contour integral. The extension of the Cauchy Integral Formula links the \(n\)-th derivative of \(f\), \(f^{(n)}(z_0)\), to the contour integral of \(f\) at \(z_0\).
+	\begin{theorem}[Cauchy Integral Formula (Extension)]
+		\label{Cauchy Integral Formula (Extension) - Complex}
+		Let a function \(f\) be analytic on and inside a simple closed contour \(C\) oriented positively. Then for all \(z_0\) interior to \(C\):
+		\begin{align*}
+			f^{(n)}(z_0) &= \frac{n!}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz & n \in \mathbb{N} \cup \{0\}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Proof that is not a proof, but a verification in Brown and Churchill \cite{Brown.J;Churchill.R-Complex-Variables-2014}. \newline
+		Taking the original Cauchy Integral formula:
+		\begin{align*}
+			f(z) = \frac{1}{2\pi i} \int_{C} \frac{f(s)}{s-z} ds
+			&\implies f'(z) = \frac{1}{2\pi i} \int_{C} f(z) \pdv{z}(s-z)^{-1} ds = \frac{1}{2\pi i} \int_{C} \frac{f(s)}{(s-z)^2} ds
+		\end{align*}
+		Continued differentiation under the integral sign yields the desired result...or does it? Verification is needed. 
+		
+		\underline{\textbf{Verification}} \newline
+		
+	\end{proof}
 	
-
+	\begin{example}
+		We can then rewrite the Legendre Polynomials:
+		\begin{align*}
+			P_n(z) &= \frac{1}{n! 2^n} \dv[n]{z} (z^2 - 1)^2 = \frac{1}{2^{n+1} \pi i} \int_{C} \frac{(s^2 - 1)^n}{(s-z)^{n+1}} ds & n \in \mathbb{N} \cup \{0\}
+		\end{align*}
+	\end{example}
 	
 	
-	
-	
-	
+	\subsection{Consequences} \label{Cauchy Integral Theorem Consequences Subsection - Complex}
 	
 	
 	
