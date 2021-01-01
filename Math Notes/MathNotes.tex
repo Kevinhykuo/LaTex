@@ -4455,6 +4455,7 @@
 	\end{proof}
 	
 	\begin{theorem}
+		\label{Upper Bound for Moduli of Contour Integral Theorem - Complex}
 		Let \(f(z)\) be piecewise continuous function on contour \(C\) with length \(L\).
 		\begin{align*}
 			\forall z \in C \ \exists M \in \mathbb{R} 
@@ -4967,7 +4968,7 @@
 		\begin{align*}
 			\forall \epsilon>0, \exists \delta>0 [\abs{z-z_0}<\delta \implies \abs{f(z) - f(z_0)}<\epsilon]
 		\end{align*}
-		Now, \(\abs{z - z_0} = \rho < \delta\) for all \(z\) on \(C_\rho\), so according to \cref{Antiderivative and contour integrals theorem - Complex}:
+		Now, \(\abs{z - z_0} = \rho < \delta\) for all \(z\) on \(C_\rho\), so according to \cref{Upper Bound for Moduli of Contour Integral Theorem - Complex}:
 		\begin{align*}
 			\abs{\int_{C_\rho} \frac{f(z) - f(z_0)}{z - z_0} dz} &< \frac{\epsilon}{\rho} (2 \pi \rho) = 2 \pi \epsilon & \abs{\frac{f(z) - f(z_0)}{z - z_0}} < \frac{\epsilon}{\delta}
 		\end{align*}
@@ -5001,8 +5002,88 @@
 		Continued differentiation under the integral sign yields the desired result...or does it? Verification is needed. 
 		
 		\underline{\textbf{Verification}} \newline
-		
+		Let \(z\) be any point interior to a simple closed contour \(C\), and \(d\) denote the smallest distance from \(z\) to points \(s\) on \(C\). Assume \(0 < \abs{\Delta z} < d\), then 
+		\begin{align*}
+			\frac{f(z + \Delta z) - f(s)}{\Delta z} 
+			&= \frac{1}{2 \pi i} \int_{C} \left(\frac{1}{s - z - \Delta z} - \frac{1}{s - z}\right) \frac{f(s)}{\Delta z} ds \\
+			&= \frac{1}{2\pi i} \int_{C} \frac{f(s)}{(s - z - \Delta z)(s-z)} ds
+		\end{align*}
+		Now
+		\begin{align*}
+			\frac{1}{(s-z-\Delta z)(s-z)} = \frac{1}{(s-z)^2} + \frac{\Delta z}{(s-z-\Delta z)(s-z)^2}
+		\end{align*}
+		Hence
+		\begin{align*}
+			\frac{f(z + \Delta z) - f(s)}{\Delta z} - \frac{1}{2\pi i} \int_{C} \frac{f(s)}{(s-z)^2} ds = \frac{1}{2\pi i} \int_{C} \frac{f(s)\Delta z}{(s-z-\Delta z)(s-z)^2} ds
+		\end{align*}
+		Let \(M = \max{\abs{f(s)}}\) on \(C\), since \(\abs{s-z} \geq d\) and \(\abs{\Delta z}<d\):
+		\begin{align*}
+			\abs{s-z-\Delta z} = \abs{(s-z) - \Delta z} \geq \abs{\abs{s-z} - \abs{\Delta z}} \geq d - \abs{\Delta z} > 0
+		\end{align*}
+		Then letting \(L\) be the length of \(C\) and using \cref{Upper Bound for Moduli of Contour Integral Theorem - Complex}:
+		\begin{align*}
+			\abs{\int_{C} \frac{f(s) \Delta z}{(s-z-\Delta z)(s-z)^2}} 
+			\leq \frac{\abs{\Delta z} M}{(d - \abs{\Delta z}) d^2} L
+		\end{align*}
+		Taking the limit \(\Delta z \rightarrow 0\):
+		\begin{align*}
+			\lim_{\Delta z \rightarrow 0} \abs{\int_{C} \frac{f(s) \Delta z}{(s-z-\Delta z)(s-z)^2}} 
+			\leq  \lim_{\Delta z \rightarrow 0} \frac{\abs{\Delta z} M}{(d - \abs{\Delta z}) d^2} L = 0
+		\end{align*}
+		Hence
+		\begin{align*}
+			\lim_{\Delta z \rightarrow 0} \frac{f(z + \Delta z) - f(s)}{\Delta z} - \frac{1}{2\pi i} \int_{C} \frac{f(s)}{(s-z)^2} ds 
+			= \lim_{\Delta z \rightarrow 0} \frac{1}{2\pi i} \int_{C} \frac{f(s)\Delta z}{(s-z-\Delta z)(s-z)^2} ds = 0
+		\end{align*}
+		Thus 
+		\begin{align*}
+			\lim_{\Delta z \rightarrow 0} \frac{f(z + \Delta z) 
+			- f(s)}{\Delta z} = \frac{1}{2\pi i} \int_{C} \frac{f(s)}{(s-z)^2} ds 
+		\end{align*}
+		By induction, we get: 
+		\begin{align*}
+			f^{(n)}(z) &= \frac{n!}{2 \pi i} \int_{C} \frac{f(s)}{(s-z)^{n+1}} ds 
+				& n \in \mathbb{N} \cup \{0\}
+		\end{align*}
 	\end{proof}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=10cm,
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=0, xmax=25,
+				ymin=0, ymax=16,
+				xtick=100,
+				ytick=100,
+				axis lines = center,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(14, 8) [$z$]
+					(16.05, 10.64) []
+					(18, 2.75)  [$s$]
+					(11.5, 8) [$z + \Delta z$]
+				};
+				\draw[draw=Black] plot [smooth cycle] coordinates {(axis cs: 2,7) (axis cs: 2,3) (axis cs: 20,3) (axis cs: 20,7) (axis cs: 10,14.2)};
+				\draw[-, draw=Black]  (axis cs: 14,8)--(axis cs: 16.05,10.64)
+				node[midway,sloped,above] {$d$};
+				\draw[-, draw=Black]  (axis cs: 14,8)--(axis cs: 18,2.75)
+				node[midway,sloped,above] {$\abs{s-z}$};
+				\draw[-, draw=Black]  (axis cs: 14,8)--(axis cs: 11.5,8)
+				node[midway,sloped,below] {$\abs{\Delta z}$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
 	\begin{example}
 		We can then rewrite the Legendre Polynomials:
@@ -5011,10 +5092,43 @@
 		\end{align*}
 	\end{example}
 	
-	
 	\subsection{Consequences} \label{Cauchy Integral Theorem Consequences Subsection - Complex}
 	
+	\begin{theorem}
+		Let a function \(f\) be analytic at a point \(z_0\), then \(f^{(n)}\) exists at \(z_0\) for all \(n \in \mathbb{N}\). That is, the derivative of \(f\) of all orders are analytic at \(z_0\).
+	\end{theorem}
+	\begin{proof}
+		content
+	\end{proof}
 	
+	\begin{corollary}
+		Let a function \(f(z) = u(x,y) + iv(x,y)\) be analytic at a point \(z_0\). Then \(u\) and \(v\) have continuous partial derivatives of all orders at \(z_0\).
+	\end{corollary}
+	\begin{proof}
+		content
+	\end{proof}
+
+	\begin{theorem}
+		Let a function \(f\) be continuous on domain \(D\), and \(C\) be any closed contour lying in \(D\).
+		\begin{align*}
+			\forall C \left[\int_{C} f(z) dz = 0 \right]
+			\implies f \text{ is analytic throughout } D
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		content
+	\end{proof}
+
+	\begin{theorem}[Cauchy's Inequality]
+		Let a function \(f\) be analytic on and inside a positively oriented circular contour \(C_R\) centered at \(z_0\) with radius \(R\). 
+		\begin{align*}
+			M_R = \eval{\max\abs{f(z)}}_{C_R} &\implies \abs{f^{(t)}(z_0)} \leq \frac{n! M_R}{R^n}
+				& n \in \mathbb{N}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		content
+	\end{proof}
 	
 	
 	
