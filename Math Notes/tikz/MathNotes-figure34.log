@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  31 DEC 2020 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  31 DEC 2020 21:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1104,6 +1104,14 @@ File: tikzlibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 s.code.tex
 File: pgflibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowinset=\dimen342
+\pgfarrowlength=\dimen343
+\pgfarrowwidth=\dimen344
+\pgfarrowlinewidth=\dimen345
+)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.groupplots.code.tex
 \pgfplots@group@current@plot=\count345
@@ -1218,13 +1226,13 @@ LaTeX Font Info:    ... okay on input line 138.
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count357
-\scratchdimen=\dimen342
+\scratchdimen=\dimen346
 \scratchbox=\box127
 \nofMPsegments=\count358
 \nofMParguments=\count359
 \everyMPshowfont=\toks57
 \MPscratchCnt=\count360
-\MPscratchDim=\dimen343
+\MPscratchDim=\dimen347
 \MPnumerator=\count361
 \makeMPintoPDFobject=\count362
 \everyMPtoPDFconversion=\toks58
@@ -1892,19 +1900,19 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39002 strings out of 479382
- 881447 string characters out of 5869369
- 1331191 words of memory out of 5000000
- 55345 multiletter control sequences out of 15000+600000
+ 39338 strings out of 479382
+ 890661 string characters out of 5869369
+ 1342223 words of memory out of 5000000
+ 55677 multiletter control sequences out of 15000+600000
  444227 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,16n,100p,765b,2422s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 97i,16n,100p,765b,2421s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/
 usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}</usr/
 local/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/
 local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/l
 ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on tikz/MathNotes-figure34.pdf (1 page, 31699 bytes).
+Output written on tikz/MathNotes-figure34.pdf (1 page, 32130 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream

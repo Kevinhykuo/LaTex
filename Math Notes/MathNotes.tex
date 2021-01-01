@@ -5,7 +5,7 @@
 \usepackage{%abstract, 
 	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wrapfig}
 \usepackage{cleveref}
-\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings,backgrounds,patterns}
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings,backgrounds,patterns, arrows.meta}
 \usepgfplotslibrary{groupplots}
 \usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
 \usepackage{thmtools}
@@ -5081,6 +5081,8 @@
 				node[midway,sloped,above] {$\abs{s-z}$};
 				\draw[-, draw=Black]  (axis cs: 14,8)--(axis cs: 11.5,8)
 				node[midway,sloped,below] {$\abs{\Delta z}$};
+				\draw[-{>[scale=2.0]}]  (axis cs: 3.8, 9.3)--(axis cs: 3.6, 9.05)
+				node[midway,sloped,above] {$C$};
 			\end{axis}
 		\end{tikzpicture}
 	\end{figure}
