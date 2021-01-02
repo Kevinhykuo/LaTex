@@ -5097,18 +5097,28 @@
 	\subsection{Consequences} \label{Cauchy Integral Theorem Consequences Subsection - Complex}
 	
 	\begin{theorem}
+		\label{Analytic implies existance of high order derivatives theorem - Complex}
 		Let a function \(f\) be analytic at a point \(z_0\), then \(f^{(n)}\) exists at \(z_0\) for all \(n \in \mathbb{N}\). That is, the derivative of \(f\) of all orders are analytic at \(z_0\).
 	\end{theorem}
 	\begin{proof}
-		content
+		Suppose a function \(f\) is analytic at point \(z_0\), then there exists a neighbourhood \(\epsilon > \abs{z - z_0}\) where \(f\) is analytic. By extension, there is a positively oriented circular contour \(C_0\) centred at \(z_0\) with radius \(\epsilon / 2\) where \(f\) is analytic on and inside \(C_0\).
+		Then by \cref{Cauchy Integral Formula (Extension) - Complex}:
+		\begin{align*}
+			f''(z) &= \frac{1}{\pi i} \int_{C_0} \frac{f(s)}{(s-z)^3} ds & \forall z \text{ interior to } C_0
+		\end{align*}
+		The existence of of \(f''(z)\) in \(\abs{z-z_0}<\epsilon\) \(\implies\) \(f'\) is analytic at \(z_0\). The same argument on \(f'\) implies \(f''\) is also analytic.
 	\end{proof}
 	
+	Note: Suppose \(f(z) = u(x,y) + iv(x,y)\) is analytic at \(z = (x,y)\). Then it is also continuous: 
+	\begin{align*}
+		f(z) = u(x,y) + iv(x,y) 
+		&\implies [f'(z) = u_x + iv_x = v_y - iu_y] \land [f' \text{ is continuous }] \\
+		&\implies [f''(z) = u_{xx} + iv_{xx} = v_{xy} - iu_{yx}] \land [f'' \text{ is continuous}]
+ 	\end{align*}
+	
 	\begin{corollary}
-		Let a function \(f(z) = u(x,y) + iv(x,y)\) be analytic at a point \(z_0\). Then \(u\) and \(v\) have continuous partial derivatives of all orders at \(z_0\).
+		Let a function \(f(z) = u(x,y) + iv(x,y)\) be analytic at a point \(z_0\). Then \(u\) and \(v\) have continuous partial derivatives of all orders at \(z_0\). 
 	\end{corollary}
-	\begin{proof}
-		content
-	\end{proof}
 
 	\begin{theorem}
 		Let a function \(f\) be continuous on domain \(D\), and \(C\) be any closed contour lying in \(D\).
@@ -5116,9 +5126,16 @@
 			\forall C \left[\int_{C} f(z) dz = 0 \right]
 			\implies f \text{ is analytic throughout } D
 		\end{align*}
+		If \(D\) is simply connected, this is the converse of \cref{Contour integral in simply connected domain Theorem - Complex}.
 	\end{theorem}
 	\begin{proof}
-		content
+		\begin{align*}
+			f \text{ is continous in } D
+			&\implies \forall z \in D, \exists F(z) [F'(z) = f(z)] 
+				& \Cref{Antiderivative and contour integrals theorem - Complex}\\
+			&\implies f \text{ is analytic in }  D
+				& \Cref{Analytic implies existance of high order derivatives theorem - Complex}
+		\end{align*}
 	\end{proof}
 
 	\begin{theorem}[Cauchy's Inequality]
@@ -5129,10 +5146,14 @@
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
-		content
+		From \cref{Upper Bound for Moduli of Contour Integral Theorem - Complex}:
+		\begin{align*}
+			&f^{(n)}(z_0) = \frac{n!}{2\pi i} \int_{C_R} \frac{f(z)}{(z-z_0)^{n+1}} & n \in \mathbb{N}\\
+			&\implies \abs{f^{(n)}(z_0)} \leq \frac{n!}{2\pi} \cdot \frac{M_R}{R^{n+1}} \cdot 2 \pi R = \frac{n! M_R}{R^n} & \abs{z-z_0}\leq R, \  n \in \mathbb{N}
+		\end{align*}
 	\end{proof}
 	
-	
+	\section{Liouville's Theorem and the Fundamental Theorem of Algebra} \label{Liouville's Theorem and the Fundamental Theorem of Algebra Section - Complex}
 	
 	
 	
