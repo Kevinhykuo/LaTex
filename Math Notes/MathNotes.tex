@@ -517,7 +517,7 @@
 		$$P(z) = a_0 + a_1 z + a_2 z^2 + \ldots + a_n z^n$$
 		Then $\forall z, \exists R \in \mathbb{R}_{>0}, \abs{z} < R$ such that
 		$$\abs{\frac{1}{P(z)}} < \frac{2}{\abs{a_n} R^n}$$
-		\label{Complex Poly Reciprocal Bounded}
+		\label{Complex Poly Reciprocal Bounded Corollary - Complex}
 	\end{corollary}
 	\begin{proof}
 		Consider 
@@ -2171,6 +2171,7 @@
 	\end{proof}
 	
 	\begin{theorem}
+		\label{Function continuous in closed and bounded region implies function is bounded Theorem - Complex}
 		Let $f$ be continuous in a closed and bounded region $R$, then
 		\begin{align*}
 			\forall z \in R, \exists M \in \mathbb{R}_{>0}  \left[\abs{f(z) \leq M}\right] 
@@ -4850,6 +4851,7 @@
 		\begin{align*}
 			\int_{C} f(z) dz = 0
 		\end{align*}
+		We will later learn in \cref{Continuity on closed contour implies and zero contour integral implies analycity Theorem - Complex} that this is \(\iff\), due to \cref{Antiderivative and contour integrals theorem - Complex}.
 	\end{theorem}
 	\begin{proof}
 		Suppose \(C\) is simple and lies entirely in \(D\). The result follows from the Cauchy-Goursat theorem (\cref{Cauchy-Goursat Theorem - Complex}).
@@ -5121,6 +5123,7 @@
 	\end{corollary}
 
 	\begin{theorem}
+		\label{Continuity on closed contour implies and zero contour integral implies analycity Theorem - Complex}
 		Let a function \(f\) be continuous on domain \(D\), and \(C\) be any closed contour lying in \(D\).
 		\begin{align*}
 			\forall C \left[\int_{C} f(z) dz = 0 \right]
@@ -5139,6 +5142,7 @@
 	\end{proof}
 
 	\begin{theorem}[Cauchy's Inequality]
+		\label{Cauchy's Inequality Theorem - Complex}
 		Let a function \(f\) be analytic on and inside a positively oriented circular contour \(C_R\) centered at \(z_0\) with radius \(R\). 
 		\begin{align*}
 			M_R = \eval{\max\abs{f(z)}}_{C_R} &\implies \abs{f^{(n)}(z_0)} \leq \frac{n! M_R}{R^n}
@@ -5154,6 +5158,57 @@
 	\end{proof}
 	
 	\section{Liouville's Theorem and the Fundamental Theorem of Algebra} \label{Liouville's Theorem and the Fundamental Theorem of Algebra Section - Complex}
+	
+	\begin{theorem}[Liouville's Theorem]
+		\label{Liouville's Theorem - Complex}
+		Let \(f\) be a function in the complex plane
+		\begin{align*}
+			f \text{ is entire and bounded in } \mathbb{C} 
+			\implies f(z) \text{ is constant in } \mathbb{C}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\(f\) is entire so \(\forall z \in \mathbb{C}\) \(f'(z)\) exists. Then From \cref{Cauchy's Inequality Theorem - Complex}, and \(f\) being bounded:
+		\begin{align*}
+			\abs{f'(z_0)} &\leq \frac{M_R}{R} = \frac{M}{R}&  n=1, \forall z \in C,\exists M[\abs{f(z)} \leq M]
+		\end{align*}
+		This inequality must hold for all values of \(R\) (\(R\) can be arbitrarily large), so we find: 
+		\begin{align*}
+			\abs{f'(z_0)} = 0 \implies f \text{ is constant}
+		\end{align*}
+	\end{proof}
+	
+	\begin{theorem}[Fundamental Theorem of Algebra]
+		\label{Fundamental Theorem of Algebra - Complex}
+		Let \(P(z) = \sum_{i=0}^{n} a_i z^i\) be any polynomial, then
+		\begin{align*}
+			\forall n \in \mathbb{N}, \exists z_0 \in \mathbb{C}[P(z_0) = 0]
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Suppose for contradiction \(\nexists z_0 \in \mathbb{C}\) such that \(P(z_0) = 0\)
+		Recall from \cref{Complex Poly Reciprocal Bounded Corollary - Complex} that \(\exists R \in \mathbb{R}\) such that 
+		\begin{align*}
+			\abs{\frac{1}{P(z)}} &< \frac{2}{\abs{a_n} R^n} & \forall z \in \mathbb{C} [\abs{z} > R]
+		\end{align*}
+		\(1/P(z)\) is bounded on for \(\abs{z}>R\), but \(P(z)\) is continuous on \(\abs{z}\leq R\), which implies that \(1/P(z)\) is bounded for \(\abs{z}\leq R\). Thus \(P(z)\) is bounded in the entire complex plane. (\Cref{Function continuous in closed and bounded region implies function is bounded Theorem - Complex})
+		It follows from \cref{Liouville's Theorem - Complex} that \(1/P(z)\) is constant \(\implies P(z)\) is constant, but \(P(z)\) is not constant. Contradiction!
+	\end{proof}
+
+	\Cref{Fundamental Theorem of Algebra - Complex} tells us that any polynomial of degree \(n\geq 1\) can be expressed as a product of linear factors:
+	\begin{align*}
+		P(z) = c \prod_{i = 1}^{i=n} (z-z_i)
+	\end{align*}
+	Since the existence of a zero \(z_1\) implies 
+	\begin{align*}
+		P(z) &= (z-z_1)Q_1(z) & Q_1 \text{ is a polynomial of degree } n-1
+	\end{align*}
+	Result follows from induction.
+	
+	\section{Maximum Modulus Principle} \label{Maximum Modulus Principle Section - Complex}
+	
+	
+	
 	
 	
 	
