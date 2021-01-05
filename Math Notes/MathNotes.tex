@@ -4967,7 +4967,7 @@
 		That is, if \(f\) is analytic within and on a simple closed contour \(C\), then values of \(f\) interior to \(C\) is determined by values of \(f\) on \(C\).
 	\end{theorem}
 	\begin{proof}
-		Let  \(C\) be a positively oriented contour and \(z_0\) be any point interior to \(C\). Let \(C_\rho\) be a positively oriented circular contour lying inside \(C\) centered at \(z_0\). That is, \(C_\rho\) lies on points \(\abs{z - z_0)} = \rho\). Then from \cref{Principle of Deformation of Paths Corollary - Complex}, we can write: 
+		Let  \(C\) be a positively oriented contour and \(z_0\) be any point interior to \(C\). Let \(C_\rho\) be a positively oriented circular contour lying inside \(C\) centred at \(z_0\). That is, \(C_\rho\) lies on points \(\abs{z - z_0} = \rho\). Then from \cref{Principle of Deformation of Paths Corollary - Complex}, we can write: 
 		\begin{align*}
 			&\int_{C} \frac{f(z)}{z-z_0} dz = \int_{C_\rho} \frac{f(z)}{z-z_0} dz  \\
 			&\implies \int_{C} \frac{f(z)}{z-z_0} dz - f(z_0) \int_{C_\rho} \frac{1}{z-z_0} dz = \int_{C} \frac{f(z) - f(z_0)}{z-z_0} dz 
@@ -5301,7 +5301,7 @@
 		That is, if an analytic function is not constant in a domain \(D\), then it is not bound.
 	\end{theorem}
 	\begin{proof}
-		Suppose for contradiction \(f\) is bounded in domain \(D\). That is \(\forall z \in D [f(z) \leq M]\). Let \(L\) be a polygonal line lying in \(D\) extending from \(z_0\) to any arbitrary \(z_n = P\) in \(D\), and \(d\) be the shortest distance from points on \(L\) to the boundary of \(D\). Then for each point \(z_k\) (\(k \in [0, n]\)), we have \(\abs{z_k - z_{k-1}} < d\) and neighbourhoods \(N_k\).
+		Suppose for contradiction \(f\) is bounded in domain \(D\). That is \(\forall z \in D [\abs{f(z)} \leq M]\). Let \(L\) be a polygonal line lying in \(D\) extending from \(z_0\) to any arbitrary \(z_n = P\) in \(D\), and \(d\) be the shortest distance from points on \(L\) to the boundary of \(D\). Then for each point \(z_k\) (\(k \in [0, n]\)), we have \(\abs{z_k - z_{k-1}} < d\) and neighbourhoods \(N_k\).
 		
 		Each neighbourhood \(N_k\) has radius \(d\) and the center of each neighbourhood \(N_k\) lies in the neighbourhood of \(N_{k-1}\).
 		
