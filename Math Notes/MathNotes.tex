@@ -1085,6 +1085,7 @@
 	\section{Complex Analysis Definitions} \label{Complex Analysis Definitions Section - Complex}
 	
 	\begin{definition}[Neighbourhood]
+		\label{Neighbourhood Definition - Complex}
 		A neighbourhood of a point $z_0$ is the set of all points $z$ with distance less than $\epsilon$. 
 		$$\{z : \abs{z-z_0} < \epsilon \}$$
 		i.e. It is the set of all points that lie within a circle centred at $z_0$ with radius $\epsilon$. Points on the circumference not included. 
@@ -1123,6 +1124,7 @@
 	\end{figure}
 
 	\begin{definition}[Deleted Neighbourhood]
+		\label{Deleted Neighbourhood Definition - Complex}
 		A deleted neighbourhood is the set of all points $z$ with distance less than $\epsilon$ from a point $z_0$, not including $z_0$. That is, it is a neighbourhood of $z_0$ without $z_0$.
 		$$\{z : \abs{z-z_0} < \epsilon, \ z \neq z_0 \}$$
 	\end{definition}
@@ -1160,6 +1162,7 @@
 	\end{figure}
 
 	\begin{definition}[Interior Point]
+		\label{Interior Point Definition - Complex}
 		Let $S$ be a set. A point $z_0$ is an interior point of $S$ if $\exists \epsilon$ such that $\forall z$, $\abs{z-z_0} < \epsilon \implies z \in S$. That is, $z_0$ is an interior point of $S$ if it has a neighbourhood where all points in the neighbourhood is an element of $S$.
 	\end{definition}
 	\begin{figure}[H]
@@ -1198,6 +1201,7 @@
 	\end{figure}
 
 	\begin{definition}[Exterior Point]
+		\label{Exterior Point Definition - Complex}
 		Let $S$ be a set. A point $z_0$ is an exterior point of $S$ if $\exists \epsilon$ such that $\forall z$, $\abs{z - z_0}<\epsilon \implies z \notin S$. That is, $z_0$is an exterior point of $S$ if it has neighbourhood that does not contain any element of $S$. 
 	\end{definition}
 	\begin{figure}[H]
@@ -1236,6 +1240,7 @@
 	\end{figure}
 
 	\begin{definition}[Boundary Point]
+		\label{Boundary Point Definition - Complex}
 		Let $S$ be a set. A point $z_0$ is a boundary point of $S$ if $\forall \epsilon$, $\exists z \in S, z' \notin S$, such that $\abs{z - z_0} \epsilon$ and $\abs{z' - z_0} < \epsilon$. That is, for all neighbourhoods of $z_0$ there exists a point that is in $S$ and a point not in $S$.
 	\end{definition}
 	\begin{figure}[H]
@@ -1276,11 +1281,13 @@
 	Note: A boundary point of $S$ may or may not be in $S$.
 
 	\begin{definition}[Boundary of a Set]
+		\label{Boundary of a Set Definition - Complex}
 		A boundary of a set $S$ is the set of all boundary points of $S$. The set containing all boundary points of $S$.
 		$$\{z_0 : \forall \epsilon \exists z\in S, z'\notin S(\abs{z-z_0}<\epsilon \land \abs{z'-z_0}<\epsilon )\}$$ 
 	\end{definition}
 
 	\begin{definition}[Open Set]
+		\label{Open Set Definition - Complex}
 		A set that does not contain any boundary points. 
 	\end{definition}
 
@@ -1304,14 +1311,17 @@
 	A set can be neither open or closed. Consider the set $S = \{z : 0 < \abs{z} \leq 1\}$. $S$ is not closed since it does not contain the boundary point $0$, and it is not open since it contains boundary points where $\abs{z} = 1$. The set $\mathbb{C}$ is both open and closed since it has no boundary points. 
 	
 	\begin{definition}[Closed Set]
+		\label{Closed Set Definition - Complex}
 		A set that contains all of its boundary points. 
 	\end{definition}
 
 	\begin{definition}[Closure of a Set]
+		\label{Closure of a Set Definition - Complex}
 		Let $S$ be a set. The closure of S is a closed set containing all points of $S$ and all boundary points of $S$. 
 	\end{definition}
 
 	\begin{definition}[Connected Set]
+		\label{Connected Set Definition - Complex}
 		An opens set $S$ is connected if $\forall z_1, z_2 \in S$, $z_1$ and $z_2$ can be connected by a polygonal line lying within $S$.
 	\end{definition}
 	\begin{figure}[H]
@@ -1352,28 +1362,29 @@
 	\end{figure}
 
 	\begin{definition}[Polygonal Line]
+		\label{Polygonal Line Definition - Complex}
 		A finite set of line segments joined end to end. 
 	\end{definition}
 
 	\begin{definition}[Domain]
+		\label{Domain Definition - Complex}
 		A nonempty connected set. 
 	\end{definition}
 	Note: All neighbourhoods are domains. 
 
 	\begin{definition}[Region]
+		\label{Region Definition - Complex}
 		A domain with none, some, or all of its boundary points. 
 	\end{definition}
 	
-	\begin{definition}[Closed Region]
-		A domain with all of its boundary points. 
-	\end{definition}
-	
 	\begin{definition}[Bounded Set/Region]
+		\label{Bounded Set or Region Definition - Complex}
 		A set $S$ is bounded if $\exists R = \abs{z} > 0$ such that $\forall s \in S$, $\abs{s} < R$. That is, $S$ is bounded if $\forall s \in S$, $s$ is contained in some circle of radius $R$ centred at the origin. 
 	\end{definition}
 
 	\begin{definition}[Closed Region]
-		A bounded and closed region.
+		\label{Closed Regoin Definition - Complex}
+		A domain with all its boundary points. A bounded and closed region.
 	\end{definition}
 
 	\begin{definition}[Accumulation/Limit Point]
@@ -2182,7 +2193,8 @@
 	\begin{proof}
 		Let $f(z) = u(x,y) + iv(x,y)$ be continuous, then 
 		\begin{align*}
-			\left( \abs{f(z)} = \sqrt{[u(x,y)]^2 + [v(x,y)]^2} \text{ is continuous in } R \right) \land \left( \exists M \in \mathbb{R}_{>0} [\abs{f(z)}<M] \right)
+			\abs{f(z)} = \sqrt{[u(x,y)]^2 + [v(x,y)]^2} \text{ is continuous in } R 
+			\implies \exists M \in \mathbb{R}_{>0} [\abs{f(z)}\leq M]
 		\end{align*}
 	\end{proof}
 
@@ -3246,9 +3258,12 @@
 			\overline{f(z)} = \frac{c^2}{f(z)} \qquad \forall z \in D
 		\end{align*}
 		Hence \(\overline{f(z)}\) is analytic everywhere in \(D\), so \(f(z)\) is constant in \(D\).
+		\label{Abs of analytic function is constant in domain implies that function is constant Example - Complex}
 	\end{example}
 	
 	\section{Harmonic Functions} \label{Harmonic Functions - Complex}
+	
+	Harmonic functions are functions where the curvature in each component direction cancels each other out.
 	
 	\begin{definition}[Laplace's Equation]
 		\label{Laplace's Equation Definition - Complex}
@@ -3369,6 +3384,7 @@
 	\section{Uniquely Determined Analytic Functions} \label{Uniquely Determined Analytic Functions Section - Complex}
 	
 	\begin{lemma}
+		\label{Analytic function is zero in domain or line segment in domain implies function is zero throughout domain Lemma - Complex}
 		Suppose a function \(f\) is analytic throughout domain \(D\), and \(f(z) = 0\) \(\forall z \in D' \subset D\)  or line segment contained in \(D\). Then \(f(z) \equiv 0\) throughout \(D\).
 	\end{lemma}
 	\begin{proof}
@@ -5178,6 +5194,14 @@
 		\end{align*}
 	\end{proof}
 	
+	\begin{observation}
+		Liouville's Theorem implies that any non-constant function in \(\mathbb{C}\) is either not entire or unbounded. (See \cref{Maximum Modulus Principle Theorem - Complex})
+	\end{observation}
+
+	\begin{question}
+		Shouldn't Liouville's theorem be \(\iff\) since a constant function is also entire and bounded?
+	\end{question}
+	
 	\begin{theorem}[Fundamental Theorem of Algebra]
 		\label{Fundamental Theorem of Algebra - Complex}
 		Let \(P(z) = \sum_{i=0}^{n} a_i z^i\) be any polynomial, then
@@ -5201,18 +5225,226 @@
 	\end{align*}
 	Since the existence of a zero \(z_1\) implies 
 	\begin{align*}
-		P(z) &= (z-z_1)Q_1(z) & Q_1 \text{ is a polynomial of degree } n-1
+		P(z) &= (z-z_1)Q_1(z) & \deg (Q_1) = n-1
 	\end{align*}
 	Result follows from induction.
 	
 	\section{Maximum Modulus Principle} \label{Maximum Modulus Principle Section - Complex}
 	
+	\begin{theorem}[Gauss's Mean Value Theorem]
+		\label{Gauss's Mean Value Theorem - Complex}
+		Let \(f\) be a function analytic in and on a circular contour \(C_\rho\) centred at \(z_0\), then \(f(z_0)\) is the arithmetic mean of the values on the circle:
+		\begin{align*}
+			f(z_0) &= \frac{1}{2\pi i} \int_{0}^{2\pi} f(z_0 + \rho e^{i\theta}) d\theta 
+			& z=z_0 + \rho e^{i\theta}, \ 0\leq \theta \leq 2\pi
+		\end{align*}
+		That is, the value of \(f(z_0)\) is the average of the values of \(f(z)\) in some neighbourhood with radius \(\rho\) around \(z_0\).
+	\end{theorem}
+	\begin{proof}
+		Let \(C_\rho\) be a circular contour centred at \(z_0\), and \(\abs{z-z_0} = \rho\). Then by the Cauchy Integral formula (\cref{Cauchy Integral Formula}):
+		\begin{align*}
+			f(z_0) &= \frac{1}{2\pi i} \int_{C_\rho} \frac{f(z)}{z-z_0} dz = \frac{1}{2\pi i} \int_{0}^{2\pi} f(z_0 + \rho e^{i\theta}) d\theta 
+			& z=z_0 + \rho e^{i\theta}, \ 0\leq \theta \leq 2\pi
+		\end{align*}
+	\end{proof}
 	
+	\begin{lemma}
+		\label{Analytic function is bounded in neighbourhood implies constant value thoughout neighbourhood Lemma - Complex}
+		Let \(f\) be a function analytic in some neighbourhood \(\abs{z-z_0}<\epsilon\):
+		\begin{align*}
+			\forall z \in \{z : \abs{z-z_0}<\epsilon\}
+			[\abs{f(z)} \leq \abs{f(z_0)}] \implies \forall z \in \{\abs{z-z_0}<\epsilon\} [f(z) = f(z_0)]
+		\end{align*}
+		That is, if \(f\) is bounded by its value at \(z_0\) in the neighbourhood of \(z_0\), then it is constant throughout the neighbourhood with value \(f(z_0)\).
+	\end{lemma}
+	\begin{proof}
+		Following \cref{Gauss's Mean Value Theorem - Complex}, we have 
+		\begin{align*}
+			f(z_0) = \frac{1}{2\pi i} \int_{0}^{2\pi} f(z_0 + \rho e^{i\theta}) d\theta 
+			\implies \abs{f(z_0)} \leq \frac{1}{2\pi} \int_{0}^{2\pi} \abs{f(z_0 + \rho e^{i\theta})} d\theta
+		\end{align*}
+		However, since we have condition \(\abs{f(z)} =  \abs{f(z_0 + \rho e^{i\theta})} \leq \abs{f(z_0)}\):
+		\begin{align*}
+			&\int_{0}^{2\pi} \abs{f(z_0 + \rho e^{i\theta })} d \theta 
+			 \leq \int_{0}^{2\pi} \abs{f(z_0)} d\theta = 2\pi \abs{f(z_0)} 
+			&  \ 0 \leq \theta \leq 2 \pi \\
+			&\implies \abs{f(z_0)} \geq \frac{1}{2\pi} \int_{0}^{2\pi} \abs{f(z_0 + \rho e^{i\theta })} d \theta 
+		\end{align*}
+		The inequalities tells us:
+		\begin{align*}
+			\abs{f(z_0)} = \frac{1}{2\pi} \int_{0}^{2\pi} \abs{f(z_0 + \rho e^{i\theta})} d\theta 
+			\implies \int_{0}^{2\pi} \abs{f(z_0)} - \abs{f(z_0 + \rho e^{i\theta})} d\theta = 0
+		\end{align*}
+		Our condition \(\abs{f(z)} =  \abs{f(z_0 + \rho e^{i\theta})} \leq \abs{f(z_0)}\) tells us that 
+		\begin{align*}
+			\int_{0}^{2\pi} \abs{f(z_0 + \rho e^{i\theta})} d\theta \leq \int_{0}^{2\pi} \abs{f(z_0)} d\theta 
+			\implies \int_{0}^{2\pi} \abs{f(z_0)} - \abs{f(z_0 + \rho e^{i\theta})} d\theta \geq 0
+		\end{align*}
+		So for \(\int_{0}^{2\pi} \abs{f(z_0)} - \abs{f(z_0 + \rho e^{i\theta})} d\theta = 0\), the integrand must be zero:
+		\begin{align*}
+			&\abs{f(z_0 + \rho e^{i\theta})} - \abs{f(z_0)} = 0 & 0\leq \theta \leq 2\pi \\
+			&\implies \forall z \in \{z : \abs{z - z_0} = \rho\}[\abs{f(z)} = \abs{f(z_0)}]
+		\end{align*}
+		Since \(0 < \abs{z - z_0} < \epsilon\) and \(\abs{f(z)} = \abs{f(z_0)}\) for all \(0<\rho<\epsilon\), we have \(\abs{f(z)} = \abs{f(z_0)}\) for \(\abs{z-z_0} < \epsilon\). We know that if a function is analytic in a domain and its modulus is constant in the domain, then the function is constant (\cref{Abs of analytic function is constant in domain implies that function is constant Example - Complex}), thus 
+		\begin{align*}
+			\forall z \in \{z : \abs{z-z_0}<\epsilon\} [f(z) = f(z_0)]
+		\end{align*}
+		That is \(f(z)\) is constant in the neighbourhood \(\abs{z-z_0}<\epsilon\) with value \(f(z_0)\).
+	\end{proof}
 	
+	\begin{theorem}[Maximum Modulus Principle]
+		\label{Maximum Modulus Principle Theorem - Complex}
+		Let \(f\) be an analytic function in a domain \(D\).
+		\begin{align*}
+			f \text{ not constant in } D \implies \forall z \in D, \nexists z_0 \in D [\abs{f(z)} \leq \abs{f(z_0)} = M]
+		\end{align*}
+		That is, if an analytic function is not constant in a domain \(D\), then it is not bound.
+	\end{theorem}
+	\begin{proof}
+		Suppose for contradiction \(f\) is bounded in domain \(D\). That is \(\forall z \in D [f(z) \leq M]\). Let \(L\) be a polygonal line lying in \(D\) extending from \(z_0\) to any arbitrary \(z_n = P\) in \(D\), and \(d\) be the shortest distance from points on \(L\) to the boundary of \(D\). Then for each point \(z_k\) (\(k \in [0, n]\)), we have \(\abs{z_k - z_{k-1}} < d\) and neighbourhoods \(N_k\).
+		
+		Each neighbourhood \(N_k\) has radius \(d\) and the center of each neighbourhood \(N_k\) lies in the neighbourhood of \(N_{k-1}\).
+		
+		Since \(\max \abs{f(z)} = \abs{f(z_0)}\), by \cref{Analytic function is bounded in neighbourhood implies constant value thoughout neighbourhood Lemma - Complex}, all points in \(N_0\) has value \(f(z_0)\). The neighbourhoods overlap, so by extension \(\forall k \in [0, n]\), \(f(z_k) = f(z_0)\), and we have \(f(z)\) is constant in \(D\) with value \(f(z_0)\). \(f\) is then bounded in \(D\) and we have a contradiction! Thus, if an analytic function \(f\) is not constant in domain \(D\), then it is not bounded.
+	\end{proof}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[remember picture]
+			\begin{axis}[
+				height=12cm,
+				rotate around={-10:(current axis.origin)},
+				clip=false,
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=0, xmax=100,
+				ymin=0, ymax=50,
+				xtick=100,
+				ytick=100,
+				axis lines = none,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(10, 10) [$z_0$]
+					(15, 15) [$z_1$]
+					(20, 20) [$z_2$]
+					(80, 40) [$z_n = P$]
+				};
+				\draw[draw=Black]  (axis cs: 10,10)--(axis cs: 30,30)
+				node[midway,sloped,above] {};
+				\draw[draw=Black]  (axis cs: 30,30)--(axis cs: 40,20)
+				node[midway,above] {$L$};
+				\draw[-,draw=Black]  (axis cs: 40,20) -- (axis cs: 80,40);
+				\draw[dashed, draw=Grey] (axis cs: 10, 10) circle (10);
+				\draw[dashed, draw=Grey] (axis cs: 15, 15) circle (10);
+				\draw[dashed, draw=Grey] (axis cs: 20, 20) circle (10);
+				\draw[dashed, draw=Grey] (axis cs: 80, 40) circle (10);
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=none,
+				]
+				coordinates {
+					(10, 0) [$N_0$]
+					(15, 5) [$N_1$]
+					(20, 10) [$N_2$]
+					(80, 30) [$N_n$]
+				};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
+	For a closed bounded region \(R\), the Maximum Modulus Principle may seem to contradict \cref{Function continuous in closed and bounded region implies function is bounded Theorem - Complex}. It is important to realize that we are working with a domain and the differences between a domain (\cref{Domain Definition - Complex}) and region (\cref{Region Definition - Complex}).
 	
+	\begin{corollary}
+		\label{Maximum of moduli of analytic function in closed and bounded region is only reached at the boundaries of the region Corollary - Complex}
+		Let \(f\) be an analytic function on a closed bounded region \(R\) that is not constant in the interior of \(R\). Then \(\max\abs{f(z)}\) in \(R\) is always reached and only reached at some boundary of \(R\), never in the interior of \(R\).
+	\end{corollary}
+	\begin{proof}
+		Consider 
+		\begin{align*}
+			f(x,y) = u(x,y) + iv(x,y)
+		\end{align*}
+		Then as \(f\) as analytic in \(R\), \(u\) is harmonic in \(R\) and can not assume maximum value in the interior of \(R\). The same logic applies to \(v\). (See Maximum Principle.)
+		
+		More precisely, consider \(g(z) = e^{f(z)}\), then \(g\) is analytic, continuous, and non-constant in the interior of \(R\). Hence \(\abs{g(z)} = \abs{e^{u(x,y)}}\) must assume its maximum value at the boundary of \(R\), so \(f(z)\) must also obtain its maximum at the boundary of \(R\).
+	\end{proof}
+
+	Note: \Cref{Maximum of moduli of analytic function in closed and bounded region is only reached at the boundaries of the region Corollary - Complex} follows from the properties of \(f(z) = u(x,y) + iv(x,y)\) being able to be expressed in terms of real valued functions and that harmonic real valued functions only have maximum and minimum values occurring at the boundaries of a closed and bounded region. We will soon see this in \cref{Minimum of moduli of analytic function in closed and bounded region is only reached at the boundaries of the region Example - Complex} and \cref{Max and Min of Harmonic Real-Valued function only occurs at the boundary of closed bounded region Example - Complex}.
 	
+	Note: There is a difference between complex-valued functions and real-valued functions. For complex valued functions \(f(z)\), the maximums and minimums of the modulus \(\abs{f(z)}\) occur at some boundary of \(R\), while for some real-valued function \(u(x,y)\) (no modulus) the maximum and minimum occurs only at some boundary of \(R\).
+
+	\subsection{Examples} \label{Maximum Modulus Principle Examples Subsection - Complex}
 	
+	\begin{example}
+		Suppose that \(f(z)\) is entire and that the function \(u(x,y) = \Re{f(z)}\) is harmonic and has upper bound \(u_0 \geq u(x,y)\) for all \((x,y) \in \mathbb{R}^2\). Then \(u(x,y)\) is constant in \(\mathbb{R}^2\).
+		\begin{proof}
+			{\color{Grey}
+				Consider \(g(z) = e^{f(z)} = e^{u(x,y)}  e^{iv(x,y)}\). \(e^{iv(x,y)}\) is a phase, so we ignore it and focus on \(e^{u(x,y)}\):
+				\begin{align*}
+					&e^{u(x,y)} \text{ is entire} \\
+					&\implies \exists(x_0, y_0) \in \mathbb{R}^2
+					\left[\abs{e^{u(x,y)}} \leq u_0 = u(x_0, y_0) \right] 
+					& \text{Cauchy's Inequalitey } (\Cref{Cauchy's Inequality Theorem - Complex}) \\
+					&\implies  e^{u(x,y)} \text{ is constant}
+					& \text{Liouville's Theorem } (\Cref{Liouville's Theorem - Complex})
+				\end{align*}
+			}
+		\end{proof}
+	\end{example}
+
+	\begin{example}
+		\label{Minimum of moduli of analytic function in closed and bounded region is only reached at the boundaries of the region Example - Complex}
+		Let a function \(f\) be continuous on a closed bounded region \(R\), and be analytic and not constant throughout the interior of \(R\). Also, let \(f(z) \neq 0\) for all \(z \in \mathbb{R}\). Prove \(\min \abs{f(z)}\) only occurs at the boundaries and never in the interiors of \(R\).
+		\begin{proof}
+			{\color{Grey}
+				Consider \(g(z) = 1/f(z)\).
+				\begin{align*}
+					&f \text{ is continuous, analytic, non-constant, and }\forall z /in R[f(z) \neq 0] \\
+					&\implies g \text{ is continuous, analytic, non-constant}\\
+					&\implies \max\abs{g(z)} \text{ only occurs at boundary of } R 
+					& \Cref{Maximum of moduli of analytic function in closed and bounded region is only reached at the boundaries of the region Corollary - Complex} \\
+					&\implies \min\abs{f(z)} \text{ occurs only at some boundary of } R
+				\end{align*}
+			}
+			As for why \(f(z) \neq 0\) for all \(z \in R\) is required: \newline
+			{\color{Grey}
+				Suppose \(f(z_0) = 0\) for some \(z_0\) in the interior of \(R\).
+				\begin{align*}
+					&\implies g(z) = 1/f(z) \text{ is not countinuous in } R 
+					& \Cref{Maximum of moduli of analytic function in closed and bounded region is only reached at the boundaries of the region Corollary - Complex} \\
+					&\implies \max\abs{g(z)} \text{ does not occur only some boundary of } R\\
+					&\implies \min \abs{f(z)} \text{ exists in the interior of } R
+				\end{align*}
+			}
+		\end{proof}
+	\end{example}
+	\begin{question}
+		If \(f(z_0) = 0\) for some \(z_0\) in the interior of R, then does that mean \(\min\abs{f(z_0)} = 0\) for all \(z_0 \in \{z : f(z) = 0\}\)?
+	\end{question}
+
+	\begin{example}
+		\label{Max and Min of Harmonic Real-Valued function only occurs at the boundary of closed bounded region Example - Complex}
+		Let \(f(z) = u(x,y) + iv(x,y)\) be a function continuous on a closed bounded region \(R\) be analytic and not constant in the interior of \(R\). Prove \(\min u(x,y)\) occurs only at some boundary of \(R\).
+		\begin{proof}
+			{\color{Grey}
+			Let \(f(z) = u_1(x,y) + iv_1(x,y)\) and \(g(z) = e^{1/f(z)} = e^{u_2(x,y) + iv_2(x,y)}\), which is continuous, analytic, and not constant in the interior of \(R\). Then \(\abs{g(z)} = e^{u_2(x,y)}\) is continuous in \(R\) must have a maximum at the some boundary of \(R\). Hence, \(f(z)\) has a minimum at some boundary of \(R\).
+			}
+		\end{proof}
+	\end{example}
+
+	\chapter{Series} \label{Series Chapter - Complex}
 	
 	
 	
