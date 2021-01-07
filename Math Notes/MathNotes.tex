@@ -4376,13 +4376,26 @@
 	
 	\section{Contour Integrals} \label{Contour Integrals Section - Complex}
 	
-	Evaluating an integral over a contour. 
+	Evaluating an integral over a contour. It is common to assume that a contour integral is a line integral which represents an area under a curve. Generally, this is a far too simplistic approach, even for real-valued functions. Consider the limit definition of the line integral.
+	
+	\begin{definition}[Line Integral]
+		\label{Line integral Definition - Complex}
+		Let \(f\) be a complex valued function and \(\Delta s_k = (x_k - x_{k-1}) + i (y_k - y_{k-1})\).
+		\begin{align*}
+			\int_{a}^{b} f(z) ds
+			= \lim_{n \rightarrow \infty} \sum_{k=1}^{n} f(x_k, y_k) \Delta s_k
+		\end{align*}
+	\end{definition}
+
+	Note: The integral exists only if the limit exists. 
+	
+	We can see that \(\Delta s_k\) acts like a vector, and the definition of the line integral assigns a weight based on the function \(f\) to each \(\Delta s_k\). The contour integral is then the weighted sum of these vectors from \(a\) to \(b\) as \(n \rightarrow \infty\).
 	
 	\begin{definition}[Contour Integral]
 		\label{Contour Integral Definition - Complex}
 		Let \(z(t)\) in \(C = [a, b]\) be a contour, and \(f[z(t)]\) be a piecewise continuous function on \(C\). Then the contour integral:
 		\begin{align*}
-			\int_{C} f(z) dz = \int_{a}^{b} f[(z(t))] z'(t) dt
+			\int_{C} f(z) dz = \int_{a}^{b} f[z(t)] z'(t) dt
 		\end{align*}
 		Note: \(C\) is contour \(\implies z'(t)\) is piecewise continuous on \(C \implies\) Existence of integral on \(C\)
 	\end{definition}
