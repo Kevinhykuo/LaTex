@@ -5016,6 +5016,8 @@
 
 	\section{Cauchy Integral Formula} \label{Cauchy Integral Formula Section - Complex}
 	
+	The Cauchy-Goursat theorem (\cref{Cauchy-Goursat Theorem - Complex}) gives us the value of a contour integral without singularities in the interior. What if there is a singularity in the interior? See below.
+	
 	\begin{theorem}[Cauchy Integral Formula]
 		\label{Cauchy Integral Formula}
 		Let a function \(f\) be analytic on and inside a simple closed contour \(C\) oriented positively. Then for all \(z_0\) interior to \(C\):
@@ -5438,7 +5440,9 @@
 		
 		More precisely, consider \(g(z) = e^{f(z)}\), then \(g\) is analytic, continuous, and non-constant in the interior of \(R\). Hence \(\abs{g(z)} = \abs{e^{u(x,y)}}\) must assume its maximum value at the boundary of \(R\), so \(f(z)\) must also obtain its maximum at the boundary of \(R\).
 	\end{proof}
-
+	
+	Note: Same is true for \(\min\abs{f(z)}\) (\Cref{Minimum of moduli of analytic function in closed and bounded region is only reached at the boundaries of the region Example - Complex}).
+	
 	Note: \Cref{Maximum of moduli of analytic function in closed and bounded region is only reached at the boundaries of the region Corollary - Complex} follows from the properties of \(f(z) = u(x,y) + iv(x,y)\) being able to be expressed in terms of real valued functions and that harmonic real valued functions only have maximum and minimum values occurring at the boundaries of a closed and bounded region. We will soon see this in \cref{Minimum of moduli of analytic function in closed and bounded region is only reached at the boundaries of the region Example - Complex} and \cref{Max and Min of Harmonic Real-Valued function only occurs at the boundary of closed bounded region Example - Complex}.
 	
 	Note: There is a difference between complex-valued functions and real-valued functions. For complex valued functions \(f(z)\), the maximums and minimums of the modulus \(\abs{f(z)}\) occur at some boundary of \(R\), while for some real-valued function \(u(x,y)\) (no modulus) the maximum and minimum occurs only at some boundary of \(R\).
@@ -5503,6 +5507,10 @@
 			}
 		\end{proof}
 	\end{example}
+
+	\section{Poisson Integral Formula} \label{Poisson Integral Formula - Complex}
+	
+	
 
 	\chapter{Series} \label{Series Chapter - Complex}
 	

@@ -79,36 +79,37 @@
 \BOOKMARK [1][-]{section.15.8}{Liouville's Theorem and the Fundamental Theorem of Algebra}{chapter.15}% 79
 \BOOKMARK [1][-]{section.15.9}{Maximum Modulus Principle}{chapter.15}% 80
 \BOOKMARK [2][-]{subsection.15.9.1}{Examples}{section.15.9}% 81
-\BOOKMARK [0][-]{chapter.16}{Series}{part.4}% 82
-\BOOKMARK [0][-]{chapter.17}{Conformal Mapping}{part.4}% 83
-\BOOKMARK [-1][-]{part.5}{V Ordinary Differential Equations}{}% 84
-\BOOKMARK [-1][-]{part.6}{VI Nonlinear Dynamics}{}% 85
-\BOOKMARK [-1][-]{part.7}{VII Partial Differential Equations}{}% 86
-\BOOKMARK [-1][-]{part.8}{VIII Integral Equations}{}% 87
-\BOOKMARK [-1][-]{part.9}{IX Linear Algebra}{}% 88
-\BOOKMARK [0][-]{chapter.18}{Markov Chains}{part.9}% 89
-\BOOKMARK [-1][-]{part.10}{X Tensors}{}% 90
-\BOOKMARK [-1][-]{part.11}{XI Riemann Geometry}{}% 91
-\BOOKMARK [-1][-]{part.12}{XII Abstract Algebra}{}% 92
-\BOOKMARK [0][-]{chapter.19}{Groups}{part.12}% 93
-\BOOKMARK [0][-]{chapter.20}{Rings}{part.12}% 94
-\BOOKMARK [1][-]{section.20.1}{Ideals}{chapter.20}% 95
-\BOOKMARK [0][-]{chapter.21}{Integral Domains}{part.12}% 96
-\BOOKMARK [0][-]{chapter.22}{GCD Domains}{part.12}% 97
-\BOOKMARK [0][-]{chapter.23}{Unique Factorization Domains}{part.12}% 98
-\BOOKMARK [0][-]{chapter.24}{Principal Ideal Domains}{part.12}% 99
-\BOOKMARK [0][-]{chapter.25}{Fields}{part.12}% 100
-\BOOKMARK [-1][-]{part.13}{XIII Galois Theory}{}% 101
-\BOOKMARK [-1][-]{part.14}{XIV Lie Theory}{}% 102
-\BOOKMARK [0][-]{chapter.26}{Lie Groups}{part.14}% 103
-\BOOKMARK [0][-]{chapter.27}{Lie Algebra}{part.14}% 104
-\BOOKMARK [-1][-]{part.15}{XV C-Star Algebra}{}% 105
-\BOOKMARK [-1][-]{part.16}{XVI Set Theory}{}% 106
-\BOOKMARK [-1][-]{part.17}{XVII Model Theory}{}% 107
-\BOOKMARK [-1][-]{part.18}{XVIII Statistics}{}% 108
-\BOOKMARK [-1][-]{part.19}{XIX Tips and Tricks}{}% 109
-\BOOKMARK [0][-]{chapter.28}{Integration Techniques}{part.19}% 110
-\BOOKMARK [1][-]{section.28.1}{DI Method \(Integration Table\)}{chapter.28}% 111
-\BOOKMARK [1][-]{section.28.2}{Feynman Integration}{chapter.28}% 112
-\BOOKMARK [-1][-]{part.20}{XX Index}{}% 113
-\BOOKMARK [-1][-]{part.21}{XXI Bibliography}{}% 114
+\BOOKMARK [1][-]{section.15.10}{Poisson Integral Formula}{chapter.15}% 82
+\BOOKMARK [0][-]{chapter.16}{Series}{part.4}% 83
+\BOOKMARK [0][-]{chapter.17}{Conformal Mapping}{part.4}% 84
+\BOOKMARK [-1][-]{part.5}{V Ordinary Differential Equations}{}% 85
+\BOOKMARK [-1][-]{part.6}{VI Nonlinear Dynamics}{}% 86
+\BOOKMARK [-1][-]{part.7}{VII Partial Differential Equations}{}% 87
+\BOOKMARK [-1][-]{part.8}{VIII Integral Equations}{}% 88
+\BOOKMARK [-1][-]{part.9}{IX Linear Algebra}{}% 89
+\BOOKMARK [0][-]{chapter.18}{Markov Chains}{part.9}% 90
+\BOOKMARK [-1][-]{part.10}{X Tensors}{}% 91
+\BOOKMARK [-1][-]{part.11}{XI Riemann Geometry}{}% 92
+\BOOKMARK [-1][-]{part.12}{XII Abstract Algebra}{}% 93
+\BOOKMARK [0][-]{chapter.19}{Groups}{part.12}% 94
+\BOOKMARK [0][-]{chapter.20}{Rings}{part.12}% 95
+\BOOKMARK [1][-]{section.20.1}{Ideals}{chapter.20}% 96
+\BOOKMARK [0][-]{chapter.21}{Integral Domains}{part.12}% 97
+\BOOKMARK [0][-]{chapter.22}{GCD Domains}{part.12}% 98
+\BOOKMARK [0][-]{chapter.23}{Unique Factorization Domains}{part.12}% 99
+\BOOKMARK [0][-]{chapter.24}{Principal Ideal Domains}{part.12}% 100
+\BOOKMARK [0][-]{chapter.25}{Fields}{part.12}% 101
+\BOOKMARK [-1][-]{part.13}{XIII Galois Theory}{}% 102
+\BOOKMARK [-1][-]{part.14}{XIV Lie Theory}{}% 103
+\BOOKMARK [0][-]{chapter.26}{Lie Groups}{part.14}% 104
+\BOOKMARK [0][-]{chapter.27}{Lie Algebra}{part.14}% 105
+\BOOKMARK [-1][-]{part.15}{XV C-Star Algebra}{}% 106
+\BOOKMARK [-1][-]{part.16}{XVI Set Theory}{}% 107
+\BOOKMARK [-1][-]{part.17}{XVII Model Theory}{}% 108
+\BOOKMARK [-1][-]{part.18}{XVIII Statistics}{}% 109
+\BOOKMARK [-1][-]{part.19}{XIX Tips and Tricks}{}% 110
+\BOOKMARK [0][-]{chapter.28}{Integration Techniques}{part.19}% 111
+\BOOKMARK [1][-]{section.28.1}{DI Method \(Integration Table\)}{chapter.28}% 112
+\BOOKMARK [1][-]{section.28.2}{Feynman Integration}{chapter.28}% 113
+\BOOKMARK [-1][-]{part.20}{XX Index}{}% 114
+\BOOKMARK [-1][-]{part.21}{XXI Bibliography}{}% 115
