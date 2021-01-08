@@ -5558,6 +5558,61 @@
 		Taking the real part yields the desired result.
 	\end{proof}
 
+	\begin{definition}[Poisson Integral Formula (Upper Half Plane)]
+		\label{Poisson Integral Formula (Upper Half Plane) Definition - Complex}
+		Consider the Dirichlet problem for the upper half of the complex plane (\(y>0\)) which satisfies the boundary condition \(U(X,0)\) on \(Y = 0\). Then the Dirichlet Problem is solved by 
+		\begin{align*}
+			v(x,y) = \frac{y}{\pi} \int_{-\infty}^{\infty} \frac{u(X,0)}{(X-x)^2 + y^2} dX
+		\end{align*}
+	\end{definition}
+	\begin{proof}
+		Let \(f(w) = U(X,Y) + iV(X,Y)\) be analytic for \(Y>0\), and \(C\) be the contour comprised of the semi-circular arc from \(R\) to \(-R\) on the upper half of the complex, and the line from \(-R\) to \(R\) on the real axis. Then from the Cauchy Integral Formula (\cref{Cauchy Integral Formula}):
+		\begin{align*}
+			f(z) = \frac{1}{2\pi i} \int_{C} \frac{f(w)}{w-z} dw
+		\end{align*}
+		Then for all \(z\) with \(\Im{z}>0\) and by the Cauchy-Goursat theorem (\cref{Cauchy-Goursat Theorem - Complex}):
+		\begin{align*}
+			\frac{1}{2\pi i} \int_{C} \frac{f(w)}{(w-\bar{z})} dw = 0
+		\end{align*}
+		Subtracting the two equations:
+		\begin{align*}
+			f(z) 
+			= \frac{1}{2\pi i} \int_{C} f(w) \left[\frac{1}{w - z} - \frac{1}{w - \bar{z}}\right] dw
+			= \frac{1}{2\pi i} \int_{C} \frac{z - \bar{z})}{(w - z)(w - \bar{z})} dw
+		\end{align*}
+		By breaking up \(C\) into the line \(L\) and arc \(A\) components:
+		\begin{align*}
+			f(z) 
+			&= \frac{1}{2\pi i} \int_{L} \frac{(z-\bar{z})f(w)}{(w-z)(w-\bar{z})} dw
+			  + \frac{1}{2\pi i} \int_{C} \frac{(z-\bar{z})f(w)}{(w-z)(w-\bar{z})} dw \\
+			&= \frac{y}{\pi} \int_{-R}^{R} \frac{f(X)}{(X-x)^2 + y^2} dX
+			  + \frac{y}{\pi} \int_{A} \frac{f(w)}{(w-z)(w-\bar{z})} dw 
+			  & w = X + iY
+		\end{align*}
+		Taking the limit as \(R \rightarrow \infty\), letting \(z = x+iy\) and \(M = \max\abs{f(w)}\) on \(A\), and knowing \(y \leq R\) and \(r \leq R\) (since \(z = re^{i\theta}\) is within the semi-circle):
+		{\color{Grey}
+		\begin{align*}
+			&\lim_{R \rightarrow \infty}
+			 \abs{\int_{A} \frac{f(w)}{(w-z)(w-\bar{z})} dw}  \\
+			&\leq\lim_{R \rightarrow \infty} 
+			 \abs{\frac{M}{(Re^{i\phi} - re^{i\theta})(Re^{i\phi} - re^{-i\theta})}} \abs{\pi R} & \Cref{ML Inequality Theorem - Complex} \\
+			&= \lim_{R \rightarrow \infty} \abs{\pi R} 
+			   \abs{\frac{M}{R^2 e^{2i\phi} - Rre^{i(\phi - \theta)} - Rre^{i(\phi + \theta)} + r^2}} \\
+			&\leq \lim_{R \rightarrow \infty} \abs{\pi R} \frac{\abs{M}}{\abs{R^2 + r^2}}
+			= 0 
+		\end{align*}
+		}
+		Hence, the contour integral on the arc disappears and we are left with:
+		\begin{align*}
+			f(z)  = \frac{y}{\pi} \int_{-\infty}^{\infty} \frac{f(X)}{(X-x)^2 + y^2} dX
+		\end{align*}
+		Thus
+		\begin{align*}
+			U(x,y) + iV(x,y) = \frac{y}{\pi} \int_{-\infty}^{\infty} \frac{U(X, 0) + iV(X,0)}{(X-x)^2 + y^2} dX
+		\end{align*}
+		Taking the real part yields the desired results.
+	\end{proof}
+
 	\chapter{Series} \label{Series Chapter - Complex}
 	
 	
