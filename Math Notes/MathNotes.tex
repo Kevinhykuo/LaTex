@@ -5510,7 +5510,53 @@
 
 	\section{Poisson Integral Formula} \label{Poisson Integral Formula - Complex}
 	
+	We are looking to solve the Dirichlet Problem (\cref{Dirichlet Problem Definition - Partial}). Finding a function in a harmonic domain  that assumes preassigned values at the boundary.
 	
+	\begin{definition}[Poisson Integral Formula (Circle Interior)]
+		\label{Poisson Integral Formula (Circle Interior) Definition - Complex}
+		Let \(f\) be a complex-valued function on a circular simple closed domain with radius \(R\), and \(C\) be a circular contour an the boundary of the domain. Then the Dirichlet Problem is solved in the domain by
+		\begin{align*}
+			u(r, \theta)
+			= \frac{1}{2\pi} \int_{0}^{2\pi} 
+			  \frac{u(R, \phi)(R^2 - r^2)}{R^2 + r^2 - 2Rr \cos(\phi - \theta)} d\phi
+		\end{align*}
+	\end{definition}
+	\begin{proof}
+		Let \(z\) be any point inside a circular domain with radius \(R\), \(f\) be an analytic function throughout the interior of the domain, and \(C\) be a circular contour on the boundary of the domain. Consider the Cauchy Integral Formula (\cref{Cauchy Integral Formula}):
+		\begin{align*}
+			f(z) = \frac{1}{2\pi i} \int_{C} \frac{f(w)}{w-z} dw
+		\end{align*}
+		Define a point that lies outside the circle: \(z_1 = R^2/\bar{z}\)
+		
+		Where
+		\begin{align*}
+			\abs{z_1} = \frac{R^2}{\abs{\bar{z}}} &= \frac{R^2}{\abs{z}} > R & \abs{z} < R \\
+			\arg(z_1) &= \arg(z)
+		\end{align*}
+		Then by Cauchy-Goursat (\cref{Cauchy-Goursat Theorem - Complex})
+		\begin{align*}
+			\frac{1}{2\pi i} \int_{C} \frac{f(w)}{w - z_1} dw 
+			= \frac{1}{2\pi i} \int_{C} \frac{f(w)}{w - (R^2/\bar{z})} dw 
+			= 0
+		\end{align*}
+		Subtracting the two equations:
+		\begin{align*}
+			f(z) 
+			&= \frac{1}{2\pi i} \int_{C} f(w) \left[ \frac{1}{w - z} - \frac{1}{w - (R^2/\bar{z})}\right] dw \\
+			&= \frac{1}{2\pi i} \int_{C} f(w) \left[\frac{z - (R^2/\bar{z})}{(w - z)[w - (R^2/\bar{z})]}\right] dw \\
+			&= \frac{1}{2\pi i} \int_{C} f(R, \phi) \left[\frac{re^{i\theta}- [R^2/(re^{-i\theta})]}{(Re^{i\phi} - re^{i\theta})\{Re^{i\phi} - [R^2/(re^{-i\theta})]\}}\right] Re^{i\phi} i \ d\phi 
+				& w = Re^{i\phi} \\
+			&= \frac{1}{2\pi} \int_{0}^{2\pi} 
+			   \frac{f(R,\phi)(R^2 - r^2)}{R^2 + r^2 - 2Rr \cos(\phi - \theta)} d\phi
+		\end{align*}
+		Separating into real and imaginary parts:
+		\begin{align*}
+			u(r,\theta) + iv(r,\theta)
+			= \frac{1}{2\pi} \int_{0}^{2\pi}
+			  \frac{[u(R,\phi) + iv(R,\phi)][R^2 - r^2]}{R^2 + r^2 - 2Rr\cos(\phi - \theta)}  d \phi
+		\end{align*}
+		Taking the real part yields the desired result.
+	\end{proof}
 
 	\chapter{Series} \label{Series Chapter - Complex}
 	
@@ -5574,6 +5620,11 @@
 	
 	
 	\part{Partial Differential Equations} \label{Partial Differential Equations Part}
+	
+	\begin{definition}[Dirichlet Problem]
+		\label{Dirichlet Problem Definition - Partial}
+		Finding a function in an harmonic domain that assumes preassigned values at the boundary of the domain.
+	\end{definition}
 	
 	\paragraph{Calculus of Variations} \label{Calculus of Variations Part}
 	

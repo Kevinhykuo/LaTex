@@ -86,7 +86,7 @@
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{123}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{125}{part.6}%
 \contentsline {part}{VII\hspace {1em}Partial Differential Equations}{127}{part.7}%
-\contentsline {paragraph}{Calculus of Variations}{128}{part.7}%
+\contentsline {paragraph}{Calculus of Variations}{128}{definition.17.0.1}%
 \contentsline {part}{VIII\hspace {1em}Integral Equations}{129}{part.8}%
 \contentsline {part}{IX\hspace {1em}Linear Algebra}{131}{part.9}%
 \contentsline {chapter}{\numberline {18}Markov Chains}{133}{chapter.18}%
