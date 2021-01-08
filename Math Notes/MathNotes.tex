@@ -4376,9 +4376,9 @@
 	
 	\section{Contour Integrals} \label{Contour Integrals Section - Complex}
 	
-	Evaluating an integral over a contour. It is common to assume that a contour integral is a line integral which represents an area under a curve. Generally, this is a far too simplistic approach, even for real-valued functions. Consider the limit definition of the line integral.
+	Evaluating an integral over a contour. It is common to assume that a line integral represents an area under a curve. Generally, this is a far too simplistic approach, even for real-valued functions. Consider the limit definition of the line integral.
 	
-	\begin{definition}[Line Integral]
+	\begin{definition}[Line Integral (Real)]
 		\label{Line integral Definition - Complex}
 		Let \(f\) be a real-valued function.
 		\begin{align*}
@@ -4390,7 +4390,31 @@
 
 	Note: The integral exists only if the limit exists. 
 	
-	We can see that \(\Delta s_k\) acts like a vector, and the definition of the line integral assigns a weight based on the function \(f\) to each \(\Delta s_k\). The contour integral is then the weighted sum of these vectors from \(a\) to \(b\) as \(n \rightarrow \infty\).
+	We can see that \(\Delta s_k\) acts like a vector, and the definition of the line integral assigns a value according to the weighting function \(f\) to each \(\Delta s_k\). The contour integral is then the weighted sum of these vectors from \(a\) to \(b\) as \(n \rightarrow \infty\).
+	
+	The complex line integral is defined similarly.
+	
+	\begin{definition}[Line Integral (Complex)]
+		Let \(f\) be a complex-valued function.
+		\begin{align*}
+			\int_{a}^{b} f(z) dz 
+			&= \lim_{n \rightarrow \infty} \sum_{k=1}^{n} f(z_k) \Delta z_k 
+				& \Delta z = (x_k - x_{k-1}) + i(y_k - y_{k-1})
+		\end{align*}
+	\end{definition}
+
+	Upon expanding, we can see that:
+	\begin{align*}
+		\int_{a}^{b} f(z) dz 
+		&= \lim_{n \rightarrow \infty} \sum_{k=1}^{n} f(z_k) \Delta z_k  \\
+		&= \lim_{n \rightarrow \infty} \sum_{k=1}^{n} [u(x_k, y_k) + iv(x_k, y_k)](\Delta x_k + i \Delta y_k) \\
+		&= \int_{a}^{b} (u + iv)(dx + i dy) = \int_{a}^{b} u \ dx - v \ dy + i\int_{a}^{b} v \ dx + u \ dy
+	\end{align*}
+	These are the integrals taken in each direction when evaluating from \(a\) to \(b\) for \(a,b \in \mathbb{C}\).
+	
+	Note: This reduces to a regular integral \(\int_{a}^{b} u \ dx\) in the reals when \(v = 0\) and \(dy = 0\).
+
+	A contour integral is a line integral over a contour. Here we define it parameterized by \(t\).
 	
 	\begin{definition}[Contour Integral]
 		\label{Contour Integral Definition - Complex}
@@ -4485,8 +4509,8 @@
 		\end{align*}
 	\end{proof}
 	
-	\begin{theorem}
-		\label{Upper Bound for Moduli of Contour Integral Theorem - Complex}
+	\begin{theorem}[ML Inequality]
+		\label{ML Inequality Theorem - Complex}
 		Let \(f(z)\) be piecewise continuous function on contour \(C\) with length \(L\).
 		\begin{align*}
 			\forall z \in C \ \exists M \in \mathbb{R} 
@@ -4499,7 +4523,7 @@
 		\begin{align*}
 			\abs{\int_{C} f(z) dz} = \abs{\int_{a}^{b} f[z(t)] z'(t) dt} 
 			&\leq \int_{a}^{b} \abs{f[z(t)] z'(t)} dt = \int_{a}^{b}  \abs{f[z(t)]} \abs{z'(t)} dt  \\
-			&\leq M \int_{a}^{b} z'(t) dt = M z(t) = ML
+			&\leq M \int_{a}^{b} \abs{z'(t)} dt = M \abs{z(t)} = ML
 		\end{align*}
 	\end{proof}
 
@@ -5000,7 +5024,7 @@
 		\begin{align*}
 			\forall \epsilon>0, \exists \delta>0 [\abs{z-z_0}<\delta \implies \abs{f(z) - f(z_0)}<\epsilon]
 		\end{align*}
-		Now, \(\abs{z - z_0} = \rho < \delta\) for all \(z\) on \(C_\rho\), so according to \cref{Upper Bound for Moduli of Contour Integral Theorem - Complex}:
+		Now, \(\abs{z - z_0} = \rho < \delta\) for all \(z\) on \(C_\rho\), so according to \cref{ML Inequality Theorem - Complex}:
 		\begin{align*}
 			\abs{\int_{C_\rho} \frac{f(z) - f(z_0)}{z - z_0} dz} &< \frac{\epsilon}{\rho} (2 \pi \rho) = 2 \pi \epsilon & \abs{\frac{f(z) - f(z_0)}{z - z_0}} < \frac{\epsilon}{\delta}
 		\end{align*}
@@ -5052,7 +5076,7 @@
 		\begin{align*}
 			\abs{s-z-\Delta z} = \abs{(s-z) - \Delta z} \geq \abs{\abs{s-z} - \abs{\Delta z}} \geq d - \abs{\Delta z} > 0
 		\end{align*}
-		Then letting \(L\) be the length of \(C\) and using \cref{Upper Bound for Moduli of Contour Integral Theorem - Complex}:
+		Then letting \(L\) be the length of \(C\) and using \cref{ML Inequality Theorem - Complex}:
 		\begin{align*}
 			\abs{\int_{C} \frac{f(s) \Delta z}{(s-z-\Delta z)(s-z)^2}} 
 			\leq \frac{\abs{\Delta z} M}{(d - \abs{\Delta z}) d^2} L
@@ -5180,7 +5204,7 @@
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
-		From \cref{Upper Bound for Moduli of Contour Integral Theorem - Complex}:
+		From \cref{ML Inequality Theorem - Complex}:
 		\begin{align*}
 			&f^{(n)}(z_0) = \frac{n!}{2\pi i} \int_{C_R} \frac{f(z)}{(z-z_0)^{n+1}} & n \in \mathbb{N}\\
 			&\implies \abs{f^{(n)}(z_0)} \leq \frac{n!}{2\pi} \cdot \frac{M_R}{R^{n+1}} \cdot 2 \pi R = \frac{n! M_R}{R^n} & \abs{z-z_0}\leq R, \  n \in \mathbb{N}
