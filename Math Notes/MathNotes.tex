@@ -4430,7 +4430,7 @@
 	\begin{align*}
 		\int_{C} f(z) dz &&& \int_{z_1}^{z_2} f(z) dz
 	\end{align*}
-	\(\int_{z_1}^{z_2}\) is often used when the integral is independent of the path between end points. \(-C\) represents the same contour, but in reverse.
+	\(\int_{z_1}^{z_2}\) is often used when the integral is independent of the path between end points. \(\int_{-C}\) represents the same contour, but in reverse.
 	
 	Following from the contours, the integral is invariant under change in representation of the contour. 
 	
@@ -4777,6 +4777,16 @@
 	
 	Previously: A function \(f\) that has an antiderivative in any domain \(D\), then the integral of \(f\) around any closed contour in \(D\) is zero. (\Cref{Antiderivative and contour integrals theorem - Complex}) Now, it's for simple closed contours. 
 	
+	Recall:
+	\begin{align*}
+		\int f(z) dz 
+		&= \int (u + iv)(dx + i dy) = \int u \ dx - v \ dy + i\int v \ dx + u \ dy \\
+		&= \iint -v_x - u_x \ dx \ dy + i \iint u_x - v_y dx \ dy 
+			& \Cref{Green's Theorem - ODE} \\
+		&= 0 & \Cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}
+	\end{align*}
+	This result requires \(f'(z)\) be continuous, due to the requirement of Green's Theorem (\cref{Green's Theorem - ODE}). The Cauchy-Goursat theorem eliminates this requirement.
+	
 	\begin{theorem}[Cauchy-Goursat Theorem]
 		\label{Cauchy-Goursat Theorem - Complex}
 		Let \(C\) be a simple closed contour. If a function \(f\) is analytic for all set of points \(z\) on and in \(C\), then 
@@ -4941,7 +4951,7 @@
 
 	\begin{theorem}
 		\label{Contour integral over Multiply Connected Domains Theorem - Complex}
-		Let \(C\) be a simple closed contour in the positive direction, and \(C_k\) (\(k \in \{1,2,3,\ldots, n\}\)) be simple closed contours in \(C\) taken in the negative direction that hare disjoint with no common interior points. If a function \(f\) is analytic on \(C\) and \(C_k\) and throughout the multiply connected domain consisting of points inside \(C\) but exterior to all \(C_k\), then
+		Let \(C\) be a simple closed contour in the positive direction, and \(C_k\) (\(k \in \{1,2,3,\ldots, n\}\)) be simple closed contours in \(C\) taken in the negative direction that are disjoint with no common interior points. If a function \(f\) is analytic on \(C\) and \(C_k\) and throughout the multiply connected domain consisting of points inside \(C\) but exterior to all \(C_k\), then
 		\begin{align*}
 			\int_{C} f(z) dz + \sum_{k=1}^{n} \int_{C_k} f(z) dz = 0
 		\end{align*}
@@ -4992,6 +5002,16 @@
 			\implies \int_{C_1} f(z) dz = \int_{C_2} f(z) dz
 		\end{align*}
 	\end{proof}
+
+	\begin{observation}
+		It is easy to see that for any contour \(C_3\) lying between contours \(C_1\) and \(C_2\) and on points on \(C_1\) and \(C_2\):
+		\begin{align*}
+			\int_{C_1} f(z) dz = \int_{C_2} f(z) dz = \int_{C_3} f(z) dz 
+		\end{align*}
+		In fact, this theorem more powerful then it seems. It is implying that the contour integrals of a function \(f\) over any contour is equal, given that one contour can continuously deform into the other without crossing any singular points of \(f(z)\). It is the key to choosing a simpler path for integration.
+	\end{observation}
+
+	
 
 
 	\section{Cauchy Integral Formula} \label{Cauchy Integral Formula Section - Complex}
@@ -5533,6 +5553,14 @@
 	
 	
 	\part{Ordinary Differential Equations} \label{Ordinary Differential Equations Part}
+	
+	\begin{theorem}[Green's Theorem]
+		\label{Green's Theorem - ODE}
+		Let \(F = P(x,y) \hat{i} + Q(x,y) \hat{j}\) be a vector field on a simple closed contour \(C\), \(R\) be the region enclosed and on \(C\), and \(s\) be the path along \(C\).
+		\begin{align*}
+			\int_C F \cdot ds = \iint_R \nabla \cross F \ dx \ dy
+		\end{align*}
+	\end{theorem}
 	
 	\part{Nonlinear Dynamics} \label{Nonlinear Dynamics Part}
 	
