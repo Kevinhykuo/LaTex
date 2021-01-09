@@ -360,6 +360,11 @@
 
 	\chapter{Sequences} \label{Sequences Chapter - Real Analysis}
 	
+	\begin{corollary}
+		\label{Absolute convergence implies convergence Corollary - Real}
+		Absolutely convergent series are convergent.
+	\end{corollary}
+	
 	\section{Limits} \label{Limits Section - Real Analysis}
 	
 	\subsection{Limit Theorems} \label{Limit Theorems Subsection - Real Analysis}
@@ -5687,16 +5692,217 @@
 		\end{align*}
 	\end{definition}
 	
+	\begin{definition}[Diverge (Series)]
+		If a limit does not exists for a series.
+	\end{definition}
 	
+	\begin{theorem}
+		Let \(z_n = x_n + i y_n\) for \(n \in \mathbb{N}\) and \(z = x + iy\). Then 
+		\begin{align*}
+			\lim_{n \rightarrow \infty} z_n = z 
+			\iff \left[\lim_{n \rightarrow \infty} x_n = x \right] \land 
+				 \left[\lim_{n \rightarrow \infty} y_n = y \right] 
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\underline{\(\impliedby \):}		
+		\begin{align*}
+			&\left[\lim_{n \rightarrow \infty} x_n = x \right] \land 
+			 \left[\lim_{n \rightarrow \infty} y_n = y \right] \\
+			&\implies \forall \epsilon > 0, \exists n_1, n_2 \in \mathbb{N}
+				\left[\left(n > n_1 \implies \abs{x_n - x} < \frac{\epsilon}{2}\right) \land \left(n > n_2 \implies \abs{y_n - y} < \frac{\epsilon}{2}\right)\right]
+		\end{align*}
+		Let \(n_0 = \max(n_1, n_2)\), then:
+		\begin{align*}
+			n > n_0 
+			\implies \left[\abs{x_n - x} < \frac{\epsilon}{2} \right]
+				\land \left[\abs{y_n - y} < \frac{\epsilon}{2} \right]
+		\end{align*}
+		Since
+		\begin{align*}
+			\abs{(x_n - i y_n) - (x + iy)} = \abs{(x_n - x) + i(y_n - y)} \leq \abs{x_n - x} + \abs{y_n - y}
+		\end{align*}
+		Thus 
+		\begin{align*}
+			n > n_0 \implies \abs{z_n - z} < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon
+		\end{align*}
+		
+		\underline{\(\implies\):} 
+		\begin{align*}
+			\lim_{n \rightarrow \infty} z_n = z 
+			\implies \left[n > n_0 \implies \abs{(x_n + iy_n) - (x + iy)} < \epsilon \right]
+		\end{align*}
+		However,
+		\begin{align*}
+			\abs{x_n - x} &\leq \abs{(x_n - x) + i(y_n - y)} = \abs{(x_n + iy_n) - (x + iy)}  \\
+			\abs{y_n - y} &\leq \abs{(x_n - x) + i(y_n - y)} = \abs{(x_n + iy_n) - (x + iy)} 
+		\end{align*}
+		Hence 
+		\begin{align*}
+			\left[ 
+			n > n_0 
+			\implies\left(\abs{x_n - x} < \epsilon \right)
+				\land \left(\abs{y_n - y} < \epsilon \right)
+			\right]
+			\implies \left(\lim_{n \rightarrow \infty} x_n = x \right)
+				\land \left(\lim_{n \rightarrow \infty} y_n = y \right)
+		\end{align*}
+		Thus 
+		\begin{align*}
+			\lim_{n \rightarrow \infty} z_n = z 
+			\iff \left[\lim_{n \rightarrow \infty} x_n = x \right] \land 
+			\left[\lim_{n \rightarrow \infty} y_n = y \right] 
+		\end{align*}
+	\end{proof}
+
+	Be extra careful when converting to polar coordinates:
+	\begin{example}
+		It is easy to see that 
+		\begin{align*}
+			\lim_{n \rightarrow \infty}
+			z_n &= -1 + i \frac{(-1)^n}{n^2} = -1 & n \in \mathbb{N}
+		\end{align*}
+		Converting to polar: 
+		\begin{align*}
+			r_n &= \abs{z_n} & \Theta_n &= \operatorname{Arg}(z_n) 
+				& n \in \mathbb{N}, \ -\pi < \Theta_n \leq \pi
+		\end{align*}
+		Then 
+		\begin{align*}
+			\lim_{n \rightarrow \infty} r_n = \lim_{n \rightarrow \infty} \sqrt{1 + \frac{1}{n^4}} = 1
+		\end{align*}
+		But
+		\begin{align*}
+			\lim_{n \rightarrow \infty} \Theta_{2n} &= \pi &
+			\lim_{n \rightarrow \infty} \Theta_{2n-1} &= -\pi
+				& n \in \mathbb{N}
+		\end{align*}
+		The limit of \(\Theta_n\) does not exist as \(n \rightarrow \infty\).
+	\end{example}
+
+	\begin{definition}[Partial Sum (Series)]
+		\label{Partial Sum (Series) Definition - Complex}
+		Consider a infinite series
+		\begin{align*}
+			\sum_{n=1}^{\infty} z_n
+		\end{align*}
+		A partial sum is a finite sum of of the first \(N\) terms of the infinite series, that is:
+		\begin{align*}
+			S_N &= \sum_{n=1}^{N} z_n & N \in \mathbb{N}
+		\end{align*}
+	\end{definition}
 	
+	\begin{definition}[Converge (Series)]
+		We say a series converge to sum \(S\) if the sequence of partial sums converges to \(S\).
+	\end{definition}
+
+	\begin{definition}[Divergence (Series)]
+		A series diverge if its sequence of partial sums does not converge to sum \(S\).
+	\end{definition}
 	
+	\begin{theorem}
+		Let \(z_n = x_n + iy_n\) for \(n \in \mathbb{N}\) and \(S = X + iY\), then
+		\begin{align*}
+			\sum_{n = 1}^{\infty} z_n = S 
+			\iff \left[ \sum_{n = 1}^{\infty} x_n = X \right] \land 
+				 \left[ \sum_{n = 1}^{\infty} y_n = Y \right]
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\begin{align*}
+			S_N = X_N + iY_N = \sum_{n=1}^{N} x_n + i \sum_{n=1}^{\infty} y_n
+		\end{align*}
+		Then
+		\begin{align*}
+			\lim_{N \leftarrow \infty} S_N = S 
+			\iff \left[ \lim_{N \rightarrow \infty} X_N = X  \right]
+			\land  \left[ \lim_{N \rightarrow \infty} Y_N = Y  \right]
+		\end{align*}
+	\end{proof}
+
+	\begin{corollary}
+		Let \(z_1, z_2, z_3, \ldots \) be an infinite sequence of complex numbers. Then \(z_n \rightarrow 0\) as \(n \rightarrow \infty\).
+	\end{corollary}
+	\begin{proof}
+		Follows from the \(n\)-th term of a convergent series of real number tends to zero as \(n \rightarrow \infty\).
+	\end{proof}
 	
+	\begin{corollary}
+		Convergent series are bounded, that is:
+		\begin{align*}
+			\forall n \in \mathbb{N}, \exists M \in \mathbb{R}_{>0} [\abs{z_n} \leq M]
+		\end{align*}
+	\end{corollary}
 	
+	\begin{definition}[Absolutely Convergent (Series)]
+		A series is absolutely convergent if
+		\begin{align*}
+			\sum_{n=1}^{\infty} \abs{z_n} &= \sum_{n=1}^{\infty} \sqrt{x_n^2 + y_n^2} 
+				& z_n = x_n + iy_n
+		\end{align*}
+		converges to some real number. 
+	\end{definition}
+
+	\begin{corollary}
+		\label{Absolute convergence implies convergence (Complex) Corollary - Complex}
+		Absolute Convergence \(\implies\) Convergence
+	\end{corollary}
+	\begin{proof}
+		Assume a complex series converges absolutely. 
+		\begin{align*}
+			\abs{x_n} &\leq \sqrt{x_n^2 + y_n^2} & \abs{y_n} &\leq \sqrt{x_n^2 + y_n^2}
+		\end{align*}
+		Then by comparison test, the following must converge
+		\begin{align*}
+			\sum_{n=1}^{\infty} \abs{x_n} &&& \sum_{n=1}^{\infty} \abs{y_n}
+		\end{align*}
+		Result follows from the absolute convergence of real series implies convergence of real series (\cref{Absolute convergence implies convergence Corollary - Real}). 
+	\end{proof}
+
+	\begin{definition}[Remainder (Series) Definition - Complex]
+		Let \(S\) be an infinite series, the remainder after \(N\) terms:
+		\begin{align*}
+			\rho_N = S - S_N
+		\end{align*}
+	\end{definition}
+
+	\begin{corollary}
+		Series tend to \(S\) \(\iff\) Sequence of \(\rho_N\) tends to 0
+	\end{corollary}
+
+	\section{Taylor Series} \label{Taylor Series Section - Complex}
 	
+	\begin{definition}[Power Series]
+		\label{Power Series Definition - Complex}
+		Let \(R\) be a region containing a point \(z_0\). A power series is a series of the form
+		\begin{align*}
+			\sum_{n=0}^{\infty} a_n (z - z_0)^n && z_0, a_n \in \mathbb{C}, \ z \in R
+		\end{align*}
+	\end{definition}
 	
+	\begin{theorem}[Taylor's Theorem]
+		\label{Taylor's Theorem - Complex}
+		Let \(f\) be a function analytic throughout a disk \(\abs{z-z_0} < R_0\) with radius \(R_0\). Then \(f(z)\) has the power series representation:
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n 
+				& a_n &= \frac{f^{(n)}(z_0)}{n!}
+				& \abs{z-z_0} < R_0, \ n \in \mathbb{N}\cup\{0\}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\underline{\(z_0 = 0\):} \newline
+		
+		\underline{\(z_0 \neq 0\):} \newline
+		
+	\end{proof}
 	
-	
-	
+	\begin{definition}[Maclaurin Series]
+		\label{Maclaurin Series - Complex}
+		A Taylor series with \(z_0 = 0\):
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!} z^n & \abs{z} < R_0
+		\end{align*}
+	\end{definition}
 	
 	
 	
