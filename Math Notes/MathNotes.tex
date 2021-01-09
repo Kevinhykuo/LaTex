@@ -4902,6 +4902,61 @@
 		As \(\epsilon\) can be made arbitrary small and the inequality must hold for all values of \(\epsilon\), we find \(\int_{C} f(z) dz = 0\).
 	\end{proof}
 
+	\subsection{Morera's Theorem} \label{Morera's Theorem Subsection - Complex}
+	
+	A converse to the Cauchy-Goursat theorem. 
+	
+	\begin{lemma}
+		Suppose \(P(x,y)\), \(Q(x,y)\), \(P_y\), and \(Q_x\) are continuous in a simply connected domain \(D\). Then for all simple closed contour \(C\) in \(D\):
+		\begin{align*}
+			\int_{C} P \ dx + Q \ dy = 0 \implies \pdv{x}Q = \pdv{y} P 
+		\end{align*}
+	\end{lemma}
+	\begin{proof}
+		Suppose \(\exists x_0, y_0 \in D\) such that \(\pdv*{Q}{x} - \pdv*{P}{y} > 0\). Then there exists a circle \(C\) in \(D\) centred at \((x_0, y_0)\) such that \(\pdv*{Q}{x} - \pdv*{P}{y} > 0\) in and on \(C\). That is, there exists a neighbourhood that \(\pdv*{Q}{x} - \pdv*{P}{y} > 0\) holds. Then by Green's Theorem (\cref{Green's Theorem - ODE}):
+		\begin{align*}
+			\int_{C} P \ dx + Q \ dy = \iint \left(\pdv{x}Q - \pdv{y}P\right) \ dx \ dy
+		\end{align*}
+		Then 
+		\begin{align*}
+			\iint \left(\pdv{x}Q - \pdv{y}P\right) \ dx \ dy > 0 
+			\implies \int_{C} P \ dx + Q \ dy  > 0
+		\end{align*}
+		But by hypothesis
+		\begin{align*}
+			\int_{C} P \ dx + Q \ dy = 0 
+		\end{align*}
+		We have a contradiction, so 
+		\begin{align*}
+			\pdv{Q}{x} - \pdv{P}{y} \leq 0
+		\end{align*}
+		Using a similar argument, we have \(\pdv*{Q}{x} - \pdv*{P}{y} \geq 0\) for \(\pdv*{Q}{x} - \pdv*{P}{y} < 0\), so we have 
+		\begin{align*}
+			\pdv{x}Q = \pdv{y}P
+		\end{align*}
+	\end{proof}
+
+	\begin{theorem}[Morera's Theorem]
+		\label{Morera's Theorem - Complex}
+		Let \(f(x,y) = u(x,y) + iv(x,y)\) where \(u\) and \(v\) are continuous in a domain \(D\). Then for every simple closed contour \(C\) in \(D\):
+		\begin{align*}
+			\int_{C} f(z) dz = 0 \implies f(z) \text{ is analytic in } D
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		{\color{Grey}
+		\begin{align*}
+			\int_{C} f(z) dz = 0 
+			&\implies \int_{C} u \ dx - v \ dy + iv \ dx + iu \ dy = 0 \\
+			&\implies \left[\int_{C} u \ dx - v \ dy = 0 \right] \land 
+						\left[ \int_{C} v \ dx + u \ dy = 0 \right] \\
+			&\implies \left[ \pdv{y}u = - \pdv{x} v \right] \land \left[ \pdv{y}v = \pdv{x} u \right]
+		\end{align*}
+		These are the Cauchy-Riemann equations (\cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}), thus \(f(z)\) is analytic in \(D\).
+		}
+	\end{proof}
+	Note: This proof requires that the partial derivatives to be continuous in \(D\). However, there is a proof that eliminates this requirement.
+
 	\subsection{Simply Connected Domains} \label{Simply Connected Domains Subsection - Complex}
 	
 	\begin{definition}[Simply Connected Domain]
