@@ -83,6 +83,7 @@
 \contentsline {subsection}{\numberline {15.9.1}Examples}{117}{subsection.15.9.1}%
 \contentsline {section}{\numberline {15.10}Poisson Integral Formula}{118}{section.15.10}%
 \contentsline {chapter}{\numberline {16}Series}{121}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Convergence}{121}{section.16.1}%
 \contentsline {chapter}{\numberline {17}Conformal Mapping}{123}{chapter.17}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{125}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{127}{part.6}%
