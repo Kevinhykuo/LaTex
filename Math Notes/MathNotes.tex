@@ -5870,6 +5870,34 @@
 		Series tend to \(S\) \(\iff\) Sequence of \(\rho_N\) tends to 0
 	\end{corollary}
 
+	\begin{example}
+		\label{Infinite sum of z^n and remainder for partial sum Example - Complex}
+		Verify following using remainders:
+		\begin{align*}
+			\sum_{n=0}^{\infty} z^n &= \frac{1}{1-z} & \abs{z} < 1
+		\end{align*}
+		Consider the series:
+		\begin{align*}
+			Z = \sum_{n=0}^{N} z^n && z \neq 1
+		\end{align*}
+		Then
+		\begin{align*}
+			Z - Zz =  \sum_{n=0}^{N} z^n - \sum_{n=1}^{N+1} z^n = 1 - z^{N+1}
+			&\implies Z = \sum_{n=0}^{N} z^n = \frac{1-z^{N+1}}{1-z}
+		\end{align*}
+		Now, we can use this to write the partial sum:
+		\begin{align*}
+			S_N(z) = \sum_{n=0}^{N-1} z^n = \frac{1-z^n}{1-z}
+		\end{align*}
+		If we let:
+		\begin{align*}
+			S(z) = \frac{1}{1-z} 
+			&\implies \rho_N(z) = S(z) - S_N(z) = \frac{z^N}{1-z}\\
+			&\implies \abs{\rho_N(z)} = \frac{\abs{z}^N}{\abs{1-z}}
+		\end{align*}
+		It is clear that \(\rho_N(z) \rightarrow 0\) for \(z < 1\), so \(\sum_{n=0}^{\infty} z^n = 1/(1-z)\) is established.
+	\end{example}
+
 	\section{Taylor Series} \label{Taylor Series Section - Complex}
 	
 	\begin{definition}[Power Series]
@@ -5890,7 +5918,48 @@
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
+		Let \(C_0\) be a circular contour with radius \(\abs{s} = r_0\) and \(z\) be any point inside the circle, so \(\abs{z} = r\). Now suppose there is \(R_0\) such that \(r < r_0 < R\). Let \(f\) be analytic in and on \(C_0\).
+		
 		\underline{\(z_0 = 0\):} \newline
+		\(f\) is analytic in and on \(C_0\), we can use the Cauchy-Integral formula (\cref{Cauchy Integral Formula}):
+		\begin{align*}
+			f(z) = \frac{1}{2\pi i} \int_{C_0} \frac{f(s)}{s-z} ds
+		\end{align*}
+		Recall from \cref{Infinite sum of z^n and remainder for partial sum Example - Complex}:
+		\begin{align*}
+			\frac{1}{1-z} = \sum_{n=0}^{N-1} z^n + \frac{z^n}{1-z}
+			\implies \frac{1}{s-z} = \sum_{n=0}^{N-1} \frac{1}{s^{n+1}} z^n + \frac{z^N}{(s-z)s^N}
+		\end{align*}
+		We can then write the Cauchy Integral formula:
+		\begin{align*}
+			f(z) = \frac{1}{2\pi i} \left[
+			\sum_{n=0}^{N-1} \left(\int_{C_0} \frac{f(s)}{s^{n+1}} ds \right) z^n + z^N \int_{C_0} \frac{f(s)}{(s-z)s^N} ds
+			\right]
+		\end{align*}
+		Using the \cref{Cauchy Integral Formula (Extension) - Complex}:
+		\begin{align*}
+			\frac{1}{2\pi i} \int_{C_0} \frac{f(z)}{s^{n+1}} ds &= \frac{f^{(n)(0)}}{n!}
+			& n \in \mathbb{N} \cup \{0\}
+		\end{align*}
+		We get 
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{N-1} \frac{f^{(n)}(0)}{n!} z^n + \rho_N (z) &
+			\rho_N(z) = \frac{z^N}{2\pi i} \int_{C_0} \frac{f(s)}{(s-z)s^N} ds
+		\end{align*}
+		This is the Maclaurin series (\cref{Maclaurin Series - Complex}) if we let \(N \rightarrow \infty\). To prove it: 
+		\begin{align*}
+			\abs{s-z} \geq \abs{\abs{s} - \abs{z}} = r_0 - r
+		\end{align*}
+		Letting \(M = \max\abs{f(s)}\) on \(C_0\):
+		\begin{align*}
+			\abs{\rho_N(z)} \leq \frac{r^N}{2\pi} \cdot \frac{M}{(r_0 - r)r_0^N} 2\pi r_0 = \frac{Mr_0}{r_0 - r} \left(\frac{r}{r_0}\right)^N
+		\end{align*}
+		Thus
+		\begin{align*}
+			\frac{r}{r_0} < 1 
+			\implies \lim_{N\rightarrow \infty} \left(\frac{r}{r_0}\right)^N = 0 
+			\implies \lim_{N \rightarrow \infty} \rho_N (z) = 0
+		\end{align*}
 		
 		\underline{\(z_0 \neq 0\):} \newline
 		
