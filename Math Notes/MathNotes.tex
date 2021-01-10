@@ -5970,6 +5970,54 @@
 			&\implies f(z) = \sum_{n=0}^{\infty} \frac{f^{(n)}(z_0)}{n!}(z-z_0)^n & \abs{z}<R_0 
 		\end{align*}
 	\end{proof}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(5, 4) [$z_0$]
+					(4, 6) [$z$]
+				};
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=none,
+				]
+				coordinates {
+					(3.16, 2.16) [$C$]
+				};
+				\draw[line width=1pt, 
+						decoration={markings, mark=at position 0.625 with {\arrow{>}} },
+						postaction={decorate}]
+					(axis cs: 5, 4) circle (3);
+				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (3.5);
+				\draw[-]  (axis cs: 5,4)--(axis cs: 2,4) node[midway, above] {$r_0$};
+				\draw[-]  (axis cs: 5,4)--(axis cs: 4,6) node[midway, above] {$r$};
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 8.5, 4) node[midway, above] {$R_0$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
 	\begin{definition}[Maclaurin Series]
 		\label{Maclaurin Series - Complex}
@@ -6015,7 +6063,57 @@
 		
 		\underline{\(z_0 \neq 0\):} \newline
 	\end{proof}
-	
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(5, 4) [$z_0$]
+					(4, 6) [$z$]
+				};
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=none,
+				]
+				coordinates {
+					(3.16, 2.16) [$C$]
+				};
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.625 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 5, 4) circle (3);
+				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (3.5);
+				
+				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (1);
+				
+				\draw[-]  (axis cs: 5,4)--(axis cs: 4,6) node[midway, above] {$r$};
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 5,3) node[midway] {$R_1$};
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 8.5, 4) node[midway, above] {$R_2$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
 	
 	
