@@ -5916,9 +5916,10 @@
 				& a_n &= \frac{f^{(n)}(z_0)}{n!}
 				& \abs{z-z_0} < R_0, \ n \in \mathbb{N}\cup\{0\}
 		\end{align*}
+		Note: By extension, \(f\) must also be analytic at \(z_0\).
 	\end{theorem}
 	\begin{proof}
-		Let \(C_0\) be a circular contour with radius \(\abs{s} = r_0\) and \(z\) be any point inside the circle, so \(\abs{z} = r\). Now suppose there is \(R_0\) such that \(r < r_0 < R\). Let \(f\) be analytic in and on \(C_0\).
+		Let \(C_0\) be a circular contour with radius \(\abs{s} = r_0\) and \(z\) be any point inside the circle, so \(\abs{z} = r\). Now suppose there is a bigger circle enveloping \(C_0\) with radius \(R_0\) such that \(r < r_0 < R_0\). Let \(f\) be analytic in and on \(C_0\).
 		
 		\underline{\(z_0 = 0\):} \newline
 		\(f\) is analytic in and on \(C_0\), we can use the Cauchy-Integral formula (\cref{Cauchy Integral Formula}):
@@ -5962,7 +5963,12 @@
 		\end{align*}
 		
 		\underline{\(z_0 \neq 0\):} \newline
-		
+		Suppose \(f\) is analytic in \(\abs{z-z_0}< R_0\), then \(f(z+z_0)\) must be analytic in \(\abs{(z+z_0) - z_0}< R_0\). Then
+		\begin{align*}
+			&f(z+z_0) = g(z) = \sum_{n=0}^{\infty} \frac{g^{(n)}(0)}{n!}z^n & \abs{z}<R_0 \\
+			&\implies f(z+z_0) = \sum_{n=0}^{\infty} \frac{f^{(n)}(z_0)}{n!}z^n & \abs{z}<R_0 \\
+			&\implies f(z) = \sum_{n=0}^{\infty} \frac{f^{(n)}(z_0)}{n!}(z-z_0)^n & \abs{z}<R_0 
+		\end{align*}
 	\end{proof}
 	
 	\begin{definition}[Maclaurin Series]
@@ -5972,7 +5978,38 @@
 			f(z) &= \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!} z^n & \abs{z} < R_0
 		\end{align*}
 	\end{definition}
+
+	Useful identities:
+	\begin{align*}
+		\frac{1}{1-z} &= \sum_{n=0}^{\infty} z^n  &&& \abs{z} &< 1 \\
+		e^z &= \sum_{n=0}^{\infty} \frac{z^n}{n!} &&& \abs{z} &< \infty \\
+		\sin(z) &=  \sum_{n=0}^{\infty} \frac{(-1)^n z^{2n+1}}{(2n+1)!} & 
+		\cos(z) &=  \sum_{n=0}^{\infty} \frac{(-1)^n z^{2n}}{(2n)!} & \abs{z}&<\infty \\
+		\sinh(z) &=  \sum_{n=0}^{\infty} \frac{z^{2n+1}}{(2n+1)!} & 
+		\cosh(z) &=  \sum_{n=0}^{\infty} \frac{z^{2n}}{(2n)!} & \abs{z}&<\infty \\
+ 	\end{align*}
+ 
+ 	\section{Laurent Series} \label{Laurent Series Section - Complex}
 	
+	In Taylor's theorem (\cref{Taylor's Theorem - Complex}), \(f\) is required to be analytic at \(z_0\). What about the case where \(f\) does not need to be analytic at \(z_0\)? Well...
+	
+	\begin{theorem}[Laurent's Theorem]
+		\label{Laurent's Theorem - Complex}
+		Let \(f\) be analytic throughout an annular domain \(R_1 < \abs{z-z_0}<R_2 \) centred at \(z_0\), and \(C\) be any positively oriented simple closed contour in said domain. Then at any \(z\) in the domain:
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=0}^{\infty} \frac{b_n}{(z-z_0)^n} & R_1 &< \abs{z-z_0} < R_2 \\
+			a_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz 
+				& n &\in \mathbb{N}\cup\{0\} \\
+			b_n &= \frac{1}{2\pi i } \int_{C} \frac{f(z)}{(z-z_0)^{-n+1}} 
+				& n &\in \mathbb{N}
+		\end{align*}
+		Or (by replacing \(n\) by \(-n\) in \(b_n\)):
+		\begin{align*}
+			f(z) &= \sum_{n=-\infty}^{\infty} c_n (z-z_0)^n & 
+			c_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} &
+			R_1 &< \abs{z-z_0} < R_2, \ n \in \mathbb{Z} 
+		\end{align*}
+	\end{theorem}
 	
 	
 	
