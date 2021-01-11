@@ -6058,11 +6058,6 @@
 			R_1 &< \abs{z-z_0} < R_2, \ n \in \mathbb{Z} 
 		\end{align*}
 	\end{theorem}
-	\begin{proof}
-		\underline{\(z_0 = 0\):} \newline
-		
-		\underline{\(z_0 \neq 0\):} \newline
-	\end{proof}
 
 	\begin{figure}[H]
 		\centering
@@ -6109,6 +6104,85 @@
 				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (1);
 				
 				\draw[-]  (axis cs: 5,4)--(axis cs: 4,6) node[midway, above] {$r$};
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 5,3) node[midway] {$R_1$};
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 8.5, 4) node[midway, above] {$R_2$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+
+	\begin{proof}
+		\underline{\(z_0 = 0\):} \newline
+		
+		\underline{\(z_0 \neq 0\):} \newline
+	\end{proof}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=15cm,
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				%					xtick distance=2,
+				%					ytick distance=2,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(5, 4) [$z_0$]
+					(3.75, 6.25) [$z$]
+				};
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=none,
+				]
+				coordinates {
+					(2.86, 1.66) [$C_2$]
+					(4.31, 3.11) [$C_1$]
+					(3.487, 5.987) [$\gamma$]
+					(6.15, 2.549) [$C$]
+				};
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.625 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 5, 4) circle (3.25);
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.625 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 5, 4) circle (1.25);
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.625 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 3.75, 6.25) circle (0.5);
+				
+				\draw[line width=2pt, 
+				decoration={markings, mark=at position 0.875 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 5, 4) circle (2);
+				
+				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (3.5);
+				
+				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (1);
+				
+				\draw[-]  (axis cs: 5,4)--(axis cs: 3.75,6.25) node[midway, above] {$r$};
+				\draw[-]  (axis cs: 5,4)--(axis cs: 6,4.15) node[midway, above] {$r_1$};
+				\draw[-]  (axis cs: 5,4)--(axis cs: 6.75,6.75) node[midway, above] {$r_2$};
 				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 5,3) node[midway] {$R_1$};
 				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 8.5, 4) node[midway, above] {$R_2$};
 			\end{axis}
