@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  10 JAN 2021 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  10 JAN 2021 18:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2120,16 +2120,21 @@ isable this.
 LaTeX Warning: Reference `Taylor's Theorem - Complex' on page 1 undefined on in
 put line 6042.
 
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6062--6063
+Underfull \hbox (badness 10000) in paragraph at lines 6114--6116
 
  []
 
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6118--6119
+
+ []
+
 \openout4 = `tikz/MathNotes-figure38.dpth'.
 
-[125
+[126
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Chapter 17.
@@ -2153,7 +2158,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  39463 strings out of 479382
  895404 string characters out of 5869369
- 1347070 words of memory out of 5000000
+ 1346278 words of memory out of 5000000
  55802 multiletter control sequences out of 15000+600000
  444227 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2161,7 +2166,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 ></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on tikz/MathNotes-figure38.pdf (1 page, 27036 bytes).
+Output written on tikz/MathNotes-figure38.pdf (1 page, 27034 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream

@@ -6048,7 +6048,7 @@
 			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=0}^{\infty} \frac{b_n}{(z-z_0)^n} & R_1 &< \abs{z-z_0} < R_2 \\
 			a_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz 
 				& n &\in \mathbb{N}\cup\{0\} \\
-			b_n &= \frac{1}{2\pi i } \int_{C} \frac{f(z)}{(z-z_0)^{-n+1}} 
+			b_n &= \frac{1}{2\pi i } \int_{C} \frac{f(z)}{(z-z_0)^{-n+1}} dz
 				& n &\in \mathbb{N}
 		\end{align*}
 		Or (by replacing \(n\) by \(-n\) in \(b_n\)):
@@ -6111,9 +6111,85 @@
 	\end{figure}
 
 	\begin{proof}
+		Consider the annular regions \(R_1 < r_1 \leq \abs{z} \leq r_2 < R_2\) containing the point \(z\) and simple closed contour \(C\). Let \(C_1\) and \(C_2\) denote the circular contours with radius \(r_1\) and \(r_2\), respectively. All the contours are positively oriented. Let \(f\) be an analytic function between the region enclosed by \(C_1\) and \(C_2\) and on \(C_1\) and \(C_2\).
+		
 		\underline{\(z_0 = 0\):} \newline
+		Let \(\gamma\) be a circular contour centred at \(z\) and small enough to fit in the annular region \(r_1 \leq \abs{z} \leq r_2\). Using the Cauchy-Goursat theorem (\cref{Cauchy-Goursat Theorem - Complex}) on multiply connected domains (\cref{Multiply Connected Domains Subsection - Complex}):
+		\begin{align*}
+			\int_{C_2} \frac{f(s)}{s-z} ds - \int_{C_1} \frac{f(s)}{s-z} ds - \int_{\gamma} \frac{f(s)}{s-z} ds = 0
+		\end{align*}
+		By Cauchy Integral formula (\cref{Cauchy Integral Formula}):
+		\begin{align*}
+			\int_{\gamma} \frac{f(z)}{s-z} ds = 2 \pi i f(z)
+ 		\end{align*}
+ 		Hence
+ 		\begin{align*}
+ 			2 \pi i f(z) =  \int_{C_2} \frac{f(s)}{s-z} ds - \int_{C_1} \frac{f(s)}{s-z} ds
+ 				=  \int_{C_2} \frac{f(s)}{s-z} ds + \int_{C_1} \frac{f(s)}{z-s} ds
+ 		\end{align*}
+ 		Using \cref{Infinite sum of z^n and remainder for partial sum Example - Complex}:
+ 		\begin{align*}
+ 			\frac{1}{s-z} &= \sum_{n=0}^{N-1} \frac{z^n}{s^{n+1}} + \frac{z^N}{(s-z)s^N} \\
+ 			\frac{1}{z-s} &= \sum_{n=0}^{N-1} \frac{1}{s^{-n}} \cdot \frac{1}{z^{n+1}} + \frac{1}{z^N} \cdot \frac{s^N}{z-s} 
+ 				= \sum_{n=1}^{N} \frac{1}{s^{-n+1}} \cdot \frac{1}{z^n} + \frac{1}{z^N} \cdot \frac{s^N}{z-s} 
+ 		\end{align*}
+ 		This implies
+ 		\begin{align*}
+ 			2 \pi i  f(z) 
+ 			&= \int_{C_2} f(s) 
+ 			 \left[ \sum_{n=0}^{N-1} \frac{z^n}{s^{n+1}} + \frac{z^N}{(s-z)s^N} \right] ds 
+ 			 + \int_{C_1} f(s) 
+ 			 \left[ \sum_{n=1}^{N} \frac{1}{s^{-n+1}} \cdot \frac{1}{z^n} + \frac{1}{z^N} \cdot \frac{s^N}{z-s} \right] ds
+ 		\end{align*}
+ 		Interchanging the integral and summation, and dividing by \(2\pi i\):
+ 		\begin{align*}
+ 			f(z) &= \sum_{n=0}^{N-1} a_n z^n + \rho_N (z) + \sum_{n=1}^{N} \frac{b_n}{z^n} + \sigma_N (z) 
+ 		\end{align*}
+ 		Where
+ 		\begin{align*}
+ 			a_n &= \frac{1}{2\pi i} \int_{C_2} \frac{f(s)}{s^{n+1}} ds &
+ 				\rho_N (z) &= \frac{z^N}{2\pi i} \int_{C_2} \frac{f(s)}{(s-z)s^N} ds \\
+ 			b_n &= \frac{1}{2\pi i} \int_{C_1} \frac{f(s)}{s^{-n+1}} ds &
+ 				\sigma_N (z) &= \frac{1}{2\pi i z^N} \int_{C_1} \frac{s^N f(s)}{z-s} ds
+ 		\end{align*}
+ 		This gives us the Laurent series in \(R_1 \leq \abs{z} \leq R_2\) given that 
+ 		\begin{align*}
+ 			\lim_{N\rightarrow \infty} \rho_N(z) &= 0 & 
+ 			\lim_{N\rightarrow \infty} \sigma_N (z) &= 0
+ 		\end{align*}
+ 		Which we can prove by letting \(\abs{z} = r\), \(r_1 < r < r_2\), and \(M = \max\abs{f(S)}\) on \(C_1\) and \(C_2\). Then
+ 		\begin{align*}
+ 			\abs{\rho_N (z)} &\leq \frac{M r_2}{r_2 - r} \left(\frac{r}{r_2}\right)^N & 
+ 				\abs{s-z} &\geq r_2 - r  \text{ for } s \in C_2\\
+ 			\abs{\sigma_N (z)} &\leq \frac{M r_1}{r-r_1} \left(\frac{r_1}{r}\right)^N &
+ 				\abs{z-s} &\geq r - r_1  \text{ for } s \in C_1
+ 		\end{align*}
+ 		Since \(r_1 < r < r_2\), we can see that 
+ 		\begin{align*}
+ 			\lim_{N \rightarrow \infty} \left(\frac{r}{r_2}\right)^N &= 0 & 
+ 			\lim_{N \rightarrow \infty} \left(\frac{r_1}{r}\right)^N &= 0
+ 		\end{align*}
+		By \cref{Principle of Deformation of Paths Corollary - Complex}, we can replace \(C_1\) and \(C_2\) by a positively oriented closed contour \(C\), giving us the desired expression for the Laurent series.
 		
 		\underline{\(z_0 \neq 0\):} \newline
+		Let \(f\) be analytic in \(R_1 < \abs{z-z_0} < R_2\), then \(g(z) = f(z + z_0)\) is analytic in \(R_1 < \abs{(z+z_0) - z_0} = \abs{z} < R_2\). Now let \(t\) parameterize the path \(\Gamma\) on \(C\) so that:
+		\begin{align*}
+			z &= z(t) - z_0 & R_1 &< \abs{z(t) - z_0} = \abs{z} < R_2 & a \leq t \leq b
+		\end{align*}
+		Then \(g\) has the Laurent series representation:
+		\begin{align*}
+			g(z) &= \sum_{n=0}^{\infty} a_n z^n + \sum_{n=1}^{\infty} \frac{b^n}{z^n} &
+				R_2 < \abs{z} < R_2 \\
+			a_n &= \frac{1}{2\pi i} \int_\Gamma \frac{g(z)}{z^{n+1}} dz & n \in \mathbb{N} \cup \{0\} \\
+			b_n &= \frac{1}{2\pi i} \int_\Gamma \frac{g(z)}{z^{-n+1}} dz & n \in \mathbb{N}
+		\end{align*}
+		Replacing \(z\) by \(z - z_0\) and using \cref{Principle of Deformation of Paths Corollary - Complex} to replace \(\Gamma\) by \(C\) yields the desire result. Note that: 
+		\begin{align*}
+			2\pi i a_n 
+			&= \int_\Gamma \frac{g(z)}{z^{n+1}} dz 
+			 = \int_{C} \frac{f[z(t)]z'(t)}{[z(t) - z_0]^{n+1}} dt = \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz & z(t) = z
+		\end{align*}
+		Similarly for \(b_n\).
 	\end{proof}
 
 	\begin{figure}[H]
@@ -6181,7 +6257,7 @@
 				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (1);
 				
 				\draw[-]  (axis cs: 5,4)--(axis cs: 3.75,6.25) node[midway, above] {$r$};
-				\draw[-]  (axis cs: 5,4)--(axis cs: 6,4.15) node[midway, above] {$r_1$};
+				\draw[-]  (axis cs: 5,4)--(axis cs: 6.25,4.15) node[midway, above] {$r_1$};
 				\draw[-]  (axis cs: 5,4)--(axis cs: 6.75,6.75) node[midway, above] {$r_2$};
 				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 5,3) node[midway] {$R_1$};
 				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 8.5, 4) node[midway, above] {$R_2$};
@@ -6189,7 +6265,15 @@
 		\end{tikzpicture}
 	\end{figure}
 	
+	\subsection{Examples}
 	
+	\begin{example}[z-transform]
+		content
+	\end{example}
+
+	\begin{example}[Bessel Functions]
+		content...
+	\end{example}
 	
 	
 	
