@@ -6265,6 +6265,10 @@
 		\end{tikzpicture}
 	\end{figure}
 	
+	Note: If \(f\) is analytic throughout the disk \(\abs{z-z_0}<R_2\), \(b_n = (2\pi i)^{-1} \int_{C} f(z)(z-z_0)^{n-1}\) becomes analytic, so \(b_n = 0\) due to Cauchy-Goursat theorem (\cref{Cauchy-Goursat Theorem - Complex}). The Laurent series then becomes a Taylor series about \(z_0\). 
+	
+	Note: In the case where \(f\) is not analytic at \(z_0\), then \(R_1\) can become arbitrarily small, so the Laurent series is valid for the punctured disk \(0 < \abs{z-z_0}<R_2\). Likewise, if \(f\) is only analytic for points outside \(R_1\), then the Laurent series is valid for the region \(R_1 < \abs{z-z_0} < \infty\).
+	
 	\subsection{Examples}
 	
 	\begin{example}[z-transform]
