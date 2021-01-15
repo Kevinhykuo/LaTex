@@ -6048,7 +6048,8 @@
 		Let \(f\) be analytic throughout an annular domain \(R_1 < \abs{z-z_0}<R_2 \) centred at \(z_0\), and \(C\) be any positively oriented simple closed contour in said domain. Then at any \(z\) in the domain:
 		\begin{align*}
 			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=0}^{\infty} \frac{b_n}{(z-z_0)^n} & R_1 &< \abs{z-z_0} < R_2 \\
-			a_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz 
+			a_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz  
+				 = \frac{f^{(n)}(z_0)}{n!}
 				& n &\in \mathbb{N}\cup\{0\} \\
 			b_n &= \frac{1}{2\pi i } \int_{C} \frac{f(z)}{(z-z_0)^{-n+1}} dz
 				& n &\in \mathbb{N}
@@ -6273,14 +6274,178 @@
 	
 	\subsection{Examples}
 	
-	\begin{example}[z-transform]
-		content
-	\end{example}
-
-	\begin{example}[Bessel Functions]
-		content...
+	\begin{example}[Finding Laurent Series via Known Series]
+		Find series representation of
+		\begin{align*}
+			f(z) = \frac{1}{z(1+z^2)}
+		\end{align*}
+		We have singularities at \(z = 0, \pi 1\), and since \(\abs{-z^2}<1 \implies \abs{z}<1\), we may use 
+		\begin{align*}
+			\frac{1}{1-z} &= \sum_{n=0}^\infty z^n & \abs{z}<1
+		\end{align*}
+		Substituting \(-z^2\) for \(z\):
+		\begin{align*}
+			f(z) 
+			&= \frac{1}{z} \sum_{n=0}^{\infty} (-1)^n z^{2n} = \sum_{n=0}^{\infty} (-1)^n z^{2n-1} & \abs{z}<1 \\
+			&= \frac{1}{z} + \sum_{n=1}^{\infty} (-1)^n z^{2n-1} \\
+			&= \sum_{n=0}^{\infty} (-1)^{n+1} z^{2n+1} + \frac{1}{z} &\text{(Standard form)}
+		\end{align*}
+		Note: This is valid in the region \(\abs{z}<1\), there is another representation for \(\abs{z-i}<1\) and \(\abs{z+1}<1\).
 	\end{example}
 	
+	\begin{example}[z-transform]
+		Suppose 
+		\begin{align*}
+			X(z) &= \sum_{n=-\infty}^{\infty} x[n]z^{-n} & R_1 < \abs{z} < R_2, \ n \in \mathbb{Z}
+		\end{align*}
+		Show that if the Laurent series contains the unit circle \(\abs{z} = 1\) then 
+		\begin{align*}
+			X^{-1}(z) = x[n] 
+			&= \frac{1}{2\pi} \int_{-\pi}^{\pi} X(e^{i\theta}) e^{in\theta} d\theta & n \in \mathbb{Z}
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			We can write:
+			\begin{align*}
+				\sum_{n=-\infty}^{\infty} x[n]z^{-n} 
+				&= \sum_{n=-\infty}^{\infty} x[n](z-z_0)^{-n} & z_0 &= 0
+			\end{align*}
+			It is clear that
+			\begin{align*}
+				x[n] = b_n 
+				&= \frac{1}{2\pi i} \int_{C} \frac{X(z)}{(z-z_0)^{-n+1}} dz 
+					& \abs{z}&<1 \\
+				&= \frac{1}{2\pi i} \int_{C} \frac{X(z)}{z^{-n+1}} dz
+					& z_0 &= 0 \\
+				&= \frac{1}{2\pi i} \int_{-\pi}^{\pi} \frac{X(e^{i\theta})}{e^{i\theta(-n+1)}} \dv{\theta} e^{i\theta}  d\theta
+					& z &= e^{i\theta} \\
+				&= \frac{1}{2\pi i} \int_{-\pi}^{\pi} X(e^{i\theta}) e^{i n\theta - i\theta}  i e^{i\theta}  d\theta 
+				 = \frac{1}{2\pi} \int_{-\pi}^{\pi} X(e^{i\theta}) e^{i n\theta}  d\theta
+			\end{align*}
+			}
+		\end{proof}
+	\end{example}
+
+	\begin{example}[Bessel Functions of the First Kind]
+		Let \(z \in \mathbb{C}\) and \(C\) be the unit circle \(w = e^{i\phi}\), \(-\pi<\phi<\pi\), in the \(w\)-plane. Show for the Laurent series about the origin in the \(w\)-plane:
+		\begin{align*}
+			\exp[\frac{z}{2}\left(w - \frac{1}{w}\right)]
+			&= \sum_{n=-\infty}^{\infty} J_n(z)w^n	&	0&<\abs{w}<\infty \\
+			J_n (z) 
+			&= \frac{1}{2\pi} \int_{-\pi}^{\pi} \exp[-i(n\phi - z\sin(\phi))] d \phi 
+				&	n &\in \mathbb{Z}
+		\end{align*}
+		And that 
+		\begin{align}
+			\Re{J_n(z)} &= \frac{1}{\pi} \int_{0}^{\infty} \cos[n\phi - z \sin(\phi)] d\phi
+				& n \in \mathbb{Z}
+		\end{align}
+		\begin{proof}
+			{\color{Grey}
+			
+			}
+		\end{proof}
+	\end{example}
+
+	\begin{example}[Fourier Series]
+		Let \(f(z)\) be a function in some annular domain about the origin that includes the unit circle \(z = e^{i\phi}\), \(-\pi \leq \phi \leq \pi\). Show that in the Laurent series representation for any \(z \in \mathbb{C}\):
+		\begin{align*}
+			f(z) &= \frac{1}{2\pi} \int_{-\pi}^{\pi} f(e^{i\phi}) d \phi
+				+ \frac{1}{2\pi} \sum_{n=1}^{\infty} \int_{-\pi}^{\pi} f(e^{i\phi}) \left[\left(\frac{z}{e^{i\phi}}\right)^n + \left(\frac{e^{i\phi}}{z}\right)^n\right]
+				& -\pi &\leq \phi \leq \pi
+		\end{align*}
+		and that for \(u(\theta) = \Re{f(e^{i\phi})}\):
+		\begin{align*}
+			u(\theta) &= \frac{1}{2\pi} \int_{-\pi}^{\pi} u(\phi) d \phi
+				+ \frac{1}{\pi} \sum_{n=1}^{\infty} \int_{-\pi}^{\pi} u(\phi) \cos[n(\theta-\phi)] d\phi
+				& -\pi &\leq \theta \leq \pi
+		\end{align*}
+		which is the Fourier Series of \(u(\theta)\) about \(-\pi \leq \phi \leq \pi\). Restrictions on \(u(\theta)\) is more severe than necessary in order for it to be represented by a Fourier series, because 
+		\begin{proof}
+			{\color{Grey}
+			We know that for the Laurent series representation of a function:
+			\begin{align*}
+				f(z) &= \sum_{n=0}^{\infty} a_n(z-z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
+					& R_1 &< \abs{z} < R_2 \\
+				a_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz
+					& n &\in \mathbb{N} \cup \{0\} \\
+				b_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{-n+1}} dz 
+					& n &\in \mathbb{N}
+			\end{align*}
+			This tells us that 
+			\begin{align*}
+				f(z) &= \frac{1}{2\pi i} \sum_{n=0}^{\infty} 
+				\left( \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz \right) (z-z_0)^n
+				+ \frac{1}{2\pi i} \sum_{n=1}^{\infty} \left(\int_{C} \frac{f(z)}{(z-z_0)^{-n+1}} dz \right) (z-z_0)^{-n}
+			\end{align*}
+			Let \(z_0 = 0\) since we are in an annular domain about the origin:
+			\begin{align*}
+				2\pi i f(z) 
+				&= \left[\int_{C} \frac{f(z)}{z^{n+1}} dz \right]
+				 + \sum_{n=1}^{\infty} \left(\int_{C} \frac{f(z)}{z^{n+1}} dz \right) z^n
+				 + \sum_{n=1}^{\infty} \left(\int_{C} \frac{f(z)}{z^{-n+1}} dz \right) z^{-n} \\
+				&= \left[\int_{C} \frac{f(z)}{z^{n+1}} dz \right]
+				+ \sum_{n=1}^{\infty} \left[ \left(\int_{C} \frac{f(z)}{z^{n+1}} dz \right) z^n
+				+ \left(\int_{C} \frac{f(z)}{z^{-n+1}} dz \right) z^{-n} \right] 
+			\end{align*}
+			We know that 
+			\begin{align*}
+				\int_{C} \frac{f(z)}{z^{n+1}} dz 
+				&= \int_{-\pi}^{\pi} \frac{f(e^{i\phi})}{e^{i\phi(n+1)}} (ie^{i\phi}) d\phi
+				 = i \int_{-\pi}^{\pi} f(e^{i\phi}) d\phi \\
+				\int_{C} \frac{f(z)}{z^{n+1}} dz
+				&= \int_{-\pi}^{\pi}  \frac{f(e^{i\phi})}{e^{i\phi(n+1)}} (ie^{i\phi}) d\phi
+				 = i \int_{-\pi}^{\pi} \frac{f(e^{i\phi})}{e^{in\phi}}  d\phi \\
+				\int_{C} \frac{f(z)}{z^{-n+1}} dz
+				&= \int_{-\pi}^{\pi}  \frac{f(e^{i\phi})}{e^{i\phi(-n+1)}} (ie^{i\phi}) d\phi
+				 = i \int_{-\pi}^{\pi}  f(e^{i\phi}) e^{in\phi} d\phi
+			\end{align*}
+			This gives us
+			\begin{align*}
+				2\pi i f(z)
+				&=  i \int_{-\pi}^{\pi} f(e^{i\phi}) d\phi + \sum_{n=1}^{\infty} \left[
+				\left(  i \int_{-\pi}^{\pi} \frac{f(e^{i\phi})}{e^{in\phi}} d\phi \right) z^n 
+				+ \left( i \int_{-\pi}^{\pi}  f(e^{i\phi}) e^{in\phi} d\phi \right) z^{-n}
+				\right]
+			\end{align*}
+			Bringing \(z\) into the integral (we can do this since \(z\) is any point in the domain, while the \(z\) in the integral is any on \(C\). They represent two different sets of points. Bad notation.)
+			\begin{align*}
+				2\pi f(z)
+				&= \int_{-\pi}^{\pi} f(e^{i\phi}) d\phi + \sum_{n=1}^{\infty} \left[
+				\left( \int_{-\pi}^{\pi} f(e^{i\phi}) \frac{e^{in\phi}}{z^n} d\phi \right) 
+				+ \left( \int_{-\pi}^{\pi}  f(e^{i\phi}) \frac{e^{in\phi}}{z^{-n}} d\phi \right) \right] \\
+				&= \int_{-\pi}^{\pi} f(e^{i\phi}) d\phi + \sum_{n=1}^{\infty} 
+				\int_{-\pi}^{\pi} f(e^{i\phi}) 
+				\left[ \left( \frac{z}{e^{i\phi}} \right)^n 
+				+  \left(\frac{e^{i\phi}}{z} \right)^n  \right] d\phi \\
+			\end{align*}
+			Giving us our desired equation. Now let \(u(\theta) = \Re{f(e^{i\theta})}\):
+			\begin{align*}
+				2\pi f(z)
+				&= \int_{-\pi}^{\pi} f(e^{i\phi}) d\phi + \sum_{n=1}^{\infty} 
+				\int_{-\pi}^{\pi} f(e^{i\phi}) 
+				\left[ \left( e^{in(\theta-\phi)} \right)
+				+  \left(e^{-in(\theta-\phi)} \right)  \right] d\phi \\
+				&= \int_{-\pi}^{\pi} f(e^{i\phi}) d\phi + \sum_{n=1}^{\infty} 
+				\int_{-\pi}^{\pi} f(e^{i\phi}) 
+				\left[ 2\cos[n(\theta-\phi)] \right] d\phi \\
+			\end{align*}
+			\(\theta,\phi \in \mathbb{R} \implies \) Cosine is real-valued function:
+			\begin{align*}
+				\Re{2\pi f(e^{i\phi})} 
+				&= \int_{-\pi}^{\pi} u(e^{i\phi}) d\phi + \sum_{n=1}^{\infty} 
+				\int_{-\pi}^{\pi} u(e^{i\phi}) 
+				\left[ 2\cos[n(\theta-\phi)] \right] d\phi \\
+				\Re{f(e^{i\phi})} 
+				&= \frac{1}{2\pi} \int_{-\pi}^{\pi} u(\phi) d\phi 
+				 + \frac{1}{\pi} \sum_{n=1}^{\infty} \int_{-\pi}^{\pi} u(\phi) 
+				 \cos[n(\theta-\phi)] d\phi
+			\end{align*}
+			}
+		\end{proof}
+	\end{example}
+	
+	\section{Absolute and Uniform Convergence of Power Series} \label{Absolute and Uniform Convergence of Power Series Section - Complex}
 	
 	
 	
