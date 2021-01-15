@@ -6342,7 +6342,35 @@
 		\end{align}
 		\begin{proof}
 			{\color{Grey}
-			
+			We know for a Laurent series
+			\begin{align*}
+				f(z) &= \sum_{n=-\infty}^{\infty} c_n(z-z_0)^n & R_1 &< \abs{z-z_0} < R_2 \\
+				c_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz & n &\in \mathbb{Z}
+			\end{align*}
+			For \(z_0 = 0\) (since we are taking the series about the origin), we can write
+			\begin{align*}
+				J_n(z) = c_n 
+				&= \frac{1}{2\pi i} \int_{C} \frac{\exp[z2^{-1}(w - w^{-1})]}{w^{n+1}} dw 
+					& n &\in \mathbb{Z} \\
+				&= \frac{1}{2\pi i} \int_{-\pi}^{\pi} 
+				   \frac{\exp[z2^{-1}(e^{i\phi} - e^{-i\phi})]}{e^{i\phi(n+1)}} (ie^{i\phi}) d\phi & w &= e^{i\phi} \\
+				&= \frac{1}{2\pi} \int_{-\pi}^{\pi} 
+				\exp[zi\sin(\phi)] (e^{-in\phi}) d\phi \\
+				&= \frac{1}{2\pi} \int_{-\pi}^{\pi} 
+				\exp[-i(n\phi - z\sin(\phi))]  d\phi 
+			\end{align*}
+			Which is what we are looking for. As for \(\Re{J_n(z)}\):
+			\begin{align*}
+				J_n(z) = \frac{1}{2\pi} \int_{-\pi}^{\pi} 
+				\cos[-i(n\phi - z\sin(\phi))] + i\sin [-i(n\phi - z\sin(\phi))] d\phi 
+			\end{align*}
+			This implies
+			\begin{align*}
+				\Re{J_n(z)} 
+				&= \frac{1}{2\pi} \int_{-\pi}^{\pi}	\cos[-i(n\phi - z\sin(\phi))] d\phi \\
+				&= \frac{1}{\pi} \int_{0}^{\pi}	\cos[-i(n\phi - z\sin(\phi))] d\phi 
+					& \text{Cosine is an even function}
+			\end{align*}
 			}
 		\end{proof}
 	\end{example}
@@ -6360,7 +6388,7 @@
 				+ \frac{1}{\pi} \sum_{n=1}^{\infty} \int_{-\pi}^{\pi} u(\phi) \cos[n(\theta-\phi)] d\phi
 				& -\pi &\leq \theta \leq \pi
 		\end{align*}
-		which is the Fourier Series of \(u(\theta)\) about \(-\pi \leq \phi \leq \pi\). Restrictions on \(u(\theta)\) is more severe than necessary in order for it to be represented by a Fourier series, because 
+		which is the Fourier Series of \(u(\theta)\) about \(-\pi \leq \phi \leq \pi\). Restrictions on \(u(\theta)\) is more severe than necessary in order for it to be represented by a Fourier series, because it needs to be piecewise continuous on \([-\pi,\pi]\), and periodic with period of \(2\pi\) and be everywhere differentiable in \(\mathbb{R}\cup\{-\infty, \infty\}\) (\cref{Fourier Theorem - PDE}).
 		\begin{proof}
 			{\color{Grey}
 			We know that for the Laurent series representation of a function:
@@ -6495,6 +6523,21 @@
 		\label{Dirichlet Problem Definition - Partial}
 		Finding a function in an harmonic domain that assumes preassigned values at the boundary of the domain.
 	\end{definition}
+	
+	\begin{theorem}[Fourier Theorem]
+		\label{Fourier Theorem - PDE}
+		Let a function \(f\):
+		\begin{itemize}
+			\item[1.] Piecewise continuous on \([-\pi,\pi]\)
+			\item[2.] Periodic with period \(2\pi\) \(\forall x \in \mathbb{R} \cup \{-\infty,\infty\}\)
+			\item[3.] \(\forall x \in \mathbb{R} \cup \{-\infty,\infty\}\), \(f'_{+}(x)\) and \(f'_{-}(x)\) both exist 
+		\end{itemize}
+		Then the Fourier series converges to the mean value
+		\begin{align*}
+			\frac{f(x+) + f(x-)}{2}
+		\end{align*}
+		of one-sided limit of \(f\) at \(x\)
+	\end{theorem}
 	
 	\paragraph{Calculus of Variations} \label{Calculus of Variations Part}
 	
