@@ -6726,8 +6726,109 @@
 	
 	\begin{theorem}[Integration of Power Series]
 		\label{Integration of Power Series Theorem - Complex}
-		content
+		Let \(C\) be any contour lying inside the circle of convergence for the series 
+		\(S(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n\) and \(g(z)\) be any function continuous on \(C\). Then 
+		\begin{align*}
+			\int_{C} g(z) S(z) dz = \sum_{n=0}^{\infty} a_n \int_{C} g(z) (z-z_0)^n dz
+		\end{align*}
 	\end{theorem}
+	\begin{proof}
+		Let \(\rho_N(z)\) be the remainder of \(S(z)\), then 
+		\begin{align*}
+			g(z) S(z) = \sum_{n=0}^{N-1}a_n g(z) (z-z_0)^n + g(z) \rho_N(z)
+		\end{align*}
+		Because the finite sum is continuous over \(C\), their integral over \(C\) exists. Likewise with \(g(z) \rho_N(z)\). Then
+		\begin{align*}
+			\int_{C} g(z) S(z) dz = \sum_{n=0}^{N-1} a_n \int_{C} g(z) (z-z_0)^n dz + \int_{C} g(z) \rho_N (z) dz
+		\end{align*}
+		Since the power series converge uniformly
+		\begin{align*}
+			\forall \epsilon >0, \exists N_\epsilon \in \mathbb{N}
+			[N > N_\epsilon \implies \abs{\rho_N(z)} < \epsilon]
+		\end{align*}
+		Letting \(M = \max \abs{g(z)}\) over \(C\) and \(L\) be the length of \(C\). Using \cref{ML Inequality Theorem - Complex}:
+		\begin{align*}
+			N > N_\epsilon \implies \abs{\int_{C} g(z) \rho_N(z) dz} < M \epsilon L
+		\end{align*}
+		Then 
+		\begin{align*}
+			\lim_{N \rightarrow \infty} \int_{C} g(z) \rho_N (z) dz = 0
+		\end{align*}
+		Which gives us 
+		\begin{align*}
+			&\lim_{N \rightarrow \infty} \left[
+			\sum_{n=0}^{N-1} a_n \int_{C} g(z) (z-z_0)^n dz + \int_{C} g(z) \rho_N (z) dz
+			\right] \\
+			&= \lim_{N \rightarrow \infty} \left[
+			\sum_{n=0}^{N-1} a_n \int_{C} g(z) (z-z_0)^n dz
+			\right] 
+			= \int_{C} g(z) S(z) dz
+		\end{align*}
+	\end{proof}
+
+	\begin{corollary}
+		\(S(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n\) is analytic for all points \(z\) interior to its circle of convergence.
+	\end{corollary}
+	\begin{proof}
+		Let \(\abs{g(z)} = 1\) for all \(z\) interior to the circle of convergence of \(S(z)\).
+		Then for every closed contour \(C\) lying in the circle of convergence
+		\begin{align*}
+			\int_{C} g(z) (z-z_0)^n dz &= \int_{C} (z-z_0)^n dz = 0 
+				& n \in \mathbb{N} \cup \{0\}
+		\end{align*}
+		Thus by \cref{Integration of Power Series Theorem - Complex}:
+		\begin{align*}
+			\int_{C} S(z) dz = 0
+		\end{align*}
+		By Morera's Theorem (\cref{Morera's Theorem - Complex}), \(S(z)\) is analytic in the circle of convergence.
+	\end{proof}
+	
+	\begin{theorem}[Differentiation of Power Series]
+		\label{Differentiation of Power Series Theorem - Complex}
+		Let \(S(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n\), then for all points \(z\) interior to its circle of convergence:
+		\begin{align*}
+			S'(z) = \sum_{n=1}^{\infty} na_n (z-z_0)^{n-1}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Let \(z\) be any point interior to the circle of convergence of \(S(z)\) and \(C\) be any positively oriented simple closed contour lying in the circle of convergence surrounding \(z\). Define \(\forall s \in C\):
+		\begin{align*}
+			g(s) = \frac{1}{2\pi i} \cdot \frac{1}{(s-z)^2}
+		\end{align*}
+		As \(g(s)\) is continuous on \(C\)
+		\begin{align*}
+			\int_{C} g(s) S(s) ds &= \sum_{n=0}^{\infty} a_n \int_{C} g(s) (s-z_0)^n ds
+				& s \in C
+		\end{align*}
+		Now as \(S(z)\) is analytic inside and on \(C\), looking at the left-hand side of the equation, we can use the Extended Cauchy Integral formula (\cref{Cauchy Integral Formula (Extension) - Complex}):
+		\begin{align*}
+			\int_{C} g(s) S(s) ds 
+			&= \frac{1}{2\pi i} \int_{C} \frac{S(s)}{(s-z)^2} ds = S'(z)
+		\end{align*}
+		As for the right-hand side:
+		\begin{align*}
+			\int_{C} g(s) (s-z_0)^n ds = \frac{1}{2\pi i} \int_{C} \frac{(s-z_0)^n}{(s-z)^2} ds = \dv{z} (z-z_0)^n
+		\end{align*}
+		Putting this together, we have
+		\begin{align*}
+			S'(z) 
+			= \sum_{n=0}^{\infty} a_n \dv{z}(z-z_0)^n 
+			= \sum_{n=0}^{\infty} n a_n (z-z_0)^{n-1}
+		\end{align*}
+	\end{proof}
+
+	Note: In order to integrate or differentiate a power series, we must first make sure we are doing it at within its circle of convergence. This makes sense since the series no longer converges to the function outside the circle of convergence, so integrating or differentiating it outside does not make much sense.
+	
+	\section{Uniqueness of Series Representations} \label{Uniqueness of Series Representations Section - Complex}
+	
+	\begin{theorem}
+		If 
+		\( \sum_{n=0}^{\infty} a_n (z-z_0)^n \) converges to some function \(f(z)\) \(\forall z\) interior to some circle \(\abs{z-z_0} = R\).
+		Then it is the Taylor Series expansion of \(f\) for powers of \(z-z_0\).
+	\end{theorem}
+	\begin{proof}
+		content
+	\end{proof}
 	
 	
 	
