@@ -6537,6 +6537,7 @@
 	Uniform Convergence is telling us that given any \(\epsilon\) we can find a \(N_\epsilon \in \mathbb{N}\) such that the error for \(\rho_N(z)\) for all \(N > N_\epsilon\) is always within \(\epsilon\). That is, \(S_N(z)\) is always within \(\epsilon\) of the value \(S_N\) converges to for all \(N_\epsilon > N\). All values of \(S_N(z)\) for \(N > N_\epsilon\) fall within a static error box \(\epsilon\).
 
 	\begin{theorem}
+		\label{Local Uniform Convergence of Power Series Theorem - Complex}
 		Let \(z_1\) be any point inside the circle of convergence \(\abs{z-z_0}<R\) of 
 		\begin{align*}
 			\sum_{n=0}^{\infty} a_n (z-z_0)^n
@@ -6566,8 +6567,9 @@
 				mark=*,
 				]
 				coordinates {
-					(5, 7) [$z_1$]
-					(3, 4) [$z$]
+					(5, 7)	[$z_1$]
+					(3, 4)	[$z$]
+					(5, 4)	[$z_0$]
 				};
 				
 				\draw[line width=1pt]
@@ -6616,9 +6618,116 @@
 		\end{align*}
 	\end{proof}
 	
-	\section{Continuity of Power Series} \label{Continuity of Power Series Section - Complex}
+	\section{Continuity of Sums of Power Series} \label{Continuity of Sums of Power Series Section - Complex}
 	
+	\begin{theorem}
+		\label{Continuity of Sums of Power Series Theorem - Complex}
+		Let 
+		\begin{align*}
+			S(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n
+		\end{align*}
+		If \(z_1\) is a point within the circle of convergence \(\abs{z-z_0}=R\), then 
+		\begin{align*}
+			\forall \epsilon > 0, \exists \delta > 0
+			[ \abs{z-z_1}<\delta \implies \abs{S(z) - S(z_1) < \epsilon}]
+		\end{align*}
+		That is, the power series represents a continuous function \(S(z)\) for all points inside its circle of convergence.
+	\end{theorem}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(3.75, 3)	[$z_1$]
+					(3.75, 4)	[$z$]
+					(5, 4)	[$z_0$]
+				};
+				
+				\draw[line width=1pt]
+				(axis cs: 5, 4) circle (3);
+				
+				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (3.75);
+				\draw[dashed,line width=1pt,Grey](axis cs: 3.75, 3) circle (1.25);
+			
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 5, 7) node[midway, above] {$R_0$};
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 8.75, 4) node[midway, above] {$R$};
+				\draw[-,draw=Grey]  (axis cs: 3.75,3)--(axis cs: 5, 3) node[midway, below] {$\delta$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
+	\begin{proof}
+		Let 
+		\begin{align*}
+			S_N(z) &= \sum_{n=0}^{N} a_n(z-z_0)^n \\
+			\rho_N(z) &= S(z) - S_N(z) & \abs{z-z_0} &< R \\
+			S(z) &= S_N(z) + \rho_N(z) & \abs{z-z_0} &< R
+		\end{align*}
+		Then 
+		\begin{align*}
+			\abs{S(z) - S(z_1)} &= \abs{S_N(z) - S_N(z_1) + \rho_N(z) - \rho_N(z_1)} \\
+			\abs{S(z) - S(z_1)} &\leq \abs{S_N(z) - S_N(z_1)}+ \abs{\rho_N(z)} + \abs{\rho_N(z_1)}
+		\end{align*}
+		Suppose that \(z\) is any point is a closed disk \(\abs{z-z_0}\leq R_0\), where \(\abs{z_1 - z_0} < R_0 < R\) and \(R\) is the radius of the circle of convergence. By \cref{Local Uniform Convergence of Power Series Theorem - Complex}:
+		\begin{align*}
+			\forall \epsilon > 0, \exists N_\epsilon \in \mathbb{N}
+			\left[ N > N_\epsilon \implies \abs{\rho_N(z)} < \frac{\epsilon}{3} \right]
+		\end{align*}
+		This also holds for any point \(z\) in the neighbourhood \(\abs{z-z_1}<\delta\) that is contained in the disk \(\abs{z-z_0}\leq R_0\).
+		
+		\(S_N(z)\) is a polynomial, so it is continuous at \(z_1\) for all \(N\). Then we can choose a \(\delta\) such that for \(N = N_\epsilon + 1\):
+		\begin{align*}
+			\abs{z-z_1} < \delta \implies \abs{S_N(z) - S_N(z_1)} < \frac{\epsilon}{3}
+		\end{align*}
+		Then 
+		\begin{align*}
+			&\abs{S(z) - S(z_1)} \leq \abs{S_N(z) - S_N(z_1)}+ \abs{\rho_N(z)} + \abs{\rho_N(z_1)} \\
+			&\implies \left[ \abs{z-z_1} < \delta \implies \abs{S(z) - S(z_1)} < \frac{\epsilon}{3} + \frac{\epsilon}{3} + \frac{\epsilon}{3} = \epsilon \right]
+		\end{align*}
+	\end{proof}
+
+	\Cref{Absolute Convergence of Power Series Theorem - Complex}, \cref{Local Uniform Convergence of Power Series Theorem - Complex}, and \cref{Continuity of Sums of Power Series Theorem - Complex} can all apply to series of the type
+	\begin{align*}
+		\sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
+	\end{align*}
+	by letting \(w = 1/(z-z_0)\). Then 
+	\begin{align*}
+		\sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n} = \sum_{n=1}^{\infty} b_n w^n
+	\end{align*}
+	Which must converge absolutely to a continuous function when 
+	\begin{align*}
+		\abs{w} < \frac{1}{\abs{z_1 - z_0}}
+	\end{align*}
+	Now, since \(\abs{z-z_0}> \abs{z_1 - z_0}\), the series must converge absolutely to a continuous function exterior to the circle \(\abs{z-z_0} = R_2\) where \(\abs{z_1 - z_0} = R_1\). We also know that a Laurent Series
+	\begin{align*}
+		f(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
+	\end{align*}
+	is valid in an annulus \(R_1 < \abs{z-z_0} < R_2\), so both series much converge uniformly in the closed annulus. 
+	
+	\section{Integration and Differentiation of Power Series} \label{Integration and Differentiation of Power Series Section - Complex}
+	
+	\begin{theorem}[Integration of Power Series]
+		\label{Integration of Power Series Theorem - Complex}
+		content
+	\end{theorem}
 	
 	
 	

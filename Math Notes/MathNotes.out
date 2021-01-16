@@ -87,36 +87,37 @@
 \BOOKMARK [1][-]{section.16.3}{Laurent Series}{chapter.16}% 87
 \BOOKMARK [2][-]{subsection.16.3.1}{Examples}{section.16.3}% 88
 \BOOKMARK [1][-]{section.16.4}{Absolute and Uniform Convergence of Power Series}{chapter.16}% 89
-\BOOKMARK [1][-]{section.16.5}{Continuity of Power Series}{chapter.16}% 90
-\BOOKMARK [0][-]{chapter.17}{Conformal Mapping}{part.4}% 91
-\BOOKMARK [-1][-]{part.5}{V Ordinary Differential Equations}{}% 92
-\BOOKMARK [-1][-]{part.6}{VI Nonlinear Dynamics}{}% 93
-\BOOKMARK [-1][-]{part.7}{VII Partial Differential Equations}{}% 94
-\BOOKMARK [-1][-]{part.8}{VIII Integral Equations}{}% 95
-\BOOKMARK [-1][-]{part.9}{IX Linear Algebra}{}% 96
-\BOOKMARK [0][-]{chapter.18}{Markov Chains}{part.9}% 97
-\BOOKMARK [-1][-]{part.10}{X Tensors}{}% 98
-\BOOKMARK [-1][-]{part.11}{XI Riemann Geometry}{}% 99
-\BOOKMARK [-1][-]{part.12}{XII Abstract Algebra}{}% 100
-\BOOKMARK [0][-]{chapter.19}{Groups}{part.12}% 101
-\BOOKMARK [0][-]{chapter.20}{Rings}{part.12}% 102
-\BOOKMARK [1][-]{section.20.1}{Ideals}{chapter.20}% 103
-\BOOKMARK [0][-]{chapter.21}{Integral Domains}{part.12}% 104
-\BOOKMARK [0][-]{chapter.22}{GCD Domains}{part.12}% 105
-\BOOKMARK [0][-]{chapter.23}{Unique Factorization Domains}{part.12}% 106
-\BOOKMARK [0][-]{chapter.24}{Principal Ideal Domains}{part.12}% 107
-\BOOKMARK [0][-]{chapter.25}{Fields}{part.12}% 108
-\BOOKMARK [-1][-]{part.13}{XIII Galois Theory}{}% 109
-\BOOKMARK [-1][-]{part.14}{XIV Lie Theory}{}% 110
-\BOOKMARK [0][-]{chapter.26}{Lie Groups}{part.14}% 111
-\BOOKMARK [0][-]{chapter.27}{Lie Algebra}{part.14}% 112
-\BOOKMARK [-1][-]{part.15}{XV C-Star Algebra}{}% 113
-\BOOKMARK [-1][-]{part.16}{XVI Set Theory}{}% 114
-\BOOKMARK [-1][-]{part.17}{XVII Model Theory}{}% 115
-\BOOKMARK [-1][-]{part.18}{XVIII Statistics}{}% 116
-\BOOKMARK [-1][-]{part.19}{XIX Tips and Tricks}{}% 117
-\BOOKMARK [0][-]{chapter.28}{Integration Techniques}{part.19}% 118
-\BOOKMARK [1][-]{section.28.1}{DI Method \(Integration Table\)}{chapter.28}% 119
-\BOOKMARK [1][-]{section.28.2}{Feynman Integration}{chapter.28}% 120
-\BOOKMARK [-1][-]{part.20}{XX Index}{}% 121
-\BOOKMARK [-1][-]{part.21}{XXI Bibliography}{}% 122
+\BOOKMARK [1][-]{section.16.5}{Continuity of Sums of Power Series}{chapter.16}% 90
+\BOOKMARK [1][-]{section.16.6}{Integration and Differentiation of Power Series}{chapter.16}% 91
+\BOOKMARK [0][-]{chapter.17}{Conformal Mapping}{part.4}% 92
+\BOOKMARK [-1][-]{part.5}{V Ordinary Differential Equations}{}% 93
+\BOOKMARK [-1][-]{part.6}{VI Nonlinear Dynamics}{}% 94
+\BOOKMARK [-1][-]{part.7}{VII Partial Differential Equations}{}% 95
+\BOOKMARK [-1][-]{part.8}{VIII Integral Equations}{}% 96
+\BOOKMARK [-1][-]{part.9}{IX Linear Algebra}{}% 97
+\BOOKMARK [0][-]{chapter.18}{Markov Chains}{part.9}% 98
+\BOOKMARK [-1][-]{part.10}{X Tensors}{}% 99
+\BOOKMARK [-1][-]{part.11}{XI Riemann Geometry}{}% 100
+\BOOKMARK [-1][-]{part.12}{XII Abstract Algebra}{}% 101
+\BOOKMARK [0][-]{chapter.19}{Groups}{part.12}% 102
+\BOOKMARK [0][-]{chapter.20}{Rings}{part.12}% 103
+\BOOKMARK [1][-]{section.20.1}{Ideals}{chapter.20}% 104
+\BOOKMARK [0][-]{chapter.21}{Integral Domains}{part.12}% 105
+\BOOKMARK [0][-]{chapter.22}{GCD Domains}{part.12}% 106
+\BOOKMARK [0][-]{chapter.23}{Unique Factorization Domains}{part.12}% 107
+\BOOKMARK [0][-]{chapter.24}{Principal Ideal Domains}{part.12}% 108
+\BOOKMARK [0][-]{chapter.25}{Fields}{part.12}% 109
+\BOOKMARK [-1][-]{part.13}{XIII Galois Theory}{}% 110
+\BOOKMARK [-1][-]{part.14}{XIV Lie Theory}{}% 111
+\BOOKMARK [0][-]{chapter.26}{Lie Groups}{part.14}% 112
+\BOOKMARK [0][-]{chapter.27}{Lie Algebra}{part.14}% 113
+\BOOKMARK [-1][-]{part.15}{XV C-Star Algebra}{}% 114
+\BOOKMARK [-1][-]{part.16}{XVI Set Theory}{}% 115
+\BOOKMARK [-1][-]{part.17}{XVII Model Theory}{}% 116
+\BOOKMARK [-1][-]{part.18}{XVIII Statistics}{}% 117
+\BOOKMARK [-1][-]{part.19}{XIX Tips and Tricks}{}% 118
+\BOOKMARK [0][-]{chapter.28}{Integration Techniques}{part.19}% 119
+\BOOKMARK [1][-]{section.28.1}{DI Method \(Integration Table\)}{chapter.28}% 120
+\BOOKMARK [1][-]{section.28.2}{Feynman Integration}{chapter.28}% 121
+\BOOKMARK [-1][-]{part.20}{XX Index}{}% 122
+\BOOKMARK [-1][-]{part.21}{XXI Bibliography}{}% 123
