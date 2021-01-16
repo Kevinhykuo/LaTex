@@ -6477,8 +6477,9 @@
 	
 	\begin{definition}[Circle of Convergence]
 		\label{Circle of Convergence Definition - Complex}
-		The greatest circle centred at \(z_0\) for which the power series \(\sum_{n=0}^{\infty} a_n (z-z_0)^n\) converges for all points interior to the circle. That is, if the circle has radius \(R\) and is centred at \(z_0\), then the power series converges \(\forall z\) where \(\abs{z-z_0} < R\).
+		The greatest circle centred at \(z_0\) for which the power series \(\sum_{n=0}^{\infty} a_n (z-z_0)^n\) converges for all points interior to the circle. That is, if the circle has radius \(R\) and is centred at \(z_0\), then the power series converges \(\forall z\) where \(\abs{z-z_0} < R\). 
 	\end{definition}
+	Note: As a result, the series can not converge at any point outside of the circle of convergence.
 	
 	\begin{theorem}[Absolute Convergence of Power Series]
 		\label{Absolute Convergence of Power Series Theorem - Complex}
@@ -6489,17 +6490,133 @@
 		That is if \(\sum_{n=0}^{\infty} a_n (z-z_0)^n\) converges for some \(z_1\), then it converges absolutely for all points interior to the neighbourhood \(\abs{z_1 - z_0}\).
 	\end{theorem}
 	\begin{proof}
-		content
+		Assume the series converges, and is therefore bounded.
+		\begin{align*}
+			\left( \sum_{n=0}^{\infty} a_n (z_1 - z_0)^n \right) \land (z_1 \neq z_0) &\implies \exists M\in \mathbb{R}_{>0} [\abs{a_n (z_1 - z_0)^n}\leq M]	
+				& n \in \mathbb{N}\cup \{0\}
+		\end{align*}
+		If we let
+		\begin{align*}
+			\abs{z-z_0} &< R_1 & \rho &= \frac{\abs{z-z_0}}{z_1 - z_0}
+		\end{align*}
+		Then we get 
+		\begin{align*}
+			\abs{a_n(z-z_0)^n} 
+			&= \abs{a_n (z_1 - z_0)^n} \left(\frac{\abs{z-z_0}}{z_1 - z_0}\right)^n \leq M\rho^n
+				& n \in \mathbb{N} \cup \{0\}
+		\end{align*}
+		We get a geometric series which converges since \(\rho<1\)
+		\begin{align*}
+			\sum_{n=0}^{\infty} M \rho^n
+		\end{align*}
+		By comparison test, this implies that 
+		\begin{align*}
+			\sum_{n=0}^{\infty} \abs{a_n (z-z_0)^n} \text{ converges on open disk } \abs{z-z_0}<R_1
+		\end{align*}
 	\end{proof}
 
-	\begin{definition}[Uniform Convergence of Power Series Definition - Complex]
+	\begin{definition}[Uniform Convergence of Power Series]
 		\label{Uniform Convergence (Power Series) Definition - Complex}
-		environment-name
+		Let 
+		\begin{align*}
+			S(z) &= \sum_{n=0}^{\infty} a_n(z-z_0)^n  &
+			S_N(z) &= \sum_{n=0}^{N-1} a_n(z-z_0)^n &
+				\abs{z-z_0}<R
+		\end{align*}
+		and the remainder 
+		\begin{align*}
+			\rho_N (z) &= S(z) - S_N(z)		&	\abs{z-z_0} < R
+		\end{align*}
+		Convergence is uniform if 
+		\begin{align*}
+			\forall \epsilon > 0, \exists N_\epsilon \in \mathbb{N} [N > N_\epsilon \implies \abs{\rho_N(z)} < \epsilon]
+		\end{align*}
+		Where \(N_\epsilon\) is only dependent on \(\epsilon\) and independent of \(z\) in the circle of convergence.
 	\end{definition}
 
+	Uniform Convergence is telling us that given any \(\epsilon\) we can find a \(N_\epsilon \in \mathbb{N}\) such that the error for \(\rho_N(z)\) for all \(N > N_\epsilon\) is always within \(\epsilon\). That is, \(S_N(z)\) is always within \(\epsilon\) of the value \(S_N\) converges to for all \(N_\epsilon > N\). All values of \(S_N(z)\) for \(N > N_\epsilon\) fall within a static error box \(\epsilon\).
+
 	\begin{theorem}
-		content
+		Let \(z_1\) be any point inside the circle of convergence \(\abs{z-z_0}<R\) of 
+		\begin{align*}
+			\sum_{n=0}^{\infty} a_n (z-z_0)^n
+		\end{align*}
+		Then the series must uniformly converge inside the closed disk \(\abs{z-z_0}\leq R_1 = \abs{z_1 - z_0}\). It is clear that \(R_1 < R\).
 	\end{theorem}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=*,
+				]
+				coordinates {
+					(5, 7) [$z_1$]
+					(3, 4) [$z$]
+				};
+				
+				\draw[line width=1pt]
+				(axis cs: 5, 4) circle (3);
+				
+				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (3.75);
+				
+%				\draw[-]  (axis cs: 5,4)--(axis cs: 3,4) node[midway, above] {$r$};
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 5, 7) node[midway] {$R_1$};
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 8.75, 4) node[midway, above] {$R$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	\begin{proof}
+		Follows from \cref{Uniform Convergence (Power Series) Definition - Complex} that the series converges
+		\begin{align*}
+			\sum_{n=0}^{\infty} \abs{a_n (z_1 - z_0)^n}
+		\end{align*}
+		Let \(m, N \in \mathbb{N}\) and \(m > N\), then the remainders: 
+		\begin{align*}
+			\rho_N &= \lim_{m \rightarrow \infty} \sum_{n=N}^{m} a_n (z-z_0)^n &
+			\sigma_N &= \lim_{m \rightarrow \infty} \sum_{n=N}^{m} \abs{a_n (z_1 - z_0)^n}
+		\end{align*}
+		It is clear that 
+		\begin{align*}
+			\abs{\rho_N(z)} &= \lim_{m\rightarrow \infty} \abs{\sum_{n=N}^{m} a_n (z-z_0)^n}
+				& \abs{z-z_0} \leq \abs{z_1 - z_0}
+		\end{align*}
+		Then 
+		\begin{align*}
+			\abs{\sum_{n=N}^{m} a_n (z-z_0)^n} 
+			\leq \sum_{n=N}^{m} \abs{a_n} \abs{z-z_0}^n
+			\leq \sum_{n=N}^{m} \abs{a_n} \abs{z_1 - z_0}^n
+				= \sum_{n=N}^{m} \abs{a_n (z_1 - z_0)^n}
+		\end{align*}
+		This implies  
+		\begin{align*}
+			\abs{z-z_0} \leq R_1 \implies \abs{\rho_N (z)} \leq \sigma_N
+		\end{align*}
+		Then because \(\sigma_N\) are remainders of a convergent series, \(\sigma_N \rightarrow 0\) as \(N \rightarrow \infty\), so
+		\begin{align*}
+			&\forall \epsilon > 0, \exists N_\epsilon \in \mathbb{N} 
+			[N>N_\epsilon \implies \sigma_N < \epsilon] \\
+			&\implies \sum_{n=0}^{\infty} a_n (z-z_0)^n \text{ converges uniformly in } \abs{z-z_0}\leq R_1
+		\end{align*}
+	\end{proof}
+	
+	\section{Continuity of Power Series} \label{Continuity of Power Series Section - Complex}
 	
 	
 	
