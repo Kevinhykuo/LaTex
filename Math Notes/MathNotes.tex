@@ -6904,13 +6904,87 @@
 	
 	\section{Multiplication and Division of Power Series} \label{Multiplication and Division of Power Series Section - Complex}
 	
+	\begin{definition}[Leibniz's Rule]
+		\label{Leibniz's Rule Definition - Complex}
+		The \(n\)-th derivative of the product of two differentiable functions \(f(z)\) and \(g(z)\):
+		\begin{align*}
+			[f(z)g(z)]^{(n)} &= \sum_{k=0}^{n} \binom{n}{k} f^{(k)}(z) g^{(n-k)}(z) \\
+			\binom{n}{k} &= \frac{n!}{k!(n-k)!} & n \in \mathbb{N}, \ k \in \{0, 1, 2, \ldots, n\}
+		\end{align*}
+	\end{definition}
 	
+	\begin{definition}[Cauchy Product]
+		\label{Cauchy Product Definition - Complex}
+		Suppose within some circle \(\abs{z-z_0} = R\):
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n & a_n &= \frac{f^{(n)}(z_0)}{n!} \\
+			g(z) &= \sum_{n=0}^{\infty} b_n (z-z_0)^n & b_n &= \frac{g^{(n)}(z_0)}{n!}
+		\end{align*}
+		
+		Then the Cauchy Product of the series can be obtained by the Leibniz's Rule:
+		\begin{align*}
+			f(z)g(z) 
+			&= \left[\sum_{n=0}^{\infty} a_n (z-z_0)^n \right] \cdot \left[ \sum_{n=0}^{\infty} b_n (z-z_0)^n \right] = \sum_{n=0}^{\infty} c_n (z-z_0)^n \\
+			c_n &= \sum_{k=0}^{n} \frac{f^{(k)}(z_0)}{k!} \cdot \frac{g^{(n-k)}(z_0)}{(n-k)!} = \sum_{k=0}^{n} a_k b_{n-k}
+		\end{align*}
+	\end{definition}
 	
+	For the division of power series, again suppose two series converges to functions \(f(z)\) and \(g(z)\) within some circle \(\abs{z-z_0}=R\). It may be best to find the series representation of the reciprocal of one function then take the product using the Cauchy Product. That is, write
+	\begin{align*}
+		\frac{f(z)}{g(z)} = f(z) \cdot \frac{1}{g(z)}
+	\end{align*}
+	Then find the series representation of \(1/g(z)\) using long division. After that is done, use the Cauchy Product to multiply \(f(z)\) with \(1/g(z)\).
 	
+	\begin{example}[Deriving Leibniz's Rule]
+		Show
+		\begin{align*}
+			[fg]^{(n)} &= \sum_{k=0}^{n}\binom{n}{k} f^{(k)} g^{(n-k)} & n \in \mathbb{N}
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			In the case of \(n=1\), we have the usual chain rule:
+			\begin{align*}
+				(fg)' = f'g + fg'
+			\end{align*}
+			Now, assume this is true up until some \(m \geq 1\), we will show the case for \(n=m+1\)
+			\begin{align*}
+				(fg)^{(m+1)} 
+				&= [(fg)']^{(m)} = [f'g + fg']^{(m)} = (f'g)^{(m)} + (fg')^{(m)} \\
+				&= \sum_{k=0}^{m} \binom{m}{k} f^{(k+1)} g^{(m-k)} + \sum_{k=0}^{m} \binom{m}{k} f^{(k)} g^{(m-k+1)} \\
+				&= f^{(k+1)}g + \sum_{k=0}^{m-1} \binom{m}{k} f^{(k+1)} g^{(m-k)}
+				 + \sum_{k=1}^{m} \binom{m}{k} f^{(k)} g^{(m-k+1)} + fg^{(m+1)} \\
+				&= f^{(k+1)}g + \sum_{k=1}^{m} \binom{m}{k-1} f^{(k)} g^{(m-k+1)}
+				 + \sum_{k=1}^{m} \binom{m}{k} f^{(k)} g^{(m-k+1)} + fg^{(m+1)} \\
+				&= f^{(m+1)} g + \sum_{k=1}^{m} \left[ \binom{m}{k} + \binom{m}{k-1}\right] f^{(k)} g^{(m-k+1)} + fg^{(m+1)}
+			\end{align*}
+			Now
+			\begin{align*}
+				\binom{m}{k} + \binom{m}{k-1} 
+				&= \frac{m!}{k!(m-k)!} + \frac{m!}{(k-1)!(m-k+1)!}\\
+				&= \frac{m!(m-k+1)}{k!(m-k+1)!} + \frac{m!(k)}{k!(m-k+1)!}\\
+				&= \frac{m!(m+1)}{k!(m-k+1)!} = \frac{(m+1)!}{k!(m+1-k)!} = \binom{m+1}{k}
+			\end{align*}
+			Hence
+			\begin{align*}
+				(fg)^{(m+1)} 
+				&= f^{(m+1)}g + \sum_{k=1}^{m+1} \binom{m+1}{k} f^{(k)} g^{m-k+1} + fg^{(m+1)} \\
+				&= \sum_{k=0}^{m+1} \binom{m+1}{k} f^{(k)} g^{m+1-k} 
+				 = \sum_{k=0}^{n} \binom{n}{k} f^{(k)} g^{n-k} 
+			\end{align*}
+			}
+		\end{proof}
+	\end{example}
+
+	\chapter{Residues and Poles} \label{Residues and Poles Chapter - Complex}
 	
+	Cauchy-Goursat theorem (\cref{Cauchy-Goursat Theorem - Complex}) states the value of a integral over a simple closed contour is zero if the function being evaluated is analytic at all points within and on the contour. What if the function is not analytic for some finite points interior to \(C\)? Well...it leaves some ``residues'' at those points which will contribute to the value of the integral.
 	
+	\section{Residues} \label{Residues Section - Complex}
 	
-	
+	\begin{definition}[Isolated Singular Points]
+		\label{Isolated Singular Points Definition - Complex}
+		A singular point \(z_0\) is isolated if there exists a deleted neighbourhood \(\epsilon\), \(0 < \abs{z-z_0}< \epsilon\), where the function \(f\) is analytic for all points in the neighbourhood.
+	\end{definition}
 	
 	
 	
