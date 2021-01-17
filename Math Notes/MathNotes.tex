@@ -6821,15 +6821,88 @@
 	
 	\section{Uniqueness of Series Representations} \label{Uniqueness of Series Representations Section - Complex}
 	
-	\begin{theorem}
+	\begin{theorem}[Uniqueness of Taylor Series]
+		\label{Uniqueness of Taylor Series Theorem - Complex}
 		If 
 		\( \sum_{n=0}^{\infty} a_n (z-z_0)^n \) converges to some function \(f(z)\) \(\forall z\) interior to some circle \(\abs{z-z_0} = R\).
 		Then it is the Taylor Series expansion of \(f\) for powers of \(z-z_0\).
 	\end{theorem}
 	\begin{proof}
-		content
+		Let 
+		\begin{align*}
+			f(z) &= \sum_{m=0}^{\infty} a_m (z-z_0)^m & \abs{z-z_0} &< R
+		\end{align*}
+		By \cref{Integration of Power Series Theorem - Complex}:
+		\begin{align*}
+			\int_{C} g(z) f(z) dz &= \sum_{m=0}^{\infty} a_m \int_{C} g(z) (z-z_0)^m dz \\
+			 g(z) &= \frac{1}{2\pi i} \cdot \frac{1}{(z-z_0)^{n+1}} & n \in \mathbb{N} \cup \{0\}
+		\end{align*}
+		Where \(C\) is some circle centred at \(z_0\) with radius less than \(R\).
+		By the Extended Cauchy Integral formula (\cref{Cauchy Integral Formula (Extension) - Complex}):
+		\begin{align*}
+			\int_{C} g(z) f(z) dz &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} = \frac{f^{(n)}(z_0)}{n!}
+		\end{align*}
+		This means that 
+		\begin{align*}
+			\int_{C} g(z) (z-z_0)^m dz 
+			&= \frac{1}{2\pi i} \int_{C} \frac{1}{(z-z_0)^{n-m+1}} dz \\
+			&= \frac{1}{2\pi i} \int_{-\pi}^{\pi} \frac{iRe^{i\theta}}{(Re^{i\theta})^{(n-m+1)}} d\theta 
+				& z = z_0 + Re^{i\theta} \\
+			&= \frac{1}{2\pi} \int_{-\pi}^{\pi} \frac{1}{(Re^{i\theta})^{(n-m)}} d\theta \\
+			&= \frac{1}{2\pi} \int_{-\pi}^{\pi} \frac{e^{i\theta(m-n)}}{R^{(n-m)}} d\theta 
+		\end{align*}
+		We can see that if \(m=n\) the integral is evaluated over \(1\) so it becomes \(1\). If \(m\neq n\), \(e^{i\theta(m-n)}\) is analytic, so the integral becomes zero by \cref{Cauchy-Goursat Theorem - Complex}. Hence we have:
+		\begin{align*}
+			\int_{C} g(z) (z-z_0)^m dz 
+			&= \begin{cases}
+				0 & m\neq n\\
+				1 & m=n
+			\end{cases}
+		\end{align*}
+		Then 
+		\begin{align*}
+			\sum_{m=0}^{\infty} a_m \int_{C} g(z)(z-z_0)^m dz = a_n
+		\end{align*}
+		So 
+		\begin{align*}
+			&\int_{C} g(z) f(z) dz = \sum_{m=0}^{\infty} a_m \int_{C} g(z) (z-z_0)^m dz \\
+			&\implies \frac{f^{(n)}(z_0)}{n!} = a_n
+		\end{align*}
+		This implies that \( \sum_{n=0}^{\infty} a_n (z-z_0)^n \) is the Taylor series for \(f\) at \(z_0\).
+	\end{proof}
+
+	\begin{theorem}[Uniqueness of Laurent Series]
+		\label{Uniqueness of Laurent Series Theorem - Complex}
+		Suppose a series 
+		\begin{align*}
+			\sum_{n=-\infty}^{\infty} c_n (z-z_0)^n
+			= 	\sum_{n=0}^{\infty} a_n (z-z_0)^n +	\sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
+		\end{align*}
+		converges to \(f(z)\) for all points in an annular domain around \(z_0\). Then it is the Laurent series expansion for \(f\) in powers of \(z-z_0\) in that domain. 
+	\end{theorem}
+	\begin{proof}
+		Let 
+		\begin{align*}
+			f(z) = \sum_{n=-\infty}^{\infty} c_n (z-z_0)^n
+		\end{align*}
+		Then using the techniques in \cref{Uniqueness of Taylor Series Theorem - Complex}, but for \(n, m \in \mathbb{Z}\), we arrive at:
+		\begin{align*}
+			\int_{C} g(z) f(z) dz = \sum_{m=-\infty}^{\infty} \int_{C} g(z) (z-z_0)^m dz
+		\end{align*}
+		Therefore
+		\begin{align*}
+			\frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz 
+			= \sum_{m=-\infty}^{\infty} c_m \int_{C} g(z) (z-z_0)^m dz
+		\end{align*}
+		Which reduces to 
+		\begin{align*}
+			\frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz &= c_n
+				& n \in \mathbb{Z}
+		\end{align*}
+		Which implies the series is the Laurent series expansion for \(f\) in the annular domain.
 	\end{proof}
 	
+	\section{Multiplication and Division of Power Series} \label{Multiplication and Division of Power Series Section - Complex}
 	
 	
 	

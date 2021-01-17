@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  15 JAN 2021 21:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  16 JAN 2021 17:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1441,10 +1441,7 @@ ut line 319.
 
 ] (./MathNotes.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
- [7] [8] [9]
-Underfull \vbox (badness 1242) has occurred while \output is active []
-
- [10]
+ [7] [8] [9] [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11])
@@ -1778,73 +1775,71 @@ Underfull \vbox (badness 2418) has occurred while \output is active []
 ===== Image 'tikz/MathNotes-figure39' is up-to-date. ======
 [135] [136 <./tikz/MathNotes-figure39.pdf>]
 ===== Image 'tikz/MathNotes-figure40' is up-to-date. ======
-[137 <./tikz/MathNotes-figure40.pdf>] [138] [139] [140]
+[137 <./tikz/MathNotes-figure40.pdf>] [138] [139] [140] [141] [142]
 Chapter 17.
-[141
+[143
 
-] [142
+] [144
 
-] [143] [144] [145
+] [145] [146] [147
 
-] [146
+] [148
 
-] [147] [148] [149
+] [149] [150] [151
 
-] [150
+] [152
 
-] [151] [152
+] [153] [154
 
 ]
 Chapter 18.
-[153] [154
-
-] [155] [156
+[155] [156
 
 ] [157] [158
 
 ] [159] [160
 
-]
-Chapter 19.
-[161] [162
+] [161] [162
 
 ]
-Chapter 20.
+Chapter 19.
 [163] [164
 
 ]
-Chapter 21.
+Chapter 20.
 [165] [166
 
 ]
-Chapter 22.
+Chapter 21.
 [167] [168
 
 ]
-Chapter 23.
+Chapter 22.
 [169] [170
 
 ]
-Chapter 24.
+Chapter 23.
 [171] [172
 
 ]
-Chapter 25.
+Chapter 24.
 [173] [174
 
-] [175] [176
+]
+Chapter 25.
+[175] [176
 
 ] [177] [178
 
+] [179] [180
+
 ]
 Chapter 26.
-[179] [180
+[181] [182
 
 ]
 Chapter 27.
-[181] [182
-
-] [183] [184
+[183] [184
 
 ] [185] [186
 
@@ -1854,33 +1849,35 @@ Chapter 27.
 
 ] [191] [192
 
+] [193] [194
+
 ]
 Chapter 28.
-[193] [194
+[195] [196
 
-] [195
+] [197
 
-] [196
+] [198
 
-] [197]
+] [199]
 
-(./MathNotes.bbl [198
+(./MathNotes.bbl [200
 
-]) [199] (./MathNotes.aux
+]) [201] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: DCB33CB50C865519341C8067B31C4F7F;8087.
+(rerunfilecheck)             Checksum: 98DDD0D1234500C92CDB3632C52E9197;8180.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40407 strings out of 479382
- 915600 string characters out of 5869369
- 1346722 words of memory out of 5000000
- 55839 multiletter control sequences out of 15000+600000
+ 40421 strings out of 479382
+ 916095 string characters out of 5869369
+ 1347046 words of memory out of 5000000
+ 55848 multiletter control sequences out of 15000+600000
  443926 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1913,10 +1910,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (211 pages, 811871 bytes).
+Output written on MathNotes.pdf (213 pages, 816755 bytes).
 PDF statistics:
- 3050 PDF objects out of 3580 (max. 8388607)
- 2728 compressed objects within 28 object streams
- 858 named destinations out of 1000 (max. 500000)
- 1210 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3070 PDF objects out of 3580 (max. 8388607)
+ 2746 compressed objects within 28 object streams
+ 863 named destinations out of 1000 (max. 500000)
+ 1218 words of extra memory for PDF output out of 10000 (max. 10000000)
 
