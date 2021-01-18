@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  16 JAN 2021 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  17 JAN 2021 22:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1765,91 +1765,92 @@ Overfull \hbox (5.2982pt too wide) detected at line 5528
 Chapter 16.
 [121
 
-] [122] [123] [124] [125]
+] [122] [123] [124] [125] [126]
 ===== Image 'tikz/MathNotes-figure36' is up-to-date. ======
-[126 <./tikz/MathNotes-figure36.pdf>]
+[127 <./tikz/MathNotes-figure36.pdf>]
 ===== Image 'tikz/MathNotes-figure37' is up-to-date. ======
-[127] [128 <./tikz/MathNotes-figure37.pdf>]
+[128 <./tikz/MathNotes-figure37.pdf>] [129]
 ===== Image 'tikz/MathNotes-figure38' is up-to-date. ======
-[129]
-Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [130 <./tikz/MathNotes-figure38.pdf>] [131] [132] [133] [134]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [130]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [131 <./tikz/MathNotes-figure38.pdf>] [132] [133] [134] [135]
 ===== Image 'tikz/MathNotes-figure39' is up-to-date. ======
-[135] [136 <./tikz/MathNotes-figure39.pdf>]
+[136] [137 <./tikz/MathNotes-figure39.pdf>]
 ===== Image 'tikz/MathNotes-figure40' is up-to-date. ======
-[137 <./tikz/MathNotes-figure40.pdf>] [138] [139] [140] [141] [142] [143]
-[144
-
-]
-Chapter 17.
+[138 <./tikz/MathNotes-figure40.pdf>] [139] [140] [141] [142] [143] [144]
 [145] [146
 
 ]
-Chapter 18.
+Chapter 17.
 [147] [148
 
-] [149] [150] [151
+]
+Chapter 18.
+[149] [150
 
-] [152
+] [151] [152] [153
 
-] [153] [154] [155
+] [154
 
-] [156
+] [155] [156] [157
 
-] [157] [158
+] [158
+
+] [159] [160
 
 ]
 Chapter 19.
-[159] [160
-
-] [161] [162
+[161] [162
 
 ] [163] [164
 
 ] [165] [166
 
-]
-Chapter 20.
-[167] [168
+] [167] [168
 
 ]
-Chapter 21.
+Chapter 20.
 [169] [170
 
 ]
-Chapter 22.
+Chapter 21.
 [171] [172
 
 ]
-Chapter 23.
+Chapter 22.
 [173] [174
 
 ]
-Chapter 24.
+Chapter 23.
 [175] [176
 
 ]
-Chapter 25.
+Chapter 24.
 [177] [178
 
 ]
-Chapter 26.
+Chapter 25.
 [179] [180
 
-] [181] [182
+]
+Chapter 26.
+[181] [182
 
 ] [183] [184
 
+] [185] [186
+
 ]
 Chapter 27.
-[185] [186
+[187] [188
 
 ]
 Chapter 28.
-[187] [188
-
-] [189] [190
+[189] [190
 
 ] [191] [192
 
@@ -1859,33 +1860,35 @@ Chapter 28.
 
 ] [197] [198
 
+] [199] [200
+
 ]
 Chapter 29.
-[199] [200
+[201] [202
 
-] [201
+] [203
 
-] [202
+] [204
 
-] [203]
+] [205]
 
-(./MathNotes.bbl [204
+(./MathNotes.bbl [206
 
-]) [205] (./MathNotes.aux
+]) [207] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: E9649FACB84AD4CC5619CCCA9599071D;8300.
+(rerunfilecheck)             Checksum: 639AD23FCC0393025AB031445D7F1E2C;8361.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40451 strings out of 479382
- 916866 string characters out of 5869369
- 1347512 words of memory out of 5000000
- 55864 multiletter control sequences out of 15000+600000
+ 40482 strings out of 479382
+ 917686 string characters out of 5869369
+ 1347984 words of memory out of 5000000
+ 55881 multiletter control sequences out of 15000+600000
  443926 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1918,10 +1921,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (217 pages, 823432 bytes).
+Output written on MathNotes.pdf (219 pages, 828650 bytes).
 PDF statistics:
- 3114 PDF objects out of 3580 (max. 8388607)
- 2786 compressed objects within 28 object streams
- 877 named destinations out of 1000 (max. 500000)
- 1234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3143 PDF objects out of 3580 (max. 8388607)
+ 2812 compressed objects within 29 object streams
+ 891 named destinations out of 1000 (max. 500000)
+ 1242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

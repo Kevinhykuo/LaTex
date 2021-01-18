@@ -5679,7 +5679,7 @@
 	
 	\section{Convergence} \label{Convergence Section - Complex}
 	
-	\begin{definition}[Limit]
+	\begin{definition}[Limit (Sequence)]
 		Let \(z_1, z_2, z_3, \ldots \) be an infinite sequence of complex numbers. We say a limit exists for the sequence if
 		\begin{align*}
 			\forall \epsilon > 0, \exists n_0 \in \mathbb{N}
@@ -5687,14 +5687,14 @@
 		\end{align*}
 	\end{definition}
 	
-	\begin{definition}[Converge (Series)]
+	\begin{definition}[Converge (Sequence)]
 		If such limit exists, we say the sequence converges to \(z\) and that 
 		\begin{align*}
 			\lim_{n \rightarrow \infty} z_n = z
 		\end{align*}
 	\end{definition}
 	
-	\begin{definition}[Diverge (Series)]
+	\begin{definition}[Diverge (Sequence)]
 		If a limit does not exists for a series.
 	\end{definition}
 	
@@ -5705,6 +5705,7 @@
 			\iff \left[\lim_{n \rightarrow \infty} x_n = x \right] \land 
 				 \left[\lim_{n \rightarrow \infty} y_n = y \right] 
 		\end{align*}
+		That is, a complex series converges \(\iff\) real and imaginary parts of the sequence converge.
 	\end{theorem}
 	\begin{proof}
 		\underline{\(\impliedby \):}		
@@ -5861,6 +5862,11 @@
 		Result follows from the absolute convergence of real series implies convergence of real series (\cref{Absolute convergence implies convergence Corollary - Real}). 
 	\end{proof}
 
+	\begin{definition}[Conditional Convergence]
+		\label{Conditional Convergence Definition - Complex}
+		A series is conditionally convergent if it converges, but does not converge absolutely. 
+	\end{definition}
+
 	\begin{definition}[Remainder (Series) Definition - Complex]
 		Let \(S\) be an infinite series, the remainder after \(N\) terms:
 		\begin{align*}
@@ -5869,8 +5875,20 @@
 	\end{definition}
 
 	\begin{corollary}
-		Series tend to \(S\) \(\iff\) Sequence of \(\rho_N\) tends to 0
+		Series tend to \(S\) \(\iff\) \(\rho_N \rightarrow 0\) as \(N \rightarrow \infty\)
 	\end{corollary}
+	\begin{proof}
+		\begin{align*}
+			S = S_N + \rho_N \implies \abs{S_N - S} = \abs{\rho_N - 0}
+		\end{align*}
+		{\color{Grey}
+		Therefore
+		\begin{align*}
+			\forall \epsilon > 0, \exists N_0 \in \mathbb{N}
+			[N > N_0 \implies \abs{S_N - S} = \abs{\rho_N - 0} < \epsilon]
+		\end{align*}
+		}
+	\end{proof}
 
 	\begin{example}
 		\label{Infinite sum of z^n and remainder for partial sum Example - Complex}
@@ -5899,6 +5917,24 @@
 		\end{align*}
 		It is clear that \(\rho_N(z) \rightarrow 0\) for \(z < 1\), so \(\sum_{n=0}^{\infty} z^n = 1/(1-z)\) is established.
 	\end{example}
+
+	\begin{theorem}
+		The sum and product of two absolutely convergent series is absolutely convergent, and is independent of the order of terms taken. The value of the product/sum is equal to the value of the product/sum of the values of the original series. 
+	\end{theorem}
+
+	\begin{theorem}[Ratio Test]
+		\label{Ratio Test Theorem - Complex}
+		Let \(\sum_{n=0}^{\infty} S_N\) be an infinite series, and 
+		\begin{align*}
+			\Gamma = \lim_{n \rightarrow \infty} \abs{\frac{S_{N+1}}{S_N}}
+		\end{align*}
+		Then
+		\begin{itemize}
+			\item[1.] \(\Gamma < 1 \implies \) Series converges absolutely
+			\item[2.] \(\Gamma > 1 \implies \) Series diverges
+			\item[3.] \(\Gamma = 1 \implies \) No info on convergence of series
+		\end{itemize}
+	\end{theorem}
 
 	\section{Taylor Series} \label{Taylor Series Section - Complex}
 	
@@ -6058,6 +6094,7 @@
 		\begin{align*}
 			f(z) &= \sum_{n=-\infty}^{\infty} c_n (z-z_0)^n & 
 			c_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} &
+%			 	 = \frac{f^{(n)}(z_0)}{n!} &
 			R_1 &< \abs{z-z_0} < R_2, \ n \in \mathbb{Z} 
 		\end{align*}
 	\end{theorem}
@@ -6272,6 +6309,16 @@
 	
 	Note: In the case where \(f\) is not analytic at \(z_0\), then \(R_1\) can become arbitrarily small, so the Laurent series is valid for the punctured disk \(0 < \abs{z-z_0}<R_2\). Likewise, if \(f\) is only analytic for points outside \(R_1\), then the Laurent series is valid for the region \(R_1 < \abs{z-z_0} < \infty\).
 	
+	\begin{question}
+		\(c_n\) in Laurent's Theorem strongly represents the extended Cauchy Integral formula (\cref{Cauchy Integral Formula (Extension) - Complex}). Where 
+		\begin{align*}
+			f^{(n)}(z_0) &= \frac{n!}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz & n \in \mathbb{N} \cup \{0\}
+		\end{align*}
+		The only difference is \(n \in \mathbb{Z}\) for \(c_n\), while \(n \in \mathbb{N}\cup \{0\}\) for the extended Cauchy Integral formula. Is there a connection?
+		
+		Ans: Generally, no. The Cauchy Integral theorem requires the function to be analytic throughout the domain enclosed by the contour. This is not necessarily true for a Laurent series since we have a deleted neighbourhood that excludes \(z_0\) so, in general, \(c_n \neq f^{(n)}(z_0)/n!\).
+	\end{question}
+	
 	\subsection{Examples}
 	
 	\begin{example}[Finding Laurent Series via Known Series]
@@ -6477,9 +6524,13 @@
 	
 	\begin{definition}[Circle of Convergence]
 		\label{Circle of Convergence Definition - Complex}
-		The greatest circle centred at \(z_0\) for which the power series \(\sum_{n=0}^{\infty} a_n (z-z_0)^n\) converges for all points interior to the circle. That is, if the circle has radius \(R\) and is centred at \(z_0\), then the power series converges \(\forall z\) where \(\abs{z-z_0} < R\). 
+		The greatest circle centred at \(z_0\) for which the power series \(\sum_{n=0}^{\infty} a_n (z-z_0)^n\) converges for all \(z\) interior to the circle. That is, if the circle has radius \(R\) and is centred at \(z_0\), then the power series converges \(\forall z\) where \(\abs{z-z_0} < R\). 
 	\end{definition}
 	Note: As a result, the series can not converge at any point outside of the circle of convergence.
+	
+	\begin{definition}[Center of Expansion]
+		The center of the circle of convergence \(z_0\).
+	\end{definition}
 	
 	\begin{theorem}[Absolute Convergence of Power Series]
 		\label{Absolute Convergence of Power Series Theorem - Complex}
@@ -6911,6 +6962,7 @@
 			[f(z)g(z)]^{(n)} &= \sum_{k=0}^{n} \binom{n}{k} f^{(k)}(z) g^{(n-k)}(z) \\
 			\binom{n}{k} &= \frac{n!}{k!(n-k)!} & n \in \mathbb{N}, \ k \in \{0, 1, 2, \ldots, n\}
 		\end{align*}
+		For proof see \(\cref{Leibniz's Rule Proof - Complex}\)
 	\end{definition}
 	
 	\begin{definition}[Cauchy Product]
@@ -6935,7 +6987,13 @@
 	\end{align*}
 	Then find the series representation of \(1/g(z)\) using long division. After that is done, use the Cauchy Product to multiply \(f(z)\) with \(1/g(z)\).
 	
+	Now, if \(f(z)\) and \(g(z)\) are both polynomial with \(\deg[f(z)]<\deg[g(z)]\), then we can use the method of partial fractions to turn \(f(z)/g(z)\) into a sum of partial fractions. We can then substitute a geometric (or another known series) into each of the partial fractions to obtain a series representation for \(f(z)/g(z)\). That is 
+	\begin{align*}
+		\frac{f(z)}{g(z)} &= \sum_{n=0}^{N} \frac{A_n}{(z-z_n)^{m_n}} & A_n, z_n \in \mathbb{C}, \ m_n \in \mathbb{N}
+	\end{align*}
+	
 	\begin{example}[Deriving Leibniz's Rule]
+		\label{Leibniz's Rule Proof - Complex}
 		Show
 		\begin{align*}
 			[fg]^{(n)} &= \sum_{k=0}^{n}\binom{n}{k} f^{(k)} g^{(n-k)} & n \in \mathbb{N}
@@ -6974,6 +7032,18 @@
 			}
 		\end{proof}
 	\end{example}
+
+	\section{z-Transform} \label{z-Transform Section - Complex}
+
+	Take a sequence of numbers and make an analytic function.
+	
+	\begin{definition}[z-Transform]
+		\label{z-Transform Definition - Complex}
+		\begin{align*}
+			\mathbb{Z}[f(t)] &= \sum_{n=0}^{\infty} f(nT)z^{-n} 
+				& T \in \mathbb{R_{>0}}, \ z \in \mathbb{C}
+		\end{align*}
+	\end{definition}
 
 	\chapter{Residues and Poles} \label{Residues and Poles Chapter - Complex}
 	
