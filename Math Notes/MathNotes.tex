@@ -6341,6 +6341,7 @@
 	\end{example}
 	
 	\begin{example}[z-transform]
+		\label{z-Transform Inverse Derivation Example - Complex}
 		Suppose 
 		\begin{align*}
 			X(z) &= \sum_{n=-\infty}^{\infty} x[n]z^{-n} & R_1 < \abs{z} < R_2, \ n \in \mathbb{Z}
@@ -6996,7 +6997,7 @@
 		\label{Leibniz's Rule Proof - Complex}
 		Show
 		\begin{align*}
-			[fg]^{(n)} &= \sum_{k=0}^{n}\binom{n}{k} f^{(k)} g^{(n-k)} & n \in \mathbb{N}
+			(fg)^{(n)} &= \sum_{k=0}^{n}\binom{n}{k} f^{(k)} g^{(n-k)} & n \in \mathbb{N}
 		\end{align*}
 		\begin{proof}
 			{\color{Grey}
@@ -7045,6 +7046,132 @@
 		\end{align*}
 	\end{definition}
 
+	Notice we are taking \(n\) samples of function \(f\) at select intervals \(T\). This is the Laurent series with no positive exponential terms with \(b_n = f(nT)\). We can also have \(w = 1/z\), which we then get the Taylor series with all its usual properties:
+	\begin{align*}
+		\mathbb{Z}[f(t)] &= \sum_{n=0}^{\infty} f(nT) w^n
+	\end{align*}
+
+	\begin{definition}[Inverse z-Transform]
+		Let \(C\) be any circular contour with radius greater than \(R\), where \(F(z)\) is analytic \(\forall \abs{z}>R\). Then the Inverse z-Transform of \(F(z)\):
+		\begin{align*}
+			\mathbb{Z}^{-1}[F(z)] = f(nT) &= \frac{1}{2\pi i} \int_{C} F(z) z^{n-1} dz
+				& n \in \mathbb{N} \cup \{0\}
+		\end{align*}
+		For derivation see \cref{z-Transform Inverse Derivation Example - Complex}.
+	\end{definition}
+
+	Since the z-Transform is linear, we have:
+	\begin{align*}
+		\mathbb{Z}[cf(t)] &= c\mathbb{Z}[f(t)]\\
+		\mathbb{Z}[f(t) + g(t)] &= \mathbb{Z}[f(t)] + \mathbb{Z}[g(t)] \\
+		\mathbb{Z}^{-1}[F(t) + G(t)] &= \mathbb{Z}^{-1}[F(t)] + \mathbb{Z}^{-1}[G(t)] 
+	\end{align*}
+	
+	\subsection{Product of z-Transforms} \label{Product of z-Transforms Subsection - Complex}
+	
+	\begin{definition}[Product of z-Transform]
+		Let \(C\) be a circular contour with radius \(\rho = \abs{w} = \abs{1/z}\), and
+		\begin{align*}
+			\mathbb{Z}[f(t)] &= \sum_{n=0}^{\infty} c_n z^{-n} = F(z) &
+			\mathbb{Z}[g(t)] &= \sum_{n=0}^{\infty} d_n z^{-n} = G(z)
+		\end{align*}
+		Then
+		\begin{align*}
+			\mathbb{Z}[f(t)g(t)] 
+			&= \sum_{n=0}^{\infty} f(nT) g(nT) z^{-n} = \sum_{n=0}^{\infty} c_n d_n z^{-n}
+			 = \frac{1}{2\pi i} \int_{C} \frac{F(w)G(z/w)}{w} dw
+		\end{align*}
+	\end{definition}
+	\begin{proof}
+		By definition 
+		\begin{align*}
+			\mathbb{Z}[f(t)g(t)] = \sum_{n=0}^{\infty} f(nT) g(nT) z^{-n} = \sum_{n=0}^{\infty} c_n d_n z^{-n}
+		\end{align*}
+		Letting \(F(z)\) and \(G(z)\) be analytic in domain \(\abs{z}>R\) we have
+		\begin{align*}
+			F(w) &= \sum_{m=0}^{\infty} c_m w^{-m} & \abs{w} > R \\
+			G\left(\frac{z}{w}\right) &= \sum_{n=0}^{\infty} d_n \left(\frac{z}{w}\right)^{-n} = \sum_{n=0}^{\infty} d_n w^n z^{-n} & \abs{\frac{z}{w}} > R
+		\end{align*}
+		Hence
+		\begin{align*}
+			F(w) G(z/w) &= \sum_{m=0}^{\infty} \sum_{n=0}^{\infty} c_m d_n w^{n-m} z^{-n}
+				& \abs{w}>R, \abs{\frac{z}{w}}> R
+		\end{align*}
+		Now consider a circle of radius \(\rho = \abs{w}\) centred at the origin. Taking \(\rho > R\), so that \(\abs{z} > R\rho\), the Laurent series expansion is then uniformly convergent in the domain containing the circle. So multiplying by \(1/(2\pi i w)\):
+		\begin{align*}
+			\frac{1}{2\pi i w} F(w) G(z/w) 
+			&= \frac{1}{2\pi i}\sum_{m=0}^{\infty} \sum_{n=0}^{\infty} c_m d_n \frac{z^{-n} w^{n-m}}{w}
+				& \abs{w}>R, \abs{\frac{z}{w}}> R
+		\end{align*}
+		Taking the contour integral \(C\) around \(\abs{w} = \rho\):
+		\begin{align*}
+			\frac{1}{2\pi i} \int_{C} \frac{F(w)G(z/w)}{w} dw 
+			&= \frac{1}{2\pi i} \sum_{m=0}^{\infty} \sum_{n=0}^{\infty} \int_{C} c_m d_n z^{-n} \frac{w^{n-m}}{w} dw
+		\end{align*}
+		Now by Cauchy-Goursat Theorem \(\cref{Cauchy-Goursat Theorem - Complex}\):
+		\begin{align*}
+			\int_{C} w^k dw =
+			\begin{cases}
+				0 & k\neq -1\\
+				2\pi i & k = -1
+			\end{cases}
+			\implies
+			\int_{C} \frac{w^{n-m}}{w} dw = 
+			\begin{cases}
+				0 & n \neq m\\
+				2\pi i & n = m
+			\end{cases}
+		\end{align*}
+		Hence taking the non-trivial solution
+		\begin{align*}
+			\frac{1}{2\pi i} \int_{C} \frac{F(w)G(z/w)}{w} dw
+			&= \sum_{n=0}^{\infty} c_n d_n z^{-n} = \mathbb{Z}[f(t)g(t)]
+				& \abs{z}> R\rho, \ \rho > R
+		\end{align*}
+	\end{proof}
+
+	\begin{definition}[Convolution]
+		\label{Convolution Definition - Complex}
+		Let \(f(t)\) and \(g(t)\) be functions, then the convolution of the two functions:
+		\begin{align*}
+			f(t) \circ g(t) &= \sum_{k=0}^{\infty} f(kT) g[(n-k)T] & n \in \mathbb{N} \cup \{0\}
+		\end{align*}
+	\end{definition}
+
+	\begin{definition}[Convolution of Products of z-Transform and Inverse z-Transform]
+		\begin{align*}
+			\mathbb{Z}[h(t)] &= \mathbb{Z}[f(t) \circ g(t)] = \mathbb{Z}[f(t)] \mathbb{Z}[G(t)]= F(z) G(z) \\
+			\mathbb{Z}^{-1}[H(z)] &= \mathbb{Z}^{-1}[F(z) \circ G(z)] = \mathbb{Z}^{-1}[F(z)] \mathbb{Z}^{-1}[G(z)] = f(t) g(t)
+		\end{align*}
+	\end{definition}
+	\begin{proof}
+		Let \(h(t) = f(t) \circ g(t)\), then 
+		\begin{align*}
+			\mathbb{Z}[h(t)] 
+			&= \sum_{n=0}^{\infty} \left[\sum_{k=0}^{\infty} f(kT) g[(n-k)T] \right] z^{-n} 
+			 = \sum_{n=0}^{\infty} \left[\sum_{k=0}^{\infty} a_k b_{n-k} \right] z^{-n} \\
+			&= 
+		\end{align*}
+		We know that 
+		\begin{align*}
+			\mathbb{Z}[f(t)] &= \sum_{k=0}^{\infty} a_k z^{-k} = F(z) & 
+			\mathbb{Z}[g(t)] &= \sum_{j=0}^{\infty} b_j z^{-j} = G(z)
+		\end{align*}
+		So
+		\begin{align*}
+			F(z)G(z) &= \sum_{k=0}^{\infty} a_k z^{-k} \sum_{j=0}^{\infty} b_j z^{-j}
+					  = \sum_{k=0}^{\infty} \sum_{j=0}^{\infty} a_k b_j z^{-(k+j)} 
+					  = \sum_{n=0}^{\infty} \sum_{k=0}^{\infty} a_k b_{n-k} z^{-n} & n = j+k \\
+		\end{align*}
+		This tells us that 
+		\begin{align*}
+			\mathbb{Z}[h(t)] = \mathbb{Z}[f(t) \circ g(t)] = F(z) G(z)
+		\end{align*}
+	\end{proof}
+
+%	\subsection{Difference Equation} \label{Difference Equation Subsection - Complex}
+
+
 	\chapter{Residues and Poles} \label{Residues and Poles Chapter - Complex}
 	
 	Cauchy-Goursat theorem (\cref{Cauchy-Goursat Theorem - Complex}) states the value of a integral over a simple closed contour is zero if the function being evaluated is analytic at all points within and on the contour. What if the function is not analytic for some finite points interior to \(C\)? Well...it leaves some ``residues'' at those points which will contribute to the value of the integral.
@@ -7055,6 +7182,8 @@
 		\label{Isolated Singular Points Definition - Complex}
 		A singular point \(z_0\) is isolated if there exists a deleted neighbourhood \(\epsilon\), \(0 < \abs{z-z_0}< \epsilon\), where the function \(f\) is analytic for all points in the neighbourhood.
 	\end{definition}
+
+
 	
 	
 	
