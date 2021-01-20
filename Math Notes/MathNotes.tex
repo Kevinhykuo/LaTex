@@ -7183,9 +7183,168 @@
 		A singular point \(z_0\) is isolated if there exists a deleted neighbourhood \(\epsilon\), \(0 < \abs{z-z_0}< \epsilon\), where the function \(f\) is analytic for all points in the neighbourhood.
 	\end{definition}
 
+	Note: It is convenient to consider the point at infinity as an Isolated Singular Point. That is, if a function \(f\) is analytic in \(0<R_1 \leq \abs{z} < \infty\). Then it has a isolated singular point at \(z_0 = \infty\).
+	
+	\begin{definition}[Residue]
+		Recall the Laurent series \(\cref{Laurent's Theorem - Complex}\), and let \(C\) be any positively oriented simple closed contour around \(z_0\) on punctured disk \(0 < \abs{z-z_0}< R_2\). The residue is defined as \(b_n\) for \(n=0\). That is, 
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
+				& 0 \abs{z-z_0} < R_2\\
+			b_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{-n+1}} dz
+		\end{align*}
+		The residue:
+		\begin{align*}
+			\Res_{z=z_0}[f(z)] = b_1 = \frac{1}{2\pi i} \int_{C} f(z) dz
+		\end{align*}
+	\end{definition}
+	
+	Hence, we can use the series expansion of \(f(z)\) to find the value of \(\int_{C} f(z) dz\) at \(z=z_0\) by finding the coefficient of \(1/(z-z_0)\) in the series. That is, series expand, find coefficient of \(1/(z-z_0)\), multiply by \(2\pi i\) to find contour integral of \(f(z)\).
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				color=Black,
+				mark=o,
+				]
+				coordinates {
+					(5, 4) [$z_0$]
+				};
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=none,
+				]
+				coordinates {
+					(3.16, 2.16) [$C$]
+				};
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.625 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 5, 4) circle (3);
+				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (3.5);
+				
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 8.5, 4) node[midway, above] {$R_2$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	\begin{theorem}[Cauchy's Residue Theorem]
+		\label{Cauch's Residue Theorem - Complex}
+		Let \(C\) be a positively oriented simple closed contour, and \(f\) be a function analytic inside and on \(C\), except at a finite number of singular points \(z_k\) (\(k \in \mathbb{N}\)) inside \(C\), then 
+		\begin{align*}
+			\int_{C} f(z) dz = 2\pi i \sum_{k=1}^{n} \Res_{z=z_k}[f(z)]
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Let \(C\) be a positively oriented simple closed contour surrounding the singular points \(z_k\), and \(C_k\) be positively oriented simple closed contours lying completely in \(C\) surrounding each \(z_k\) that is small enough they don't share common points. 
+		This creates a multiply connected domain consisting of points inside \(C\) but exterior to each \(C_k\) (\cref{Multiply Connected Domains Subsection - Complex}), and using the Cauchy-Goursat Theorem (\cref{Cauchy-Goursat Theorem - Complex}):
+		\begin{align*}
+			\int_{C} f(z) dz - \sum_{k=1}^{n} \int_{C_k} f(z) dz = 0
+			&\implies \int_{C} f(z) dz - \sum_{k=1}^{n} 2\pi i \Res_{z=z_k}[f(z)]= 0 \\
+			&\implies \int_{C} f(z) dz = \sum_{k=1}^{n} 2\pi i \Res_{z=z_k}[f(z)]
+		\end{align*}
+	\end{proof}
 
+	\subsection{Residue at Infinity} \label{Residue at Infinity Subsection - Complex}
 	
+	\begin{definition}[Residue of \(f\) at Infinity]
+		\label{Residue at Infinity Definition - Complex}
+		Let \(f\) be analytic throughout the plane except by a finite number of singular points enclosed inside a positively oriented simple closed contour \(C\), and \(R_1\) be the radius of a circle enclosing \(C\). Then \(f\) is analytic in \(R_1 < \abs{z} < \infty\). Let \(C_0\) be a circular contour oriented \textbf{negatively} with radius \(R_0\) enclosing the previous circle with radius \(R_1\). That is \(R_1 < R_0\). Then the residue of \(f\) at infinity:
+		\begin{align*}
+			\int_{C_0} f(z) dz = 2\pi i \Res_{z = \infty}[f(z)]
+		\end{align*}
+	\end{definition}
 	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=10,
+				ymin=0, ymax=8,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=none,
+				]
+				coordinates {
+					(3.56, 2.16) [$C$]
+					(1.78, 1) [$C_0$]
+				};
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.625 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 5, 4) circle (2.5);
+				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (3);
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.625 with {\arrow{<}} },
+				postaction={decorate}]
+				(axis cs: 5, 4) circle (3.75);
+				
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 5, 7) node[midway, above] {$R_1$};
+				
+				\draw[-,draw=Grey]  (axis cs: 5,4)--(axis cs: 8.75, 4) node[midway, above] {$R_2$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	\begin{theorem}[Residue at Infinity]
+		Let a function \(f\) be analytic everywhere except for a finite number of singular points enclosed by a positively oriented simple closed contour \(C\), then \begin{align*}
+			\int_{C} f(z) dz 
+			= 2\pi i \Res_{z=0} \left[ \frac{f(1/z)}{z^2} \right]
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Following our definition \(\cref{Residue at Infinity Definition - Complex}\), the point of infinity lies outside of \(C_0\). Since \(f\) is anaytic throughout the region bounded by \(C\) and \(C_0\), using the Principle of Deformation of Paths \(\cref{Principle of Deformation of Paths Corollary - Complex}\):
+		\begin{align*}
+			\int_{C} f(z) dz = \int_{-C_0} f(z) dz = - \int_{C_0} f(z) dz = -2\pi i \Res_{z=\infty}[f(z)]
+		\end{align*}
+		To find the residue, consider the Laurent series:
+		\begin{align*}
+			f(z) &= \sum_{n=-\infty}^{\infty} c_n z^n & R_1 < \abs{z} < \infty \\
+			c_n &= \frac{1}{2\pi i} \int_{-C_0} \frac{f(z)}{z^{n+1}} dz & n \in \mathbb{Z}
+		\end{align*}
+		Replacing \(z\) by \(1/z\) and multiplying by \(1/z^2\):
+		\begin{align*}
+			\frac{1}{z^2} f\left(\frac{1}{z}\right)
+			&= \sum_{n=-\infty}^{\infty} \frac{c_n}{z^{n+2}} = \sum_{n=-\infty}^{\infty} \frac{c_{n-2}}{z^n} & 0 < \abs{z} < \frac{1}{R_1} \\
+			c_{-1} &= \Res_{z=0}\left[\frac{f(1/z)}{z^2}\right] = \frac{1}{2\pi i} \int_{-C_0} f(z) dz
+		\end{align*}
+		Thus
+		\begin{align*}
+			\int_{C_0} f(z) dz = 2\pi i \Res_{z=\infty}[f(z)]
+			&\implies
+			\Res_{z = \infty}[f(z)] = -\Res_{z=0} \left[\frac{f(1/z)}{z^2}\right] \\
+			&\implies
+			\int_{C} f(z) dz = 2\pi i \Res_{z=0} \left[\frac{f(1/z)}{z^2}\right]
+		\end{align*}
+	\end{proof}
+	
+	\section{Three Types of Isolated Singular Points} \label{Three Types of Isolated Singular Points Section - Complex}
 	
 	
 	
