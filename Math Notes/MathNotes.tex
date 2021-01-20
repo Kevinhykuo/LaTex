@@ -7319,7 +7319,7 @@
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
-		Following our definition \(\cref{Residue at Infinity Definition - Complex}\), the point of infinity lies outside of \(C_0\). Since \(f\) is anaytic throughout the region bounded by \(C\) and \(C_0\), using the Principle of Deformation of Paths \(\cref{Principle of Deformation of Paths Corollary - Complex}\):
+		Following our definition (\cref{Residue at Infinity Definition - Complex}), the point of infinity lies outside of \(C_0\). Since \(f\) is anaytic throughout the region bounded by \(C\) and \(C_0\), using the Principle of Deformation of Paths (\cref{Principle of Deformation of Paths Corollary - Complex}):
 		\begin{align*}
 			\int_{C} f(z) dz = \int_{-C_0} f(z) dz = - \int_{C_0} f(z) dz = -2\pi i \Res_{z=\infty}[f(z)]
 		\end{align*}
@@ -7346,10 +7346,77 @@
 	
 	\section{Three Types of Isolated Singular Points} \label{Three Types of Isolated Singular Points Section - Complex}
 	
+	\begin{definition}[Principal Part of \(f\)]
+		\label{Principal Part of a Function Definition - Complex}
+		Let \(f\) be a function with an isolated singular point at \(z_0\) in the punctured disk \(0 < \abs{z-z_0}<R_2\). 
+%		Consider the Laurent Series expansion:
+%		\begin{align*}
+%			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
+%		\end{align*}
+		Then the Principal Part of of \(f\) is this part of the Laurent Series (\cref{Laurent's Theorem - Complex}):
+		\begin{align*}
+			\sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
+		\end{align*}
+	\end{definition}
+	
+	\begin{definition}[Removable Singular Points]
+		\label{Removable Singular Points Definition - Complex}
+		When the Principal Part of a Function is zero (\(\forall n \in \mathbb{N}[b_n = 0]\)). That is, 
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n	& 0 < \abs{z-z_0}<R_2
+		\end{align*}
+	\end{definition}
+	
+	The residue of a removable singular point is always zero. If we define \(f\) at \(z_0\) such that \(f(z_0) = a_0\) in the expansion, then it becomes a Taylor series and the expansion becomes valid throughout the disk \(\abs{z-z_0}<R_2\). The singularity in a sense is removed, since we assigned \(f(z_0) = a_0\).
+	
+	\begin{definition}[Essential Singular Points]
+		\label{Essential Singular Points Definition - Complex}
+		If an infinite number of \(b_n\) in the Principle Part is non-zero, \(z_0\) is an essential singular point of \(f\). That is, they can not be removed.
+	\end{definition}
+
+	\begin{definition}[Poles of Order \(m\)]
+		\label{Poles of Order m Definition - Complex}
+		If Principal Part of \(f\) contains more than one, but only finitely many non-zero terms, then 
+		\begin{align*}
+			\exists m \in \mathbb{N}[(b_m \neq 0) \land (b_{m+1} = b_{m+2} = b_{m+3} = \cdots = 0)]
+		\end{align*} 
+		That is 
+		\begin{align*}
+			f(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=0}^{m} \frac{b_n}{(z-z_0)^n}
+		\end{align*}
+	\end{definition}
+
+	\begin{definition}[Simple Pole]
+		\label{Simple Pole Definition - Complex}
+		Pole of order 1.
+	\end{definition}
+
+	\begin{example}
+		Consider:
+		\begin{align*}
+			e^{1/z} = \sum_{n=0}^{\infty} \frac{1}{n!} \cdot \frac{1}{z^n}
+		\end{align*}
+		It's easy to see that \(e^{1/z}\) has an essential singularity at \(z_0 = 0\) where \(b_1 = 1\). It follows that 
+		\begin{align*}
+			e^{1/z} &= -1 &
+			z &= \frac{1}{(2n + 1)\pi i} \cdot \frac{i}{i} = -\frac{i}{(2n+1)n} & n &\in \mathbb{Z}
+		\end{align*}
+		Since
+		\begin{align*}
+			e^{z} &= -1  & z &= (2n+1)\pi i & n \in \mathbb{Z}
+		\end{align*}
+		Hence, \(e^{1/z}\) assumes the value \(-1\) an infinite number of times in each neighbourhood of the origin. So for large enough \(n\), an infinite number of such points lie in any given neighbourhood \(\epsilon\) of the origin, except for zero. This illustrates Picard's Theorem.
+	\end{example}
+	
+	\begin{theorem}[Picard's Theorem]
+		In each neighbourhood of an essential singular point, a function assumes every finite value an infinite number of times, except with one possible exception.
+	\end{theorem}
+
+	\section{Residue at Poles} \label{Residue at Poles Section - Complex}
 	
 	
-	
-	
+
+
 	
 	
 	
