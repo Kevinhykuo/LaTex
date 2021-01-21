@@ -100,6 +100,7 @@
 \contentsline {section}{\numberline {17.2}Three Types of Isolated Singular Points}{152}{section.17.2}%
 \contentsline {section}{\numberline {17.3}Residue at Poles}{153}{section.17.3}%
 \contentsline {section}{\numberline {17.4}Zeros of Analytic Functions}{155}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Zeros and Poles}{157}{section.17.5}%
 \contentsline {chapter}{\numberline {18}Conformal Mapping}{159}{chapter.18}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations}{161}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics}{163}{part.6}%

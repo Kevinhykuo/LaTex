@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  20 JAN 2021 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  20 JAN 2021 21:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1882,17 +1882,17 @@ Chapter 29.
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: C9B872C70E8E8CD8CC1692BF46FAB863;8749.
+(rerunfilecheck)             Checksum: 58576420D22FBE2A49A4D5EEE9C2B49D;8814.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40607 strings out of 479382
- 921489 string characters out of 5869369
- 1349821 words of memory out of 5000000
- 55941 multiletter control sequences out of 15000+600000
+ 40611 strings out of 479382
+ 921590 string characters out of 5869369
+ 1349906 words of memory out of 5000000
+ 55944 multiletter control sequences out of 15000+600000
  443926 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1925,10 +1925,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (229 pages, 864146 bytes).
+Output written on MathNotes.pdf (229 pages, 863661 bytes).
 PDF statistics:
- 3310 PDF objects out of 3580 (max. 8388607)
- 2966 compressed objects within 30 object streams
- 954 named destinations out of 1000 (max. 500000)
- 1292 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3316 PDF objects out of 3580 (max. 8388607)
+ 2972 compressed objects within 30 object streams
+ 955 named destinations out of 1000 (max. 500000)
+ 1300 words of extra memory for PDF output out of 10000 (max. 10000000)
 
