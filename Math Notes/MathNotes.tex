@@ -7555,6 +7555,10 @@
 	
 	Note: It is clear to see this result by thinking of \(f(z)\) and \(g(z)\) as polynomials.
 	
+	\begin{definition}[Isolated Zeros]
+		Let \(f\) be an analytic function. If there exists \(z_0\) such that \(f(z_0) = 0\), then there exists a deleted neighbourhood \(0 < \abs{z-z_0} < \epsilon\) where \(f(z) \neq 0\). We then call \(z_0\) and isolated zero of \(f(z)\).
+	\end{definition}
+	
 	\begin{theorem}
 		\label{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex}
 		Let \(f\) be a function, and suppose
@@ -7562,7 +7566,7 @@
 			\item[1.] \(f\) is analytic at \(z_0\)
 			\item[2.] \(f(z_0) = 0\), but \(f(z) \nequiv 0\) in any neighbourhood of \(z_0\)
 		\end{itemize}
-		Then \(f(z) \neq 0\) in some deleted neighbourhood \(0<\abs{z-z_0}<\epsilon\) of \(z_0\).
+		Then \(f(z) \neq 0\) in some deleted neighbourhood \(0<\abs{z-z_0}<\epsilon\) of \(z_0\). That is, \(f(z) \nequiv 0 \implies f(z)\) only has isolated zeros.
 	\end{theorem}
 	\begin{proof}
 		Not all derivatives of \(f\) is zero at \(z_0\), otherwise all coefficients in the Taylor series of \(f\) would be zero, then \(f\) would be identically equal to zero in some neighbourhood of \(z_0\). It is clear from \cref{Zero of Order m Definition - Complex}, that \(f\) has a zero of order \(m\) at \(z_0\), then by \cref{Zero of order m iff zero can be factored Theorem - Complex}:
@@ -7573,12 +7577,13 @@
 	\end{proof}
 
 	\begin{theorem}
+		\label{f analytic and zero in domain implies identically zero in that domain Theorem - Complex}
 		Let \(f\) be a function, and \(D\) and \(L\) be a domain and line segment containing point \(z_0\). Suppose
 		\begin{itemize}
 			\item[1.] \(f\) analytic throughout neighbourhood \(N_0\) of \(z_0\)
 			\item[2.] \(\forall z \in D\cup L [f(z) = 0]\)
 		\end{itemize}
-		Then \(\forall z \in N_0 [f(z) \equiv 0]\). That is, \(f(z)\) is identically zero in \(N_0\).
+		Then \(\forall z \in N_0 [f(z) \equiv 0]\). That is, \(f(z)\) is identically zero in \(N_0\) if it does not have isolated zeros.
 	\end{theorem}
 	\begin{proof}
 		Let \(f(z) \equiv 0\) in some neighbourhood \(N\) of \(z_0\). Otherwise \cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex} would imply a contradiction. Then 
@@ -7591,6 +7596,8 @@
 	\end{proof}
 
 	Note: We say a function is identically zero \(f(z) \equiv 0\) if it becomes the zero function and not merely zero at some point in the domain.
+	
+	Note: It appears that \cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex} and \cref{f analytic and zero in domain implies identically zero in that domain Theorem - Complex} are contrapositives of each other.
 	
 	
 	
