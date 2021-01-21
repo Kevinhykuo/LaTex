@@ -7414,9 +7414,115 @@
 
 	\section{Residue at Poles} \label{Residue at Poles Section - Complex}
 	
+	\begin{theorem}
+		\label{Residue at Poles Theorem - Complex}
+		Let \(z_0\) be an isolated singular point of function \(f\). The following are equivalent: 
+		\begin{itemize}
+			\item[1.] \(z_0\) is a pole of order \(m\) (\(m \in \mathbb{N}\))
+			\item[2.] \(f\) can be written as 
+				\begin{align*}
+					f(z) &= \frac{\phi(z)}{(z-z_0)^m}	&	m \in \mathbb{N}
+				\end{align*}
+				\(\phi(z_0)\) is analytic and \(\phi(z_0) \neq 0\).
+			\item[3.]
+			\begin{align*}
+				\Res_{z=z_0}[f(z)] &= \frac{\phi^{(m-1)}}{(m-1)!}	&	m \in \mathbb{N}
+			\end{align*}
+		\end{itemize}
+	\end{theorem}
+	\begin{proof}
+		Assume that \(z_0\) is a pole of order \(m\), then \(f\) has the Laurent series expansion in the punctured disk \(0 < \abs{z-z_0} < R_2\):
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=1}^{m} \frac{b_n}{(z-z_0)^n}
+				& b_m \neq 0
+		\end{align*}
+		Now, define a function \(\phi\) such that 
+		\begin{align*}
+			\phi(z) &=
+			\begin{cases}
+				(z-z_0)^m f(z) & z \neq z_0 \\
+				b_m				& z=z_0
+			\end{cases}
+		\end{align*}
+		Same as \(f(z)\), \(\phi(z)\) is analytic throughout \(\abs{z-z_0} < R_2\), and has the Laurent series expansion.
+		\begin{align*}
+			\phi(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^{n+m} + \sum_{n=1}^{m} \frac{b_n}{(z-z_0)^{m-n}}
+		\end{align*}
+		Dividing \(\phi(z)\) by \((z-z_0)^m\) gives us 
+		\begin{align*}
+			f(z) = \frac{\phi(z)}{(z-z_0)^m}
+		\end{align*}
+		Now, since \(\phi(z)\) is analytic at \(z_0\), it has the Taylor series expansion in some neighbourhood \(\abs{z-z_0}< \epsilon\) of \(z_0\):
+		\begin{align*}
+			\phi(z) = \sum_{n=0}^{\infty} \frac{\phi^{(n)}(z_0)}{n!} (z-z_0)^n
+		\end{align*}
+		Therefore, for \(f(z)\) in the same neighbourhood:
+		\begin{align*}
+			f(z) = \sum_{n=0}^{\infty} \frac{\phi^{(n)}(z_0)}{n!} (z-z_0)^{n-m}
+		\end{align*}
+		The Laurent series with \(\phi(z_0) \neq 0\) tells us that \(z_0\) is a pole of order \(m\) of \(f(z)\), and the coefficient of \(1/(z-z_0)\) tells us the coefficient of \(\Res_{z=z_0}[f(z)]\).
+	\end{proof}
+
+	{\color{Red} \textbf{Warning!} Resort to Laurent series for to obtain residues in cases where \(\phi(z_0) = 0\) or \(\phi(z_0)\) is undefined!}
+
+	\(\phi(z_0) \neq 0\) is essential since \(\phi(z_0) = 0\) implies \(z_0\) is a removable singular point which \cref{Residue at Poles Theorem - Complex} does not apply. \textbf{Always check} \(\phi(z_0) \neq 0\) for calculations! 
+
+	If \(\phi(z_0)\) is undefined, then again \cref{Residue at Poles Theorem - Complex} does not apply.
 	
+	\begin{example}
+		Consider 
+		\begin{align*}
+			f(z) = \frac{1}{z^2 \sinh(z)}
+		\end{align*}
+		\(z^2 \sinh(z)\) has zeros \(z = n \pi i\), where \(n \in \mathbb{Z}\), so \(z = 0\) is an isolated singularity. It would be a mistake to write
+		\begin{align*}
+			f(z) &= \frac{\phi(z)}{z^2} & \phi(z) = \frac{1}{\sinh(z)}
+		\end{align*}
+		since \(\phi(z=0)\) is undefined. We must use the Laurent Series expansion:
+		\begin{align*}
+			\frac{1}{z^2 \sinh(z)} &= \frac{1}{z^3} - \frac{1}{6z} + \frac{7z}{360} + \cdots
+				& 0 < \abs{z} < \pi
+		\end{align*}
+		So \(\Res_{z=0}[f(z)] = -1/6\), and the singularity is a pole of order \(3\), not \(2\).
+	\end{example}
 
+	\begin{example}[Residue to Find Derivative] 
+		Due to the extended Cauchy Integral Formula (\cref{Cauchy Integral Formula (Extension) - Complex}), we can use it to find the residue of a function, or use a derivative to find the residue of a function. Let \(z_0\) be an isolated singular point of function \(f\) and suppose
+		\begin{align*}
+			f(z) &= \frac{\phi(z)}{(z-z_0)^m}	& 	m \in \mathbb{N}
+		\end{align*}
+		where \(\phi(z_0)\) is analytic and non-zero. Since there is a neighbourhood \(\abs{z-z_0}<\epsilon\) where \(\phi(z)\) is analytic throughout, the contour in the extended Cauchy Integral formula can be the positively oriented circle \(\abs{z-z_0}< \epsilon/2\). By the extended Cauchy Integral formula:
+		\begin{align*}
+			&\phi^{(m-1)}(z_0) = \frac{(m-1)!}{2\pi i} \int_{C} \frac{\phi(z)}{(z-z_0)^m} dz 	& m=n+1\\
+			&\implies \frac{\phi^{(m-1)}(z_0)}{(m-1)!} 
+				= \frac{1}{2\pi i} \int_{C} \frac{\phi(z)}{(z-z_0)^{m}} dz
+				= \frac{1}{2\pi i} \int_{C} f(z) dz
+				= \Res_{z=z_0}[f(z)]
+		\end{align*}
+	\end{example}
 
+	\section{Zeros of Analytic Functions} \label{Zeros of Analytic Functions Section - Complex}
+	
+	\begin{definition}[Zero of Order \(m\)]
+		\label{Zero of Order m Definition - Complex}
+		Let a function \(f\) be analytic at point \(z_0\), then all derivative \(f^{(n)}(z)\), \(n\in \mathbb{N}\), exist at \(z_0\) (\cref{Analytic implies existance of high order derivatives theorem - Complex}). We say that \(f\) has a zero of order \(m\) if there exists \(m\in \mathbb{N}\) such that 
+		\begin{align*}
+			[f(z_0) = f'(z_0) = f''(z_0) = \cdots = f^{(m-1)}(z_0) = 0] 
+			\land [f^{(m)}(z_0) \neq 0]
+		\end{align*}
+		That is, it is the lowest order derivative of \(f\) at \(z_0\) where \(f^{m}(z_0) \neq 0\).
+	\end{definition}
+
+	\begin{theorem}
+		Let \(f\) be a function that is analytic at point \(z_0\), then the following are equivalent:
+		\begin{itemize}
+			\item[1.] \(f\) has a zero of order \(m\)
+			\item[2.] There exists a function \(g\), that is analytic and non-zero at \(z_0\), such that 
+			\[f(z) = (z-z_0)^m g(z)\]
+		\end{itemize}
+	\end{theorem}
+	
+	
 	
 	
 	
