@@ -7514,6 +7514,7 @@
 	\end{definition}
 
 	\begin{theorem}
+		\label{Zero of order m iff zero can be factored Theorem - Complex}
 		Let \(f\) be a function that is analytic at point \(z_0\), then the following are equivalent:
 		\begin{itemize}
 			\item[1.] \(f\) has a zero of order \(m\)
@@ -7521,7 +7522,75 @@
 			\[f(z) = (z-z_0)^m g(z)\]
 		\end{itemize}
 	\end{theorem}
+	\begin{proof}
+		\underline{\(\implies\):} \newline
+		Suppose \(f\) has a zero of order \(m\) at \(z_0\), then the analyticity of \(f\) at \(z_0\) tells us there is a Taylor series representation in some neighbourhood \(\abs{z-z_0}<\epsilon\):
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{\infty} \frac{f^{(m+n)}(z_0)}{(m+n)!} (z-z_0)^{m+n} = (z-z_0)^m \sum_{n=0}^{\infty} \frac{f^{m+n}(z_0)}{(m+n)!}(z-z_0)^n
+		\end{align*}
+		Then 
+		\begin{align*}
+			g(z) &= \sum_{n=0}^{\infty} \frac{f^{(m+n)}(z_0)}{(m+n)!} (z-z_0)^n
+		\end{align*}
+		Since \(f(z)\) converges in \(\abs{z-z_0}<\epsilon\), \(g\) is analytic throughout \(\abs{z-z_0}<\epsilon\). Also
+		\begin{align*}
+			g(z_0) = \frac{f^{(m)}(z_0)}{m!} \neq 0
+		\end{align*}
+		
+		\underline{\(\impliedby\):} \newline
+		Assume there exists a function \(g\) that is analytic and non-zero at \(z_0\), such that 
+		\[f(z) = (z-z_0)^m g(z)\]
+		Then it has the Taylor series representation in some neighbourhood \(\abs{z-z_0}<\epsilon\) of \(z_0\):
+		\begin{align*}
+			g(z) = \sum_{n=0}^{\infty} \frac{g^{(n)}(z_0)}{n!} (z-z_0)^n
+			\implies
+			f(z) = \sum_{n=0}^{\infty} \frac{g^{(n)}(z_0)}{n!} (z-z_0)^{m+n}
+		\end{align*}
+		Hence 
+		\begin{align*}
+			f^{(m)}(z_0) = m! g(z_0) \neq 0
+		\end{align*}
+		Therefore, \(z_0\) is a zero of order \(m\) of \(f\).
+	\end{proof}
 	
+	Note: It is clear to see this result by thinking of \(f(z)\) and \(g(z)\) as polynomials.
+	
+	\begin{theorem}
+		\label{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex}
+		Let \(f\) be a function, and suppose
+		\begin{itemize}
+			\item[1.] \(f\) is analytic at \(z_0\)
+			\item[2.] \(f(z_0) = 0\), but \(f(z) \nequiv 0\) in any neighbourhood of \(z_0\)
+		\end{itemize}
+		Then \(f(z) \neq 0\) in some deleted neighbourhood \(0<\abs{z-z_0}<\epsilon\) of \(z_0\).
+	\end{theorem}
+	\begin{proof}
+		Not all derivatives of \(f\) is zero at \(z_0\), otherwise all coefficients in the Taylor series of \(f\) would be zero, then \(f\) would be identically equal to zero in some neighbourhood of \(z_0\). It is clear from \cref{Zero of Order m Definition - Complex}, that \(f\) has a zero of order \(m\) at \(z_0\), then by \cref{Zero of order m iff zero can be factored Theorem - Complex}:
+		\begin{align*}
+			f(z) = (z-z_0)^m g(z)
+		\end{align*}
+		\(g(z)\) analytic and nonzero at \(z_0\). Then there exists some neighbourhood \(\abs{z-z_0}<\epsilon\) where \(g(z) \neq 0\), thus \(f(z) \neq 0\) in deleted neighbourhood \(0 < \abs{z-z_0}<\epsilon\).
+	\end{proof}
+
+	\begin{theorem}
+		Let \(f\) be a function, and \(D\) and \(L\) be a domain and line segment containing point \(z_0\). Suppose
+		\begin{itemize}
+			\item[1.] \(f\) analytic throughout neighbourhood \(N_0\) of \(z_0\)
+			\item[2.] \(\forall z \in D\cup L [f(z) = 0]\)
+		\end{itemize}
+		Then \(\forall z \in N_0 [f(z) \equiv 0]\). That is, \(f(z)\) is identically zero in \(N_0\).
+	\end{theorem}
+	\begin{proof}
+		Let \(f(z) \equiv 0\) in some neighbourhood \(N\) of \(z_0\). Otherwise \cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex} would imply a contradiction. Then 
+		\begin{align*}
+			\forall z \in N [f(z) \equiv 0]
+			&\implies a_n  = \frac{f^{(n)}(z_0)}{n!} = 0	&	n \in \mathbb{N} \cup \{0\} \\
+			&\implies \forall z \in N_0 [f(z) \equiv 0]
+		\end{align*}
+		Since the Taylor series represents \(f(z)\) in \(N_0\).
+	\end{proof}
+
+	Note: We say a function is identically zero \(f(z) \equiv 0\) if it becomes the zero function and not merely zero at some point in the domain.
 	
 	
 	
