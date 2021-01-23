@@ -493,7 +493,7 @@
 			\end{axis}
 	\end{tikzpicture}
 	\end{center}
-	Note: As a group with addition, \(\mathbb{R}^2 \cong \mathbb{C}\), however this is not the case for rings. \(\mathbb{C}\) is a field, but \(\mathbb{R}^2\) is not. \(\mathbb{R}^2\) have non-zero divisors (ie. Take any \(a,b \in \mathbb{R}\), \((a, 0) \cdot (0, b) = 0\)).
+	Note: As a group with addition, \(\mathbb{R}^2 \cong \mathbb{C}\), however this is not the case for rings. \(\mathbb{C}\) is a field, but \(\mathbb{R}^2\) is not. \(\mathbb{R}^2\) have non-zero divisors (ie. Take any \(a,b \in \mathbb{R}^2\), \((a, 0) \cdot (0, b) = 0\)).
 	
 	\section{Triangle Inequality} \label{Triangle Inequality Section - Complex}
 	It is not analysis without a section dedicated to the triangle inequality. For any given number $z_1, z_2 \in \mathbb{C}$ it makes no sense to write an inequality $z_1 = a_1 + ib_1 <  a_2 + ib_2 = z_2$. Thus, we need have a different notion of size. 
@@ -7774,6 +7774,27 @@
 	
 	\subsection{Poles of Order \(m\)}
 	
+	\begin{theorem}
+		Let \(f\) be a function:
+		\begin{align*}
+			z_0 \text{ pole of } f \implies \lim_{z\rightarrow z_0} f(z) = \infty
+		\end{align*}
+		That is, \(\abs{f(z)} \rightarrow \infty\) as \(z \rightarrow \infty\) creating a ``pole'' in a non-mathematical sense. 
+	\end{theorem}
+	\begin{proof}
+		Suppose \(f\) has pole of order \(m\) at \(z_0\). Then 
+		\begin{align*}
+			f(z) &= \frac{\phi(z)}{(z-z_0)^m}	&	\text{\Cref{Residue at Poles Theorem - Complex}}
+		\end{align*}
+		\(\phi(z)\) is analytic and nonzero at \(z_0\). Then
+		\begin{align*}
+			\lim_{z\rightarrow z_0} \frac{1}{f(z)} 
+			= \lim_{z\rightarrow z_0} \frac{(z-z_0)^m}{\phi(z)}
+			= \frac{\lim_{z\rightarrow z_0} (z-z_0)^m}{\lim_{z\rightarrow z_0} \phi(z)}
+			= \frac{0}{\phi(z_0)} = 0
+		\end{align*}
+		By \cref{Limits of Points at Infinity Subsection - Complex}, \(\lim_{z\rightarrow z_0} f(z) = \infty\).
+	\end{proof}
 	
 	
 	
