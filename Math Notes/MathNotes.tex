@@ -7601,7 +7601,168 @@
 	
 	\section{Zeros and Poles} \label{Zeros and Poles Section - Complex}
 	
+	\begin{theorem}
+		Suppose
+		\begin{itemize}
+			\item[1.] Functions \(p\) and \(q\) are analytic at \(z_0\)
+			\item[2.] \(p(z_0) \neq 0\), and \(q\) has zero of order \(m\) at \(z_0\)
+		\end{itemize}
+		Then \(p(z)/q(z)\) has pole of order \(m\) at \(z_0\). That is, the order of the pole of the function takes on the order of the zero of the quotient if the conditions are satisfied.
+	\end{theorem}
+	\begin{proof}
+		Suppose \(p\) and \(q\) are analytic at \(z_0\), \(p(z_0) \neq 0\), and \(q(z_0)\) is a pole of order \(m\).
+		\begin{align*}
+			&q(z_0) \text{ is a pole of order } m \\
+			&\implies q(z)\neq 0 \text{ in some deleted neighbourhood of } z_0 
+				& \text{\Cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex}} \\
+			&\implies z_0 \text{ isolated singular point of } \frac{p(z)}{q(z)}
+		\end{align*}
+		Now, \cref{Zero of order m iff zero can be factored Theorem - Complex} tells us there exists a function \(g(z)\) that is analytic and nonzero at \(z_0\) such that
+		\begin{align*}
+			q(z) = (z-z_0)^m g(z)
+		\end{align*}
+		Then
+		\begin{align*}
+			\frac{p(z)}{q(z)} &= \frac{\phi(z)}{(z-z_0)^m} & \phi(z) = \frac{p(z)}{g(z)}
+		\end{align*}
+		Therefore
+		\begin{align*}
+			\phi(z_0) \text{ analytic and nonzero}
+			&\implies z_0 \text{ pole of order } m \text{ of } \frac{p(z)}{q(z)}
+				& \text{\Cref{Residue at Poles Theorem - Complex}}
+		\end{align*}
+	\end{proof}
+
+	\begin{theorem}
+		Let function \(p\) and \(q\) be analytic at \(z_0\).
+		\begin{align*}
+			&[p(z_0) \neq 0] \land [q(z_0) = 0] \land [q'(z_0) \neq 0] \\
+			&\implies \left[z_0 \text{ simple pole of } \frac{p(z)}{q(z)}\right] \land \left[\Res_{z=z_0}\left(\frac{p(z)}{q(z)}\right) = \frac{p(z_0)}{q'(z_0)} \right]
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Suppose \([p(z_0) \neq 0] \land [q(z_0) = 0] \land [q'(z_0) \neq 0]\), then 
+		\begin{align*}
+			[q(z_0) = 0] \land [q'(z_0) \neq 0]
+			&\implies z_0 \text{ zero of order } 1 \text{ of } q(z)
+				& \text{\Cref{Zero of Order m Definition - Complex}} \\
+			&\implies q(z) = (z-z_0)g(z)
+				& \text{\Cref{Zero of order m iff zero can be factored Theorem - Complex}}
+		\end{align*}
+		Where \(g(z)\) analytic and nonzero at \(z_0\). Then 
+		\begin{align*}
+			\frac{p(z)}{q(z)} &= \frac{\phi(z)}{z-z_0} & \phi(z) &= \frac{p(z)}{g(z)}
+		\end{align*}
+		\(\phi(z)\) is analytic and nonzero at \(z_0\), so
+		\begin{align*}
+			\Res_{z=z_0}\left[\frac{p(z)}{q(z)}\right] &= \frac{p(z_0)}{q(z_0)} 
+				& \text{\Cref{Residue at Poles Theorem - Complex}}
+		\end{align*}
+		We know that 
+		\begin{align*}
+			q(z) = (z-z_0) g(z)
+			&\implies q'(z) = g(z) + zg'(z) - z_0 g'(z) \\
+			&\implies q'(z_0) = g'(z_0)
+		\end{align*}
+		Thus 
+		\begin{align*}
+			\Res_{z=z_0}\left(\frac{p(z)}{q(z)}\right) = \frac{p(z_0)}{q'(z_0)}
+		\end{align*}
+	\end{proof}
 	
+	\begin{example}
+		Let \(p\) and \(q\) be analytic functions at \(z_0\). Show
+		\begin{align*}
+			&[p(z_0) \neq 0] \land [q(z_0) = 0] \land \left[ \frac{p(z)}{q(z)} \text{ has pole of order } m \text{ at } z_0\right]\\
+			&\implies z_0 \text{ pole of order } m \text{ of } q
+		\end{align*}
+	\end{example}
+	\begin{proof}
+		content
+	\end{proof}
+
+	\begin{theorem}[Bolzano-Weierstrass Theorem]
+		\label{Bolzano-Weierstrass Theorem - Complex}
+		A finite set of points lying in a closed bounded region \(R\) has at least one accumulation points in \(R\).
+	\end{theorem}
+
+	\begin{example}
+		Show if function \(f\) is analytic in region \(R\) consisting of all points inside and on simple closed contour \(C\), except for poles inside \(C\), and all zeros of \(f\) in \(R\) are interior to \(C\) are finite in order, then the zeros must be finite in number.
+	\end{example}
+	\begin{proof}
+		content
+	\end{proof}
+
+	\begin{example}
+		Let \(R\) be a region consisting of all points interior and on a simple closed contour \(C\). Show if \(f\) is analytic in region \(R\) except to poles inside \(C\), then the poles must be finite in number. 
+	\end{example}
+	\begin{proof}
+		content
+	\end{proof}
+
+
+	\section{Behaviour of Functions Near Isolated Singular Points} \label{Behaviour of Functions Near Isolated Singular Points Section - Complex}
+	
+	\subsection{Removable Singular Points}
+	
+	\begin{theorem}
+		Let \(f\) be a function.
+		\begin{align*}
+			&z_0 \text{ isolated singular point of } f \\
+			&\implies f \text{ bounded and analytic in some deleted neighbourhood } 0<\abs{z-z_0}<\epsilon \text{ of } z_0
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\begin{align*}
+			&f \text{ analytic throughout } \abs{z-z_0}<R_2 \\
+			&\implies f \text{ continuous in } \abs{z-z_0}\leq\epsilon<R_2 \\
+			&\implies f \text{ bounded in } \abs{z-z_0}\leq\epsilon<R_2 
+				&\text{\Cref{Function continuous in closed and bounded region implies function is bounded Theorem - Complex}}\\
+			&\implies f \text{ bounded in deleted neighbourhood } 0<\abs{z-z_0}\leq\epsilon
+		\end{align*}
+	\end{proof}
+
+	\begin{theorem}[Riemann's Theorem]
+		\label{Riemann's Theorem - Complex}
+		Let function \(f\) be bounded and analytic in some deleted neighbourhood \(0 < \abs{z-z_0}<\epsilon\) of \(z_0\)
+		\begin{align*}
+			f \text{ not analytic at }z_0 \implies z_0 \text{ removable singularity of } f
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Assume \(f\) not analytic at \(z_0\), but bounded and analytic in some deleted neighbourhood \(0 < \abs{z-z_0}<\epsilon\) of \(z_0\). Then \(z_0\) is an isolated singularity of \(f\). Consider the Laurent series:
+		\begin{align*}
+			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
+			& \text{ In } 0<\abs{z-z_0}<\epsilon
+		\end{align*}
+		Let \(C\) be a positively oriented circle \(\abs{z-z_0}<\rho<\epsilon\), then
+		\begin{align*}
+			b_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{-n+1}}
+				& n \in \mathbb{N}
+		\end{align*}
+		Since \(f\) is bounded, \(\exists M \in \mathbb{R}_{>0} [ \abs{f(z)}\leq M]\). Hence
+		\begin{align*}
+			\abs{b_n} &\leq \frac{1}{2\pi} \cdot \frac{M}{\rho^{-n+1}} 2 \pi \rho = M\rho^n 
+				& n \in \mathbb{N}
+		\end{align*}
+		\(\rho\) can be chosen to be arbitrarily small, therefore \(b_n = 0\), and \(z_0\) is a removable singularity of \(f\)
+	\end{proof}
+
+	
+	\subsection{Essential Singular Points}
+	
+	\begin{theorem}[Casorati-Weierstrass Theorem]
+		\label{Casorati-Weierstrass Theorem - Complex}
+		Let \(z_0\) be an essential singularity of function \(f\), and \(w_0 \in \mathbb{C}\). Then 
+		\begin{align*}
+			\forall \epsilon > 0 [0<\abs{z-z_0}<\delta \implies \abs{f(z) - w_0}< \epsilon]
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Assume for contradiction that \(0<\abs{z-z_0}<\delta \) does not imply \(\abs{f(z) - w_0}< \epsilon\). Then \(0<\abs{z-z_0}<\delta \implies \abs{f(z) - w_0} \geq \epsilon\)
+	\end{proof}
+	
+	\subsection{Poles of Order \(m\)}
 	
 	
 	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  20 JAN 2021 21:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  22 JAN 2021 19:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1442,17 +1442,14 @@ ut line 319.
 ] (./MathNotes.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
  [7] [8] [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4492) has occurred while \output is active []
 
  [10]
-Underfull \vbox (badness 1286) has occurred while \output is active []
-
- [11])
+[11])
 \tf@toc=\write5
 \openout5 = `MathNotes.toc'.
 
-
-[12] [1
+ [12] [1
 
 
 ] [2
@@ -1790,73 +1787,82 @@ Chapter 17.
 ]
 ===== Image 'tikz/MathNotes-figure42' is up-to-date. ======
 [150 <./tikz/MathNotes-figure41.pdf>] [151 <./tikz/MathNotes-figure42.pdf>]
-[152] [153] [154] [155] [156] [157] [158
+[152] [153] [154] [155] [156] [157] [158]
+Overfull \hbox (23.8825pt too wide) in paragraph at lines 7704--7704
+|[]\OT1/cmr/bx/n/17.28 Behaviour of Func-tions Near Iso-lated Sin-gu-lar Points
+| 
+ []
 
-]
+[159]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7765.
+
+[160]
 Chapter 18.
-[159] [160
+[161
 
-] [161] [162] [163
+] [162
 
-] [164
+] [163] [164] [165
 
-] [165] [166] [167
+] [166
 
-] [168
+] [167] [168] [169
 
-] [169] [170
+] [170
+
+] [171] [172
 
 ]
 Chapter 19.
-[171] [172
-
-] [173] [174
+[173] [174
 
 ] [175] [176
 
 ] [177] [178
 
-]
-Chapter 20.
-[179] [180
+] [179] [180
 
 ]
-Chapter 21.
+Chapter 20.
 [181] [182
 
 ]
-Chapter 22.
+Chapter 21.
 [183] [184
 
 ]
-Chapter 23.
+Chapter 22.
 [185] [186
 
 ]
-Chapter 24.
+Chapter 23.
 [187] [188
 
 ]
-Chapter 25.
+Chapter 24.
 [189] [190
 
 ]
-Chapter 26.
+Chapter 25.
 [191] [192
 
-] [193] [194
+]
+Chapter 26.
+[193] [194
 
 ] [195] [196
 
+] [197] [198
+
 ]
 Chapter 27.
-[197] [198
+[199] [200
 
 ]
 Chapter 28.
-[199] [200
-
-] [201] [202
+[201] [202
 
 ] [203] [204
 
@@ -1866,36 +1872,38 @@ Chapter 28.
 
 ] [209] [210
 
+] [211] [212
+
 ]
 Chapter 29.
-[211] [212
+[213] [214
 
-] [213
+] [215
 
-] [214
+] [216
 
-] [215]
+] [217]
 
-(./MathNotes.bbl [216
+(./MathNotes.bbl [218
 
-]) [217] (./MathNotes.aux
+]) [219] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 58576420D22FBE2A49A4D5EEE9C2B49D;8814.
+(rerunfilecheck)             Checksum: 4104F4275FAC44AC0F7DC4C6BAAD98DF;9153.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40611 strings out of 479382
- 921590 string characters out of 5869369
- 1349906 words of memory out of 5000000
- 55944 multiletter control sequences out of 15000+600000
- 443926 words of font info for 162 fonts, out of 8000000 for 9000
+ 40658 strings out of 479382
+ 922662 string characters out of 5869369
+ 1350337 words of memory out of 5000000
+ 55964 multiletter control sequences out of 15000+600000
+ 445049 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,16n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 94i,16n,98p,859b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/
 usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/
 local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/loca
@@ -1925,10 +1933,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (229 pages, 863661 bytes).
+Output written on MathNotes.pdf (231 pages, 872928 bytes).
 PDF statistics:
- 3316 PDF objects out of 3580 (max. 8388607)
- 2972 compressed objects within 30 object streams
- 955 named destinations out of 1000 (max. 500000)
- 1300 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3417 PDF objects out of 3580 (max. 8388607)
+ 3028 compressed objects within 31 object streams
+ 979 named destinations out of 1000 (max. 500000)
+ 1332 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -100,35 +100,39 @@
 \BOOKMARK [1][-]{section.17.3}{Residue at Poles}{chapter.17}% 100
 \BOOKMARK [1][-]{section.17.4}{Zeros of Analytic Functions}{chapter.17}% 101
 \BOOKMARK [1][-]{section.17.5}{Zeros and Poles}{chapter.17}% 102
-\BOOKMARK [0][-]{chapter.18}{Conformal Mapping}{part.4}% 103
-\BOOKMARK [-1][-]{part.5}{V Ordinary Differential Equations}{}% 104
-\BOOKMARK [-1][-]{part.6}{VI Nonlinear Dynamics}{}% 105
-\BOOKMARK [-1][-]{part.7}{VII Partial Differential Equations}{}% 106
-\BOOKMARK [-1][-]{part.8}{VIII Integral Equations}{}% 107
-\BOOKMARK [-1][-]{part.9}{IX Linear Algebra}{}% 108
-\BOOKMARK [0][-]{chapter.19}{Markov Chains}{part.9}% 109
-\BOOKMARK [-1][-]{part.10}{X Tensors}{}% 110
-\BOOKMARK [-1][-]{part.11}{XI Riemann Geometry}{}% 111
-\BOOKMARK [-1][-]{part.12}{XII Abstract Algebra}{}% 112
-\BOOKMARK [0][-]{chapter.20}{Groups}{part.12}% 113
-\BOOKMARK [0][-]{chapter.21}{Rings}{part.12}% 114
-\BOOKMARK [1][-]{section.21.1}{Ideals}{chapter.21}% 115
-\BOOKMARK [0][-]{chapter.22}{Integral Domains}{part.12}% 116
-\BOOKMARK [0][-]{chapter.23}{GCD Domains}{part.12}% 117
-\BOOKMARK [0][-]{chapter.24}{Unique Factorization Domains}{part.12}% 118
-\BOOKMARK [0][-]{chapter.25}{Principal Ideal Domains}{part.12}% 119
-\BOOKMARK [0][-]{chapter.26}{Fields}{part.12}% 120
-\BOOKMARK [-1][-]{part.13}{XIII Galois Theory}{}% 121
-\BOOKMARK [-1][-]{part.14}{XIV Lie Theory}{}% 122
-\BOOKMARK [0][-]{chapter.27}{Lie Groups}{part.14}% 123
-\BOOKMARK [0][-]{chapter.28}{Lie Algebra}{part.14}% 124
-\BOOKMARK [-1][-]{part.15}{XV C-Star Algebra}{}% 125
-\BOOKMARK [-1][-]{part.16}{XVI Set Theory}{}% 126
-\BOOKMARK [-1][-]{part.17}{XVII Model Theory}{}% 127
-\BOOKMARK [-1][-]{part.18}{XVIII Statistics}{}% 128
-\BOOKMARK [-1][-]{part.19}{XIX Tips and Tricks}{}% 129
-\BOOKMARK [0][-]{chapter.29}{Integration Techniques}{part.19}% 130
-\BOOKMARK [1][-]{section.29.1}{DI Method \(Integration Table\)}{chapter.29}% 131
-\BOOKMARK [1][-]{section.29.2}{Feynman Integration}{chapter.29}% 132
-\BOOKMARK [-1][-]{part.20}{XX Index}{}% 133
-\BOOKMARK [-1][-]{part.21}{XXI Bibliography}{}% 134
+\BOOKMARK [1][-]{section.17.6}{Behaviour of Functions Near Isolated Singular Points}{chapter.17}% 103
+\BOOKMARK [2][-]{subsection.17.6.1}{Removable Singular Points}{section.17.6}% 104
+\BOOKMARK [2][-]{subsection.17.6.2}{Essential Singular Points}{section.17.6}% 105
+\BOOKMARK [2][-]{subsection.17.6.3}{Poles of Order m}{section.17.6}% 106
+\BOOKMARK [0][-]{chapter.18}{Conformal Mapping}{part.4}% 107
+\BOOKMARK [-1][-]{part.5}{V Ordinary Differential Equations}{}% 108
+\BOOKMARK [-1][-]{part.6}{VI Nonlinear Dynamics}{}% 109
+\BOOKMARK [-1][-]{part.7}{VII Partial Differential Equations}{}% 110
+\BOOKMARK [-1][-]{part.8}{VIII Integral Equations}{}% 111
+\BOOKMARK [-1][-]{part.9}{IX Linear Algebra}{}% 112
+\BOOKMARK [0][-]{chapter.19}{Markov Chains}{part.9}% 113
+\BOOKMARK [-1][-]{part.10}{X Tensors}{}% 114
+\BOOKMARK [-1][-]{part.11}{XI Riemann Geometry}{}% 115
+\BOOKMARK [-1][-]{part.12}{XII Abstract Algebra}{}% 116
+\BOOKMARK [0][-]{chapter.20}{Groups}{part.12}% 117
+\BOOKMARK [0][-]{chapter.21}{Rings}{part.12}% 118
+\BOOKMARK [1][-]{section.21.1}{Ideals}{chapter.21}% 119
+\BOOKMARK [0][-]{chapter.22}{Integral Domains}{part.12}% 120
+\BOOKMARK [0][-]{chapter.23}{GCD Domains}{part.12}% 121
+\BOOKMARK [0][-]{chapter.24}{Unique Factorization Domains}{part.12}% 122
+\BOOKMARK [0][-]{chapter.25}{Principal Ideal Domains}{part.12}% 123
+\BOOKMARK [0][-]{chapter.26}{Fields}{part.12}% 124
+\BOOKMARK [-1][-]{part.13}{XIII Galois Theory}{}% 125
+\BOOKMARK [-1][-]{part.14}{XIV Lie Theory}{}% 126
+\BOOKMARK [0][-]{chapter.27}{Lie Groups}{part.14}% 127
+\BOOKMARK [0][-]{chapter.28}{Lie Algebra}{part.14}% 128
+\BOOKMARK [-1][-]{part.15}{XV C-Star Algebra}{}% 129
+\BOOKMARK [-1][-]{part.16}{XVI Set Theory}{}% 130
+\BOOKMARK [-1][-]{part.17}{XVII Model Theory}{}% 131
+\BOOKMARK [-1][-]{part.18}{XVIII Statistics}{}% 132
+\BOOKMARK [-1][-]{part.19}{XIX Tips and Tricks}{}% 133
+\BOOKMARK [0][-]{chapter.29}{Integration Techniques}{part.19}% 134
+\BOOKMARK [1][-]{section.29.1}{DI Method \(Integration Table\)}{chapter.29}% 135
+\BOOKMARK [1][-]{section.29.2}{Feynman Integration}{chapter.29}% 136
+\BOOKMARK [-1][-]{part.20}{XX Index}{}% 137
+\BOOKMARK [-1][-]{part.21}{XXI Bibliography}{}% 138
