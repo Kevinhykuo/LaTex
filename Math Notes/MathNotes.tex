@@ -325,12 +325,12 @@
 	\tableofcontents
 	
 	\mainmatter
-	\part{Logic} \label{Logic Part}
+	\part{Logic [Empty]} \label{Logic Part}
 	
 	\chapter{Proofs}
 	
 	
-	\part{Numbers} \label{Numbers Part}
+	\part{Numbers [Empty]} \label{Numbers Part}
 	\begin{partintro}
 		content...
 	\end{partintro}
@@ -351,7 +351,7 @@
 	
 
 	
-	\part{Real Analysis} \label{Real Analysis Part}
+	\part{Real Analysis [Empty]} \label{Real Analysis Part}
 	\begin{partintro}
 		\begin{itemize}
 			\item[1.] Kenneth A. Ross - Elementary Analysis (2nd Ed.) \cite{Ross.K-Elementary-Analysis-2013}
@@ -7602,6 +7602,7 @@
 	\section{Zeros and Poles} \label{Zeros and Poles Section - Complex}
 	
 	\begin{theorem}
+		\label{Function pole order takes on zero order of quotient Theorem - Complex}
 		Suppose
 		\begin{itemize}
 			\item[1.] Functions \(p\) and \(q\) are analytic at \(z_0\)
@@ -7759,8 +7760,17 @@
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
-		Assume for contradiction that \(0<\abs{z-z_0}<\delta \) does not imply \(\abs{f(z) - w_0}< \epsilon\). Then \(0<\abs{z-z_0}<\delta \implies \abs{f(z) - w_0} \geq \epsilon\)
+		Assume for contradiction that \(0<\abs{z-z_0}<\delta \) does not imply \(\abs{f(z) - w_0}< \epsilon\). Then \(0<\abs{z-z_0}<\delta \implies \abs{f(z) - w_0} \geq \epsilon\). Thus
+		\begin{align*}
+			g(z) &= \frac{1}{f(z) - w_0} & 0<\abs{z-z_0} < \delta
+		\end{align*}
+		is bounded and analytic. By Riemann's Theorem \(\cref{Riemann's Theorem - Complex}\), \(z_0\) is removable singularity of \(g\), so \(g\) is defined and analytic at \(z_0\). If \(g(z_0) \neq 0\)
+		\begin{align*}
+			f(z) &= \frac{1}{g(z)} + w_0 & 0 < \abs{z - z_0} < \delta
+		\end{align*} 
+		Then \(f(z)\) is analytic at \(z_0\), so \(z_0\) is removable singularity of \(f\). Contradicts assumption \(z_0\) is essential singularity of \(f\).
 	\end{proof}
+	If \(g(z_0) = 0\) then \(g\) has zero of order \(m\) at \(z_0\) (\(g(z_0) \nequiv 0 \) in \( \abs{z-z_0} < \delta\)), then \(f\) has pole of order \(m\) at \(z_0\) (\cref{Function pole order takes on zero order of quotient Theorem - Complex}). Hence, contradiction!
 	
 	\subsection{Poles of Order \(m\)}
 	
@@ -7832,7 +7842,7 @@
 	
 	
 	
-	\part{Ordinary Differential Equations} \label{Ordinary Differential Equations Part}
+	\part{Ordinary Differential Equations [Empty]} \label{Ordinary Differential Equations Part}
 	
 	\begin{theorem}[Green's Theorem]
 		\label{Green's Theorem - ODE}
@@ -7842,10 +7852,10 @@
 		\end{align*}
 	\end{theorem}
 	
-	\part{Nonlinear Dynamics} \label{Nonlinear Dynamics Part}
+	\part{Nonlinear Dynamics [Empty]} \label{Nonlinear Dynamics Part}
 	
 	
-	\part{Partial Differential Equations} \label{Partial Differential Equations Part}
+	\part{Partial Differential Equations [Empty]} \label{Partial Differential Equations Part}
 	
 	\begin{definition}[Dirichlet Problem]
 		\label{Dirichlet Problem Definition - Partial}
@@ -7867,23 +7877,23 @@
 		of one-sided limit of \(f\) at \(x\)
 	\end{theorem}
 	
-	\paragraph{Calculus of Variations} \label{Calculus of Variations Part}
+	\paragraph{Calculus of Variations [Empty]} \label{Calculus of Variations Part}
 	
-	\part{Integral Equations} \label{Integral Equations Part}
+	\part{Integral Equations [Empty]} \label{Integral Equations Part}
 	
 	
-	\part{Linear Algebra} \label{Linear Algebra Part}
+	\part{Linear Algebra [Empty]} \label{Linear Algebra Part}
 	
 	\chapter{Markov Chains} \label{Markov Chains Chapter - Linear Algebra}
 	
 	
-	\part{Tensors} \label{Tensors Part}
+	\part{Tensors [Empty]} \label{Tensors Part}
 	
 	
-	\part{Riemann Geometry} \label{Reimann Geometry Part}
+	\part{Riemann Geometry [Empty]} \label{Reimann Geometry Part}
 	
 	
-	\part{Abstract Algebra} \label{Abstract Algebra Part}
+	\part{Abstract Algebra [Empty]} \label{Abstract Algebra Part}
 	
 	\chapter{Groups} \label{Groups Chapter - Abstract Algebra}
 	
@@ -7903,22 +7913,22 @@
 	\chapter{Fields} \label{Fields Chapter - Abstract Algebra}
 	
 	
-	\part{Galois Theory} \label{Galois Theory Part}
+	\part{Galois Theory [Empty]} \label{Galois Theory Part}
 	
-	\part{Lie Theory} \label{Lie Algebra Part}
+	\part{Lie Theory [Empty]} \label{Lie Algebra Part}
 	
 	\chapter{Lie Groups}
 	
 	\chapter{Lie Algebra}
 	
-	\part{C-Star Algebra} \label{C-Star Algebra Part}
+	\part{C-Star Algebra [Empty]} \label{C-Star Algebra Part}
 	
-	\part{Set Theory} \label{Set Theory Part}
+	\part{Set Theory [Empty]} \label{Set Theory Part}
 	
-	\part{Model Theory} \label{Model Theory Part}
+	\part{Model Theory [Empty]} \label{Model Theory Part}
 	
-	\part{Statistics} \label{Statistics Part}
-	\part{Tips and Tricks} \label{Tips and Tricks Part}
+	\part{Statistics [Empty]} \label{Statistics Part}
+	\part{Tips and Tricks [Empty]} \label{Tips and Tricks Part}
 	
 	\chapter{Integration Techniques} \label{Integration Techniques Chapter - Tips and Tricks}
 	
