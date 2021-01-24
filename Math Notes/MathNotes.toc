@@ -104,7 +104,7 @@
 \contentsline {section}{\numberline {17.6}Behaviour of Functions Near Isolated Singular Points}{160}{section.17.6}%
 \contentsline {subsection}{\numberline {17.6.1}Removable Singular Points}{160}{subsection.17.6.1}%
 \contentsline {subsection}{\numberline {17.6.2}Essential Singular Points}{161}{subsection.17.6.2}%
-\contentsline {subsection}{\numberline {17.6.3}Poles of Order \(m\)}{161}{subsection.17.6.3}%
+\contentsline {subsection}{\numberline {17.6.3}Poles of Order \(m\)}{162}{subsection.17.6.3}%
 \contentsline {section}{\numberline {17.7}Application of Residues}{162}{section.17.7}%
 \contentsline {subsection}{\numberline {17.7.1}Evaluation of Improper Integrals}{162}{subsection.17.7.1}%
 \contentsline {chapter}{\numberline {18}Conformal Mapping}{163}{chapter.18}%

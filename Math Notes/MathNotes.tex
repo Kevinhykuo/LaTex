@@ -7186,13 +7186,13 @@
 	Note: It is convenient to consider the point at infinity as an Isolated Singular Point. That is, if a function \(f\) is analytic in \(0<R_1 \leq \abs{z} < \infty\). Then it has a isolated singular point at \(z_0 = \infty\).
 	
 	\begin{definition}[Residue]
-		Recall the Laurent series \(\cref{Laurent's Theorem - Complex}\), and let \(C\) be any positively oriented simple closed contour around \(z_0\) on punctured disk \(0 < \abs{z-z_0}< R_2\). The residue is defined as \(b_n\) for \(n=0\). That is, 
+		Recall the Laurent series (\cref{Laurent's Theorem - Complex}), and let \(C\) be any positively oriented simple closed contour around \(z_0\) on punctured disk \(0 < \abs{z-z_0}< R_2\).  
 		\begin{align*}
 			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
-				& 0 \abs{z-z_0} < R_2\\
+				& 0 < \abs{z-z_0} < R_2\\
 			b_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{-n+1}} dz
 		\end{align*}
-		The residue:
+		The residue is defined as \(b_n\) for \(n=1\):
 		\begin{align*}
 			\underset{z=z_0}{\Res}[f(z)]
 			= \Res[f(z), z_0] = b_1 = \frac{1}{2\pi i} \int_{C} f(z) dz
@@ -7359,6 +7359,17 @@
 			\sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
 		\end{align*}
 	\end{definition}
+
+	\begin{definition}[Analytic Part of \(f\)]
+		\label{Analytic Part of a Function Definition - Complex}
+		Let \(f\) be a function with an isolated singular point at \(z_0\) in the punctured disk \(0 < \abs{z-z_0}<R_2\).
+		Then the Analytic Part of of \(f\) is this part of the Laurent Series (\cref{Laurent's Theorem - Complex}):
+		\begin{align*}
+			\sum_{n=0}^{\infty} a_n (z-z_0)^n
+		\end{align*}
+	\end{definition}
+	
+	It is clear why this is the analytic part, since this part is analytic throughout \(\abs{z-z_0}<R_2\), and converges to an analytic function. (It's the Taylor series (\cref{Taylor's Theorem - Complex}) part!)
 	
 	\begin{definition}[Removable Singular Points]
 		\label{Removable Singular Points Definition - Complex}
@@ -7469,6 +7480,18 @@
 	\(\phi(z_0) \neq 0\) is essential since \(\phi(z_0) = 0\) implies \(z_0\) is a removable singular point which \cref{Residue at Poles Theorem - Complex} does not apply. \textbf{Always check} \(\phi(z_0) \neq 0\) for calculations! 
 
 	If \(\phi(z_0)\) is undefined, then again \cref{Residue at Poles Theorem - Complex} does not apply.
+	
+	From \cref{Residue at Poles Theorem - Complex}, it is easy to see that if \(f\) has a pole of order \(m\) at \(z_0\):
+	\begin{itemize}
+		\item[1.] \([\lim_{z \rightarrow z_0} (z-z_0)^n f(z) \neq 0] \lor [\lim_{z \rightarrow z_0} (z-z_0)^n f(z) \neq \infty] \implies f(z) \text{ has pole of order } m\)
+		\item[2.] If \(f\) has a pole of order \(m\) at \(z_0\):
+		\begin{align*}
+			\lim_{z\rightarrow z_0} (z-z_0)^n f(z) = \frac{\phi(z)}{(z-z_0)^{m-n}} = 
+			\begin{cases}
+				0 & n > m \\ \infty & n < m
+			\end{cases}
+		\end{align*}
+	\end{itemize}
 	
 	\begin{example}
 		Consider 
