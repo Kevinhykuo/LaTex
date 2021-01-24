@@ -7194,7 +7194,8 @@
 		\end{align*}
 		The residue:
 		\begin{align*}
-			\Res_{z=z_0}[f(z)] = b_1 = \frac{1}{2\pi i} \int_{C} f(z) dz
+			\underset{z=z_0}{\Res}[f(z)]
+			= \Res[f(z), z_0] = b_1 = \frac{1}{2\pi i} \int_{C} f(z) dz
 		\end{align*}
 	\end{definition}
 	
@@ -7248,7 +7249,7 @@
 		\label{Cauch's Residue Theorem - Complex}
 		Let \(C\) be a positively oriented simple closed contour, and \(f\) be a function analytic inside and on \(C\), except at a finite number of singular points \(z_k\) (\(k \in \mathbb{N}\)) inside \(C\), then 
 		\begin{align*}
-			\int_{C} f(z) dz = 2\pi i \sum_{k=1}^{n} \Res_{z=z_k}[f(z)]
+			\int_{C} f(z) dz = 2\pi i \sum_{k=1}^{n} \Res[f(z), z_k] 
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
@@ -7256,8 +7257,8 @@
 		This creates a multiply connected domain consisting of points inside \(C\) but exterior to each \(C_k\) (\cref{Multiply Connected Domains Subsection - Complex}), and using the Cauchy-Goursat Theorem (\cref{Cauchy-Goursat Theorem - Complex}):
 		\begin{align*}
 			\int_{C} f(z) dz - \sum_{k=1}^{n} \int_{C_k} f(z) dz = 0
-			&\implies \int_{C} f(z) dz - \sum_{k=1}^{n} 2\pi i \Res_{z=z_k}[f(z)]= 0 \\
-			&\implies \int_{C} f(z) dz = \sum_{k=1}^{n} 2\pi i \Res_{z=z_k}[f(z)]
+			&\implies \int_{C} f(z) dz - \sum_{k=1}^{n} 2\pi i \Res[f(z), z_k]= 0 \\
+			&\implies \int_{C} f(z) dz = \sum_{k=1}^{n} 2\pi i \Res[f(z), z_k]
 		\end{align*}
 	\end{proof}
 
@@ -7267,7 +7268,7 @@
 		\label{Residue at Infinity Definition - Complex}
 		Let \(f\) be analytic throughout the plane except by a finite number of singular points enclosed inside a positively oriented simple closed contour \(C\), and \(R_1\) be the radius of a circle enclosing \(C\). Then \(f\) is analytic in \(R_1 < \abs{z} < \infty\). Let \(C_0\) be a circular contour oriented \textbf{negatively} with radius \(R_0\) enclosing the previous circle with radius \(R_1\). That is \(R_1 < R_0\). Then the residue of \(f\) at infinity:
 		\begin{align*}
-			\int_{C_0} f(z) dz = 2\pi i \Res_{z = \infty}[f(z)]
+			\int_{C_0} f(z) dz = 2\pi i \Res[f(z), \infty]
 		\end{align*}
 	\end{definition}
 	
@@ -7315,13 +7316,13 @@
 	\begin{theorem}[Residue at Infinity]
 		Let a function \(f\) be analytic everywhere except for a finite number of singular points enclosed by a positively oriented simple closed contour \(C\), then \begin{align*}
 			\int_{C} f(z) dz 
-			= 2\pi i \Res_{z=0} \left[ \frac{f(1/z)}{z^2} \right]
+			= 2\pi i \Res \left[ \frac{f(1/z)}{z^2}, 0 \right]
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
 		Following our definition (\cref{Residue at Infinity Definition - Complex}), the point of infinity lies outside of \(C_0\). Since \(f\) is anaytic throughout the region bounded by \(C\) and \(C_0\), using the Principle of Deformation of Paths (\cref{Principle of Deformation of Paths Corollary - Complex}):
 		\begin{align*}
-			\int_{C} f(z) dz = \int_{-C_0} f(z) dz = - \int_{C_0} f(z) dz = -2\pi i \Res_{z=\infty}[f(z)]
+			\int_{C} f(z) dz = \int_{-C_0} f(z) dz = - \int_{C_0} f(z) dz = -2\pi i \Res[f(z), \infty]
 		\end{align*}
 		To find the residue, consider the Laurent series:
 		\begin{align*}
@@ -7332,15 +7333,15 @@
 		\begin{align*}
 			\frac{1}{z^2} f\left(\frac{1}{z}\right)
 			&= \sum_{n=-\infty}^{\infty} \frac{c_n}{z^{n+2}} = \sum_{n=-\infty}^{\infty} \frac{c_{n-2}}{z^n} & 0 < \abs{z} < \frac{1}{R_1} \\
-			c_{-1} &= \Res_{z=0}\left[\frac{f(1/z)}{z^2}\right] = \frac{1}{2\pi i} \int_{-C_0} f(z) dz
+			c_{-1} &= \Res\left[\frac{f(1/z)}{z^2}, 0\right] = \frac{1}{2\pi i} \int_{-C_0} f(z) dz
 		\end{align*}
 		Thus
 		\begin{align*}
 			\int_{C_0} f(z) dz = 2\pi i \Res_{z=\infty}[f(z)]
 			&\implies
-			\Res_{z = \infty}[f(z)] = -\Res_{z=0} \left[\frac{f(1/z)}{z^2}\right] \\
+			\Res_{z = \infty}[f(z)] = -\Res\left[\frac{f(1/z)}{z^2}, 0\right] \\
 			&\implies
-			\int_{C} f(z) dz = 2\pi i \Res_{z=0} \left[\frac{f(1/z)}{z^2}\right]
+			\int_{C} f(z) dz = 2\pi i \Res\left[\frac{f(1/z)}{z^2}, 0\right]
 		\end{align*}
 	\end{proof}
 	
@@ -7426,7 +7427,7 @@
 				\(\phi(z_0)\) is analytic and \(\phi(z_0) \neq 0\).
 			\item[3.]
 			\begin{align*}
-				\Res_{z=z_0}[f(z)] &= \frac{\phi^{(m-1)}}{(m-1)!}	&	m \in \mathbb{N}
+				\Res[f(z), z_0] &= \frac{\phi^{(m-1)}}{(m-1)!}	&	m \in \mathbb{N}
 			\end{align*}
 		\end{itemize}
 	\end{theorem}
@@ -7460,7 +7461,7 @@
 		\begin{align*}
 			f(z) = \sum_{n=0}^{\infty} \frac{\phi^{(n)}(z_0)}{n!} (z-z_0)^{n-m}
 		\end{align*}
-		The Laurent series with \(\phi(z_0) \neq 0\) tells us that \(z_0\) is a pole of order \(m\) of \(f(z)\), and the coefficient of \(1/(z-z_0)\) tells us the coefficient of \(\Res_{z=z_0}[f(z)]\).
+		The Laurent series with \(\phi(z_0) \neq 0\) tells us that \(z_0\) is a pole of order \(m\) of \(f(z)\), and the coefficient of \(1/(z-z_0)\) tells us the coefficient of \(\Res[f(z),z_0]\).
 	\end{proof}
 
 	{\color{Red} \textbf{Warning!} Resort to Laurent series for to obtain residues in cases where \(\phi(z_0) = 0\) or \(\phi(z_0)\) is undefined!}
@@ -7497,7 +7498,7 @@
 			&\implies \frac{\phi^{(m-1)}(z_0)}{(m-1)!} 
 				= \frac{1}{2\pi i} \int_{C} \frac{\phi(z)}{(z-z_0)^{m}} dz
 				= \frac{1}{2\pi i} \int_{C} f(z) dz
-				= \Res_{z=z_0}[f(z)]
+				= \Res[f(z),z_0]
 		\end{align*}
 	\end{example}
 
@@ -7597,7 +7598,7 @@
 
 	Note: We say a function is identically zero \(f(z) \equiv 0\) if it becomes the zero function and not merely zero at some point in the domain.
 	
-	Note: It appears that \cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex} and \cref{f analytic and zero in domain implies identically zero in that domain Theorem - Complex} are contrapositives of each other.
+	Note: From \cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex} and \cref{f analytic and zero in domain implies identically zero in that domain Theorem - Complex}, either a zero is isolated, or it is zero throughout a domain.
 	
 	\section{Zeros and Poles} \label{Zeros and Poles Section - Complex}
 	
