@@ -7609,6 +7609,8 @@
 			\item[2.] \(p(z_0) \neq 0\), and \(q\) has zero of order \(m\) at \(z_0\)
 		\end{itemize}
 		Then \(p(z)/q(z)\) has pole of order \(m\) at \(z_0\). That is, the order of the pole of the function takes on the order of the zero of the quotient if the conditions are satisfied.
+		
+		For converse, see \cref{Function pole order takes on zero order of quotient converse example - Complex}.
 	\end{theorem}
 	\begin{proof}
 		Suppose \(p\) and \(q\) are analytic at \(z_0\), \(p(z_0) \neq 0\), and \(q(z_0)\) is a pole of order \(m\).
@@ -7672,6 +7674,7 @@
 	\end{proof}
 	
 	\begin{example}
+		\label{Function pole order takes on zero order of quotient converse example - Complex}
 		Let \(p\) and \(q\) be analytic functions at \(z_0\). Show
 		\begin{align*}
 			&[p(z_0) \neq 0] \land [q(z_0) = 0] \land \left[ \frac{p(z)}{q(z)} \text{ has pole of order } m \text{ at } z_0\right]\\
@@ -7679,7 +7682,17 @@
 		\end{align*}
 	\end{example}
 	\begin{proof}
-		content
+		{\color{Grey}
+		\begin{align*}
+			\frac{p(z)}{q(z)} = \frac{\phi(z)}{(z-z_0)^m}
+			&\implies \frac{p(z)}{\phi(z)} (z-z_0)^m = q(z) &\text{\Cref{Residue at Poles Theorem - Complex}}
+		\end{align*}
+		Now, both \(p(z)\) and \(\phi(z)\) are analytic and nonzero at \(z_0\), so let \(f(z) = p(z)/\phi(z)\) which is also analytic and nonzero at \(z_0\). Then 
+		\begin{align*}
+			f(z)(z-z_0)^m = q(z)
+		\end{align*}
+		By \cref{Zero of order m iff zero can be factored Theorem - Complex}, we have \(q(z)\) has a zero of order \(m\) at \(z_0\).
+		}
 	\end{proof}
 
 	\begin{theorem}[Bolzano-Weierstrass Theorem]
@@ -7691,14 +7704,26 @@
 		Show if function \(f\) is analytic in region \(R\) consisting of all points inside and on simple closed contour \(C\), except for poles inside \(C\), and all zeros of \(f\) in \(R\) are interior to \(C\) are finite in order, then the zeros must be finite in number.
 	\end{example}
 	\begin{proof}
-		content
+		{\color{Grey}
+		Suppose for contradiction that zeros are infinite in number, that is, the set of zeros for \(f\) is an infinite set. Then \(\exists z_0 \in \{z : f(z) = 0\}\) where \(z_0\) is an accumulation point by Bolzano-Weierstrauss Theorem (\cref{Bolzano-Weierstrass Theorem - Complex}).
+		
+		If all points in the deleted neighbourhood of \(z_0\) which is also in \(R\) is a zero of \(f\), then that implies that \(f(z) = 0\) for all \(z \in R\). This contradicts that we have poles of \(f\) in \(R\), so this can not be the case. 
+		
+		Then there must exists a deleted neighbourhood \(0 < \abs{z-z_0}<\epsilon\) where a point \(x \in R\) is not a zero of \(f\) (\(f(x) \neq 0\)). This implies \(f(z) \nequiv 0\) in all neighbourhoods of \(z_0\), so \(f(z) \neq 0\) throughout some deleted neighbourhood of \(z_0\) (\cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex}). We also know that \(f\) only has isolated zeros.
+		
+		Now, take \(\{z : f(z) = 0\} \setminus \{z_0\}\). This is still an infinite set, so we can apply Bolzano-Weierstrauss theorem to obtain another accumulation point \(z_1 \neq z_0\) that is exterior to the deleted neighbourhood of \(z_0\) where \(f(z) \neq 0\). Applying the same logic as before, we get \(f(z) \neq 0\) throughout some deleted neighbourhood of \(z_1\). 
+		
+		We repeat this process to get isolated zeros \(z_0, z_1, z_2, \cdots \in R\). Since the zeros are all isolated, the radius each deleted neighbourhood of each point is the distance of each isolated zero to their closest isolated zero. Eventually, \(R\) will be contained by the union of finitely many deleted neighbourhoods. This implies the zeros of \(f\) are finite in number, hence we have a contradiction to our original assumptions that zeros are infinite in number.
+		}
 	\end{proof}
 
 	\begin{example}
 		Let \(R\) be a region consisting of all points interior and on a simple closed contour \(C\). Show if \(f\) is analytic in region \(R\) except to poles inside \(C\), then the poles must be finite in number. 
 	\end{example}
 	\begin{proof}
-		content
+		{\color{Grey}
+		Poles are isolated singular points, so \(f\) is analytic in the deleted neighbourhood of poles. Using the same logic as before, \(R\) will be contained by finitely many unions of the deleted neighbourhoods of the poles (which are inside \(R\)), so we must have a finite number of poles in \(R\).
+		}
 	\end{proof}
 
 
