@@ -7246,7 +7246,7 @@
 	\end{figure}
 	
 	\begin{theorem}[Cauchy's Residue Theorem]
-		\label{Cauch's Residue Theorem - Complex}
+		\label{Cauchy's Residue Theorem - Complex}
 		Let \(C\) be a positively oriented simple closed contour, and \(f\) be a function analytic inside and on \(C\), except at a finite number of singular points \(z_k\) (\(k \in \mathbb{N}\)) inside \(C\), then 
 		\begin{align*}
 			\int_{C} f(z) dz = 2\pi i \sum_{k=1}^{n} \Res[f(z), z_k] 
@@ -7661,6 +7661,7 @@
 	\end{proof}
 
 	\begin{theorem}
+		\label{Residue of Simple Pole Theorem - Complex}
 		Let function \(p\) and \(q\) be analytic at \(z_0\).
 		\begin{align*}
 			&[p(z_0) \neq 0] \land [q(z_0) = 0] \land [q'(z_0) \neq 0] \\
@@ -7849,9 +7850,360 @@
 	
 	\subsection{Evaluation of Improper Integrals} \label{Evaluation of Improper Integrals Subsection - Complex}
 	
+	\begin{definition}[Converge (Infinite Integral)]
+		\label{Converge (Infinite Integral) Definition - Compleex}
+		A semi-infinite integral exists if the improper integral converges to a limit:
+		\begin{align*}
+			\int_{0}^{\infty} f(x) dx = \lim_{R\rightarrow \infty} \int_{0}^{R} f(x) dx
+		\end{align*}
+		Likewise, for an infinite integral
+		\begin{align*}
+			\int_{-\infty}^{\infty} f(x) dx = \lim_{R_1 \rightarrow \infty} \int_{R_1}^{0} f(x) dx + \lim_{R_2 \rightarrow \infty} \int_{0}^{R_2} f(x) dx
+		\end{align*}
+	\end{definition}
+
+	\begin{definition}[Cauchy Principal Value]
+		\label{Cauchy Principal Value Definition - Complex}
+		The Cauchy Principal Value exists if the given limit exists:
+		\begin{align*}
+			\operatorname{P.V.} \int_{-\infty}^{\infty} f(x) dx = \lim_{R\rightarrow \infty} \int_{-R}^{R} f(x) dx
+		\end{align*}
+	\end{definition}
 	
+	Note: Integral Converges \(\implies\) Cauchy Principal Value Exists, since 
+	\begin{align*}
+		\lim_{R\rightarrow \infty} \int_{-R}^{R} f(x) dx
+		= \lim_{R\rightarrow \infty} \int_{-R}^{0} f(x) dx 
+		+ \lim_{R\rightarrow \infty} \int_{0}^{R} f(x) dx
+	\end{align*}
 	
+	\begin{example} Cauchy Principal Value exists does not imply integral converges
+		\begin{align*}
+			\operatorname{P.V.} \int_{-\infty}^{\infty} x \ dx 
+			= \lim_{R \rightarrow \infty} \int_{-R}^{R} x \ dx 
+			= \lim_{R \rightarrow \infty} \eval{\frac{x^2}{2}}_{-R}^{R} 
+			= \lim_{R \rightarrow \infty} 0 = 0 
+		\end{align*}
+		However,
+		\begin{align*}
+			\int_{-\infty}^{\infty}
+			= \lim_{R_1 \rightarrow \infty} \int_{-R_1}^{0} x \ dx + \lim_{R_2 \rightarrow \infty} x \ dx
+			= \lim_{R_1 \rightarrow \infty} \eval{\frac{x^2}{2}}_{-R_1}^{0} + \lim_{R_2 \rightarrow \infty} \eval{\frac{x^2}{2}}_{0}^{R_2}
+			= - \lim_{R_1 \rightarrow \infty} \frac{R_1^2}{2} + \lim_{R_2 \rightarrow \infty} \frac{R_2^2}{2}
+		\end{align*}
+		Which the limits do not exist. 
+	\end{example}
 	
+%	\subsubsection{Evaluation of Integral Over Semicircular Region Above Real Axis}
+	
+	\begin{definition}[Rational Function]
+		\label{Rational Function Definition - Complex}
+		\begin{align*}
+			f(z) = \frac{p(z)}{q(z)}
+		\end{align*}
+		where \(p(z)\) and \(q(z)\) are polynomials with coefficients in \(\mathbb{R}\), and no common factors. \(q(z)\) have no real zeros, but at least one above the real axis.
+	\end{definition}
+
+	We consider the positively oriented contour \(C\) consisting of the line segment from \(-R\) to \(R\) on the real axis and the top half of the circle with radius \(\abs{z} = R\) (\(C_R\)), which is large enough where the zeros of the function \(z_1, z_2, z_3, \ldots, z_n\) all lie within the region enclosed by the contour. 
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=-12, xmax=12,
+				ymin=0, ymax=11,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(8, 0) [$R$]
+					(-8, 0) [$-R$]
+				};
+			
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=none,
+				]
+				coordinates {
+					(-6, 6) [$C$]
+				};
+				
+%				\addplot[
+%				only marks,
+%				nodes near coords,
+%				point meta = explicit symbolic, 
+%				mark=*,
+%				]
+%				coordinates {
+%					(-5, 3) [$z_1$]
+%				};
+%			
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.375 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 0) circle (8);
+				
+				\draw[line width=2pt]  (axis cs: -8,0)--(axis cs: 8,0);
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	By Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
+	\begin{align*}
+		\int_{-R}^{R} f(x) dx + \int_{C_R} f(z) dz = 2\pi i \sum_{k=1}^{n} \Res[f(z), z_k]
+	\end{align*}
+	If 
+	\begin{align*}
+		\lim_{R\rightarrow \infty} \int_{C_R} f(z) dz = 0
+	\end{align*}
+	Then
+	\begin{align*}
+		\operatorname{P.V.} \int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum_{k=1}^{n} \Res[f(z), z_k]
+	\end{align*}
+	
+	\begin{question}
+		Is the choice of the region being above or below the real axis is arbitrary? It seems to be the case. The only thing that will change is the direction of the line integral on the real axis.
+	\end{question}
+
+	\begin{example}
+		Consider the integral 
+		\begin{align*}
+			\int_{0}^{\infty} f(x) dx 
+			= \int_{0}^{\infty} \frac{1}{x^6 + 1} dx
+		\end{align*}
+		The function 
+		\begin{align*}
+			f(z) &= \frac{1}{z^6 + 1} 
+				& \text{Roots: } c_k &= \exp[i\left(\frac{\pi}{6}\right) + \left(\frac{\pi}{3}\right)]
+		\end{align*}
+		Of these roots, \(c_0 = e^{i\pi/6}, \ c_1 = i, \ c_2 = e^{i5\pi/6}\) lie above the real axis. Letting \(B_0, \ B_1\), and \(B_2\) be their residues respectively and using Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
+		\begin{align*}
+			\int_{-R}^{R} f(x) dx + \int_{C_R} f(z) dz = 2\pi i(B_0 + B_1 + B_2)
+		\end{align*}
+		\Cref{Residue of Simple Pole Theorem - Complex} tells us that these are simple poles, so using said theorem:
+		\begin{align*}
+			\Res[\frac{p(z)}{q(z)}, z=z_0] = \frac{p(z_0)}{q(z_0)}
+			\implies B_k = \Res[\frac{1}{z^6 + 1}, z_k] = \frac{1}{6 c_k^5} = -\frac{c_k}{6}
+		\end{align*}
+		Hence
+		\begin{align*}
+			\int_{-R}^{R} f(x) dx + \int_{C_R} f(z) dz 
+			= 2\pi i(B_0 + B_1 + B_2)
+			= 2\pi i \cdot \frac{1}{6} (e^{i\pi/6} + i + e^{i5\pi/6})
+			= \frac{2\pi}{3}
+		\end{align*}
+		Now, using the ML Inequality Theorem (\cref{ML Inequality Theorem - Complex}), we know
+		\begin{align*}
+			\abs{z^6 + 1} \geq \abs{\abs{z}^6 - 1} = R^6 - 1
+		\end{align*}
+		So
+		\begin{align*}
+			\abs{f(z)} = \frac{1}{\abs{z^6 + 1}} \leq M_R = \frac{1}{R^6 - 1} 
+			&\implies \abs{\int_{C_R} f(z) dz} \leq M_R \pi R = \frac{\pi R}{R^6 - 1}
+		\end{align*}
+		It's clear that 
+		\begin{align*}
+			\lim_{R \rightarrow \infty} \int_{C_R} f(z) dz = 0
+		\end{align*}
+		Hence
+		\begin{align*}
+			\lim_{R \rightarrow \infty} \int_{-R}^{R} \frac{1}{x^6 + 1} dx = \frac{2\pi}{3}
+		\end{align*}
+		Since \(f(x)\) is an even function:
+		\begin{align*}
+			\int_{0}^{\infty} \frac{1}{x^6 + 1} dx = \frac{\pi}{3}
+		\end{align*}
+	\end{example}
+
+	\subsection{Improper Integrals from Fourier Analysis} \label{Improper Integrals from Fourier Analysis Subsection - Complex}
+	
+	Evaluating integrals of the form
+	\begin{align*}
+		\int_{-\infty}^{\infty} &f(x) \sin(ax) dx &
+		\int_{-\infty}^{\infty} &f(x) \cos(ax) dx &
+		a &\in \mathbb{R}_{>0}
+	\end{align*}
+	We can use 
+	\begin{align*}
+		\int_{-R}^{R} f(x) \cos(ax) dx + i \int_{-R}^{R} f(x) \sin(ax) dx 
+		= \int_{-R}^{R} f(x) e^{iax} dx
+	\end{align*}
+	and that 
+	\begin{align*}
+		\abs{e^{iaz}} = \abs{e^{iax} e^{-ay}} = e^{-ay}
+	\end{align*}
+	is bounded to the upper half of the complex plane to find the integrals using the method in the previous subsection (\cref{Evaluation of Improper Integrals Subsection - Complex}).
+	
+	\subsection{Jordan's Lemma} \label{Jordan's Lemma Subsection - Complex}
+	
+	\begin{lemma}[Jordan's Inequality]
+		\label{Jordan's Inequality Lemma - Complex}
+		\begin{align*}
+			\int_{0}^{\pi} e^{-R\sin(\theta)} d\theta &< \frac{\pi}{R}	&	R > 0
+		\end{align*}
+	\end{lemma}
+	\begin{proof}
+		Consider the functions 
+		\begin{align*}
+			f(\theta) & = \sin(\theta) & g(\theta) = \frac{2\theta}{\pi}
+		\end{align*}
+		Now 
+		\begin{align*}
+			\sin(\theta) \geq \frac{2\theta}{\pi} 
+			&\implies e^{-R \sin(\theta)} \leq e^{-2R \theta / \pi}
+				& \theta \in \left[0, \frac{\pi}{2}\right], \ R>0
+		\end{align*}
+		Thus
+		\begin{align*}
+			\int_{0}^{\pi/2} e^{-R \sin(\theta)} d\theta
+			\leq \int_{0}^{\pi/2} e^{-2 R \theta/\pi} d\theta  
+			= \frac{\pi}{2R}(1 - e^{-R}) \leq \frac{\pi}{2R}
+		\end{align*}
+		Since \(\sin(\theta)\) is symmetric about \(\pi/2\) on \(\theta \in [0, \pi]\):
+		\begin{align*}
+			\int_{0}^{\pi} e^{-R\sin(\theta)} d\theta &< \frac{\pi}{R}	&	R > 0
+		\end{align*}
+	\end{proof}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=10cm,
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=0, xmax=4,
+				ymin=0, ymax=1.5,
+				axis lines = middle,
+				xticklabels={}, yticklabels={},
+				grid=none,
+				major tick style={draw=none},
+				minor tick style={draw=none},
+				legend pos = north east,
+				]
+				
+				\addplot [domain=-2*pi:2*pi, samples=1000,]
+				{sin(deg(x)};
+				\addlegendentry{$f(z) = \sin(\theta)$}
+				
+				\addplot [line width=1pt, domain=-2*pi:2*pi, samples=2,]
+				{2*x/pi};
+				\addlegendentry{$g(z) = \frac{2\theta}{\pi}$}
+				
+				\addplot [dashed, mark=none] coordinates {(pi/2, 0) (pi/2, 1)};
+				
+				\addplot[
+				domain=-2*pi:2*pi,
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					{(pi, 0)} [$\pi$]
+					{(pi/2, 0)} [$\pi/2$]
+				};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	\begin{theorem}[Jordan's Lemma]
+		\label{Jordan's Lemma}
+		Suppose
+		\begin{itemize}
+			\item[1.] Function \(f(z)\) is analytic at all points in the upper half plane exterior to circle \(\abs{z} = R_0\)
+			\item[2.] \(C_R\) is a semicircle \(z = Re^{i\theta}\), \(\theta \in [0,\pi]\) and \(R>R_0\)
+			\item[3.] \(\forall z \in C_R, \exists M_R > 0\) such that 
+			\begin{align*}
+				\abs{f(z)} &\leq M_R	&	 \lim_{R \rightarrow \infty} M_R &= 0
+			\end{align*}
+		\end{itemize}
+		Then \(\forall a > 0\):
+		\begin{align*}
+			\lim_{R \rightarrow \infty} \int_{C_R} f(z) e^{iaz} dz = 0
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Assuming the statements in the theorem are true:
+		\begin{align*}
+			\int_{C_R} f(z) e^{iaz} dz = \int_{0}^{\pi} f(Re^{i\theta}) \exp(iaRe^{i\theta}) Rie^{i\theta} d\theta
+		\end{align*}
+		Since 
+		\begin{align*}
+			\abs{f(Re^{i\theta})} &\leq M_R	& \abs{\exp(iaRe^{i\theta})} \leq e^{-aR\sin(\theta)}
+		\end{align*}
+		Using Jordan's Inequality (\cref{Jordan's Inequality Lemma - Complex}):
+		\begin{align*}
+			\abs{\int_{C_R} f(z) e^{iaz} dz} \leq M_R R \int_{0}^{\pi} e^{-aR \sin(\theta)} d\theta < \frac{M_R \pi}{a}
+		\end{align*}
+		Since \( \lim_{R \rightarrow \infty} M_R = 0\)
+		\begin{align*}
+			\lim_{R \rightarrow \infty} \int_{C_R} f(z) e^{iaz} dz = 0
+		\end{align*}
+	\end{proof}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=-12, xmax=12,
+				ymin=0, ymax=11,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(8, 0) [$R$]
+					(4, 0) [$R_0$]
+				};
+			
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=none,
+				]
+				coordinates {
+					(-6, 6) [$C_R$]
+				};
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.375 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 0) circle (8);
+				
+				\draw[postaction={decorate}]
+				(axis cs: 0, 0) circle (4);
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+		
+
+
 	
 	
 	
