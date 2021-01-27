@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  26 JAN 2021 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  26 JAN 2021 19:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1726,53 +1726,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 4870--4872
 
  []
 
-[104] [105] [106] [107] [108] [109] [110]
+[104] [105] [106] [107] [108] [109]
 ===== Image 'tikz/MathNotes-figure34' is up-to-date. ======
-
-Overfull \hbox (5.87373pt too wide) detected at line 5228
-[]
- []
-
-[111 <./tikz/MathNotes-figure34.pdf>] [112] [113]
+[110 <./tikz/MathNotes-figure34.pdf>] [111]
 ===== Image 'tikz/MathNotes-figure35' is up-to-date. ======
-[114 <./tikz/MathNotes-figure35.pdf>] [115] [116] [117] [118]
-===== Image 'tikz/MathNotes-figure36' is up-to-date. ======
-[119 <./tikz/MathNotes-figure36.pdf>]
-Overfull \hbox (5.2982pt too wide) detected at line 5708
+
+Overfull \hbox (5.87373pt too wide) detected at line 5319
 []
  []
 
-[120] [121] [122] [123] [124
-
-]
-Chapter 16.
-[125] [126] [127] [128] [129] [130]
+[112 <./tikz/MathNotes-figure35.pdf>] [113] [114]
+===== Image 'tikz/MathNotes-figure36' is up-to-date. ======
+[115 <./tikz/MathNotes-figure36.pdf>] [116] [117] [118] [119]
 ===== Image 'tikz/MathNotes-figure37' is up-to-date. ======
-[131 <./tikz/MathNotes-figure37.pdf>]
+[120 <./tikz/MathNotes-figure37.pdf>]
+Overfull \hbox (5.2982pt too wide) detected at line 5799
+[]
+ []
+
+[121] [122] [123] [124]
+Chapter 16.
+[125
+
+] [126] [127] [128] [129] [130]
 ===== Image 'tikz/MathNotes-figure38' is up-to-date. ======
-[132 <./tikz/MathNotes-figure38.pdf>] [133]
+[131 <./tikz/MathNotes-figure38.pdf>]
 ===== Image 'tikz/MathNotes-figure39' is up-to-date. ======
+[132 <./tikz/MathNotes-figure39.pdf>] [133]
+===== Image 'tikz/MathNotes-figure40' is up-to-date. ======
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [134]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [135 <./tikz/MathNotes-figure39.pdf>] [136] [137] [138] [139]
-===== Image 'tikz/MathNotes-figure40' is up-to-date. ======
-[140] [141 <./tikz/MathNotes-figure40.pdf>]
+ [135 <./tikz/MathNotes-figure40.pdf>] [136] [137] [138] [139]
 ===== Image 'tikz/MathNotes-figure41' is up-to-date. ======
-[142 <./tikz/MathNotes-figure41.pdf>] [143] [144] [145] [146] [147] [148]
+[140] [141 <./tikz/MathNotes-figure41.pdf>]
+===== Image 'tikz/MathNotes-figure42' is up-to-date. ======
+[142 <./tikz/MathNotes-figure42.pdf>] [143] [144] [145] [146] [147] [148]
 [149] [150] [151] [152]
 Chapter 17.
-===== Image 'tikz/MathNotes-figure42' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure43' is up-to-date. ======
 [153
 
 ]
-===== Image 'tikz/MathNotes-figure43' is up-to-date. ======
-[154 <./tikz/MathNotes-figure42.pdf>] [155 <./tikz/MathNotes-figure43.pdf>]
+===== Image 'tikz/MathNotes-figure44' is up-to-date. ======
+[154 <./tikz/MathNotes-figure43.pdf>] [155 <./tikz/MathNotes-figure44.pdf>]
 [156] [157] [158] [159] [160] [161] [162] [163]
-Overfull \hbox (23.8825pt too wide) in paragraph at lines 7935--7935
+Overfull \hbox (23.8825pt too wide) in paragraph at lines 8026--8026
 |[]\OT1/cmr/bx/n/17.28 Behaviour of Func-tions Near Iso-lated Sin-gu-lar Points
 | 
  []
@@ -1780,16 +1782,16 @@ Overfull \hbox (23.8825pt too wide) in paragraph at lines 7935--7935
 [164] [165]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 8005.
+(hyperref)                removing `math shift' on input line 8096.
 
 [166]
-===== Image 'tikz/MathNotes-figure44' is up-to-date. ======
-[167 <./tikz/MathNotes-figure44.pdf>] [168] [169]
 ===== Image 'tikz/MathNotes-figure45' is up-to-date. ======
+[167 <./tikz/MathNotes-figure45.pdf>] [168] [169]
 ===== Image 'tikz/MathNotes-figure46' is up-to-date. ======
-[170 <./tikz/MathNotes-figure45.pdf>] [171 <./tikz/MathNotes-figure46.pdf>]
 ===== Image 'tikz/MathNotes-figure47' is up-to-date. ======
-[172 <./tikz/MathNotes-figure47.pdf>]
+[170 <./tikz/MathNotes-figure46.pdf>] [171 <./tikz/MathNotes-figure47.pdf>]
+===== Image 'tikz/MathNotes-figure48' is up-to-date. ======
+[172 <./tikz/MathNotes-figure48.pdf>]
 Chapter 18.
 [173
 
@@ -1888,8 +1890,8 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40756 strings out of 479382
- 925423 string characters out of 5869369
+ 40760 strings out of 479382
+ 925495 string characters out of 5869369
  1351946 words of memory out of 5000000
  56006 multiletter control sequences out of 15000+600000
  445049 words of font info for 167 fonts, out of 8000000 for 9000
@@ -1924,10 +1926,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (245 pages, 925867 bytes).
+Output written on MathNotes.pdf (245 pages, 932591 bytes).
 PDF statistics:
- 3671 PDF objects out of 4296 (max. 8388607)
- 3233 compressed objects within 33 object streams
- 1030 named destinations out of 1200 (max. 500000)
- 1397 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3690 PDF objects out of 4296 (max. 8388607)
+ 3251 compressed objects within 33 object streams
+ 1033 named destinations out of 1200 (max. 500000)
+ 1402 words of extra memory for PDF output out of 10000 (max. 10000000)
 

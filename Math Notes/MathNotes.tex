@@ -5073,6 +5073,97 @@
 	
 	\subsection{Examples} 
 	
+	\begin{example}(Beware of domain of definition and analyticity of function when using Cauchy-Goursat Theorem)
+		Let \(C\) be a positively oriented curve of a semicircle from of radius \(\abs{z} \leq 1\) from \(\theta \in [0, \pi]\), and consider a function:
+		\begin{align*}
+			f(z) = z^{1/2}
+			\begin{cases}
+				0 & z = 0 \\
+				\sqrt{r} e^{i\theta/2} & r>0, \ \theta \in \left(-\frac{\pi}{2}, \frac{3\pi}{2}\right)
+			\end{cases}
+		\end{align*}
+		Show:
+		\begin{align*}
+			\int_{C} f(z) dz = 0
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			From the domain of definition of the function, we can see that is is not defined on the negative real axis. Now, let's check the analyticity. We have the polar form of the Cauchy-Riemann Equations (\cref{Cauchy-Riemann Equations (Polar) Theorem - Complex}):
+			\begin{align*}
+				ru_r &= v_\theta &
+				u_\theta &= -rv_r
+			\end{align*}
+			Knowing \(f(z) = \sqrt{r}e^{i\theta/2} = \sqrt{r}[\cos(\theta/2) + i \sin(\theta/2)]\):
+			\begin{align*}
+				r u_r &= r\left[\frac{1}{2}r^{-1/2} \cos\left(\frac{\theta}{2}\right)\right]
+						= \frac{1}{2}\sqrt{r} \cos\left(\frac{\theta}{2}\right) &
+				v_\theta &= \sqrt{r} \cos\left(\frac{\theta}{2}\right) \frac{1}{2} 
+							= \frac{1}{2}\sqrt{r}\cos\left(\frac{\theta}{2}\right) \\
+				u_\theta &= -\sqrt{r}\sin\left(\frac{\theta}{2}\right) \frac{1}{2}
+							= - \frac{1}{2} \sqrt{r} \sin\left(\frac{\theta}{2}\right) &
+				-rv_r &= -r \left[\frac{1}{2} r^{-1/2} \sin\left(\frac{\theta}{2}\right)\right]
+						= -\frac{1}{2} \sqrt{r} \sin\left(\frac{\theta}{2}\right)
+			\end{align*}
+			While the polar form of the Cauchy-Riemann equations are satisfied, keep in mind that it does not apply at \(z=0\). \(f(z)\) fails to be analytic at \(z=0\). Due to these, we can not use the Cauchy-Goursat Theorem. We must integrate \(f(z)\) over the contour directly. Let \(l_1\) be the line from \(0\) to \(1\), \(l_2\) be a line from \(-1\) to \(0\), and \(C_R\) be a semicircular contour from \(0\) to \(\pi\) with radius \(\abs{z}=1\). The parameterizations are then: 
+			\begin{align*}
+				l_1: \ z&=r & 
+				l_2: \ z&=r &
+				C_R: \ z=e^{i\theta}
+			\end{align*}
+			The contour integral:
+			\begin{align*}
+				\int_{C} f(z) dz 
+				&= \int_{0}^{1} \sqrt{r} dr + \int_{-1}^{0} \sqrt{r} dr + \int_{C_R} f(z) dz
+				 = \int_{-1}^{1} \sqrt{r} dr + \int_{0}^{\pi} e^{i\theta/2}  i e^{i\theta} d\theta \\
+				&= \frac{1}{2}\eval{r^{-1/2}}_{-1}^{1} + i \int_{0}^{\pi} e^{i3\theta/2} d\theta 
+				 = \frac{1}{2}(1 + i) + i \frac{2}{3} \eval{e^{i3\theta/2}}_{0}^{\pi} \\
+				&= \frac{1}{2}(1 + i) + i \frac{2}{3} (-i-1) = 0
+			\end{align*}
+			}
+		\end{proof}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-12, xmax=12,
+					ymin=-0.5, ymax=10,
+					ticks=none,
+					axis lines = middle,
+					axis line style = Black,
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(8, 0) [$1$]
+						(-8, 0) [$-1$]
+					};
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.75 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 8, 0) arc (0:180:80) node[pos=0.75, left] {$C$};;
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0,0) -- (axis cs: 8,0) node[midway, above] {$l_1$};;
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -8,0) -- (axis cs: 0,0) node[midway, above] {$l_2$};;
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}		
+	\end{example}
+	
 	\begin{example}
 		\label{int_0^infty e^(-x^2) dx Derivation Example - Complex}
 		Show

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  26 JAN 2021 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  26 JAN 2021 17:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1173,7 +1173,7 @@ tion.
 \c@corollary=\count354
 \c@definition=\count355
 \c@example=\count356
-No file tikz/MathNotes-figure43.aux.
+No file tikz/MathNotes-figure48.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
@@ -2234,11 +2234,8 @@ LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
 LaTeX Warning: Reference `Laurent's Theorem - Complex' on page 1 undefined on i
 nput line 7421.
 
-\openout4 = `tikz/MathNotes-figure43.dpth'.
-
-[147
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 LaTeX Warning: Reference `Multiply Connected Domains Subsection - Complex' on p
 age 1 undefined on input line 7489.
@@ -2472,8 +2469,14 @@ LaTeX Warning: Reference `int_0^infty e^(-x^2) dx Derivation Example - Complex'
 LaTeX Warning: Reference `int_0^infty e^(-x^2) dx Derivation Example - Complex'
  on page 1 undefined on input line 8490.
 
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+\openout4 = `tikz/MathNotes-figure48.dpth'.
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+[165
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Chapter 18.
 Chapter 19.
 Chapter 20.
@@ -2487,26 +2490,29 @@ Chapter 27.
 Chapter 28.
 Chapter 29.
 
-No file tikz/MathNotes-figure43.bbl.
+No file tikz/MathNotes-figure48.bbl.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39522 strings out of 479382
- 898317 string characters out of 5869369
- 1342473 words of memory out of 5000000
- 55858 multiletter control sequences out of 15000+600000
+ 39549 strings out of 479382
+ 899057 string characters out of 5869369
+ 1340896 words of memory out of 5000000
+ 55885 multiletter control sequences out of 15000+600000
  445350 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,16n,100p,898b,2462s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on tikz/MathNotes-figure43.pdf (1 page, 25332 bytes).
+ 97i,16n,100p,898b,2636s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}</
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on tikz/MathNotes-figure48.pdf (1 page, 35597 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 37 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
