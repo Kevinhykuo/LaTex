@@ -77,69 +77,69 @@
 \contentsline {subsection}{\numberline {15.6.2}Simply Connected Domains}{107}{subsection.15.6.2}%
 \contentsline {subsection}{\numberline {15.6.3}Multiply Connected Domains}{108}{subsection.15.6.3}%
 \contentsline {subsection}{\numberline {15.6.4}Examples}{109}{subsection.15.6.4}%
-\contentsline {section}{\numberline {15.7}Cauchy Integral Formula}{111}{section.15.7}%
-\contentsline {subsection}{\numberline {15.7.1}Consequences}{114}{subsection.15.7.1}%
-\contentsline {section}{\numberline {15.8}Liouville's Theorem and the Fundamental Theorem of Algebra}{115}{section.15.8}%
-\contentsline {section}{\numberline {15.9}Maximum Modulus Principle}{116}{section.15.9}%
-\contentsline {subsection}{\numberline {15.9.1}Examples}{119}{subsection.15.9.1}%
-\contentsline {section}{\numberline {15.10}Poisson Integral Formula}{120}{section.15.10}%
-\contentsline {chapter}{\numberline {16}Series}{123}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Convergence}{123}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Taylor Series}{128}{section.16.2}%
-\contentsline {section}{\numberline {16.3}Laurent Series}{130}{section.16.3}%
-\contentsline {subsection}{\numberline {16.3.1}Examples}{134}{subsection.16.3.1}%
-\contentsline {section}{\numberline {16.4}Absolute and Uniform Convergence of Power Series}{137}{section.16.4}%
-\contentsline {section}{\numberline {16.5}Continuity of Sums of Power Series}{140}{section.16.5}%
-\contentsline {section}{\numberline {16.6}Integration and Differentiation of Power Series}{141}{section.16.6}%
-\contentsline {section}{\numberline {16.7}Uniqueness of Series Representations}{143}{section.16.7}%
-\contentsline {section}{\numberline {16.8}Multiplication and Division of Power Series}{145}{section.16.8}%
-\contentsline {section}{\numberline {16.9}z-Transform}{147}{section.16.9}%
-\contentsline {subsection}{\numberline {16.9.1}Product of z-Transforms}{148}{subsection.16.9.1}%
-\contentsline {chapter}{\numberline {17}Residues and Poles}{151}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Residues}{151}{section.17.1}%
-\contentsline {subsection}{\numberline {17.1.1}Residue at Infinity}{152}{subsection.17.1.1}%
-\contentsline {section}{\numberline {17.2}Three Types of Isolated Singular Points}{154}{section.17.2}%
-\contentsline {section}{\numberline {17.3}Residue at Poles}{155}{section.17.3}%
-\contentsline {section}{\numberline {17.4}Zeros of Analytic Functions}{157}{section.17.4}%
-\contentsline {section}{\numberline {17.5}Zeros and Poles}{159}{section.17.5}%
-\contentsline {section}{\numberline {17.6}Behaviour of Functions Near Isolated Singular Points}{162}{section.17.6}%
-\contentsline {subsection}{\numberline {17.6.1}Removable Singular Points}{162}{subsection.17.6.1}%
-\contentsline {subsection}{\numberline {17.6.2}Essential Singular Points}{163}{subsection.17.6.2}%
-\contentsline {subsection}{\numberline {17.6.3}Poles of Order \(m\)}{164}{subsection.17.6.3}%
-\contentsline {section}{\numberline {17.7}Application of Residues}{164}{section.17.7}%
-\contentsline {subsection}{\numberline {17.7.1}Evaluation of Improper Integrals}{164}{subsection.17.7.1}%
-\contentsline {subsection}{\numberline {17.7.2}Improper Integrals from Fourier Analysis}{167}{subsection.17.7.2}%
-\contentsline {subsection}{\numberline {17.7.3}Jordan's Lemma}{167}{subsection.17.7.3}%
-\contentsline {chapter}{\numberline {18}Conformal Mapping}{171}{chapter.18}%
-\contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{173}{part.5}%
-\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{175}{part.6}%
-\contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{177}{part.7}%
-\contentsline {paragraph}{Calculus of Variations [Empty]}{178}{theorem.18.0.2}%
-\contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{179}{part.8}%
-\contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{181}{part.9}%
-\contentsline {chapter}{\numberline {19}Markov Chains}{183}{chapter.19}%
-\contentsline {part}{X\hspace {1em}Tensors [Empty]}{185}{part.10}%
-\contentsline {part}{XI\hspace {1em}Riemann Geometry [Empty]}{187}{part.11}%
-\contentsline {part}{XII\hspace {1em}Abstract Algebra [Empty]}{189}{part.12}%
-\contentsline {chapter}{\numberline {20}Groups}{191}{chapter.20}%
-\contentsline {chapter}{\numberline {21}Rings}{193}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Ideals}{193}{section.21.1}%
-\contentsline {chapter}{\numberline {22}Integral Domains}{195}{chapter.22}%
-\contentsline {chapter}{\numberline {23}GCD Domains}{197}{chapter.23}%
-\contentsline {chapter}{\numberline {24}Unique Factorization Domains}{199}{chapter.24}%
-\contentsline {chapter}{\numberline {25}Principal Ideal Domains}{201}{chapter.25}%
-\contentsline {chapter}{\numberline {26}Fields}{203}{chapter.26}%
-\contentsline {part}{XIII\hspace {1em}Galois Theory [Empty]}{205}{part.13}%
-\contentsline {part}{XIV\hspace {1em}Lie Theory [Empty]}{207}{part.14}%
-\contentsline {chapter}{\numberline {27}Lie Groups}{209}{chapter.27}%
-\contentsline {chapter}{\numberline {28}Lie Algebra}{211}{chapter.28}%
-\contentsline {part}{XV\hspace {1em}C-Star Algebra [Empty]}{213}{part.15}%
-\contentsline {part}{XVI\hspace {1em}Set Theory [Empty]}{215}{part.16}%
-\contentsline {part}{XVII\hspace {1em}Model Theory [Empty]}{217}{part.17}%
-\contentsline {part}{XVIII\hspace {1em}Statistics [Empty]}{219}{part.18}%
-\contentsline {part}{XIX\hspace {1em}Tips and Tricks [Empty]}{221}{part.19}%
-\contentsline {chapter}{\numberline {29}Integration Techniques}{223}{chapter.29}%
-\contentsline {section}{\numberline {29.1}DI Method (Integration Table)}{223}{section.29.1}%
-\contentsline {section}{\numberline {29.2}Feynman Integration}{223}{section.29.2}%
-\contentsline {part}{XX\hspace {1em}Index}{225}{part.20}%
-\contentsline {part}{XXI\hspace {1em}Bibliography}{227}{part.21}%
+\contentsline {section}{\numberline {15.7}Cauchy Integral Formula}{112}{section.15.7}%
+\contentsline {subsection}{\numberline {15.7.1}Consequences}{115}{subsection.15.7.1}%
+\contentsline {section}{\numberline {15.8}Liouville's Theorem and the Fundamental Theorem of Algebra}{116}{section.15.8}%
+\contentsline {section}{\numberline {15.9}Maximum Modulus Principle}{117}{section.15.9}%
+\contentsline {subsection}{\numberline {15.9.1}Examples}{120}{subsection.15.9.1}%
+\contentsline {section}{\numberline {15.10}Poisson Integral Formula}{121}{section.15.10}%
+\contentsline {chapter}{\numberline {16}Series}{125}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Convergence}{125}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Taylor Series}{130}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Laurent Series}{132}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}Examples}{136}{subsection.16.3.1}%
+\contentsline {section}{\numberline {16.4}Absolute and Uniform Convergence of Power Series}{139}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Continuity of Sums of Power Series}{142}{section.16.5}%
+\contentsline {section}{\numberline {16.6}Integration and Differentiation of Power Series}{143}{section.16.6}%
+\contentsline {section}{\numberline {16.7}Uniqueness of Series Representations}{145}{section.16.7}%
+\contentsline {section}{\numberline {16.8}Multiplication and Division of Power Series}{147}{section.16.8}%
+\contentsline {section}{\numberline {16.9}z-Transform}{149}{section.16.9}%
+\contentsline {subsection}{\numberline {16.9.1}Product of z-Transforms}{150}{subsection.16.9.1}%
+\contentsline {chapter}{\numberline {17}Residues and Poles}{153}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Residues}{153}{section.17.1}%
+\contentsline {subsection}{\numberline {17.1.1}Residue at Infinity}{154}{subsection.17.1.1}%
+\contentsline {section}{\numberline {17.2}Three Types of Isolated Singular Points}{156}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Residue at Poles}{157}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Zeros of Analytic Functions}{159}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Zeros and Poles}{161}{section.17.5}%
+\contentsline {section}{\numberline {17.6}Behaviour of Functions Near Isolated Singular Points}{164}{section.17.6}%
+\contentsline {subsection}{\numberline {17.6.1}Removable Singular Points}{164}{subsection.17.6.1}%
+\contentsline {subsection}{\numberline {17.6.2}Essential Singular Points}{165}{subsection.17.6.2}%
+\contentsline {subsection}{\numberline {17.6.3}Poles of Order \(m\)}{166}{subsection.17.6.3}%
+\contentsline {section}{\numberline {17.7}Application of Residues}{166}{section.17.7}%
+\contentsline {subsection}{\numberline {17.7.1}Evaluation of Improper Integrals}{166}{subsection.17.7.1}%
+\contentsline {subsection}{\numberline {17.7.2}Improper Integrals from Fourier Analysis}{169}{subsection.17.7.2}%
+\contentsline {subsection}{\numberline {17.7.3}Jordan's Lemma}{169}{subsection.17.7.3}%
+\contentsline {chapter}{\numberline {18}Conformal Mapping}{173}{chapter.18}%
+\contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{175}{part.5}%
+\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{177}{part.6}%
+\contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{179}{part.7}%
+\contentsline {paragraph}{Calculus of Variations [Empty]}{180}{theorem.18.0.2}%
+\contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{181}{part.8}%
+\contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{183}{part.9}%
+\contentsline {chapter}{\numberline {19}Markov Chains}{185}{chapter.19}%
+\contentsline {part}{X\hspace {1em}Tensors [Empty]}{187}{part.10}%
+\contentsline {part}{XI\hspace {1em}Riemann Geometry [Empty]}{189}{part.11}%
+\contentsline {part}{XII\hspace {1em}Abstract Algebra [Empty]}{191}{part.12}%
+\contentsline {chapter}{\numberline {20}Groups}{193}{chapter.20}%
+\contentsline {chapter}{\numberline {21}Rings}{195}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Ideals}{195}{section.21.1}%
+\contentsline {chapter}{\numberline {22}Integral Domains}{197}{chapter.22}%
+\contentsline {chapter}{\numberline {23}GCD Domains}{199}{chapter.23}%
+\contentsline {chapter}{\numberline {24}Unique Factorization Domains}{201}{chapter.24}%
+\contentsline {chapter}{\numberline {25}Principal Ideal Domains}{203}{chapter.25}%
+\contentsline {chapter}{\numberline {26}Fields}{205}{chapter.26}%
+\contentsline {part}{XIII\hspace {1em}Galois Theory [Empty]}{207}{part.13}%
+\contentsline {part}{XIV\hspace {1em}Lie Theory [Empty]}{209}{part.14}%
+\contentsline {chapter}{\numberline {27}Lie Groups}{211}{chapter.27}%
+\contentsline {chapter}{\numberline {28}Lie Algebra}{213}{chapter.28}%
+\contentsline {part}{XV\hspace {1em}C-Star Algebra [Empty]}{215}{part.15}%
+\contentsline {part}{XVI\hspace {1em}Set Theory [Empty]}{217}{part.16}%
+\contentsline {part}{XVII\hspace {1em}Model Theory [Empty]}{219}{part.17}%
+\contentsline {part}{XVIII\hspace {1em}Statistics [Empty]}{221}{part.18}%
+\contentsline {part}{XIX\hspace {1em}Tips and Tricks [Empty]}{223}{part.19}%
+\contentsline {chapter}{\numberline {29}Integration Techniques}{225}{chapter.29}%
+\contentsline {section}{\numberline {29.1}DI Method (Integration Table)}{225}{section.29.1}%
+\contentsline {section}{\numberline {29.2}Feynman Integration}{225}{section.29.2}%
+\contentsline {part}{XX\hspace {1em}Index}{227}{part.20}%
+\contentsline {part}{XXI\hspace {1em}Bibliography}{229}{part.21}%

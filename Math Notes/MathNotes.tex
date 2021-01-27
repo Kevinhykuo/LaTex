@@ -5170,7 +5170,7 @@
 					xlabel={$\Re$},
 					ylabel={$\Im$},
 					xmin=-12, xmax=12,
-					ymin=-0.1, ymax=8,
+					ymin=-0.5, ymax=8,
 					ticks=none,
 					axis lines = middle,
 					axis line style = Black,
@@ -5210,6 +5210,45 @@
 				\end{axis}
 			\end{tikzpicture}
 		\end{figure}
+	\end{example}
+
+	\begin{example}
+		Show for a positively oriented simple closed contour \(C\), the area of the region enclosed by \(C\) is 
+		\begin{align*}
+			\frac{1}{2i} \int_{C} \bar{z} dz
+		\end{align*}
+		\begin{proof}
+			The parameterization of \(f(z)\):
+			\begin{align*}
+				\int_{C} f(z) dz 
+				&= \int_{a}^{b} f[z(t)] z'(t) dt \\
+				&= \int_{a}^{b} [u(x,y) + iv(x,y)][x'(t) + y'(t)] dt \\
+				&= \int_{a}^{b} (ux' - vy') dt + i \int_{a}^{b} (vx' + uy') dt
+				&= \int_{C} u \ dx - v \ dy + i \int_{C} v \ dx + u \ dy
+			\end{align*}
+			Using Green's Theorem (\cref{Green's Theorem - ODE}):
+			\begin{align*}
+				\int_{C} f(z) dz 
+				&= \iint_{R} (-v_x - u_y) dA + i \iint_{R} (u_x - v_y) dA
+			\end{align*}
+			{\color{Grey}
+			From \(\bar{z} = x - iy\):
+			\begin{align*}
+				u_x &= 1 &	
+				v_y &= -1 & 
+				v_x &= 0 & 
+				u_x &= 0
+			\end{align*}
+			Substituting these in, we get:
+			\begin{align*}
+				\int_{C} \bar{z} dz = i \iint_{R} 2 \ dA = 2i \iint_{R} dA = 2iA
+			\end{align*}
+			\(A\) is the area of the region enclosed by \(C\), thus:
+			\begin{align*}
+				A = \frac{1}{2i} \int_{C} \bar{z} dz
+			\end{align*}
+			}
+		\end{proof}
 	\end{example}
 			
 	
