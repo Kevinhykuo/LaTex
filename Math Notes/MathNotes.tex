@@ -7571,7 +7571,9 @@
 				decoration={markings, mark=at position 0.625 with {\arrow{>}} },
 				postaction={decorate}]
 				(axis cs: 5, 4) circle (2.5);
+				
 				\draw[dashed,line width=1pt,Grey](axis cs: 5, 4) circle (3);
+				
 				\draw[line width=1pt, 
 				decoration={markings, mark=at position 0.625 with {\arrow{<}} },
 				postaction={decorate}]
@@ -8205,30 +8207,10 @@
 					(-8, 0) [$-R$]
 				};
 			
-				\addplot[
-				only marks,
-				nodes near coords,
-				point meta = explicit symbolic, 
-				mark=none,
-				]
-				coordinates {
-					(-6, 6) [$C$]
-				};
-				
-%				\addplot[
-%				only marks,
-%				nodes near coords,
-%				point meta = explicit symbolic, 
-%				mark=*,
-%				]
-%				coordinates {
-%					(-5, 3) [$z_1$]
-%				};
-%			
 				\draw[line width=1pt, 
-				decoration={markings, mark=at position 0.375 with {\arrow{>}} },
+				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
 				postaction={decorate}]
-				(axis cs: 0, 0) circle (8);
+				(axis cs: 8, 0) arc (0:180:80) node[pos=0.72, above] {\(C\)};
 				
 				\draw[line width=2pt]  (axis cs: -8,0)--(axis cs: 8,0);
 			\end{axis}
@@ -8453,21 +8435,11 @@
 					(8, 0) [$R$]
 					(4, 0) [$R_0$]
 				};
-			
-				\addplot[
-				only marks,
-				nodes near coords,
-				point meta = explicit symbolic, 
-				mark=none,
-				]
-				coordinates {
-					(-6, 6) [$C_R$]
-				};
 				
 				\draw[line width=1pt, 
-				decoration={markings, mark=at position 0.375 with {\arrow{>}} },
+				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
 				postaction={decorate}]
-				(axis cs: 0, 0) circle (8);
+				(axis cs: 8, 0) arc (0:180:80) node[pos=0.72, above] {\(C_R\)};
 				
 				\draw[postaction={decorate}]
 				(axis cs: 0, 0) circle (4);
@@ -8572,17 +8544,17 @@
 				\draw[line width=1pt, 
 				decoration={markings, mark=at position 0.5 with {\arrow{>}} },
 				postaction={decorate}]
-				(axis cs: 8, 0) arc (0:45:80) node[midway, right] {$C_R$};;
+				(axis cs: 8, 0) arc (0:45:80) node[midway, right] {$C_R$};
 				
 				\draw[line width=1pt, 
 				decoration={markings, mark=at position 0.5 with {\arrow{>}} },
 				postaction={decorate}]
-				(axis cs: 5.65685,5.65685) -- (axis cs: 0, 0) node[midway, above] {$l_2$};;
+				(axis cs: 5.65685,5.65685) -- (axis cs: 0, 0) node[midway, above] {$l_2$};
 				
 				\draw[line width=1pt, 
 				decoration={markings, mark=at position 0.5 with {\arrow{>}} },
 				postaction={decorate}]
-				(axis cs: 0, 0) -- (axis cs: 8,0) node[midway, above] {$l_1$};;
+				(axis cs: 0, 0) -- (axis cs: 8,0) node[midway, above] {$l_1$};
 			\end{axis}
 		\end{tikzpicture}
 	\end{figure}		
