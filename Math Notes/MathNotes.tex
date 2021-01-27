@@ -5113,7 +5113,53 @@
 		\end{align*}
 		\begin{proof}
 			{\color{Grey}
-			We will consider the simple closed contour formed by the lines: \(l_1\) from \(-a\) to \(a\), \(l_2\) from \(a\) to \(a + bi\), \(l_3\) from \(a+bi\) to \(-a+bi\), and \(l_4\) from \(-a+bi\) to \(-a\).
+			We will consider the simple closed contour formed by the lines: \(l_1\) from \(-a\) to \(a\), \(l_2\) from \(a\) to \(a + bi\), \(l_3\) from \(a+bi\) to \(-a+bi\), and \(l_4\) from \(-a+bi\) to \(-a\). The parameterization are given by:
+			\begin{align*}
+				l_1:& \ z=x	&
+				l_2:& \ z=a+yi &
+				l_3:& \ z=x+bi &
+				l_4:& \ z=-a+yi &
+			\end{align*}
+			Evaluating the contour, and using the Cauchy-Goursat Theorem (\cref{Cauchy-Goursat Theorem - Complex}):
+			\begin{align*}
+				&\int_{C} \exp(-z^2) dz \\
+				&= \int_{-a}^{a} e^{-x^2} dx + \int_{0}^{b} e^{-(a+yi)^2} i dy + \int_{a}^{-a} e^{-(x+bi)^2} dx + \int_{b}^{0} e^{-(-a+yi)^2} i dy \\
+				&= \int_{-a}^{a} e^{-x^2} - e^{-x^2 + b^2 - 2bxi} dx 
+					+ i \int_{0}^{b} e^{-a^2 + y^2 - 2ayi} - e^{-a^2 + y^2 + 2ayi} dy\\
+				&= 2\int_{-a}^{0} e^{-x^2} - e^{b^2} e^{-x^2} [\cos(-2bx) + i\sin(-2bx)] dx 
+					+ i e^{-a^2} \int_{0}^{b} e^{y^2}[e^{-2ayi} - e^{2ayi}] dy \\
+				&= 0
+			\end{align*}
+			Since we are evaluating over a symmetric integral, only even functions remain, so the sine term is zero. We also know that 
+			\begin{align*}
+				\cos(-2bx) &= \cos(2bx) & e^{-2ayi} - e^{2ayi} &= -2i\sin(2ay)
+			\end{align*}
+			Making these substitutions and rearranging:
+			\begin{align*}
+				2\int_{0}^{a} e^{b^2} e^{-x^2} \cos(2bx) dx 
+				= 2 \int_{0}^{a} e^{-x^2} dx + 2 e^{-a^2} \int_{0}^{b} e^{y^2} \sin(2ay) dy
+			\end{align*}
+			Dividing everything by \(e^{b^2}\) since \(b>0\) is a constant:
+			\begin{align*}
+				\int_{0}^{a} e^{-x^2} \cos(2bx) dx 
+				 = e^{-b^2} \int_{0}^{a} e^{-x^2} dx 
+				 	+ e^{-(a^2 + b^2)} \int_{0}^{b} e^{y^2} \sin(2ay) dy
+			\end{align*}
+			Taking the limit as \(a \rightarrow \infty\):
+			\begin{align*}
+				\lim_{a\rightarrow \infty} \int_{0}^{a} e^{-x^2} \cos(2bx) dx
+				= \lim_{a\rightarrow \infty} \left[ e^{-b^2} \int_{0}^{a} e^{-x^2} dx + e^{-(a^2 + b^2)} \int_{0}^{b} e^{y^2} \sin(2ay) dy \right]
+			\end{align*}
+			Using the knowledge from \cref{int_0^infty e^(-x^2) dx Derivation Example - Complex}, and also:
+			\begin{align*}
+				\int_{0}^{\infty} e^{-x^2} dx &= \frac{\sqrt{\pi}}{2} &
+				\abs{\int_{0}^{b} e^{y^2} \sin(2ay) dy} \leq \int_{0}^{b} e^{y^2} dy 
+			\end{align*}
+			We get 
+			\begin{align*}
+				\int_{0}^{\infty} \exp(-x^2) \cos(2bx) dx &= \frac{\sqrt{\pi}}{2} \exp(-b^2) 
+				& b>0
+			\end{align*}
 			}
 		\end{proof}
 		\begin{figure}[H]
