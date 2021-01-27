@@ -8524,7 +8524,7 @@
 	\end{align*}
 	Using this and the knowledge:
 	\begin{align*}
-		\int_{0}^{\infty} \exp(-r^2) dr = \frac{\sqrt{\pi}}{2}
+		\int_{0}^{\infty} \exp(-r^2) dr &= \frac{\sqrt{\pi}}{2}
 		& \text{\Cref{int_0^infty e^(-x^2) dx Derivation Example - Complex}}
 	\end{align*}
 	We get:
@@ -8584,6 +8584,73 @@
 		\end{tikzpicture}
 	\end{figure}		
 	\end{example}
+
+	\subsection{Indented Paths} \label{Indented Paths Subsection - Complex}
+	
+	\begin{theorem}
+		\label{Indented Paths Theorem - Complex}
+		Let 
+		\begin{itemize}
+			\item[1.] Function \(f(z)\) be a function with a simple pole at \(z=x_0\) on the real axis, Laurent series representation in \(0<\abs{z-x_0}<R_2\), and residue \(B_0\).
+			\item[2.] \(C_\rho\) be a semicircular \textbf{negatively} oriented contour with radius \(\abs{z-x_0}<\rho\), \(\rho<R_2\), in the upper half plane.
+		\end{itemize}
+		Then
+		\begin{align*}
+			\lim_{\rho \rightarrow 0} \int_{C_\rho} f(z) dz = -B_0 \pi i
+		\end{align*}
+	\end{theorem}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=0, xmax=26,
+				ymin=-12, ymax=12,
+				xtick=100,
+				ytick=100,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=o,
+				]
+				coordinates {
+					(12, 0) [$x_0$]
+				};
+				
+				\draw[dashed]
+				(axis cs: 12, 0) circle (10);
+				
+				\draw[-]
+				(axis cs: 12, 0) circle (9);
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 4, 0) arc (180:0:80) node[pos=0.75, below] {$C_\rho$};
+				
+				\draw[-]
+				(axis cs: 12, 0) -- (axis cs: 12, 8) node[midway, right] {$\rho$};
+				
+				\draw[-]
+				(axis cs: 12, 0) -- (axis cs: 19.79, -4.5) node[midway, above] {$\rho_0$};
+				
+				\draw[-]
+				(axis cs: 12, 0) -- (axis cs: 7, -8.66) node[midway, left] {$R_2$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	\begin{proof}
+		content
+	\end{proof}
+	
+	
+	
 	
 	
 
