@@ -5070,7 +5070,102 @@
 		\end{align*}
 		In fact, this theorem more powerful then it seems. It is implying that the contour integrals of a function \(f\) over any contour is equal, given that one contour can continuously deform into the other without crossing any singular points of \(f(z)\). It is the key to choosing a simpler path for integration.
 	\end{observation}
+	
+	\subsection{Examples} 
+	
+	\begin{example}
+		\label{int_0^infty e^(-x^2) dx Derivation Example - Complex}
+		Show
+		\begin{align*}
+			\int_{0}^{\infty} \exp(-x^2) dx = \frac{\sqrt{\pi}}{2}
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			Consider 
+			\begin{align*}
+				\int_{0}^{\infty} \exp(-x^2) dx \int_{0}^{\infty} \exp(-y^2) dy
+				&= \int_{0}^{\infty} \int_{0}^{\infty} \exp[-(x^2+y^2)] dxdy \\
+				&= \int_{0}^{\pi/2} \int_{0}^{\infty} \exp(-r^2) r \ dr d\theta 
+				  & r^2 &= x^2 + y^2 \\
+				&= \frac{\pi}{2} \int_{0}^{\infty} \exp(-r^2) r \ dr \\
+				&= \frac{\pi}{4} \int_{0}^{\infty} \exp(-u) \ du
+					& u&=r^2 \\
+				&= \frac{\pi}{4} \eval{e^{-u}}_{0}^{\infty} = \frac{\pi}{4}
+			\end{align*}
+			Now, if we let \(x=y\), we can see that 
+			\begin{align*}
+				\int_{0}^{\infty} \exp(-x^2) dx \int_{0}^{\infty} \exp(-y^2) dy 
+				= \left[\int_{0}^{\infty} \exp(-x^2) dx \right]^2
+			\end{align*}
+			Thus
+			\begin{align*}
+				\int_{0}^{\infty} \exp(-x^2) dx = \frac{\sqrt{\pi}}{2}
+			\end{align*}
+			}
+		\end{proof}
+	\end{example}
 
+	\begin{example}
+		Show
+		\begin{align*}
+			\int_{0}^{\infty} \exp(-x^2) \cos(2bx) dx &= \frac{\sqrt{\pi}}{2} \exp(-b^2) 
+				& b>0
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			We will consider the simple closed contour formed by the lines: \(l_1\) from \(-a\) to \(a\), \(l_2\) from \(a\) to \(a + bi\), \(l_3\) from \(a+bi\) to \(-a+bi\), and \(l_4\) from \(-a+bi\) to \(-a\).
+			}
+		\end{proof}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-12, xmax=12,
+					ymin=-0.1, ymax=8,
+					ticks=none,
+					axis lines = middle,
+					axis line style = Black,
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(8, 0) [$a$]
+						(8, 4) [$a+bi$]
+						(-8, 4) [$-a+bi$]
+						(-8, 0) [$-a$]
+					};
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -8,0) -- (axis cs: 8, 0) node[midway, above] {$l_1$};;
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 8, 0) -- (axis cs: 8, 4) node[midway, right] {$l_2$};;
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 8, 4) -- (axis cs: -8, 4) node[midway, above] {$l_3$};;
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -8, 4) -- (axis cs: -8, 0) node[midway, left] {$l_4$};;
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	\end{example}
+			
 	
 
 
@@ -8201,7 +8296,120 @@
 		\end{tikzpicture}
 	\end{figure}
 	
-		
+	\begin{example}[Fresnel Integrals]
+	\label{Fresnel Integrals Derivation Example - Complex}
+	Show
+	\begin{align*}
+		\int_{0}^{\infty} \cos(x^2) dx = \int_{0}^{\infty} \sin(x^2) dx 
+		= \frac{1}{2}\sqrt{\frac{\pi}{2}}
+	\end{align*}
+	{\color{Grey}
+	Consider the function: \[f(z) = \exp(iz^2)\]
+	We will consider \(f(z)\) over the contour \(C\) composed of the curves: \(l_1\) line from \((0)\) to \(R\), \(C_R\) semicircular arc from \(R\) to \(Re^{i\pi/4}\), and \(l_2\) line from \(Re^{i\pi/4}\) back to \(0\). We will parameterize the curves:
+	\begin{align*}
+		l_1: &\ z=x 	&
+		l_2: &\ z=re^{i\pi/4} &
+		C_R: &\ z=re^{i\theta}
+	\end{align*}
+	The integral over the contour is the sum of the curves, which is also zero by Cauchy-Goursat Theorem (\cref{Cauchy-Goursat Theorem - Complex}): 
+	\begin{align*}
+		\int_{C} f(z) dz
+		&= \int_{0}^{R} \exp(ix^2) dx + \int_{R}^{0} \exp(ir^2 e^{i\pi/2}) dz + \int_{C_R} f(z) dz \\
+		&= \int_{0}^{R} \exp(ix^2) dx - \int_{0}^{R} \exp(-r^2) e^{i\pi/4} dr + \int_{C_R} f(z) dz = 0
+	\end{align*}
+	Rearranging, we have:
+	\begin{align*}
+		&\int_{0}^{R} \exp(ix^2) dx = e^{i\pi/4} \int_{0}^{R} \exp(-r^2) dr + \int_{C_R} f(z) dz \\
+		&\implies \int_{0}^{R} \cos(x^2) + i\sin(x^2) dx
+		= \left(\frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}} \right) \int_{0}^{R} \exp(-r^2) dr + \int_{C_R} f(z) dz \\
+	\end{align*}
+	Equating the real and imaginary parts:
+	\begin{align*}
+		\int_{0}^{R} \cos(x^2) dx 
+		&= \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr + \Re{\int_{C_R} f(z) dz} \\
+		\int_{0}^{R} \sin(x^2) dx 
+		&= \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr + \Im{\int_{C_R} f(z) dz}
+	\end{align*}
+	Now, using Jordan's Inequality:
+	\begin{align*}
+		\int_{C_R} \exp(iz^2) dz 
+		&= \int_{C_R} \exp(ir^2 e^{i2\theta}) \pdv{\theta} re^{i\theta} d\theta 
+		 = \int_{C_R} rie^{i\theta} \exp(ir^2e^{i2\theta}) d\theta \\
+		&= \int_{C_R} rie^{i\theta} \exp(ir^2\cos(2\theta) - r^2\sin(2\theta)) d\theta \\
+		&\leq R \int_{0}^{\pi/4} \exp(-r^2\sin(2\theta)) d\theta 
+		 = \frac{R}{2} \int_{0}^{\pi/2} \exp(-r^2\sin(\phi)) d\phi
+			& \phi = 2\theta \\
+		&\leq \frac{R}{2} \cdot \frac{\pi}{2r^2} = \frac{\pi}{2r}
+			& \text{\Cref{Jordan's Inequality Lemma - Complex}}
+	\end{align*}
+	Taking the limit as \(R \rightarrow \infty\):
+	\begin{align*}
+		\lim_{R\rightarrow \infty} \int_{C_R} \exp(iz^2) dz = \lim_{R\rightarrow \infty} \frac{\pi}{2R} = 0
+	\end{align*}
+	Using this and the knowledge:
+	\begin{align*}
+		\int_{0}^{\infty} \exp(-r^2) dr = \frac{\sqrt{\pi}}{2}
+		& \text{\Cref{int_0^infty e^(-x^2) dx Derivation Example - Complex}}
+	\end{align*}
+	We get:
+	\begin{align*}
+		\lim_{R\rightarrow \infty} \int_{0}^{R} \cos(x^2) dx 
+		&= \lim_{R\rightarrow \infty} \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr 
+		 = \frac{1}{2}\sqrt{\frac{\pi}{2}} \\
+		\lim_{R\rightarrow \infty} \int_{0}^{R} \sin(x^2) dx 
+		&= \lim_{R\rightarrow \infty} \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr 
+		 = \frac{1}{2}\sqrt{\frac{\pi}{2}}
+	\end{align*}
+	Thus
+	\begin{align*}
+		\int_{0}^{\infty} \cos(x^2) dx = \int_{0}^{\infty} \sin(x^2) dx 
+		= \frac{1}{2}\sqrt{\frac{\pi}{2}}
+	\end{align*}
+	}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=-0.1, xmax=10,
+				ymin=-0.1, ymax=6.5,
+				ticks=none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(8, 0) [$R$]
+					(5.65685,5.65685) [$Re^{i\pi/4}$]
+				};
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 8, 0) arc (0:45:80) node[midway, right] {$C_R$};;
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 5.65685,5.65685) -- (axis cs: 0, 0) node[midway, above] {$l_2$};;
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 0) -- (axis cs: 8,0) node[midway, above] {$l_1$};;
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}		
+	\end{example}
+	
+	
 
 
 	

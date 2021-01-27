@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  25 JAN 2021 19:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  26 JAN 2021 16:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1445,8 +1445,13 @@ Package cleveref Info: loaded `english' language definitions on input line 1.
 \tf@toc=\write5
 \openout5 = `MathNotes.toc'.
 
- [12] [1
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+[13] [14
+
+] [1
 
 ] [2
 
@@ -1721,141 +1726,129 @@ Underfull \hbox (badness 10000) in paragraph at lines 4870--4872
 
  []
 
-[104] [105] [106] [107] [108] [109] [110] [111]
+[104] [105] [106] [107] [108] [109]
 ===== Image 'tikz/MathNotes-figure34' is up-to-date. ======
-[112 <./tikz/MathNotes-figure34.pdf>] [113] [114] [115]
+[110 <./tikz/MathNotes-figure34.pdf>] [111] [112]
 ===== Image 'tikz/MathNotes-figure35' is up-to-date. ======
-[116 <./tikz/MathNotes-figure35.pdf>]
-Overfull \hbox (5.2982pt too wide) detected at line 5528
+[113 <./tikz/MathNotes-figure35.pdf>] [114] [115] [116]
+===== Image 'tikz/MathNotes-figure36' is up-to-date. ======
+[117 <./tikz/MathNotes-figure36.pdf>]
+Overfull \hbox (5.2982pt too wide) detected at line 5623
 []
  []
 
-[117] [118] [119] [120]
-Chapter 16.
-[121
-
-] [122] [123] [124] [125] [126]
-===== Image 'tikz/MathNotes-figure36' is up-to-date. ======
-[127 <./tikz/MathNotes-figure36.pdf>]
-===== Image 'tikz/MathNotes-figure37' is up-to-date. ======
-[128 <./tikz/MathNotes-figure37.pdf>] [129]
-===== Image 'tikz/MathNotes-figure38' is up-to-date. ======
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [130]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [131 <./tikz/MathNotes-figure38.pdf>] [132] [133] [134] [135]
-===== Image 'tikz/MathNotes-figure39' is up-to-date. ======
-[136] [137 <./tikz/MathNotes-figure39.pdf>]
-===== Image 'tikz/MathNotes-figure40' is up-to-date. ======
-[138 <./tikz/MathNotes-figure40.pdf>] [139] [140] [141] [142] [143] [144]
-[145] [146] [147] [148]
-Chapter 17.
-===== Image 'tikz/MathNotes-figure41' is up-to-date. ======
-[149
+[118] [119] [120] [121] [122
 
 ]
+Chapter 16.
+[123] [124] [125] [126] [127] [128]
+===== Image 'tikz/MathNotes-figure37' is up-to-date. ======
+[129 <./tikz/MathNotes-figure37.pdf>]
+===== Image 'tikz/MathNotes-figure38' is up-to-date. ======
+[130 <./tikz/MathNotes-figure38.pdf>] [131]
+===== Image 'tikz/MathNotes-figure39' is up-to-date. ======
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [132]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [133 <./tikz/MathNotes-figure39.pdf>] [134] [135] [136] [137]
+===== Image 'tikz/MathNotes-figure40' is up-to-date. ======
+[138] [139 <./tikz/MathNotes-figure40.pdf>]
+===== Image 'tikz/MathNotes-figure41' is up-to-date. ======
+[140 <./tikz/MathNotes-figure41.pdf>] [141] [142] [143] [144] [145] [146]
+[147] [148] [149] [150]
+Chapter 17.
 ===== Image 'tikz/MathNotes-figure42' is up-to-date. ======
-[150 <./tikz/MathNotes-figure41.pdf>] [151 <./tikz/MathNotes-figure42.pdf>]
-[152] [153] [154] [155] [156] [157] [158] [159]
-Overfull \hbox (23.8825pt too wide) in paragraph at lines 7755--7755
+[151
+
+]
+===== Image 'tikz/MathNotes-figure43' is up-to-date. ======
+[152 <./tikz/MathNotes-figure42.pdf>] [153 <./tikz/MathNotes-figure43.pdf>]
+[154] [155] [156] [157] [158] [159] [160] [161]
+Overfull \hbox (23.8825pt too wide) in paragraph at lines 7850--7850
 |[]\OT1/cmr/bx/n/17.28 Behaviour of Func-tions Near Iso-lated Sin-gu-lar Points
 | 
  []
 
-[160] [161]
+[162] [163]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 7825.
+(hyperref)                removing `math shift' on input line 7920.
 
-[162]
-===== Image 'tikz/MathNotes-figure43' is up-to-date. ======
-[163 <./tikz/MathNotes-figure43.pdf>] [164] [165]
-\openout3 = `tikz/MathNotes-figure44.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure44" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure44" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+[164]
+===== Image 'tikz/MathNotes-figure44' is up-to-date. ======
+[165 <./tikz/MathNotes-figure44.pdf>] [166] [167]
 ===== Image 'tikz/MathNotes-figure45' is up-to-date. ======
-[166 <./tikz/MathNotes-figure44.pdf>] [167 <./tikz/MathNotes-figure45.pdf>]
-[168
-
-]
+===== Image 'tikz/MathNotes-figure46' is up-to-date. ======
+[168 <./tikz/MathNotes-figure45.pdf>] [169 <./tikz/MathNotes-figure46.pdf>]
+===== Image 'tikz/MathNotes-figure47' is up-to-date. ======
+[170 <./tikz/MathNotes-figure47.pdf>]
 Chapter 18.
-[169] [170
+[171
 
-] [171] [172] [173
+] [172
 
-] [174
+] [173] [174] [175
 
-] [175] [176] [177
+] [176
 
-] [178
+] [177] [178] [179
 
-] [179] [180
+] [180
+
+] [181] [182
 
 ]
 Chapter 19.
-[181] [182
-
-] [183] [184
+[183] [184
 
 ] [185] [186
 
 ] [187] [188
 
-]
-Chapter 20.
-[189] [190
+] [189] [190
 
 ]
-Chapter 21.
+Chapter 20.
 [191] [192
 
 ]
-Chapter 22.
+Chapter 21.
 [193] [194
 
 ]
-Chapter 23.
+Chapter 22.
 [195] [196
 
 ]
-Chapter 24.
+Chapter 23.
 [197] [198
 
 ]
-Chapter 25.
+Chapter 24.
 [199] [200
 
 ]
-Chapter 26.
+Chapter 25.
 [201] [202
 
-] [203] [204
+]
+Chapter 26.
+[203] [204
 
 ] [205] [206
 
+] [207] [208
+
 ]
 Chapter 27.
-[207] [208
+[209] [210
 
 ]
 Chapter 28.
-[209] [210
-
-] [211] [212
+[211] [212
 
 ] [213] [214
 
@@ -1865,33 +1858,35 @@ Chapter 28.
 
 ] [219] [220
 
+] [221] [222
+
 ]
 Chapter 29.
-[221] [222
+[223] [224
 
-] [223
+] [225
 
-] [224
+] [226
 
-] [225]
+] [227]
 
-(./MathNotes.bbl [226
+(./MathNotes.bbl [228
 
-]) [227] (./MathNotes.aux
+]) [229] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 53C701D63ABE2DD3F564C0435A6D97BC;9633.
+(rerunfilecheck)             Checksum: 1D4DF6C273FD9E7EC986A3711CBBF376;9698.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40731 strings out of 479382
- 924874 string characters out of 5869369
- 1351773 words of memory out of 5000000
- 56000 multiletter control sequences out of 15000+600000
+ 40752 strings out of 479382
+ 925370 string characters out of 5869369
+ 1351946 words of memory out of 5000000
+ 56006 multiletter control sequences out of 15000+600000
  445049 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,98p,859b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1924,10 +1919,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (239 pages, 909642 bytes).
+Output written on MathNotes.pdf (243 pages, 920163 bytes).
 PDF statistics:
- 3576 PDF objects out of 3580 (max. 8388607)
- 3161 compressed objects within 32 object streams
- 1013 named destinations out of 1200 (max. 500000)
- 1379 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3657 PDF objects out of 4296 (max. 8388607)
+ 3221 compressed objects within 33 object streams
+ 1026 named destinations out of 1200 (max. 500000)
+ 1397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
