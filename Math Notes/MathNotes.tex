@@ -7743,7 +7743,10 @@
 		\begin{align*}
 			f(z) = \sum_{n=0}^{\infty} \frac{\phi^{(n)}(z_0)}{n!} (z-z_0)^{n-m}
 		\end{align*}
-		The Laurent series with \(\phi(z_0) \neq 0\) tells us that \(z_0\) is a pole of order \(m\) of \(f(z)\), and the coefficient of \(1/(z-z_0)\) tells us the coefficient of \(\Res[f(z),z_0]\).
+		The Laurent series with \(\phi(z_0) \neq 0\) tells us that \(z_0\) is a pole of order \(m\) of \(f(z)\), and the coefficient of \(1/(z-z_0)\), (\(n=m-1\)), tells us the coefficient of \(\Res[f(z),z_0]\).
+		\begin{align*}
+			\Res[f(z),z_0] = \frac{\phi^{(m-1)}}{(m-1)!}
+		\end{align*}
 	\end{proof}
 
 	{\color{Red} \textbf{Warning!} Resort to Laurent series for to obtain residues in cases where \(\phi(z_0) = 0\) or \(\phi(z_0)\) is undefined!}
@@ -8591,7 +8594,12 @@
 		\label{Indented Paths Theorem - Complex}
 		Let 
 		\begin{itemize}
-			\item[1.] Function \(f(z)\) be a function with a simple pole at \(z=x_0\) on the real axis, Laurent series representation in \(0<\abs{z-x_0}<R_2\), and residue \(B_0\).
+			\item[1.] Function \(f(z)\) be a function with:
+			\begin{itemize}
+				\item[(a)] Simple pole at \(z=x_0\) on the real axis
+				\item[(b)] Laurent series representation in \(0<\abs{z-x_0}<R_2\)
+				\item[(c)] Residue \(B_0\)
+			\end{itemize}
 			\item[2.] \(C_\rho\) be a semicircular \textbf{negatively} oriented contour with radius \(\abs{z-x_0}<\rho\), \(\rho<R_2\), in the upper half plane.
 		\end{itemize}
 		Then
