@@ -8377,7 +8377,7 @@
 	\end{figure}
 	
 	\begin{theorem}[Jordan's Lemma]
-		\label{Jordan's Lemma}
+		\label{Jordan's Lemma - Complex}
 		Suppose
 		\begin{itemize}
 			\item[1.] Function \(f(z)\) is analytic at all points in the upper half plane exterior to circle \(\abs{z} = R_0\)
@@ -8588,8 +8588,7 @@
 				ylabel={$\Im$},
 				xmin=0, xmax=26,
 				ymin=-12, ymax=12,
-				xtick=100,
-				ytick=100,
+				ticks=none,
 				axis lines = middle,
 				axis line style = Black,
 				]
@@ -8626,8 +8625,276 @@
 		\end{tikzpicture}
 	\end{figure}
 	\begin{proof}
-		content
+		Assume the conditions of the theorem are true, since \(f(z)\) has a simple pole at \(z = x_0\):
+		\begin{align*}
+			f(z) &= g(z) + \frac{B_0}{z-x_0} & g(z) &= \sum_{n=0}^{\infty} a_n (z-x_0)^n
+				& \abs{z-x_0} \in (0, R_2)
+		\end{align*}
+		Integrating the Laurent series over \(C_\rho\):
+		\begin{align*}
+			\int_{C_\rho} f(z) dz
+			&= \int_{C_\rho} g(z) dz +  B_0 \int_{C_\rho} \frac{1}{z-x_0} dz 
+		\end{align*}
+		Since \(g(z)\) is continuous in \(\abs{z-z_0} < R_2\), it must be bounded on the closed disk \(\abs{z-x_0} \leq \rho_0\), \(\rho < \rho_0 < R_2\), by \cref{Function continuous in closed and bounded region implies function is bounded Theorem - Complex}. Then
+		\begin{align*}
+			\exists M \in \mathbb{R}_{>0} [\abs{z-x_0} \leq \rho_0 \implies \abs{g(z)} \leq M]
+		\end{align*}
+		Using the ML Inequality (\cref{ML Inequality Theorem - Complex}):
+		\begin{align*}
+			\int_{C_\rho} g(z) dz \leq ML = M\pi \rho
+			\implies \lim_{\rho \rightarrow 0} \int_{C_\rho} g(z) dz = 0
+		\end{align*}
+		For the second integral, \(C_\rho\) has the parameterization \(z = x_0 + \rho e^{i\theta}\), \(\theta \in [0, \pi]\). Then
+		\begin{align*}
+			\int_{C_\rho} \frac{1}{z-x_0} dz 
+			= - \int_{-C_\rho} \frac{1}{z-x_0} dz 
+			= - \int_{0}^{\pi} \frac{1}{\rho e^{i\theta}} \rho e^{i\theta} d\theta 
+			= -i \int_{0}^{\pi} d\theta = -\pi i
+		\end{align*}
+		Thus
+		\begin{align*}
+			\lim_{\rho \rightarrow 0} \int_{C_\rho} f(z) dz
+			&= \lim_{\rho \rightarrow 0} \left[ \int_{C_\rho} g(z) dz + B_0 \int_{C_\rho} \frac{1}{z-x_0} dz \right] 
+			 = - B_0 \pi i
+		\end{align*}
 	\end{proof}
+
+	Note: We can use \cref{Indented Paths Theorem - Complex} to integrate around a isolated singular point on the real axis, or a branch cut involving the origin and \(\theta \in (-\pi + 2n\pi, 2\pi + 2n\pi)\) (that is, a branch cut below the real axis).
+
+	\begin{example}[Dirichlet's Integral]
+		\label{Dirichlet's Integral Example - Complex}
+		Show 
+		\begin{align*}
+			\int_{0}^{\infty} \frac{\sin(x)}{x} dx = \frac{\pi}{2}
+		\end{align*}
+		\begin{proof}
+			Consider integrating \(f(z) = e^{iz}/z\) over a the simple closed contour \(C\) composed of a line \(l_1\) from \(\rho\) to \(R\), a semicircular contour \(C_R\) with radius \(R\) from \(0\) to \(\pi\), a line \(l_2\) from \(-R\) to \(-\rho\), and a semicircular contour \(C_\rho\) with radius \(\rho < R\) from \(-\pi\) to \(0\). Notice \(C_\rho\) is defined to avoid the singularity of \(f(z)\).
+			
+			By Cauchy-Goursat Theorem (\cref{Cauchy-Goursat Theorem - Complex}):
+			\begin{align*}
+				&\int_{C} f(z) dz
+				= \int_{l_1} \frac{e^{iz}}{z} dz + \int_{C_R} \frac{e^{iz}}{z} dz + \int_{C_\rho} \frac{e^{iz}}{z} dz + \int_{l_2} \frac{e^{iz}}{z} dz
+				= 0 \\
+				&\implies \int_{l_1} \frac{e^{iz}}{z} dz + \int_{l_2} \frac{e^{iz}}{z} dz = -\int_{C_R} \frac{e^{iz}}{z} dz - \int_{C_\rho} \frac{e^{iz}}{z} dz
+			\end{align*}
+			Parameterizing the lines:
+			\begin{align*}
+				l_1: \ z &= re^{i0} = 0	& 
+				l_2: \ z &= re^{-i\pi} = -r & \rho \leq r \leq R
+			\end{align*}
+			The integral over the lines:
+			\begin{align*}
+				\int_{l_1} \frac{e^{iz}}{z} dz + \int_{l_2} \frac{e^{iz}}{z} dz
+				&= \int_{\rho}^{R} \frac{e^{ir}}{r} dr - \int_{\rho}^{R} \frac{e^{-ir}}{r} dr
+				 = \int_{\rho}^{R} \frac{e^{ir} - e^{-ir}}{r} dr = 2i \int_{\rho}^{R} \frac{\sin(r)}{r} dr
+			\end{align*}
+			The integral over the semicircles can be found by using the Laurent Series:
+			\begin{align*}
+				\frac{e^{iz}}{z} 
+				= \frac{1}{z} \sum_{n=0}^{\infty} \frac{(iz)^n}{n!} 
+				= \frac{1}{z} + \sum_{n=1}^{\infty} \frac{i^n z^{n-1}}{n!}
+			\end{align*}
+			\(f(z) = e^{iz}/z\) has a simple pole at \(z=0\) with \(\Res[f(z), 0] = 1\), then:
+			\begin{align*}
+				\lim_{\rho \rightarrow 0} \int_{C_\rho} \frac{e^{iz}}{z} dz &= -\pi i
+					& \text{\Cref{Indented Paths Theorem - Complex}}
+			\end{align*}
+			and 
+			\begin{align*}
+				\abs{\frac{1}{z}} &= \frac{1}{\abs{z}} = \frac{1}{R}
+				\implies \lim_{R \rightarrow \infty} \frac{e^{iz}}{z} dz = 0
+					& \text{\Cref{Jordan's Lemma - Complex}}
+			\end{align*}
+			Hence
+			\begin{align*}
+				&\int_{l_1} \frac{e^{iz}}{z} dz + \int_{l_2} \frac{e^{iz}}{z} dz = -\int_{C_R} \frac{e^{iz}}{z} dz - \int_{C_\rho} \frac{e^{iz}}{z} dz \\
+				&\implies 2i \int_{0}^{\infty} \frac{\sin(r)}{r} dr = \pi i
+				 \implies \int_{0}^{\infty} \frac{\sin(r)}{r} dr = \frac{\pi}{2}
+			\end{align*}
+		\end{proof}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-3, xmax=3,
+					ymin=-0.1, ymax=2.5,
+					ticks=none,
+					axis lines = middle,
+					axis line style = Black,
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(-2, 0) [$-R$]
+						(-1, 0) [$-\rho$]
+						(1, 0) [$\rho$]
+						(2, 0) [$R$]
+					};
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.25 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 2, 0) arc (0:180:200) node[pos=0.25, right] {$C_R$};
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.25 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -1, 0) arc (180:0:100) node[pos=0.25, left] {$C_\rho$};
+					
+					\draw[-, line width=1pt,
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 1, 0) -- (axis cs: 2, 0) node[midway, above] {$l_1$};
+					
+					\draw[-, line width=1pt,
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -2, 0) -- (axis cs: -1, 0) node[midway, above] {$l_2$};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	\end{example}
+	
+	\subsection{Integration Along a Branch Cut} \label{Integration Along a Branch Cut Subsection - Complex}
+	
+	\begin{example}
+		Show for \(a, x \in \mathbb{R}\) with \(x > 0\) and \(a \in (0,1)\):
+		\begin{align*}
+			\int_{0}^{\infty} \frac{x^{-a}}{x+1} dx = \frac{\pi}{\sin(a\pi)}
+		\end{align*}
+		\begin{proof}
+			Let \(C_\rho\) and \(C_R\) denote the circular contours with radius \(\rho\) and \(R\), respectively, with \(\rho < 1  < R\). We will integrate
+			\begin{align*}
+				f(z) &= \frac{z^{-a}}{z+1} & \abs{z}>0, \ \arg(z) \in (0, 2\pi)
+			\end{align*}
+			along the simple closed contour composed of a line from \(\rho\) to \(R\), positively along \(C_R\), line from \(R\) to \(\rho\), and negatively along \(C_\rho\) back to \(\rho\). The lines are taken along a branch cut, so we have 
+			\begin{align*}
+				f(z) 
+				&= \frac{\exp[-a \log(z)]}{z+1} = \frac{\exp[-a (\ln(r) + i\theta]}{re^{i\theta} + 1} 
+				= 
+				\begin{cases} \displaystyle
+					\frac{\exp[-a(\ln(r) + i0]}{r + 1} = \frac{r^{-a}}{r+1} & \theta = 0 \\ \\
+					\displaystyle
+					\frac{\exp[-a(\ln(r) + i2\pi]}{r + 1} = \frac{r^{-a}e^{-i2a\pi}}{r+1} & \theta = 2\pi
+				\end{cases}
+			\end{align*}
+			for paths above and below the branch cut. Then by Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
+			\begin{align*}
+				\int_{\rho}^{R} \frac{r^{-a}}{r+1} dr 
+				+ \int_{C_R} f(z) dz 
+				- \int_{\rho}^{R} \frac{r^{-a} e^{-2a\pi}}{r+1} dr
+				+ \int_{C_\rho} f(z) dz 
+				= 2\pi i \Res[f(z), -1]
+			\end{align*}
+			Note: This equation is only formal since \(f(z)\) is not analytic or defined on the branch cut, but it is valid as we will soon see later (\cref{labellist}).
+			Now, since there is an isolated singularity at \(z=-1\), we define a function \(\phi(z)\):
+			\begin{align*}
+				&\phi(z) = z^{-a} = \exp[-a\log(z)] = \exp[-a(\ln(r) + i \theta)]
+					& r>0, \ \theta \in (0, 2\pi) \\
+				&\implies \phi(-1) = \exp[-a(\ln(1) + i\pi)] = e^{-ia\pi} \neq 0
+			\end{align*}
+			By \cref{Residue at Poles Theorem - Complex}:
+			\begin{align*}
+				\Res[f(z), -1] = e^{-ia\pi}
+			\end{align*}
+			We then get:
+			\begin{align*}
+				(1-e^{-i2a\pi}) \int_{\rho}^{R} \frac{r^{-a}}{r+1} dr + 2\pi i e^{-ia\pi}
+					- \int_{C_\rho} f(z) dz - \int_{C_R} f(z) dz
+			\end{align*}
+		 	Using the ML Inequality (\cref{ML Inequality Theorem - Complex}):
+		 	\begin{align*}
+		 		\abs{\int_{C_\rho} f(z) dz} 
+		 		\leq \frac{\rho^{-a}}{1-\rho} \cdot 2\pi rho = \frac{\rho}{\rho^a(1-\rho)}
+		 		&\implies \lim_{\rho \rightarrow \infty} \abs{\int_{C_\rho} f(z) dz}  = 0 \\
+		 		\abs{\int_{C_R} f(z) dz} 
+		 		\leq \frac{R^{-a}}{R-1} \cdot 2\pi R = \frac{2\pi R}{R-1} \cdot \frac{1}{R^a}
+		 		&\implies \lim_{\rho \rightarrow \infty} \abs{\int_{C_R} f(z) dz}  = 0 
+		 	\end{align*}
+	 		Hence
+	 		\begin{align*}
+	 			\int_{0}^{\infty} \frac{r^{-a}}{r+1} dr = 2\pi i e^{-ia\pi}
+	 			&\implies \int_{0}^{\infty} \frac{r^{-a}}{r+1} dr 
+	 				= 2\pi i \frac{e^{-ia\pi}}{1-e^{-i2a\pi}} 
+	 				= 2\pi i \frac{1}{e^{ia\pi} - e^{-ia\pi}}
+	 				= \frac{\pi}{\sin(a\pi)}
+	 		\end{align*}
+		\end{proof}
+	\end{example}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=-3, xmax=3,
+				ymin=-2.5, ymax=2.5,
+				ticks=none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(-1.5, 0) [$-1$]
+					(1, 0) [$\rho$]
+					(2, 0) [$R$]
+				};
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=none,
+				]
+				coordinates {
+					({-0.5*cos(45)}, {0.5*sin(45)}) [$C_\rho$]
+					({-2*cos(45)}, {2*sin(45)}) [$C_R$]
+				};
+			
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=o,
+				]
+				coordinates {
+					(0,0)
+				};
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.375 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 0) circle (2);
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.325 with {\arrow{<}} },
+				postaction={decorate}]
+				(axis cs: 0, 0) circle (1);
+				
+				\draw[-, line width=0pt,]
+				(axis cs: 1, 0) -- (axis cs: 2, 0) 
+				node[midway] {{\LARGE $\rightleftharpoons$}};
+				
+				\draw[dashed, color=White]
+				(axis cs: 0, 0) -- (axis cs: 2.9, 0);
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	
 	
 	
 	

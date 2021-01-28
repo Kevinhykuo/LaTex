@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  27 JAN 2021 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  27 JAN 2021 17:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1173,7 +1173,7 @@ tion.
 \c@corollary=\count354
 \c@definition=\count355
 \c@example=\count356
-No file tikz/MathNotes-figure49.aux.
+No file tikz/MathNotes-figure51.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
@@ -2475,11 +2475,8 @@ LaTeX Warning: Reference `int_0^infty e^(-x^2) dx Derivation Example - Complex'
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-\openout4 = `tikz/MathNotes-figure49.dpth'.
-
-[168
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 LaTeX Warning: Reference `Function continuous in closed and bounded region impl
 ies function is bounded Theorem - Complex' on page 1 undefined on input line 86
@@ -2489,8 +2486,37 @@ ies function is bounded Theorem - Complex' on page 1 undefined on input line 86
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
 on input line 8642.
 
+
+LaTeX Warning: Reference `Indented Paths Theorem - Complex' on page 1 undefined
+ on input line 8662.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 8673.
+
+
+LaTeX Warning: Reference `Indented Paths Theorem - Complex' on page 1 undefined
+ on input line 8701.
+
+
+LaTeX Warning: Reference `Indented Paths Theorem - Complex' on page 1 undefined
+ on input line 8701.
+
+
+LaTeX Warning: Reference `Jordan's Lemma - Complex' on page 1 undefined on inpu
+t line 8707.
+
+
+LaTeX Warning: Reference `Jordan's Lemma - Complex' on page 1 undefined on inpu
+t line 8707.
+
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+\openout4 = `tikz/MathNotes-figure51.dpth'.
+
+[170
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Chapter 18.
 Chapter 19.
 Chapter 20.
@@ -2504,27 +2530,29 @@ Chapter 27.
 Chapter 28.
 Chapter 29.
 
-No file tikz/MathNotes-figure49.bbl.
+No file tikz/MathNotes-figure51.bbl.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39535 strings out of 479382
- 898497 string characters out of 5869369
- 1340206 words of memory out of 5000000
- 55871 multiletter control sequences out of 15000+600000
- 445350 words of font info for 168 fonts, out of 8000000 for 9000
+ 39571 strings out of 479382
+ 899351 string characters out of 5869369
+ 1344340 words of memory out of 5000000
+ 55907 multiletter control sequences out of 15000+600000
+ 445826 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,16n,100p,898b,2484s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on tikz/MathNotes-figure49.pdf (1 page, 32762 bytes).
+ 97i,16n,100p,898b,2521s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/
+usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}</usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on tikz/MathNotes-figure51.pdf (1 page, 38664 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 36 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

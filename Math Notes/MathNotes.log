@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  26 JAN 2021 22:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  27 JAN 2021 18:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1446,7 +1446,7 @@ Package cleveref Info: loaded `english' language definitions on input line 1.
 \openout5 = `MathNotes.toc'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3557) has occurred while \output is active []
 
  [12]
 [13] [14
@@ -1793,73 +1793,83 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ===== Image 'tikz/MathNotes-figure48' is up-to-date. ======
 [172 <./tikz/MathNotes-figure48.pdf>]
 ===== Image 'tikz/MathNotes-figure49' is up-to-date. ======
-[173 <./tikz/MathNotes-figure49.pdf>] [174
+[173 <./tikz/MathNotes-figure49.pdf>] [174]
+===== Image 'tikz/MathNotes-figure50' is up-to-date. ======
 
-]
+Overfull \hbox (7.90346pt too wide) detected at line 8787
+[]
+ []
+
+
+LaTeX Warning: Reference `labellist' on page 1 undefined on input line 8796.
+
+[175 <./tikz/MathNotes-figure50.pdf>]
+===== Image 'tikz/MathNotes-figure51' is up-to-date. ======
+[176 <./tikz/MathNotes-figure51.pdf>]
 Chapter 18.
-[175] [176
+[177
 
-] [177] [178] [179
+] [178
 
-] [180
+] [179] [180] [181
 
-] [181] [182] [183
+] [182
 
-] [184
+] [183] [184] [185
 
-] [185] [186
+] [186
+
+] [187] [188
 
 ]
 Chapter 19.
-[187] [188
-
-] [189] [190
+[189] [190
 
 ] [191] [192
 
 ] [193] [194
 
-]
-Chapter 20.
-[195] [196
+] [195] [196
 
 ]
-Chapter 21.
+Chapter 20.
 [197] [198
 
 ]
-Chapter 22.
+Chapter 21.
 [199] [200
 
 ]
-Chapter 23.
+Chapter 22.
 [201] [202
 
 ]
-Chapter 24.
+Chapter 23.
 [203] [204
 
 ]
-Chapter 25.
+Chapter 24.
 [205] [206
 
 ]
-Chapter 26.
+Chapter 25.
 [207] [208
 
-] [209] [210
+]
+Chapter 26.
+[209] [210
 
 ] [211] [212
 
+] [213] [214
+
 ]
 Chapter 27.
-[213] [214
+[215] [216
 
 ]
 Chapter 28.
-[215] [216
-
-] [217] [218
+[217] [218
 
 ] [219] [220
 
@@ -1869,36 +1879,38 @@ Chapter 28.
 
 ] [225] [226
 
+] [227] [228
+
 ]
 Chapter 29.
-[227] [228
+[229] [230
 
-] [229
+] [231
 
-] [230
+] [232
 
-] [231]
+] [233]
 
-(./MathNotes.bbl [232
+(./MathNotes.bbl [234
 
-]) [233] (./MathNotes.aux
+]) [235] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 120EB45D4AA01BE747BC194E6A4C902D;9769.
+(rerunfilecheck)             Checksum: 6EDDA3C7CF0A7B42F91EFB7F14F8EDF2;9856.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40772 strings out of 479382
- 925771 string characters out of 5869369
- 1352122 words of memory out of 5000000
- 56011 multiletter control sequences out of 15000+600000
+ 40790 strings out of 479382
+ 926234 string characters out of 5869369
+ 1352334 words of memory out of 5000000
+ 56018 multiletter control sequences out of 15000+600000
  445049 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,16n,98p,859b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 94i,19n,98p,859b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/
 usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/
 local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/loca
@@ -1928,10 +1940,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (247 pages, 936482 bytes).
+Output written on MathNotes.pdf (249 pages, 952529 bytes).
 PDF statistics:
- 3722 PDF objects out of 4296 (max. 8388607)
- 3280 compressed objects within 33 object streams
- 1039 named destinations out of 1200 (max. 500000)
- 1415 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3801 PDF objects out of 4296 (max. 8388607)
+ 3340 compressed objects within 34 object streams
+ 1048 named destinations out of 1200 (max. 500000)
+ 1433 words of extra memory for PDF output out of 10000 (max. 10000000)
 
