@@ -9076,10 +9076,10 @@
 			Let \(t = (x+1)^{-1}\), then
 			\begin{align*}
 				B(p, q) 
-				&= \int_{0}^{1} t^{p-1} (1-t)^{q-1} dt \\
-				&= \int_{\infty}^{0} (x+1)^{1-p} [1- (x+1)^{-1}]^{q-1} [-(x+1)^{-2}] dx  \\
-				&= - \int_{\infty}^{0} (x+1)^{-1-p} \left[\frac{x}{x+1}\right]^{q-1} dx \\
-				&= \int_{0}^{\infty} \frac{x^{q-1}}{(x+1)^{q+p}} dx
+				&= \int_{0}^{1} t^{p-1} (1-t)^{q-1} dt 
+				 = \int_{\infty}^{0} (x+1)^{1-p} [1- (x+1)^{-1}]^{q-1} [-(x+1)^{-2}] dx  \\
+				&= - \int_{\infty}^{0} (x+1)^{-1-p} \left[\frac{x}{x+1}\right]^{q-1} dx
+				 = \int_{0}^{\infty} \frac{x^{q-1}}{(x+1)^{q+p}} dx
 			\end{align*}
 			For \(q = 1-p\), and using our knowledge from before:
 			\begin{align*}
@@ -9089,7 +9089,74 @@
 		\end{proof}
 	\end{example}
 	
+	\subsection{Indefinite Integrals Involving Sines and Cosines} \label{Indefinite Integrals Involving Sines and Cosines Subsection - Complex}
 	
+	Evaluating integrals of the type:
+	\begin{align*}
+		\int_{0}^{2\pi} F[\sin(\theta), \cos(\theta)] d\theta
+	\end{align*}
+	Consider a positively oriented circular simple closed contour \(C\) on the unit circle. This suggests a parametric representation:
+	\begin{align*}
+		z &= e^{i\theta}	& \theta \in [0, 2\pi]
+	\end{align*}
+	Using the complex representations of sine and cosine (\cref{Trig Identities - Complex}):
+	\begin{align*}
+		\sin(\theta) &= \frac{z - z^{-1}}{2i} &
+		\cos(\theta) &= \frac{z + z^{-1}}{2}
+	\end{align*}
+	We obtain the contour integral:
+	\begin{align*}
+		\int_{C} \frac{1}{iz} F\left( \frac{z-z^{-1}}{2i}, \frac{z+z^{-1}}{2}\right) dz
+	\end{align*}
+	If the integrand reduces to a rational function of \(z\), we can use Cauchy's Residue theorem (\cref{Cauchy's Residue Theorem - Complex}) to evaluate the integral, provided we know where the singularities are and conditions are satisfied. That is, substitute the trigonometric identities into the integrand and use Cauchy's Residue Theorem.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=-3, xmax=3,
+				ymin=-2.5, ymax=2.5,
+				ticks=none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					({2*cos(45)}, {2*sin(45)}) [\(z=e^{i\theta}\)]
+				};
+				
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.375 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 2, 0) arc (0:360:200)
+				node[pos=0.375, above] {\(C\)};
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, 0) arc (0:45:100)
+				node[pos=0.5, right] {\(\theta\)};
+				
+				\draw[->, line width=1pt,]
+				(axis cs: 0, 0) -- (axis cs: {2*cos(45)}, {2*sin(45)});
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	\subsection{Argument Principle} \label{Argument Principle Subsection - Complex}
+	
+	\begin{definition}[Meromorphic]
+		Let \(f\) be a function with domain \(D\). \(f\) is meromorphic if it is analytic throughout \(D\), except at the poles.
+	\end{definition}
 	
 	
 
