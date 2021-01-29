@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  27 JAN 2021 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  28 JAN 2021 15:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2580,10 +2580,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39580 strings out of 479382
- 899516 string characters out of 5869369
- 1340379 words of memory out of 5000000
- 55916 multiletter control sequences out of 15000+600000
+ 39587 strings out of 479382
+ 899680 string characters out of 5869369
+ 1340667 words of memory out of 5000000
+ 55923 multiletter control sequences out of 15000+600000
  445350 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  97i,19n,100p,898b,2484s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2592,7 +2592,7 @@ usr/local/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
 sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
 /local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on tikz/MathNotes-figure54.pdf (1 page, 38424 bytes).
+Output written on tikz/MathNotes-figure54.pdf (1 page, 38462 bytes).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream

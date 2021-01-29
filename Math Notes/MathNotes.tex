@@ -8019,6 +8019,7 @@
 	\end{proof}
 
 	\begin{example}
+		\label{Isolated zeros implies finite poles in analytic region Example - Complex}
 		Let \(R\) be a region consisting of all points interior and on a simple closed contour \(C\). Show if \(f\) is analytic in region \(R\) except to poles inside \(C\), then the poles must be finite in number. 
 	\end{example}
 	\begin{proof}
@@ -9140,13 +9141,13 @@
 				(axis cs: 2, 0) arc (0:360:200)
 				node[pos=0.375, above] {\(C\)};
 				
-				\draw[line width=1pt, 
+				\draw[ 
 				decoration={markings, mark=at position 1 with {\arrow{>}} },
 				postaction={decorate}]
 				(axis cs: 1, 0) arc (0:45:100)
 				node[pos=0.5, right] {\(\theta\)};
 				
-				\draw[->, line width=1pt,]
+				\draw[->,]
 				(axis cs: 0, 0) -- (axis cs: {2*cos(45)}, {2*sin(45)});
 			\end{axis}
 		\end{tikzpicture}
@@ -9158,15 +9159,136 @@
 		Let \(f\) be a function with domain \(D\). \(f\) is meromorphic if it is analytic throughout \(D\), except at the poles.
 	\end{definition}
 	
+	Let \(C\) be a positively oriented simple closed contour, \(w=f(z)\) be a function that is analytic and nonzero on \(C\) and meromorphic in domain interior to \(C\), with \(\Gamma = \operatorname{img}[f(C)]\). That is, \(\Gamma\) is the image of \(C\) under \(f(z)\). \(\Gamma\) is also a closed contour, but not necessarily simple.
 	
+	Since \(f\) is nonzero on \(C\), \(\Gamma\) does not pass through the origin.
+	
+	Suppose we now travel along \(C\) starting on \(z_0\), likewise, we are travelling on \(\Gamma\) starting at \(w_0\) under the transformation. Eventually, we will come back to \(z_0\), which is \(w_0\) under the transformation. Let \(\arg(w_0) = \phi_0\) and the new argument after travelling \(\Gamma\) back to \(w_0\) be \(\phi_1\). It is clear that the change in argument is:
+	\begin{align*}
+		\Delta_C \arg[f(z)] = \phi_1 - \phi_0
+	\end{align*}
+	It is clear that \(\Delta_C\) is an integer multiple of \(2\pi\), which leads us to the winding number. 
+	
+	\begin{definition}[Winding Number]
+		\label{Winding Number Definition - Complex}
+		Let \(C\), \(\Gamma\), \(z_0\), and \(w_0\) be as stated above. The winding number of \(\Gamma\):
+		\begin{align*}
+			\frac{1}{2\pi} \Delta_C \arg[f(z)] \in \mathbb{Z}
+		\end{align*}
+	\end{definition}
+	Note: \(\Gamma\) does not enclose origin \(\implies \frac{1}{2\pi} \Delta_C \arg[f(z)] = 0\)
+	
+	It is clear that the zeros of \(f\) inside the domain enclosed by \(C\) are points that are mapped to the origin (and poles are those that are mapped to points at \(\infty\)). Hence, we can use the number of zeros and poles to determine the winding number of \(\Gamma\).
+	
+	\begin{question}
+		The number of zeros of \(f\) in \(C\) corresponds the the number of times a point in the domain interior to \(\Gamma\) gets mapped to the origin. It is clear this represents the amount of ``loops'' around the origin. What does the poles represent? They represents the number of times a point in the domain interior to \(\Gamma\) get mapped to points at infinity, which corresponds to loops around the point at infinity. Therefore, the contour is getting ``flipped inside-out''?
+	\end{question}
+	
+	\begin{theorem}[Argument Principle]
+		\label{Argument Principle Theorem - Complex}
+		Let \(C\) be a simple closed contour, \(f(z)\) be a function, \(P\) be number of poles and \(Z\) be number of zeros of \(f(z)\) inside \(C\). If
+		\begin{itemize}
+			\item[1.] \(f(z)\) meromorphic in domain interior to \(C\)
+			\item[2.] \(f(z)\) analytic and nonzero on \(C\)
+		\end{itemize}
+		Then 
+		\begin{align*}
+			\frac{1}{2\pi} \Delta_C \arg[f(z)] = Z - P
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Let \(C\) be a simple closed contour and \(z = z(t)\) (\(t \in [a, b]\)) be a parametric representation for \(C\). Consider:
+		\begin{align*}
+			\int_C \frac{f'(z)}{f(z)} dz = \int_{a}^{b} \frac{f'[z(t)] z'(t)}{f[z(t)]} dt
+		\end{align*}
+		\(f(z)\) is nonzero on \(C\), so it does not pass through the origin, thus we can use the exponential form:
+		\begin{align*}
+			f[z(t)] &= \rho(t) e^{i\phi(t)} \\
+			\dv{t} \rho(t) e^{i\phi(t)} &= \rho'(t) e^{i\phi(t)} + i\rho(t)e^{i\phi(t)} \phi'(t)
+		\end{align*}
+		Substituting:
+		\begin{align*}
+			\int_C \frac{f'(z)}{f(z)} dz 
+			&= \int_{a}^{b} \frac{\rho'(t)}{\rho(t)} dt + i\int_{a}^{b} \phi'(t) dt 
+			= \eval{\ln[\rho(t)]}_{a}^{b} + \eval{i\phi(t)}_{a}^{b}
+		\end{align*}
+		Since we have a closed contour:
+		\begin{align*}
+			a&=b & \rho(a) &= \rho(b) & \phi(b) - \phi(a) &= \Delta_C \arg[f(z)]
+		\end{align*}
+		Hence
+		\begin{align*}
+			\int_{C} \frac{f'(z)}{f(z)} dz = i\Delta_{C} \arg[f(z)]
+		\end{align*}
+		Using Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}), if \(f\) has a zero of order \(m_0\) at \(z_0\):
+		\begin{align*}
+			f(z) &= (z-z_0)^{m_0} g(z) 
+				& \text{\Cref{Zero of order m iff zero can be factored Theorem - Complex}} \\
+			f'(z) &= m_0 (z-z_0)^{m_0 - 1} g(z) + (z-z_0)^{m_0} g'(z)
+		\end{align*}
+		Thus
+		\begin{align*}
+			\frac{f'(z)}{f(z)} = \frac{m}{z-z_0} + \frac{g'(z)}{g(z)}
+		\end{align*}
+		\(g'(z)/g(z)\) is analytic at \(z_0\), so it has a Taylor series at \(z_0\). This implies that \(f'(z)/f(z)\) has a simple pole at \(z_0\) with residue \(m_0\).
+		
+		Likewise, if \(f\) has a pole of order \(p_0\) at \(z_0\). We get
+		\begin{align*}
+			f(z) &= (z-z_0)^{-p_0} \phi(z) & \text{\Cref{Residue at Poles Theorem - Complex}}
+		\end{align*}
+		Using the same procedure as before, \(f'(z)/f(z)\) has a simple pole at \(z_0\) with residue \(-p_0\). We know the poles and zeros have to be finite (\cref{Isolated zeros implies finite poles in analytic region Example - Complex} and \cref{labellist}), therefore, Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
+		\begin{align*}
+			\int_{C} \frac{f'(z)}{f(z)} dz 
+			= 2\pi i \left[\sum_{k=0}^{N} m_k + \sum_{j=0}^{J} (-p_j) \right] 
+		\end{align*}
+		Since \(m_0\) corresponds to the number of zeros at \(z_0\), and \(p_0\) is the number of poles at \(z_0\):
+		\begin{align*}
+			\left[Z = \sum_{k=0}^{N} m_k\right] \land \left[P = \sum_{j=0}^{J} (-p_j)\right]
+			\implies \int_{C} \frac{f'(z)}{f(z)} dz = 2\pi i (Z - P)
+		\end{align*}
+		Equating the two expressions for the contour integral together and rearranging:
+		\begin{align*}
+			\frac{1}{2\pi} \Delta_C \arg[f(z)] = Z - P
+		\end{align*}
+	\end{proof}
 
+	\begin{observation}
+		The reason we choose to integrate over \(f'(z)/f(z)\) is because
+		\begin{align*}
+			\dv{z} \log[f(z)] = \frac{f'(z)}{f(z)}
+		\end{align*}
+		and from the definition of the logarithm (\cref{Logarithmic Function Definition - Complex}):
+		\begin{align*}
+			\log(z) = \ln(\abs{z}) + i \arg(z)
+		\end{align*}
+		which is how we are able to ``extract'' the phase component.  
+	\end{observation}
+	
+	\begin{example}
+		Consider \(f(z)\) over \(C\). 
+		\begin{align*}
+			f(z) = \frac{z^3 + 2}{z = z^2 + \frac{2}{z}}
+		\end{align*}
+		The zeros of the function are \(z = \sqrt[3]{2} > 1\) and the poles are \(z = 0\). If \(C\) is a contour over the unit circle in the positive direction, then by \cref{Argument Principle Theorem - Complex}:
+		\begin{align*}
+			\Delta_{C} \arg[f(z)] = 2\pi (0-1) = -2\pi
+		\end{align*}
+		so \(\Gamma\) winds around the origin once in the negative direction.
+	\end{example}
 
+	\subsection{Rouché's Theorem} \label{Rouché's Theorem Subsection - Complex}
 	
-	
-	
-	
-	
-	
+	\begin{theorem}[Rouché's Theorem]
+		\label{Rouché's Theorem - Complex}
+		Let \(C\) be a simple closed contour, and \(f(z)\) and \(g(z)\) be analytic functions inside and on \(C\), then
+		\begin{align*}
+			&\forall z \in C [\abs{f(z)} > \abs{g(z)}] \\
+			&\implies [f(z)] \land [f(z) + g(z)] \text{ have same number of zeros, including multiplicities, inside } C
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		content
+	\end{proof}
 	
 	
 	
