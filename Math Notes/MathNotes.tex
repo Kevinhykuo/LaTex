@@ -7711,7 +7711,7 @@
 				\(\phi(z_0)\) is analytic and \(\phi(z_0) \neq 0\).
 			\item[3.]
 			\begin{align*}
-				\Res[f(z), z_0] &= \frac{\phi^{(m-1)}}{(m-1)!}	&	m \in \mathbb{N}
+				\Res[f(z), z_0] &= \frac{\phi^{(m-1)}(z_0)}{(m-1)!}	&	m \in \mathbb{N}
 			\end{align*}
 		\end{itemize}
 	\end{theorem}
@@ -9359,7 +9359,9 @@
 			\Delta_{C} arg[f(z)] = 0
 		\end{align*}
 		\begin{proof}
-			content
+			{\color{Grey}
+			
+			}
 		\end{proof}
 	\end{example}
 	
@@ -9367,7 +9369,9 @@
 		\label{Function not identically zero in domain implies zeros of function finite in order and number Example - Complex}
 		Let \(f\) be a meromorphic function in domain \(D\) inside a simple closed contour \(C\) which \(f\) is analytic and nonzero. Suppose \(D_0\) consists of all points in \(D\) except for the poles. Show that if \(\forall z \in D[f(z) \neq 0]\), then zeros of \(f\) in \(D\) are all finite in order and number.
 		\begin{proof}
-			content
+			{\color{Grey}
+				
+			}
 		\end{proof}
 	\end{example}
 	
@@ -9377,14 +9381,18 @@
 			\int_{C} \frac{zf'(z)}{f(z)} dz = 2 \pi i \sum_{k=1}^{n} m_k z_k
 		\end{align*}
 		\begin{proof}
-			content
+			{\color{Grey}
+				
+			}
 		\end{proof}
 	\end{example}
 
 	\begin{example}
 		Show if \(c \in \mathbb{C}\), \(\abs{c}>e\), then \(cz^n = e^z\) has \(n\) roots, including multiplicities, inside \(\abs{z} = 1\).
 		\begin{proof}
-			content
+			{\color{Grey}
+				
+			}
 		\end{proof}
 	\end{example}
 
@@ -9397,12 +9405,129 @@
 		\end{align*}
 		Prove Rouché Theorem.
 		\begin{proof}
-			content
+			{\color{Grey}
+				
+			}
 		\end{proof}
 	\end{example}
 
 	\subsection{Inverse Laplace Transforms} \label{Inverse Laplace Transforms Subsection - Complex}
 	
+	\begin{definition}[Bromwich Integral]
+		\label{Bromwich Integral Definition - Complex}
+		Let \(F(s)\) be a complex function, and \(L_R\) be a vertical line segment from \(s = \gamma - iR\) to \(s = \gamma + iR\) large enough that singularities of \(F\) lie to the left of \(L_R\). Consider 
+		\begin{align*}
+			f(t) &= \frac{1}{2\pi i} \lim_{R \rightarrow \infty} \int_{L_R} e^{st} F(s) ds 
+			& t>0
+		\end{align*}
+		If the limit exists, then the Bromwich Integral:
+		\begin{align*}
+			f(t) &= \frac{1}{2\pi i} \operatorname{P.V.} \int_{\gamma - i\infty}^{\gamma + i\infty} e^{st} F(s) ds 
+				& t>0
+		\end{align*}
+		The Bromwich integral is the inverse Laplace transform.
+	\end{definition}
+	
+	\begin{definition}[Laplace Transform]
+		\label{Laplace Transform Definition - Complex}
+		\begin{align*}
+			F(s) = \int_{0}^{\infty} e^{st} f(s) dt
+		\end{align*}
+	\end{definition}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=-3, xmax=3,
+				ymin=-3, ymax=3,
+				ticks=none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(1, 0) [\(\gamma\)]
+					(1, 2) [\(\gamma + i R\)]
+					(1,-2) [\(\gamma - i R\)]
+					(-0.3, 0.5) [\(s_N\)]
+				};
+				
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, 2) arc (90:270:200)
+				node[pos=0.75, left] {\(C_R\)};
+				
+				\draw[ line width=1pt,
+				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, -2) -- (axis cs: 1, 2)
+				node[pos=0.75, right] {\(L_R\)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	\textbf{Deriving the Inverse Laplace Transform.}
+
+		Let \(F(s)\) and \(L_R\) be defined as above, and \(C_R\) be a semicircular contour from \(\gamma + iR\) to \(\gamma - iR\) enveloping the zeros of \(F(s)\) (\(s_k\), \(k = 1, 2, \ldots, n\)). By Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
+		\begin{align*}
+			\int_{L_R} e^{st} F(s) ds &= 2\pi i \sum_{n=1}^{N} \Res[e^{st} F(s), s_n] - \int_{C_R} e^{st} F(s) ds
+		\end{align*}
+		Assuming
+		\begin{align*}
+			\lim_{R \rightarrow \infty} \int_{C_R} e^{st} F(s) ds = 0
+		\end{align*}
+		Then
+		\begin{align*}
+			f(t) 
+			&= \frac{1}{2\pi i} \lim_{R \rightarrow \infty} \int_{L_R} e^{st} F(s) ds  
+			= \sum_{n=1}^{N} \Res[e^{st} F(s), s_n]
+				& t>0
+		\end{align*}
+	
+	\begin{example}
+		Let 
+		\begin{align*}
+			F(s) = \frac{s}{s^2 + 4} = \frac{s}{(s+2i)(s-2i)}
+		\end{align*}
+		Then
+		\begin{align*}
+			f(t) 
+			= \sum_{n=1}^{N} \Res[e^{st} F(s), s_n]
+			= \Res[\frac{e^{st} s}{(s+2i)(s-2i)}, 2i] + \Res[\frac{e^{st} s}{(s+2i)(s-2i)}, -2i]
+		\end{align*}
+		The singularities are simple poles, so by \cref{Residue at Poles Theorem - Complex}:
+		\begin{align*}
+			f(t) 
+			&= \Res[\frac{\phi_1 (s)}{s-2i}, 2i] + \Res[\frac{\phi_2 (s)}{s+2i}, -2i] &
+				\phi_1 (s) &= \frac{e^{st} s}{s + 2i} &
+				\phi_1 (s) &= \frac{e^{st} s}{s - 2i} \\
+			&= \phi_1(2i) + \phi(-2i) = \frac{e^{2it} (2i)}{4i} + \frac{e^{-2it} (-2i)}{-4i} \\
+			&= \frac{e^{i2t} + e^{-i2t}}{2} = \cos(2t)
+		\end{align*}
+	\end{example}
+
+	\begin{example}
+		Find the inverse Laplace transform of
+		\begin{align*}
+			F(s) = \frac{1}{s^2} - \frac{1}{s \sinh(s)}
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			
+			}
+		\end{proof}
+	\end{example}
 	
 	
 	
