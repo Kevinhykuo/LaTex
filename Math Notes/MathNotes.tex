@@ -9236,7 +9236,7 @@
 		\begin{align*}
 			f(z) &= (z-z_0)^{-p_0} \phi(z) & \text{\Cref{Residue at Poles Theorem - Complex}}
 		\end{align*}
-		Using the same procedure as before, \(f'(z)/f(z)\) has a simple pole at \(z_0\) with residue \(-p_0\). We know the poles and zeros have to be finite (\cref{Isolated zeros implies finite poles in analytic region Example - Complex} and \cref{labellist}), therefore, Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
+		Using the same procedure as before, \(f'(z)/f(z)\) has a simple pole at \(z_0\) with residue \(-p_0\). We know the poles and zeros have to be finite (\cref{Isolated zeros implies finite poles in analytic region Example - Complex} and \cref{Function not identically zero in domain implies zeros of function finite in order and number Example - Complex}), therefore, Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
 		\begin{align*}
 			\int_{C} \frac{f'(z)}{f(z)} dz 
 			= 2\pi i \left[\sum_{k=0}^{N} m_k + \sum_{j=0}^{J} (-p_j) \right] 
@@ -9276,10 +9276,10 @@
 		so \(\Gamma\) winds around the origin once in the negative direction.
 	\end{example}
 
-	\subsection{Rouché's Theorem} \label{Rouché's Theorem Subsection - Complex}
+	\subsection{Rouché's Theorem} \label{Rouche's Theorem Subsection - Complex}
 	
 	\begin{theorem}[Rouché's Theorem]
-		\label{Rouché's Theorem - Complex}
+		\label{Rouche's Theorem - Complex}
 		Let \(C\) be a simple closed contour, and \(f(z)\) and \(g(z)\) be analytic functions inside and on \(C\), then
 		\begin{align*}
 			&\forall z \in C [\abs{f(z)} > \abs{g(z)}] \\
@@ -9287,15 +9287,121 @@
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
-		content
+		We know \(\forall z \in C\):
+		\begin{align*}
+			\abs{f(z)} &> \abs{g(z)} \geq 0	&
+			\abs{f(z) + g(z)} \geq \abs{\abs{f(z)} - \abs{g(z)}} > 0
+		\end{align*}
+		Letting \(Z_f\) and \(Z_{f+g}\) be the number of zeros, with multiplicities, of \(f(z)\) and \(f(z) + g(z)\) inside \(C\). From (\cref{Argument Principle Theorem - Complex}):
+		\begin{align*}
+			Z_f &= \frac{1}{2\pi} \Delta_{C} \arg[f(z)] &
+			Z_{f+g} &= \frac{1}{2\pi} \Delta_{C} \arg[f(z) + g(z)] & z \in C
+		\end{align*}
+		Then
+		\begin{align*}
+			Z_{f+g} &= \frac{1}{2\pi} \Delta_{C} \arg[f(z) + g(z)] 
+				= \frac{1}{2\pi} \Delta_{C} \arg\left[f(z) + \left(1 + \frac{g(z)}{f(z)}\right)\right] \\
+				&= \frac{1}{2\pi} \Delta_{C} \arg[f(z)] + \frac{1}{2\pi} \Delta_{C} \arg\left[1 + \frac{g(z)}{f(z)}\right]
+		\end{align*}
+		Substituting \(Z_f\):
+		\begin{align*}
+			Z_{f+g} &= Z_f + \frac{1}{2\pi} \Delta_{C} \arg[F(z)] &
+				F(z) = 1 + \frac{g(z)}{f(z)}
+		\end{align*}
+		This implies 
+		\begin{align*}
+			\abs{F(z) - 1} = \frac{\abs{g(z)}}{\abs{f(z)}} < 1
+		\end{align*}
+		This implies the image of \(C\) under \(F(z)\) lies on open disk \(\abs{F(z) - 1} < 1\), hence, does not enclose the origin \(F(z) = 0\). Therefore by \cref{Closed contour does not enclose origin implies winding number is zero Example - Complex}:
+		\begin{align*}
+			\Delta_{C} \arg[F(z)] = 0 \implies Z_{f+g} = Z_f
+		\end{align*}
 	\end{proof}
 	
+	\Cref{Rouche's Theorem - Complex} allows us to locate the number of zeros of a function \(F(z)\) inside a simple closed contour by smartly breaking it up into two functions \(f(z)\) and \(g(z)\). Then evaluating the number of zeros of either \(f(z)\) or \(g(z)\) inside said contour. 
 	
+	\begin{example}[Proof of Fundamental Theorem of Algebra via Rouché's Theorem]
+		\label{Fundamental Theorem of Algebra via Rouche's Theorem Proof - Complex}
+		Fundamental Theorem of Algebra: (\Cref{Fundamental Theorem of Algebra - Complex}).
+		
+		Consider a polynomial:
+		\begin{align*}
+			P(z) &= \sum_{k=0}^{n} a_k z^k & a_n \neq 0
+		\end{align*}
+		Let 
+		\begin{align*}
+			f(z) &= a_n z^n & g(z) = &= \sum_{k=0}^{n-1} a_k z^k & \abs{z} &= R > 1
+		\end{align*}
+		Then
+		\begin{align*}
+			\abs{f(z)} &= \abs{a_n} R^n & 
+			\abs{g(z)} &\leq \sum_{k=0}^{n-1} \abs{a_k} R^k \leq \sum_{k=0}^{n-1} \abs{a_k} R^{n-1}
+				& R>1 
+		\end{align*}
+		Then
+		\begin{align*}
+			\frac{\abs{g(z)}}{\abs{f(z)}} \leq  \sum_{k=0}^{n-1}\frac{\abs{a_k}}{\abs{a_n}R} < 1 
+			\implies \sum_{k=0}^{n-1}\frac{\abs{a_k}}{\abs{a_n}} < R
+		\end{align*}
+		Therefore
+		\begin{align*}
+			R > 1 \implies \abs{f(z)} > \abs{g(z)}
+		\end{align*}
+		Now that \(\abs{f(z)} > \abs{g(z)}\) is established, we can use Rouché's Theorem. Which tells us that \(f(z)\) and \(f(z) + g(z) = P(z)\) has the same number of zeros. It is clear that \(f(z) = a_n z^n\) has \(n\) zeros, which implies \(P(z)\) has \(n\) zeros.
+	\end{example}
 	
+	Note: Liouville's Theorem \(\cref{Liouville's Theorem - Complex}\) ensures the existence of at least one zero for a polynomial, while Rouché's Theorem ensures the existence of \(n\) zeros, including multiplicities.
 	
+	\begin{example}
+		\label{Closed contour does not enclose origin implies winding number is zero Example - Complex}
+		Let \(\Gamma\) be a closed contour that is the image of a simple closed contour \(C\) under the transformation \(f(z)\), and \(\Gamma\) does not enclose the origin \(w = 0\), show 
+		\begin{align*}
+			\Delta_{C} arg[f(z)] = 0
+		\end{align*}
+		\begin{proof}
+			content
+		\end{proof}
+	\end{example}
 	
+	\begin{example}[\(\forall z \in D, f(z) \nequiv 0 \implies \) zeros of \(f\) in \(D\) finite in order and number ]
+		\label{Function not identically zero in domain implies zeros of function finite in order and number Example - Complex}
+		Let \(f\) be a meromorphic function in domain \(D\) inside a simple closed contour \(C\) which \(f\) is analytic and nonzero. Suppose \(D_0\) consists of all points in \(D\) except for the poles. Show that if \(\forall z \in D[f(z) \neq 0]\), then zeros of \(f\) in \(D\) are all finite in order and number.
+		\begin{proof}
+			content
+		\end{proof}
+	\end{example}
 	
-	
+	\begin{example}
+		Let function \(f\) be analytic inside and on a positively oriented simple closed contour \(C\), with no zeros in \(C\). Show if \(f\) has \(n\) zeros \(z_k\) (\(k = 1, 2, \ldots, n\)) inside \(C\) with multiplicity \(m_k\), then
+		\begin{align*}
+			\int_{C} \frac{zf'(z)}{f(z)} dz = 2 \pi i \sum_{k=1}^{n} m_k z_k
+		\end{align*}
+		\begin{proof}
+			content
+		\end{proof}
+	\end{example}
+
+	\begin{example}
+		Show if \(c \in \mathbb{C}\), \(\abs{c}>e\), then \(cz^n = e^z\) has \(n\) roots, including multiplicities, inside \(\abs{z} = 1\).
+		\begin{proof}
+			content
+		\end{proof}
+	\end{example}
+
+	\begin{example}[Rouché Theorem Alternate Proof]
+		\label{Rouche's Theorem Alternate Proof - Complex}
+		Let \(f(z)\) and \(g(z)\) be functions with \(\abs{f(z)} > \abs{g(z)}\), and \(C\) be a positively oriented simple closed contour. Consider 
+		\begin{align*}
+			\Phi(t) &= \frac{1}{2\pi i} \int_{C} \frac{f'(z) + t g'(z)}{f(z) + tg(z)} dz
+				& t \in [0, 1]
+		\end{align*}
+		Prove Rouché Theorem.
+		\begin{proof}
+			content
+		\end{proof}
+	\end{example}
+
+	\subsection{Inverse Laplace Transforms} \label{Inverse Laplace Transforms Subsection - Complex}
 	
 	
 	
