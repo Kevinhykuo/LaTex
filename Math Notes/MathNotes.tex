@@ -9360,17 +9360,34 @@
 		\end{align*}
 		\begin{proof}
 			{\color{Grey}
-			
+			\begin{align*}
+				&\Gamma \text{ does not enclose } w=0 \\
+				&\implies \forall z \in \Gamma [0 \leq \arg[f(z)] - \arg[f(z_9)] < 2\pi] \\
+				&\implies 0 \leq \Delta_{C} \arg[f(z)] < 1 \\
+				&\implies \Delta_{C} \arg[f(z)] = 0
+					&\Delta_{C} \arg[f(z)] \in \mathbb{Z}
+			\end{align*}
 			}
 		\end{proof}
 	\end{example}
 	
 	\begin{example}[\(\forall z \in D, f(z) \nequiv 0 \implies \) zeros of \(f\) in \(D\) finite in order and number ]
 		\label{Function not identically zero in domain implies zeros of function finite in order and number Example - Complex}
-		Let \(f\) be a meromorphic function in domain \(D\) inside a simple closed contour \(C\) which \(f\) is analytic and nonzero. Suppose \(D_0\) consists of all points in \(D\) except for the poles. Show that if \(\forall z \in D[f(z) \neq 0]\), then zeros of \(f\) in \(D\) are all finite in order and number.
+		Let \(f\) be a meromorphic function in domain \(D\) interior to a simple closed contour \(C\) which \(f\) is analytic and nonzero. Suppose \(D_0\) consists of all points in \(D\) except for the poles. Show that if \(\forall z \in D[f(z) \neq 0]\), then zeros of \(f\) in \(D\) are all finite in order and number.
+		
+		Note: \(z_0 \in D\) is a zero of \(f\) that is not finite in order \(\implies \exists \epsilon > \abs{z-z_0} [f(z) \equiv 0]\)
 		\begin{proof}
 			{\color{Grey}
-				
+			Suppose \(\exists z_0 \in D\) where \(z_0\) is a zero of \(f\) that is not finite in order
+			\begin{align*}
+				&\implies \exists \epsilon > \abs{z-z_0} [f(z) \equiv 0]
+					&\text{Note} \\
+				&\implies \forall z \in D [f(z) \equiv 0] 
+					&\text{\Cref{Analytic function is zero in domain or line segment in domain implies function is zero throughout domain Lemma - Complex}} \\
+				&\implies \text{Contradiction with having poles in } D
+			\end{align*}
+			By \cref{Isolated zeros implies finite poles in analytic region Example - Complex}:
+			If \(f\) is analytic in region \(R\) and \(\forall z \in D_0 [f(z) \nequiv 0]\), then zeros in \(R\) are finite in order and number.
 			}
 		\end{proof}
 	\end{example}
@@ -9382,7 +9399,27 @@
 		\end{align*}
 		\begin{proof}
 			{\color{Grey}
-				
+			\(f(z)\) has zero of order \(m_k\) at \(z_k\)
+			\begin{align*}
+				&\implies f(z) = (z-z_k)^{m_k} g(z) 
+					& \text{\Cref{Zero of order m iff zero can be factored Theorem - Complex}} \\
+				&\implies f'(z) = m_k (z-z_k)^{m_k - 1} g(z) + (z-z_k)^{m_0} g'(z) \\
+			\end{align*}
+			Then 
+			\begin{align*}
+				z \left[\frac{f'(z)}{f(z)}\right]
+				&= z \left[ \frac{m_k}{z-z_k} + \frac{g'(z)}{g(z)}\right]
+				= \frac{m_k (z-z_k) + m_k z_k}{z-z_k} + \frac{z g'(z)}{g(z)} 
+				= m_k + \frac{m_k z_k}{z-z_k} + \frac{z g'(z)}{g(z)}
+			\end{align*}
+			Since \(g(z)\) is analytic at \(z_k\), \(g'(z)/g(z)\) has a Taylor series at \(z_0\), so it is clear that:
+			\begin{align*}
+				\Res[\frac{zf'(z)}{f(z)}, z_k] = m_k z_k
+			\end{align*}
+			By Cauchy's Residue theorem (\cref{Cauchy's Residue Theorem - Complex}):
+			\begin{align*}
+				\int_{C} \frac{zf'(z)}{f(z)} dz = 2 \pi i \sum_{k=1}^{n} m_k z_k
+			\end{align*}
 			}
 		\end{proof}
 	\end{example}
@@ -9391,7 +9428,20 @@
 		Show if \(c \in \mathbb{C}\), \(\abs{c}>e\), then \(cz^n = e^z\) has \(n\) roots, including multiplicities, inside \(\abs{z} = 1\).
 		\begin{proof}
 			{\color{Grey}
-				
+			Rearranging, we have:
+			\begin{align*}
+				cz^n - e^z = 0
+			\end{align*}
+			Then 
+			\begin{align*}
+				\abs{cz^n} & \abs{c} > e & \abs{e^z} = \abs{e^x e^{iy}} = \abs{e^x} = \abs{e^{\cos(\theta)}} < e
+			\end{align*}
+			Letting \(f(z) = cz^n\) and \(g(z) = -e^{z}\), by Rouché's theorem (\cref{Rouche's Theorem - Complex}):
+		 	\begin{align*}
+		 		f(z) \text{ has } n \text{ zeros } 
+		 		&\implies f(z) + g(z) \text{ has } n \text{ zeros} 
+		 		 \implies e^{z} \text{ has } n \text{ zeros}
+		 	\end{align*}
 			}
 		\end{proof}
 	\end{example}
@@ -9406,7 +9456,84 @@
 		Prove Rouché Theorem.
 		\begin{proof}
 			{\color{Grey}
-				
+			\underline{Prove \(\Phi(t)\) exists:} \newline
+			We have \(\abs{f(z)} > \abs{g(z)}\), \(C\) is as positively oriented simple closed contour, and 
+			\begin{align*}
+				\Phi(t) &= \frac{1}{2\pi i} \int_{C} \frac{f'(z) + t g'(z)}{f(z) + tg(z)} dz
+				& t \in [0, 1]
+			\end{align*}
+			Since \(\forall z \in C [\abs{f(z)} > \abs{g(z)}]\):
+			\begin{align*}
+				&\implies \abs{f(z)} > \abs{g(z)} \leq \abs{tg(z)}  = \abs{t} \abs{g(z)} 
+					& t \in [0, 1] \\
+				&\implies \text{Integrand denominator is never zero} \\
+				&\implies \Phi(t) \text{ exists}
+			\end{align*}
+			
+			\underline{Prove \(\Phi(t)\) continuous:} \newline
+			Let \(t, t_0 \in [0,1]\):
+			\begin{align*}
+				&\Phi(t) - \Phi(t_0) \\
+				&= (2\pi i)^{-1} \int_{C} \frac{f' + t g'}{f + t g} - \frac{f' + t_0 g'}{f + t_0 g} dz \\
+				&= (2\pi i)^{-1} \int_{C} 
+					\frac{[f + t_0 g][f' + tg'] + [f + t g][f' + t_0 g']}{[f + tg][f + t_0 g]} dz
+			\end{align*}
+			Now
+			\begin{align*}
+				[f + t_0 g][f' + tg'] 
+				&= ff' + tfg' + t_0 f'g + tt_0 gg' \\
+				[f + t g][f' + t_0 g']
+				&= ff' + tf'g + t_0 fg' + tt_0 gg'
+			\end{align*}
+			So
+			\begin{align*}
+				[f + t_0 g][f' + tg'] + [f + t g][f' + t_0 g']
+				= (t-t_0) fg' + (t_0 - t) f'g
+			\end{align*}
+			Hence 
+			\begin{align*}
+				&\Phi(t) - \Phi(t_0) = (2\pi i)^{-i} (t-t_0) \int_{C} \frac{fg' - f'g}{(f + tg) (f+t_0 g)} dz \\
+				&\implies \abs{\Phi(t) - \Phi(t_0)} = (2\pi i)^{-1} \abs{t-t_0} \abs{\int_{C} \frac{fg' - f'g}{(f + tg) (f+t_0 g)} dz}
+			\end{align*}
+			Now 
+			\begin{align*}
+				\frac{fg' - f'g}{(f+tg)(f-t_0 g)} = \frac{fg' - f'g}{f^2 + tt_0 g^2 + tfg + t_0 fg}
+			\end{align*}
+			Since \(t, t_0 \in [0,1]\):
+			\begin{align*}
+				\abs{tt_0 g^2} &< \abs{g^2} & \abs{tfg} &< \abs{fg} & \abs{t_0 fg} &< \abs{fg}
+			\end{align*}
+			Therefore
+			\begin{align*}
+				&\abs{f^2 + tt_0 g^2 + tfg + t_0 fg} \leq \abs{f^2} + \abs{g^2} + \abs{2fg} = (\abs{f}+\abs{g})^2 \\
+				&\implies \abs{\frac{fg' + f'g}{(f+ tg)(f+t_0 g)}} \leq \frac{\abs{fg' - f'g}}{(\abs{f} + \abs{g})^2} \\
+				&\implies \abs{\Phi(t) - \Phi(t_0)} 
+					\leq (2\pi i)^{-1} \abs{t-t_0} \int_{C} \frac{\abs{fg' - f'g}}{(\abs{f} + \abs{g})^2} dz 
+					< \abs{t-t_0} \int_{C} \frac{\abs{fg' - f'g}}{(\abs{f} + \abs{g})^2} dz 
+			\end{align*}
+			Since \(C\) is closed and bounded, and \((fg' + f'g)(\abs{f}+\abs{g})^{-2}\) is continuous on \(C\), by \cref{Function continuous in closed and bounded region implies function is bounded Theorem - Complex}, \((fg' + f'g)(\abs{f}+\abs{g})^{-2}\) is bounded on \(C\). Therefore
+			\begin{align*}
+				\exists A \in \mathbb{R}_{>0} [\abs{\Phi(t) - \Phi(t_0)} \leq A\abs{t-t_0}] < \epsilon
+			\end{align*}
+			We can choose this neighbourhood \(\epsilon\) to be arbitrarily small, so \(\Phi(t)\) is continuous by definition (\cref{Continuity Chapter - Real Analysis}).
+			
+			\underline{Prove Rouché Theorem (\cref{Rouche's Theorem - Complex}):} \newline
+			Let \(F(z) = f(z) + tg(z)\), in the proof of (\cref{Argument Principle Theorem - Complex}), we know that:
+			\begin{align*}
+				\int_{C} \frac{F'(z)}{F(z)} dz = 2\pi i(Z-P)
+			\end{align*}
+			Hence
+			\begin{align*}
+				\Phi(t) 
+				&= (2\pi i)^{-1} \int_{C} \frac{f'(z) + tg(z)}{f(z) + tg(z)} dz = (2\pi i)^{-1} \int_{C} \frac{F'(z)}{F(z)} dz = Z-P \\
+				&= \frac{1}{2\pi} \Delta_{C} \arg[f(z) + tg(z)]
+			\end{align*}
+			We can then see that \(\Phi(t)\) represents the difference of the number of zeros and numbers of poles of \(f(z) + tg(z)\). This number is independent of \(t\), hence
+			\begin{align*}
+				\Phi(1) &= \frac{1}{2\pi} \Delta_{C} \arg[f(z) + g(z)] = Z-P \\
+				\Phi(0) &= \frac{1}{2\pi} \Delta_{C} \arg[f(z)] = Z-P
+			\end{align*}
+			Thus, the number of zeros for \(f(z)\) and \(f(z) + g(z)\) are equal given \(\abs{f(z)} > \abs{g(z)}\), proving Rouché Theorem.
 			}
 		\end{proof}
 	\end{example}
@@ -9524,11 +9651,86 @@
 		\end{align*}
 		\begin{proof}
 			{\color{Grey}
+			The isolated singularities of \(F(s)\):
+			\begin{align*}
+				s_0 &= 0 & s_n &= n\pi i & \overline{s_n} &= -n\pi i & n \in \mathbb{N}
+			\end{align*}
+			Obtaining the series expansion:
+			\begin{align*}
+				\sinh(z) = \frac{e^z - e^{-z}}{2} = \frac{1}{2}\left[\sum_{n=0}^{N} \frac{z^n}{n!} - \frac{(-z^n)}{n!}\right] = \frac{1}{2}\left[\sum_{n=0}^{N} \frac{z^n}{n!}[1-(-1)^n])\right] = \sum_{n=0}^{N} \frac{z^{2n+1}}{(2n+1)!}
+			\end{align*}
+			Then 
+			\begin{align*}
+				\frac{1}{z\sinh(z)} 
+				&= \frac{1}{z} \left[ \sum_{n=0}^{N} \frac{z^{2n+1}}{(2n+1)!} \right]^{-1}
+				 = \frac{1}{z} \left(\frac{1}{z} - \frac{z}{3!} - \frac{z^4}{5! - 3!3!} - \cdots \right)
+				 = \frac{1}{z^2} - \frac{1}{3!} - \cdots 
+			\end{align*}
+			Hence
+			\begin{align*}
+				F(s) = \frac{1}{s^2} - \frac{1}{s \sinh(s)} = \frac{1}{3!} - \frac{z^3}{5! - 3!3!} - \cdots
+			\end{align*}
+			Thus, we can see that \(F(s)\) has a removable singularity at \(s_0 = 0\) with \(\Res[F(s), 0] = 0\).
 			
+			Now, let \(p(s) = e^{st}\) and \(q(s) = [F(s)]^{-1}\), then
+			\begin{align*}
+				q'(s) 
+				&= \dv{s} [F(s)]^{-1} = \dv{s} \frac{s^2 \sinh(s)}{\sinh(s) - s} \\
+				&= \frac{2s\sinh(s) + s^2 \cosh(s)}{\sinh(s) - s}
+					- \frac{[s^2 \sinh(s)][\cosh(s) - 1]}{[\sinh(s) - s]^{2}} \\
+%				&= [2s\sinh[2](s) - 2s^2 \sinh(s) + s^2 \cosh(s) \sinh(s) - s^3 \cosh(s)][\sinh(s) - s]^{-2} - [s^2 \sinh(s)$\cosh(s) - s^2 \sinh(s)][\sinh(s) - s]^{-2}\\
+				&= \frac{2s\sinh[2](s) - s^2 \sinh(s) - s^3 \cosh(s)}{[\sinh(s) - s]^{2}}
+			\end{align*}
+			Therefore
+			\begin{align*}
+				\frac{1}{q'(n\pi i)}
+				&= \frac{[\sinh(s) - s]^{2}}{2s\sinh[2](s) - s^2 \sinh(s) - s^3 \cosh(s)} \\
+				&= \frac{[\sinh(n\pi i) - n\pi i]^{2}}{2(n\pi i)\sinh[2](n\pi i) - (n\pi i)^2 \sinh(n\pi i) - (n\pi i)^3 \cosh(n\pi i)} \\
+				&= \frac{(n\pi i)^2}{-(n\pi i)^3 \cosh(n\pi i)} 
+				 = \frac{-1}{(n\pi i)(-1)^n} = \frac{(-1)^{n} i}{n\pi} \\
+				\frac{1}{q'(- n\pi i)} 
+				&= - \frac{(-1)^{n} i}{n\pi}
+			\end{align*}
+			Since
+			\begin{align*}
+				\sinh(n\pi i) &= \sin(n\pi) = 0 	&
+				\cosh(n\pi i) &= \cos(n\pi) = (-1)^n
+			\end{align*}
+			Also
+			\begin{align*}
+				p(n\pi i)  &= e^{n\pi i} \neq 0 &
+				q(n\pi i) 
+				&= \frac{(n\pi i)^2 \sinh(n\pi i)}{\sinh(n\pi i) - n\pi i} = 0 \\
+				p(-n\pi i) &= e^{-n\pi i} \neq 0 &
+				q(-n\pi i) 
+				&= \frac{(-n\pi i)^2 \sinh(-n\pi i)}{\sinh(-n\pi i) + n\pi i} = 0 
+			\end{align*}
+			Thus, we can see that \(e^{st} F(s)\) has a simple pole at \(s_n = n\pi i\) and \(\overline{s_n} = -n\pi i\) (\(n\in \mathbb{N}\)), so by \cref{Residue of Simple Pole Theorem - Complex}: 
+			\begin{align*}
+				\Res[e^{st}F(s), n\pi i] 
+				&= \Res[\frac{p(s)}{q(s)}, n\pi i] 
+				 = \frac{p(n\pi i)}{q'(n\pi i)} 
+				 = e^{n\pi i t} \frac{(-1)^{n} i}{n\pi}  \\
+				\Res[e^{st}F(s), n\pi i] 
+				&= \Res[\frac{p(s)}{q(s)}, -n\pi i] 
+				 = \frac{p(-n\pi i)}{q'(-n\pi i)} 
+				 = - e^{-n\pi i t} \frac{(-1)^{n} i}{n\pi}
+			\end{align*}
+			The inverse Laplace transform of \(F(s)\) is then
+			\begin{align*}
+				f(t) 
+				&= \sum_{n=1}^{\infty} \Res[e^{st} F(s), s_n]
+						& t>0 \\
+				&= \sum_{n=1}^{\infty} \left(\Res[e^{st}F(s), n\pi i] + \Res[e^{st}F(s), -n\pi i] \right) \\
+				&= \sum_{n=1}^{\infty} \left(e^{n\pi i t} \frac{(-1)^{n} i}{n\pi} - e^{-n\pi i t} \frac{(-1)^{n} i}{n\pi}\right) 
+				 = \sum_{n=1}^{\infty} \frac{(-1)^{n} i}{n\pi} (2i) \sin(n\pi t) \\
+				&= \frac{2}{\pi} \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} \sin(n\pi t)
+			\end{align*}
 			}
 		\end{proof}
 	\end{example}
-	
+
+	\chapter{Mapping by Elementary Functions} \label{Mapping by Elementary Functions Chapter - Complex}
 	
 	
 	
