@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  1 FEB 2021 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  1 FEB 2021 23:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1913,17 +1913,17 @@ Chapter 30.
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 9C8AD78B4FF3603AE7440343FA68BD19;10270.
+(rerunfilecheck)             Checksum: F8B0228A021DD2CCB8765BAB9B902DBE;10342.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40902 strings out of 479382
- 929585 string characters out of 5869369
- 1354015 words of memory out of 5000000
- 56066 multiletter control sequences out of 15000+600000
+ 40906 strings out of 479382
+ 929700 string characters out of 5869369
+ 1354110 words of memory out of 5000000
+ 56069 multiletter control sequences out of 15000+600000
  445049 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,19n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1956,10 +1956,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (265 pages, 1005454 bytes).
+Output written on MathNotes.pdf (265 pages, 1005943 bytes).
 PDF statistics:
- 4060 PDF objects out of 4296 (max. 8388607)
- 3549 compressed objects within 36 object streams
- 1108 named destinations out of 1200 (max. 500000)
- 1493 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4065 PDF objects out of 4296 (max. 8388607)
+ 3554 compressed objects within 36 object streams
+ 1109 named destinations out of 1200 (max. 500000)
+ 1501 words of extra memory for PDF output out of 10000 (max. 10000000)
 
