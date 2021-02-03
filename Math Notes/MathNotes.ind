@@ -14,6 +14,7 @@
   \indexspace
 
   \item de Moivre's Formula, 35
+  \item Domain, 43
   \item Double Angle Identities, 35
 
   \indexspace
@@ -26,20 +27,55 @@
 
   \indexspace
 
+  \item Hilbert Transform, 192
+    \subitem  Inverse, 192
+    \subitem  of a Constant, 193
+    \subitem  Pairs, 192
+
+  \indexspace
+
+  \item Line
+    \subitem  Polygonal, 43
+
+  \indexspace
+
   \item Modulus, 32
 
   \indexspace
 
+  \item Neighbourhood, 40
+    \subitem  Deleted, 41
+
+  \indexspace
+
+  \item Point
+    \subitem  Accumulation, 44
+    \subitem  Boundary, 42
+    \subitem  Exterior, 41
+    \subitem  Interior, 41
+    \subitem  Limit, 44
   \item Polar Form
     \subitem  Complex Number, 34
 
   \indexspace
 
+  \item Region, 43
+    \subitem  Bounded, 43
+    \subitem  Closed, 44
   \item Roots
     \subitem  Complex Number, 37
 
   \indexspace
 
+  \item Set
+    \subitem  Boundary, 42
+    \subitem  Bounded, 43
+    \subitem  Closed, 43
+    \subitem  Closure, 43
+    \subitem  Connected, 43
+    \subitem  Open, 42
+  \item Signal
+    \subitem  Analytic, 193
   \item Sine
     \subitem  Complex Form, 39
 

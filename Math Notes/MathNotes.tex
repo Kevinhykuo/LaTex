@@ -1093,7 +1093,7 @@
 	
 	\section{Complex Analysis Definitions} \label{Complex Analysis Definitions Section - Complex}
 	
-	\begin{definition}[Neighbourhood]
+	\begin{definition}[Neighbourhood \index{Neighbourhood}]
 		\label{Neighbourhood Definition - Complex}
 		A neighbourhood of a point $z_0$ is the set of all points $z$ with distance less than $\epsilon$. 
 		$$\{z : \abs{z-z_0} < \epsilon \}$$
@@ -1132,7 +1132,7 @@
 		\end{tikzpicture}
 	\end{figure}
 
-	\begin{definition}[Deleted Neighbourhood]
+	\begin{definition}[Deleted Neighbourhood \index{Neighbourhood! Deleted}]
 		\label{Deleted Neighbourhood Definition - Complex}
 		A deleted neighbourhood is the set of all points $z$ with distance less than $\epsilon$ from a point $z_0$, not including $z_0$. That is, it is a neighbourhood of $z_0$ without $z_0$.
 		$$\{z : \abs{z-z_0} < \epsilon, \ z \neq z_0 \}$$
@@ -1170,7 +1170,7 @@
 		\end{tikzpicture}
 	\end{figure}
 
-	\begin{definition}[Interior Point]
+	\begin{definition}[Interior Point \index{Point! Interior}]
 		\label{Interior Point Definition - Complex}
 		Let $S$ be a set. A point $z_0$ is an interior point of $S$ if $\exists \epsilon$ such that $\forall z$, $\abs{z-z_0} < \epsilon \implies z \in S$. That is, $z_0$ is an interior point of $S$ if it has a neighbourhood where all points in the neighbourhood is an element of $S$.
 	\end{definition}
@@ -1209,7 +1209,7 @@
 		\end{tikzpicture}
 	\end{figure}
 
-	\begin{definition}[Exterior Point]
+	\begin{definition}[Exterior Point \index{Point! Exterior}]
 		\label{Exterior Point Definition - Complex}
 		Let $S$ be a set. A point $z_0$ is an exterior point of $S$ if $\exists \epsilon$ such that $\forall z$, $\abs{z - z_0}<\epsilon \implies z \notin S$. That is, $z_0$is an exterior point of $S$ if it has neighbourhood that does not contain any element of $S$. 
 	\end{definition}
@@ -1248,7 +1248,7 @@
 		\end{tikzpicture}
 	\end{figure}
 
-	\begin{definition}[Boundary Point]
+	\begin{definition}[Boundary Point \index{Point! Boundary}]
 		\label{Boundary Point Definition - Complex}
 		Let $S$ be a set. A point $z_0$ is a boundary point of $S$ if $\forall \epsilon$, $\exists z \in S, z' \notin S$, such that $\abs{z - z_0} \epsilon$ and $\abs{z' - z_0} < \epsilon$. That is, for all neighbourhoods of $z_0$ there exists a point that is in $S$ and a point not in $S$.
 	\end{definition}
@@ -1289,13 +1289,13 @@
 
 	Note: A boundary point of $S$ may or may not be in $S$.
 
-	\begin{definition}[Boundary of a Set]
+	\begin{definition}[Boundary of a Set \index{Set! Boundary}]
 		\label{Boundary of a Set Definition - Complex}
 		A boundary of a set $S$ is the set of all boundary points of $S$. The set containing all boundary points of $S$.
 		$$\{z_0 : \forall \epsilon \exists z\in S, z'\notin S(\abs{z-z_0}<\epsilon \land \abs{z'-z_0}<\epsilon )\}$$ 
 	\end{definition}
 
-	\begin{definition}[Open Set]
+	\begin{definition}[Open Set \index{Set! Open}]
 		\label{Open Set Definition - Complex}
 		A set that does not contain any boundary points. 
 	\end{definition}
@@ -1319,17 +1319,17 @@
 
 	A set can be neither open or closed. Consider the set $S = \{z : 0 < \abs{z} \leq 1\}$. $S$ is not closed since it does not contain the boundary point $0$, and it is not open since it contains boundary points where $\abs{z} = 1$. The set $\mathbb{C}$ is both open and closed since it has no boundary points. 
 	
-	\begin{definition}[Closed Set]
+	\begin{definition}[Closed Set \index{Set! Closed}]
 		\label{Closed Set Definition - Complex}
 		A set that contains all of its boundary points. 
 	\end{definition}
 
-	\begin{definition}[Closure of a Set]
+	\begin{definition}[Closure of a Set \index{Set! Closure}]
 		\label{Closure of a Set Definition - Complex}
 		Let $S$ be a set. The closure of S is a closed set containing all points of $S$ and all boundary points of $S$. 
 	\end{definition}
 
-	\begin{definition}[Connected Set]
+	\begin{definition}[Connected Set \index{Set! Connected}]
 		\label{Connected Set Definition - Complex}
 		An opens set $S$ is connected if $\forall z_1, z_2 \in S$, $z_1$ and $z_2$ can be connected by a polygonal line lying within $S$.
 	\end{definition}
@@ -1370,33 +1370,38 @@
 		\end{tikzpicture}
 	\end{figure}
 
-	\begin{definition}[Polygonal Line]
+	\begin{definition}[Polygonal Line \index{Line! Polygonal}]
 		\label{Polygonal Line Definition - Complex}
 		A finite set of line segments joined end to end. 
 	\end{definition}
 
 	\begin{definition}[Domain]
+		\index{Domain}
 		\label{Domain Definition - Complex}
 		A nonempty connected set. 
 	\end{definition}
 	Note: All neighbourhoods are domains. 
 
 	\begin{definition}[Region]
+		\index{Region}
 		\label{Region Definition - Complex}
 		A domain with none, some, or all of its boundary points. 
 	\end{definition}
 	
-	\begin{definition}[Bounded Set/Region]
+	\begin{definition}[Bounded Set/Region \index{Set! Bounded}]
+		\index{Region! Bounded}
 		\label{Bounded Set or Region Definition - Complex}
 		A set $S$ is bounded if $\exists R = \abs{z} > 0$ such that $\forall s \in S$, $\abs{s} < R$. That is, $S$ is bounded if $\forall s \in S$, $s$ is contained in some circle of radius $R$ centred at the origin. 
 	\end{definition}
 
 	\begin{definition}[Closed Region]
+		\index{Region! Closed}
 		\label{Closed Regoin Definition - Complex}
 		A domain with all its boundary points. A bounded and closed region.
 	\end{definition}
 
 	\begin{definition}[Accumulation/Limit Point]
+		\index{Point! Limit} \index{Point! Accumulation}
 		\label{Accumulation/Limit Point Definition - Complex}
 		A point $z_0$ is a accumulation point of a set $S$ if all deleted neighbourhood of $z_0$ contains an element of $S$. 
 		$$\forall \epsilon \exists s \in S (s \neq z_0 \land \abs{z-s} < \epsilon)$$
@@ -9914,6 +9919,120 @@
 	\end{example}
 
 	\subsection{Hilbert Transform} \label{Hilbert Transform Subsection - Complex}
+	
+	\begin{definition}[Hilbert Transform]
+		\label{Hilbert Transform Definition - Complex}
+		\index{Hilbert Transform}
+		Let \(g(t)\) be a real-valued function. The Hilbert Transform:
+		\begin{align*}
+			\hat{g}(t) &= \operatorname{P.V.} \frac{1}{\pi}\int_{-\infty}^{\infty} \frac{g(x)}{t-x} dx
+				& x, t \in \mathbb{R}
+		\end{align*}
+	\end{definition}
+
+	\begin{definition}[Hilbert Transform Pairs]
+		\label{Hilbert Transform Pairs Definition - Complex}
+		\index{Hilbert Transform! Pairs}
+		The functions \(g(t)\) and \(\hat{g}(t)\) in a Hilbert Transform.
+	\end{definition}
+
+	\begin{theorem}[Inverse Hilbert Transform]
+		\label{Inverse Hilbert Transform Theorem - Complex}
+		\index{Hilbert Transform! Inverse}
+		The inverse Hilbert transform of function \(\hat{g}(t)\):
+		\begin{align*}
+			g(t) = - \frac{1}{\pi} \operatorname{P.V.} \int_{-\infty}^{\infty} \frac{\hat{g}(x)}{t-x} dx
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Let \(f(z) = u(x,y) + iv(x,y)\) be a function analytic in the upper half-plane (\(y = \Im(z) \geq 0 \)), and \(x = t \in \mathbb{R}\). Consider the simple closed contour \(C\) composed of a line \(L_1\) from point \(-R\) to \(\tau-\epsilon\) on the real axis, a semicircular contour \(C_\epsilon\) in the upper half-plane with radius \(\epsilon\) centred at \(t\), a line \(L_2\) from \(\tau+\epsilon\) to \(R\), and a semicircular contour centred at the origin with radius \(R\).
+		
+		From the Cauchy-Goursat Theorem (\cref{Cauchy-Goursat Theorem - Complex}):
+		\begin{align*}
+			\frac{1}{\pi} \int_{-R}^{\tau-\epsilon} \frac{f(x)}{t-x} dx
+				+ \frac{1}{\pi} \int_{C_\epsilon} \frac{f(z)}{t - z} dz 
+				+ \frac{1}{\pi} \int_{\tau+\epsilon}^{R} \frac{f(x)}{t - x} dx
+				+ \frac{1}{\pi} \int_{C_R} \frac{f(z)}{t - z} dz = 0
+		\end{align*}
+		Looking at \(C_\epsilon\), and using \cref{Indented Paths Around Simple Poles Theorem - Complex} and \cref{Residue of Simple Pole Theorem - Complex}:
+		\begin{align*}
+			\lim_{\epsilon \rightarrow 0} \frac{1}{\pi} 
+			\int_{C_\epsilon} \frac{f(z)}{t - z} dz 
+			= - \frac{\pi i}{\pi} \Res[\frac{f(z)}{t - z}, t] = i f(t)
+		\end{align*}
+		Assuming the integral over \(C_R\) disappears, that is
+		\begin{align*}
+			\lim_{R\rightarrow \infty} \frac{1}{\pi} \int_{C_R} \frac{f(z)}{t - z} dz = 0
+		\end{align*}
+		Taking the limit as \(R \rightarrow \infty\) and \(\epsilon \rightarrow 0\) of \(C\):
+		\begin{align*}
+			&\frac{1}{\pi} \int_{-\infty}^{\infty} \frac{f(x, 0)}{t - x} dx + if(t) = 0
+			&\implies \frac{1}{\pi} \int_{-\infty}^{\infty} \frac{u(x,0) + iv(x,0)}{t-x} dx
+				= -iu(t, 0) + v(t, 0)
+		\end{align*}
+		Equating the real and imaginary parts:
+		\begin{align*}
+			\frac{1}{\pi} \int_{-\infty}^{\infty} \frac{u(x,0)}{t-x} dx &= v(t, 0)	&
+			\frac{1}{\pi} \int_{-\infty}^{\infty} \frac{v(x,0)}{t-x} dx &= -u(t, 0)
+		\end{align*}
+		Taking the limit as \(R \rightarrow \infty\)
+		Setting \(g(x) = g(x, 0)\) and \(\hat{g}(x) = h(t, 0)\), we obtain the Hilbert and Inverse Hilbert transforms:
+		\begin{align*}
+			\frac{1}{\pi} \int_{-\infty}^{\infty} \frac{g(x)}{t-x} dx &= \hat{g}(t)	&
+			\frac{1}{\pi} \int_{-\infty}^{\infty} \frac{\hat{g}(x)}{t-x} dx &= -g(t)
+		\end{align*}
+	\end{proof}
+
+	Note: The inverse Hilbert Transform is valid if there exists an analytic function \(f(z) = u(x,y) + iv(x,y)\) in the upper half-plane (\(\Im{z} \geq 0\)) with \(u(x, 0) = g(x)\) and \(v(x,0) = \hat{g}(x)\), or in the lower half-plane (\(\Im{z} \leq 0\)) with \(u(x,0) = g(x)\) and \(v(x,0) = -\hat{g}(x)\) such that 
+	\begin{align*}
+	 	\lim_{R \rightarrow \infty} \frac{1}{\pi} \int_{C_R} \frac{f(z)}{t - z} dz = 0
+	\end{align*}
+
+	\begin{observation}
+		The Hilbert transform is the convolution of the function \(g(x)\) with \(h(\tau) = 1/(\pi \tau)\). That is 
+		\begin{align*}
+			\hat{g}(t) &= \int_{-\infty}^{\infty} g(x)h(t - x) dx
+				& h(\tau) = \frac{1}{\pi \tau}
+		\end{align*}
+	\end{observation}
+
+	\begin{definition}[Analytic Signal]
+		\label{Analytic Signal Definition - Complex}
+		\index{Signal! Analytic}
+		A complex-valued function which the imaginary part is the Hilbert transform of its real part. That is
+		\begin{align*}
+			f(t)= g(t) + i\hat{g}(t)
+		\end{align*}
+	\end{definition}
+
+	\begin{example}[Hilbert Transform of a Constant is Zero]
+		\label{Hilbert Transform of a Constant Example - Complex}
+		\index{Hilbert Transform! of a Constant}
+		Let \(c \in \mathbb{R}\):
+		\begin{align*}
+			\operatorname{P.V.} \frac{1}{\pi} \int_{-\infty}^{\infty} \frac{c}{t-x} dx &= 0
+			& x, t \in \mathbb{R}
+		\end{align*}
+		\begin{proof}
+		{\color{Grey}
+			\begin{align*}
+				\frac{1}{\pi} \int_{-\infty}^{\infty} \frac{c}{t-x} dx 
+				= \frac{c}{\pi} \int_{-\infty}^{\infty} \frac{1}{t-x} dx
+%				= \frac{c}{\pi} \left[
+%					\int_{t}^{\infty} \frac{1}{t-x} dx + \int_{-\infty}^{t} \frac{1}{t-x} dx
+%					\right]
+%				= 0
+			\end{align*}
+			Now  
+			\begin{align*}
+				\lim_{R\rightarrow \infty} \left[
+				\int_{1/R}^{R} \frac{1}{t-x} dx + \int_{-R}^{-1/R} \frac{1}{t-x} dx
+				\right] = 0 
+				\implies \frac{c}{\pi} \int_{-\infty}^{\infty} \frac{1}{t-x} dx = 0
+			\end{align*}
+		}
+		\end{proof}
+	\end{example}
 	
 	\subsection{Gamma Function} \label{Gamma Function Subsection - Complex}
 	
