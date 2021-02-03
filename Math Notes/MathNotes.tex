@@ -548,7 +548,8 @@
 	This tells us that if $z$ is a solution to a polynomial $P(z)$, then the reciprocal of the polynomial $1/P(z)$ is bounded above by $R = \abs{z}$. (i.e. It is bounded by a circle of radius $\abs{z}$.)
 	
 	\section{Polar and Exponential Form} \label{Polar and Exponential Form Section - Complex}
-	\begin{definition}[Argument of $z$]
+	
+	\begin{definition}[Argument of $z$ \index{Argument! Complex Number}]
 		Consider any $z \in \mathbb{C}$ where $z \neq 0$.
 		Let $\theta$ be the angle in radians between $z$ and the real axis .
 		Then $\forall n \in \mathbb{N}$, $-\pi < \theta \leq \pi$, the argument of $z$:
@@ -557,7 +558,7 @@
 	\end{definition}
 	
 	We know $\forall n \in \mathbb{N}$, $\theta + 2 \pi n = \theta$. This leads us to the definition of the principal argument of $z$.
-	\begin{definition}[Principal Argument of $z$]
+	\begin{definition}[Principal Argument of $z$ \index{Argument! Principal}]
 		Consider any $z \in \mathbb{C}$ where $z \neq 0$.
 		Let $\theta$ be the angle in radians between $z$ and the real axis.
 		Then for $-pi < \theta \leq \pi$, the principal argument of $z$:
@@ -566,7 +567,7 @@
 	\end{definition}
 	It is clear that $\operatorname{arg}(z) = \operatorname{Arg}(z) + 2n \pi$. It is common for the principal argument to be defined $-\pi < \theta \leq \pi$, although other definitions use $0 \leq \theta < 2\pi$.
 	
-	\begin{definition}[Polar Form of $z$]
+	\begin{definition}[Polar Form of $z$ \index{Polar Form! Complex Number}]
 		Consider $z \in \mathbb{C}$. Let $r = \abs{z}$, and $\theta = \operatorname{arg}(z)$. 
 		Then $\forall z \in \mathbb{C}, z \neq 0$:
 		$$z = x + iy = r(\cos(\theta) + i \sin(\theta))$$
@@ -575,13 +576,13 @@
 
 	Notice that all three definitions require that $z \neq 0$ as $\theta$ is undefined at $z = 0$.
 	
-	\begin{theorem}[Euler's Formula]
+	\begin{theorem}[Euler's Formula \index{Euler's Formula}]
 		$$e^{i \theta} = \cos(\theta) + i \sin(\theta)$$
 		\label{Euler's Formula - Complex}
 	\end{theorem}
 	Combining \cref{Polar Form of z - Complex} with \cref{Euler's Formula - Complex}, we obtain the Exponential Form of $z$: 
 	
-	\begin{definition}[Exponential Form of $z$]
+	\begin{definition}[Exponential Form of $z$ \index{Exponential Form! Complex Number}]
 	Consider any $z \in \mathbb{C}$, and let $r = \abs{z}$ and $\theta = \operatorname{Arg}(z)$. Then the exponential form of $z$:
 		$$z = r e^{i \theta}$$
 		\label{Exponential Form of z - Complex}
@@ -630,7 +631,8 @@
 			& z^n &= r^n e^{i n \theta} \qquad \forall n \in \mathbb{Z}
 	\end{align*}
 	A special case arrives for integer exponential of $z$ on the unit circle.
-	\begin{theorem}[de Moivre's Formula]
+	
+	\begin{theorem}[de Moivre's Formula \index{de Moivre's Formula}]
 		Consider any $z = e^{i \theta} \in \mathbb{C}$ on the unit circle, and let $n \in \mathbb{Z}$.
 		\begin{align*}
 			\forall z\in \mathbb{C} \ \forall n \in \mathbb{Z}
@@ -647,7 +649,7 @@
 
 	The proof hints that \cref{de Moivre's Formula Theorem - Complex} can be generalized to $\forall n \in \mathbb{R}$, which we will see shortly in \cref{Roots of z Section - Complex}. Using \cref{de Moivre's Formula Theorem - Complex}, we can obtain the double angle identities.
 	
-	\begin{corollary}[Double Angle Identities]
+	\begin{corollary}[Double Angle Identities \index{Double Angle Identities}]
 		\begin{align*}
 			\cos(2 \theta) &= \cos^2(\theta) - \sin^2(\theta) 
 				& \sin(2\theta) &= 2\sin(\theta)\cos(\theta)
@@ -670,7 +672,7 @@
 		& z^n &= r^n e^{i n \theta} \qquad \forall n \in \mathbb{Z}
 	\end{align*}
 	The arguments for the arguments of products of any $z_1, z_2 \in \mathbb{C}$ follows immediately from the properties of the exponential.
-	\begin{corollary}[Arguments of Products]
+	\begin{corollary}[Arguments of Products \index{Argument! Product of Complex Numbers}]
 		\begin{align*}
 			\arg(z_1 z_2) &= \arg(z_1) + \arg(z_2)
 				& \operatorname{Arg}(z_1 z_2) = \operatorname{Arg}(z_1) + \operatorname{Arg}(z_2) \\
@@ -702,7 +704,7 @@
 	\section{Roots of $z$} \label{Roots of z Sections - Complex}
 	In \cref{Exponential Form of z - Complex}, you might be wondering why $z^n = r^n e^{i n \theta}$ is not for $n \in \mathbb{R}$. That is because there is more things to consider, which we will explore in this section. Recall that $z = re^(i \theta) = re^{i (\theta + 2n \pi)}$ for $n \in \mathbb{Z}$. 
 	
-	\begin{definition}[Exponential of $z$]
+	\begin{definition}[Exponential of $z$ \index{Exponential! Complex Number}]
 		Consider any $z \in \mathbb{C}$ and any $x \in \mathbb{R}$
 		$$z^x = \left(r e^{i(\theta + 2 n \pi)} \right)^x = r^x e^{i x(\theta + 2n \pi)}$$
 		\label{Exponential of z Definiion - Complex}
@@ -710,7 +712,7 @@
 
 	For $x \nin \mathbb{Z}$, it is clear that $z^x =  r^x e^{ix(\theta + 2 n \pi)} \neq r^x e^{ix\theta}$, since $2nx\pi = 0 \iff nx \in \mathbb{Z}$. In order to define the roots of $z$ we must need a more general and proper definition of $z$.
 	
-	\begin{definition}[Roots of $z_0$]
+	\begin{definition}[Roots of $z_0$ \index{Roots! Complex Number}]
 		\label{Roots of z Definition - Complex}
 		Consider any $z_0 \in \mathbb{C}$ and any $m \in \mathbb{N}$.
 		$$z_0^{\frac{1}{m}} = r_0^\frac{1}{m} e^{i\left(\frac{\theta_0 + 2n \pi}{m}\right)} = r_0^\frac{1}{m} e^{i \left(\frac{\theta_0}{m} + \frac{2n \pi}{m}\right)}$$
@@ -880,7 +882,7 @@
 	
 	
 	\section{Complex Conjugate} \label{Complex Conjugate Section - Complex}
-	\begin{definition}[Complex Conjugate]
+	\begin{definition}[Complex Conjugate \index{Complex Conjugate}]
 		The complex conjugate of $z \in \mathbb{C}$ is denoted $\bar{z}$.
 		$$\bar{z} = x - iy = r(\cos(\theta) - i\sin(\theta)) = re^{-i\theta}$$
 		\label{Complex Conjugate}
@@ -917,7 +919,7 @@
 		\operatorname{Re}(z) &= \frac{z + \bar{z}}{2} & \operatorname{Im}(z) &= \frac{z - \bar{z}}{2i} & \abs{z}^2 = z \bar{z}
 	\end{align*}
 	As $\operatorname{Re}(z) = x = r \cos(\theta)$ and $\operatorname{Im}(z) = y = r \sin(\theta)$ and using \cref{Exponential Form of z - Complex}, we can obtain the complex forms of sine and cosine: 
-	\begin{definition}[Complex Sine and Cosine]
+	\begin{definition}[Complex Sine and Cosine \index{Sine! Complex Form} \index{Cosine! Complex Form}]
 		\begin{align*}
 			\cos(\theta) &= \frac{e^{i \theta} + e^{-i \theta}}{2} 
 			&\sin(\theta) &= \frac{e^{i \theta} - e^{-i \theta}}{2i}
