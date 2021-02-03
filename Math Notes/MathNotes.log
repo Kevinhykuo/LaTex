@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  2 FEB 2021 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  2 FEB 2021 19:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -408,10 +408,101 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip75
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count289
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count290
+\mult@box=\box53
+\multicol@leftmargin=\dimen189
+\c@unbalance=\count291
+\c@collectmore=\count292
+\doublecol@number=\count293
+\multicoltolerance=\count294
+\multicolpretolerance=\count295
+\full@width=\dimen190
+\page@free=\dimen191
+\premulticols=\dimen192
+\postmulticols=\dimen193
+\multicolsep=\skip76
+\multicolbaselineskip=\skip77
+\partial@page=\box54
+\last@line=\box55
+\maxbalancingoverflow=\dimen194
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@gfirstbox=\box58
+\mult@firstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count296
+\c@columnbadness=\count297
+\c@finalcolumnbadness=\count298
+\last@try=\dimen195
+\multicolovershoot=\dimen196
+\multicolundershoot=\dimen197
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count299
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks25
-\inpenc@posthook=\toks26
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
@@ -426,17 +517,17 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count289
-\l_MT_multwidth_dim=\dimen189
-\origjot=\skip76
-\l_MT_shortvdotswithinadjustabove_dim=\dimen190
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen191
-\l_MT_above_intertext_sep=\dimen192
-\l_MT_below_intertext_sep=\dimen193
-\l_MT_above_shortintertext_sep=\dimen194
-\l_MT_below_shortintertext_sep=\dimen195
-\xmathstrut@box=\box53
-\xmathstrut@dim=\dimen196
+\g_MT_multlinerow_int=\count300
+\l_MT_multwidth_dim=\dimen198
+\origjot=\skip78
+\l_MT_shortvdotswithinadjustabove_dim=\dimen199
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen256
+\l_MT_above_intertext_sep=\dimen257
+\l_MT_below_intertext_sep=\dimen258
+\l_MT_above_shortintertext_sep=\dimen259
+\l_MT_below_shortintertext_sep=\dimen260
+\xmathstrut@box=\box99
+\xmathstrut@dim=\dimen261
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
 Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
@@ -519,80 +610,10 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 1845.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count290
-\mult@box=\box54
-\multicol@leftmargin=\dimen197
-\c@unbalance=\count291
-\c@collectmore=\count292
-\doublecol@number=\count293
-\multicoltolerance=\count294
-\multicolpretolerance=\count295
-\full@width=\dimen198
-\page@free=\dimen199
-\premulticols=\dimen256
-\postmulticols=\dimen257
-\multicolsep=\skip77
-\multicolbaselineskip=\skip78
-\partial@page=\box55
-\last@line=\box56
-\maxbalancingoverflow=\dimen258
-\mult@rightbox=\box57
-\mult@grightbox=\box58
-\mult@gfirstbox=\box59
-\mult@firstbox=\box60
-\@tempa=\box61
-\@tempa=\box62
-\@tempa=\box63
-\@tempa=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
-\@tempa=\box84
-\@tempa=\box85
-\@tempa=\box86
-\@tempa=\box87
-\@tempa=\box88
-\@tempa=\box89
-\@tempa=\box90
-\@tempa=\box91
-\@tempa=\box92
-\@tempa=\box93
-\@tempa=\box94
-\@tempa=\box95
-\@tempa=\box96
-\@tempa=\box97
-\c@minrows=\count296
-\c@columnbadness=\count297
-\c@finalcolumnbadness=\count298
-\last@try=\dimen259
-\multicolovershoot=\dimen260
-\multicolundershoot=\dimen261
-\mult@nat@firstbox=\box98
-\colbreak@box=\box99
-\mc@col@check@num=\count299
-)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip79
-\multirow@cntb=\count300
+\multirow@cntb=\count301
 \multirow@dima=\skip80
 \bigstrutjot=\dimen262
 )
@@ -602,17 +623,17 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip82
 \LTpre=\skip83
 \LTpost=\skip84
-\LTchunksize=\count301
+\LTchunksize=\count302
 \LTcapwidth=\dimen263
 \LT@head=\box100
 \LT@firsthead=\box101
 \LT@foot=\box102
 \LT@lastfoot=\box103
-\LT@cols=\count302
-\LT@rows=\count303
-\c@LT@tables=\count304
-\c@LT@chunks=\count305
-\LT@p@ftn=\toks27
+\LT@cols=\count303
+\LT@rows=\count304
+\c@LT@tables=\count305
+\c@LT@chunks=\count306
+\LT@p@ftn=\toks29
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
@@ -638,12 +659,12 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@old@col=\dimen266
 \TX@target=\dimen267
 \TX@delta=\dimen268
-\TX@cols=\count306
-\TX@ftn=\toks28
+\TX@cols=\count307
+\TX@ftn=\toks30
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/polynom/polynom.sty
 Package: polynom 2017/07/17 0.19 (CH,HA)
-\pld@currstage=\count307
+\pld@currstage=\count308
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -658,7 +679,7 @@ Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks29
+\pgfutil@everybye=\toks31
 \pgfutil@tempdima=\dimen271
 \pgfutil@tempdimb=\dimen272
 
@@ -677,12 +698,12 @@ Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks30
-\pgfkeys@temptoks=\toks31
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks32
+\pgfkeys@tmptoks=\toks34
 ))
 \pgf@x=\dimen273
 \pgf@y=\dimen274
@@ -696,14 +717,14 @@ ode.tex
 \pgf@yd=\dimen282
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count308
-\c@pgf@countb=\count309
-\c@pgf@countc=\count310
-\c@pgf@countd=\count311
-\t@pgf@toka=\toks33
-\t@pgf@tokb=\toks34
-\t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count312
+\c@pgf@counta=\count309
+\c@pgf@countb=\count310
+\c@pgf@countc=\count311
+\c@pgf@countd=\count312
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+\pgf@sys@id@count=\count313
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
@@ -721,8 +742,8 @@ File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count313
-\pgfsyssoftpath@bigbuffer@items=\count314
+\pgfsyssoftpath@smallbuffer@items=\count314
+\pgfsyssoftpath@bigbuffer@items=\count315
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -735,11 +756,11 @@ Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen283
-\pgfmath@count=\count315
+\pgfmath@count=\count316
 \pgfmath@box=\box105
-\pgfmath@toks=\toks36
-\pgfmath@stack@operand=\toks37
-\pgfmath@stack@operation=\toks38
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -760,7 +781,7 @@ code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count316
+\c@pgfmathroundto@lastzeros=\count317
 )) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -798,7 +819,7 @@ File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfpic=\box106
 \pgf@hbox=\box107
 \pgf@layerbox@main=\box108
-\pgf@picture@serial@count=\count317
+\pgf@picture@serial@count=\count318
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -833,8 +854,8 @@ File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 e.tex
 File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@max=\dimen307
-\pgf@sys@shading@range@num=\count318
-\pgf@shadingcount=\count319
+\pgf@sys@shading@range@num=\count319
+\pgf@shadingcount=\count320
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -891,8 +912,8 @@ Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen310
 \pgffor@skip=\dimen311
-\pgffor@stack=\toks39
-\pgffor@toks=\toks40
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -901,7 +922,7 @@ Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count320
+\pgf@plot@mark@count=\count321
 \pgfplotmarksize=\dimen312
 )
 \tikz@lastx=\dimen313
@@ -916,19 +937,19 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikz@figbox@bg=\box112
 \tikz@tempbox=\box113
 \tikz@tempbox@bg=\box114
-\tikztreelevel=\count321
-\tikznumberofchildren=\count322
-\tikznumberofcurrentchild=\count323
-\tikz@fig@count=\count324
+\tikztreelevel=\count322
+\tikznumberofchildren=\count323
+\tikznumberofcurrentchild=\count324
+\tikz@fig@count=\count325
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count325
-\pgfmatrixcurrentcolumn=\count326
-\pgf@matrix@numberofcolumns=\count327
+\pgfmatrixcurrentrow=\count326
+\pgfmatrixcurrentcolumn=\count327
+\pgf@matrix@numberofcolumns=\count328
 )
-\tikz@expandcount=\count328
+\tikz@expandcount=\count329
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -936,12 +957,12 @@ File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks41
-\t@pgfplots@tokb=\toks42
-\t@pgfplots@tokc=\toks43
+\t@pgfplots@toka=\toks43
+\t@pgfplots@tokb=\toks44
+\t@pgfplots@tokc=\toks45
 \pgfplots@tmpa=\dimen321
-\c@pgfplots@coordindex=\count329
-\c@pgfplots@scanlineindex=\count330
+\c@pgfplots@coordindex=\count330
+\c@pgfplots@scanlineindex=\count331
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -959,14 +980,14 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count331
+\c@pgfplotsarray@tmp=\count332
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count332
-\t@pgfplotstable@a=\toks44
+\c@pgfplotstable@counta=\count333
+\t@pgfplotstable@a=\toks46
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -978,7 +999,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count333
+\c@pgfplotslibrarysurf@no=\count334
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1015,7 +1036,7 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen324
 \pgfdecoratedinputsegmentremainingdistance=\dimen325
 \pgf@decorate@distancetomove=\dimen326
-\pgf@decorate@repeatstate=\count334
+\pgf@decorate@repeatstate=\count335
 \pgfdecorationsegmentamplitude=\dimen327
 \pgfdecorationsegmentlength=\dimen328
 )
@@ -1029,7 +1050,7 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count335
+\pgfplots@numplots=\count336
 \pgfplots@xmin@reg=\dimen329
 \pgfplots@xmax@reg=\dimen330
 \pgfplots@ymin@reg=\dimen331
@@ -1054,7 +1075,7 @@ Package: expl3 2020-12-07 L3 programming layer (loader)
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count336
+\l__kernel_color_stack_int=\count337
 \l__pdf_internal_box=\box116
 ))
 Package: xparse 2020-10-27 L3 Experimental document command parser
@@ -1062,11 +1083,11 @@ Package: xparse 2020-10-27 L3 Experimental document command parser
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.
 tex))) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count337
+\c@r@tfl@t=\count338
 \rotFPtop=\skip85
 \rotFPbot=\skip86
 \rot@float@box=\box117
-\rot@mess@toks=\toks45
+\rot@mess@toks=\toks47
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/scalerel/scalerel.sty
 Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
@@ -1074,7 +1095,7 @@ ng of objects, relative to a reference object or in absolute terms
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count338
+\etb@tempcnta=\count339
 )
 \thesrwidth=\skip87
 \thesrheight=\skip88
@@ -1093,13 +1114,13 @@ ways
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/listofitems/listofitems.sty
 (/usr/local/texlive/2020/texmf-dist/tex/generic/listofitems/listofitems.tex
-\loi_cnt_foreach_nest=\count339
-\loi_nestcnt=\count340
+\loi_cnt_foreach_nest=\count340
+\loi_nestcnt=\count341
 )
 Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
 sep char (CT)
 )
-\c@@stackindex=\count341
+\c@@stackindex=\count342
 \@boxshift=\skip94
 \stack@tmplength=\skip95
 \temp@stkl=\skip96
@@ -1108,7 +1129,7 @@ sep char (CT)
 \@anchorbox=\box119
 \stackedbox=\box120
 \@centerbox=\box121
-\c@ROWcellindex@=\count342
+\c@ROWcellindex@=\count343
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
@@ -1120,7 +1141,7 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \aftertitleunit=\skip99
 \ttl@plus=\dimen335
 \ttl@minus=\dimen336
-\ttl@toksa=\toks46
+\ttl@toksa=\toks48
 \titlewidth=\dimen337
 \titlewidthlast=\dimen338
 \titlewidthfirst=\dimen339
@@ -1134,9 +1155,9 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen340
 \WF@size=\dimen341
-\c@WF@wrappedlines=\count343
+\c@WF@wrappedlines=\count344
 \WF@box=\box124
-\WF@everypar=\toks47
+\WF@everypar=\toks49
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/cleveref/cleveref.sty
@@ -1169,7 +1190,7 @@ File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 s/tikzlibraryintersections.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryinterse
 ctions.code.tex
-\pgf@intersect@solutions=\count344
+\pgf@intersect@solutions=\count345
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryquotes.code.tex
@@ -1203,33 +1224,33 @@ File: pgflibraryarrows.meta.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.groupplots.code.tex
-\pgfplots@group@current@plot=\count345
-\pgfplots@group@current@row=\count346
-\pgfplots@group@current@column=\count347
+\pgfplots@group@current@plot=\count346
+\pgfplots@group@current@row=\count347
+\pgfplots@group@current@column=\count348
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks48
-\thm@bodyfont=\toks49
-\thm@headfont=\toks50
-\thm@notefont=\toks51
-\thm@headpunct=\toks52
+\thm@style=\toks50
+\thm@bodyfont=\toks51
+\thm@headfont=\toks52
+\thm@notefont=\toks53
+\thm@headpunct=\toks54
 \thm@preskip=\skip103
 \thm@postskip=\skip104
 \thm@headsep=\skip105
-\dth@everypar=\toks53
+\dth@everypar=\toks55
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2020/08/01 v0.72
-\thmt@toks=\toks54
-\c@thmt@dummyctr=\count348
+\thmt@toks=\toks56
+\c@thmt@dummyctr=\count349
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2020/08/01 v0.72
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2020/08/01 v0.72
-\@parsespec=\toks55
+\@parsespec=\toks57
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2020/08/01 v0.72
@@ -1250,7 +1271,7 @@ Package: thm-restate 2020/08/01 v0.72
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2020/08/01 v0.72
-\thmt@style@headstyle=\toks56
+\thmt@style@headstyle=\toks58
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.external.code.tex
@@ -1260,33 +1281,38 @@ ibraryexternal.code.tex
 s/tikzexternalshared.code.tex)))
 \openout3 = `MathNotes.auxlock'.
 
-\c@axiom=\count349
-\c@theorem=\count350
-\c@conjecture=\count351
-\c@lemma=\count352
-\c@proposition=\count353
-\c@corollary=\count354
-\c@definition=\count355
-\c@example=\count356
- (./MathNotes.aux)
+\c@axiom=\count350
+\c@theorem=\count351
+\c@conjecture=\count352
+\c@lemma=\count353
+\c@proposition=\count354
+\c@corollary=\count355
+\c@definition=\count356
+\c@example=\count357
+\MathNotes@idxfile=\write4
+\openout4 = `MathNotes.idx'.
+
+
+Writing index file MathNotes.idx
+(./MathNotes.aux)
 \openout1 = `MathNotes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1324,17 +1350,17 @@ LaTeX Font Info:    ... okay on input line 138.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count357
+\scratchcounter=\count358
 \scratchdimen=\dimen346
 \scratchbox=\box127
-\nofMPsegments=\count358
-\nofMParguments=\count359
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count360
+\nofMPsegments=\count359
+\nofMParguments=\count360
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count361
 \MPscratchDim=\dimen347
-\MPnumerator=\count361
-\makeMPintoPDFobject=\count362
-\everyMPtoPDFconversion=\toks58
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
+\everyMPtoPDFconversion=\toks60
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1358,16 +1384,16 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 138.
-Package gensymb Info: Math companion symbols declared on input line 138.
-LaTeX Info: Redefining \degree on input line 138.
-LaTeX Info: Redefining \celsius on input line 138.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 140.
+Package gensymb Info: Math companion symbols declared on input line 140.
+LaTeX Info: Redefining \degree on input line 140.
+LaTeX Info: Redefining \celsius on input line 140.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 138.
-LaTeX Info: Redefining \ohm on input line 138.
-Package gensymb Info: Using \textohm for \ohm on input line 138.
-Package gensymb Info: Using \textmu for \micro on input line 138.
-Package hyperref Info: Link coloring OFF on input line 138.
+erthousand on input line 140.
+LaTeX Info: Redefining \ohm on input line 140.
+Package gensymb Info: Using \textohm for \ohm on input line 140.
+Package gensymb Info: Using \textmu for \micro on input line 140.
+Package hyperref Info: Link coloring OFF on input line 140.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1379,25 +1405,25 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count363
+\c@section@level=\count364
 )
-LaTeX Info: Redefining \ref on input line 138.
-LaTeX Info: Redefining \pageref on input line 138.
-LaTeX Info: Redefining \nameref on input line 138.
+LaTeX Info: Redefining \ref on input line 140.
+LaTeX Info: Redefining \pageref on input line 140.
+LaTeX Info: Redefining \nameref on input line 140.
  (./MathNotes.out) (./MathNotes.out)
-\@outlinefile=\write4
-\openout4 = `MathNotes.out'.
+\@outlinefile=\write5
+\openout5 = `MathNotes.out'.
 
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.17} (current compat level: 1.8).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 159
+LaTeX Font Info:    Trying to load font information for U+msa on input line 161
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 159
+LaTeX Font Info:    Trying to load font information for U+msb on input line 161
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1415,28 +1441,28 @@ This may cause the page layout to be inconsistent, however.
 
 [3]
 Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
-line 273.
+line 275.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 277.
+t line 279.
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on i
-nput line 281.
+nput line 283.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 285.
+put line 287.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 289.
+line 291.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 293.
+input line 295.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 303.
+nput line 305.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 308.
+t line 310.
  [4]
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 311.
+ line 313.
 Package hyperref Info: bookmark level for unknown observation defaults to 0 on 
-input line 315.
+input line 317.
 Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
-ut line 319.
+ut line 321.
  [5] [6
 
 ] (./MathNotes.toc
@@ -1448,8 +1474,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12])
-\tf@toc=\write5
-\openout5 = `MathNotes.toc'.
+\tf@toc=\write6
+\openout6 = `MathNotes.toc'.
 
 
 [13] [14
@@ -1466,7 +1492,7 @@ Chapter 1.
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 338.
+(hyperref)                removing `math shift' on input line 340.
 
 [7
 
@@ -1476,7 +1502,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 340.
+(hyperref)                removing `math shift' on input line 342.
 
 [9] [10
 
@@ -1484,7 +1510,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 342.
+(hyperref)                removing `math shift' on input line 344.
 
 [11] [12
 
@@ -1496,7 +1522,7 @@ Chapter 5.
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 346.
+(hyperref)                removing `math shift' on input line 348.
 
 [15] [16
 
@@ -1504,7 +1530,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 348.
+(hyperref)                removing `math shift' on input line 350.
 
 [17] [18
 
@@ -1512,7 +1538,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 8.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 350.
+(hyperref)                removing `math shift' on input line 352.
 
 [19] [20
 
@@ -1520,59 +1546,59 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Chapter 9.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathop' on input line 376.
+(hyperref)                removing `\mathop' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathgroup' on input line 376.
+(hyperref)                removing `\mathgroup' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\symoperators' on input line 376.
+(hyperref)                removing `\symoperators' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nmlimits@' on input line 376.
+(hyperref)                removing `\nmlimits@' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 376.
+(hyperref)                removing `\new@ifnextchar' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathop' on input line 376.
+(hyperref)                removing `\mathop' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathgroup' on input line 376.
+(hyperref)                removing `\mathgroup' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\symoperators' on input line 376.
+(hyperref)                removing `\symoperators' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nmlimits@' on input line 376.
+(hyperref)                removing `\nmlimits@' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 376.
+(hyperref)                removing `\new@ifnextchar' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 378.
 
 [23
 
@@ -1598,21 +1624,21 @@ Chapter 12.
 [34]
 
 LaTeX Warning: Reference `Roots of z Section - Complex' on page 1 undefined on 
-input line 646.
+input line 648.
 
 [35 <./tikz/MathNotes-figure2.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 700.
+(hyperref)                removing `math shift' on input line 702.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 700.
+(hyperref)                removing `math shift' on input line 702.
 
 [36]
 ===== Image 'tikz/MathNotes-figure3' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 752.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 754.
 
 ===== Image 'tikz/MathNotes-figure4' is up-to-date. ======
 [37 <./tikz/MathNotes-figure3.pdf> <./tikz/MathNotes-figure4.pdf>]
@@ -1621,7 +1647,7 @@ LaTeX Font Warning: Command \Large invalid in math mode on input line 752.
 [38 <./tikz/MathNotes-figure5.pdf>]
 ===== Image 'tikz/MathNotes-figure7' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 967.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 969.
 
 ===== Image 'tikz/MathNotes-figure8' is up-to-date. ======
 
@@ -1630,7 +1656,7 @@ Underfull \vbox (badness 4832) has occurred while \output is active []
  [39 <./tikz/MathNotes-figure6.pdf>]
 ===== Image 'tikz/MathNotes-figure9' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1032.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1034.
 
 ===== Image 'tikz/MathNotes-figure10' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure11' is up-to-date. ======
@@ -1648,25 +1674,25 @@ hNotes-figure13.pdf>]
 Chapter 13.
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1438.
+age 1 undefined on input line 1440.
 
 [45
 
 ]
 ===== Image 'tikz/MathNotes-figure17' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1509.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1511.
 
 ===== Image 'tikz/MathNotes-figure18' is up-to-date. ======
 [46 <./tikz/MathNotes-figure17.pdf> <./tikz/MathNotes-figure18.pdf>]
 ===== Image 'tikz/MathNotes-figure19' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1581.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1583.
 
 ===== Image 'tikz/MathNotes-figure20' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure21' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 1653.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 1655.
 
 ===== Image 'tikz/MathNotes-figure22' is up-to-date. ======
 [47 <./tikz/MathNotes-figure19.pdf> <./tikz/MathNotes-figure20.pdf>] [48 <./tik
@@ -1675,11 +1701,11 @@ z/MathNotes-figure21.pdf> <./tikz/MathNotes-figure22.pdf>] [49] [50]
 [51] [52 <./tikz/MathNotes-figure23.pdf>] [53] [54]
 ===== Image 'tikz/MathNotes-figure24' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2103.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2105.
 
 ===== Image 'tikz/MathNotes-figure25' is up-to-date. ======
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 2130.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 2132.
 
 ===== Image 'tikz/MathNotes-figure26' is up-to-date. ======
 [55 <./tikz/MathNotes-figure24.pdf> <./tikz/MathNotes-figure25.pdf> <./tikz/Mat
@@ -1691,7 +1717,7 @@ hNotes-figure26.pdf>] [56]
 [67] [68 <./tikz/MathNotes-figure28.pdf>] [69] [70] [71] [72]
 ===== Image 'tikz/MathNotes-figure29' is up-to-date. ======
 
-Overfull \hbox (5.51305pt too wide) in paragraph at lines 3221--3222
+Overfull \hbox (5.51305pt too wide) in paragraph at lines 3223--3224
 []\OT1/cmr/bx/n/12 Example 13.6.2 \OT1/cmr/m/n/12 (De-ter-min-ing an-a-lyt-ic-i
 ty us-ing Cauchy-Rie-mann equa-tions) []\OT1/cmr/m/sl/12 Con-sider $\OML/cmm/m/
 it/12 f\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 z\OMX/MnSymbolE/m/n/12 ç \U/MnSy
@@ -1715,17 +1741,17 @@ Chapter 15.
 [97 <./tikz/MathNotes-figure32.pdf>]
 ===== Image 'tikz/MathNotes-figure33' is up-to-date. ======
 [98 <./tikz/MathNotes-figure33.pdf>] [99]
-Overfull \hbox (0.18661pt too wide) detected at line 4702
+Overfull \hbox (0.18661pt too wide) detected at line 4704
 []
  []
 
 [100] [101] [102]
-Underfull \hbox (badness 10000) in paragraph at lines 4829--4831
+Underfull \hbox (badness 10000) in paragraph at lines 4831--4833
 
  []
 
 [103]
-Underfull \hbox (badness 10000) in paragraph at lines 4870--4872
+Underfull \hbox (badness 10000) in paragraph at lines 4872--4874
 
  []
 
@@ -1734,7 +1760,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4870--4872
 [110 <./tikz/MathNotes-figure34.pdf>] [111]
 ===== Image 'tikz/MathNotes-figure35' is up-to-date. ======
 
-Overfull \hbox (5.87373pt too wide) detected at line 5319
+Overfull \hbox (5.87373pt too wide) detected at line 5321
 []
  []
 
@@ -1743,7 +1769,7 @@ Overfull \hbox (5.87373pt too wide) detected at line 5319
 [115 <./tikz/MathNotes-figure36.pdf>] [116] [117] [118] [119]
 ===== Image 'tikz/MathNotes-figure37' is up-to-date. ======
 [120 <./tikz/MathNotes-figure37.pdf>]
-Overfull \hbox (5.2982pt too wide) detected at line 5799
+Overfull \hbox (5.2982pt too wide) detected at line 5801
 []
  []
 
@@ -1777,7 +1803,7 @@ Chapter 17.
 ===== Image 'tikz/MathNotes-figure44' is up-to-date. ======
 [154 <./tikz/MathNotes-figure43.pdf>] [155 <./tikz/MathNotes-figure44.pdf>]
 [156] [157] [158] [159] [160] [161] [162] [163]
-Overfull \hbox (23.8825pt too wide) in paragraph at lines 8050--8050
+Overfull \hbox (23.8825pt too wide) in paragraph at lines 8052--8052
 |[]\OT1/cmr/bx/n/17.28 Behaviour of Func-tions Near Iso-lated Sin-gu-lar Points
 | 
  []
@@ -1785,7 +1811,7 @@ Overfull \hbox (23.8825pt too wide) in paragraph at lines 8050--8050
 [164] [165]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 8120.
+(hyperref)                removing `math shift' on input line 8122.
 
 [166]
 ===== Image 'tikz/MathNotes-figure45' is up-to-date. ======
@@ -1802,14 +1828,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [175 <./tikz/MathNotes-figure50.pdf>] [176]
 ===== Image 'tikz/MathNotes-figure51' is up-to-date. ======
 
-Overfull \hbox (7.90346pt too wide) detected at line 8969
+Overfull \hbox (7.90346pt too wide) detected at line 8971
 []
  []
 
 [177 <./tikz/MathNotes-figure51.pdf>]
 ===== Image 'tikz/MathNotes-figure52' is up-to-date. ======
 [178 <./tikz/MathNotes-figure52.pdf>]
-Overfull \hbox (7.25365pt too wide) detected at line 9100
+Overfull \hbox (7.25365pt too wide) detected at line 9102
 []
  []
 
@@ -1908,25 +1934,30 @@ Chapter 30.
 
 ] [250
 
-] [251]
+]
+runsystem(makeindex MathNotes.idx)...executed.
 
-(./MathNotes.bbl [252
+ (./MathNotes.ind)
+
+(./MathNotes.bbl [251
+
+] [252
 
 ]) [253] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: F8B0228A021DD2CCB8765BAB9B902DBE;10342.
+(rerunfilecheck)             Checksum: CEF123B66FD6FF8C56ADC47A47ECB9D5;10454.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40926 strings out of 479382
- 930436 string characters out of 5869369
- 1354401 words of memory out of 5000000
- 56076 multiletter control sequences out of 15000+600000
+ 41286 strings out of 479382
+ 936495 string characters out of 5869369
+ 1360822 words of memory out of 5000000
+ 56412 multiletter control sequences out of 15000+600000
  445049 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,19n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1959,10 +1990,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (267 pages, 1016103 bytes).
+Output written on MathNotes.pdf (267 pages, 1016683 bytes).
 PDF statistics:
- 4104 PDF objects out of 4296 (max. 8388607)
- 3590 compressed objects within 36 object streams
- 1121 named destinations out of 1200 (max. 500000)
- 1506 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4111 PDF objects out of 4296 (max. 8388607)
+ 3597 compressed objects within 36 object streams
+ 1123 named destinations out of 1200 (max. 500000)
+ 1514 words of extra memory for PDF output out of 10000 (max. 10000000)
 

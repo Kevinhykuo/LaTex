@@ -116,6 +116,8 @@
 \contentsline {subsection}{\numberline {17.7.7}Argument Principle}{181}{subsection.17.7.7}%
 \contentsline {subsection}{\numberline {17.7.8}Rouché's Theorem}{184}{subsection.17.7.8}%
 \contentsline {subsection}{\numberline {17.7.9}Inverse Laplace Transforms}{189}{subsection.17.7.9}%
+\contentsline {subsection}{\numberline {17.7.10}Hilbert Transform}{192}{subsection.17.7.10}%
+\contentsline {subsection}{\numberline {17.7.11}Gamma Function}{192}{subsection.17.7.11}%
 \contentsline {chapter}{\numberline {18}Mapping by Elementary Functions}{193}{chapter.18}%
 \contentsline {section}{\numberline {18.1}Linear Transformations}{193}{section.18.1}%
 \contentsline {chapter}{\numberline {19}Conformal Mapping}{195}{chapter.19}%
@@ -149,5 +151,4 @@
 \contentsline {chapter}{\numberline {30}Integration Techniques}{247}{chapter.30}%
 \contentsline {section}{\numberline {30.1}DI Method (Integration Table)}{247}{section.30.1}%
 \contentsline {section}{\numberline {30.2}Feynman Integration}{247}{section.30.2}%
-\contentsline {part}{XX\hspace {1em}Index}{249}{part.20}%
-\contentsline {part}{XXI\hspace {1em}Bibliography}{251}{part.21}%
+\contentsline {part}{XX\hspace {1em}Index and Bibliography}{249}{part.20}%

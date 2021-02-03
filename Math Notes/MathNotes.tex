@@ -3,7 +3,7 @@
 \usepackage[letterpaper, portrait, margin=2.5cm]{geometry} %Set paper type, format, margin
 \usepackage[svgnames]{xcolor}
 \usepackage{%abstract, 
-	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wrapfig}
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, imakeidx, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wrapfig}
 \usepackage{cleveref}
 \usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings,backgrounds,patterns, arrows.meta}
 \usepgfplotslibrary{groupplots}
@@ -134,6 +134,8 @@
 	\thispagestyle{empty}
 	\newpage
 }
+
+\makeindex
 
 \begin{document}
 	\title{The Book of Math (Notes)}
@@ -498,13 +500,13 @@
 	\section{Triangle Inequality} \label{Triangle Inequality Section - Complex}
 	It is not analysis without a section dedicated to the triangle inequality. For any given number $z_1, z_2 \in \mathbb{C}$ it makes no sense to write an inequality $z_1 = a_1 + ib_1 <  a_2 + ib_2 = z_2$. Thus, we need have a different notion of size. 
 	
-	\begin{definition}[Modulus]
+	\begin{definition}[Modulus \index{Modulus}]
 		The modulus of a complex number is a function $\mathbb{C} \rightarrow \mathbb{R}_{>0}$:
 		$$\abs{z} = \sqrt{x^2 + y^2} = \sqrt{z \bar{z}}$$
 	\end{definition}
 	It is obvious why the definition is not $\abs{z} = \sqrt{x^2 + (iy)^2}$ as problems arise when $x = y$. The modulus is the distance of $z$ from $(0, 0)$. $\bar{z}$ is the complex conjugate of $z$, which is explored in \cref{Complex Conjugate Section - Complex}
 	
-	\begin{theorem}[Triangle Inequality]
+	\begin{theorem}[Triangle Inequality \index{Triangle Inequality}]
 		$\forall z_1, z_2 \in \mathbb{C} [\abs{z_1 + z_2} \leq \abs{z_1} + \abs{z_2}]$
 		\label{Triange Inequality - Complex}
 	\end{theorem}
@@ -9909,6 +9911,11 @@
 		\end{proof}
 	\end{example}
 
+	\subsection{Hilbert Transform} \label{Hilbert Transform Subsection - Complex}
+	
+	\subsection{Gamma Function} \label{Gamma Function Subsection - Complex}
+	
+
 	\chapter{Mapping by Elementary Functions} \label{Mapping by Elementary Functions Chapter - Complex}
 	
 	\section{Linear Transformations} \label{Linear Transformations Section - Complex}
@@ -10058,9 +10065,10 @@
 	\section{Feynman Integration} \label{Feynman Integration Section - Tips and Tricks}
 	
 	\backmatter
-	\part{Index} \label{Index Part}
+	\part{Index and Bibliography} \label{Index and Bibliography Part}
 	
-	\part{Bibliography}
+	\printindex
+	
 	\bibliographystyle{unsrt}
 	\typeout{}
 	\bibliography{Bibliography}
