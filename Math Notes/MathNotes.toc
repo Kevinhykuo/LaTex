@@ -100,54 +100,54 @@
 \contentsline {subsection}{\numberline {17.1.1}Residue at Infinity}{154}{subsection.17.1.1}%
 \contentsline {section}{\numberline {17.2}Three Types of Isolated Singular Points}{156}{section.17.2}%
 \contentsline {section}{\numberline {17.3}Residue at Poles}{157}{section.17.3}%
-\contentsline {section}{\numberline {17.4}Zeros of Analytic Functions}{159}{section.17.4}%
-\contentsline {section}{\numberline {17.5}Zeros and Poles}{161}{section.17.5}%
+\contentsline {section}{\numberline {17.4}Zeros of Analytic Functions}{160}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Zeros and Poles}{162}{section.17.5}%
 \contentsline {section}{\numberline {17.6}Behaviour of Functions Near Isolated Singular Points}{164}{section.17.6}%
 \contentsline {subsection}{\numberline {17.6.1}Removable Singular Points}{164}{subsection.17.6.1}%
 \contentsline {subsection}{\numberline {17.6.2}Essential Singular Points}{165}{subsection.17.6.2}%
 \contentsline {subsection}{\numberline {17.6.3}Poles of Order \(m\)}{166}{subsection.17.6.3}%
 \contentsline {section}{\numberline {17.7}Application of Residues}{166}{section.17.7}%
 \contentsline {subsection}{\numberline {17.7.1}Evaluation of Improper Integrals}{166}{subsection.17.7.1}%
-\contentsline {subsection}{\numberline {17.7.2}Improper Integrals from Fourier Analysis}{169}{subsection.17.7.2}%
-\contentsline {subsection}{\numberline {17.7.3}Jordan's Lemma}{169}{subsection.17.7.3}%
-\contentsline {subsection}{\numberline {17.7.4}Indented Paths}{172}{subsection.17.7.4}%
-\contentsline {subsection}{\numberline {17.7.5}Integration Along a Branch Cut}{175}{subsection.17.7.5}%
-\contentsline {subsection}{\numberline {17.7.6}Indefinite Integrals Involving Sines and Cosines}{178}{subsection.17.7.6}%
-\contentsline {subsection}{\numberline {17.7.7}Argument Principle}{179}{subsection.17.7.7}%
-\contentsline {subsection}{\numberline {17.7.8}Rouché's Theorem}{182}{subsection.17.7.8}%
-\contentsline {subsection}{\numberline {17.7.9}Inverse Laplace Transforms}{187}{subsection.17.7.9}%
-\contentsline {chapter}{\numberline {18}Mapping by Elementary Functions}{191}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Linear Transformations}{191}{section.18.1}%
-\contentsline {chapter}{\numberline {19}Conformal Mapping}{193}{chapter.19}%
-\contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{195}{part.5}%
-\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{197}{part.6}%
-\contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{199}{part.7}%
-\contentsline {paragraph}{Calculus of Variations [Empty]}{200}{theorem.19.0.2}%
-\contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{201}{part.8}%
-\contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{203}{part.9}%
-\contentsline {chapter}{\numberline {20}Markov Chains}{205}{chapter.20}%
-\contentsline {part}{X\hspace {1em}Tensors [Empty]}{207}{part.10}%
-\contentsline {part}{XI\hspace {1em}Riemann Geometry [Empty]}{209}{part.11}%
-\contentsline {part}{XII\hspace {1em}Abstract Algebra [Empty]}{211}{part.12}%
-\contentsline {chapter}{\numberline {21}Groups}{213}{chapter.21}%
-\contentsline {chapter}{\numberline {22}Rings}{215}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Ideals}{215}{section.22.1}%
-\contentsline {chapter}{\numberline {23}Integral Domains}{217}{chapter.23}%
-\contentsline {chapter}{\numberline {24}GCD Domains}{219}{chapter.24}%
-\contentsline {chapter}{\numberline {25}Unique Factorization Domains}{221}{chapter.25}%
-\contentsline {chapter}{\numberline {26}Principal Ideal Domains}{223}{chapter.26}%
-\contentsline {chapter}{\numberline {27}Fields}{225}{chapter.27}%
-\contentsline {part}{XIII\hspace {1em}Galois Theory [Empty]}{227}{part.13}%
-\contentsline {part}{XIV\hspace {1em}Lie Theory [Empty]}{229}{part.14}%
-\contentsline {chapter}{\numberline {28}Lie Groups}{231}{chapter.28}%
-\contentsline {chapter}{\numberline {29}Lie Algebra}{233}{chapter.29}%
-\contentsline {part}{XV\hspace {1em}C-Star Algebra [Empty]}{235}{part.15}%
-\contentsline {part}{XVI\hspace {1em}Set Theory [Empty]}{237}{part.16}%
-\contentsline {part}{XVII\hspace {1em}Model Theory [Empty]}{239}{part.17}%
-\contentsline {part}{XVIII\hspace {1em}Statistics [Empty]}{241}{part.18}%
-\contentsline {part}{XIX\hspace {1em}Tips and Tricks [Empty]}{243}{part.19}%
-\contentsline {chapter}{\numberline {30}Integration Techniques}{245}{chapter.30}%
-\contentsline {section}{\numberline {30.1}DI Method (Integration Table)}{245}{section.30.1}%
-\contentsline {section}{\numberline {30.2}Feynman Integration}{245}{section.30.2}%
-\contentsline {part}{XX\hspace {1em}Index}{247}{part.20}%
-\contentsline {part}{XXI\hspace {1em}Bibliography}{249}{part.21}%
+\contentsline {subsection}{\numberline {17.7.2}Improper Integrals from Fourier Analysis}{170}{subsection.17.7.2}%
+\contentsline {subsection}{\numberline {17.7.3}Jordan's Lemma}{170}{subsection.17.7.3}%
+\contentsline {subsection}{\numberline {17.7.4}Indented Paths}{174}{subsection.17.7.4}%
+\contentsline {subsection}{\numberline {17.7.5}Integration Along a Branch Cut}{177}{subsection.17.7.5}%
+\contentsline {subsection}{\numberline {17.7.6}Indefinite Integrals Involving Sines and Cosines}{180}{subsection.17.7.6}%
+\contentsline {subsection}{\numberline {17.7.7}Argument Principle}{181}{subsection.17.7.7}%
+\contentsline {subsection}{\numberline {17.7.8}Rouché's Theorem}{184}{subsection.17.7.8}%
+\contentsline {subsection}{\numberline {17.7.9}Inverse Laplace Transforms}{189}{subsection.17.7.9}%
+\contentsline {chapter}{\numberline {18}Mapping by Elementary Functions}{193}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Linear Transformations}{193}{section.18.1}%
+\contentsline {chapter}{\numberline {19}Conformal Mapping}{195}{chapter.19}%
+\contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{197}{part.5}%
+\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{199}{part.6}%
+\contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{201}{part.7}%
+\contentsline {paragraph}{Calculus of Variations [Empty]}{202}{theorem.19.0.2}%
+\contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{203}{part.8}%
+\contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{205}{part.9}%
+\contentsline {chapter}{\numberline {20}Markov Chains}{207}{chapter.20}%
+\contentsline {part}{X\hspace {1em}Tensors [Empty]}{209}{part.10}%
+\contentsline {part}{XI\hspace {1em}Riemann Geometry [Empty]}{211}{part.11}%
+\contentsline {part}{XII\hspace {1em}Abstract Algebra [Empty]}{213}{part.12}%
+\contentsline {chapter}{\numberline {21}Groups}{215}{chapter.21}%
+\contentsline {chapter}{\numberline {22}Rings}{217}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Ideals}{217}{section.22.1}%
+\contentsline {chapter}{\numberline {23}Integral Domains}{219}{chapter.23}%
+\contentsline {chapter}{\numberline {24}GCD Domains}{221}{chapter.24}%
+\contentsline {chapter}{\numberline {25}Unique Factorization Domains}{223}{chapter.25}%
+\contentsline {chapter}{\numberline {26}Principal Ideal Domains}{225}{chapter.26}%
+\contentsline {chapter}{\numberline {27}Fields}{227}{chapter.27}%
+\contentsline {part}{XIII\hspace {1em}Galois Theory [Empty]}{229}{part.13}%
+\contentsline {part}{XIV\hspace {1em}Lie Theory [Empty]}{231}{part.14}%
+\contentsline {chapter}{\numberline {28}Lie Groups}{233}{chapter.28}%
+\contentsline {chapter}{\numberline {29}Lie Algebra}{235}{chapter.29}%
+\contentsline {part}{XV\hspace {1em}C-Star Algebra [Empty]}{237}{part.15}%
+\contentsline {part}{XVI\hspace {1em}Set Theory [Empty]}{239}{part.16}%
+\contentsline {part}{XVII\hspace {1em}Model Theory [Empty]}{241}{part.17}%
+\contentsline {part}{XVIII\hspace {1em}Statistics [Empty]}{243}{part.18}%
+\contentsline {part}{XIX\hspace {1em}Tips and Tricks [Empty]}{245}{part.19}%
+\contentsline {chapter}{\numberline {30}Integration Techniques}{247}{chapter.30}%
+\contentsline {section}{\numberline {30.1}DI Method (Integration Table)}{247}{section.30.1}%
+\contentsline {section}{\numberline {30.2}Feynman Integration}{247}{section.30.2}%
+\contentsline {part}{XX\hspace {1em}Index}{249}{part.20}%
+\contentsline {part}{XXI\hspace {1em}Bibliography}{251}{part.21}%

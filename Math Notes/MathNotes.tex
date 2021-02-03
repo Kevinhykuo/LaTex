@@ -7711,7 +7711,9 @@
 				\(\phi(z_0)\) is analytic and \(\phi(z_0) \neq 0\).
 			\item[3.]
 			\begin{align*}
-				\Res[f(z), z_0] &= \frac{\phi^{(m-1)}(z_0)}{(m-1)!}	&	m \in \mathbb{N}
+				\Res[f(z), z_0] 
+				&= \lim_{z \rightarrow z_0} \frac{1}{(m-1)!} \dv[m-1]{z} (z-z_0)^m f(z)
+				 = \frac{\phi^{(m-1)}(z_0)}{(m-1)!}	&	m \in \mathbb{N}
 			\end{align*}
 		\end{itemize}
 	\end{theorem}
@@ -7768,6 +7770,19 @@
 			\end{cases}
 		\end{align*}
 	\end{itemize}
+
+	\textbf{On the term ``pole'':} \newline
+	Consider a function \(f(z)\) with a pole of order \(m\) at \(z_0\). Then by \cref{Residue at Poles Theorem - Complex}:
+	\begin{align*}
+		f(z) &= \frac{\phi(z)}{(z-z_0)^m} &
+		\phi(z) &= \sum_{n=0}^{N} c_{-(m-n)} (z-z_0)^n & c_{-m} \neq 0
+	\end{align*}
+	Therefore
+	\begin{align*}
+		\lim_{z\rightarrow z_0} f(z) \approx \frac{\phi(z_0)}{(z-z_0)^m} = \frac{c_{-m}}{(z-z_0)^m} 
+		\implies \lim_{z\rightarrow z_0} \abs{f(z)} \approx \frac{\abs{c_{-m}}}{\abs{z-z_0}^m}
+	\end{align*}
+	For higher orders of \(m\), the points around \(z\) goes to infinity faster. Hence, a pole of higher order means a ``thicker pole'' in a graphical sense. 
 	
 	\begin{example}
 		Consider 
@@ -7941,7 +7956,7 @@
 		Let function \(p\) and \(q\) be analytic at \(z_0\).
 		\begin{align*}
 			&[p(z_0) \neq 0] \land [q(z_0) = 0] \land [q'(z_0) \neq 0] \\
-			&\implies \left[z_0 \text{ simple pole of } \frac{p(z)}{q(z)}\right] \land \left[\Res_{z=z_0}\left(\frac{p(z)}{q(z)}\right) = \frac{p(z_0)}{q'(z_0)} \right]
+			&\implies \left(z_0 \text{ simple pole of } \frac{p(z)}{q(z)}\right) \land \left(\Res[\frac{p(z)}{q(z)}, z_0] = \frac{p(z_0)}{q'(z_0)} \right)
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
@@ -7959,7 +7974,7 @@
 		\end{align*}
 		\(\phi(z)\) is analytic and nonzero at \(z_0\), so
 		\begin{align*}
-			\Res_{z=z_0}\left[\frac{p(z)}{q(z)}\right] &= \frac{p(z_0)}{q(z_0)} 
+			\Res[\frac{p(z)}{q(z)}, z_0] &= \frac{p(z_0)}{q(z_0)} 
 				& \text{\Cref{Residue at Poles Theorem - Complex}}
 		\end{align*}
 		We know that 
@@ -7970,7 +7985,7 @@
 		\end{align*}
 		Thus 
 		\begin{align*}
-			\Res_{z=z_0}\left(\frac{p(z)}{q(z)}\right) = \frac{p(z_0)}{q'(z_0)}
+			\Res[\frac{p(z)}{q(z)}, z_0] = \frac{p(z_0)}{q'(z_0)}
 		\end{align*}
 	\end{proof}
 	
@@ -8002,7 +8017,10 @@
 	\end{theorem}
 
 	\begin{example}
+		\label{Finite order of zeros in simple closed contour implies finite zeros Example - Complex}
 		Show if function \(f\) is analytic in region \(R\) consisting of all points inside and on simple closed contour \(C\), except for poles inside \(C\), and all zeros of \(f\) in \(R\) are interior to \(C\) are finite in order, then the zeros must be finite in number.
+		
+%		For extension, see \cref{Function not identically zero in domain implies zeros of function finite in order and number Example - Complex}.
 	\end{example}
 	\begin{proof}
 		{\color{Grey}
@@ -8170,6 +8188,7 @@
 		\end{align*}
 		Which the limits do not exist. 
 	\end{example}
+
 	
 %	\subsubsection{Evaluation of Integral Over Semicircular Region Above Real Axis}
 	
@@ -8181,59 +8200,95 @@
 		where \(p(z)\) and \(q(z)\) are polynomials with coefficients in \(\mathbb{R}\), and no common factors. \(q(z)\) have no real zeros, but at least one above the real axis.
 	\end{definition}
 
-	We consider the positively oriented contour \(C\) consisting of the line segment from \(-R\) to \(R\) on the real axis and the top half of the circle with radius \(\abs{z} = R\) (\(C_R\)), which is large enough where the zeros of the function \(z_1, z_2, z_3, \ldots, z_n\) all lie within the region enclosed by the contour. 
-	
-	\begin{figure}[H]
-		\centering
-		\begin{tikzpicture}
-			\begin{axis}[
-				unit vector ratio=1 1 1,
-				xlabel={$\Re$},
-				ylabel={$\Im$},
-				xmin=-12, xmax=12,
-				ymin=0, ymax=11,
-				xtick=100,
-				ytick=100,
-				axis lines = middle,
-				axis line style = Black,
-				]
-				\addplot[
-				only marks,
-				nodes near coords,
-				point meta = explicit symbolic, 
-				mark=*,
-				]
-				coordinates {
-					(8, 0) [$R$]
-					(-8, 0) [$-R$]
-				};
-			
-				\draw[line width=1pt, 
-				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
-				postaction={decorate}]
-				(axis cs: 8, 0) arc (0:180:80) node[pos=0.72, above] {\(C\)};
-				
-				\draw[line width=2pt]  (axis cs: -8,0)--(axis cs: 8,0);
-			\end{axis}
-		\end{tikzpicture}
-	\end{figure}
-	
-	By Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
-	\begin{align*}
-		\int_{-R}^{R} f(x) dx + \int_{C_R} f(z) dz = 2\pi i \sum_{k=1}^{n} \Res[f(z), z_k]
-	\end{align*}
-	If 
-	\begin{align*}
-		\lim_{R\rightarrow \infty} \int_{C_R} f(z) dz = 0
-	\end{align*}
-	Then
-	\begin{align*}
-		\operatorname{P.V.} \int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum_{k=1}^{n} \Res[f(z), z_k]
-	\end{align*}
+	\begin{theorem}
+		Consider the rational function 
+		\begin{align*}
+			f(z) = \frac{p(z)}{q(z)}
+		\end{align*}
+		Then
+		\begin{align*}
+			\operatorname{P.V.} \int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum_{k=1}^{n} \Res[f(z), z_k]
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		We consider the positively oriented contour \(C\) consisting of the line segment from \(-R\) to \(R\) on the real axis and the top half of the circle with radius \(\abs{z} = R\) (\(C_R\)), which is large enough where the zeros of the function \(z_1, z_2, z_3, \ldots, z_n\) all lie within the region enclosed by the contour. 
+		
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-12, xmax=12,
+					ymin=0, ymax=11,
+					xtick=100,
+					ytick=100,
+					axis lines = middle,
+					axis line style = Black,
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(8, 0) [$R$]
+						(-8, 0) [$-R$]
+					};
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.75 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 8, 0) arc (0:180:80) node[pos=0.72, above] {\(C\)};
+					
+					\draw[line width=2pt]  (axis cs: -8,0)--(axis cs: 8,0);
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+		
+		By Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
+		\begin{align*}
+			\int_{-R}^{R} f(x) dx + \int_{C_R} f(z) dz = 2\pi i \sum_{k=1}^{n} \Res[f(z), z_k]
+		\end{align*}
+		If 
+		\begin{align*}
+			\lim_{R\rightarrow \infty} \int_{C_R} f(z) dz = 0
+		\end{align*}
+		Then
+		\begin{align*}
+			\operatorname{P.V.} \int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum_{k=1}^{n} \Res[f(z), z_k]
+		\end{align*}
+	\end{proof}
 	
 	\begin{question}
 		Is the choice of the region being above or below the real axis is arbitrary? It seems to be the case. The only thing that will change is the direction of the line integral on the real axis.
 	\end{question}
+
+	\begin{theorem}
+		Consider the function \(f(z)\) in the upper half-plane. Let \(C\) be a semicircular contour \(Re^{i\theta}\) in said plane, where \(\theta \in [0, \pi]\) with radius \(R\). 
+		\begin{align*}
+			\exists k>1, R_0<R, \mu \in \mathbb{R}, \forall \abs{z} \geq R_0 
+			\left[\abs{f(z)} \leq \frac{\mu}{\abs{z}^k} 
+			\implies \lim_{R\rightarrow \infty} \int_{C} f(z) dz = 0\right]
+		\end{align*}
+		That is, if \(\abs{f(z)}\) falls off faster than the reciprocal of the radius \(R\) of \(C\), then the integral of \(f(z)\) around \(C\) vanish as \(R \rightarrow \infty\).
+	\end{theorem}
+	\begin{proof}
+		Assume \(R > R_0\), then by the ML inequality (\cref{ML Inequality Theorem - Complex}):
+		\begin{align*}
+			\abs{\int_{C} f(z) dz} \leq ML = M\pi R
+		\end{align*}
+		Since \(\abs{f(z)} \leq \mu / \abs{z}^k = \mu/ R^k\) on \(C\):
+		\begin{align*}
+			\abs{\int_{C} f(z) dz} &\leq \frac{\pi R \mu}{R^k} = \frac{\mu \pi}{R^{k-1}} & k>1
+		\end{align*}
+		Thus 
+		\begin{align*}
+			\lim_{R\rightarrow \infty} \abs{\int_{C} f(z) dz} = 0
+		\end{align*}
+	\end{proof}
 
 	\begin{example}
 		Consider the integral 
@@ -8411,11 +8466,18 @@
 			\lim_{R \rightarrow \infty} \int_{C_R} f(z) e^{iaz} dz = 0
 		\end{align*}
 	\end{proof}
+
+	Note: Jordan's lemma holds true for a quarter circle. This is easily seen by looking at the proof of Jordan's inequality where we have 
+	\begin{align*}
+		\int_{0}^{\pi/2} e^{-R \sin(\theta)} d\theta \leq \frac{\pi}{2R}
+	\end{align*}
+	then substituting it into a modified proof of Jordan's lemma.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{tikzpicture}
 			\begin{axis}[
+				width=10cm,
 				unit vector ratio=1 1 1,
 				xlabel={$\Re$},
 				ylabel={$\Im$},
@@ -8563,6 +8625,17 @@
 
 	\subsection{Indented Paths} \label{Indented Paths Subsection - Complex}
 	
+	\begin{definition}[Cauchy Principal Value of Integral with Singularity]
+		\label{Cauchy Principal Value of Integral with Singularity Definition - Complex}
+		Consider the real-valued function \(f(x)\) in \(x \in [a, b] \setminus \{x_0\}\) where \(x_0 \in (a, b)\) is a singularity of \(f(x)\). Let \(\epsilon\) be some neighbourhood of \(x_0\), then
+		\begin{align*}
+			\operatorname{P.V.}\int_{a}^{b} f(x) dx 
+			= \lim_{\epsilon \rightarrow 0}\left[
+			\int_{a}^{x_0 - \epsilon} f(x) dx + \int_{x_0 + \epsilon}^{b} f(x) dx
+			\right]
+		\end{align*}
+	\end{definition}
+	
 	\begin{theorem}
 		\label{Indented Paths Theorem - Complex}
 		Let 
@@ -8661,6 +8734,112 @@
 	\end{proof}
 
 	Note: We can use \cref{Indented Paths Theorem - Complex} to integrate around a isolated singular point on the real axis, or a branch cut involving the origin and \(\theta \in (-\pi + 2n\pi, 2\pi + 2n\pi)\) (that is, a branch cut below the real axis).
+
+	A more general result involving simple poles is as follows:
+	
+	\begin{theorem}
+		\label{Indented Paths Around Simple Poles Theorem - Complex}
+		Let function \(f(z)\) has a simple pole at \(z_0\), with \(z_0\) as the center of arc \(C_\rho\) (\(\theta \in [\theta_0, \theta_0 + \theta_1]\)) with radius \(\rho\). If the arc subtends to angle \(\theta_0\) at \(z_0\), then 
+		\begin{align*}
+			\lim_{\rho \rightarrow \infty} \int_{C_\rho} f(z) dz 
+			= 2\pi i \left(\frac{\theta_0}{2\pi} \Res[f(z), z_0]\right)
+			= i\theta_0  \Res[f(z), z_0]
+		\end{align*}
+	\end{theorem}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=-0.5, xmax=16,
+				ymin=-0.5, ymax=10,
+				ticks=none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=o,
+				]
+				coordinates {
+					(6, 2) [$z_0$]
+				};
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: {6+5*cos(20)}, {2+5*sin(20)}) arc (20:120:50) 
+				node[pos=0.75, above] {$C_\rho$};
+				
+				\draw[ 
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: {6+2*cos(20)}, {2+2*sin(20)}) arc (20:120:20) 
+				node[pos=0.5, above] {$\theta_0$};
+				 
+				\draw[ 
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: {6+4}, {2}) arc (0:20:40) 
+				node[pos=0.5, right] {$\theta_1$};
+				
+%				\draw[ 
+%				decoration={markings, mark=at position 0.99 with {\arrow{>}} },
+%				postaction={decorate}]
+%				(axis cs: {6+7}, {2}) arc (0:120:70) 
+%				node[pos=0.5, right] {$\theta_2$};
+				
+				\draw[dashed]
+				(axis cs: 6, 2) -- (axis cs: 11, 2);
+				
+				\draw[->]
+				(axis cs: 6, 2) -- (axis cs: {6+5*cos(120)}, {2+5*sin(120)}) 
+				node[midway, left] {$\rho$};
+				
+				\draw[dashed]
+				(axis cs: 6, 2) -- (axis cs: {6+8}, 2);
+				
+				\draw[dashed]
+				(axis cs: 6, 2) -- (axis cs: {6+8*cos(120)}, {2+8*sin(120)});
+				
+				\draw[dashed]
+				(axis cs: 6, 2) -- (axis cs: {6+6*cos(20)}, {2+6*sin(20)});
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	\begin{proof}
+		Consider the Laurent series of \(f(z)\) around \(z_0\). Since \(f(z)\) has a simple pole at \(z_0\):
+		\begin{align*}
+				f(z) &= g(z) +  \frac{B_0}{z-z_0} &
+				g(z) &= \sum_{n=0}^{\infty} a_n(z-z_0)^n
+		\end{align*}
+		Note that \(g(z)\) is the Taylor series of \(f\) about \(z_0\). Integrating the expansion over \(C_\rho\):
+		\begin{align*}
+			\int_{C_\rho} f(z) dz 
+			= \int_{C_\rho} g(z) dz + \int_{C_\rho} \frac{B_0}{z-z_0} dz
+		\end{align*}
+		\(g(z)\) is continuous at \(z_0\), so \(\abs{g(z)}\) is bounded in some neighbourhood of \(z_0\), that is, \(\exists M \in \mathbb{R}[\abs{g(z)} \leq M]\) in the neighbourhood. By the ML inequality (\cref{ML Inequality Theorem - Complex}):
+		\begin{align*}
+			\abs{\int_{C_\rho} g(z) dz} \leq M \rho \theta_0
+			\implies \lim_{\rho \rightarrow 0} \int_{C_\rho} g(z) dz = 0 
+		\end{align*}
+		Thus taking the limit as \(\rho \rightarrow 0\):
+		\begin{align*}
+			\lim_{\rho \rightarrow 0}
+			\int_{C_\rho} f(z) dz 
+			&= \int_{C_\rho} \frac{B_0}{z-z_0} dz 
+			= \int_{\theta_1}^{\theta_1 + \theta_0} \frac{B_0}{(z_0 + re^{i\theta}) - z_0} ire^{i\theta} d\theta  \\
+			&= B_0 \theta_0 i
+			= i\theta_0 \Res[f(z), z_0]
+		\end{align*}
+	\end{proof}
+	\begin{observation}
+		When \(\theta = 2\pi\), we get the Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}).
+	\end{observation}
 
 	\begin{example}[Dirichlet's Integral]
 		\label{Dirichlet's Integral Example - Complex}
@@ -9350,7 +9529,7 @@
 		Now that \(\abs{f(z)} > \abs{g(z)}\) is established, we can use Rouché's Theorem. Which tells us that \(f(z)\) and \(f(z) + g(z) = P(z)\) has the same number of zeros. It is clear that \(f(z) = a_n z^n\) has \(n\) zeros, which implies \(P(z)\) has \(n\) zeros.
 	\end{example}
 	
-	Note: Liouville's Theorem \(\cref{Liouville's Theorem - Complex}\) ensures the existence of at least one zero for a polynomial, while Rouché's Theorem ensures the existence of \(n\) zeros, including multiplicities.
+	Note: Liouville's Theorem (\cref{Liouville's Theorem - Complex}) ensures the existence of at least one zero for a polynomial, while Rouché's Theorem ensures the existence of \(n\) zeros, including multiplicities.
 	
 	\begin{example}
 		\label{Closed contour does not enclose origin implies winding number is zero Example - Complex}
@@ -9386,7 +9565,7 @@
 					&\text{\Cref{Analytic function is zero in domain or line segment in domain implies function is zero throughout domain Lemma - Complex}} \\
 				&\implies \text{Contradiction with having poles in } D
 			\end{align*}
-			By \cref{Isolated zeros implies finite poles in analytic region Example - Complex}:
+			By \cref{Finite order of zeros in simple closed contour implies finite zeros Example - Complex}:
 			If \(f\) is analytic in region \(R\) and \(\forall z \in D_0 [f(z) \nequiv 0]\), then zeros in \(R\) are finite in order and number.
 			}
 		\end{proof}

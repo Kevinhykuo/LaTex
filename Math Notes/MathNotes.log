@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  1 FEB 2021 23:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  2 FEB 2021 19:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1777,7 +1777,7 @@ Chapter 17.
 ===== Image 'tikz/MathNotes-figure44' is up-to-date. ======
 [154 <./tikz/MathNotes-figure43.pdf>] [155 <./tikz/MathNotes-figure44.pdf>]
 [156] [157] [158] [159] [160] [161] [162] [163]
-Overfull \hbox (23.8825pt too wide) in paragraph at lines 8032--8032
+Overfull \hbox (23.8825pt too wide) in paragraph at lines 8050--8050
 |[]\OT1/cmr/bx/n/17.28 Behaviour of Func-tions Near Iso-lated Sin-gu-lar Points
 | 
  []
@@ -1785,109 +1785,110 @@ Overfull \hbox (23.8825pt too wide) in paragraph at lines 8032--8032
 [164] [165]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 8102.
+(hyperref)                removing `math shift' on input line 8120.
 
 [166]
 ===== Image 'tikz/MathNotes-figure45' is up-to-date. ======
-[167 <./tikz/MathNotes-figure45.pdf>] [168] [169]
+[167] [168 <./tikz/MathNotes-figure45.pdf>] [169]
 ===== Image 'tikz/MathNotes-figure46' is up-to-date. ======
+[170]
 ===== Image 'tikz/MathNotes-figure47' is up-to-date. ======
-[170 <./tikz/MathNotes-figure46.pdf>] [171 <./tikz/MathNotes-figure47.pdf>]
+[171 <./tikz/MathNotes-figure46.pdf>] [172 <./tikz/MathNotes-figure47.pdf>]
 ===== Image 'tikz/MathNotes-figure48' is up-to-date. ======
-[172 <./tikz/MathNotes-figure48.pdf>]
+[173 <./tikz/MathNotes-figure48.pdf>]
 ===== Image 'tikz/MathNotes-figure49' is up-to-date. ======
-[173 <./tikz/MathNotes-figure49.pdf>] [174]
+[174 <./tikz/MathNotes-figure49.pdf>]
 ===== Image 'tikz/MathNotes-figure50' is up-to-date. ======
-
-Overfull \hbox (7.90346pt too wide) detected at line 8790
-[]
- []
-
-[175 <./tikz/MathNotes-figure50.pdf>]
+[175 <./tikz/MathNotes-figure50.pdf>] [176]
 ===== Image 'tikz/MathNotes-figure51' is up-to-date. ======
-[176 <./tikz/MathNotes-figure51.pdf>]
-Overfull \hbox (7.25365pt too wide) detected at line 8921
+
+Overfull \hbox (7.90346pt too wide) detected at line 8969
 []
  []
 
+[177 <./tikz/MathNotes-figure51.pdf>]
 ===== Image 'tikz/MathNotes-figure52' is up-to-date. ======
-===== Image 'tikz/MathNotes-figure53' is up-to-date. ======
-[177] [178 <./tikz/MathNotes-figure52.pdf> <./tikz/MathNotes-figure53.pdf>]
-===== Image 'tikz/MathNotes-figure54' is up-to-date. ======
-[179 <./tikz/MathNotes-figure54.pdf>] [180] [181] [182] [183] [184] [185]
-[186]
-===== Image 'tikz/MathNotes-figure55' is up-to-date. ======
-[187 <./tikz/MathNotes-figure55.pdf>] [188] [189] [190]
-Chapter 18.
-[191
+[178 <./tikz/MathNotes-figure52.pdf>]
+Overfull \hbox (7.25365pt too wide) detected at line 9100
+[]
+ []
 
-] [192
+===== Image 'tikz/MathNotes-figure53' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure54' is up-to-date. ======
+[179] [180 <./tikz/MathNotes-figure53.pdf> <./tikz/MathNotes-figure54.pdf>]
+===== Image 'tikz/MathNotes-figure55' is up-to-date. ======
+[181 <./tikz/MathNotes-figure55.pdf>] [182] [183] [184] [185] [186] [187]
+[188]
+===== Image 'tikz/MathNotes-figure56' is up-to-date. ======
+[189 <./tikz/MathNotes-figure56.pdf>] [190] [191] [192]
+Chapter 18.
+[193
+
+] [194
 
 ]
 Chapter 19.
-[193] [194
+[195] [196
 
-] [195] [196] [197
+] [197] [198] [199
 
-] [198
+] [200
 
-] [199] [200] [201
+] [201] [202] [203
 
-] [202
+] [204
 
-] [203] [204
+] [205] [206
 
 ]
 Chapter 20.
-[205] [206
-
-] [207] [208
+[207] [208
 
 ] [209] [210
 
 ] [211] [212
 
-]
-Chapter 21.
-[213] [214
+] [213] [214
 
 ]
-Chapter 22.
+Chapter 21.
 [215] [216
 
 ]
-Chapter 23.
+Chapter 22.
 [217] [218
 
 ]
-Chapter 24.
+Chapter 23.
 [219] [220
 
 ]
-Chapter 25.
+Chapter 24.
 [221] [222
 
 ]
-Chapter 26.
+Chapter 25.
 [223] [224
 
 ]
-Chapter 27.
+Chapter 26.
 [225] [226
 
-] [227] [228
+]
+Chapter 27.
+[227] [228
 
 ] [229] [230
 
+] [231] [232
+
 ]
 Chapter 28.
-[231] [232
+[233] [234
 
 ]
 Chapter 29.
-[233] [234
-
-] [235] [236
+[235] [236
 
 ] [237] [238
 
@@ -1897,19 +1898,21 @@ Chapter 29.
 
 ] [243] [244
 
+] [245] [246
+
 ]
 Chapter 30.
-[245] [246
+[247] [248
 
-] [247
+] [249
 
-] [248
+] [250
 
-] [249]
+] [251]
 
-(./MathNotes.bbl [250
+(./MathNotes.bbl [252
 
-]) [251] (./MathNotes.aux
+]) [253] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
@@ -1920,10 +1923,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40906 strings out of 479382
- 929700 string characters out of 5869369
- 1354110 words of memory out of 5000000
- 56069 multiletter control sequences out of 15000+600000
+ 40926 strings out of 479382
+ 930436 string characters out of 5869369
+ 1354401 words of memory out of 5000000
+ 56076 multiletter control sequences out of 15000+600000
  445049 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,19n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1956,10 +1959,10 @@ s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (265 pages, 1005943 bytes).
+Output written on MathNotes.pdf (267 pages, 1016103 bytes).
 PDF statistics:
- 4065 PDF objects out of 4296 (max. 8388607)
- 3554 compressed objects within 36 object streams
- 1109 named destinations out of 1200 (max. 500000)
- 1501 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4104 PDF objects out of 4296 (max. 8388607)
+ 3590 compressed objects within 36 object streams
+ 1121 named destinations out of 1200 (max. 500000)
+ 1506 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1173,7 +1173,7 @@ tion.
 \c@corollary=\count354
 \c@definition=\count355
 \c@example=\count356
-No file tikz/MathNotes-figure54.aux.
+No file tikz/MathNotes-figure56.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
@@ -2556,11 +2556,8 @@ LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-\openout4 = `tikz/MathNotes-figure54.dpth'.
-
-[173
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 LaTeX Warning: Reference `Trig Identities - Complex' on page 1 undefined on inp
 ut line 9209.
@@ -2679,8 +2676,11 @@ put line 9626.
 LaTeX Warning: Reference `Argument Principle Theorem - Complex' on page 1 undef
 ined on input line 9627.
 
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+\openout4 = `tikz/MathNotes-figure56.dpth'.
+
+[182
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
 ed on input line 9715.
@@ -2707,25 +2707,25 @@ Chapter 28.
 Chapter 29.
 Chapter 30.
 
-No file tikz/MathNotes-figure54.bbl.
+No file tikz/MathNotes-figure56.bbl.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 39617 strings out of 479382
- 901249 string characters out of 5869369
- 1344008 words of memory out of 5000000
- 55953 multiletter control sequences out of 15000+600000
+ 39570 strings out of 479382
+ 900226 string characters out of 5869369
+ 1341769 words of memory out of 5000000
+ 55906 multiletter control sequences out of 15000+600000
  445350 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,19n,100p,898b,2677s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 97i,19n,100p,898b,2484s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
 sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
 /local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on tikz/MathNotes-figure54.pdf (1 page, 38867 bytes).
+Output written on tikz/MathNotes-figure56.pdf (1 page, 40242 bytes).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
