@@ -1425,13 +1425,13 @@
 	\section{Functions as mappings} \label{Functions as Mappings Section - Complex}
 	A function $f: S \rightarrow S'$ is a function that maps elements from $S$ to elements on $S'$. The value of $f$ at $z$ is denoted $f(z)$ and the set $S$ is the domain of $f$ while $S'$ is the image of $f$. Recall \cref{Operations as Transformations Section - Complex}, a function can likewise be viewed as a transformation or mapping, that maps $z \in \operatorname{dom}(f) = S$ to values $z' \in \operatorname{img}(f) = S'$.
 	
-	\begin{definition}[Range]
+	\begin{definition}[Range] \index{Range}
 		Let $f$ be a function with domain $S$ and image $S'$. The range of $f$ is the entire image of $S$.
 	\end{definition}
 
 	Note: Image is a subset of range, and can be a single point or a set of points.
 
-	\begin{definition}[Inverse Range]
+	\begin{definition}[Inverse Range] \index{Range! Inverse}
 		The set of all points $s \in S$ with the value $f(s) = s'$ for some $s' \in S'$.
 		$$\{s : f(s) = s', \ s' \in S'\}$$
 	\end{definition}
@@ -1447,20 +1447,20 @@
 	Recall that a real-valued function is a function with a domain that is a subset of $\mathbb{R}$ (\cref{Real-Valued Function Definition - Real Analysis}).
 	If $\forall z$, $v(x, y) = 0$, then $f$ is called a real-valued function of a complex variable. 
 	
-	\begin{definition}[Polynomial]
+	\begin{definition}[Polynomial] \index{Polynomial}
 		\label{Polynomial Definition - Complex}
 		Let $a_i \in \mathbb{C}$, $0 \leq i \leq n$ where $i, n \in \mathbb{N}\cup\{0\}$. If $a_n \neq 0$, then a polynomial of degree n is
 		$$P(z) = a_0 + a_1 z + a_2 z^2 + \ldots + a_n z^n = \sum_{i=0}^n a_i z^i$$
 	\end{definition}
 
-	\begin{definition}[Rational Functions]
+	\begin{definition}[Rational Functions] \index{Function! Rational}
 		\label{Rational Functions Definition - Complex}
 		Let $P(z)$ and $Q(z)$ are polynomials, then rational functions are quotients:
 		$$\frac{P(z)}{Q(z)}$$
 		Defined for all $z$ where $Q(z) \neq 0$.
 	\end{definition}
 	
-	\begin{definition}[Multiple-Valued Function]
+	\begin{definition}[Multiple-Valued Function] \index{Function! Multiple-Valued}
 		\label{Multiple-Valued Function Definition - Complex}
 		Let $f$ be a function and $z \in \operatorname{dom}(f)$. $f$ is a multiple-valued function if it assigns more than one value to a point $z$.
 	\end{definition}
@@ -1617,7 +1617,7 @@
 	\end{example}
 
 	\section{Limits} \label{Limits Section - Complex}
-	\begin{definition}[Limit]
+	\begin{definition}[Limit] \index{Limit}
 		\label{Limit Definition - Complex}
 		Let $z, z_0, w_0 \in \mathbb{C}$ and $f$ be a function. We say $f(z)$ has limit $w_0$ as $z$ approaches $z_0$ if: 
 		\begin{align*}
@@ -1695,7 +1695,7 @@
 		\label{Limit Definition Figure - Complex}
 	\end{figure}
 	
-	\begin{theorem}[Uniqueness of Limits]
+	\begin{theorem}[Uniqueness of Limits] \index{Limit! Uniqueness}
 		\label{Uniqueness of Limits Theorem - Complex}
 		Suppose the limit of $f$ at $z_0$ exists, then it is unique.
 	\end{theorem}
@@ -1876,17 +1876,17 @@
 	
 	\subsection{Limits of Points at Infinity} \label{Limits of Points at Infinity Subsection - Complex}
 	
-	\begin{definition}[Extended Complex Plane]
+	\begin{definition}[Extended Complex Plane] \index{Complex Plane! Extended}
 		The complex plane union with the points at infinity: 
 		$$\mathbb{C} \cup \{\pm \infty, \pm i \infty\}$$
 	\end{definition}
 	
-	\begin{definition}[Riemann Sphere]
+	\begin{definition}[Riemann Sphere] \index{Riemann Sphere}
 		A unit sphere centred at the origin of the complex plane, which is consequently bisected by the complex plane.
 		\label{Riemann Sphere Definition - Complex}
 	\end{definition}
 
-	\begin{definition}[Stereographic Projection]
+	\begin{definition}[Stereographic Projection] \index{Stereographic Projection}
 		Consider the Riemann Sphere. Let $N$ be the northern point of the sphere (the point on the sphere above the origin of the complex plane) and $z$ be any point in the complex plane. Let $l$ be a line that goes through $N$ and $z$, then $l$ will intersect the Riemann Sphere. Let $P$ be the point where $l$ intersects the Riemann Sphere. If we let $N$ correspond to the points at infinity, then there is a one-to-one correspondence between points on the sphere and the points on the extended complex plane. This correspondence is called the Stereographic Projection. (\Cref{Riemann Sphere and Stereographic Projection Figure - Complex})
 		\label{Stereographic Projection Definition - Complex}
 	\end{definition}
@@ -1958,14 +1958,14 @@
 	
 	Note: In some texts, the  Riemann Sphere is a sphere of unit diameter (not a unit sphere, which is of unit radius) sitting on top of the Complex Plane. That is, with the south pole sitting at \((0,0)\). The definitions for line \(L\), and points \(N\), \(P\), and \(z\) remains the same. In either case, the Stereographic Projection maps to a unique point \(P\) on the sphere, and the definition of the point at infinity remains unchanged.
 	
-	\begin{definition}[Neighbourhood of $\infty$]
+	\begin{definition}[Neighbourhood of $\infty$] \index{Neighbourhood! of Infinity}
 		The set: $\{\abs{z} > 1/\epsilon : \epsilon \in \mathbb{R}_{>0} \}$
 	\end{definition}
 	Note that since $\epsilon$ is a small positive number, $\abs{z} > 1/\epsilon$ corresponds to points far away from the unit circle, hence $P$ is close to $N$. 
 	
 	\textcolor{red}{Note: When referring to any point $z$, it is referring to a point in the finite plane. Points at infinity will be specifically mentioned.}
 	
-	\begin{definition}[Limit at Infinity]
+	\begin{definition}[Limit at Infinity] \index{Limit! at Infinity}
 		\label{Limit at Infinity Definition - Complex}
 		Let \(f(z)\) be a function, and \(z, z_0 \in \mathbb{C}\).
 		\begin{align*}
@@ -2020,7 +2020,7 @@
 	\end{observation}
 	
 	\section{Continuity} \label{Continuinty Section - Complex}
-	\begin{definition}[Continuous]
+	\begin{definition}[Continuous] \label{Continuity! of Function}
 		\label{Continuous Function Definition - Complex}
 		Let $f$ be a function. We say $f$ is continuous at all point $z_0 \in \mathbb{C}$ if it satisfies the following: 
 		\begin{align*}
@@ -2034,14 +2034,14 @@
 		&\forall \epsilon \exists \delta>0 \left[\abs{z-z_0} < \delta \implies \abs{f(z) - f(z_0)} < \epsilon \right] \iff \lim_{z \rightarrow z_0} f(z) = f(z_0)
 	\end{align*}
 	
-	\begin{definition}[Continuous at a Region]
+	\begin{definition}[Continuous at a Region] \label{Continuity! at a Region}
 		Let $f$ be a function, $R \subset \mathbb{C}$ be a region, and $z \in R$: 
 		\begin{center}
 			$f$ is continuous in $R \iff$ $\forall z \in R$($f$ is continuous)
 		\end{center}
 	\end{definition}
 	
-	\begin{theorem}
+	\begin{theorem} 
 		Let $f(z)$ and $g(z)$ be continuous functions at $z_0 \in \mathbb{C}$. Then the following are also continuous at $z_0$:
 		\begin{align*}
 			f(z_0) + g(z_0) \qquad f(z_0)g(z_0) \qquad \frac{f(z_0)}{g(z_0)} \qquad g(z_0) \neq 0
@@ -2052,7 +2052,7 @@
 		Consequence of \cref{Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - Complex}.
 	\end{proof}
 
-	\begin{corollary}
+	\begin{corollary} \index{Continuity! Polynomial}
 		Let $P(z)$ be a polynomial, then $P(z)$ is continuous $\forall z \in \mathbb{C}$. That is $P(z)$ is continuous in the entire plane of $\mathbb{C}$.
 		\label{Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Corollary - Complex}
 	\end{corollary}
@@ -2251,7 +2251,7 @@
 
 	\section{Differentiation} \label{Differentiation - Complex}
 	
-	\begin{definition}[Derivative]
+	\begin{definition}[Derivative] \index{Derivative}
 		\label{Derivative Definition - Complex}
 		Let $f$ be a function where $\abs{z - z_0} < \epsilon$ and $z \in \operatorname{dom}(f)$. Then the derivative of $f$ at point $z_0$:
 		\begin{align*}
@@ -2259,7 +2259,7 @@
 		\end{align*}
 	\end{definition}
 
-	\begin{definition}[Differentiable]
+	\begin{definition}[Differentiable] \index{Differentiable}
 		\label{Differentiable Definition - Complex}
 		A function $f$ is differentiable at $z_0 \in \mathbb{C}$ if $f'(z_0)$ exists.
 	\end{definition}
@@ -2449,7 +2449,7 @@
 		\end{align*}
 	\end{proof}
 	
-	\begin{theorem}[Chain Rule for Composite Functions]
+	\begin{theorem}[Chain Rule for Composite Functions] \index{Chain Rule! for Composite Functions}
 		\label{Chain Rule for Composite Functions Theorem - Complex}
 		Let function $f$ be differentiable at $z_0$ and function $g$ be differentiable at \(f(z_0)\). Then \(F(z) = g[f(z)] \text{ is differentiable at } z_0\).
 		\begin{align*}
@@ -2498,7 +2498,7 @@
 	\[ \dv{W}{z} = \dv{W}{w} \dv{w}{z }\]
 	Note: Although this looks like a fraction, it is not a fraction and should not be treated as such! (Logical inconsistency when infinitesimals when viewed as ratios.)
 	
-	\begin{theorem}[L'Hopital's Rule]
+	\begin{theorem}[L'Hopital's Rule] \index{L'Hopital's Rule}
 		\label{L'Hopital's Rule - Complex}
 		Suppose \(f(z_0) = 0\) and \(g(z_0) = 0\), \(f'(z_0)\) and \(g(z_0)\) exists, with \(g'(z_0) \neq 0\). Then 
 		\begin{align*}
@@ -2573,7 +2573,8 @@
 	
 	\section{Cauchy-Riemann Equations} \label{Cauchy-Riemann Equations Section - Complex}
 %	\subsection{Cartesian and Polar Forms of the Cauchy-Riemann Equations} \label{Cauchy-Riemann Equations (Cartesian and Polar) Subsection - Complex}
-	\begin{theorem}[Cauchy-Riemann Equations (Cartesian)]
+	\begin{theorem}[Cauchy-Riemann Equations (Cartesian)] 
+		\index{Cauchy-Riemann Equations! Cartesian}
 		\label{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}
 		Let \( f(z) = u(x, y) + iv(x,y) \).
 		If \(f'(z)\) exists at a point \(z_0 = x_0 + iy_0\), then \(u'(x_0, y_0)\) and \(v'(x_0, y_0)\) exists and satisfy Cauchy-Riemann equations:
@@ -2633,6 +2634,7 @@
 	\end{proof}
 	
 	\begin{theorem}[Cauchy-Riemann Equations (Polar)]
+		\index{Cauchy-Riemann Equations! Polar}
 		\label{Cauchy-Riemann Equations (Polar) Theorem - Complex}
 		Let \(f(z) = u(r, \theta) + iv(r,\theta)\) be defined in some neighbourhood \(\epsilon\) of \(z_0 = r_0 e^{i\theta_0}\), $z_0 \neq 0$. If the first order partials derivatives of \(u\) and \(v\) with respect to \(r\) and \(\theta\) exists and are continuous at \(z_0\), and satisfies the polar form of the Cauchy-Riemann equations: 
 		\begin{align*}
@@ -2994,7 +2996,8 @@
 		\end{align*}
 	\end{example}
 
-	\subsection{Complex Form of the Cauchy-Riemann Equations}
+	\subsection{Complex Form of the Cauchy-Riemann Equations} 
+	\index{Cauchy-Riemann Equations! Complex Form}
 	\label{Cauchy-Riemann Equations (Complex) Subsection - Complex}
 	
 	\begin{theorem}[Cauchy-Riemann Equation (Complex Form)]
@@ -3036,6 +3039,7 @@
 	\label{Conditions for Differentiablity Subsection - Complex}
 	
 	\begin{theorem}
+		\index{Differentiablity! Conditions}
 		\label{Cauchy-Riemann Differentiablity Conditions Theorem - Complex}
 		Let \(f(z) = u(x,y) + iv(x,y)\) be defined in some neighbourhood \(\epsilon\) of point \(z_0 = x_0 + iy_0\). Consider the first order partial derivatives of \(u\) and \(v\) with respect to \(x\) and \(y\). If they 
 		\begin{itemize}
@@ -3116,6 +3120,7 @@
 	\section{Analytic Functions} \label{Analytic Functions - Complex}
 	
 	\begin{definition}[Analytic/Regular/Holomorphic]
+		\index{Function! Analytic} \index{Function! Regular} \index{Function! Holomorphic}
 		\label{Analytic Definition - Complex}
 		Let $S$ be an open set, \(S \subset \mathbb{C}\). Let \(f\) be a function.
 		\begin{align*}
@@ -3124,7 +3129,7 @@
 		We say \(f(z)\) is analytic at a point \(z_0\) if it is analytic in some neighbourhood of \(z_0\). If we say that \(f(z)\) is analytic in a closed set \(S'\) then we mean that it is analytic in an open set \(S\) where \(S' \subset S\).
 	\end{definition}
 	
-	\begin{definition}[Entire]
+	\begin{definition}[Entire] \index{Function! Entire}
 		A function \(f(z)\) is entire if it is analytic at all points in the plane. 
 	\end{definition}
 
@@ -3219,7 +3224,7 @@
 		\end{align*}
 	\end{proof}
 	
-	\begin{definition}[Singular Point]
+	\begin{definition}[Singular Point] \index{Point! Singular}
 		\label{Singular Point Definition - Complex}
 		Let \(\epsilon\) be a neighbourhood of point \(z_0\), and \(f(z)\) be a function. \(z_0\) is a singular point if \(f'(z_0)\) does not exist, but \(f(z)\) is differentiable in all neighbourhoods of \(z_0\).
 	\end{definition}
@@ -3279,7 +3284,8 @@
 	
 	Harmonic functions are functions where the curvature in each component direction cancels each other out.
 	
-	\begin{definition}[Laplace's Equation]
+	\begin{definition}[Laplace's Equation] 
+		\index{Laplace's Equation}
 		\label{Laplace's Equation Definition - Complex}
 		Let \(F(x,y)\) be a real-valued function. That is \(x,y \in \mathbb{R}\). Laplace's equation: 
 		\begin{align*}
@@ -3293,7 +3299,7 @@
 		See \cref{Laplace's Equation (Polar) Exercise - Complex}
 	\end{definition}
 
-	\begin{definition}[Harmonic]
+	\begin{definition}[Harmonic] \index{Function! Harmonic} \index{Harmonic}
 		A real-valued function \(F(x,y)\) is harmonic in the \(xy\)-plane if it satisfies Laplace's equation.
 	\end{definition}
 
@@ -3324,7 +3330,7 @@
 		Let \(F(x,y)\) is a real-valued function in a simply connected domain \(D\). Then there exists a function \(f(z)\) and \(g(z)\) in \(D\) such that \(f(z) = F(x,y) + iv(x,y)\) and \(g(z) = u(x,y) + iF(x,y)\). That is, there exists a function where the real part equals \(F\) and a function where the imaginary part equals \(F\).
 	\end{corollary}
 
-	\begin{definition}[Harmonic Conjugate]
+	\begin{definition}[Harmonic Conjugate] \index{Harmonic! Conjugate}
 		\label{Harmonic Conjugate Definition - Complex}
 		If \(f(z) = u(x,y) + iv(x,y)\) is analytic in a domain \(D\), then \(v(x,y)\) is the harmonic conjugate of \(v(x,y)\). This is not to be confused with the complex conjugate.
 	\end{definition}
@@ -3480,7 +3486,8 @@
 		Let functions \(f\) and \(g\) be analytic in some domain \(D\), and \(f(z) = g(z)\) \(\forall z \in D\). Then \(h(z) = f(z) - g(z))\) is also analytic in \(D\), and \(h(z) = 0\) in the subdomain or along the line segment, so \(h(z) \equiv 0\) throughout \(D\). 
 	\end{proof}
 
-	\begin{theorem}[Coincidence Principle]
+	\begin{theorem}[Coincidence Principle] 
+		\index{Coincidence Principle}
 		\label{Coincidence Principle Theorem - Complex}
 		If functions \(f\) and \(g\) are analytic in \(D\) and \(f(z) = g(z)\) in \(D' \subset D\) with limit point \(z_0 \in D\), then \(f(z) = g(z)\) everywhere in \(D\).
 		
@@ -3489,6 +3496,7 @@
 	
 	
 	\begin{definition}[Analytic continuation]
+		\index{Analytic Continuation}
 		\label{Analytic continuation of a function Definition - Complex}
 		Consider the domains \(D_1\) and \(D_2\) with intersection \(D_1 \cap D_2\), and functions \(f_1\) and \(f_2\). If \(f_1\) is analytic in \(D_1\), and there exists \(f_2\) that is analytic in \(D_2\) such that \(f_1(z) = f_2(2)\) for all \(z \in D_1 \cap D_2\). Then \(f_2\) is the analytic continuation of \(f_1\). 
 	\end{definition}
@@ -3527,6 +3535,7 @@
 	\Cref{Uniquely determined analytic functions Theorem - Complex} tells us that if such analytic continuation exists, then it is unique. Now if there exists \(f_3\) in \(D_3\) that is an analytic continuation of \(f_2\), then it is not necessarily true that \(f_3(z) = f_1(z)\) for all \(z \in D_1 \cap D_3\). (See \cref{f_1 neq f_3 in analytic continuation Example - Complex}.)
 	
 	\begin{definition}[Elements of a function]
+		\index{Function! Elements}
 		\label{Elements of a function Definition - Complex}
 		Let \(f_2\) be the analytic continuation of a function \(f_1\) in \(D_1\) into domain \(D_2\), and let \(F(z)\) be analytic in \(D_1 \cup D_2\).
 		\begin{align*}
@@ -3544,6 +3553,7 @@
 	Generally, \(\overline{f(z)} \neq f(\bar{z})\) for all \(z\), but....
 	
 	\begin{theorem}[Reflection Principle]
+		\index{Reflection Principle}
 		\label{Reflection Principle Theorem - Complex}
 		Let \(f\) be a function with domain \(D\) containing a segment of the real axis \(R \subset D\). Then 
 		\begin{align*}
@@ -9989,6 +9999,7 @@
 	\end{align*}
 
 	\begin{observation}
+		\index{Convolution! Hilbert Transform}
 		The Hilbert transform is the convolution of the function \(g(x)\) with \(h(\tau) = 1/(\pi \tau)\). That is 
 		\begin{align*}
 			\hat{g}(t) &= \int_{-\infty}^{\infty} g(x)h(t - x) dx
@@ -10008,10 +10019,9 @@
 	\begin{example}[Hilbert Transform of a Constant is Zero]
 		\label{Hilbert Transform of a Constant Example - Complex}
 		\index{Hilbert Transform! of a Constant}
-		Let \(c \in \mathbb{R}\):
 		\begin{align*}
 			\operatorname{P.V.} \frac{1}{\pi} \int_{-\infty}^{\infty} \frac{c}{t-x} dx &= 0
-			& x, t \in \mathbb{R}
+			& c, x, t \in \mathbb{R}
 		\end{align*}
 		\begin{proof}
 		{\color{Grey}
@@ -10023,7 +10033,7 @@
 %					\right]
 %				= 0
 			\end{align*}
-			Now  
+			Now, set up the integral so it does not become indefinite: 
 			\begin{align*}
 				\lim_{R\rightarrow \infty} \left[
 				\int_{1/R}^{R} \frac{1}{t-x} dx + \int_{-R}^{-1/R} \frac{1}{t-x} dx
@@ -10033,6 +10043,8 @@
 		}
 		\end{proof}
 	\end{example}
+
+	
 	
 	\subsection{Gamma Function} \label{Gamma Function Subsection - Complex}
 	
