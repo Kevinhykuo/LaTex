@@ -7559,6 +7559,7 @@
 	\section{Residues} \label{Residues Section - Complex}
 	
 	\begin{definition}[Isolated Singular Points]
+		\index{Point! Isolanted Singular}
 		\label{Isolated Singular Points Definition - Complex}
 		A singular point \(z_0\) is isolated if there exists a deleted neighbourhood \(\epsilon\), \(0 < \abs{z-z_0}< \epsilon\), where the function \(f\) is analytic for all points in the neighbourhood.
 	\end{definition}
@@ -7566,6 +7567,7 @@
 	Note: It is convenient to consider the point at infinity as an Isolated Singular Point. That is, if a function \(f\) is analytic in \(0<R_1 \leq \abs{z} < \infty\). Then it has a isolated singular point at \(z_0 = \infty\).
 	
 	\begin{definition}[Residue]
+		\index{Residue}
 		Recall the Laurent series (\cref{Laurent's Theorem - Complex}), and let \(C\) be any positively oriented simple closed contour around \(z_0\) on punctured disk \(0 < \abs{z-z_0}< R_2\).  
 		\begin{align*}
 			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n}
@@ -7626,6 +7628,7 @@
 	\end{figure}
 	
 	\begin{theorem}[Cauchy's Residue Theorem]
+		\index{Cauchy's Residue Theorem}
 		\label{Cauchy's Residue Theorem - Complex}
 		Let \(C\) be a positively oriented simple closed contour, and \(f\) be a function analytic inside and on \(C\), except at a finite number of singular points \(z_k\) (\(k \in \mathbb{N}\)) inside \(C\), then 
 		\begin{align*}
@@ -7645,6 +7648,7 @@
 	\subsection{Residue at Infinity} \label{Residue at Infinity Subsection - Complex}
 	
 	\begin{definition}[Residue of \(f\) at Infinity]
+		\index{Residue! at Infinity}
 		\label{Residue at Infinity Definition - Complex}
 		Let \(f\) be analytic throughout the plane except by a finite number of singular points enclosed inside a positively oriented simple closed contour \(C\), and \(R_1\) be the radius of a circle enclosing \(C\). Then \(f\) is analytic in \(R_1 < \abs{z} < \infty\). Let \(C_0\) be a circular contour oriented \textbf{negatively} with radius \(R_0\) enclosing the previous circle with radius \(R_1\). That is \(R_1 < R_0\). Then the residue of \(f\) at infinity:
 		\begin{align*}
@@ -7696,6 +7700,7 @@
 	\end{figure}
 	
 	\begin{theorem}[Residue at Infinity]
+		\index{Residue! at Infinity}
 		Let a function \(f\) be analytic everywhere except for a finite number of singular points enclosed by a positively oriented simple closed contour \(C\), then \begin{align*}
 			\int_{C} f(z) dz 
 			= 2\pi i \Res \left[ \frac{f(1/z)}{z^2}, 0 \right]
@@ -7730,6 +7735,7 @@
 	\section{Three Types of Isolated Singular Points} \label{Three Types of Isolated Singular Points Section - Complex}
 	
 	\begin{definition}[Principal Part of \(f\)]
+		\index{Function! Principal Part}
 		\label{Principal Part of a Function Definition - Complex}
 		Let \(f\) be a function with an isolated singular point at \(z_0\) in the punctured disk \(0 < \abs{z-z_0}<R_2\). 
 %		Consider the Laurent Series expansion:
@@ -7743,6 +7749,7 @@
 	\end{definition}
 
 	\begin{definition}[Analytic Part of \(f\)]
+		\index{Function! Analytic Part}
 		\label{Analytic Part of a Function Definition - Complex}
 		Let \(f\) be a function with an isolated singular point at \(z_0\) in the punctured disk \(0 < \abs{z-z_0}<R_2\).
 		Then the Analytic Part of of \(f\) is this part of the Laurent Series (\cref{Laurent's Theorem - Complex}):
@@ -7754,6 +7761,7 @@
 	It is clear why this is the analytic part, since this part is analytic throughout \(\abs{z-z_0}<R_2\), and converges to an analytic function. (It's the Taylor series (\cref{Taylor's Theorem - Complex}) part!)
 	
 	\begin{definition}[Removable Singular Points]
+		\index{Point! Removable Singular}
 		\label{Removable Singular Points Definition - Complex}
 		When the Principal Part of a Function is zero (\(\forall n \in \mathbb{N}[b_n = 0]\)). That is, 
 		\begin{align*}
@@ -7764,11 +7772,13 @@
 	The residue of a removable singular point is always zero. If we define \(f\) at \(z_0\) such that \(f(z_0) = a_0\) in the expansion, then it becomes a Taylor series and the expansion becomes valid throughout the disk \(\abs{z-z_0}<R_2\). The singularity in a sense is removed, since we assigned \(f(z_0) = a_0\).
 	
 	\begin{definition}[Essential Singular Points]
+		\index{Point! Essential Singular}
 		\label{Essential Singular Points Definition - Complex}
 		If an infinite number of \(b_n\) in the Principle Part is non-zero, \(z_0\) is an essential singular point of \(f\). That is, they can not be removed.
 	\end{definition}
 
 	\begin{definition}[Poles of Order \(m\)]
+		\index{Poles! of Order}
 		\label{Poles of Order m Definition - Complex}
 		If Principal Part of \(f\) contains more than one, but only finitely many non-zero terms, then 
 		\begin{align*}
@@ -7781,6 +7791,7 @@
 	\end{definition}
 
 	\begin{definition}[Simple Pole]
+		\index{Pole! Simple}
 		\label{Simple Pole Definition - Complex}
 		Pole of order 1.
 	\end{definition}
@@ -7803,12 +7814,14 @@
 	\end{example}
 	
 	\begin{theorem}[Picard's Theorem]
+		\index{Picard's Theorem}
 		In each neighbourhood of an essential singular point, a function assumes every finite value an infinite number of times, except with one possible exception.
 	\end{theorem}
 
 	\section{Residue at Poles} \label{Residue at Poles Section - Complex}
 	
 	\begin{theorem}
+		\index{Residue! at Poles}
 		\label{Residue at Poles Theorem - Complex}
 		Let \(z_0\) be an isolated singular point of function \(f\). The following are equivalent: 
 		\begin{itemize}
@@ -7881,6 +7894,7 @@
 	\end{itemize}
 
 	\textbf{On the term ``pole'':} \newline
+	\index{Pole}
 	Consider a function \(f(z)\) with a pole of order \(m\) at \(z_0\). Then by \cref{Residue at Poles Theorem - Complex}:
 	\begin{align*}
 		f(z) &= \frac{\phi(z)}{(z-z_0)^m} &
@@ -7911,6 +7925,7 @@
 	\end{example}
 
 	\begin{example}[Residue to Find Derivative] 
+		\index{Residue! to Find Derivative}
 		Due to the extended Cauchy Integral Formula (\cref{Cauchy Integral Formula (Extension) - Complex}), we can use it to find the residue of a function, or use a derivative to find the residue of a function. Let \(z_0\) be an isolated singular point of function \(f\) and suppose
 		\begin{align*}
 			f(z) &= \frac{\phi(z)}{(z-z_0)^m}	& 	m \in \mathbb{N}
@@ -7928,6 +7943,7 @@
 	\section{Zeros of Analytic Functions} \label{Zeros of Analytic Functions Section - Complex}
 	
 	\begin{definition}[Zero of Order \(m\)]
+		\index{Zero! of Order}
 		\label{Zero of Order m Definition - Complex}
 		Let a function \(f\) be analytic at point \(z_0\), then all derivative \(f^{(n)}(z)\), \(n\in \mathbb{N}\), exist at \(z_0\) (\cref{Analytic implies existance of high order derivatives theorem - Complex}). We say that \(f\) has a zero of order \(m\) if there exists \(m\in \mathbb{N}\) such that 
 		\begin{align*}
@@ -7980,6 +7996,7 @@
 	Note: It is clear to see this result by thinking of \(f(z)\) and \(g(z)\) as polynomials.
 	
 	\begin{definition}[Isolated Zeros]
+		\index{Zero! Isolated}
 		Let \(f\) be an analytic function. If there exists \(z_0\) such that \(f(z_0) = 0\), then there exists a deleted neighbourhood \(0 < \abs{z-z_0} < \epsilon\) where \(f(z) \neq 0\). We then call \(z_0\) and isolated zero of \(f(z)\).
 	\end{definition}
 	
@@ -8026,6 +8043,7 @@
 	\section{Zeros and Poles} \label{Zeros and Poles Section - Complex}
 	
 	\begin{theorem}
+		\index{Zero! and Pole Relation} \index{Pole! and Zero Relation}
 		\label{Function pole order takes on zero order of quotient Theorem - Complex}
 		Suppose
 		\begin{itemize}
@@ -8061,6 +8079,7 @@
 	\end{proof}
 
 	\begin{theorem}
+		\index{Residue! of Simple Pole}
 		\label{Residue of Simple Pole Theorem - Complex}
 		Let function \(p\) and \(q\) be analytic at \(z_0\).
 		\begin{align*}
@@ -8121,6 +8140,7 @@
 	\end{proof}
 
 	\begin{theorem}[Bolzano-Weierstrass Theorem]
+		\index{Bolzano-Weierstrass Theorem}
 		\label{Bolzano-Weierstrass Theorem - Complex}
 		A finite set of points lying in a closed bounded region \(R\) has at least one accumulation points in \(R\).
 	\end{theorem}
@@ -8161,6 +8181,8 @@
 	\subsection{Removable Singular Points}
 	
 	\begin{theorem}
+		\index{Function! Behaviour Near Removable Singular Points}
+		\index{Point! Function Behaviour Near Removable Singular}
 		Let \(f\) be a function.
 		\begin{align*}
 			&z_0 \text{ isolated singular point of } f \\
@@ -8178,6 +8200,7 @@
 	\end{proof}
 
 	\begin{theorem}[Riemann's Theorem]
+		\index{Riemann's Theorem}
 		\label{Riemann's Theorem - Complex}
 		Let function \(f\) be bounded and analytic in some deleted neighbourhood \(0 < \abs{z-z_0}<\epsilon\) of \(z_0\)
 		\begin{align*}
@@ -8205,8 +8228,11 @@
 
 	
 	\subsection{Essential Singular Points}
+	\index{Function! Behaviour Near Essential Singular}
+	\index{Point! Function Behaviour Near Essential Singular}
 	
 	\begin{theorem}[Casorati-Weierstrass Theorem]
+		\index{Casorati-Weierstrass Theorem}
 		\label{Casorati-Weierstrass Theorem - Complex}
 		Let \(z_0\) be an essential singularity of function \(f\), and \(w_0 \in \mathbb{C}\). Then 
 		\begin{align*}
@@ -8227,6 +8253,8 @@
 	If \(g(z_0) = 0\) then \(g\) has zero of order \(m\) at \(z_0\) (\(g(z_0) \nequiv 0 \) in \( \abs{z-z_0} < \delta\)), then \(f\) has pole of order \(m\) at \(z_0\) (\cref{Function pole order takes on zero order of quotient Theorem - Complex}). Hence, contradiction!
 	
 	\subsection{Poles of Order \(m\)}
+	\index{Function! Behaviour Near Poles of Order}
+	\index{Pole! Function Behaviour Near of Order}
 	
 	\begin{theorem}
 		Let \(f\) be a function:
@@ -8251,10 +8279,12 @@
 	\end{proof}
 
 	\section{Application of Residues} \label{Application of Residues Section - Complex}
+	\index{Residue! Applications}
 	
 	\subsection{Evaluation of Improper Integrals} \label{Evaluation of Improper Integrals Subsection - Complex}
 	
 	\begin{definition}[Converge (Infinite Integral)]
+		\index{Convergence! Infinite Integral}
 		\label{Converge (Infinite Integral) Definition - Compleex}
 		A semi-infinite integral exists if the improper integral converges to a limit:
 		\begin{align*}
@@ -8267,6 +8297,7 @@
 	\end{definition}
 
 	\begin{definition}[Cauchy Principal Value]
+		\index{Cauchy Principal Value}
 		\label{Cauchy Principal Value Definition - Complex}
 		The Cauchy Principal Value exists if the given limit exists:
 		\begin{align*}
@@ -8471,6 +8502,7 @@
 	\subsection{Jordan's Lemma} \label{Jordan's Lemma Subsection - Complex}
 	
 	\begin{lemma}[Jordan's Inequality]
+		\index{Jordan's Inequality}
 		\label{Jordan's Inequality Lemma - Complex}
 		\begin{align*}
 			\int_{0}^{\pi} e^{-R\sin(\theta)} d\theta &< \frac{\pi}{R}	&	R > 0
@@ -8542,6 +8574,7 @@
 	\end{figure}
 	
 	\begin{theorem}[Jordan's Lemma]
+		\index{Jordan's Lemma}
 		\label{Jordan's Lemma - Complex}
 		Suppose
 		\begin{itemize}
@@ -8620,121 +8653,124 @@
 	\end{figure}
 	
 	\begin{example}[Fresnel Integrals]
-	\label{Fresnel Integrals Derivation Example - Complex}
-	Show
-	\begin{align*}
-		\int_{0}^{\infty} \cos(x^2) dx = \int_{0}^{\infty} \sin(x^2) dx 
-		= \frac{1}{2}\sqrt{\frac{\pi}{2}}
-	\end{align*}
-	{\color{Grey}
-	Consider the function: \[f(z) = \exp(iz^2)\]
-	We will consider \(f(z)\) over the contour \(C\) composed of the curves: \(l_1\) line from \((0)\) to \(R\), \(C_R\) semicircular arc from \(R\) to \(Re^{i\pi/4}\), and \(l_2\) line from \(Re^{i\pi/4}\) back to \(0\). We will parameterize the curves:
-	\begin{align*}
-		l_1: &\ z=x 	&
-		l_2: &\ z=re^{i\pi/4} &
-		C_R: &\ z=re^{i\theta}
-	\end{align*}
-	The integral over the contour is the sum of the curves, which is also zero by Cauchy-Goursat Theorem (\cref{Cauchy-Goursat Theorem - Complex}): 
-	\begin{align*}
-		\int_{C} f(z) dz
-		&= \int_{0}^{R} \exp(ix^2) dx + \int_{R}^{0} \exp(ir^2 e^{i\pi/2}) dz + \int_{C_R} f(z) dz \\
-		&= \int_{0}^{R} \exp(ix^2) dx - \int_{0}^{R} \exp(-r^2) e^{i\pi/4} dr + \int_{C_R} f(z) dz = 0
-	\end{align*}
-	Rearranging, we have:
-	\begin{align*}
-		&\int_{0}^{R} \exp(ix^2) dx = e^{i\pi/4} \int_{0}^{R} \exp(-r^2) dr + \int_{C_R} f(z) dz \\
-		&\implies \int_{0}^{R} \cos(x^2) + i\sin(x^2) dx
-		= \left(\frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}} \right) \int_{0}^{R} \exp(-r^2) dr + \int_{C_R} f(z) dz \\
-	\end{align*}
-	Equating the real and imaginary parts:
-	\begin{align*}
-		\int_{0}^{R} \cos(x^2) dx 
-		&= \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr + \Re{\int_{C_R} f(z) dz} \\
-		\int_{0}^{R} \sin(x^2) dx 
-		&= \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr + \Im{\int_{C_R} f(z) dz}
-	\end{align*}
-	Now, using Jordan's Inequality:
-	\begin{align*}
-		\int_{C_R} \exp(iz^2) dz 
-		&= \int_{C_R} \exp(ir^2 e^{i2\theta}) \pdv{\theta} re^{i\theta} d\theta 
-		 = \int_{C_R} rie^{i\theta} \exp(ir^2e^{i2\theta}) d\theta \\
-		&= \int_{C_R} rie^{i\theta} \exp(ir^2\cos(2\theta) - r^2\sin(2\theta)) d\theta \\
-		&\leq R \int_{0}^{\pi/4} \exp(-r^2\sin(2\theta)) d\theta 
-		 = \frac{R}{2} \int_{0}^{\pi/2} \exp(-r^2\sin(\phi)) d\phi
-			& \phi = 2\theta \\
-		&\leq \frac{R}{2} \cdot \frac{\pi}{2r^2} = \frac{\pi}{2r}
-			& \text{\Cref{Jordan's Inequality Lemma - Complex}}
-	\end{align*}
-	Taking the limit as \(R \rightarrow \infty\):
-	\begin{align*}
-		\lim_{R\rightarrow \infty} \int_{C_R} \exp(iz^2) dz = \lim_{R\rightarrow \infty} \frac{\pi}{2R} = 0
-	\end{align*}
-	Using this and the knowledge:
-	\begin{align*}
-		\int_{0}^{\infty} \exp(-r^2) dr &= \frac{\sqrt{\pi}}{2}
-		& \text{\Cref{int_0^infty e^(-x^2) dx Derivation Example - Complex}}
-	\end{align*}
-	We get:
-	\begin{align*}
-		\lim_{R\rightarrow \infty} \int_{0}^{R} \cos(x^2) dx 
-		&= \lim_{R\rightarrow \infty} \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr 
-		 = \frac{1}{2}\sqrt{\frac{\pi}{2}} \\
-		\lim_{R\rightarrow \infty} \int_{0}^{R} \sin(x^2) dx 
-		&= \lim_{R\rightarrow \infty} \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr 
-		 = \frac{1}{2}\sqrt{\frac{\pi}{2}}
-	\end{align*}
-	Thus
-	\begin{align*}
-		\int_{0}^{\infty} \cos(x^2) dx = \int_{0}^{\infty} \sin(x^2) dx 
-		= \frac{1}{2}\sqrt{\frac{\pi}{2}}
-	\end{align*}
-	}
-	\begin{figure}[H]
-		\centering
-		\begin{tikzpicture}
-			\begin{axis}[
-				unit vector ratio=1 1 1,
-				xlabel={$\Re$},
-				ylabel={$\Im$},
-				xmin=-0.1, xmax=10,
-				ymin=-0.1, ymax=6.5,
-				ticks=none,
-				axis lines = middle,
-				axis line style = Black,
-				]
-				\addplot[
-				only marks,
-				nodes near coords,
-				point meta = explicit symbolic, 
-				mark=*,
-				]
-				coordinates {
-					(8, 0) [$R$]
-					(5.65685,5.65685) [$Re^{i\pi/4}$]
-				};
-				
-				\draw[line width=1pt, 
-				decoration={markings, mark=at position 0.5 with {\arrow{>}} },
-				postaction={decorate}]
-				(axis cs: 8, 0) arc (0:45:80) node[midway, right] {$C_R$};
-				
-				\draw[line width=1pt, 
-				decoration={markings, mark=at position 0.5 with {\arrow{>}} },
-				postaction={decorate}]
-				(axis cs: 5.65685,5.65685) -- (axis cs: 0, 0) node[midway, above] {$l_2$};
-				
-				\draw[line width=1pt, 
-				decoration={markings, mark=at position 0.5 with {\arrow{>}} },
-				postaction={decorate}]
-				(axis cs: 0, 0) -- (axis cs: 8,0) node[midway, above] {$l_1$};
-			\end{axis}
-		\end{tikzpicture}
-	\end{figure}		
+		\index{Fresnel Integrals}
+		\label{Fresnel Integrals Derivation Example - Complex}
+		Show
+		\begin{align*}
+			\int_{0}^{\infty} \cos(x^2) dx = \int_{0}^{\infty} \sin(x^2) dx 
+			= \frac{1}{2}\sqrt{\frac{\pi}{2}}
+		\end{align*}
+		{\color{Grey}
+		Consider the function: \[f(z) = \exp(iz^2)\]
+		We will consider \(f(z)\) over the contour \(C\) composed of the curves: \(l_1\) line from \((0)\) to \(R\), \(C_R\) semicircular arc from \(R\) to \(Re^{i\pi/4}\), and \(l_2\) line from \(Re^{i\pi/4}\) back to \(0\). We will parameterize the curves:
+		\begin{align*}
+			l_1: &\ z=x 	&
+			l_2: &\ z=re^{i\pi/4} &
+			C_R: &\ z=re^{i\theta}
+		\end{align*}
+		The integral over the contour is the sum of the curves, which is also zero by Cauchy-Goursat Theorem (\cref{Cauchy-Goursat Theorem - Complex}): 
+		\begin{align*}
+			\int_{C} f(z) dz
+			&= \int_{0}^{R} \exp(ix^2) dx + \int_{R}^{0} \exp(ir^2 e^{i\pi/2}) dz + \int_{C_R} f(z) dz \\
+			&= \int_{0}^{R} \exp(ix^2) dx - \int_{0}^{R} \exp(-r^2) e^{i\pi/4} dr + \int_{C_R} f(z) dz = 0
+		\end{align*}
+		Rearranging, we have:
+		\begin{align*}
+			&\int_{0}^{R} \exp(ix^2) dx = e^{i\pi/4} \int_{0}^{R} \exp(-r^2) dr + \int_{C_R} f(z) dz \\
+			&\implies \int_{0}^{R} \cos(x^2) + i\sin(x^2) dx
+			= \left(\frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}} \right) \int_{0}^{R} \exp(-r^2) dr + \int_{C_R} f(z) dz \\
+		\end{align*}
+		Equating the real and imaginary parts:
+		\begin{align*}
+			\int_{0}^{R} \cos(x^2) dx 
+			&= \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr + \Re{\int_{C_R} f(z) dz} \\
+			\int_{0}^{R} \sin(x^2) dx 
+			&= \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr + \Im{\int_{C_R} f(z) dz}
+		\end{align*}
+		Now, using Jordan's Inequality:
+		\begin{align*}
+			\int_{C_R} \exp(iz^2) dz 
+			&= \int_{C_R} \exp(ir^2 e^{i2\theta}) \pdv{\theta} re^{i\theta} d\theta 
+			 = \int_{C_R} rie^{i\theta} \exp(ir^2e^{i2\theta}) d\theta \\
+			&= \int_{C_R} rie^{i\theta} \exp(ir^2\cos(2\theta) - r^2\sin(2\theta)) d\theta \\
+			&\leq R \int_{0}^{\pi/4} \exp(-r^2\sin(2\theta)) d\theta 
+			 = \frac{R}{2} \int_{0}^{\pi/2} \exp(-r^2\sin(\phi)) d\phi
+				& \phi = 2\theta \\
+			&\leq \frac{R}{2} \cdot \frac{\pi}{2r^2} = \frac{\pi}{2r}
+				& \text{\Cref{Jordan's Inequality Lemma - Complex}}
+		\end{align*}
+		Taking the limit as \(R \rightarrow \infty\):
+		\begin{align*}
+			\lim_{R\rightarrow \infty} \int_{C_R} \exp(iz^2) dz = \lim_{R\rightarrow \infty} \frac{\pi}{2R} = 0
+		\end{align*}
+		Using this and the knowledge:
+		\begin{align*}
+			\int_{0}^{\infty} \exp(-r^2) dr &= \frac{\sqrt{\pi}}{2}
+			& \text{\Cref{int_0^infty e^(-x^2) dx Derivation Example - Complex}}
+		\end{align*}
+		We get:
+		\begin{align*}
+			\lim_{R\rightarrow \infty} \int_{0}^{R} \cos(x^2) dx 
+			&= \lim_{R\rightarrow \infty} \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr 
+			 = \frac{1}{2}\sqrt{\frac{\pi}{2}} \\
+			\lim_{R\rightarrow \infty} \int_{0}^{R} \sin(x^2) dx 
+			&= \lim_{R\rightarrow \infty} \frac{1}{\sqrt{2}} \int_{0}^{R} \exp(-r^2) dr 
+			 = \frac{1}{2}\sqrt{\frac{\pi}{2}}
+		\end{align*}
+		Thus
+		\begin{align*}
+			\int_{0}^{\infty} \cos(x^2) dx = \int_{0}^{\infty} \sin(x^2) dx 
+			= \frac{1}{2}\sqrt{\frac{\pi}{2}}
+		\end{align*}
+		}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$\Re$},
+					ylabel={$\Im$},
+					xmin=-0.1, xmax=10,
+					ymin=-0.1, ymax=6.5,
+					ticks=none,
+					axis lines = middle,
+					axis line style = Black,
+					]
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(8, 0) [$R$]
+						(5.65685,5.65685) [$Re^{i\pi/4}$]
+					};
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 8, 0) arc (0:45:80) node[midway, right] {$C_R$};
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 5.65685,5.65685) -- (axis cs: 0, 0) 
+					node[midway, above] {$l_2$};
+					
+					\draw[line width=1pt, 
+					decoration={markings, mark=at position 0.5 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0, 0) -- (axis cs: 8,0) node[midway, above] {$l_1$};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}		
 	\end{example}
 
 	\subsection{Indented Paths} \label{Indented Paths Subsection - Complex}
 	
 	\begin{definition}[Cauchy Principal Value of Integral with Singularity]
+		\index{Cauchy Principal Value! of Integral with Singularity}
 		\label{Cauchy Principal Value of Integral with Singularity Definition - Complex}
 		Consider the real-valued function \(f(x)\) in \(x \in [a, b] \setminus \{x_0\}\) where \(x_0 \in (a, b)\) is a singularity of \(f(x)\). Let \(\epsilon\) be some neighbourhood of \(x_0\), then
 		\begin{align*}
@@ -8746,6 +8782,7 @@
 	\end{definition}
 	
 	\begin{theorem}
+		\index{Indented Path}
 		\label{Indented Paths Theorem - Complex}
 		Let 
 		\begin{itemize}
@@ -8847,6 +8884,7 @@
 	A more general result involving simple poles is as follows:
 	
 	\begin{theorem}
+		\index{Indented Path! Around Simple Poles}
 		\label{Indented Paths Around Simple Poles Theorem - Complex}
 		Let function \(f(z)\) has a simple pole at \(z_0\), with \(z_0\) as the center of arc \(C_\rho\) (\(\theta \in [\theta_0, \theta_0 + \theta_1]\)) with radius \(\rho\). If the arc subtends to angle \(\theta_0\) at \(z_0\), then 
 		\begin{align*}
@@ -8951,6 +8989,7 @@
 	\end{observation}
 
 	\begin{example}[Dirichlet's Integral]
+		\index{Dirichlet's Integral}
 		\label{Dirichlet's Integral Example - Complex}
 		Show 
 		\begin{align*}
@@ -9052,6 +9091,8 @@
 	\end{example}
 	
 	\subsection{Integration Along a Branch Cut} \label{Integration Along a Branch Cut Subsection - Complex}
+	
+	\index{Integration! Along Branch Cut}
 	
 	TLDR: Integration along both sides of a branch cut does not cancel out, due to different arguments (\(\theta\) and \(\theta + 2\pi\)). We must do integration along branch cut with these different values of arguments taken into consideration.
 	
@@ -9444,6 +9485,7 @@
 	\subsection{Argument Principle} \label{Argument Principle Subsection - Complex}
 	
 	\begin{definition}[Meromorphic]
+		\index{Function! Meromorphic}
 		Let \(f\) be a function with domain \(D\). \(f\) is meromorphic if it is analytic throughout \(D\), except at the poles.
 	\end{definition}
 	
@@ -9458,6 +9500,7 @@
 	It is clear that \(\Delta_C\) is an integer multiple of \(2\pi\), which leads us to the winding number. 
 	
 	\begin{definition}[Winding Number]
+		\index{Winding Number}
 		\label{Winding Number Definition - Complex}
 		Let \(C\), \(\Gamma\), \(z_0\), and \(w_0\) be as stated above. The winding number of \(\Gamma\):
 		\begin{align*}
@@ -9473,6 +9516,7 @@
 	\end{question}
 	
 	\begin{theorem}[Argument Principle]
+		\index{Argument Principle}
 		\label{Argument Principle Theorem - Complex}
 		Let \(C\) be a simple closed contour, \(f(z)\) be a function, \(P\) be number of poles and \(Z\) be number of zeros of \(f(z)\) inside \(C\). If
 		\begin{itemize}
@@ -9567,6 +9611,7 @@
 	\subsection{Rouché's Theorem} \label{Rouche's Theorem Subsection - Complex}
 	
 	\begin{theorem}[Rouché's Theorem]
+		\index{Rouché's Theorem}
 		\label{Rouche's Theorem - Complex}
 		Let \(C\) be a simple closed contour, and \(f(z)\) and \(g(z)\) be analytic functions inside and on \(C\), then
 		\begin{align*}
@@ -9609,6 +9654,7 @@
 	\Cref{Rouche's Theorem - Complex} allows us to locate the number of zeros of a function \(F(z)\) inside a simple closed contour by smartly breaking it up into two functions \(f(z)\) and \(g(z)\). Then evaluating the number of zeros of either \(f(z)\) or \(g(z)\) inside said contour. 
 	
 	\begin{example}[Proof of Fundamental Theorem of Algebra via Rouché's Theorem]
+		\index{Fundamental Theorem of Algebra! via Rouché's Theorem}
 		\label{Fundamental Theorem of Algebra via Rouche's Theorem Proof - Complex}
 		Fundamental Theorem of Algebra: (\Cref{Fundamental Theorem of Algebra - Complex}).
 		
@@ -9735,6 +9781,7 @@
 	\end{example}
 
 	\begin{example}[Rouché Theorem Alternate Proof]
+		\index{Rouché's Theorem}
 		\label{Rouche's Theorem Alternate Proof - Complex}
 		Let \(f(z)\) and \(g(z)\) be functions with \(\abs{f(z)} > \abs{g(z)}\), and \(C\) be a positively oriented simple closed contour. Consider 
 		\begin{align*}
@@ -9829,6 +9876,7 @@
 	\subsection{Inverse Laplace Transforms} \label{Inverse Laplace Transforms Subsection - Complex}
 	
 	\begin{definition}[Bromwich Integral]
+		\index{Bromwich Integral}
 		\label{Bromwich Integral Definition - Complex}
 		Let \(F(s)\) be a complex function, and \(L_R\) be a vertical line segment from \(s = \gamma - iR\) to \(s = \gamma + iR\) large enough that singularities of \(F\) lie to the left of \(L_R\). Consider 
 		\begin{align*}
@@ -9844,6 +9892,7 @@
 	\end{definition}
 	
 	\begin{definition}[Laplace Transform]
+		\index{Laplace Transform}
 		\label{Laplace Transform Definition - Complex}
 		\begin{align*}
 			F(s) = \int_{0}^{\infty} e^{st} f(s) dt
@@ -9893,6 +9942,8 @@
 	\end{figure}
 	
 	\textbf{Deriving the Inverse Laplace Transform.}
+	
+		\index{Laplace Transform! Inverse! Derivation}
 
 		Let \(F(s)\) and \(L_R\) be defined as above, and \(C_R\) be a semicircular contour from \(\gamma + iR\) to \(\gamma - iR\) enveloping the zeros of \(F(s)\) (\(s_k\), \(k = 1, 2, \ldots, n\)). By Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
 		\begin{align*}
@@ -10321,6 +10372,7 @@
 			\Gamma(x) = \int_{0}^{\infty} t^{x-1} e^{-t} dt
 		\end{align*}
 	\end{definition}
+	
 	
 
 	\chapter{Mapping by Elementary Functions} \label{Mapping by Elementary Functions Chapter - Complex}
