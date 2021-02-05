@@ -2,14 +2,14 @@
 \indexentry{Triangle Inequality}{32}
 \indexentry{Argument! Complex Number}{33}
 \indexentry{Argument! Principal}{34}
-\indexentry{Polar Form! Complex Number}{34}
+\indexentry{Complex Number! Polar Form}{34}
 \indexentry{Euler's Formula}{34}
-\indexentry{Exponential Form! Complex Number}{34}
+\indexentry{Complex Number! Exponential Form}{34}
 \indexentry{de Moivre's Formula}{35}
 \indexentry{Double Angle Identities}{35}
 \indexentry{Argument! Product of Complex Numbers}{36}
 \indexentry{Exponential! Complex Number}{37}
-\indexentry{Roots! Complex Number}{37}
+\indexentry{Complex Number! Roots}{37}
 \indexentry{Complex Conjugate}{38}
 \indexentry{Sine! Complex Form}{39}
 \indexentry{Cosine! Complex Form}{39}
@@ -59,8 +59,8 @@
 \indexentry{Point! Singular}{73}
 \indexentry{Laplace's Equation}{75}
 \indexentry{Function! Harmonic}{75}
-\indexentry{Harmonic}{75}
-\indexentry{Harmonic! Conjugate}{76}
+\indexentry{Function! Harmonic! Conjugate}{76}
+\indexentry{Laplace's Equation! Polar Form}{76}
 \indexentry{Coincidence Principle}{78}
 \indexentry{Analytic Continuation}{78}
 \indexentry{Function! Elements}{78}
@@ -71,3 +71,9 @@
 \indexentry{Convolution! Hilbert Transform}{193}
 \indexentry{Signal! Analytic}{193}
 \indexentry{Hilbert Transform! of a Constant}{193}
+\indexentry{Fourier Transform! Hilbert Transform}{194}
+\indexentry{Hilbert Transform! Fourier Transform}{194}
+\indexentry{Hilbert Transform! Inverse}{194}
+\indexentry{Fourier Transform! Analytic Signal}{194}
+\indexentry{Analytic Signal! Fourier Transform}{194}
+\indexentry{Transfer Function}{195}

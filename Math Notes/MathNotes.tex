@@ -567,7 +567,7 @@
 	\end{definition}
 	It is clear that $\operatorname{arg}(z) = \operatorname{Arg}(z) + 2n \pi$. It is common for the principal argument to be defined $-\pi < \theta \leq \pi$, although other definitions use $0 \leq \theta < 2\pi$.
 	
-	\begin{definition}[Polar Form of $z$ \index{Polar Form! Complex Number}]
+	\begin{definition}[Polar Form of $z$ \index{Complex Number! Polar Form}]
 		Consider $z \in \mathbb{C}$. Let $r = \abs{z}$, and $\theta = \operatorname{arg}(z)$. 
 		Then $\forall z \in \mathbb{C}, z \neq 0$:
 		$$z = x + iy = r(\cos(\theta) + i \sin(\theta))$$
@@ -582,7 +582,7 @@
 	\end{theorem}
 	Combining \cref{Polar Form of z - Complex} with \cref{Euler's Formula - Complex}, we obtain the Exponential Form of $z$: 
 	
-	\begin{definition}[Exponential Form of $z$ \index{Exponential Form! Complex Number}]
+	\begin{definition}[Exponential Form of $z$ \index{Complex Number! Exponential Form}]
 	Consider any $z \in \mathbb{C}$, and let $r = \abs{z}$ and $\theta = \operatorname{Arg}(z)$. Then the exponential form of $z$:
 		$$z = r e^{i \theta}$$
 		\label{Exponential Form of z - Complex}
@@ -712,7 +712,7 @@
 
 	For $x \nin \mathbb{Z}$, it is clear that $z^x =  r^x e^{ix(\theta + 2 n \pi)} \neq r^x e^{ix\theta}$, since $2nx\pi = 0 \iff nx \in \mathbb{Z}$. In order to define the roots of $z$ we must need a more general and proper definition of $z$.
 	
-	\begin{definition}[Roots of $z_0$ \index{Roots! Complex Number}]
+	\begin{definition}[Roots of $z_0$ \index{Complex Number! Roots}]
 		\label{Roots of z Definition - Complex}
 		Consider any $z_0 \in \mathbb{C}$ and any $m \in \mathbb{N}$.
 		$$z_0^{\frac{1}{m}} = r_0^\frac{1}{m} e^{i\left(\frac{\theta_0 + 2n \pi}{m}\right)} = r_0^\frac{1}{m} e^{i \left(\frac{\theta_0}{m} + \frac{2n \pi}{m}\right)}$$
@@ -3299,7 +3299,7 @@
 		See \cref{Laplace's Equation (Polar) Exercise - Complex}
 	\end{definition}
 
-	\begin{definition}[Harmonic] \index{Function! Harmonic} \index{Harmonic}
+	\begin{definition}[Harmonic] \index{Function! Harmonic}
 		A real-valued function \(F(x,y)\) is harmonic in the \(xy\)-plane if it satisfies Laplace's equation.
 	\end{definition}
 
@@ -3330,12 +3330,13 @@
 		Let \(F(x,y)\) is a real-valued function in a simply connected domain \(D\). Then there exists a function \(f(z)\) and \(g(z)\) in \(D\) such that \(f(z) = F(x,y) + iv(x,y)\) and \(g(z) = u(x,y) + iF(x,y)\). That is, there exists a function where the real part equals \(F\) and a function where the imaginary part equals \(F\).
 	\end{corollary}
 
-	\begin{definition}[Harmonic Conjugate] \index{Harmonic! Conjugate}
+	\begin{definition}[Harmonic Conjugate] \index{Function! Harmonic! Conjugate}
 		\label{Harmonic Conjugate Definition - Complex}
-		If \(f(z) = u(x,y) + iv(x,y)\) is analytic in a domain \(D\), then \(v(x,y)\) is the harmonic conjugate of \(v(x,y)\). This is not to be confused with the complex conjugate.
+		If \(f(z) = u(x,y) + iv(x,y)\) is analytic in a domain \(D\), then \(v(x,y)\) is the harmonic conjugate of \(u(x,y)\). This is not to be confused with the complex conjugate.
 	\end{definition}
 	
 	\begin{example}
+		\index{Laplace's Equation! Polar Form}
 		\label{Laplace's Equation (Polar) Exercise - Complex}
 		Let \(f(z) = u(r, \theta) + iv(r, \theta)\) be analytic in domain \(D' = D \setminus \{0\}\). Show \(u(r, \theta)\) and \(v(r, \theta)\) satisfies the polar form of Laplace's equation.
 		\begin{proof}{\color{Grey}
@@ -9935,7 +9936,8 @@
 		\index{Hilbert Transform}
 		Let \(g(t)\) be a real-valued function. The Hilbert Transform:
 		\begin{align*}
-			\hat{g}(t) &= \operatorname{P.V.} \frac{1}{\pi}\int_{-\infty}^{\infty} \frac{g(x)}{t-x} dx
+			\mathcal{H}[g(t)] = \hat{g}(t)
+			&= \operatorname{P.V.} \frac{1}{\pi}\int_{-\infty}^{\infty} \frac{g(x)}{t-x} dx  
 				& x, t \in \mathbb{R}
 		\end{align*}
 	\end{definition}
@@ -9943,7 +9945,7 @@
 	\begin{definition}[Hilbert Transform Pairs]
 		\label{Hilbert Transform Pairs Definition - Complex}
 		\index{Hilbert Transform! Pairs}
-		The functions \(g(t)\) and \(\hat{g}(t)\) in a Hilbert Transform.
+		The functions \(g(t) = \mathcal{H}^{-1}[g(t)]\) and \(\hat{g}(t) = \mathcal{H}[g(t)]\) in a Hilbert Transform.
 	\end{definition}
 
 	\begin{theorem}[Inverse Hilbert Transform]
@@ -9951,7 +9953,8 @@
 		\index{Hilbert Transform! Inverse}
 		The inverse Hilbert transform of function \(\hat{g}(t)\):
 		\begin{align*}
-			g(t) = - \frac{1}{\pi} \operatorname{P.V.} \int_{-\infty}^{\infty} \frac{\hat{g}(x)}{t-x} dx
+			\mathcal{H}^{-1}[\hat{g}(t)] = g(t)
+			= - \frac{1}{\pi} \operatorname{P.V.} \int_{-\infty}^{\infty} \frac{\hat{g}(x)}{t-x} dx 
 		\end{align*}
 	\end{theorem}
 	\begin{proof}
@@ -10002,8 +10005,9 @@
 		\index{Convolution! Hilbert Transform}
 		The Hilbert transform is the convolution of the function \(g(x)\) with \(h(\tau) = 1/(\pi \tau)\). That is 
 		\begin{align*}
-			\hat{g}(t) &= \int_{-\infty}^{\infty} g(x)h(t - x) dx
-				& h(\tau) = \frac{1}{\pi \tau}
+			\mathcal{H}[g(t)] &= g(t) \ast \frac{1}{\pi t}
+				= \int_{-\infty}^{\infty} g(\tau) h(t - \tau) d\tau
+				& h(\tau) = \frac{1}{\pi t}
 		\end{align*}
 	\end{observation}
 
@@ -10043,6 +10047,99 @@
 		}
 		\end{proof}
 	\end{example}
+
+	\begin{lemma}[Fourier Transform of Hilbert Transform]
+		\index{Fourier Transform! Hilbert Transform} 
+		\index{Hilbert Transform! Fourier Transform}
+		\label{Fourier Transform of Hilbert Transform Lemma - Complex}
+		Let \(\mathcal{F}\) denote a Fourier transform, and \(\operatorname{sgn}\) denote the signum function (function that extracts a sign).
+		\begin{align*}
+			\mathcal{F}[\mathcal{H}[g(t)]] = - i \operatorname{sgn}(\omega) \mathcal{F}[g(t)]
+		\end{align*}
+	\end{lemma}	
+	\begin{proof}
+		\begin{align*}
+			\mathcal{F}[\hat{g}(t)] 
+%				= \mathcal{F} 
+%				\left[\frac{1}{\pi} \int_{-\infty}^{\infty} \frac{g(x)}{t-x} dx \right] 
+%			\implies \frac{1}{2\pi} \int_{-\infty}^{\infty} \frac{1}{\pi} \int_{-\infty}^{\infty} \frac{g(x)}{t-x} e^{-i\omega t} dx dt
+			 &=  \mathcal{F}\left[g(t) \ast \frac{1}{\pi t}\right] 
+			  = \mathcal{F}[g(t)] \cdot \mathcal{F}\left[\frac{1}{\pi t}\right] \\
+			 &= 2\pi \mathcal{F}[g(t)] \left[- \frac{i}{2\pi} \operatorname{sgn}(\omega) \right] 
+			  = -i \operatorname{sgn}(\omega) \mathcal{F}[g(t)] 
+		\end{align*}
+	\end{proof}
+	
+	Another way of obtaining the inverse Hilbert transform \index{Hilbert Transform! Inverse} is by multiplying both sides of the Fourier transform by \(i \operatorname{sgn}(\omega)\):
+	\begin{align*}
+		&\operatorname{sgn}^2(\omega) \mathcal{F}[g(t)] = i \mathcal{F}[\hat{g}(t)] \operatorname{sgn}(\omega) \\
+		&\implies \mathcal{F}[g(t)] = i \mathcal{F}[\hat{g}(t)] \operatorname{sgn}(\omega)
+			& \operatorname{sgn}^2(\omega) \in \{0, 1\} \\
+		&\implies g(t) = \mathcal{F}^{-1}[i\mathcal{F}[\hat{g}(t)] \operatorname{sgn}(\omega)] \\
+		&\implies g(t) = \frac{1}{2\pi} \mathcal{F}^{-1}[\mathcal{F}[g(t)]] \ast \mathcal{F}^{-1}[i\operatorname{sgn}(\omega)]
+			& \mathcal{F}\left[\frac{1}{t}\right] = - \frac{i}{2}\operatorname{sgn}(\omega) \\
+		&\implies g(t) 
+			= \frac{1}{2\pi} g(t) \ast \frac{-2}{t} 
+			= \frac{-1}{\pi} \int_{-\infty}^{\infty} \frac{\mathcal{H}[g(t)]}{t-x} dx
+	\end{align*}
+
+	\begin{lemma}[Modulus of Fourier Transform of Hilbert Transform]
+		The magnitude of the Hilbert transform is preserved in a Fourier transform.
+		\begin{align*}
+			\abs{\mathcal{F}[\mathcal{H}[g(t)]]} = \abs{\mathcal{F}[g(t)]}
+		\end{align*}
+	\end{lemma}
+	\begin{proof}
+		From the Fourier transform, \(\abs{-i \operatorname{sgn}(\omega)} = 1\), therefore, the answer is obvious. 
+	\end{proof}
+	
+	\begin{theorem}[Fourier Transform of an Analytic Signal]
+		\index{Fourier Transform! Analytic Signal}
+		\index{Analytic Signal! Fourier Transform}
+		\label{Fourier Transform af an Analytic Signal Theorem - Complex}
+		Consider the Fourier transform of an analytic signal \(g_a(t) = g(t) + i \hat{g}(t)\). Then
+		\begin{align*}
+			\mathcal{F}[g_a(t)] 
+			&= \mathcal{F}[g(t)] + \operatorname{sgn}(\omega)\mathcal{F}[g(t)] 
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\begin{align*}
+			\mathcal{F}[g_a(t)] 
+			&= \mathcal{F}[g(t)] + \mathcal{F}[i\hat{g}(t)] \\
+			&= \mathcal{F}[g(t)] + \operatorname{sgn}(\omega) \mathcal{F}[g(\omega)]
+				& \mathcal{F}[\hat{g}(\omega)] = -i \operatorname{sgn}(\omega) \mathcal{F}[g(t)] 
+		\end{align*}
+	\end{proof}
+	
+	It is clear that:
+	\begin{align*}
+		\mathcal{F}[g_a(t)] 
+		= \begin{cases}
+			2 \mathcal{F}[g(t)] & \omega > 0 \\
+			0 					& \omega < 0
+		\end{cases}
+	\end{align*}
+
+	\begin{corollary}
+		\begin{align*}
+			g_a (t) = g(t) + i \hat{g}(t) = \int_{0}^{\infty} 2 \mathcal{F}[g(t)] e^{i\omega t} d\omega
+		\end{align*}
+	\end{corollary}
+
+	\subsubsection{Causality} \label{Causality Subsubsection - Complex}
+	
+	\begin{definition}[Transfer/System Function]
+		\index{Transfer Function} \label{System Function}
+		\label{Transfer Function Definition - Complex}
+		Consider the function:
+		\begin{align*}
+			Y(\omega) = G(\omega) X(\omega)
+		\end{align*}
+		\(G(\omega)\) is the transfer function (aka. excitation). \(X(\omega)\) is the excitation. \(Y(\omega)\) is the output.
+	\end{definition}
+
+	
 
 	
 	
