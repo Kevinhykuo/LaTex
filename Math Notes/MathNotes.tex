@@ -4284,6 +4284,7 @@
 	\section{Derivatives of Functions} \label{Derivatives of Functions Section - Complex}
 	
 	\begin{definition}[Derivative of Complex-Valued Function]
+		\index{Complex-Valued Function! Derivative}
 		\label{Derivative of Complex-Valued Function Definition - Complex}
 		Consider a complex-valued function \(w(t) = u(t) + iv(t)\), with \(u\) and \(v\) being real-valued functions. If \(w(t)\) is differentiable at \(t\), then it's derivative with respect to \(t\):
 		\begin{align*}
@@ -4309,6 +4310,7 @@
 	\section{Definite Integrals of Functions} \label{Definite Integrals of Functions Section - Complex}
 	
 	\begin{definition}[Definite Integral of Complex-Valued Function]
+		\index{Complex-Valued Function! Definite Integral}
 		\label{Definite Integral of Complex-Valued Function Definition - Complex}
 		Consider a complex-valued function \(w(t) = u(t) + iv(t)\), with \(u\) and \(v\) being real-valued functions. If \(u\) and \(v\) are piecewise continuous on interval \([a,b]\), then the definite integral of \(w(t)\) over interval \([a, b]\):
 		\begin{align*}
@@ -4317,7 +4319,8 @@
 	\end{definition}
 	The rules for integrals in \(\mathbb{R}\) and the Fundamental Theorem of Calculus still applies.
 	
-	Likewise with derivatives of complex-valued functions, the mean value theorem does not hold for complex-valued integrals.
+	Likewise with derivatives of complex-valued functions, the mean value theorem does not hold for complex-valued integrals. 
+	\index{Complex-Valued Function!} \index{Mean Value Theorem}
 	\begin{example}
 		Let \(w(t) = e^{it}\) be a complex-valued function of \(t\). For \(w(t)\) to hold on \([a, b]\), this must hold for some \(a < c < b\):
 		\begin{align*}
@@ -4335,6 +4338,7 @@
 	\section{Contours} \label{Contours Section - Complex}
 	
 	\begin{definition}[Arc]
+		\index{Arc}
 		\label{Arc Definition - Complex}
 		An arc is a set of points dependent on a parameter \(t \in \mathbb{R}\).
 		\begin{align*}
@@ -4348,12 +4352,14 @@
 	\end{align*}
 	
 	\begin{definition}[Simple/Jordan Arc]
+		\index{Arc! Simple} \index{Arc! Jordan}
 		\label{Simple/Jordan Arc Definition - Complex}
 		An arc is simple if it does not cross itself. That is:
 		\(t_1 \neq t_2 \implies z(t_1) \neq z(t_2)\)
 	\end{definition}
 	
 	\begin{definition}[Simple Closed Curve / Jordan Curve]
+		\index{Curve! Simple Closed} \index{Curve! Jordan}
 		A simple curve, but endpoints gets mapped to equal values. That is, \(z(a) = z(b)\) for \(a \leq t \leq b\).
 		It is positively oriented if it is counterclockwise. 
 	\end{definition}
@@ -4368,6 +4374,7 @@
 	\end{align*}
 	
 	\begin{definition}[Differentiable Arc]
+		\index{Arc! Differentiable}
 		\label{Differentiable Arc Definition - Complex}
 		Suppose \(\dv*{t}z(t) = z'(t) = x'(t) + iy'(t)\) exists and is continuous. Then \(z'(t)\) is a differentiable arc.
 	\end{definition}
@@ -4391,21 +4398,25 @@
 	Recall: The gradient of a function is perpendicular to the function, so \(\vu{T}\) is  normal to \(z(t)\), over the interval \([a,b]\).
 	
 	\begin{definition}[Smooth]
+		\index{Smooth}
 		\label{Smooth Definition - Complex}
 		An arc \(z(t)\) is smooth in the interval \([a,b]\) if \(z'(t)\) is continuous \(\forall t \in [a,b]\) and non-zero \(\forall t \in (a,b)\).
 	\end{definition}
 	
 	\begin{definition}[Contour]
+		\index{Contour}
 		\label{Contour Definition - Complex}
 		A piecewise smooth arc.
 	\end{definition}
 
 	\begin{definition}[Simple Closed Contour]
+		\index{Contour! Simple Closed}
 		\label{Simple Closed Contour Definition - Complex}
 		A contour where only \(z(a) = z(b)\) in the interval \([a,b]\).
 	\end{definition}
 	
 	\begin{theorem}[Jordan Curve Theorem]
+		\index{Jordan Curve Theorem}
 		\label{Jordan Curve Theorem - Complex}
 		All points on a simple close curve or simple closed contour \(z(t)\) are boundary points of two distinct domains. One is bounded and interior to \(z(t)\) and the other is unbounded and exterior to \(z(t)\).  That is, \(z(t)\) as a boundary line of two domains. 
 	\end{theorem}
@@ -4419,6 +4430,7 @@
 	Evaluating an integral over a contour. It is common to assume that a line integral represents an area under a curve. Generally, this is a far too simplistic approach, even for real-valued functions. Consider the limit definition of the line integral.
 	
 	\begin{definition}[Line Integral (Real)]
+		\index{Line Integral! Real}
 		\label{Line integral Definition - Complex}
 		Let \(f\) be a real-valued function.
 		\begin{align*}
@@ -4435,6 +4447,7 @@
 	The complex line integral is defined similarly.
 	
 	\begin{definition}[Line Integral (Complex)]
+		\index{Line Integral! Complex}
 		Let \(f\) be a complex-valued function.
 		\begin{align*}
 			\int_{a}^{b} f(z) dz 
@@ -4457,6 +4470,7 @@
 	A contour integral is a line integral over a contour. Here we define it parameterized by \(t\).
 	
 	\begin{definition}[Contour Integral]
+		\index{Contour Integral}
 		\label{Contour Integral Definition - Complex}
 		Let \(z(t)\) in \(C = [a, b]\) be a contour, and \(f[z(t)]\) be a piecewise continuous function on \(C\). Then the contour integral:
 		\begin{align*}
@@ -4475,6 +4489,7 @@
 	Following from the contours, the integral is invariant under change in representation of the contour. 
 	
 	\begin{definition}[Sum (Contour)]
+		\index{Sum! Contour}
 		\label{Sum (Contour) Definition - Complex}
 		Let \(C_1\) be contour from \(z_1\) to \(z_2\), and \(C_2\) be from \(z_2\) to \(z_3\), then the sum is contour \(C\) from \(z_1\) to \(z_3\).
 	\end{definition}
@@ -4506,6 +4521,7 @@
 	\end{figure}
 	
 	Some properties (which follows from integrals):
+	\index{Contour Integral! Properties}
 	\begin{align*}
 		\int_{C} = z_0 f(z) dz &= z_0 \int_{C} f(z) dz &
 		\int_{C} f(z) + g(z) dz &= \int_{C} f(z) dz + \int_{C} g(z) dz 
@@ -4550,6 +4566,7 @@
 	\end{proof}
 	
 	\begin{theorem}[ML Inequality]
+		\index{ML Inequality}
 		\label{ML Inequality Theorem - Complex}
 		Let \(f(z)\) be piecewise continuous function on contour \(C\) with length \(L\).
 		\begin{align*}
@@ -4673,6 +4690,7 @@
 	\section{Antiderivatives} \label{Antiderivatives Section - Complex}
 	
 	\begin{definition}[Antiderivative]
+		\index{Antiderivative}
 		\label{Antiderivative Definition - Complex}
 		Let \(f(z)\) be a continuous function on domain \(D\), the antiderivative is a function \(F(z)\) such that 
 		\begin{align*}
@@ -4682,6 +4700,7 @@
 	Note: By definition, \(F(z)\) is an analytic function, and an antiderivative is unique up to an additive constant. An indefinite integral is the family of functions that are the antiderivative of a particular function. 
 	
 	\begin{theorem}
+		\index{Contour Integral} \index{Antiderivative}
 		\label{Antiderivative and contour integrals theorem - Complex}
 		Let \(f(z)\) be a continuous function on domain \(D\). TFAE:
 		\begin{itemize}
@@ -4828,6 +4847,7 @@
 	This result requires \(f'(z)\) be continuous, due to the requirement of Green's Theorem (\cref{Green's Theorem - ODE}). The Cauchy-Goursat theorem eliminates this requirement.
 	
 	\begin{theorem}[Cauchy-Goursat Theorem]
+		\index{Cauchy-Goursat Theorem}
 		\label{Cauchy-Goursat Theorem - Complex}
 		Let \(C\) be a simple closed contour. If a function \(f\) is analytic for all set of points \(z\) on and in \(C\), then 
 		\begin{align*}
@@ -4977,6 +4997,7 @@
 	\end{proof}
 
 	\begin{theorem}[Morera's Theorem]
+		\index{Morera's Theorem}
 		\label{Morera's Theorem - Complex}
 		Let \(f(x,y) = u(x,y) + iv(x,y)\) where \(u\) and \(v\) are continuous in a domain \(D\). Then for every simple closed contour \(C\) in \(D\):
 		\begin{align*}
@@ -5000,11 +5021,13 @@
 	\subsection{Simply Connected Domains} \label{Simply Connected Domains Subsection - Complex}
 	
 	\begin{definition}[Simply Connected Domain]
+		\index{Domain! Simply Connected}
 		\label{Simply Connected (Domain) Definition - Complex}
 		A domain \(D\) which every simple closed contour that lies within it only encloses points in \(D\).
 	\end{definition}
 
 	\begin{theorem}
+		\index{Contour Integral! in Simply Connected Domain}
 		\label{Contour integral in simply connected domain Theorem - Complex}
 		Let \(f\) be a function that is analytic throughout a simply connected domain \(D\). Then for every closed contour \(C\) lying in \(D\):
 		\begin{align*}
@@ -5021,6 +5044,7 @@
 	\end{proof}
 
 	\begin{corollary}
+		\index{Contour Integral! in Simply Connected Domain}
 		If \(f\) is a function analytic throughout a simply connected domain \(D\), then it has antiderivatives everywhere in \(D\).
 	\end{corollary}
 	\begin{proof}
@@ -5032,6 +5056,7 @@
 	\end{proof}
 
 	\begin{corollary}
+		\index{Entire Function! Antiderivatives}
 		Entire functions have antideriviatives everywhere in their domain of definition.
 	\end{corollary}
 	\begin{proof}
@@ -5385,6 +5410,7 @@
 	The Cauchy-Goursat theorem (\cref{Cauchy-Goursat Theorem - Complex}) gives us the value of a contour integral without singularities in the interior. What if there is a singularity in the interior? See below.
 	
 	\begin{theorem}[Cauchy Integral Formula]
+		\index{Cauchy Integral Formula}
 		\label{Cauchy Integral Formula}
 		Let a function \(f\) be analytic on and inside a simple closed contour \(C\) oriented positively. Then for all \(z_0\) interior to \(C\):
 		\begin{align*}
@@ -5429,7 +5455,9 @@
 %	\subsection{Extension} \label{Cauchy Integral Formula (Extension) Subsection - Complex}
 	
 	The Cauchy Integral Theorem links \(f(z_0)\) to a contour integral. The extension of the Cauchy Integral Formula links the \(n\)-th derivative of \(f\), \(f^{(n)}(z_0)\), to the contour integral of \(f\) at \(z_0\).
+	
 	\begin{theorem}[Cauchy Integral Formula (Extension)]
+		\index{Cauchy Integral Formula! Extension}
 		\label{Cauchy Integral Formula (Extension) - Complex}
 		Let a function \(f\) be analytic on and inside a simple closed contour \(C\) oriented positively. Then for all \(z_0\) interior to \(C\):
 		\begin{align*}
@@ -5532,6 +5560,7 @@
 	\end{figure}
 	
 	\begin{example}
+		\index{Legendre Polynomials}
 		We can then rewrite the Legendre Polynomials:
 		\begin{align*}
 			P_n(z) &= \frac{1}{n! 2^n} \dv[n]{z} (z^2 - 1)^2 = \frac{1}{2^{n+1} \pi i} \int_{C} \frac{(s^2 - 1)^n}{(s-z)^{n+1}} ds & n \in \mathbb{N} \cup \{0\}
@@ -5541,6 +5570,7 @@
 	\subsection{Consequences} \label{Cauchy Integral Theorem Consequences Subsection - Complex}
 	
 	\begin{theorem}
+		\index{Analyticity} \index{High Order Derivatives}
 		\label{Analytic implies existance of high order derivatives theorem - Complex}
 		Let a function \(f\) be analytic at a point \(z_0\), then \(f^{(n)}\) exists at \(z_0\) for all \(n \in \mathbb{N}\). That is, the derivative of \(f\) of all orders are analytic at \(z_0\).
 	\end{theorem}
@@ -5584,6 +5614,7 @@
 	\end{proof}
 
 	\begin{theorem}[Cauchy's Inequality]
+		\index{Cauchy's Inequality}
 		\label{Cauchy's Inequality Theorem - Complex}
 		Let a function \(f\) be analytic on and inside a positively oriented circular contour \(C_R\) centered at \(z_0\) with radius \(R\). 
 		\begin{align*}
@@ -5602,6 +5633,7 @@
 	\section{Liouville's Theorem and the Fundamental Theorem of Algebra} \label{Liouville's Theorem and the Fundamental Theorem of Algebra Section - Complex}
 	
 	\begin{theorem}[Liouville's Theorem]
+		\index{Liouville's Theorem}
 		\label{Liouville's Theorem - Complex}
 		Let \(f\) be a function in the complex plane
 		\begin{align*}
@@ -5631,6 +5663,7 @@
 	Intuitively, this tells us that if \(f\) is bounded by \(f(z_0)\), then \(f(z_0)\) must either be a maximum or a minimum. This can not be the case since it violates \(f\) being a harmonic function, where the sum of curvatures in each component direction is zero.
 	
 	\begin{theorem}[Fundamental Theorem of Algebra]
+		\index{Fundamental Theorem of Algebra}
 		\label{Fundamental Theorem of Algebra - Complex}
 		Let \(P(z) = \sum_{i=0}^{n} a_i z^i\) be any polynomial, then
 		\begin{align*}
@@ -5660,6 +5693,7 @@
 	\section{Maximum Modulus Principle} \label{Maximum Modulus Principle Section - Complex}
 	
 	\begin{theorem}[Gauss's Mean Value Theorem]
+		\index{Gauss's Mean Value Theorem}
 		\label{Gauss's Mean Value Theorem - Complex}
 		Let \(f\) be a function analytic in and on a circular contour \(C_\rho\) centred at \(z_0\), then \(f(z_0)\) is the arithmetic mean of the values on the circle:
 		\begin{align*}
@@ -5721,6 +5755,7 @@
 	\end{proof}
 	
 	\begin{theorem}[Maximum Modulus Principle]
+		\index{Maximum Modulus Principle}
 		\label{Maximum Modulus Principle Theorem - Complex}
 		Let \(f\) be an analytic function in a domain \(D\).
 		\begin{align*}
@@ -5881,6 +5916,7 @@
 	We are looking to solve the Dirichlet Problem (\cref{Dirichlet Problem Definition - Partial}). Finding a function in a harmonic domain  that assumes preassigned values at the boundary.
 	
 	\begin{definition}[Poisson Integral Formula (Circle Interior)]
+		\index{Poisson Integral Formula! Circle Interior}
 		\label{Poisson Integral Formula (Circle Interior) Definition - Complex}
 		Let \(f\) be a complex-valued function on a circular simple closed domain with radius \(R\), and \(C\) be a circular contour an the boundary of the domain. Then the Dirichlet Problem is solved in the domain by
 		\begin{align*}
@@ -5926,7 +5962,8 @@
 		Taking the real part yields the desired result.
 	\end{proof}
 
-	\begin{definition}[Poisson Integral Formula (Upper Half Plane)]
+	\begin{definition}[Poisson Integral Formula (Upper Half-Plane)]
+		\index{Poisson Integral Formula! Upper Half-Plane}
 		\label{Poisson Integral Formula (Upper Half Plane) Definition - Complex}
 		Consider the Dirichlet problem for the upper half of the complex plane (\(y>0\)) which satisfies the boundary condition \(U(X,0)\) on \(Y = 0\). Then the Dirichlet Problem is solved by 
 		\begin{align*}
