@@ -3665,6 +3665,7 @@
 	\section{Exponential Function} \label{Exponential Function Section - Complex}
 	
 	\begin{definition}[Exponential Function]
+		\index{Function! Exponential}
 		\label{Exponential Function Definiton - Complex}
 		Consider \(z \in \mathbb{C}\), the exponential function is defined:
 		\begin{align*}
@@ -3689,6 +3690,7 @@
 	\section{Logarithmic Function} \label{Logarithmic Function Section - Complex}
 	
 	\begin{definition}[Logarithmic Function]
+		\index{Function! Logarithmic}
 		\label{Logarithmic Function Definition - Complex}
 		Consider any \(z \in \mathbb{C}\) in exponential form:
 		\begin{align*}
@@ -3733,23 +3735,27 @@
 	\end{align*}
 
 	\begin{definition}[Branch]
+		\index{Branch}
 		\label{Branch Definition - Complex}
 		A branch is a single-valued function \(F\) of a multi-valued function \(f\). \(F\) is analytic throughout some domain of \(f\) and assumes the one of the values of \(f\).
 	\end{definition}
 	
 	\begin{definition}[Principal Branch]
+		\index{Branch! Principal}
 		\label{Principal Branch Definition - Complex}
 		\begin{align*}
 			\operatorname{Log}(z) &= \ln(r) + i\theta & r>0, \ -\pi < \theta < \pi
 		\end{align*}
 	\end{definition}
 
-	\begin{definition}[Branch Cut]	
+	\begin{definition}[Branch Cut]
+		\index{Branch! Cut}	
 		\label{Branch Cut Definition - Complex}
 		A portion of a line or curved introduced to define a branch \(F\) of a multi-valued function \(f\). Points on the branch cut of \(F\) are singular points of \(F\).
 	\end{definition}
 
 	\begin{definition}[Branch Point]
+		\index{Branch! Point}
 		\label{Branch Point Definition - Complex}
 		A singular point common to all branch cuts of a multi-valued function \(f\).
 	\end{definition}
@@ -3792,7 +3798,7 @@
 		}
 	\end{example}
 
-	\subsection{Identities of Logarithms} \label{Identities of Logarithms Subsection - Complex}
+	\subsection{Identities of Logarithms} \label{Identities of Logarithms Subsection - Complex} \index{Logarithm! Identities}
 	
 	Let \(z_1, z_2 \in \mathbb{C}\), then 
 	\begin{align*}
@@ -3834,6 +3840,7 @@
 	\subsection{Power Function} \label{Power Function Subsection - Complex}
 	
 	\begin{definition}[Power Function]
+		\index{Function! Power}
 		\label{Power Function Definition - Complex}
 		Let \(z, c \in \mathbb{C}\). The Power Function: 
 		\begin{align*}
@@ -3867,6 +3874,7 @@
 	Recall: \Cref{Trig Identities - Complex}. Likewise for any \(z \in \mathbb{C}\):
 	
 	\begin{definition}[Complex Sine and Cosine Functions]
+		\index{Sine! Complex Form} \index{Cosine! Complex Form}
 		\label{Sine and Cosine Functions - Complex}
 		For any \(z \in \mathbb{C}\):
 		\begin{align*}
@@ -4020,6 +4028,7 @@
 	\section{Hyperbolic Functions} \label{Hyperbolic Functions Section - Complex}
 	
 	\begin{definition}[Hyperbolic Sine and Cosine Functions]
+		\index{Sine! Hyperbolic} \index{Cosine! Hyperbolic}
 		\label{Hyperbolic Sine and Cosine Functions Definition - Complex}
 		Let \(z \in \mathbb{C}\):
 		\begin{align*}
@@ -4056,6 +4065,7 @@
 	\end{align*}
 	
 	\begin{theorem}
+		\index{Sine! Hyperbolic! Zeros} \index{Cosine! Hyperbolic! Zeros}
 		\label{Zeros of Hyperbolic Sine and Cosine Theorem - Complex}
 		The zeros of hyperbolic zine and cosine:
 		\begin{align*}
@@ -4122,6 +4132,7 @@
 	\section{Inverse Trigonometric and Hyperbolic Functions} \label{Inverse Trigonometric and Hyperbolic Functions Section - Complex}
 	
 	\begin{definition}[Inverse Trigonometric Functions]
+		\index{Function! Trigonometric! Inverse}
 		\label{Inverse Trigonometric Functions Definition - Complex}
 		Let \(z \in \mathbb{C}\):
 		\begin{align*}
@@ -4178,7 +4189,9 @@
 	\end{align*}
 	}
 	\end{proof}
+	
 	Derivatives:
+	\index{Function! Hyperbolic! Inverse! Derivative}
 	\begin{align*}
 		\dv{z} \sin[-1](z) &= \frac{1}{(1-z^2)^{1/2}}
 			& &\text{Depends on value coosen for square root} \\
@@ -4190,6 +4203,7 @@
 
 	Using the same procedures on the hyperbolic functions, we obtain the inverse hyperbolic functions:
 	\begin{definition}[Inverse Hyperbolic Functions]
+		\index{Function! Hyperbolic! Inverse}
 		\label{Inverse Hyperbolic Functions Definition - Complex}
 		Let \(z \in \mathbb{C}\):
 		\begin{align*}
@@ -4200,10 +4214,11 @@
 	\end{definition} 
 
 
-
 	\section{Phasors} \label{Phasors Section - Complex}
 	
 	\begin{definition}[Phasor]
+		\index{Phasor}
+		\label{Phasor Definition - Complex}
 		Consider the function 
 		\begin{align*}
 			f(t) &= \Re{Fe^{st}} & F &= F_0 e^{i\theta} & s = \sigma + i \omega, \ \sigma, \omega \in \mathbb{R}
@@ -4212,7 +4227,7 @@
 	\end{definition}
 	We can see tha \(f(t)\) grows exponentially according to the value of \(\sigma\), has a phase of \(\theta\), and a phase frequency of \(\omega\). (It is clear why engineers love this.)
 	
-	Properties: 
+	Properties: \index{Phasor! Properties} 
 	\begin{itemize}
 		\item[1.] 
 		\begin{align*}
