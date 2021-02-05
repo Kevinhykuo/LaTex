@@ -6023,6 +6023,7 @@
 	\section{Convergence} \label{Convergence Section - Complex}
 	
 	\begin{definition}[Limit (Sequence)]
+		\index{Sequence! Limit}
 		Let \(z_1, z_2, z_3, \ldots \) be an infinite sequence of complex numbers. We say a limit exists for the sequence if
 		\begin{align*}
 			\forall \epsilon > 0, \exists n_0 \in \mathbb{N}
@@ -6031,6 +6032,7 @@
 	\end{definition}
 	
 	\begin{definition}[Converge (Sequence)]
+		\index{Sequence! Cenvergence}
 		If such limit exists, we say the sequence converges to \(z\) and that 
 		\begin{align*}
 			\lim_{n \rightarrow \infty} z_n = z
@@ -6038,6 +6040,7 @@
 	\end{definition}
 	
 	\begin{definition}[Diverge (Sequence)]
+		\index{Sequence! Divergence}
 		If a limit does not exists for a series.
 	\end{definition}
 	
@@ -6127,6 +6130,7 @@
 	\end{example}
 
 	\begin{definition}[Partial Sum (Series)]
+		\index{Series! Partial Sum}
 		\label{Partial Sum (Series) Definition - Complex}
 		Consider a infinite series
 		\begin{align*}
@@ -6139,10 +6143,12 @@
 	\end{definition}
 	
 	\begin{definition}[Converge (Series)]
+		\index{Series! Convergence}
 		We say a series converge to sum \(S\) if the sequence of partial sums converges to \(S\).
 	\end{definition}
 
 	\begin{definition}[Divergence (Series)]
+		\index{Series! Divergence}
 		A series diverge if its sequence of partial sums does not converge to sum \(S\).
 	\end{definition}
 	
@@ -6181,6 +6187,8 @@
 	\end{corollary}
 	
 	\begin{definition}[Absolutely Convergent (Series)]
+		\index{Series! Absolutely Convergent} 
+		\index{Absolute Convergence! Series}
 		A series is absolutely convergent if
 		\begin{align*}
 			\sum_{n=1}^{\infty} \abs{z_n} &= \sum_{n=1}^{\infty} \sqrt{x_n^2 + y_n^2} 
@@ -6206,11 +6214,13 @@
 	\end{proof}
 
 	\begin{definition}[Conditional Convergence]
+		\index{Convergence! Conditional}
 		\label{Conditional Convergence Definition - Complex}
 		A series is conditionally convergent if it converges, but does not converge absolutely. 
 	\end{definition}
 
 	\begin{definition}[Remainder (Series) Definition - Complex]
+		\index{Series! Remainder}
 		Let \(S\) be an infinite series, the remainder after \(N\) terms:
 		\begin{align*}
 			\rho_N = S - S_N
@@ -6266,6 +6276,7 @@
 	\end{theorem}
 
 	\begin{theorem}[Ratio Test]
+		\index{Ratio Test}
 		\label{Ratio Test Theorem - Complex}
 		Let \(\sum_{n=0}^{\infty} S_N\) be an infinite series, and 
 		\begin{align*}
@@ -6282,6 +6293,7 @@
 	\section{Taylor Series} \label{Taylor Series Section - Complex}
 	
 	\begin{definition}[Power Series]
+		\index{Power Series}
 		\label{Power Series Definition - Complex}
 		Let \(R\) be a region containing a point \(z_0\). A power series is a series of the form
 		\begin{align*}
@@ -6290,6 +6302,7 @@
 	\end{definition}
 	
 	\begin{theorem}[Taylor's Theorem]
+		\index{Taylor's Theorem}
 		\label{Taylor's Theorem - Complex}
 		Let \(f\) be a function analytic throughout a disk \(\abs{z-z_0} < R_0\) with radius \(R_0\). Then \(f(z)\) has the power series representation:
 		\begin{align*}
@@ -6401,6 +6414,7 @@
 	\end{figure}
 	
 	\begin{definition}[Maclaurin Series]
+		\index{Maclaurin Series}
 		\label{Maclaurin Series - Complex}
 		A Taylor series with \(z_0 = 0\):
 		\begin{align*}
@@ -6423,6 +6437,7 @@
 	In Taylor's theorem (\cref{Taylor's Theorem - Complex}), \(f\) is required to be analytic at \(z_0\). What about the case where \(f\) does not need to be analytic at \(z_0\)? Well...
 	
 	\begin{theorem}[Laurent's Theorem]
+		\index{Laurent's Theorem} \index{Laurent Series}
 		\label{Laurent's Theorem - Complex}
 		Let \(f\) be analytic throughout an annular domain \(R_1 < \abs{z-z_0}<R_2 \) centred at \(z_0\), and \(C\) be any positively oriented simple closed contour in said domain. Then at any \(z\) in the domain:
 		\begin{align*}
@@ -6683,7 +6698,8 @@
 		Note: This is valid in the region \(\abs{z}<1\), there is another representation for \(\abs{z-i}<1\) and \(\abs{z+1}<1\).
 	\end{example}
 	
-	\begin{example}[z-transform]
+	\begin{example}[z-Transform]
+		\index{z-Transform}
 		\label{z-Transform Inverse Derivation Example - Complex}
 		Suppose 
 		\begin{align*}
@@ -6718,6 +6734,7 @@
 	\end{example}
 
 	\begin{example}[Bessel Functions of the First Kind]
+		\index{Bessel Functions! First Kind}
 		Let \(z \in \mathbb{C}\) and \(C\) be the unit circle \(w = e^{i\phi}\), \(-\pi<\phi<\pi\), in the \(w\)-plane. Show for the Laurent series about the origin in the \(w\)-plane:
 		\begin{align*}
 			\exp[\frac{z}{2}\left(w - \frac{1}{w}\right)]
@@ -6767,6 +6784,7 @@
 	\end{example}
 
 	\begin{example}[Fourier Series]
+		\index{Fourier Series}
 		Let \(f(z)\) be a function in some annular domain about the origin that includes the unit circle \(z = e^{i\phi}\), \(-\pi \leq \phi \leq \pi\). Show that in the Laurent series representation for any \(z \in \mathbb{C}\):
 		\begin{align*}
 			f(z) &= \frac{1}{2\pi} \int_{-\pi}^{\pi} f(e^{i\phi}) d \phi
@@ -6867,16 +6885,20 @@
 	\section{Absolute and Uniform Convergence of Power Series} \label{Absolute and Uniform Convergence of Power Series Section - Complex}
 	
 	\begin{definition}[Circle of Convergence]
+		\index{Circle of Convergence}
 		\label{Circle of Convergence Definition - Complex}
 		The greatest circle centred at \(z_0\) for which the power series \(\sum_{n=0}^{\infty} a_n (z-z_0)^n\) converges for all \(z\) interior to the circle. That is, if the circle has radius \(R\) and is centred at \(z_0\), then the power series converges \(\forall z\) where \(\abs{z-z_0} < R\). 
 	\end{definition}
 	Note: As a result, the series can not converge at any point outside of the circle of convergence.
 	
 	\begin{definition}[Center of Expansion]
+		\index{Center of Expansion}
 		The center of the circle of convergence \(z_0\).
 	\end{definition}
 	
 	\begin{theorem}[Absolute Convergence of Power Series]
+		\index{Power Series! Absolute Convergence}
+		\index{Absolute Convergence! Power Series}
 		\label{Absolute Convergence of Power Series Theorem - Complex}
 		Consider a power series \(\sum_{n=0}^{\infty} a_n (z-z_0)^n\)
 		\begin{align*}
@@ -6911,6 +6933,8 @@
 	\end{proof}
 
 	\begin{definition}[Uniform Convergence of Power Series]
+		\index{Uniform Convergence! Power Series}
+		\index{Power Series! Uniform Convergence}
 		\label{Uniform Convergence (Power Series) Definition - Complex}
 		Let 
 		\begin{align*}
@@ -6932,6 +6956,7 @@
 	Uniform Convergence is telling us that given any \(\epsilon\) we can find a \(N_\epsilon \in \mathbb{N}\) such that the error for \(\rho_N(z)\) for all \(N > N_\epsilon\) is always within \(\epsilon\). That is, \(S_N(z)\) is always within \(\epsilon\) of the value \(S_N\) converges to for all \(N_\epsilon > N\). All values of \(S_N(z)\) for \(N > N_\epsilon\) fall within a static error box \(\epsilon\).
 
 	\begin{theorem}
+		\index{Power Series! Local Uniform Convergence}
 		\label{Local Uniform Convergence of Power Series Theorem - Complex}
 		Let \(z_1\) be any point inside the circle of convergence \(\abs{z-z_0}<R\) of 
 		\begin{align*}
@@ -7016,6 +7041,7 @@
 	\section{Continuity of Sums of Power Series} \label{Continuity of Sums of Power Series Section - Complex}
 	
 	\begin{theorem}
+		\index{Power Series! Continuity of Sums}
 		\label{Continuity of Sums of Power Series Theorem - Complex}
 		Let 
 		\begin{align*}
@@ -7120,6 +7146,7 @@
 	\section{Integration and Differentiation of Power Series} \label{Integration and Differentiation of Power Series Section - Complex}
 	
 	\begin{theorem}[Integration of Power Series]
+		\index{Power Series! Integration}
 		\label{Integration of Power Series Theorem - Complex}
 		Let \(C\) be any contour lying inside the circle of convergence for the series 
 		\(S(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n\) and \(g(z)\) be any function continuous on \(C\). Then 
@@ -7179,6 +7206,7 @@
 	\end{proof}
 	
 	\begin{theorem}[Differentiation of Power Series]
+		\index{Power Series! Differentiation}
 		\label{Differentiation of Power Series Theorem - Complex}
 		Let \(S(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n\), then for all points \(z\) interior to its circle of convergence:
 		\begin{align*}
@@ -7217,6 +7245,7 @@
 	\section{Uniqueness of Series Representations} \label{Uniqueness of Series Representations Section - Complex}
 	
 	\begin{theorem}[Uniqueness of Taylor Series]
+		\index{Taylor Series! Uniqueness}
 		\label{Uniqueness of Taylor Series Theorem - Complex}
 		If 
 		\( \sum_{n=0}^{\infty} a_n (z-z_0)^n \) converges to some function \(f(z)\) \(\forall z\) interior to some circle \(\abs{z-z_0} = R\).
@@ -7267,6 +7296,7 @@
 	\end{proof}
 
 	\begin{theorem}[Uniqueness of Laurent Series]
+		\index{Laurent Series! Uniqueness}
 		\label{Uniqueness of Laurent Series Theorem - Complex}
 		Suppose a series 
 		\begin{align*}
@@ -7300,6 +7330,7 @@
 	\section{Multiplication and Division of Power Series} \label{Multiplication and Division of Power Series Section - Complex}
 	
 	\begin{definition}[Leibniz's Rule]
+		\index{Leibniz's Rule}
 		\label{Leibniz's Rule Definition - Complex}
 		The \(n\)-th derivative of the product of two differentiable functions \(f(z)\) and \(g(z)\):
 		\begin{align*}
@@ -7310,6 +7341,7 @@
 	\end{definition}
 	
 	\begin{definition}[Cauchy Product]
+		\index{Cauchy Product}
 		\label{Cauchy Product Definition - Complex}
 		Suppose within some circle \(\abs{z-z_0} = R\):
 		\begin{align*}
@@ -7382,6 +7414,7 @@
 	Take a sequence of numbers and make an analytic function.
 	
 	\begin{definition}[z-Transform]
+		\index{z-Transform}
 		\label{z-Transform Definition - Complex}
 		\begin{align*}
 			\mathbb{Z}[f(t)] &= \sum_{n=0}^{\infty} f(nT)z^{-n} 
@@ -7395,6 +7428,7 @@
 	\end{align*}
 
 	\begin{definition}[Inverse z-Transform]
+		\index{z-Transform! Inverse}
 		Let \(C\) be any circular contour with radius greater than \(R\), where \(F(z)\) is analytic \(\forall \abs{z}>R\). Then the Inverse z-Transform of \(F(z)\):
 		\begin{align*}
 			\mathbb{Z}^{-1}[F(z)] = f(nT) &= \frac{1}{2\pi i} \int_{C} F(z) z^{n-1} dz
@@ -7413,6 +7447,7 @@
 	\subsection{Product of z-Transforms} \label{Product of z-Transforms Subsection - Complex}
 	
 	\begin{definition}[Product of z-Transform]
+		\index{z-Transform! Product}
 		Let \(C\) be a circular contour with radius \(\rho = \abs{w} = \abs{1/z}\), and
 		\begin{align*}
 			\mathbb{Z}[f(t)] &= \sum_{n=0}^{\infty} c_n z^{-n} = F(z) &
@@ -7474,14 +7509,16 @@
 	\end{proof}
 
 	\begin{definition}[Convolution]
+		\index{Convolution}
 		\label{Convolution Definition - Complex}
 		Let \(f(t)\) and \(g(t)\) be functions, then the convolution of the two functions:
 		\begin{align*}
-			f(t) \circ g(t) &= \sum_{k=0}^{\infty} f(kT) g[(n-k)T] & n \in \mathbb{N} \cup \{0\}
+			f(t) \ast g(t) &= \sum_{k=0}^{\infty} f(kT) g[(n-k)T] & n \in \mathbb{N} \cup \{0\}
 		\end{align*}
 	\end{definition}
 
 	\begin{definition}[Convolution of Products of z-Transform and Inverse z-Transform]
+		\index{z-Transform! Convolution} \index{Convolution! z-Transform} \index{Convolution! Inverse z-Transform}
 		\begin{align*}
 			\mathbb{Z}[h(t)] &= \mathbb{Z}[f(t) \circ g(t)] = \mathbb{Z}[f(t)] \mathbb{Z}[G(t)]= F(z) G(z) \\
 			\mathbb{Z}^{-1}[H(z)] &= \mathbb{Z}^{-1}[F(z) \circ G(z)] = \mathbb{Z}^{-1}[F(z)] \mathbb{Z}^{-1}[G(z)] = f(t) g(t)
