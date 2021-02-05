@@ -118,7 +118,7 @@
 \contentsline {subsection}{\numberline {17.7.9}Inverse Laplace Transforms}{189}{subsection.17.7.9}%
 \contentsline {subsection}{\numberline {17.7.10}Hilbert Transform}{192}{subsection.17.7.10}%
 \contentsline {subsubsection}{Causality}{195}{corollary.17.7.9.1}%
-\contentsline {subsection}{\numberline {17.7.11}Gamma Function}{195}{subsection.17.7.11}%
+\contentsline {subsection}{\numberline {17.7.11}Gamma Function}{196}{subsection.17.7.11}%
 \contentsline {chapter}{\numberline {18}Mapping by Elementary Functions}{197}{chapter.18}%
 \contentsline {section}{\numberline {18.1}Linear Transformations}{197}{section.18.1}%
 \contentsline {chapter}{\numberline {19}Conformal Mapping}{199}{chapter.19}%

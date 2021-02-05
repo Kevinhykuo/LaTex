@@ -10139,11 +10139,99 @@
 		\(G(\omega)\) is the transfer function (aka. excitation). \(X(\omega)\) is the excitation. \(Y(\omega)\) is the output.
 	\end{definition}
 
-	
+	\begin{definition}[Green's Function / Impulse Response]
+		\index{Green's Function} \index{Impulse Responce}
+		Let \(G(\omega)\) be a transfer function. The impulse response of the system is the inverse Fourier transform of the transfer function:
+		\begin{align*}
+			g(t)= \int_{-\infty}^{\infty} G(\omega) e^{i\omega t} d\omega
+		\end{align*}
+	\end{definition}
 
-	
+	\begin{definition}[Causal System]
+		\index{Causal System}
+		\label{Causal System}
+		A system with impulse response \(\forall t < 0 [g(t) = 0]\)
+	\end{definition}
+
+	\begin{theorem}[Hilbert Transform and Causal Systems]
+		\index{Hilbert Transform! Causal System}
+		\label{Hilbert Transform and Causal System Theorem - Complex}
+		Let \(G(\omega)\) be a transfer function and \(G_e(\omega)\) be an even transfer function. A transfer function of a causal system must be of the form: 
+		\begin{align*}
+			G(\omega)= G_e(\omega) - iG_e(\omega) \ast \frac{1}{\pi \omega} 
+				= G_e(\omega) - \frac{i}{\pi} \int_{-\infty}^{\infty} \frac{G_e(\omega')}{\omega - \omega'} d\omega
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Any real-valued function \(g\) is composed of a even \(g_e\) and odd \(g_o\) part.
+		\begin{align*}
+			g(t) = g_e(t) + g_o(t)
+		\end{align*}
+		Then
+		\begin{align*}
+			g(t) &= g_e (t) + g_o (t)	& g_o(t) = \operatorname{sgn}(t) g_e(t)
+		\end{align*}
+		Applying the Fourier transform:
+		\begin{align*}
+			\mathcal{F}[g(t)] 
+			&= \mathcal{F}[g_e(t)] - i\mathcal{F}[g_e(t)] \ast \frac{1}{\pi i}
+				& \mathcal{F}[\operatorname{sgn}(t)] = -\frac{1}{\pi \omega} \\
+			&= G_e(\omega) - \frac{i}{\pi} \int_{-\infty}^{\infty} \frac{G_e(\omega')}{\omega - \omega'} d\omega
+		\end{align*}
+	\end{proof}
 	
 	\subsection{Gamma Function} \label{Gamma Function Subsection - Complex}
+	
+	\begin{definition}[Uniform Convergence of Integrals]
+		\index{Convergence! Uniform! Integrals}
+		We say the integral
+		\begin{align*}
+			\int_{a}^{\infty} f(s, z) ds
+		\end{align*}
+		converges uniformly to \(F(z)\) in a closed region \(R\), if 
+		\begin{align*}
+			\forall z \in R, \forall \epsilon > 0, \exists \tau \in \mathbb{R}
+			\left[b \geq \tau \implies \abs{F(z) - \int_{a}^{b} f(t,z) dz} < \epsilon \right]
+		\end{align*}
+		(\(\tau\) is independent of \(z\), as in the requirement for uniform convergence (\cref{Uniform Convergence Definition - Real}))
+	\end{definition}
+
+	\begin{theorem}[Analyticity of Function Defined by Integration to Infinity]
+		\index{Analyticity! Function! Integration to Infinity}
+		\label{Analyticity of a Function Defined by an Integration to Infinity Theorem - Complex}
+		Let \(f(z, t)\) be continuous for \(t \in [a, b]\), for \(z\) interior a simple closed contour \(C\).
+		\begin{align*}
+			&\int_{a}^{\infty} f(t, z) dz \text{ converges uniformly to } F(z) \text{ for } z \text{ interior to } C\\
+			&\implies F(z) \text{ analytic in domain with boundary } C
+		\end{align*}
+		also in this domain
+		\begin{align*}
+			F^{(n)} (z) &= \int_{a}^{\infty} \pdv[n]{z} f(t, z) dt 
+			& n \in \mathbb{N}
+		\end{align*}
+	\end{theorem}
+	
+	\begin{theorem}[M-Test for Integration to Infinity]
+		\index{M-Test! Integration to Infinity}
+		\label{M-Test for Integration to Infinity Theorem - Complex}
+		Let \(f(z, t)\) be continuous for \(t \geq a\) for all \(z \in R\), where \(R\) is a closed region, and \(M(t)\) be a positive function of \(t\) be independent of \(z\). Suppose \(\forall z \in R, \forall t \geq a [\abs{f(z, t)} \leq M(t)]\):
+		\begin{align*}
+			&\forall z \in R, \forall t \geq a [\abs{f(z, t)} \leq M(t)] \land
+			\int_{a}^{\infty} M(t) dt \text{ Converges} \\
+			&\implies \forall z \in R 
+				\left[\int_{a}^{\infty} f(t, z) dt \text{ Converges uniformly}\right]
+		\end{align*}
+		That is, if \(\abs{f(z,t)}\) is bounded by a function \(M(t)\) and the integral of \(M(t)\) converges, then the integral of \(f(t, z)\) in the same interval converges uniformly.
+	\end{theorem}
+
+	\begin{definition}[Gamma Function]
+		\index{Gamma Function}
+		\label{Gamma Function Definition - Complex}
+		The Gamma function is the analytic function:
+		\begin{align*}
+			\Gamma(x) = \int_{0}^{\infty} t^{x-1} e^{-t} dt
+		\end{align*}
+	\end{definition}
 	
 
 	\chapter{Mapping by Elementary Functions} \label{Mapping by Elementary Functions Chapter - Complex}

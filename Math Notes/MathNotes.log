@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  4 FEB 2021 18:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  4 FEB 2021 20:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1847,11 +1847,15 @@ Overfull \hbox (7.25365pt too wide) detected at line 9120
 [188]
 ===== Image 'tikz/MathNotes-figure56' is up-to-date. ======
 [189 <./tikz/MathNotes-figure56.pdf>] [190] [191] [192] [193] [194] [195]
-[196
 
-]
+LaTeX Warning: Reference `Uniform Convergence Definition - Real' on page 1 unde
+fined on input line 10196.
+
+[196]
 Chapter 18.
-[197] [198
+[197
+
+] [198
 
 ]
 Chapter 19.
@@ -1955,10 +1959,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 41352 strings out of 479382
- 939202 string characters out of 5869369
- 1362643 words of memory out of 5000000
- 56450 multiletter control sequences out of 15000+600000
+ 41384 strings out of 479382
+ 940364 string characters out of 5869369
+ 1363220 words of memory out of 5000000
+ 56468 multiletter control sequences out of 15000+600000
  445575 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,19n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1992,10 +1996,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (271 pages, 1028485 bytes).
+Output written on MathNotes.pdf (271 pages, 1033034 bytes).
 PDF statistics:
- 4160 PDF objects out of 4296 (max. 8388607)
- 3641 compressed objects within 37 object streams
- 1148 named destinations out of 1200 (max. 500000)
+ 4177 PDF objects out of 4296 (max. 8388607)
+ 3658 compressed objects within 37 object streams
+ 1162 named destinations out of 1200 (max. 500000)
  1514 words of extra memory for PDF output out of 10000 (max. 10000000)
 
