@@ -5694,6 +5694,7 @@
 	
 	\begin{theorem}[Gauss's Mean Value Theorem]
 		\index{Gauss's Mean Value Theorem}
+		\index{Mean Value Theorem! Gauss's}
 		\label{Gauss's Mean Value Theorem - Complex}
 		Let \(f\) be a function analytic in and on a circular contour \(C_\rho\) centred at \(z_0\), then \(f(z_0)\) is the arithmetic mean of the values on the circle:
 		\begin{align*}
@@ -6441,7 +6442,7 @@
 		\label{Laurent's Theorem - Complex}
 		Let \(f\) be analytic throughout an annular domain \(R_1 < \abs{z-z_0}<R_2 \) centred at \(z_0\), and \(C\) be any positively oriented simple closed contour in said domain. Then at any \(z\) in the domain:
 		\begin{align*}
-			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=0}^{\infty} \frac{b_n}{(z-z_0)^n} & R_1 &< \abs{z-z_0} < R_2 \\
+			f(z) &= \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z-z_0)^n} & R_1 &< \abs{z-z_0} < R_2 \\
 			a_n &= \frac{1}{2\pi i} \int_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz  
 				 = \frac{f^{(n)}(z_0)}{n!}
 				& n &\in \mathbb{N}\cup\{0\} \\
@@ -7786,7 +7787,7 @@
 		\end{align*} 
 		That is 
 		\begin{align*}
-			f(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=0}^{m} \frac{b_n}{(z-z_0)^n}
+			f(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n + \sum_{n=1}^{m} \frac{b_n}{(z-z_0)^n}
 		\end{align*}
 	\end{definition}
 
@@ -9097,6 +9098,7 @@
 	TLDR: Integration along both sides of a branch cut does not cancel out, due to different arguments (\(\theta\) and \(\theta + 2\pi\)). We must do integration along branch cut with these different values of arguments taken into consideration.
 	
 	\begin{example}
+		\label{Integration along branch cut Example - Complex}
 		Show for \(a, x \in \mathbb{R}\) with \(x > 0\) and \(a \in (0,1)\):
 		\begin{align*}
 			\int_{0}^{\infty} \frac{x^{-a}}{x+1} dx = \frac{\pi}{\sin(a\pi)}
@@ -10369,11 +10371,225 @@
 		\label{Gamma Function Definition - Complex}
 		The Gamma function is the analytic function:
 		\begin{align*}
-			\Gamma(x) = \int_{0}^{\infty} t^{x-1} e^{-t} dt
+			\Gamma(x) &= \int_{0}^{\infty} t^{x-1} e^{-t} dt
+				& t \in \mathbb{R}
 		\end{align*}
 	\end{definition}
+
+	The gamma function is continuous and converges for all \(x \in \mathbb{R}_{>0}\). If \(x \in \mathbb{(0,1)}\), then it is discontinuous at \(t=0\).
 	
+	\begin{theorem}[Gamma Function and Factorials]
+		\index{Gamma Function! Factorials}
+		\label{Gamma Function and Factorials Theorem - Complex}
+		\begin{align*}
+			\Gamma(n + 1) &= n! & n \in \mathbb{N}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Consider \(x+1\), then applying integration by parts:
+		\begin{align*}
+			\Gamma (x+1) = \int_{0}^{\infty} t^x e^{-t} dt
+			&\implies \Gamma (x+1) = \eval{-e^{-t} t^x}_{t=0}^{\infty} + x \int_{0}^{\infty} t^{x-1} e^{-t} dt
+		\end{align*}
+		We know that 
+		\begin{align*}
+			\eval{e^{-t} t^x}_{t=0} &= 0 \\
+			\eval{e^{-t} t^x}_{\infty} 
+				&= \lim_{R\rightarrow \infty} e^{-R} R^x 
+				 = \lim_{R\rightarrow \infty} \frac{R^x}{\sum_{n=0}^{\infty} R^n/n!} 
+				 = \lim_{R\rightarrow \infty} \left[ \sum_{n=0}^{\infty} \frac{R^{n-x}}{n!}\right]^{-1} = 0
+		\end{align*}
+		Hence, we are left with
+		\begin{align*}
+			\Gamma (x+1) &= \int_{0}^{\infty} t^{x-1} e^{-t} dt =  x \Gamma (x) 
+				& x > 0
+		\end{align*}
+		Now
+		\begin{align*}
+			\Gamma(1) = \int_{0}^{\infty} e^{-t} dt = \eval{-e^{-t}}_{0}^{\infty} = 1
+		\end{align*}
+		Using \(\Gamma(1) = 1\) as the base case, and induction on \(\Gamma(x+1) = x \Gamma(x)\):
+		\begin{align*}
+			\Gamma(n+1) &= n! & n \in \mathbb{N}
+		\end{align*}
+	\end{proof}
+
+	Note: Since \(\Gamma(1) = 1\), we can see why \(\Gamma(1) = 0! \coloneq 1\).
 	
+	\begin{definition}[Gamma Function (Complex)]
+		\index{Gamma Function! Complex}
+		\label{Gamma Function Complex Definition - Complex}
+		Consider \(z \in \mathbb{C}\):
+		\begin{align*}
+			\Gamma (z) &= \int_{0}^{\infty} t^{z-1} e^{-t} dt 
+				= \int_{0}^{\infty} e^{(z-1) \operatorname{Log}(z)} e^{-t} dt
+				& t \in \mathbb{C}
+		\end{align*}
+		Note the principal part of the logarithm.
+	\end{definition}
+	
+	Consistent with the real definition, the complex Gamma function is analytic for \(t>0\) and \(\Re{z}>0\). By differentiating under the integral sign:
+	\begin{align*}
+		\Gamma '(z) = \dv{z} \int_{0}^{\infty} t^{z-1} e^{-t} dt  
+			= \int_{0}^{\infty} \dv{z} e^{(z-1) \operatorname{Log}(z)} e^{-t} dt
+			= \int_{0}^{\infty} t^{z-1} e^{-t} \operatorname{Log}(t) dt
+	\end{align*}
+	Hence, \(\Gamma(z)\) and its derivatives are continuous for \(\Re{z}>0\).
+	
+	Following the same procedure in the proof of \cref{Gamma Function and Factorials Theorem - Complex}, we get:
+	\begin{align*}
+		\Gamma(z+1) = z \Gamma(z)
+	\end{align*}
+	Reordering allows us analytically extend the function into negative values of \(\Re{z}\):
+	\begin{align*}
+		\Gamma(z) = \frac{\Gamma(z+1)}{z} \implies \Gamma(z) = \frac{\Gamma(z+2)}{(z+1)z}
+	\end{align*}
+	Continuing with induction:
+	\begin{align*}
+		\Gamma(z) &= \frac{\Gamma(z+n)}{\prod_{m=1}^{n} (z + n - m)}
+			& n \in \mathbb{N}
+	\end{align*}
+	Hence, we can see that \(\Gamma(z)\) has simple poles at \(z \in \{0, -1, -2, \ldots\}\).
+	
+	\begin{theorem}
+		\label{Function real on real axis implies alternating sign across simple pole on real axis theorem - Complex}
+		Let \(f\) be a function that is real on the real axis, then it displays opposite signs on the real axis on either side of the simple pole.
+	\end{theorem}
+	\begin{proof}
+		{\color{Grey}
+		Let \(f\) be a function with a simple pole on \(x_0 \in \mathbb{R}\). Then from \(\cref{Residue at Poles Theorem - Complex}\):
+		\begin{align*}
+			f(x) = \frac{\phi(x)}{x-x_0}
+		\end{align*}
+		Assume that \(f(x)\) is continuous on both sides of \(x_0\) and \(\phi(x)\) is continuous. Consider \(f(x_0 + c)\) and \(f(x_0 - c)\):
+		\begin{align*}
+			f(x_0 + c) &= \frac{\phi(x_0 + c)}{c} \implies \phi(x_0 + c) = c f(x_0 + c)\\
+			f(x_0 - c) &= \frac{\phi(x_0 - c)}{-c} \implies \phi(x_0 - c) = -c f(x_0 - c)
+		\end{align*}
+		Since \(\phi(x)\) is nonzero at \(x_0\) and is continuous, we can choose \(c\) such that \(\phi(x_0 + c)\) and \(\phi(x_0 - c)\) have the same sign. Therefore
+		\begin{align*}
+			f(x_0 + c) = - f(x_0 - c)
+		\end{align*}
+		}
+	\end{proof}
+	
+	From \cref{Function real on real axis implies alternating sign across simple pole on real axis theorem - Complex}, we can see that \(\Gamma(z)\) alternates signs across its simple poles.
+	
+	\begin{theorem}[Reflection Formula]
+		\index{Gamma Function! Reflection Formula}
+		\label{Gamma Function Reflection Formula - Complex}
+		\begin{align*}
+			\Gamma(z) \Gamma(z-1) &= \frac{\pi}{\sin(\pi z)}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		Consider the Gamma function with the change of variable \(t = y^2\), \(dt = 2ydy\):
+		\begin{align*}
+			\Gamma(z) = 2 \int_{0}^{\infty} y^{2z-1} e^{-y^2} dy
+		\end{align*}
+		Then letting \(x = y\):
+		\begin{align*}
+			\Gamma(1-z) = 2 \int_{0}^{\infty} x^{1-2z} e^{-x^2} dx
+		\end{align*}
+		Multiplying the two equations together:
+		\begin{align*}
+			\Gamma(z) \Gamma(1-z)
+			= 4 \int_{0}^{\infty} \int_{0}^{\infty} 
+				y^{2z-1} x^{1-2z} e^{-x^2} e^{-y^2} dx dy
+		\end{align*}
+		Switching to polar coordinates:
+		\begin{align*}
+			\Gamma(z) \Gamma(1-z)
+			&= 4 \int_{0}^{\pi/2} \int_{0}^{\infty} [r\sin(\theta)]^{2z-1} [r\cos(\theta)]^{1-2z} e^{-r^2 \cos[2](\theta)} e^{-r^2 \sin[2](\theta)} rdr d\theta \\
+			&= 4 \int_{0}^{\infty} e^{-r^2} rdr \int_{0}^{\pi/2}[\tan(\theta)]^{2z-1} d\theta
+		\end{align*}
+		Letting \(u = -r^2\):
+		\begin{align*}
+			\int_{0}^{\infty} e^{-r^2} dr 
+			= -\frac{1}{2} \int_{0}^{-\infty} e^u du
+			= \frac{1}{2} \eval{e^u}_{-\infty}^{0} = \frac{1}{2}
+		\end{align*}
+		Therefore
+		\begin{align*}
+			\Gamma(z) \Gamma(1-z) = 2\int_{0}^{\pi/2} [\tan(\theta)]^{2z-1} d\theta
+		\end{align*}
+		Letting \(x = \tan[2](\theta)\), so \(dx = 2\tan(\theta)[1+\tan[2](\theta)] d\theta\):
+		\begin{align*}
+			\Gamma(z) \Gamma(1-z) 
+			&= 2\int_{0}^{\pi/2} [\tan(\theta)]^{2z-1} d\theta  \\
+			&= 2 \int_{0}^{\infty} x^z \frac{1}{\tan(\theta)} \cdot \frac{1}{2\tan(\theta)[1+\tan[2](\theta)]} dx \\
+			&= \int_{0}^{\infty} \frac{x^z}{x(1+x)} dx
+			 = \int_{0}^{\infty} \frac{x^{z-1}}{1+x} dx
+		\end{align*}
+		From \cref{Integration along branch cut Example - Complex}, we know that 
+		\begin{align*}
+			\int_{0}^{\infty} \frac{x^{-a}}{x+1} dx &= \frac{\pi}{\sin(a\pi)}
+				& z \in (0,1)
+		\end{align*}
+		Thus 
+		\begin{align*}
+			\Gamma(z) \Gamma(1-z) 
+			= \int_{0}^{\infty} \frac{x^{z-1}}{1+x} dx
+			= \int_{0}^{\infty} \frac{x^{-(1-z)}}{x+1} dx 
+			= \frac{\pi}{\sin((1-z)\pi)} 
+			= \frac{\pi}{\sin(z\pi)}
+		\end{align*}
+	\end{proof}
+	
+	This is useful for speeding up numerical calculations.
+	
+	\begin{lemma}
+		The Reflection Formula is not restricted to \(z \in (0, 1)\).
+	\end{lemma}
+	\begin{proof}
+		We know that the Reflection Formula has zeros at \(z \in \mathbb{Z}\), which are the simple poles of either \(\Gamma(z)\) or \(\Gamma(1-z)\). If we arrange the reflection formula such that 
+		\begin{align*}
+			F(z) = \sin(\pi z) \Gamma(z) \Gamma(1-z) - \pi = 0
+		\end{align*}
+		It has to be satisfied for all \(z \in (0,1)\), so it has removable singularities at \(z \in \mathbb{Z}\), and can be made analytic everywhere using the integral definition of the Gamma Function.
+		
+		Zeros on the other hand, \(\forall z \in (0, 1)[F(z) = 0]\), hence the zeros are not isolated, and \(\forall z \in \mathbb{C}[F(z) = 0]\).
+		
+		Thus, the Reflection Formula fails to be analytic only when \(z \in \mathbb{Z}\).
+	\end{proof}
+	
+	\begin{lemma}
+		\label{Gamma Function has no zeros in Complex Plane Lemma - Complex}
+		\(\Gamma(z)\) has non zeros in the complex plane, and \(1/\Gamma(z)\) is entire. . 
+	\end{lemma}
+	\begin{proof}
+		Poles:
+		\begin{align*}
+			\Gamma(z) 	&\text{ at } z \in \mathbb{Z} \setminus \mathbb{N} \\
+			\Gamma(1-z) &\text{ at } z \in \mathbb{N}
+		\end{align*}
+		\(F(z) = = \sin(\pi z) \Gamma(z) \Gamma(1-z) - \pi = 0\) tells us that if
+		\begin{align*}
+			\exists z_0 \in \mathbb{C} [\Gamma(z_0) = 0] 
+			&\implies \Gamma(1-z_0) \text{ must be pole to satisfy equation} \\
+			&\implies z_0 \in \mathbb{N}
+		\end{align*}
+		But
+		\begin{align*}
+			\Gamma(z_0) &= (z_0 - 1)! & z_0 \in \mathbb{N}
+		\end{align*}
+		Contradiction! Thus \(\Gamma(z)\) has no zeros in the complex plane and \(1/\Gamma(z)\) is entire.
+	\end{proof}
+
+	\textbf{Computing \(\Gamma(z)\) for odd half integers of z:} \newline
+	Consider \(z = 1/2\), then
+	\begin{align*}
+		\Gamma(1/2) \Gamma(1-1/2) = \Gamma^{2}(1/2) = \frac{\pi}{\sin(\pi/2)} = \pi \implies \Gamma(1/2) = \pm \sqrt{\pi}
+	\end{align*}
+	Integral definition of Gamma Function is positive for \(x > 0\):
+	\begin{align*}
+		\Gamma(1/2) = \sqrt{\pi}
+	\end{align*}
+	Then using 
+	\begin{align*}
+		\Gamma(z) = \frac{\Gamma(z+1)}{z}
+	\end{align*}
+	We can quickly compute \(\Gamma(z)\) for \(z \in \{\pm 1/2, \pm 3/2, \pm 5/2, \ldots\}\)
 
 	\chapter{Mapping by Elementary Functions} \label{Mapping by Elementary Functions Chapter - Complex}
 	

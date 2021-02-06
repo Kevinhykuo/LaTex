@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  5 FEB 2021 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  5 FEB 2021 22:09
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1769,7 +1769,7 @@ Overfull \hbox (5.87373pt too wide) detected at line 5379
 [115 <./tikz/MathNotes-figure36.pdf>] [116] [117] [118] [119]
 ===== Image 'tikz/MathNotes-figure37' is up-to-date. ======
 [120 <./tikz/MathNotes-figure37.pdf>]
-Overfull \hbox (5.2982pt too wide) detected at line 5869
+Overfull \hbox (5.2982pt too wide) detected at line 5870
 []
  []
 
@@ -1803,7 +1803,7 @@ Chapter 17.
 ===== Image 'tikz/MathNotes-figure44' is up-to-date. ======
 [154 <./tikz/MathNotes-figure43.pdf>] [155 <./tikz/MathNotes-figure44.pdf>]
 [156] [157] [158] [159] [160] [161] [162] [163]
-Overfull \hbox (23.8825pt too wide) in paragraph at lines 8179--8179
+Overfull \hbox (23.8825pt too wide) in paragraph at lines 8180--8180
 |[]\OT1/cmr/bx/n/17.28 Behaviour of Func-tions Near Iso-lated Sin-gu-lar Points
 | 
  []
@@ -1811,7 +1811,7 @@ Overfull \hbox (23.8825pt too wide) in paragraph at lines 8179--8179
 [164] [165]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 8255.
+(hyperref)                removing `math shift' on input line 8256.
 
 [166]
 ===== Image 'tikz/MathNotes-figure45' is up-to-date. ======
@@ -1828,14 +1828,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [175 <./tikz/MathNotes-figure50.pdf>] [176]
 ===== Image 'tikz/MathNotes-figure51' is up-to-date. ======
 
-Overfull \hbox (7.90346pt too wide) detected at line 9119
+Overfull \hbox (7.90346pt too wide) detected at line 9121
 []
  []
 
 [177 <./tikz/MathNotes-figure51.pdf>]
 ===== Image 'tikz/MathNotes-figure52' is up-to-date. ======
 [178 <./tikz/MathNotes-figure52.pdf>]
-Overfull \hbox (7.25365pt too wide) detected at line 9250
+Overfull \hbox (7.25365pt too wide) detected at line 9252
 []
  []
 
@@ -1849,81 +1849,77 @@ Overfull \hbox (7.25365pt too wide) detected at line 9250
 [189 <./tikz/MathNotes-figure56.pdf>] [190] [191] [192] [193] [194] [195]
 
 LaTeX Warning: Reference `Uniform Convergence Definition - Real' on page 1 unde
-fined on input line 10336.
+fined on input line 10338.
 
-[196]
+[196] [197] [198] [199] [200]
 Chapter 18.
-[197
+[201
 
-] [198
+] [202
 
 ]
 Chapter 19.
-[199] [200
-
-] [201] [202] [203
-
-] [204
+[203] [204
 
 ] [205] [206] [207
 
 ] [208
 
-] [209] [210
+] [209] [210] [211
 
-]
-Chapter 20.
-[211] [212
+] [212
 
 ] [213] [214
 
-] [215] [216
+]
+Chapter 20.
+[215] [216
 
 ] [217] [218
 
+] [219] [220
+
+] [221] [222
+
 ]
 Chapter 21.
-[219] [220
-
-]
-Chapter 22.
-[221] [222
-
-]
-Chapter 23.
 [223] [224
 
 ]
-Chapter 24.
+Chapter 22.
 [225] [226
 
 ]
-Chapter 25.
+Chapter 23.
 [227] [228
 
 ]
-Chapter 26.
+Chapter 24.
 [229] [230
 
 ]
-Chapter 27.
+Chapter 25.
 [231] [232
 
-] [233] [234
+]
+Chapter 26.
+[233] [234
 
-] [235] [236
+]
+Chapter 27.
+[235] [236
+
+] [237] [238
+
+] [239] [240
 
 ]
 Chapter 28.
-[237] [238
+[241] [242
 
 ]
 Chapter 29.
-[239] [240
-
-] [241] [242
-
-] [243] [244
+[243] [244
 
 ] [245] [246
 
@@ -1931,22 +1927,26 @@ Chapter 29.
 
 ] [249] [250
 
+] [251] [252
+
+] [253] [254
+
 ]
 Chapter 30.
-[251] [252
+[255] [256
 
-] [253
+] [257
 
-] [254
+] [258
 
 ]
 runsystem(makeindex MathNotes.idx)...executed.
 
- (./MathNotes.ind [255
+ (./MathNotes.ind [259
 
-] [256] [257])
+] [260] [261])
 
-(./MathNotes.bbl [258]) [259
+(./MathNotes.bbl [262]) [263
 
 ] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
@@ -1959,10 +1959,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 41387 strings out of 479382
- 940417 string characters out of 5869369
- 1363307 words of memory out of 5000000
- 56469 multiletter control sequences out of 15000+600000
+ 41418 strings out of 479382
+ 941530 string characters out of 5869369
+ 1363869 words of memory out of 5000000
+ 56484 multiletter control sequences out of 15000+600000
  445575 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,19n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1996,10 +1996,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (273 pages, 1036016 bytes).
+Output written on MathNotes.pdf (277 pages, 1047975 bytes).
 PDF statistics:
- 4185 PDF objects out of 4296 (max. 8388607)
- 3664 compressed objects within 37 object streams
- 1164 named destinations out of 1200 (max. 500000)
+ 4221 PDF objects out of 4296 (max. 8388607)
+ 3696 compressed objects within 37 object streams
+ 1180 named destinations out of 1200 (max. 500000)
  1514 words of extra memory for PDF output out of 10000 (max. 10000000)
 

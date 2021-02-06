@@ -142,6 +142,9 @@
   \indexspace
 
   \item Gamma Function, 196
+    \subitem  Complex, 197
+    \subitem  Factorials, 196
+    \subitem  Reflection Formula, 198
   \item Gauss's Mean Value Theorem, 118
   \item Green's Function, 195
 
@@ -201,6 +204,7 @@
   \item Maclaurin Series, 131
   \item Maximum Modulus Principle, 119
   \item Mean Value Theorem, 94
+    \subitem  Gauss's, 118
   \item ML Inequality, 98
   \item Modulus, 32
   \item Morera's Theorem, 106

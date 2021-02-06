@@ -122,6 +122,7 @@
 \indexentry{Liouville's Theorem}{117}
 \indexentry{Fundamental Theorem of Algebra}{117}
 \indexentry{Gauss's Mean Value Theorem}{118}
+\indexentry{Mean Value Theorem! Gauss's}{118}
 \indexentry{Maximum Modulus Principle}{119}
 \indexentry{Poisson Integral Formula! Circle Interior}{122}
 \indexentry{Poisson Integral Formula! Upper Half-Plane}{123}
@@ -234,3 +235,6 @@
 \indexentry{Analyticity! Function! Integration to Infinity}{196}
 \indexentry{M-Test! Integration to Infinity}{196}
 \indexentry{Gamma Function}{196}
+\indexentry{Gamma Function! Factorials}{196}
+\indexentry{Gamma Function! Complex}{197}
+\indexentry{Gamma Function! Reflection Formula}{198}
