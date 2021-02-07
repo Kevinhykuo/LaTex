@@ -10595,8 +10595,62 @@
 	
 	\section{Linear Transformations} \label{Linear Transformations Section - Complex}
 	
+	\begin{definition}[Linear Transformation]
+		\index{Linear Transformation}
+		\label{Linear Transformation Definition - Complex}
+		Let \(A, B \in \mathbb{C}\):
+		\begin{align*}
+			w = Az + B
+		\end{align*}
+	\end{definition}
 	
+	We can see that \(A = \abs{A}e^{i\arg(A)}\) which scales by \(A\) and rotates by \(\arg(A)\), while \(B\) is a translation. The linear transformation scales, rotates, and translates the elements in the complex plane.
 	
+	\section{Transformation \(w = 1/z\)} \label{Transformation w=1/z Section - Complex}
+	
+	\(f(z) = 1/z\) is a 1-1 mapping from \(\mathbb{C}\setminus\{0\} \mapsto \mathbb{C}\setminus\{0\}\). If we consider:
+	\begin{align*}
+		\abs{z}^2 = z \bar{z} \implies \frac{1}{z} = \frac{\bar{z}}{\abs{z}^2}
+	\end{align*}
+	We can see that \(1/z\) maps the points exterior to the unit circle onto nonzero point within the unit circle (from \(1/\abs{z}\)), followed by an reflection on the real axis (from \(\bar{z}\)).
+	
+	To make the transformation continuous on the extended complex plane, we can define:
+	\begin{align*}
+		T(z) &= \frac{1}{z}	& z \neq 0
+	\end{align*} 
+	Then 
+	\begin{align*}
+		\lim_{z \rightarrow 0} \frac{1}{T(z)} = \lim_{z \rightarrow 0} z = 0
+			&\implies \lim_{z \rightarrow 0} T(z) = \infty \\
+		\lim_{z \rightarrow 0} \frac{1}{T\left(\frac{1}{z}\right)} = \lim_{z \rightarrow 0} z = 0
+		&\implies \lim_{z \rightarrow 0} T(z) = 0 
+	\end{align*}
+	To make it continuous, we can define:
+	\begin{align*}
+		T(0) &= \infty	&
+		T(\infty) &= 0	&
+		T(z) &= \frac{1}{z}
+	\end{align*}
+	
+	\subsection{Mapping by \(1/z\)} \label{Mapping by 1/z Subsection - Complex}
+	
+	Letting \(w = u + iv\) and \(z = x + iy = 1/w\):
+	\begin{align*}
+		w = \frac{\bar{z}}{z\bar{z}} = \frac{\bar{z}}{\abs{z}^2}
+			&\implies \left[u = \frac{x}{x^2 + y^2}\right] \land \left[v = \frac{-y}{x^2 + y^2}\right] \\
+		z = \frac{1}{w} = \frac{\bar{w}}{w\bar{w}} = \frac{\bar{w}}{\abs{w}^2}
+			&\implies \left[x = \frac{u}{u^2 + v^2}\right] \land \left[y = \frac{-v}{u^2 + v^2}\right] 
+	\end{align*}
+	
+	We can see that \(w = 1/z\) transforms circles and lines into circles and lines by letting:
+	\begin{align*}
+		B^2 + C^2 &> 4AD	&	A,B,C,D \in \mathbb{R} 
+	\end{align*}
+	Then the equation represents an arbitrary circle or line:
+	\begin{align*}
+		A(x^2 + y^2) + Bx + Cy + D = 0
+	\end{align*}
+
 	
 	
 	

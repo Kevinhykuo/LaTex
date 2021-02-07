@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  5 FEB 2021 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.26)  6 FEB 2021 21:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1468,7 +1468,7 @@ ut line 321.
 ] (./MathNotes.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
  [7] [8] [9] [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1242) has occurred while \output is active []
 
  [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1853,13 +1853,22 @@ fined on input line 10338.
 
 [196] [197] [198] [199] [200]
 Chapter 18.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 10609.
+
 [201
 
-] [202
-
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 10635.
+
+[202]
 Chapter 19.
-[203] [204
+[203
+
+] [204
 
 ] [205] [206] [207
 
@@ -1952,18 +1961,18 @@ runsystem(makeindex MathNotes.idx)...executed.
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: CEF123B66FD6FF8C56ADC47A47ECB9D5;10454.
+(rerunfilecheck)             Checksum: 017A29E93EDE8C5AE57C7912D173A84E;10597.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 41418 strings out of 479382
- 941530 string characters out of 5869369
- 1363869 words of memory out of 5000000
- 56484 multiletter control sequences out of 15000+600000
- 445575 words of font info for 170 fonts, out of 8000000 for 9000
+ 41438 strings out of 479382
+ 942048 string characters out of 5869369
+ 1364171 words of memory out of 5000000
+ 56498 multiletter control sequences out of 15000+600000
+ 446447 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,19n,98p,859b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}{/
@@ -1996,10 +2005,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (277 pages, 1047975 bytes).
+Output written on MathNotes.pdf (277 pages, 1051736 bytes).
 PDF statistics:
- 4221 PDF objects out of 4296 (max. 8388607)
- 3696 compressed objects within 37 object streams
- 1180 named destinations out of 1200 (max. 500000)
- 1514 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4235 PDF objects out of 4296 (max. 8388607)
+ 3709 compressed objects within 38 object streams
+ 1184 named destinations out of 1200 (max. 500000)
+ 1530 words of extra memory for PDF output out of 10000 (max. 10000000)
 
