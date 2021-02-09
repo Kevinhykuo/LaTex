@@ -123,6 +123,7 @@
 \contentsline {section}{\numberline {18.1}Linear Transformations}{201}{section.18.1}%
 \contentsline {section}{\numberline {18.2}Transformation \(w = 1/z\)}{201}{section.18.2}%
 \contentsline {subsection}{\numberline {18.2.1}Mapping by \(1/z\)}{202}{subsection.18.2.1}%
+\contentsline {section}{\numberline {18.3}Linear Fractional Transformations}{202}{section.18.3}%
 \contentsline {chapter}{\numberline {19}Conformal Mapping}{203}{chapter.19}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{205}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{207}{part.6}%

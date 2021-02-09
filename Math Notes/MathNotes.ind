@@ -24,6 +24,7 @@
 
   \item Bessel Functions
     \subitem  First Kind, 137
+  \item Bilinear Transform, 202
   \item Bolzano-Weierstrass Theorem, 163
   \item Branch, 82
     \subitem  Cut, 82
@@ -193,6 +194,7 @@
   \item Line Integral
     \subitem  Complex, 96
     \subitem  Real, 96
+  \item Linear Fractional Transformation, 202
   \item Linear Transformation, 201
   \item Liouville's Theorem, 117
   \item Logarithm
@@ -209,6 +211,7 @@
   \item ML Inequality, 98
   \item Modulus, 32
   \item Morera's Theorem, 106
+  \item Möbius Transform, 202
 
   \indexspace
 

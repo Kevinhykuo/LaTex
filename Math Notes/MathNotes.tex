@@ -10642,15 +10642,46 @@
 			&\implies \left[x = \frac{u}{u^2 + v^2}\right] \land \left[y = \frac{-v}{u^2 + v^2}\right] 
 	\end{align*}
 	
-	We can see that \(w = 1/z\) transforms circles and lines into circles and lines by letting:
+	We can see that \(w = 1/z\) transforms circles and lines into circles and lines by letting the equations represents an arbitrary circle or line:
 	\begin{align*}
+		A(x^2 + y^2) + Bx + Cy + D &= 0 &
 		B^2 + C^2 &> 4AD	&	A,B,C,D \in \mathbb{R} 
 	\end{align*}
-	Then the equation represents an arbitrary circle or line:
+	We need \(B^2 + C^2 > 4AD\) since completing the squares tells us:
 	\begin{align*}
-		A(x^2 + y^2) + Bx + Cy + D = 0
+		\left(x + \frac{B}{2A}\right)^2 + \left(y + \frac{C}{2A}\right)^2 
+		= \left(\frac{\sqrt{B^2 + C^2 - 4AD}}{2A}\right)^2
 	\end{align*}
+	After substituting \(u\) and \(v\), and rearranging:
+	\begin{align*}
+		A(x^2 + y^2) + Bx + Cy + D &= 0 &
+			B^2 + C^2 &> 4AD	&	A,B,C,D \in \mathbb{R} \\
+		D(u^2 + v^2) + Bu - Cv + A &= 0
+	\end{align*}
+	It is clear that transforming from \(z\) to \(w\)-plane:
+	\begin{itemize}
+		\item[1.] Circle not passing through origin (\(A \neq 0, \ D\neq 0\)) \(\mapsto\) Circle not passing through origin
+		\item[2.] Circle through origin (\(A\neq 0, \ D = 0\)) \(\mapsto\) Line not passing through origin
+		\item[3.] Line not passing through origin (\(A = 0, \ D \neq 0\)) \(\mapsto\) Circle through origin
+		\item[4.] Line through origin (\(A = 0, \ D = 0\)) \(\mapsto\) Line through origin
+	\end{itemize}
 
+	\section{Linear Fractional Transformations} \label{Linear Fractional Transformations Section - Complex}
+		
+	\begin{definition}[Linear Fractional / Bilinear / Möbius Transform]
+		\index{Linear Fractional Transformation}
+		\index{Bilinear Transform}
+		\index{Möbius Transform}
+		\label{Linear Fractional Transform Definition - Complex}
+		The transform
+		\begin{align*}
+			w &= \frac{az + b}{cz + d}	&	ad - bc \neq 0
+		\end{align*}
+		Alternate form
+		\begin{align*}
+			Azw + Bz + Cw + D &= 0	&	AD - BC \neq 0
+		\end{align*}
+	\end{definition}
 	
 	
 	
