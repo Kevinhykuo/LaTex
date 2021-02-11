@@ -25,6 +25,7 @@
   \item Bessel Functions
     \subitem  First Kind, 137
   \item Bilinear Transform, 202
+    \subitem  Implicit Form, 204
   \item Bolzano-Weierstrass Theorem, 163
   \item Branch, 82
     \subitem  Cut, 82
@@ -195,7 +196,10 @@
     \subitem  Complex, 96
     \subitem  Real, 96
   \item Linear Fractional Transformation, 202
+    \subitem  Implicit Form, 204
   \item Linear Transformation, 201
+  \item Linera Fractional Transformation
+    \subitem  Fixed Points, 204
   \item Liouville's Theorem, 117
   \item Logarithm
     \subitem  Identities, 83
@@ -212,6 +216,7 @@
   \item Modulus, 32
   \item Morera's Theorem, 106
   \item Möbius Transform, 202
+    \subitem  Implicit Form, 204
 
   \indexspace
 

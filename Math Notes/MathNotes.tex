@@ -10684,7 +10684,206 @@
 			Azw + Bz + Cw + D &= 0	&	AD - BC \neq 0
 		\end{align*}
 	\end{definition}
+	We can see that:
+	\begin{align*}
+		w &= \frac{az + b}{cz + d} \iff w = \frac{a}{c} + \frac{bc - ad}{c} \cdot \frac{1}{cz + d}
+			& ad - bc \neq 0
+	\end{align*}
+	Thus the Linear Fractional Transformation is composed of the transformations:
+	\begin{align*}
+		Z &= cz + d & 
+		W &= \frac{1}{Z} & 
+		w &= \frac{a}{c} + \frac{bc - ad}{c} \cdot W
+	\end{align*}
+	So any linear fractional transformation transforms circles and lines into circles and lines. 
+
+	If we solve for \(z\):
+	\begin{align*}
+		z &= \frac{-dw + b}{cw - a} &
+		ad - bc \neq 0
+	\end{align*}
 	
+	We can extend the transformation to the extended complex plane by defining:
+	\begin{align*}
+		T(z) &= \frac{az + d}{cz + d} & & & ad - bc &\neq 0 \\
+		T(\infty) &= \infty & & & c &= 0\\
+		T(\infty) &= \frac{a}{c} & T \left(-\frac{d}{c}\right) &= \infty & c &\neq 0
+	\end{align*}
+	This then becomes a 1-1 mapping from the extended \(z\)-plane to the extended \(w\)-plane. Hence there is an inverse transformation:
+	\begin{align*}
+		T^{-1}(w) = z \iff T(z) = w
+	\end{align*}
+	Hence 
+	\begin{align*}
+		T^{-1}(w) &= \frac{dw + b}{cw - a} & & & ad - bc &\neq 0 \\
+		T^{-1}(\infty) &= \infty & & & c &= 0\\
+		T^{-1}\left(\frac{a}{c}\right) &= \infty & T^{-1} \left(\infty\right) &= - \frac{d}{c} & c &\neq 0
+	\end{align*}
+
+	\begin{example}
+		Suppose we need to find the transformation corresponding to the mapping:
+		\begin{align*}
+			z_1 = 1 &\mapsto w_1 = i &
+			z_2 = 0 &\mapsto w_2 = \infty &
+			z_3 = -1 &\mapsto w_3 = 1
+		\end{align*}
+		Therefore
+		\begin{align*}
+			z_2 = 0 \mapsto w_2 = \infty 
+			&\implies (c \neq 0) \land (d=0)
+			\implies w = \frac{az + b}{cz}
+				& bc \neq 0
+		\end{align*}
+		Since \(z_1 = 1 \mapsto w_1 = i\) and \(z_3 = -1 \mapsto w_3 = 1\):
+		\begin{align*}
+			[ic = a + b] \land [-c = -a + b] 
+			\implies [2a = (1 + i)c] \land [2b = (i - 1)c]
+		\end{align*}
+		Subbing into \(w = (az + b)/(cz)\):
+		\begin{align*}
+			w = \frac{(i + 1)z + (i - 1)}{2z}
+		\end{align*}
+	\end{example}
+
+	\subsection{Implicit Form} \label{Implicit Form Subsection - Complex}
+	
+	\begin{definition}[Implicit Form of Linear Fractional Transformation]
+		\index{Linear Fractional Transformation! Implicit Form}
+		\index{Bilinear Transform! Implicit Form}
+		\index{Möbius Transform! Implicit Form}
+		\label{Linear Fractional Transformaiton Implicit Form Definition - Complex}
+		A linear fractional transformation that maps \(z_1 \mapsto w_1\), \(z_2 \mapsto w_2\), and \(z_3 \mapsto w_3\):
+		\begin{align*}
+			\frac{(w - w_1)(w_2 - w_3)}{(w - w_3)(w_2 - w_1)} 
+			= \frac{(z - z_1)(z_2 - z_3)}{(z - z_3)(z_2 - z_1)}
+		\end{align*}
+	\end{definition}
+
+	We can verify the mapping by writing
+	\begin{align*}
+		(z - w_3)(w - w_1)(w_2 - w_3) = (z-z_1)(w-w_3)(z_2 - z_3)(w_2 - w_1)
+	\end{align*}
+	It follows that \(z = z_1 \implies w = w_1\) and \(z = z_3 \implies w = w_3\). If \(z = z_2\), then
+	\begin{align*}
+		(w - w_1)(w_2 - w_3) = (w - w_3)(w_2 - w_1) \implies w = w_2
+	\end{align*}
+	Since it is a linear fractional transformation, we can write it in the form:
+	\begin{align*}
+		Azw + Bz + Cw + D &= 0 & AD - BC \neq 0 
+	\end{align*}
+	
+	\begin{example}
+		Consider again finding the transformation corresponding to the mapping:
+		\begin{align*}
+			z_1 = 1 &\mapsto w_1 = i &
+			z_2 = 0 &\mapsto w_2 = \infty &
+			z_3 = -1 &\mapsto w_3 = 1
+		\end{align*}
+		Substituting into the implicit form of the linear fractional transformation:
+		\begin{align*}
+			\frac{w - w_1}{w - w_3} = \frac{(z-z_1)(z_2 - z_3)}{(z - z_3)(z_2 - z_1)}
+			\implies \frac{w - i}{w - 1} = \frac{(z - 1)(0 + 1)}{(z + 1)(0 - 1)}
+			\implies w = \frac{(i-1)z + (i - 1)}{2z}
+		\end{align*}
+	\end{example}
+
+	\begin{example}Show every linear fractional transformation has at most 2 fixed points, unless it is the identity transform.
+		\label{Linear Fractional Transformation has at most 2 fixed points Example - Complex}
+		\index{Linera Fractional Transformation! Fixed Points} 
+		
+		\begin{proof}
+		{\color{Grey}
+		A point of transformation \(T(z)\) is fixed if \(T(z_0) = z_0\), then 
+		\begin{align*}
+			z = \frac{az + b}{cz + d} 
+			&\implies cz^2 + dz = az + b \implies cz^2 + (d - a)z - b = 0 \\
+			&\implies z = \frac{a - d \pm \sqrt{(d-a)^2 + 4cb}}{2c}
+		\end{align*}
+		Thus \(T(z)\) has at most 2 fixed points.}
+		\end{proof}
+	\end{example}
+	
+	\begin{example}Linear fractional transformation that maps 3 distinct points in the extended \(z\)-plane to the extended \(w\)-plane are unique.
+		\begin{proof}
+			{\color{Grey}
+			Let \(T\) and \(S\) be two linear fractional transformations.
+			\begin{align*}
+				T(z) &= \frac{a_1 z + b_1}{c_1 z + d_1}
+					& a_1 d_1 - b_1 c_1 \neq 0 \\
+				S^{-1}(w) &= \frac{a_2 w + b_2}{c_2 w + d_2}
+					& a_2 d_2 - b_2 c_2 \neq 0
+			\end{align*}
+			Then
+			\begin{align*}
+				S^{-1}[T(z)] 
+				&= \left[a_2 \frac{a_1 z + b_1}{c_1 z + d_1} + b_2\right]\left[c_2 \frac{a_1 z + b_1}{c_1 z + d_1} + d_2\right]^{-1} \\
+				&= \left[\frac{a_1 a_2 z + a_2 b_1 + b_2 c_1 z + b_2 d_1}{c_1 z + d_1}\right]\left[\frac{c_1 z + d_1}{a_1 c_2 z + b_1 c_2 + c_1 d_2 z + d_1 d_2}\right] \\
+				&= \frac{(a_1 a_2 + b_2 c_1)z + (a_2 b_1 + b_2 d_1)}{(a_1 c_2 + c_1 d_2)z + (b_1 c_2 + d_1 d_2)}
+				 = \frac{a_3 z + b_3}{c_3 z + d_3} \\
+			\end{align*}
+			Where
+			\begin{align*}
+				& a_3 d_3 - b_3 c_3 \\
+				&= (a_1 a_2 + b_2 c_1)(b_1 c_2 + d_1 d_2) - (a_2 b_1 + b_2 d_1)(a_1 c_2 + c_1 d_2) \\
+				&= a_1 a_2 b_1 c_2 + a_1 a_2 d_1 d_2 + b_1 b_2 c_1 c_2 + b_2 c_1 d_1 d_2 - a_1 a_2 b_1 c_2 - a_2 b_1 c_1 d_2 - a_1 b_2 c_2 d_1 - b_2 c_1 d_1 d_2 \\
+				&= a_1 a_2 d_1 d_2 + b_1 b_2 c_1 c_2 - a_2 b_1 c_1 d_2 - a_1 b_2 c_2 d_1 \\
+				&= (a_1 d_1 - b_1 c_1)(a_2 d_2 - b_2 c_2) \neq 0
+			\end{align*}
+			Suppose that for the three unique points \(z_k\), \(k = 1, 2, 3\):
+			\begin{align*}
+				S^{-1}[T(z_k)] = \frac{a_3 z_k + b_3}{c_3 z_k + d_3} = z_k
+			\end{align*}
+			We know from previous example that any linear fractional transformation has at most two fixed points, unless it is the identity transformation. Since we have three fixed points, this implies \(\forall z\), \(S^{-1}[T(z)] = z\), which implies \(T(z) = S(z)\), so transformations are unique.
+			}
+		\end{proof}
+	\end{example}
+	
+	\begin{example}
+		Prove a linear fractional transformation is an automorphism of the real axis \(\iff\) coefficients in the transformation are all real, except possibly for a common complex factor. 
+		\begin{proof}
+			{\color{Grey}
+			\begin{align*}
+				T(x) = \frac{ax + b}{cx + d} = u \in \mathbb{R}
+			\end{align*}
+			This implies
+			\begin{align*}
+				ax + b = cxu + du \in \mathbb{R}
+			\end{align*}
+			It is clear that \(a, b, c, d \in \mathbb{R}\), unless they share a common complex factor.
+			}
+		\end{proof}
+	\end{example}
+
+	\begin{example}
+		Show for 
+		\begin{align*}
+			T(z) &= \frac{az + b}{cz + d} & ad - bc \neq 0
+		\end{align*}
+		which is any linear fractional transformation other than the identity. 
+		\begin{align*}
+			T^{-1} = T \iff d = -a
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			\begin{align*}
+				T(z) = \frac{az + b}{cz + d} = w 
+				&\implies az + b = czw + dw \implies az - czw = dw - b \\
+				&\implies z(a - cw) = dw - b\implies z = \frac{dw - b}{-cw + a}
+			\end{align*}
+			Therefore
+			\begin{align*}
+				T = T^{-1}
+				&\implies \frac{az + b}{cz + d} = \frac{dz - b}{-cz + a} \\
+				&\implies -acz^2 + a^2 z - bcz + ab = cdz^2 + d^2 z - bcz - bd \\
+				&\implies c(a+d)z^2 + (d^2 - a^2)z - b(a+d) = 0 \\
+				&\implies(a + d)[cz^2 + (d-a)z - b] = 0 \\
+				&\implies d = -a
+			\end{align*}
+			}
+		\end{proof}
+	\end{example}
+	
+	\section{Mappings of the Upper Half Plane} \label{Mappings of the Upper Half Plane Section - Complex}
 	
 	
 	
