@@ -10885,6 +10885,94 @@
 	
 	\section{Mappings of the Upper Half Plane} \label{Mappings of the Upper Half Plane Section - Complex}
 	
+	\begin{theorem}
+		A linear fractional transformation that maps \(\Im{z}> 0 \mapsto \abs{w}<1\) and \(\Im{z} = 0 \mapsto \abs{z}=1\) is of the form:
+		\begin{align*}
+			w &= e^{i\alpha} \cdot \frac{z-z_0}{z-\overline{z_0}}
+				& \Im{z_0} > 0, \alpha \in \mathbb{R}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\textbf{\underline{Mapping \(\implies\) equation:}}
+		Consider mapping \(z = 0, 1, \infty \mapsto \abs{w} = 1\)
+		\begin{align*}
+			w &= \frac{az + b}{cz + d} & ad - bc \neq 0 
+		\end{align*}
+		So
+		\begin{align*}
+			[z = 0 \mapsto \abs{w} = 1 \implies \abs{b/d} = 0] &\implies \abs{b} = \abs{d} = 0 \\
+			[z = \infty \mapsto w \in \mathbb{C} \impliedby c \neq 0] &\implies w = \frac{a}{c} \\
+			&\implies \left[\abs{w} = 1 \implies \abs{\frac{a}{c}} = 1\right] \\ 
+			&\implies \abs{a} = \abs{c} \neq 0
+		\end{align*}
+		Then, we can write:
+		\begin{align*}
+			w &= \frac{a}{c} \cdot \frac{z + (b/a)}{z + (d/c)} = e^{i\alpha} \cdot \frac{z-z_0}{z-z_1} &
+				\abs{\frac{a}{c}} = 1 \implies \abs{\frac{b}{a}} = \abs{\frac{d}{c}} \neq 0 \implies \abs{z_1} = \abs{z_0} \neq 0
+		\end{align*}
+		Imposing \(z = 1 \mapsto \abs{w} = 1\):
+		\begin{align*}
+			\abs{1 - z_1} = \abs{1 - z_0} \implies (1 - z_1)(1 - \overline{z_1}) = (1-z_0)(1-\overline{z_0})
+		\end{align*}
+		\(\abs{z_1} = \abs{z_0} \implies z_1 \overline{z_1} = z_0 \overline{z_0}\):
+		\begin{align*}
+			z_1 + \overline{z_1} = z_0 + \overline{z_0} 
+			&\implies \Re{z_1} = \Re{z_0} \\ 
+			&\implies [z_1 = z_0] \lor [z_1 = \overline{z_0}]
+		\end{align*}
+		Since \(z_1 = z_0 \implies w = e^{i\alpha}\), we choose
+		\begin{align*}
+			z_1 = \overline{z_0} \implies w = e^{i\alpha} \cdot \frac{z-z_0}{z-\overline{z_0}}
+		\end{align*}
+		
+		\textbf{\underline{Equation \(\implies\) mapping:}} \newline
+		\begin{align*}
+			w = e^{i\alpha}\frac{z - z_0}{z-\overline{z_0}} \implies \abs{w} = \frac{\abs{z-z_0}}{\abs{z-\overline{z_0}}}
+		\end{align*}
+		If \(\Im{z}>0\), then \(z\) and \(z_0\) lie on the same side of the axis. Then \(\abs{z-z_0} < \abs{z-\overline{z_0}}\), so \(\abs{w}<1\). If \(\Im{z}<0\), then \(z\) and \(z_0\) lie on the opposite side of the axis. Then \(\abs{z-z_0} > \abs{z-\overline{z_0}}\), so \(\abs{w} > 1\). If \(z \in \mathbb{R}\). Then \(\abs{z-z_0} = \abs{z-\overline{z_0}}\), so \(\abs{w} = 1\). The statement then follows. 
+	\end{proof}
+
+	\begin{example}
+		Consider
+		\begin{align*}
+			w = \frac{z-1}{z+1}
+		\end{align*}
+		Then letting \(z = x + iy\) and \(w = u + iv\):
+		\begin{align*}
+			w 
+			&= \frac{z - 1}{z + 1} \cdot \frac{\bar{z} + 1}{\bar{z} - 1} 
+			 = \frac{z\bar{z} + z - \bar{z} - 1}{z\bar{z} - z + \bar{z} - 1}
+			 = u + iv
+		\end{align*}
+		Not that \(z \in \mathbb{R} \implies w \in \mathbb{r}\), so \(y = 0 \mapsto v = 0\). For any point \(w\) in the finite \(w\)-plane:
+		\begin{align*}
+			v &= \Im{w} = \Im{\frac{(z-1)(\bar{z}+1)}{(z+1)(\overline{z + 1})}} = \frac{2y}{
+			\abs{z + 1}^2}
+				& z \neq -1
+		\end{align*}
+		We can see \(y\) and \(v\) have the same sign, so \(\Im{z}>0 \mapsto \Im{w} > 0\), and \(\Im{z}<0 \mapsto \Im{w}<0\). Since a linear fractional transformation is 1-1, the mapping is 1-1.
+	\end{example}
+	
+	\begin{example}
+		Consider 
+		\begin{align*}
+			w = \operatorname{Log}\left(\frac{z-1}{z+1}\right)
+		\end{align*}
+		This is composed of the two transformations:
+		\begin{align*}
+			Z &= \frac{z-1}{z+1} & w = \operatorname{Log}(Z)
+		\end{align*}
+		The first mapping follows from the previous example. The second mapping:
+		\begin{align*}
+			\operatorname{Log}(Z) &= \ln(R) + i \Theta
+				& R>0, \ -\pi < \Theta < \pi
+		\end{align*}
+		So letting \(Z = X + iY\). The second mapping maps \(Y>0 \mapsto v \in [0,\pi]\) and \(X, Y \mapsto \ln(R)\), and \(Y<0 \mapsto v \in [-\pi, 0]\) and \(X, Y \mapsto \ln(R)\). (The upper and lower half plane is mapped to values between \(-\pi i\) and \(\pi i\), and real values to \(\ln \abs{z}\)).
+	\end{example}
+
+	\section{Mappings by the Exponential Function} \label{Mappings by the Exponential Function Section - Complex}
+	
+	
 	
 	
 	
