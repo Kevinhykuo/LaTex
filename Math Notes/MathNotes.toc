@@ -128,6 +128,7 @@
 \contentsline {section}{\numberline {18.4}Mappings of the Upper Half Plane}{206}{section.18.4}%
 \contentsline {section}{\numberline {18.5}Mappings by the Exponential Function}{208}{section.18.5}%
 \contentsline {section}{\numberline {18.6}Mapping by \(w = \sin (z)\)}{209}{section.18.6}%
+\contentsline {subsection}{\numberline {18.6.1}Mappings of Vertical Line Segments}{209}{subsection.18.6.1}%
 \contentsline {chapter}{\numberline {19}Conformal Mapping}{211}{chapter.19}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{213}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{215}{part.6}%
