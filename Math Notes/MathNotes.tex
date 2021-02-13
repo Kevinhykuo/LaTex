@@ -15,6 +15,7 @@
 
 \setlength{\parindent}{0em} %Set indent on paragraph
 \setlength{\parskip}{0.5em} %Set spaces between paragraphs
+\setlength{\headheight}{15pt}
 
 \newcommand\showdiv[1]{\overline{\smash{\hstretch{.5}{)}\mkern-3.2mu\hstretch{.5}{)}}#1}}
 \newcommand\ph[1]{\textcolor{white}{#1}}
@@ -337,19 +338,19 @@
 		content...
 	\end{partintro}
 	
-	\chapter{Natural \(\mathbb{N} \)} \label{Natural Chapter - Numbers}
+	\chapter{Natural \texorpdfstring{\(\mathbb{N}\)}{TEXT}} \label{Natural Chapter - Numbers}
 	
-	\chapter{Integers \(\mathbb{Z} \)} \label{Integers Chapter - Numbers}
+	\chapter{Integers \texorpdfstring{\(\mathbb{Z}\)}{TEXT}} \label{Integers Chapter - Numbers}
 	
-	\chapter{Rationals \(\mathbb{Q} \)} \label{Rationals Chapter - Numebers}
+	\chapter{Rationals \texorpdfstring{\(\mathbb{Q}\)}{TEXT}} \label{Rationals Chapter - Numebers}
 	
 	\chapter{Constructible} \label{Constructible Chapter - Numbers}
 	
-	\chapter{Algebraic \(\mathbb{A} \)} \label{Algebraic Chapter - Numbers}
+	\chapter{Algebraic \texorpdfstring{\(\mathbb{A}\)}{TEXT}} \label{Algebraic Chapter - Numbers}
 	
-	\chapter{Reals \(\mathbb{R} \)} \label{Reals Chapter - Numbers}
+	\chapter{Reals \texorpdfstring{\(\mathbb{R}\)}{TEXT}} \label{Reals Chapter - Numbers}
 	
-	\chapter{Complex \(\mathbb{C} \)} \label{Complex Chapter - Numbers}
+	\chapter{Complex \texorpdfstring{\(\mathbb{C}\)}{TEXT}} \label{Complex Chapter - Numbers}
 	
 
 	
@@ -375,7 +376,7 @@
 	
 	\section{Subsequences} \label{Subsequences Section - Real Analysis}
 	
-	\section{$\lim \operatorname{sup}$ and $\lim \operatorname{inf}$} \label{lim sup and lim inf Section - Real Analysis}
+	\section{\texorpdfstring{\(\lim \operatorname{sup}\)}{TEXT} and \texorpdfstring{\(\lim \operatorname{inf}\)}{TEXT}} \label{lim sup and lim inf Section - Real Analysis}
 	
 	\section{Series} \label{Series Section - Real Analysis}
 	
@@ -701,7 +702,7 @@
 			& \operatorname{Arg}\left(\frac{z_1}{z_2}\right) &= \operatorname{Arg}(z_1) - \operatorname{Arg}(z_2)
 	\end{align*}
 
-	\section{Roots of $z$} \label{Roots of z Sections - Complex}
+	\section{Roots of \texorpdfstring{\(z\)}{TEXT}} \label{Roots of z Sections - Complex}
 	In \cref{Exponential Form of z - Complex}, you might be wondering why $z^n = r^n e^{i n \theta}$ is not for $n \in \mathbb{R}$. That is because there is more things to consider, which we will explore in this section. Recall that $z = re^(i \theta) = re^{i (\theta + 2n \pi)}$ for $n \in \mathbb{Z}$. 
 	
 	\begin{definition}[Exponential of $z$ \index{Exponential! Complex Number}]
@@ -753,7 +754,7 @@
 %				\path (current bounding box.north east) -- 
 %				(current bounding box.south east) coordinate[midway] (2BL);
 			\end{tikzpicture}
-			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z) = z^{1/5}}}$}
+			{\Large $\xrightarrow{\mathmakebox[2cm] {f(z) = z^{1/5}}}$}
 %			\hspace*{2.8cm}
 			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
@@ -968,7 +969,7 @@
 					};
 				\end{axis}
 			\end{tikzpicture}
-			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z_0) = z + z_0}}$}
+			{\Large $\xrightarrow{\mathmakebox[2cm] {f(z_0) = z + z_0}}$}
 			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					%					small,
@@ -1033,7 +1034,7 @@
 				\draw[->, very thick](axis cs:0,0)--(axis cs:1, 0);
 				\end{axis}
 			\end{tikzpicture}
-			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z_0) = z \cdot z_0}}$}
+			{\Large $\xrightarrow{\mathmakebox[2cm] {f(z_0) = z \cdot z_0}}$}
 			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
@@ -1659,7 +1660,7 @@
 			\path (current bounding box.north east) -- 
 			(current bounding box.south east) coordinate[midway] (2BL);
 		\end{tikzpicture}
-		{$\Large \xrightarrow{\mathmakebox[2cm]f}$}
+		{\Large $\xrightarrow{\mathmakebox[2cm]f}$}
 %		\hspace*{2.8cm}
 		\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 			\begin{axis}[
@@ -8253,7 +8254,7 @@
 	\end{proof}
 	If \(g(z_0) = 0\) then \(g\) has zero of order \(m\) at \(z_0\) (\(g(z_0) \nequiv 0 \) in \( \abs{z-z_0} < \delta\)), then \(f\) has pole of order \(m\) at \(z_0\) (\cref{Function pole order takes on zero order of quotient Theorem - Complex}). Hence, contradiction!
 	
-	\subsection{Poles of Order \(m\)}
+	\subsection{Poles of Order \texorpdfstring{\(m\)}{TEXT}}
 	\index{Function! Behaviour Near Poles of Order}
 	\index{Pole! Function Behaviour Near of Order}
 	
@@ -10606,7 +10607,7 @@
 	
 	We can see that \(A = \abs{A}e^{i\arg(A)}\) which scales by \(A\) and rotates by \(\arg(A)\), while \(B\) is a translation. The linear transformation scales, rotates, and translates the elements in the complex plane.
 	
-	\section{Transformation \(w = 1/z\)} \label{Transformation w=1/z Section - Complex}
+	\section{Transformation \texorpdfstring{\(w = 1/z\)}{TEXT}} \label{Transformation w=1/z Section - Complex}
 	
 	\(f(z) = 1/z\) is a 1-1 mapping from \(\mathbb{C}\setminus\{0\} \mapsto \mathbb{C}\setminus\{0\}\). If we consider:
 	\begin{align*}
@@ -10632,7 +10633,7 @@
 		T(z) &= \frac{1}{z}
 	\end{align*}
 	
-	\subsection{Mapping by \(1/z\)} \label{Mapping by 1/z Subsection - Complex}
+	\subsection{Mapping by \texorpdfstring{\(1/z\)}{TEXT}} \label{Mapping by 1/z Subsection - Complex}
 	
 	Letting \(w = u + iv\) and \(z = x + iy = 1/w\):
 	\begin{align*}
@@ -10972,6 +10973,7 @@
 
 	\section{Mappings by the Exponential Function} \label{Mappings by the Exponential Function Section - Complex}
 	
+	\index{Mapping! Exponential}
 	We can see
 	\begin{align*}
 		w = e^z = e^x e^{iy} = \rho e^{i \phi}
@@ -10980,9 +10982,8 @@
 	
 	\begin{figure}[H]
 		\centering
-		\begin{tikzpicture}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
 			\begin{axis}[
-				width=8.9cm,
 				unit vector ratio=1 1 1,
 				xlabel={$x$},
 				ylabel={$y$},
@@ -10991,8 +10992,6 @@
 				axis lines = middle,
 				ticks=none,
 				grid=none,
-				major tick style={draw=none},
-				minor tick style={draw=none},
 				]
 				
 				\draw[line width=1pt, color=Blue, 
@@ -11008,20 +11007,17 @@
 				node[pos=0.8, right] {\(x = c_1\)};
 			\end{axis}
 		\end{tikzpicture}
-		{\Large $\xrightarrow{\mathmakebox[2cm] {f(z)=e^z}}$}
-		\begin{tikzpicture}
+		{\Large \(\xrightarrow{\mathmakebox[2cm] {f(z)=e^z}}\)}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
 			\begin{axis}[
-				width=8.9cm,
 				unit vector ratio=1 1 1,
 				xlabel={$u$},
 				ylabel={$v$},
 				xmin=-10, xmax=10,
 				ymin=-10, ymax=10,
 				axis lines = middle,
-				xticklabels={}, yticklabels={},
+				ticks = none,
 				grid=none,
-				major tick style={draw=none},
-				minor tick style={draw=none},
 				]
 				
 				\draw[line width=1pt, color=Blue, 
@@ -11049,8 +11045,114 @@
 	\end{figure}
 	
 	\begin{example}
-		content
+		Consider the mapping of \(x \in [a, b]\) and \(y \in [c,d]\) onto the region \(\rho \in [e^a, e^b]\) and \(\phi \in [c, d]\). Then the mapping is as follows:
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-2, xmax=10,
+					ymin=-1, ymax=10,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(2, 3) [\(A\)]
+						(8, 3) [\(B\)]
+						(8, 7) [\(C\)]
+						(2, 7) [\(D\)]
+					};
+					
+					\draw[line width=1pt,
+					postaction={decorate}]
+					(axis cs: 2, 3)--(axis cs: 8, 3);
+					
+					\draw[line width=1pt,
+					postaction={decorate}]
+					(axis cs: 8, 3)--(axis cs: 8, 7);
+					
+					\draw[line width=1pt,
+					postaction={decorate}]
+					(axis cs: 8, 7)--(axis cs: 2, 7);
+					
+					\draw[line width=1pt,
+					postaction={decorate}]
+					(axis cs: 2, 7)--(axis cs: 2, 3);
+				\end{axis}
+			\end{tikzpicture}
+			{\Large \(\xrightarrow{\mathmakebox[2cm] {f(z)=e^z}}\)}
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-1, xmax=10,
+					ymin=-1, ymax=10,
+					axis lines = middle,
+					ticks = none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						({5*cos(20)}, {5*sin(20)}) [\(A'\)]
+						({8*cos(20)}, {8*sin(20)}) [\(B'\)]
+						({8*cos(70)}, {8*sin(70)}) [\(C'\)]
+						({5*cos(70)}, {5*sin(70)}) [\(D'\)]
+					};
+					
+					\draw[line width=1pt,]
+					(axis cs: {5*cos(70)}, {5*sin(70)}) -- (axis cs: {8*cos(70)}, {8*sin(70)});
+					
+					\draw[line width=1pt,]
+					(axis cs: {5*cos(20)}, {5*sin(20)}) -- (axis cs: {8*cos(20)}, {8*sin(20)});
+					
+					\draw[-]
+					(axis cs: 0, 0) -- (axis cs: {5*cos(70)}, {5*sin(70)});
+					
+					\draw[-]
+					(axis cs: 0, 0) -- (axis cs: {5*cos(20)}, {5*sin(20)});
+					
+					\draw[line width=1pt,]
+					(axis cs: {5*cos(20)}, {5*sin(20)}) arc (20:70:50);
+					
+					\draw[line width=1pt,]
+					(axis cs: {8*cos(20)}, {8*sin(20)}) arc (20:70:80);
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 2, 0) arc (0:70:20)
+					node[pos=0.8, right] {\(\phi = d\)};
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 3, 0) arc (0:20:30)
+					node[pos=0.5, right] {\(\phi = c\)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
 	\end{example}
+
+	\section{Mapping by \texorpdfstring{\(w = \sin(z)\)}{TEXT}} \label{Mapping by sine Section - Complex}
+	
+	\index{Mapping! Sine}
 	
 	
 	

@@ -1198,7 +1198,7 @@ tion.
 \c@corollary=\count355
 \c@definition=\count356
 \c@example=\count357
-No file tikz/MathNotes-figure59.aux.
+No file tikz/MathNotes-figure60.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
 LaTeX Font Info:    ... okay on input line 141.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
@@ -2646,13 +2646,13 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-\openout4 = `tikz/MathNotes-figure59.dpth'.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+\openout4 = `tikz/MathNotes-figure60.dpth'.
 
 [202
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
 Chapter 19.
 Chapter 20.
 Chapter 21.
@@ -2671,12 +2671,12 @@ Chapter 30.
 l.11298 	
           
 Here is how much of TeX's memory you used:
- 42652 strings out of 479302
- 943739 string characters out of 5867266
- 1374400 words of memory out of 5000000
- 59037 multiletter control sequences out of 15000+600000
+ 42754 strings out of 479302
+ 946295 string characters out of 5867266
+ 1376957 words of memory out of 5000000
+ 59139 multiletter control sequences out of 15000+600000
  446748 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,19n,105p,898b,2507s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,19n,105p,898b,2608s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 !  ==> Fatal error occurred, no output PDF file produced!
