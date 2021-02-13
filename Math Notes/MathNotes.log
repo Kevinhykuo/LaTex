@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  12 FEB 2021 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  12 FEB 2021 20:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1994,6 +1994,9 @@ Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
 (rerunfilecheck)             Checksum: 9698DA955BEBBB70A35B605D04D58B32;26408.
