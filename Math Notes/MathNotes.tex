@@ -1515,7 +1515,7 @@
 %				\path (current bounding box.north east) -- 
 %				(current bounding box.south east) coordinate[midway] (2BL);
 			\end{tikzpicture}
-			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z)=z^2}}$}
+			{\Large $\xrightarrow{\mathmakebox[2cm] {f(z)=z^2}}$}
 %			\hspace*{2.8cm}
 			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
@@ -1587,7 +1587,7 @@
 					\draw[->, draw=Red] (axis cs:-0.485,-5.1) -- (axis cs:-0.51,-5);
 				\end{axis}
 			\end{tikzpicture}
-			{$\Large \xrightarrow{\mathmakebox[2cm] {f(z)=z^2}}$}
+			{\Large $\xrightarrow{\mathmakebox[2cm] {f(z)=z^2}}$}
 			\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 				\begin{axis}[
 					width=8.9cm,
@@ -2109,7 +2109,7 @@
 				\draw[-,draw=Black]  (axis cs: 8,8) to ["$\delta$"] (axis cs: 6,8);
 			\end{axis}
 		\end{tikzpicture}
-		{$\Large \xrightarrow{\mathmakebox[1cm]f}$}
+		{\Large $\xrightarrow{\mathmakebox[1cm]f}$}
 		\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 			\begin{axis}[
 				width=6cm,
@@ -2136,7 +2136,7 @@
 				\draw[-,draw=Black]  (axis cs: -4,2) to ["$\gamma$"] (axis cs: -7,2);
 			\end{axis}
 		\end{tikzpicture}
-		{$\Large \xrightarrow{\mathmakebox[1cm]{g(f)}}$}
+		{\Large $\xrightarrow{\mathmakebox[1cm]{g(f)}}$}
 		\begin{tikzpicture}[remember picture, baseline=(current bounding box.center)]
 			\begin{axis}[
 				width=6cm,
@@ -10972,9 +10972,85 @@
 
 	\section{Mappings by the Exponential Function} \label{Mappings by the Exponential Function Section - Complex}
 	
+	We can see
+	\begin{align*}
+		w = e^z = e^x e^{iy} = \rho e^{i \phi}
+	\end{align*}
+	Thus \(\Re{z}\) gets mapped to rays emanating from the origin, while \(\Im{z}\) determines the angle of said ray.
 	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=8.9cm,
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-2, xmax=10,
+				ymin=-1, ymax=10,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				major tick style={draw=none},
+				minor tick style={draw=none},
+				]
+				
+				\draw[line width=1pt, color=Blue, 
+				decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: -2, 5)--(axis cs: 10, 5)
+				 node[pos=0.8, below] {\(y = c_2\)};
+				
+				\draw[line width=1pt, color=Red,
+				decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 5, -1)--(axis cs: 5, 10) 
+				node[pos=0.8, right] {\(x = c_1\)};
+			\end{axis}
+		\end{tikzpicture}
+		{\Large $\xrightarrow{\mathmakebox[2cm] {f(z)=e^z}}$}
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=8.9cm,
+				unit vector ratio=1 1 1,
+				xlabel={$u$},
+				ylabel={$v$},
+				xmin=-10, xmax=10,
+				ymin=-10, ymax=10,
+				axis lines = middle,
+				xticklabels={}, yticklabels={},
+				grid=none,
+				major tick style={draw=none},
+				minor tick style={draw=none},
+				]
+				
+				\draw[line width=1pt, color=Blue, 
+				decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 0) -- (axis cs: 6, 8);
+				
+				\draw[ 
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 0) -- (axis cs: {6*cos(53.13)}, {6*sin(53.13)})
+				node[pos=0.8, right] {\(\rho = e^{c_1}\)};
+				
+				\draw[line width=1pt, color=Red,
+				decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 6, 0) arc (0:360:60);
+				
+				\draw[decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 2, 0) arc (0:53.13:20)
+				node[pos=0.5, right] {\(\phi = c_2\)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
-	
+	\begin{example}
+		content
+	\end{example}
 	
 	
 	
