@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  13 FEB 2021 23:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  13 FEB 2021 23:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1894,19 +1894,21 @@ l.11147 			\end{tikzpicture}
 (That was another \errmessage.)
 
 [208]
-<Python/Mapping_by_Sine_V.pdf, id=3714, 722.7pt x 289.08pt>
+<Python/Mapping_by_Sine_V.pdf, id=3719, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_V.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11177
 .
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [209 <./Python/Mapping_by_Sine_V.pdf>]
-<Python/Mapping_by_Sine_H.pdf, id=3760, 722.7pt x 289.08pt>
+<Python/Mapping_by_Sine_H.pdf, id=3765, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_H.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11202
 .
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
+\openout3 = `tikz/MathNotes-figure61.md5'.
+
 \openout3 = `MathNotes.auxlock'.
 
 
@@ -1933,7 +1935,7 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11263 			\end{tikzpicture}
+l.11265 			\end{tikzpicture}
                             
 (That was another \errmessage.)
 
@@ -1962,7 +1964,7 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11300 			\end{tikzpicture}
+l.11302 			\end{tikzpicture}
                             
 (That was another \errmessage.)
 
@@ -2063,26 +2065,17 @@ Package cleveref Info: loaded `english' language definitions on input line 21.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `MathNotes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MathNotes.out':
-(rerunfilecheck)             Before: DB9E7190351EEB68129502DE76E9E6BD;26556
-(rerunfilecheck)             After:  75AB83278721DBA54179FF402E4EFE02;26700.
+Package rerunfilecheck Info: File `MathNotes.out' has not changed.
+(rerunfilecheck)             Checksum: 75AB83278721DBA54179FF402E4EFE02;26700.
  ) 
 Here is how much of TeX's memory you used:
- 44957 strings out of 479302
- 1000463 string characters out of 5867266
- 1426203 words of memory out of 5000000
- 60027 multiletter control sequences out of 15000+600000
+ 44960 strings out of 479302
+ 1000513 string characters out of 5867266
+ 1426299 words of memory out of 5000000
+ 60030 multiletter control sequences out of 15000+600000
  446447 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,19n,102p,1426b,2617s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,19n,102p,1426b,2604s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}{/
 usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/
 local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/loca
@@ -2113,10 +2106,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (286 pages, 1114197 bytes).
+Output written on MathNotes.pdf (286 pages, 1113715 bytes).
 PDF statistics:
- 4421 PDF objects out of 5155 (max. 8388607)
- 3828 compressed objects within 39 object streams
+ 4425 PDF objects out of 5155 (max. 8388607)
+ 3832 compressed objects within 39 object streams
  1233 named destinations out of 1440 (max. 500000)
- 1588 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1596 words of extra memory for PDF output out of 10000 (max. 10000000)
 

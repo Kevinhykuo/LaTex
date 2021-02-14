@@ -11251,7 +11251,9 @@
 					\draw[line width=1pt]
 					(axis cs: {pi/2}, 0)--(axis cs: {pi/2}, 1);
 					
-					\draw[line width=1pt]
+					\draw[line width=1pt,
+					decoration={markings, mark=at position 0.25 with {\arrow{<}} },
+					postaction={decorate}]
 					(axis cs: {pi/2}, 1)--(axis cs: {-pi/2}, 1);
 					
 					\draw[line width=1pt]
