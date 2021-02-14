@@ -3,7 +3,7 @@
 \usepackage[letterpaper, portrait, margin=2.5cm]{geometry} %Set paper type, format, margin
 \usepackage[svgnames]{xcolor}
 \usepackage{%abstract, 
-	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, hyperref, imakeidx, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wrapfig}
+	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, graphicx, hyperref, imakeidx, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wrapfig}
 \usepackage{cleveref}
 \usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings,backgrounds,patterns, arrows.meta}
 \usepgfplotslibrary{groupplots}
@@ -646,7 +646,7 @@
 		\end{align*}
 	\end{proof}
 
-	The proof hints that \cref{de Moivre's Formula Theorem - Complex} can be generalized to $\forall n \in \mathbb{R}$, which we will see shortly in \cref{Roots of z Section - Complex}. Using \cref{de Moivre's Formula Theorem - Complex}, we can obtain the double angle identities.
+	The proof hints that \cref{de Moivre's Formula Theorem - Complex} can be generalized to $\forall n \in \mathbb{R}$, which we will see shortly in \cref{Roots of z Sections - Complex}. Using \cref{de Moivre's Formula Theorem - Complex}, we can obtain the double angle identities.
 	
 	\begin{corollary}[Double Angle Identities \index{Double Angle Identities}]
 		\begin{align*}
@@ -11152,12 +11152,202 @@
 	
 	\index{Mapping! Sine}
 	
-	\subsection{Mappings of Vertical Line Segments} \label{Mappings of Vertical Line Segments by Sine Subsection - Complex}
+%	\subsection{Mappings of Vertical Line Segments} \label{Mappings of Vertical Line Segments by Sine Subsection - Complex}
+	\textbf{Mappings of Vertical Line Segments}
 	
+	Recall: \(\sin(z) = \sin(x) \cosh(y) + i \cos(x) \sinh(y)\), so the transformation \(w = \sin(z)\) for \(z = x + iy\):
+	\begin{align*}
+		w = u + i v = \sin(x) \cosh(y) + i \cos(x) \sinh(y)
+	\end{align*}
 	
+	Looking at vertical line segments, we set \(x = c_1\) where \(c_1 \in \mathbb{R}\).
+	\begin{align*}
+		[u = \sin(c_1) \cosh(y)] \land [v = \cos(c_1)\sinh(y)]
+		\implies \frac{u^2}{\sin[2](c_1)} - \frac{v^2}{\cos[2](c_1)} = 1
+	\end{align*}
+	This gives a hyperbola with foci at points 
+	\begin{align*}
+		w = \pm \sqrt{\sin[2](c_1) + \cos[2](c_1)} = \pm 1
+	\end{align*}
+
+	If we look at the \(y\) and \(v\)-axis,  \((0, y) \mapsto (0, \sinh(y))\), so the mapping is 1-1. As \(y\) increases, so does \(\sinh(y)\).
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\linewidth]{Python/Mapping_by_Sine_V}
+		\label{fig:mappingbysinev}
+		\caption*{}
+	\end{figure}
+
+%	\subsection{Mappings of the Horizontal Line Segments} \label{Mappings of the Horizontal Line Segments by Sine Subsection - Complex}
+	\textbf{Mappings of the Horizontal Line Segments}
 	
+	As before, we have:
+	\begin{align*}
+		u &= \sin(x) \cosh(c_2) & v &= \cos(x) \sinh(c_2)
+	\end{align*}
+	Which gives us the ellipse
+	\begin{align*}
+		\frac{u^2}{\cosh[2](c_2)} + \frac{v^2}{\sinh[2](c_2)} = 1
+	\end{align*}
+	with foci
+	\begin{align*}
+		w = \pm \sqrt{\cosh[2](c_2) - \sinh[2](c_2)} = \pm 1
+	\end{align*}
+
+	Since \(u = \sin(x) \cosh(c_2)\) and \(v = \cos(x) \sinh(c_2)\) we can see that as \(x\) increases, the ellipse goes around in a clockwise direction. 
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\linewidth]{Python/Mapping_by_Sine_H}
+		\caption*{}
+		\label{fig:mappingbysineh}
+	\end{figure}
+
+	\textbf{Summary}
+	
+	Basically, the mapping \(w = \sin(z)\) maps vertical line segments to hyperbolas and horizontal line segments to ellipses.
+
+	\begin{example}
+		The following rectangular region is mapped onto the semi-elliptical region in a 1-1 manner.
+		We have the mapping of the points:
+		\begin{align*}
+			A = (\pi/2, 0) &\mapsto A' = (1, 0) &
+			B = (\pi/2, bi) &\mapsto B' = (\cosh(b), 0) \\
+			C = (0, bi) &\mapsto C'=(0, \sinh(b)) &
+			D = (-\pi/2, bi) &\mapsto D' = (-\cosh(b), 0) \\
+			E = (-\pi/2, 0) &\mapsto E' = (-1, 0) &
+			F = (0,0) &\mapsto F' = (0,0)
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-2, xmax=2,
+					ymin=-0.2, ymax=2,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						({pi/2}, 0) [\(A\)]
+						({pi/2}, 1) [\(B\)]
+						(0, 1)		[\(C\)]
+						({-pi/2}, 1) [\(D\)]
+						({-pi/2}, 0) [\(E\)]
+						(0, 0) [\(F\)]
+					};
+					
+					\draw[line width=1pt]
+					(axis cs: {pi/2}, 0)--(axis cs: {pi/2}, 1);
+					
+					\draw[line width=1pt]
+					(axis cs: {pi/2}, 1)--(axis cs: {-pi/2}, 1);
+					
+					\draw[line width=1pt]
+					(axis cs: {-pi/2}, 1)--(axis cs: {-pi/2}, 0);
+					
+					\draw[line width=1pt]
+					(axis cs: {-pi/2}, 0)--(axis cs: {pi/2}, 0);
+				\end{axis}
+			\end{tikzpicture}
+			{\Large \(\xrightarrow{\mathmakebox[2cm] {f(z)=\sin(z)}}\)}
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-10, xmax=10,
+					ymin=-0.2, ymax=8,
+					axis lines = middle,
+					ticks = none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(3, 0) [\(A'\)]
+						(8, 0) [\(B'\)]
+						(0, 5) [\(C'\)]
+						(-8, 0) [\(D'\)]
+						(-3, 0) [\(E'\)]
+						(0, 0) [\(F'\)]
+					};
+					
+					\draw[line width=1pt,]
+					(axis cs: 8, 0) -- (axis cs: -8, 0);
+					
+					\draw[line width=1pt,
+					decoration={markings, mark=at position 0.125 with {\arrow{<}} },
+					postaction={decorate}]
+					(axis cs: 0,0) ellipse (8 and 5);
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	\end{example}
+	
+	\subsection{Related Mappings} \label{Related Mappings to Sine Subsection - Complex}
+	
+	\begin{example}
+		\index{Mapping! Cosine}
+		Consider 
+		\begin{align*}
+			w = \cos(z) = \sin(z + \frac{\pi}{2})
+		\end{align*}
+		It is clear the cosine is just the sine function translated to the right by \(\pi / 2\). It is composed of the transformations:
+		\begin{align*}
+			Z &= z + \frac{\pi}{2} & w = \sin(Z)
+		\end{align*}
+	\end{example}
+
+	\begin{example}
+		\index{Mapping! Hyperbolic Sine}
+		Consider
+		\begin{align*}
+			w = \sinh(z) = -i\sin(iz)
+		\end{align*}
+		Which is the composite of transformations
+		\begin{align*}
+			Z &= iz & W &= \sin(Z) & w &= -iW
+		\end{align*}
+		Hence, it is the sine transformation with rotations by \(\pi/2\) and \(-\pi/2\).
+	\end{example}
+
+	\begin{example}
+		\index{Mapping! Hyperbolic Cosine}
+		Consider
+		\begin{align*}
+			w = \cosh(z) = \cos(iz)
+		\end{align*}
+		Which is the a rotation by \(\pi /2 \) followed by a cosine transform.
+		Using
+		\begin{align*}
+			\sin(z + \frac{\pi}{2}) &= \cos(z) & \cos(iz) &= \cosh(z)
+		\end{align*}
+		We can write \(w = \cosh(z)\):
+		\begin{align*}
+			w &= \sin(Z) & Z &= iz + \frac{\pi}{2}
+		\end{align*}
+	\end{example}
+	
+	\section{Mappings by \texorpdfstring{\(z^2\)}{TEXT}} \label{Mappings by z^2 Section - Complex}
+	
+	\index{Mapping! \texorpdfstring{\(z^2\)}{TEXT}}
 	
 	
 	

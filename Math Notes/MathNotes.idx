@@ -248,3 +248,7 @@
 \indexentry{Linera Fractional Transformation! Fixed Points}{204}
 \indexentry{Mapping! Exponential}{208}
 \indexentry{Mapping! Sine}{209}
+\indexentry{Mapping! Cosine}{211}
+\indexentry{Mapping! Hyperbolic Sine}{211}
+\indexentry{Mapping! Hyperbolic Cosine}{211}
+\indexentry{Mapping! \texorpdfstring{\(z^2\)}{TEXT}}{211}

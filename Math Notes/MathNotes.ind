@@ -210,7 +210,11 @@
     \subitem  Integration to Infinity, 196
   \item Maclaurin Series, 131
   \item Mapping
+    \subitem  \texorpdfstring{\(z^2\)}{TEXT}, 211
+    \subitem  Cosine, 211
     \subitem  Exponential, 208
+    \subitem  Hyperbolic Cosine, 211
+    \subitem  Hyperbolic Sine, 211
     \subitem  Sine, 209
   \item Maximum Modulus Principle, 119
   \item Mean Value Theorem, 94

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  12 FEB 2021 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  13 FEB 2021 23:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -249,6 +249,19 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameSep=\dimen184
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen185
+\Gin@req@width=\dimen186
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
 (/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -277,7 +290,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen185
+\@linkdim=\dimen187
 \Hy@linkcounter=\count279
 \Hy@pagecounter=\count280
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -312,7 +325,7 @@ Package hyperref Info: Bookmarks ON on input line 4445.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen186
+\XeTeXLinkMargin=\dimen188
 (/usr/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
@@ -320,8 +333,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count283
-\Field@Width=\dimen187
-\Fld@charsize=\dimen188
+\Field@Width=\dimen189
+\Fld@charsize=\dimen190
 Package hyperref Info: Hyper figures OFF on input line 6075.
 Package hyperref Info: Link nesting OFF on input line 6080.
 Package hyperref Info: Hyper index ON on input line 6083.
@@ -381,21 +394,21 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@tracingmulticols=\count290
 \mult@box=\box53
-\multicol@leftmargin=\dimen189
+\multicol@leftmargin=\dimen191
 \c@unbalance=\count291
 \c@collectmore=\count292
 \doublecol@number=\count293
 \multicoltolerance=\count294
 \multicolpretolerance=\count295
-\full@width=\dimen190
-\page@free=\dimen191
-\premulticols=\dimen192
-\postmulticols=\dimen193
+\full@width=\dimen192
+\page@free=\dimen193
+\premulticols=\dimen194
+\postmulticols=\dimen195
 \multicolsep=\skip76
 \multicolbaselineskip=\skip77
 \partial@page=\box54
 \last@line=\box55
-\maxbalancingoverflow=\dimen194
+\maxbalancingoverflow=\dimen196
 \mult@rightbox=\box56
 \mult@grightbox=\box57
 \mult@gfirstbox=\box58
@@ -440,9 +453,9 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@minrows=\count296
 \c@columnbadness=\count297
 \c@finalcolumnbadness=\count298
-\last@try=\dimen195
-\multicolovershoot=\dimen196
-\multicolundershoot=\dimen197
+\last@try=\dimen197
+\multicolovershoot=\dimen198
+\multicolundershoot=\dimen199
 \mult@nat@firstbox=\box97
 \colbreak@box=\box98
 \mc@col@check@num=\count299
@@ -462,16 +475,16 @@ LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \g_MT_multlinerow_int=\count300
-\l_MT_multwidth_dim=\dimen198
+\l_MT_multwidth_dim=\dimen256
 \origjot=\skip78
-\l_MT_shortvdotswithinadjustabove_dim=\dimen199
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen256
-\l_MT_above_intertext_sep=\dimen257
-\l_MT_below_intertext_sep=\dimen258
-\l_MT_above_shortintertext_sep=\dimen259
-\l_MT_below_shortintertext_sep=\dimen260
+\l_MT_shortvdotswithinadjustabove_dim=\dimen257
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen258
+\l_MT_above_intertext_sep=\dimen259
+\l_MT_below_intertext_sep=\dimen260
+\l_MT_above_shortintertext_sep=\dimen261
+\l_MT_below_shortintertext_sep=\dimen262
 \xmathstrut@box=\box99
-\xmathstrut@dim=\dimen261
+\xmathstrut@dim=\dimen263
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
 Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
@@ -556,7 +569,7 @@ Package: multirow 2021/01/29 v2.7 Span multiple rows of a table
 \multirow@colwidth=\skip79
 \multirow@cntb=\count301
 \multirow@dima=\skip80
-\bigstrutjot=\dimen262
+\bigstrutjot=\dimen264
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTleft=\skip81
@@ -564,7 +577,7 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTpre=\skip83
 \LTpost=\skip84
 \LTchunksize=\count302
-\LTcapwidth=\dimen263
+\LTcapwidth=\dimen265
 \LT@head=\box100
 \LT@firsthead=\box101
 \LT@foot=\box102
@@ -576,23 +589,15 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LT@p@ftn=\toks29
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/ltablex/ltablex.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/ltablex/ltablex.sty
 Package: ltablex 2014/08/13 v1.1 Modified tabularx
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen264
-\TX@old@table=\dimen265
-\TX@old@col=\dimen266
-\TX@target=\dimen267
-\TX@delta=\dimen268
+\TX@col@width=\dimen266
+\TX@old@table=\dimen267
+\TX@old@col=\dimen268
+\TX@target=\dimen269
+\TX@delta=\dimen270
 \TX@cols=\count307
 \TX@ftn=\toks30
 )) (/usr/local/texlive/2020/texmf-dist/tex/latex/polynom/polynom.sty
@@ -601,13 +606,9 @@ Package: polynom 2017/07/17 0.19 (CH,HA)
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/loc
 al/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen269
-\Gin@req@width=\dimen270
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/us
-r/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/te
-xlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/
+local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texl
+ive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks31
@@ -1394,8 +1395,8 @@ LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
 fined on input line 649.
 
 
-LaTeX Warning: Reference `Roots of z Section - Complex' on page 1 undefined on 
-input line 649.
+LaTeX Warning: Reference `Roots of z Sections - Complex' on page 1 undefined on
+ input line 649.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
@@ -2653,6 +2654,14 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+The command '\includegraphics [width=0.9\linewidth ]{Python/Mapping_by_Sine_V}'
+ has been optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=0.9\linewidth ]{Python/Mapping_by_Sine_H}'
+ has been optimized away. Use '/tikz/external/optimize=false' to disable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 Chapter 19.
 Chapter 20.
 Chapter 21.
@@ -2668,13 +2677,13 @@ Chapter 30.
 ! Undefined control sequence.
 <argument> \imki@jobname 
                          @idxfile
-l.11300 	
+l.11490 	
           
 Here is how much of TeX's memory you used:
- 42687 strings out of 479302
- 944945 string characters out of 5867266
- 1370203 words of memory out of 5000000
- 59072 multiletter control sequences out of 15000+600000
+ 42689 strings out of 479302
+ 944992 string characters out of 5867266
+ 1370220 words of memory out of 5000000
+ 59074 multiletter control sequences out of 15000+600000
  446748 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,19n,105p,898b,2463s stack positions out of 5000i,500n,10000p,200000b,80000s
