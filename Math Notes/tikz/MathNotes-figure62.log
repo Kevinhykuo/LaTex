@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  14 FEB 2021 00:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  14 FEB 2021 03:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1179,6 +1179,11 @@ Package: thm-restate 2020/08/01 v0.72
 Package: thm-amsthm 2020/08/01 v0.72
 \thmt@style@headstyle=\toks58
 ))
+\tikz/MathNotes-figure62@idxfile=\write4
+\openout4 = `tikz/MathNotes-figure62.idx'.
+
+Writing index file tikz/MathNotes-figure62.idx
+
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.external.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzl
@@ -1187,7 +1192,7 @@ ibraryexternal.code.tex
 s/tikzexternalshared.code.tex)))
 No auxiliary output files.
 
-\w@pgfexternal@auxout=\write4
+\w@pgfexternal@auxout=\write5
 Package TikZ externalization: calling \geometry{driver=none} during externaliza
 tion.
 
@@ -2657,7 +2662,7 @@ The command '\includegraphics [width=0.9\linewidth ]{Python/Mapping_by_Sine_H}'
  has been optimized away. Use '/tikz/external/optimize=false' to disable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-\openout4 = `tikz/MathNotes-figure62.dpth'.
+\openout5 = `tikz/MathNotes-figure62.dpth'.
 
 [204
 
@@ -2674,18 +2679,30 @@ Chapter 27.
 Chapter 28.
 Chapter 29.
 Chapter 30.
-! Undefined control sequence.
-<argument> \imki@jobname 
-                         @idxfile
-l.11572 	
-          
+runsystem(makeindex tikz/MathNotes-figure62.idx)...executed.
+
+(./tikz/MathNotes-figure62.ind)
+
+No file tikz/MathNotes-figure62.bbl.
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 42709 strings out of 479302
- 945575 string characters out of 5867266
- 1375847 words of memory out of 5000000
- 59094 multiletter control sequences out of 15000+600000
+ 42718 strings out of 479302
+ 945760 string characters out of 5867266
+ 1375982 words of memory out of 5000000
+ 59098 multiletter control sequences out of 15000+600000
  446748 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,19n,105p,898b,2657s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+Output written on tikz/MathNotes-figure62.pdf (1 page, 14465 bytes).
+PDF statistics:
+ 26 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!

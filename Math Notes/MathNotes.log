@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  14 FEB 2021 00:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  14 FEB 2021 04:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1283,6 +1283,12 @@ Package: thm-restate 2020/08/01 v0.72
 Package: thm-amsthm 2020/08/01 v0.72
 \thmt@style@headstyle=\toks58
 ))
+\MathNotes@idxfile=\write4
+\openout4 = `MathNotes.idx'.
+
+
+Writing index file MathNotes.idx
+
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.external.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzl
@@ -1299,12 +1305,7 @@ s/tikzexternalshared.code.tex)))
 \c@corollary=\count355
 \c@definition=\count356
 \c@example=\count357
-\MathNotes@idxfile=\write4
-\openout4 = `MathNotes.idx'.
-
-
-Writing index file MathNotes.idx
-(./MathNotes.aux)
+ (./MathNotes.aux)
 \openout1 = `MathNotes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
@@ -1524,12 +1525,7 @@ Chapter 7.
 Chapter 8.
 [19] [20
 
-] [21]
-
-LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 22 undefined 
-on input line 358.
-
-[22]
+] [21] [22]
 Chapter 9.
 [23
 
@@ -1543,16 +1539,7 @@ Chapter 10.
 Chapter 11.
 [27] [28
 
-] [29]
-
-LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 30
- undefined on input line 399.
-
-
-LaTeX Warning: Citation `Wunsh.A-Complex-Variables-2005' on page 30 undefined o
-n input line 403.
-
-[30]
+] [29] [30]
 Chapter 12.
 ===== Image 'tikz/MathNotes-figure0' is up-to-date. ======
 [31
@@ -1596,10 +1583,6 @@ age 1 undefined on input line 1446.
 [45
 
 ]
-
-LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 46
- undefined on input line 1466.
-
 ===== Image 'tikz/MathNotes-figure17' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure18' is up-to-date. ======
 [46 <./tikz/MathNotes-figure17.pdf> <./tikz/MathNotes-figure18.pdf>]
@@ -1609,10 +1592,6 @@ LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 46
 ===== Image 'tikz/MathNotes-figure22' is up-to-date. ======
 [47 <./tikz/MathNotes-figure19.pdf> <./tikz/MathNotes-figure20.pdf>] [48 <./tik
 z/MathNotes-figure21.pdf> <./tikz/MathNotes-figure22.pdf>] [49] [50]
-
-LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 51 undefined 
-on input line 1870.
-
 ===== Image 'tikz/MathNotes-figure23' is up-to-date. ======
 [51] [52 <./tikz/MathNotes-figure23.pdf>] [53] [54]
 ===== Image 'tikz/MathNotes-figure24' is up-to-date. ======
@@ -1623,10 +1602,6 @@ hNotes-figure26.pdf>] [56]
 ===== Image 'tikz/MathNotes-figure27' is up-to-date. ======
 [57 <./tikz/MathNotes-figure27.pdf>] [58] [59] [60] [61] [62] [63] [64]
 [65] [66]
-
-LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 67
- undefined on input line 2885.
-
 ===== Image 'tikz/MathNotes-figure28' is up-to-date. ======
 [67] [68 <./tikz/MathNotes-figure28.pdf>] [69] [70] [71] [72]
 ===== Image 'tikz/MathNotes-figure29' is up-to-date. ======
@@ -1678,12 +1653,7 @@ Overfull \hbox (5.87373pt too wide) detected at line 5378
 []
  []
 
-[112 <./tikz/MathNotes-figure35.pdf>] [113]
-
-LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 11
-4 undefined on input line 5467.
-
-[114]
+[112 <./tikz/MathNotes-figure35.pdf>] [113] [114]
 ===== Image 'tikz/MathNotes-figure36' is up-to-date. ======
 [115 <./tikz/MathNotes-figure36.pdf>] [116] [117] [118] [119]
 ===== Image 'tikz/MathNotes-figure37' is up-to-date. ======
@@ -1773,200 +1743,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 10927--10928
  []
 
 [207]
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure57" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure57" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-! Package tikz Error: Sorry, the system call 'pdflatex -shell-escape -halt-on-e
-rror -interaction=batchmode -jobname "tikz/MathNotes-figure57" "\def\tikzextern
-alrealjob{MathNotes}\input{MathNotes}"' did NOT result in a usable output file 
-'tikz/MathNotes-figure57' (expected one of .pdf:.jpg:.jpeg:.png:). Please verif
-y that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-es
-cape'. Sometimes it is also named 'write 18' or something like that. Or maybe t
-he command simply failed? Error messages can be found in 'tikz/MathNotes-figure
-57.log'. If you continue now, I'll try to typeset the picture.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11007 		\end{tikzpicture}
-                           
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure58" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure58" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-! Package tikz Error: Sorry, the system call 'pdflatex -shell-escape -halt-on-e
-rror -interaction=batchmode -jobname "tikz/MathNotes-figure58" "\def\tikzextern
-alrealjob{MathNotes}\input{MathNotes}"' did NOT result in a usable output file 
-'tikz/MathNotes-figure58' (expected one of .pdf:.jpg:.jpeg:.png:). Please verif
-y that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-es
-cape'. Sometimes it is also named 'write 18' or something like that. Or maybe t
-he command simply failed? Error messages can be found in 'tikz/MathNotes-figure
-58.log'. If you continue now, I'll try to typeset the picture.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11042 		\end{tikzpicture}
-                           
-(That was another \errmessage.)
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure59" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure59" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-! Package tikz Error: Sorry, the system call 'pdflatex -shell-escape -halt-on-e
-rror -interaction=batchmode -jobname "tikz/MathNotes-figure59" "\def\tikzextern
-alrealjob{MathNotes}\input{MathNotes}"' did NOT result in a usable output file 
-'tikz/MathNotes-figure59' (expected one of .pdf:.jpg:.jpeg:.png:). Please verif
-y that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-es
-cape'. Sometimes it is also named 'write 18' or something like that. Or maybe t
-he command simply failed? Error messages can be found in 'tikz/MathNotes-figure
-59.log'. If you continue now, I'll try to typeset the picture.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11090 			\end{tikzpicture}
-                            
-(That was another \errmessage.)
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure60" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure60" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-! Package tikz Error: Sorry, the system call 'pdflatex -shell-escape -halt-on-e
-rror -interaction=batchmode -jobname "tikz/MathNotes-figure60" "\def\tikzextern
-alrealjob{MathNotes}\input{MathNotes}"' did NOT result in a usable output file 
-'tikz/MathNotes-figure60' (expected one of .pdf:.jpg:.jpeg:.png:). Please verif
-y that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-es
-cape'. Sometimes it is also named 'write 18' or something like that. Or maybe t
-he command simply failed? Error messages can be found in 'tikz/MathNotes-figure
-60.log'. If you continue now, I'll try to typeset the picture.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11147 			\end{tikzpicture}
-                            
-(That was another \errmessage.)
-
-[208]
-<Python/Mapping_by_Sine_V.pdf, id=3719, 722.7pt x 289.08pt>
+===== Image 'tikz/MathNotes-figure57' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure58' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure59' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure60' is up-to-date. ======
+[208 <./tikz/MathNotes-figure57.pdf> <./tikz/MathNotes-figure58.pdf>]
+<Python/Mapping_by_Sine_V.pdf, id=3762, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_V.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11177
 .
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
- [209 <./Python/Mapping_by_Sine_V.pdf>]
-<Python/Mapping_by_Sine_H.pdf, id=3765, 722.7pt x 289.08pt>
+ [209 <./tikz/MathNotes-figure59.pdf> <./tikz/MathNotes-figure60.pdf> <./Python
+/Mapping_by_Sine_V.pdf>]
+<Python/Mapping_by_Sine_H.pdf, id=3821, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_H.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11202
 .
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
-\openout3 = `MathNotes.auxlock'.
 
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure61" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure61" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-! Package tikz Error: Sorry, the system call 'pdflatex -shell-escape -halt-on-e
-rror -interaction=batchmode -jobname "tikz/MathNotes-figure61" "\def\tikzextern
-alrealjob{MathNotes}\input{MathNotes}"' did NOT result in a usable output file 
-'tikz/MathNotes-figure61' (expected one of .pdf:.jpg:.jpeg:.png:). Please verif
-y that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-es
-cape'. Sometimes it is also named 'write 18' or something like that. Or maybe t
-he command simply failed? Error messages can be found in 'tikz/MathNotes-figure
-61.log'. If you continue now, I'll try to typeset the picture.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11265 			\end{tikzpicture}
-                            
-(That was another \errmessage.)
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure62" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure62" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-! Package tikz Error: Sorry, the system call 'pdflatex -shell-escape -halt-on-e
-rror -interaction=batchmode -jobname "tikz/MathNotes-figure62" "\def\tikzextern
-alrealjob{MathNotes}\input{MathNotes}"' did NOT result in a usable output file 
-'tikz/MathNotes-figure62' (expected one of .pdf:.jpg:.jpeg:.png:). Please verif
-y that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-es
-cape'. Sometimes it is also named 'write 18' or something like that. Or maybe t
-he command simply failed? Error messages can be found in 'tikz/MathNotes-figure
-62.log'. If you continue now, I'll try to typeset the picture.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11302 			\end{tikzpicture}
-                            
-(That was another \errmessage.)
-
-[210 <./Python/Mapping_by_Sine_H.pdf>] [211] [212
+===== Image 'tikz/MathNotes-figure61' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure62' is up-to-date. ======
+[210 <./Python/Mapping_by_Sine_H.pdf>] [211 <./tikz/MathNotes-figure61.pdf> <./
+tikz/MathNotes-figure62.pdf>] [212
 
 ]
 Chapter 19.
@@ -2057,7 +1857,9 @@ runsystem(makeindex MathNotes.idx)...executed.
 
 ] [270] [271])
 
-(./MathNotes.bbl) [272] (./MathNotes.aux
+(./MathNotes.bbl [272]) [273
+
+] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 
@@ -2067,13 +1869,13 @@ Package rerunfilecheck Info: File `MathNotes.out' has not changed.
 (rerunfilecheck)             Checksum: 75AB83278721DBA54179FF402E4EFE02;26700.
  ) 
 Here is how much of TeX's memory you used:
- 44960 strings out of 479302
- 1000513 string characters out of 5867266
- 1426297 words of memory out of 5000000
- 60030 multiletter control sequences out of 15000+600000
+ 44312 strings out of 479302
+ 982588 string characters out of 5867266
+ 1392336 words of memory out of 5000000
+ 59380 multiletter control sequences out of 15000+600000
  446447 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,19n,102p,1426b,2603s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,19n,102p,859b,792s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}{/
 usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/
 local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/loca
@@ -2104,10 +1906,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (286 pages, 1113715 bytes).
+Output written on MathNotes.pdf (287 pages, 1119379 bytes).
 PDF statistics:
- 4425 PDF objects out of 5155 (max. 8388607)
- 3832 compressed objects within 39 object streams
- 1233 named destinations out of 1440 (max. 500000)
- 1596 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4499 PDF objects out of 5155 (max. 8388607)
+ 3899 compressed objects within 39 object streams
+ 1238 named destinations out of 1440 (max. 500000)
+ 1626 words of extra memory for PDF output out of 10000 (max. 10000000)
 

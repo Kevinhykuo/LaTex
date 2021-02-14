@@ -10,6 +10,8 @@
 \usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
 \usepackage{thmtools}
 \pgfplotsset{compat=1.8}
+
+\makeindex
 \usepgfplotslibrary{external}
 \tikzexternalize[prefix=tikz/] 
 
@@ -114,9 +116,9 @@
 		\settowidth{\leftmargin}{\itshape\proofname:\hskip\labelsep}%
 		\setlength{\labelwidth}{0pt}%
 		\setlength{\itemindent}{-\leftmargin}%
-	}%
+		}%
 	\item[\hskip\labelsep\itshape#1\@addpunct{:}]\ignorespaces
-	}{ \popQED\endlist\@endpefalse}
+	}{\popQED\endlist\@endpefalse}
 \makeatother
 
 % Letters after part
@@ -133,8 +135,6 @@
 	\thispagestyle{empty}
 	\newpage
 }
-
-\makeindex
 
 \begin{document}
 	\title{The Book of Math (Notes)}
@@ -11350,6 +11350,7 @@
 	\section{Mappings by \texorpdfstring{\(z^2\)}{TEXT}} \label{Mappings by z^2 Section - Complex}
 	
 	\index{Mapping! \texorpdfstring{\(z^2\)}{TEXT}}
+	
 	
 	
 	
