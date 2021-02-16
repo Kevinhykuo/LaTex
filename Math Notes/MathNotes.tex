@@ -11351,17 +11351,77 @@
 	
 	\index{Mapping! \texorpdfstring{\(z^2\)}{TEXT}}
 	
+	We can write the transformation:
+	\begin{align*}
+		w &= z^2 = x^2 - y^2 + 2xy = u + iv &
+		u &= x^2 - y^2 & 
+		v &= 2xy
+	\end{align*}
+
+	We can see that if \(x\) is constant, as \(y\) increases, the transformation curves to the left due to the decreasing value of \(u\). It is clear that if we include negative values of \(y\), then the mapping is not 1-1.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\linewidth]{Python/Mapping_by_z_Squared_V}
+		\caption*{}
+		\label{fig:mappingbyzsquaredv}
+	\end{figure}
+	
+	If \(y\) is held constant, the increasing value of \(x\) curves the transformation to the right. More accurately, while \(x\) is negative, it moves left until \(x=0\), then it curves to the left due to the parabolic nature of \(u = x^2 - y^2\). The mapping is not 1-1, if we include negative values of \(y\).
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\linewidth]{Python/Mapping_by_z_Squared_H}
+		\caption*{}
+		\label{fig:mappingbyzsquaredh}
+	\end{figure}
+
+	\section{Mappings by Branches of \texorpdfstring{\(z^{1/n}\)}{TEXT}} \label{Mappings by z Square Root Section - Complex}
+	
+	\index{Mapping! \texorpdfstring{\(z^{1/n}\)}{TEXT}}
+	
+	Recall \cref{Roots of z Sections - Complex}.
 	
 	
+	\textbf{Square root transformation:} \newline
+	For \(z \neq 0\) and in polar coordinates,
+	\begin{align*}
+		z^{1/2} &= \sqrt{r}e^{i(\Theta + 2\pi x)/2}
+			& k \in \mathbb{N}
+	\end{align*}
 	
+	Looking at the Principal Branch, the transformation becomes:
+	\begin{align*}
+		F_0(z) &= \sqrt{r} e^{i\Theta /2}
+			& r>0, \ -\pi < \Theta < \pi
+	\end{align*}
 	
+	It is clear in the principal branch, the mapping is a 1-1 mapping of points in \(-\pi < \Theta < \pi\) to \(-\pi/2 < \Phi < \pi/2\).
 	
+	When \(\theta = \alpha\) is used to define a branch cut:
+	\begin{align*}
+		f_\alpha(z) &= \sqrt{r} \exp(\frac{i\theta}{2})	&
+			r>0,& \ \alpha < \theta < \alpha + 2\pi
+	\end{align*}
+	We can extend this to nonzero points on the branch cut by defining \(f_\alpha(0) = 0\), however, such extensions are not continuous on the entire complex plane.
 	
+	\textbf{\(n\)-th roots of \(z\):}\newline
+	\begin{align*}
+		z^{1/n} &= \exp(\frac{1}{n} \log(z)) = \sqrt[n]{r} e^{i(\Theta + 2k\pi)/n}
+			& n \in \mathbb{N}, \ k \in \{0, 1, 2, \ldots, n-1\}
+	\end{align*}
+	Then the transformation of each branch \(k\)of \(z^{1/n}\):
+	\begin{align*}
+		F_k(z) &= \sqrt[n]{r} \exp(\frac{i(\Theta + 2k\pi)}{n})
+			& k= \{0, 1, 2, \ldots, n-1\}
+	\end{align*}
+	It is a 1-1 mapping from the domain:
+	\begin{align*}
+		r &\mapsto \rho = \sqrt[n]{r} &
+		-\left[\pi < \Theta < \pi\right] &\mapsto \left[\frac{(2k-1)\pi}{n} < \phi < \frac{(2k+1)\pi}{n}\right]
+	\end{align*}
 	
+	Likewise, for the principal branch (\(k=0\)), we can construct transformations \(f_\alpha(z)\) branch cuts at \(\theta = \alpha\) as before.
 	
-	
-	
-	
+	\section{Square Roots of Polynomials} \label{Square Roots of Polynomials Section - Complex}
 	
 	
 	

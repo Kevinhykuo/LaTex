@@ -211,6 +211,7 @@
   \item Maclaurin Series, 131
   \item Mapping
     \subitem  \texorpdfstring{\(z^2\)}{TEXT}, 211
+    \subitem  \texorpdfstring{\(z^{1/n}\)}{TEXT}, 212
     \subitem  Cosine, 211
     \subitem  Exponential, 208
     \subitem  Hyperbolic Cosine, 211
