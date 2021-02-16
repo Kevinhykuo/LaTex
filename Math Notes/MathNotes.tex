@@ -11170,7 +11170,7 @@
 		w = \pm \sqrt{\sin[2](c_1) + \cos[2](c_1)} = \pm 1
 	\end{align*}
 
-	If we look at the \(y\) and \(v\)-axis,  \((0, y) \mapsto (0, \sinh(y))\), so the mapping is 1-1. As \(y\) increases, so does \(\sinh(y)\).
+	If we look at the \(y\) and \(v\)-axis,  \((0, y) \mapsto (0, \sinh(y))\), so the mapping is 1-1. As \(y\) increases, so does \(\sinh(y)\). If we include negative values of \(y\), then the mapping is no longer 1-1.
 	
 	\begin{figure}[H]
 		\centering
@@ -11195,7 +11195,7 @@
 		w = \pm \sqrt{\cosh[2](c_2) - \sinh[2](c_2)} = \pm 1
 	\end{align*}
 
-	Since \(u = \sin(x) \cosh(c_2)\) and \(v = \cos(x) \sinh(c_2)\) we can see that as \(x\) increases, the ellipse goes around in a clockwise direction. 
+	Since \(u = \sin(x) \cosh(c_2)\) and \(v = \cos(x) \sinh(c_2)\) we can see that as \(x\) increases, the ellipse goes around in a clockwise direction. Since Sine is a cyclic function, we only have 1-1 mappings for constant values of \(y\) in \(x=2\pi\) intervals. Likewise, these 1-1 mappings only hold true for \(y > 0\) or \(y < 0\).
 	
 	\begin{figure}[H]
 		\centering
@@ -11423,7 +11423,59 @@
 	
 	\section{Square Roots of Polynomials} \label{Square Roots of Polynomials Section - Complex}
 	
+	\begin{example}
+		If we consider \(Z^{1/2} = (z - z_0)^{1/2}\):
+		\begin{align*}
+			Z^{1/2} &= \sqrt{R} \exp(\frac{i\theta}{2})
+				& R>0, &\ \alpha < \theta < \alpha + 2\pi
+		\end{align*}
+		By writing 
+		\begin{align*}
+			R &= \abs{z-z_0} &
+			\Theta &= \operatorname{Arg}(z - z_0) &
+			\theta &= \arg(z-z_0)
+		\end{align*}
+		We have the two branches of \((z-z_0)^{1/2}\):
+		\begin{align*}
+			G_0(z) &= \sqrt{R} \exp(\frac{i\Theta}{2})	&
+				R>0, &\ -\pi < \Theta < \pi \\
+			g_0(z) &= \sqrt{R} \exp(\frac{i\theta}{2})	&
+				R>0, &\ 0 < \Theta < 2\pi
+		\end{align*}
+		We can see that for \(w = G_0\), there is a 1-1 mapping:
+		\begin{align*}
+			\abs{z-z_0} &\mapsto \sqrt{\abs{z-z_0}}
+				& \left[-\pi < \operatorname{Arg}(z-z_0) < \pi \right] &\mapsto
+					\left[-\frac{\pi}{2} < \frac{\operatorname{Arg}(z-z_0)}{2} < \frac{\pi}{2}\right]
+		\end{align*}
+		For \(w = g_0(z)\), the 1-1 mapping:
+		\begin{align*}
+			\abs{z-z_0} &\mapsto \sqrt{\abs{z-z_0}}
+				& \left[0 < \arg(z-z_0) < 2\pi \right] &\mapsto
+					\left[0 < \frac{\arg(z-z_0)}{2} < \pi \right]
+		\end{align*}
+	\end{example}
+
+	\begin{example}
+		Consider 
+		\begin{align*}
+			w = (z^2 - 1)^{1/2}
+		\end{align*}
+		Then we can write
+		\begin{align*}
+			(z^2 - 1)^{1/2} 
+			&= \exp(\frac{1}{2}\log(z^2 - 1)) = \exp(\frac{1}{2}\log(z-1) + \frac{1}{2}\log(z+1)) \\
+			&= (z-1)^{1/2} (z+1)^{1/2} & z \neq \pm 1
+		\end{align*}
+		
+		\begin{align*}
+			content
+		\end{align*}
+	\end{example}
 	
+	
+	
+	\section{Riemann Surface} \label{Riemann Surface} \index{Riemann Surface}
 	
 	
 	
