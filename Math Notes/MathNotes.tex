@@ -11416,7 +11416,7 @@
 	It is a 1-1 mapping from the domain:
 	\begin{align*}
 		r &\mapsto \rho = \sqrt[n]{r} &
-		-\left[\pi < \Theta < \pi\right] &\mapsto \left[\frac{(2k-1)\pi}{n} < \phi < \frac{(2k+1)\pi}{n}\right]
+		\left[-\pi < \Theta < \pi\right] &\mapsto \left[\frac{(2k-1)\pi}{n} < \phi < \frac{(2k+1)\pi}{n}\right]
 	\end{align*}
 	
 	Likewise, for the principal branch (\(k=0\)), we can construct transformations \(f_\alpha(z)\) branch cuts at \(\theta = \alpha\) as before.
@@ -11467,17 +11467,324 @@
 			&= \exp(\frac{1}{2}\log(z^2 - 1)) = \exp(\frac{1}{2}\log(z-1) + \frac{1}{2}\log(z+1)) \\
 			&= (z-1)^{1/2} (z+1)^{1/2} & z \neq \pm 1
 		\end{align*}
+		Note: If \(f_1(z)\) is a branch of \((z-1)^{1/2}\) defined on domain \(D_1\) and \(f_2(z)\) is a branch of \((z+1)^{1/2}\) defined on domain \(D_2\), then \(f(z) = f_1(z) f_2(z)\) is a branch of \((z^2 - 1)^{1/2}\) defined at all points in \(D_1 \cup D_2\).
 		
+		For branches of \((z-1)^{1/2}\) and \((z-1)^{1/2}\):
 		\begin{align*}
-			content
+			f_1(z) &= \sqrt{r_1} \exp(\frac{i\theta_1}{2})	&
+				r_1 &= \abs{z-1} & 
+				\theta_1 &= \arg(z-1) &
+				r_1>0, &\ \theta_1 \in (0, 2\pi) \\
+			f_2(z) &= \sqrt{r_2} \exp(\frac{i\theta_2}{2})	&
+				r_2 &= \abs{z+1} & 
+				\theta_2 &= \arg(z+1) &
+				r_2>0, &\ \theta_2 \in (0, 2\pi)
 		\end{align*}
+		Then the branch \(f\) of \((z^2 - 1)^{1/2}\):
+		\begin{align*}
+			f(z) &= \sqrt{r_1 r_2} \exp(\frac{i(\theta_1 + \theta_2)}{2}) &
+				r_k > 0, &\ \theta_k \in (0, 2\pi), \ k \in \{1,2\}
+		\end{align*}
+		
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-2, xmax=2,
+					ymin=-0.2, ymax=2,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(1.5, 1.75) [\(z\)]
+					};
+				
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(1, 0) [\(1\)]
+						(-1, 0) [\(-1\)]
+					};
+					
+					\draw[]
+					(axis cs: 1, 0)--(axis cs: 1.5, 1.75)
+					node[pos=0.5, right] {\(r_1\)};
+					
+					\draw[]
+					(axis cs: -1, 0)--(axis cs: 1.5, 1.75)
+					node[pos=0.5, above] {\(r_2\)};
+					
+					\draw[line width=1pt, dashed, color=White]
+					(axis cs: -1, 0)--(axis cs: 1.9, 0);
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 1.5, 0) arc (0:{atan(1.75/0.5)}:50)
+					node[pos=0.5, right] {\(\theta_1\)};
+				
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -0.5, 0) arc (0:{atan(1.75/2.5)}:50)
+					node[pos=0.5, right] {\(\theta_2\)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	
+		We can extend this to a function that is analytic everywhere in \(\mathbb{C}\) except \(x \in [-1, 1]\):
+		\begin{align*}
+			F(z) &= \sqrt{r_1 r_2} \exp(\frac{i(\theta_1 + \theta_2)}{2}) &
+				r_k > 0, \ r_1 + r_2 > 2, &\ \theta_k \in (0, 2\pi), \ k \in \{1,2\}
+		\end{align*}
+	
+		We need to show \(F\) is analytic on \(r_1>0\), \(\theta_1 =0\), since \(f(z) = F(z)\) everywhere except there. Consider:
+		\begin{align*}
+			G(z) &= \sqrt{r_1 r_2} \exp(\frac{i(\Theta_1 \Theta_2)}{2})	&
+				r_1 &= \abs{z-1}, \ r_2 = \abs{z+1}, \ \Theta_1 = \operatorname{Arg}(z-1), \Theta_2 = \operatorname{Arg}(z+1) \\
+			&&
+				r_k &> 0, \ \Theta_k \in (-\pi, \pi), \ k \in \{1,2\}
+		\end{align*}
+			
+		\(G\) analytic in entire \(z\)-plane except for \(r_1 \geq 0\), \(\Theta_1 = \pi\). \(F(z) = G(z)\) when \(r_1 >0\) and \(\Theta_1 \in [0,\pi)\), so \(\theta_k = \Theta_k\). When \(\Theta_1 \in (0, -\pi)\), \(\theta_k = \Theta_k + 2\pi\).
+		Then
+		\begin{align*}
+			\exp(i\theta_k/2) = -\exp(i\Theta_k/2) 
+			\implies \exp(\frac{i(\theta_1 + \theta_2)}{2}) = \exp(\frac{i(\Theta_2 + \Theta_2)}{2})
+		\end{align*}
+		So \(F(z) = G(z)\), in the domain containing \(r_1 > 0\), \(\Theta_1 = 0\), so \(G\) being analytic in the domain implies \(F\) being analytic in the domain. Thus, \(F\) is analytic everywhere except \(x \in [-1, 1]\).
+		
+		\(F(z)\) cannot be extended to a function analytic at points \(x \in [-1, 1]\), because \(F()\) jumps from \(i \sqrt{r_1 r_2}\) to \(-i \sqrt{r_1 r_2}\) as \(z\) moves across the line segment, thus is not continuous.
+		
+		\(F(z)\) is a 1-1 mapping of \(D_z \mapsto D_w\) except for \(v \in [-1, 1]\).
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-1.5, xmax=2,
+					ymin=-0.2, ymax=2,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(1.5, 1.75) [\(z\)]
+					};
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(1, 0) [\(1\)]
+						(-1, 0) [\(-1\)]
+					};
+				
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=none,
+					]
+					coordinates {
+						(-1, 1) [\(D_z\)]
+					};
+					
+					\draw[]
+					(axis cs: 1, 0)--(axis cs: 1.5, 1.75)
+					node[pos=0.5, right] {\(r_1\)};
+					
+					\draw[]
+					(axis cs: -1, 0)--(axis cs: 1.5, 1.75)
+					node[pos=0.5, above] {\(r_2\)};
+					
+					\draw[line width=1pt, dashed, color=White]
+					(axis cs: -1, 0)--(axis cs: 1, 0);
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 1.5, 0) arc (0:{atan(1.75/0.5)}:50)
+					node[pos=0.5, right] {\(\theta_1\)};
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -0.5, 0) arc (0:{atan(1.75/2.5)}:50)
+					node[pos=0.5, right] {\(\theta_2\)};
+				\end{axis}
+			\end{tikzpicture}
+			{\Large \(\xrightarrow{\mathmakebox[3cm] {F(z)=(z^2 - 1)^{1/2} }}\)}
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-1, xmax=2,
+					ymin=-1.5, ymax=2,
+					axis lines = middle,
+					ticks = none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(1.75, 1.75) [\(w\)]
+					};
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(0, 1) [\(i\)]
+						(0,-1) [\(-i\)]
+					};
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=none,
+					]
+					coordinates {
+						(-0.75, 1) [\(D_w\)]
+					};
+					
+					\draw[]
+					(axis cs: 0, 1)--(axis cs: 1.75, 1.75)
+					node[pos=0.5, above] {\(\rho_1\)};
+					
+					\draw[]
+					(axis cs: 0,-1)--(axis cs: 1.75, 1.75)
+					node[pos=0.5, above] {\(\rho_2\)};
+					
+					\draw[line width=1pt, dashed, color=White]
+					(axis cs: 0, 1)--(axis cs: 0, -1);
+					
+					\draw[]
+					(axis cs: 0, 1)--(axis cs: 0.75, 1);
+					
+					\draw[]
+					(axis cs: 0,-1)--(axis cs: 0.75,-1);
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0.5, 1) arc (0:{atan(0.75/1.75)}:50)
+					node[pos=0.5, right] {\(\phi_1\)};
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0.5,-1) arc (0:{atan(2.75/1.75)}:50)
+					node[pos=0.5, right] {\(\phi_2\)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	
+		Note: 
+		\begin{align*}
+			[z = iy] \land [y>0] \implies [r_1 = r_2 > 1] \land [\theta_1 + \theta_2 = \pi]
+		\end{align*}
+		Hence the mappings:
+		\begin{align*}
+			[y>0]\land[x=0] &\mapsto v > 1 & [y<0]\land[x=0] &\mapsto v < -1 \\
+			y>0 &\mapsto v>0 &  y<0 &\mapsto v>0 \\
+			[r_1>0]\land[\theta_1 = 0] &\mapsto [u>0] \land [v = 0] & 
+				[r_2>0] \land [\theta_2 = \pi] &\mapsto [u<0] \land [v = 0]
+		\end{align*}
+		
+		To show \(w = F(z)\) is 1-1:
+		\begin{align*}
+			F(z_1) = F(z_2) \implies z_1^2 - 1 = z_2^2 - 1 \implies [z_1 = z_2] \lor [z_1 = - z_2]
+		\end{align*}
+		Since \(F\) maps upper half plane to upper half plane and lower half planes to lower half planes, and the way portions of the real axis in \(D_z\) is mapped, \(z_1 = -z_2\) is impossible, so \(z_1 = z_2\). Thus, \(F(z_1) = F(z_2) \implies F\) is 1-1.
+		
+		We can show \(F: D_z \mapsto D_w\) by finding \(H: D_w \mapsto D_z\) which \(z = H(w) \implies w = F(z)\). That is, \(H = F^{-1}\). We have
+		\begin{align*}
+			w = (z^2 - 1)^{1/2} &\implies z = (w^2 + 1)^{1/2} = (w - i)^{1/2} (w-i)^{1/2}
+				& w \neq \pm i
+		\end{align*}
+		Writing 
+		\begin{align*}
+			w - i &= \rho_1 e^{i\phi_1} & w + i &= \rho_2 e^{i\phi_2} &
+				\rho_k > 0, \ \rho_1 + \rho_2 > 2, \ \phi_k \in \left[-\frac{\pi}{2}, \frac{3\pi}{2}\right], \ k \in \{1,2\}
+		\end{align*}
+		Hence
+		\begin{align*}
+			H(w) &= \sqrt{\rho_1 \rho_2} \exp(\frac{i(\phi_1 + \phi_2)}{2})	&
+				\text{Domain: } D_w
+		\end{align*}
+		with mappings:
+		\begin{align*}
+			v > 0 &\mapsto y > 0 & v < 0 \mapsto y<0 \\
+			[u>0] \land [y=0] &\mapsto [x>1] \land [y=0] & 
+				[u<0] \land [y=0] &\mapsto [x< -1] \land [y=0] 
+		\end{align*}
+		Then 
+		\begin{align*}
+			z = H(w) 
+			&\implies z^2 = w^2 + 1 \implies w^2 = z^2 -1
+		\end{align*}
+		Since \(z \in D_z\) and \(w = \pm (z^2 - 1)^{1/2}\), we have \(w = F(z)\) and \(w = -F(z)\). By the \(H(w)\) \(F\) mapping upper half plane to upper half plane and lower half planes to lower half planes, and the mapping of segments of the real axis in the domains, we have \(w = F(z)\).
 	\end{example}
 	
+	For mappings by branches of double-valued functions:
+	\begin{align*}
+		w &= (z^2 + Az + B)^{1/2} = [(z-z_0)^2 - z_1^2]^{1/2} &
+			A &= -2z_0 & B = z_0^2 = z_1^2 &
+			z_1 \neq 0
+	\end{align*}
+	We can use methods in the above example on the successive transformations:
+	\begin{align*}
+		Z &= \frac{z-z_0}{z_1} &
+		W &= (Z^2 - 1)^{1/2} &
+		w &= z_1 W
+	\end{align*}
 	
 	
 	\section{Riemann Surface} \label{Riemann Surface} \index{Riemann Surface}
 	
-	
+	\begin{definition}[Riemann Surface (Informal Definition)]
+		\label{Riemann Surface Informal Definition - Complex}
+		\index{Riemann Surface}
+		A generalized complex plane with more than one sheet.
+	\end{definition}
 	
 	
 	
