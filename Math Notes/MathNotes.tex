@@ -11761,7 +11761,7 @@
 			z = H(w) 
 			&\implies z^2 = w^2 + 1 \implies w^2 = z^2 -1
 		\end{align*}
-		Since \(z \in D_z\) and \(w = \pm (z^2 - 1)^{1/2}\), we have \(w = F(z)\) and \(w = -F(z)\). By the \(H(w)\) \(F\) mapping upper half plane to upper half plane and lower half planes to lower half planes, and the mapping of segments of the real axis in the domains, we have \(w = F(z)\).
+		Since \(z \in D_z\) and \(w = \pm (z^2 - 1)^{1/2}\), we have \(w = F(z)\) and \(w = -F(z)\). By \(H(w)\) mapping upper half plane to upper half plane and lower half planes to lower half planes, and the mapping of segments of the real axis in the domains, we have \(w = F(z)\).
 	\end{example}
 	
 	For mappings by branches of double-valued functions:
@@ -11783,10 +11783,70 @@
 	\begin{definition}[Riemann Surface (Informal Definition)]
 		\label{Riemann Surface Informal Definition - Complex}
 		\index{Riemann Surface}
-		A generalized complex plane with more than one sheet.
+		A generalized complex plane with more than one ``sheet''. It's a one dimensional complex manifold.
 	\end{definition}
 	
+	On a Riemann surface, a multi-valued function is assigned a single-value. As such, the theory of single-valued function applies.
 	
+	\begin{example}
+		Consider the multi-valued function:
+		\begin{align*}
+			\log(z) = \ln(r) + i\theta
+		\end{align*}
+		The Riemann surface of \(\log(z)\) is then the complex plane with a deleted origin, and a cut made along the positive real axis. The first sheet \(R_1\) is defined from \(\theta \in [0, 2\pi]\), the second sheet \(R_2\) consists of \(\theta \in [2\pi, 4\pi]\), the third sheet \(R_3\) consists of \(\theta \in [4\pi, 6\pi]\), and so on. Likewise, the sheet \(R_{-1}\) consists of \(\theta \in [-2\pi, 0]\). 
+		
+		Essentially, we get an infinite ``spiral staircase'' with sheets in multiples of \(2\pi\). The radial component, of course, is also infinite.
+		
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					axis equal,
+					width=10cm,
+					axis lines = center,
+					xlabel = {$x$},
+					ylabel = {$y$},
+					zlabel = {$\theta$},
+					xmin=-2, xmax=2,
+					ymin=-2, ymax=2,
+					zmin=-2.5, zmax=2.5,
+					ticks = none,
+					axis lines = middle,
+					axis line style = Black,
+					%				enlargelimits=0.3,
+					view/h=45,
+					scale uniformly strategy=units only,
+					]
+					
+					\addplot3[surf,
+						shader=interp,
+						opacity = 0.2,
+						domain = -4*pi:4*pi,
+						domain y = 0:1,
+						samples = 101,
+						samples y = 2,
+						]
+						({y*cos(deg(x))},
+						{y*sin(deg(x))},
+						{deg(x)}/360);
+					
+					\draw[dashed] (axis cs: 0,0,2) -- (axis cs: 1.9,0,2);
+					\draw[dashed] (axis cs: 0,0,1) -- (axis cs: 1.9,0,1);
+					\draw[dashed, color=White] (axis cs: 0,0,0) -- (axis cs: 1.9,0,0);
+					\draw[dashed] (axis cs: 0,0,-1) -- (axis cs: 1.9,0,-1);
+					\draw[dashed] (axis cs: 0,0,-2) -- (axis cs: 1.9,0,-2);
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	
+		The transformation \(w = \log(z)\)
+		
+	\end{example}
+
+	
+
+	
+	\subsection{Surfaces for Related Functions} \label{Surfaces for Related Functions Subsection - Complex}
 	
 	
 	
