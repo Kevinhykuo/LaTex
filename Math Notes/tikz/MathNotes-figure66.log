@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  18 FEB 2021 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.12)  18 FEB 2021 18:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1185,6 +1185,8 @@ Package: thm-amsthm 2020/08/01 v0.72
 Writing index file tikz/MathNotes-figure66.idx
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.patchplots.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.external.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzl
 ibraryexternal.code.tex
@@ -1205,24 +1207,24 @@ tion.
 \c@definition=\count356
 \c@example=\count357
 No file tikz/MathNotes-figure66.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
 *geometry* detected driver: <none>
 *geometry* verbose mode - [ preamble ] result:
 * driver: \Gm@driver 
@@ -1290,16 +1292,16 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 139.
-Package gensymb Info: Math companion symbols declared on input line 139.
-LaTeX Info: Redefining \degree on input line 139.
-LaTeX Info: Redefining \celsius on input line 139.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 140.
+Package gensymb Info: Math companion symbols declared on input line 140.
+LaTeX Info: Redefining \degree on input line 140.
+LaTeX Info: Redefining \celsius on input line 140.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 139.
-LaTeX Info: Redefining \ohm on input line 139.
-Package gensymb Info: Using \textohm for \ohm on input line 139.
-Package gensymb Info: Using \textmu for \micro on input line 139.
-Package hyperref Info: Link coloring OFF on input line 139.
+erthousand on input line 140.
+LaTeX Info: Redefining \ohm on input line 140.
+Package gensymb Info: Using \textohm for \ohm on input line 140.
+Package gensymb Info: Using \textmu for \micro on input line 140.
+Package hyperref Info: Link coloring OFF on input line 140.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1311,44 +1313,44 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count364
 )
-LaTeX Info: Redefining \ref on input line 139.
-LaTeX Info: Redefining \pageref on input line 139.
-LaTeX Info: Redefining \nameref on input line 139.
+LaTeX Info: Redefining \ref on input line 140.
+LaTeX Info: Redefining \pageref on input line 140.
+LaTeX Info: Redefining \nameref on input line 140.
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.17} (current compat level: 1.8).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 160
+LaTeX Font Info:    Trying to load font information for U+msa on input line 161
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 160
+LaTeX Font Info:    Trying to load font information for U+msb on input line 161
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
-line 274.
+line 275.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 278.
+t line 279.
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on i
-nput line 282.
+nput line 283.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 286.
+put line 287.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 290.
+line 291.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 294.
+input line 295.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 304.
+nput line 305.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 309.
+t line 310.
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 312.
+ line 313.
 Package hyperref Info: bookmark level for unknown observation defaults to 0 on 
-input line 316.
+input line 317.
 Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
-ut line 320.
+ut line 321.
 Chapter 1.
 Chapter 2.
 Chapter 3.
@@ -1359,18 +1361,18 @@ Chapter 7.
 Chapter 8.
 
 LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 22 undefined 
-on input line 358.
+on input line 359.
 
 Chapter 9.
 Chapter 10.
 Chapter 11.
 
 LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 30
- undefined on input line 399.
+ undefined on input line 400.
 
 
 LaTeX Warning: Citation `Wunsh.A-Complex-Variables-2005' on page 30 undefined o
-n input line 403.
+n input line 404.
 
 Chapter 12.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
@@ -1379,49 +1381,49 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Complex Conjugate Section - Complex' on page 1 undefi
-ned on input line 506.
+ned on input line 507.
 
 
 LaTeX Warning: Reference `Triange Inequality - Complex' on page 1 undefined on 
-input line 519.
+input line 520.
 
 
 LaTeX Warning: Reference `Polar Form of z - Complex' on page 1 undefined on inp
-ut line 582.
+ut line 583.
 
 
 LaTeX Warning: Reference `Euler's Formula - Complex' on page 1 undefined on inp
-ut line 582.
+ut line 583.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 649.
+fined on input line 650.
 
 
 LaTeX Warning: Reference `Roots of z Sections - Complex' on page 1 undefined on
- input line 649.
+ input line 650.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 649.
+fined on input line 650.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 663.
+fined on input line 664.
 
 
 LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
-fined on input line 663.
+fined on input line 664.
 
 
 LaTeX Warning: Reference `Properties of Polar and Exponential Form Subsection -
- Complex' on page 1 undefined on input line 668.
+ Complex' on page 1 undefined on input line 669.
 
 
 LaTeX Warning: Reference `Exponential Form of z - Complex' on page 1 undefined 
-on input line 704.
+on input line 705.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1433,7 +1435,7 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Exponential Form of z - Complex' on page 1 undefined 
-on input line 920.
+on input line 921.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1458,15 +1460,15 @@ isable this.
 Chapter 13.
 
 LaTeX Warning: Reference `Operations as Transformations Section - Complex' on p
-age 1 undefined on input line 1425.
+age 1 undefined on input line 1426.
 
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1446.
+age 1 undefined on input line 1447.
 
 
 LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 44
- undefined on input line 1466.
+ undefined on input line 1467.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1478,7 +1480,7 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
-put line 1629.
+put line 1630.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1486,77 +1488,77 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
-put line 1718.
+put line 1719.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 1 - Complex' on pag
-e 1 undefined on input line 1776.
+e 1 undefined on input line 1777.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 2 - Complex' on pag
-e 1 undefined on input line 1795.
+e 1 undefined on input line 1796.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1836.
+d on input line 1837.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1840.
+d on input line 1841.
 
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 1854.
+d on input line 1855.
 
 
 LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 48 undefined 
-on input line 1870.
+on input line 1871.
 
 
 LaTeX Warning: Reference `Limit Theorems Subsection - Real Analysis' on page 1 
-undefined on input line 1870.
+undefined on input line 1871.
 
 
 LaTeX Warning: Reference `Riemann Sphere and Stereographic Projection Figure - 
-Complex' on page 1 undefined on input line 1889.
+Complex' on page 1 undefined on input line 1890.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Properties of Limits at Infinity Theorem - Complex' o
-n page 1 undefined on input line 2018.
+n page 1 undefined on input line 2019.
 
 
 LaTeX Warning: Reference `Limit Theorems Subsection - Real Analysis' on page 1 
-undefined on input line 2018.
+undefined on input line 2019.
 
 
 LaTeX Warning: Reference `Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - C
-omplex' on page 1 undefined on input line 2051.
+omplex' on page 1 undefined on input line 2052.
 
 
 LaTeX Warning: Reference `Limits of f=u+iv Theorem Corollary - Complex' on page
- 1 undefined on input line 2059.
+ 1 undefined on input line 2060.
 
 
 LaTeX Warning: Reference `Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Theore
-m - Complex' on page 1 undefined on input line 2063.
+m - Complex' on page 1 undefined on input line 2064.
 
 
 LaTeX Warning: Reference `Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Coroll
-ary - Complex' on page 1 undefined on input line 2063.
+ary - Complex' on page 1 undefined on input line 2064.
 
 
 LaTeX Warning: Reference `Continuous Function Definition - Complex' on page 1 u
-ndefined on input line 2063.
+ndefined on input line 2064.
 
 
 LaTeX Warning: Reference `Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - C
-omplex' on page 1 undefined on input line 2065.
+omplex' on page 1 undefined on input line 2066.
 
 
 LaTeX Warning: Reference `Limits of f=u+iv Theorem Corollary - Complex' on page
- 1 undefined on input line 2065.
+ 1 undefined on input line 2066.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -1566,76 +1568,76 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
-d on input line 2194.
+d on input line 2195.
 
 
 LaTeX Warning: Reference `Riemann Sphere Definition - Complex' on page 1 undefi
-ned on input line 2244.
+ned on input line 2245.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Derivative Definition - Complex' on page 1 undefined 
-on input line 2315.
+on input line 2316.
 
 
 LaTeX Warning: Reference `Derivative Definition - Complex' on page 1 undefined 
-on input line 2418.
+on input line 2419.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
-x' on page 1 undefined on input line 2661.
+x' on page 1 undefined on input line 2662.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
-x' on page 1 undefined on input line 2769.
+x' on page 1 undefined on input line 2770.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Polar) Theorem Proof Eqn 1 
-- Complex' on page 1 undefined on input line 2773.
+- Complex' on page 1 undefined on input line 2774.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Polar) Theorem Proof Eqn 2 
-- Complex' on page 1 undefined on input line 2773.
+- Complex' on page 1 undefined on input line 2774.
 
 
 LaTeX Warning: Reference `f(z) satisfy Cauchy-Riemann but f'(z_0) does not exis
-t Example - Complex' on page 1 undefined on input line 2804.
+t Example - Complex' on page 1 undefined on input line 2805.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Differentiablity Conditions Theorem - 
-Complex' on page 1 undefined on input line 2804.
+Complex' on page 1 undefined on input line 2805.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
-x' on page 1 undefined on input line 2808.
+x' on page 1 undefined on input line 2809.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
-x' on page 1 undefined on input line 2849.
+x' on page 1 undefined on input line 2850.
 
 
 LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 64
- undefined on input line 2885.
+ undefined on input line 2886.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Polar) Theorem - Complex' o
-n page 1 undefined on input line 2988.
+n page 1 undefined on input line 2989.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
-x' on page 1 undefined on input line 3030.
+x' on page 1 undefined on input line 3031.
 
 
 LaTeX Warning: Reference `Conditions for Differentiablity Subsection - Complex'
- on page 1 undefined on input line 3141.
+ on page 1 undefined on input line 3142.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Overfull \hbox (5.51305pt too wide) in paragraph at lines 3234--3235
+Overfull \hbox (5.51305pt too wide) in paragraph at lines 3235--3236
 []\OT1/cmr/bx/n/12 Example 13.6.2 \OT1/cmr/m/n/12 (De-ter-min-ing an-a-lyt-ic-i
 ty us-ing Cauchy-Rie-mann equa-tions) []\OT1/cmr/m/sl/12 Con-sider $\OML/cmm/m/
 it/12 f\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 z\OMX/MnSymbolE/m/n/12 ç \U/MnSy
@@ -1644,60 +1646,60 @@ mbolD/m/n/12 ^^@
 
 
 LaTeX Warning: Reference `Laplace's Equation (Polar) Exercise - Complex' on pag
-e 1 undefined on input line 3298.
+e 1 undefined on input line 3299.
 
 
 LaTeX Warning: Reference `Analytic implies Harmonic Theorem - Complex' on page 
-1 undefined on input line 3326.
+1 undefined on input line 3327.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Uniquely determined analytic functions Theorem - Comp
-lex' on page 1 undefined on input line 3494.
+lex' on page 1 undefined on input line 3495.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Uniquely determined analytic functions Theorem - Comp
-lex' on page 1 undefined on input line 3535.
+lex' on page 1 undefined on input line 3536.
 
 
 LaTeX Warning: Reference `f_1 neq f_3 in analytic continuation Example - Comple
-x' on page 1 undefined on input line 3535.
+x' on page 1 undefined on input line 3536.
 
 
 LaTeX Warning: Reference `Reflection Principle f(x) purely imaginary Example - 
-Complex' on page 1 undefined on input line 3564.
+Complex' on page 1 undefined on input line 3565.
 
 
 LaTeX Warning: Reference `Uniquely determined analytic functions Theorem - Comp
-lex' on page 1 undefined on input line 3603.
+lex' on page 1 undefined on input line 3604.
 
 
 LaTeX Warning: Reference `Uniquely determined analytic functions Theorem - Comp
-lex' on page 1 undefined on input line 3603.
+lex' on page 1 undefined on input line 3604.
 
 
 LaTeX Warning: Reference `Reflection Principle Theorem - Complex' on page 1 und
-efined on input line 3618.
+efined on input line 3619.
 
 
 LaTeX Warning: Reference `Reflection Principle Theorem - Complex' on page 1 und
-efined on input line 3649.
+efined on input line 3650.
 
 Chapter 14.
 
 LaTeX Warning: Reference `Polar Form of z - Complex' on page 1 undefined on inp
-ut line 3675.
+ut line 3676.
 
 
 LaTeX Warning: Reference `Trig Identities - Complex' on page 1 undefined on inp
-ut line 3873.
+ut line 3874.
 
 
 LaTeX Warning: Reference `Reflection Principle Theorem - Complex' on page 1 und
-efined on input line 4119.
+efined on input line 4120.
 
 Chapter 15.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
@@ -1705,692 +1707,692 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Overfull \hbox (0.18661pt too wide) detected at line 4755
+Overfull \hbox (0.18661pt too wide) detected at line 4756
 []
  []
 
 
 LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
-x' on page 1 undefined on input line 4836.
-
-
-LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
-ine 4845.
-
-
-LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
-x' on page 1 undefined on input line 4845.
-
-
-LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
-ine 4845.
-
-
-LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
-x' on page 1 undefined on input line 4845.
+x' on page 1 undefined on input line 4837.
 
 
 LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
 ine 4846.
 
 
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 4846.
+
+
+LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
+ine 4846.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 4846.
+
+
+LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
+ine 4847.
+
+
 LaTeX Warning: Reference `Accumulation/Limit Point Definition - Complex' on pag
-e 1 undefined on input line 4873.
+e 1 undefined on input line 4874.
 
 
 LaTeX Warning: Reference `Derivative Definition - Complex' on page 1 undefined 
-on input line 4875.
+on input line 4876.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4883--4885
+Underfull \hbox (badness 10000) in paragraph at lines 4884--4886
 
  []
 
 
 LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
-x' on page 1 undefined on input line 4909.
+x' on page 1 undefined on input line 4910.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4924--4926
+Underfull \hbox (badness 10000) in paragraph at lines 4925--4927
 
  []
 
 
 LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
-ine 4975.
+ine 4976.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
-x' on page 1 undefined on input line 5015.
+x' on page 1 undefined on input line 5016.
 
 
 LaTeX Warning: Reference `Continuity on closed contour implies and zero contour
  integral implies analycity Theorem - Complex' on page 1 undefined on input lin
-e 5035.
+e 5036.
 
 
 LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
-x' on page 1 undefined on input line 5035.
+x' on page 1 undefined on input line 5036.
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 5038.
+ on input line 5039.
 
 
 LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
-x' on page 1 undefined on input line 5054.
+x' on page 1 undefined on input line 5055.
 
 
 LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
-x' on page 1 undefined on input line 5054.
+x' on page 1 undefined on input line 5055.
 
 
 LaTeX Warning: Reference `Contour integral over Multiply Connected Domains Theo
-rem - Complex' on page 1 undefined on input line 5118.
+rem - Complex' on page 1 undefined on input line 5119.
 
 
 LaTeX Warning: Reference `Cauchy-Riemann Equations (Polar) Theorem - Complex' o
-n page 1 undefined on input line 5150.
+n page 1 undefined on input line 5151.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 5273.
+ on input line 5274.
 
 
 LaTeX Warning: Reference `int_0^infty e^(-x^2) dx Derivation Example - Complex'
- on page 1 undefined on input line 5303.
+ on page 1 undefined on input line 5304.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Overfull \hbox (5.87373pt too wide) detected at line 5378
+Overfull \hbox (5.87373pt too wide) detected at line 5379
 []
  []
 
 
 LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
-ine 5379.
+ine 5380.
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 5409.
+ on input line 5410.
 
 
 LaTeX Warning: Reference `Principle of Deformation of Paths Corollary - Complex
-' on page 1 undefined on input line 5421.
+' on page 1 undefined on input line 5422.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 5440.
+on input line 5441.
 
 
 LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 11
-2 undefined on input line 5467.
+2 undefined on input line 5468.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 5494.
+on input line 5495.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
-e 1 undefined on input line 5578.
+e 1 undefined on input line 5579.
 
 
 LaTeX Warning: Reference `Contour integral in simply connected domain Theorem -
- Complex' on page 1 undefined on input line 5603.
+ Complex' on page 1 undefined on input line 5604.
 
 
 LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
-x' on page 1 undefined on input line 5612.
+x' on page 1 undefined on input line 5613.
 
 
 LaTeX Warning: Reference `Analytic implies existance of high order derivatives 
-theorem - Complex' on page 1 undefined on input line 5612.
+theorem - Complex' on page 1 undefined on input line 5613.
 
 
 LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
-x' on page 1 undefined on input line 5612.
+x' on page 1 undefined on input line 5613.
 
 
 LaTeX Warning: Reference `Analytic implies existance of high order derivatives 
-theorem - Complex' on page 1 undefined on input line 5612.
+theorem - Complex' on page 1 undefined on input line 5613.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 5625.
+on input line 5626.
 
 
 LaTeX Warning: Reference `Cauchy's Inequality Theorem - Complex' on page 1 unde
-fined on input line 5644.
+fined on input line 5645.
 
 
 LaTeX Warning: Reference `Maximum Modulus Principle Theorem - Complex' on page 
-1 undefined on input line 5655.
+1 undefined on input line 5656.
 
 
 LaTeX Warning: Reference `Complex Poly Reciprocal Bounded Corollary - Complex' 
-on page 1 undefined on input line 5674.
+on page 1 undefined on input line 5675.
 
 
 LaTeX Warning: Reference `Function continuous in closed and bounded region impl
 ies function is bounded Theorem - Complex' on page 1 undefined on input line 56
-78.
+79.
 
 
 LaTeX Warning: Reference `Liouville's Theorem - Complex' on page 1 undefined on
- input line 5679.
+ input line 5680.
 
 
 LaTeX Warning: Reference `Fundamental Theorem of Algebra - Complex' on page 1 u
-ndefined on input line 5682.
+ndefined on input line 5683.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
- line 5706.
+ line 5707.
 
 
 LaTeX Warning: Reference `Gauss's Mean Value Theorem - Complex' on page 1 undef
-ined on input line 5723.
+ined on input line 5724.
 
 
 LaTeX Warning: Reference `Abs of analytic function is constant in domain implie
 s that function is constant Example - Complex' on page 1 undefined on input lin
-e 5750.
+e 5751.
 
 
 LaTeX Warning: Reference `Analytic function is bounded in neighbourhood implies
  constant value thoughout neighbourhood Lemma - Complex' on page 1 undefined on
- input line 5771.
+ input line 5772.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Function continuous in closed and bounded region impl
 ies function is bounded Theorem - Complex' on page 1 undefined on input line 58
-31.
+32.
 
 
 LaTeX Warning: Reference `Domain Definition - Complex' on page 1 undefined on i
-nput line 5831.
+nput line 5832.
 
 
 LaTeX Warning: Reference `Region Definition - Complex' on page 1 undefined on i
-nput line 5831.
+nput line 5832.
 
 
 LaTeX Warning: Reference `Minimum of moduli of analytic function in closed and 
 bounded region is only reached at the boundaries of the region Example - Comple
-x' on page 1 undefined on input line 5847.
+x' on page 1 undefined on input line 5848.
 
 
 LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
 bounded region is only reached at the boundaries of the region Corollary - Comp
-lex' on page 1 undefined on input line 5849.
+lex' on page 1 undefined on input line 5850.
 
 
 LaTeX Warning: Reference `Minimum of moduli of analytic function in closed and 
 bounded region is only reached at the boundaries of the region Example - Comple
-x' on page 1 undefined on input line 5849.
+x' on page 1 undefined on input line 5850.
 
 
 LaTeX Warning: Reference `Max and Min of Harmonic Real-Valued function only occ
 urs at the boundary of closed bounded region Example - Complex' on page 1 undef
-ined on input line 5849.
+ined on input line 5850.
 
 
 LaTeX Warning: Reference `Gauss's Mean Value Theorem - Complex' on page 1 undef
-ined on input line 5853.
+ined on input line 5854.
 
 
 LaTeX Warning: Reference `Cauchy's Inequality Theorem - Complex' on page 1 unde
-fined on input line 5869.
+fined on input line 5870.
 
 
 LaTeX Warning: Reference `Liouville's Theorem - Complex' on page 1 undefined on
- input line 5869.
+ input line 5870.
 
 
 LaTeX Warning: Reference `Cauchy's Inequality Theorem - Complex' on page 1 unde
-fined on input line 5869.
+fined on input line 5870.
 
 
 LaTeX Warning: Reference `Liouville's Theorem - Complex' on page 1 undefined on
- input line 5869.
+ input line 5870.
 
 
 LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
 bounded region is only reached at the boundaries of the region Corollary - Comp
-lex' on page 1 undefined on input line 5886.
+lex' on page 1 undefined on input line 5887.
 
 
 LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
 bounded region is only reached at the boundaries of the region Corollary - Comp
-lex' on page 1 undefined on input line 5886.
+lex' on page 1 undefined on input line 5887.
 
 
 LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
 bounded region is only reached at the boundaries of the region Corollary - Comp
-lex' on page 1 undefined on input line 5896.
+lex' on page 1 undefined on input line 5897.
 
 
 LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
 bounded region is only reached at the boundaries of the region Corollary - Comp
-lex' on page 1 undefined on input line 5896.
+lex' on page 1 undefined on input line 5897.
 
 
 LaTeX Warning: Reference `Dirichlet Problem Definition - Partial' on page 1 und
-efined on input line 5916.
+efined on input line 5917.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
- line 5929.
+ line 5930.
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 5940.
+ on input line 5941.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
- line 5974.
+ line 5975.
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 5978.
+ on input line 5979.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 6008.
+on input line 6009.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 6008.
+on input line 6009.
 
 Chapter 16.
 
 LaTeX Warning: Reference `Absolute convergence implies convergence Corollary - 
-Real' on page 1 undefined on input line 6213.
+Real' on page 1 undefined on input line 6214.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
- line 6319.
+ line 6320.
 
 
 LaTeX Warning: Reference `Infinite sum of z^n and remainder for partial sum Exa
-mple - Complex' on page 1 undefined on input line 6323.
+mple - Complex' on page 1 undefined on input line 6324.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
-e 1 undefined on input line 6334.
+e 1 undefined on input line 6335.
 
 
 LaTeX Warning: Reference `Maclaurin Series - Complex' on page 1 undefined on in
-put line 6344.
+put line 6345.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Taylor's Theorem - Complex' on page 1 undefined on in
-put line 6437.
+put line 6438.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 6515.
+ on input line 6516.
 
 
 LaTeX Warning: Reference `Multiply Connected Domains Subsection - Complex' on p
-age 1 undefined on input line 6515.
+age 1 undefined on input line 6516.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
- line 6519.
+ line 6520.
 
 
 LaTeX Warning: Reference `Infinite sum of z^n and remainder for partial sum Exa
-mple - Complex' on page 1 undefined on input line 6528.
+mple - Complex' on page 1 undefined on input line 6529.
 
 
 LaTeX Warning: Reference `Principle of Deformation of Paths Corollary - Complex
-' on page 1 undefined on input line 6570.
+' on page 1 undefined on input line 6571.
 
 
 LaTeX Warning: Reference `Principle of Deformation of Paths Corollary - Complex
-' on page 1 undefined on input line 6584.
+' on page 1 undefined on input line 6585.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 6666.
+ on input line 6667.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
-e 1 undefined on input line 6671.
+e 1 undefined on input line 6672.
 
 
 LaTeX Warning: Reference `Fourier Theorem - PDE' on page 1 undefined on input l
-ine 6800.
+ine 6801.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Uniform Convergence (Power Series) Definition - Compl
-ex' on page 1 undefined on input line 7008.
+ex' on page 1 undefined on input line 7009.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Local Uniform Convergence of Power Series Theorem - C
-omplex' on page 1 undefined on input line 7110.
+omplex' on page 1 undefined on input line 7111.
 
 
 LaTeX Warning: Reference `Absolute Convergence of Power Series Theorem - Comple
-x' on page 1 undefined on input line 7128.
+x' on page 1 undefined on input line 7129.
 
 
 LaTeX Warning: Reference `Local Uniform Convergence of Power Series Theorem - C
-omplex' on page 1 undefined on input line 7128.
+omplex' on page 1 undefined on input line 7129.
 
 
 LaTeX Warning: Reference `Continuity of Sums of Power Series Theorem - Complex'
- on page 1 undefined on input line 7128.
+ on page 1 undefined on input line 7129.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 7171.
+on input line 7172.
 
 
 LaTeX Warning: Reference `Integration of Power Series Theorem - Complex' on pag
-e 1 undefined on input line 7201.
+e 1 undefined on input line 7202.
 
 
 LaTeX Warning: Reference `Morera's Theorem - Complex' on page 1 undefined on in
-put line 7205.
+put line 7206.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
-e 1 undefined on input line 7226.
+e 1 undefined on input line 7227.
 
 
 LaTeX Warning: Reference `Integration of Power Series Theorem - Complex' on pag
-e 1 undefined on input line 7259.
+e 1 undefined on input line 7260.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
-e 1 undefined on input line 7265.
+e 1 undefined on input line 7266.
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 7278.
+ on input line 7279.
 
 
 LaTeX Warning: Reference `Uniqueness of Taylor Series Theorem - Complex' on pag
-e 1 undefined on input line 7313.
+e 1 undefined on input line 7314.
 
 
 LaTeX Warning: Reference `Leibniz's Rule Proof - Complex' on page 1 undefined o
-n input line 7340.
+n input line 7341.
 
 
 LaTeX Warning: Reference `z-Transform Inverse Derivation Example - Complex' on 
-page 1 undefined on input line 7437.
+page 1 undefined on input line 7438.
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 7489.
+ on input line 7490.
 
 Chapter 17.
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 7557.
+ on input line 7558.
 
 
 LaTeX Warning: Reference `Laurent's Theorem - Complex' on page 1 undefined on i
-nput line 7571.
+nput line 7572.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Multiply Connected Domains Subsection - Complex' on p
-age 1 undefined on input line 7640.
+age 1 undefined on input line 7641.
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 7640.
+ on input line 7641.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Residue at Infinity Definition - Complex' on page 1 u
-ndefined on input line 7710.
+ndefined on input line 7711.
 
 
 LaTeX Warning: Reference `Principle of Deformation of Paths Corollary - Complex
-' on page 1 undefined on input line 7710.
+' on page 1 undefined on input line 7711.
 
 
 LaTeX Warning: Reference `Laurent's Theorem - Complex' on page 1 undefined on i
-nput line 7745.
+nput line 7746.
 
 
 LaTeX Warning: Reference `Laurent's Theorem - Complex' on page 1 undefined on i
-nput line 7755.
+nput line 7756.
 
 
 LaTeX Warning: Reference `Taylor's Theorem - Complex' on page 1 undefined on in
-put line 7761.
+put line 7762.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 7880.
+ed on input line 7881.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 7882.
+ed on input line 7883.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 7884.
+ed on input line 7885.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 7898.
+ed on input line 7899.
 
 
 LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
-e 1 undefined on input line 7929.
+e 1 undefined on input line 7930.
 
 
 LaTeX Warning: Reference `Analytic implies existance of high order derivatives 
-theorem - Complex' on page 1 undefined on input line 7948.
+theorem - Complex' on page 1 undefined on input line 7949.
 
 
 LaTeX Warning: Reference `Zero of Order m Definition - Complex' on page 1 undef
-ined on input line 8013.
+ined on input line 8014.
 
 
 LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
-mplex' on page 1 undefined on input line 8013.
+mplex' on page 1 undefined on input line 8014.
 
 
 LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
  0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
-on input line 8030.
+on input line 8031.
 
 
 LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
  0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
-on input line 8041.
+on input line 8042.
 
 
 LaTeX Warning: Reference `f analytic and zero in domain implies identically zer
-o in that domain Theorem - Complex' on page 1 undefined on input line 8041.
+o in that domain Theorem - Complex' on page 1 undefined on input line 8042.
 
 
 LaTeX Warning: Reference `Function pole order takes on zero order of quotient c
-onverse example - Complex' on page 1 undefined on input line 8055.
+onverse example - Complex' on page 1 undefined on input line 8056.
 
 
 LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
  0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
-on input line 8064.
+on input line 8065.
 
 
 LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
  0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
-on input line 8064.
+on input line 8065.
 
 
 LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
-mplex' on page 1 undefined on input line 8065.
+mplex' on page 1 undefined on input line 8066.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 8078.
+ed on input line 8079.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 8078.
+ed on input line 8079.
 
 
 LaTeX Warning: Reference `Zero of Order m Definition - Complex' on page 1 undef
-ined on input line 8098.
+ined on input line 8099.
 
 
 LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
-mplex' on page 1 undefined on input line 8098.
+mplex' on page 1 undefined on input line 8099.
 
 
 LaTeX Warning: Reference `Zero of Order m Definition - Complex' on page 1 undef
-ined on input line 8098.
+ined on input line 8099.
 
 
 LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
-mplex' on page 1 undefined on input line 8098.
+mplex' on page 1 undefined on input line 8099.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 8107.
+ed on input line 8108.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 8107.
+ed on input line 8108.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 8133.
+ed on input line 8134.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 8133.
+ed on input line 8134.
 
 
 LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
-mplex' on page 1 undefined on input line 8138.
+mplex' on page 1 undefined on input line 8139.
 
 
 LaTeX Warning: Reference `Bolzano-Weierstrass Theorem - Complex' on page 1 unde
-fined on input line 8156.
+fined on input line 8157.
 
 
 LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
  0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
-on input line 8160.
+on input line 8161.
 
 
-Overfull \hbox (23.8825pt too wide) in paragraph at lines 8179--8179
+Overfull \hbox (23.8825pt too wide) in paragraph at lines 8180--8180
 |[]\OT1/cmr/bx/n/17.28 Behaviour of Func-tions Near Iso-lated Sin-gu-lar Points
 | 
  []
 
 
 LaTeX Warning: Reference `Function continuous in closed and bounded region impl
-ies function is bounded Theorem - Complex' on page 1 undefined on input line 81
-99.
+ies function is bounded Theorem - Complex' on page 1 undefined on input line 82
+00.
 
 
 LaTeX Warning: Reference `Function continuous in closed and bounded region impl
-ies function is bounded Theorem - Complex' on page 1 undefined on input line 81
-99.
+ies function is bounded Theorem - Complex' on page 1 undefined on input line 82
+00.
 
 
 LaTeX Warning: Reference `Riemann's Theorem - Complex' on page 1 undefined on i
-nput line 8247.
+nput line 8248.
 
 
 LaTeX Warning: Reference `Function pole order takes on zero order of quotient T
-heorem - Complex' on page 1 undefined on input line 8253.
+heorem - Complex' on page 1 undefined on input line 8254.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 8270.
+ed on input line 8271.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 8270.
+ed on input line 8271.
 
 
 LaTeX Warning: Reference `Limits of Points at Infinity Subsection - Complex' on
- page 1 undefined on input line 8278.
+ page 1 undefined on input line 8279.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 8391.
+ed on input line 8392.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 8419.
+on input line 8420.
 
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 8444.
+ed on input line 8445.
 
 
 LaTeX Warning: Reference `Residue of Simple Pole Theorem - Complex' on page 1 u
-ndefined on input line 8448.
+ndefined on input line 8449.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 8460.
+on input line 8461.
 
 
 LaTeX Warning: Reference `Evaluation of Improper Integrals Subsection - Complex
-' on page 1 undefined on input line 8500.
+' on page 1 undefined on input line 8501.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Jordan's Inequality Lemma - Complex' on page 1 undefi
-ned on input line 8602.
+ned on input line 8603.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 8671.
+ on input line 8672.
 
 
 LaTeX Warning: Reference `Jordan's Inequality Lemma - Complex' on page 1 undefi
-ned on input line 8701.
+ned on input line 8702.
 
 
 LaTeX Warning: Reference `Jordan's Inequality Lemma - Complex' on page 1 undefi
-ned on input line 8701.
+ned on input line 8702.
 
 
 LaTeX Warning: Reference `int_0^infty e^(-x^2) dx Derivation Example - Complex'
- on page 1 undefined on input line 8710.
+ on page 1 undefined on input line 8711.
 
 
 LaTeX Warning: Reference `int_0^infty e^(-x^2) dx Derivation Example - Complex'
- on page 1 undefined on input line 8710.
+ on page 1 undefined on input line 8711.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -2399,79 +2401,79 @@ isable this.
 
 LaTeX Warning: Reference `Function continuous in closed and bounded region impl
 ies function is bounded Theorem - Complex' on page 1 undefined on input line 88
-58.
+59.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 8862.
+on input line 8863.
 
 
 LaTeX Warning: Reference `Indented Paths Theorem - Complex' on page 1 undefined
- on input line 8882.
+ on input line 8883.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 8972.
+on input line 8973.
 
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 8988.
+ed on input line 8989.
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 9001.
+ on input line 9002.
 
 
 LaTeX Warning: Reference `Indented Paths Theorem - Complex' on page 1 undefined
- on input line 9029.
+ on input line 9030.
 
 
 LaTeX Warning: Reference `Indented Paths Theorem - Complex' on page 1 undefined
- on input line 9029.
+ on input line 9030.
 
 
 LaTeX Warning: Reference `Jordan's Lemma - Complex' on page 1 undefined on inpu
-t line 9035.
+t line 9036.
 
 
 LaTeX Warning: Reference `Jordan's Lemma - Complex' on page 1 undefined on inpu
-t line 9035.
+t line 9036.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Overfull \hbox (7.90346pt too wide) detected at line 9120
+Overfull \hbox (7.90346pt too wide) detected at line 9121
 []
  []
 
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 9121.
+ed on input line 9122.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 9136.
+ed on input line 9137.
 
 
 LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
-on input line 9145.
+on input line 9146.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 9243.
+ed on input line 9244.
 
 
-Overfull \hbox (7.25365pt too wide) detected at line 9251
+Overfull \hbox (7.25365pt too wide) detected at line 9252
 []
  []
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 9258.
+ on input line 9259.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
@@ -2479,172 +2481,172 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Trig Identities - Complex' on page 1 undefined on inp
-ut line 9433.
+ut line 9434.
 
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 9442.
+ed on input line 9443.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 9556.
+ed on input line 9557.
 
 
 LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
-mplex' on page 1 undefined on input line 9561.
+mplex' on page 1 undefined on input line 9562.
 
 
 LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
-mplex' on page 1 undefined on input line 9561.
+mplex' on page 1 undefined on input line 9562.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 9571.
+ed on input line 9572.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 9571.
+ed on input line 9572.
 
 
 LaTeX Warning: Reference `Isolated zeros implies finite poles in analytic regio
-n Example - Complex' on page 1 undefined on input line 9572.
+n Example - Complex' on page 1 undefined on input line 9573.
 
 
 LaTeX Warning: Reference `Function not identically zero in domain implies zeros
  of function finite in order and number Example - Complex' on page 1 undefined 
-on input line 9572.
+on input line 9573.
 
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 9572.
+ed on input line 9573.
 
 
 LaTeX Warning: Reference `Logarithmic Function Definition - Complex' on page 1 
-undefined on input line 9593.
+undefined on input line 9594.
 
 
 LaTeX Warning: Reference `Argument Principle Theorem - Complex' on page 1 undef
-ined on input line 9605.
+ined on input line 9606.
 
 
 LaTeX Warning: Reference `Argument Principle Theorem - Complex' on page 1 undef
-ined on input line 9629.
+ined on input line 9630.
 
 
 LaTeX Warning: Reference `Closed contour does not enclose origin implies windin
-g number is zero Example - Complex' on page 1 undefined on input line 9649.
+g number is zero Example - Complex' on page 1 undefined on input line 9650.
 
 
 LaTeX Warning: Reference `Rouche's Theorem - Complex' on page 1 undefined on in
-put line 9655.
+put line 9656.
 
 
 LaTeX Warning: Reference `Fundamental Theorem of Algebra - Complex' on page 1 u
-ndefined on input line 9660.
+ndefined on input line 9661.
 
 
 LaTeX Warning: Reference `Liouville's Theorem - Complex' on page 1 undefined on
- input line 9688.
+ input line 9689.
 
 
 LaTeX Warning: Reference `Analytic function is zero in domain or line segment i
 n domain implies function is zero throughout domain Lemma - Complex' on page 1 
-undefined on input line 9723.
+undefined on input line 9724.
 
 
 LaTeX Warning: Reference `Analytic function is zero in domain or line segment i
 n domain implies function is zero throughout domain Lemma - Complex' on page 1 
-undefined on input line 9723.
+undefined on input line 9724.
 
 
 LaTeX Warning: Reference `Finite order of zeros in simple closed contour implie
-s finite zeros Example - Complex' on page 1 undefined on input line 9724.
+s finite zeros Example - Complex' on page 1 undefined on input line 9725.
 
 
 LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
-mplex' on page 1 undefined on input line 9742.
+mplex' on page 1 undefined on input line 9743.
 
 
 LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
-mplex' on page 1 undefined on input line 9742.
+mplex' on page 1 undefined on input line 9743.
 
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 9754.
+ed on input line 9755.
 
 
 LaTeX Warning: Reference `Rouche's Theorem - Complex' on page 1 undefined on in
-put line 9774.
+put line 9775.
 
 
 LaTeX Warning: Reference `Function continuous in closed and bounded region impl
 ies function is bounded Theorem - Complex' on page 1 undefined on input line 98
-50.
+51.
 
 
 LaTeX Warning: Reference `Continuity Chapter - Real Analysis' on page 1 undefin
-ed on input line 9854.
+ed on input line 9855.
 
 
 LaTeX Warning: Reference `Rouche's Theorem - Complex' on page 1 undefined on in
-put line 9856.
+put line 9857.
 
 
 LaTeX Warning: Reference `Argument Principle Theorem - Complex' on page 1 undef
-ined on input line 9857.
+ined on input line 9858.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
 LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
-ed on input line 9949.
+ed on input line 9950.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 9976.
+ed on input line 9977.
 
 
 LaTeX Warning: Reference `Residue of Simple Pole Theorem - Complex' on page 1 u
-ndefined on input line 10048.
+ndefined on input line 10049.
 
 
 LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
- on input line 10104.
+ on input line 10105.
 
 
 LaTeX Warning: Reference `Indented Paths Around Simple Poles Theorem - Complex'
- on page 1 undefined on input line 10111.
+ on page 1 undefined on input line 10112.
 
 
 LaTeX Warning: Reference `Residue of Simple Pole Theorem - Complex' on page 1 u
-ndefined on input line 10111.
+ndefined on input line 10112.
 
 
 LaTeX Warning: Reference `Uniform Convergence Definition - Real' on page 1 unde
-fined on input line 10337.
+fined on input line 10338.
 
 
 LaTeX Warning: Reference `Gamma Function and Factorials Theorem - Complex' on p
-age 1 undefined on input line 10438.
+age 1 undefined on input line 10439.
 
 
 LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
-ed on input line 10459.
+ed on input line 10460.
 
 
 LaTeX Warning: Reference `Function real on real axis implies alternating sign a
 cross simple pole on real axis theorem - Complex' on page 1 undefined on input 
-line 10475.
+line 10476.
 
 
 LaTeX Warning: Reference `Integration along branch cut Example - Complex' on pa
-ge 1 undefined on input line 10523.
+ge 1 undefined on input line 10524.
 
 Chapter 18.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10927--10928
+Underfull \hbox (badness 10000) in paragraph at lines 10928--10929
 
  []
 
@@ -2672,10 +2674,10 @@ d_H}' has been optimized away. Use '/tikz/external/optimize=false' to disable t
 his.
 
 LaTeX Warning: Reference `Roots of z Sections - Complex' on page 1 undefined on
- input line 11381.
+ input line 11382.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11406--11407
+Underfull \hbox (badness 10000) in paragraph at lines 11407--11408
 
  []
 
@@ -2690,6 +2692,12 @@ isable this.
 [209
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 Chapter 19.
 Chapter 20.
 Chapter 21.
@@ -2712,19 +2720,19 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 42746 strings out of 479302
- 946012 string characters out of 5867266
- 1454415 words of memory out of 5000000
- 59126 multiletter control sequences out of 15000+600000
+ 43387 strings out of 479302
+ 965263 string characters out of 5867266
+ 1611090 words of memory out of 5000000
+ 59764 multiletter control sequences out of 15000+600000
  446748 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,19n,105p,898b,2691s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,19n,105p,898b,2855s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 >
-Output written on tikz/MathNotes-figure66.pdf (1 page, 13182 bytes).
+Output written on tikz/MathNotes-figure66.pdf (1 page, 423050 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+ 1629 PDF objects out of 1728 (max. 8388607)
+ 815 compressed objects within 9 object streams
  2 named destinations out of 1000 (max. 500000)
- 27 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5613 words of extra memory for PDF output out of 10000 (max. 10000000)
 

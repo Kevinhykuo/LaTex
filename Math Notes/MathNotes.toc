@@ -133,7 +133,7 @@
 \contentsline {section}{\numberline {18.8}Mappings by Branches of \(z^{1/n}\)}{212}{section.18.8}%
 \contentsline {section}{\numberline {18.9}Square Roots of Polynomials}{213}{section.18.9}%
 \contentsline {section}{\numberline {18.10}Riemann Surface}{216}{section.18.10}%
-\contentsline {subsection}{\numberline {18.10.1}Surfaces for Related Functions}{217}{subsection.18.10.1}%
+\contentsline {subsection}{\numberline {18.10.1}Surfaces for Related Functions}{218}{subsection.18.10.1}%
 \contentsline {chapter}{\numberline {19}Conformal Mapping}{219}{chapter.19}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{221}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{223}{part.6}%

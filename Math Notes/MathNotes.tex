@@ -5,13 +5,14 @@
 \usepackage{%abstract, 
 	amsmath, amssymb, array, babel, booktabs, caption, censor, fancyhdr, flafter, float, framed, gensymb, graphicx, hyperref, imakeidx, inputenc, indentfirst, mathtools, MnSymbol, multicol, multirow, longtable, lscape, ltablex, polynom, pgfplots, physics, rotating, scalerel, setspace, stackengine, tabularx, threeparttable, titlesec, titling, wrapfig}
 \usepackage{cleveref}
-\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings,backgrounds,patterns, arrows.meta}
+\usetikzlibrary{calc,  angles, positioning, intersections, quotes, decorations.markings, backgrounds, patterns, arrows.meta}
 \usepgfplotslibrary{groupplots}
 \usepackage{amsthm} %Do not use amsthm with ntheorem unlees ntheorem is using the amsthm option
 \usepackage{thmtools}
 \pgfplotsset{compat=1.8}
 
 \makeindex
+\usepgfplotslibrary{patchplots}
 \usepgfplotslibrary{external}
 \tikzexternalize[prefix=tikz/] 
 
@@ -11488,7 +11489,7 @@
 		
 		\begin{figure}[H]
 			\centering
-			\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{tikzpicture}
 				\begin{axis}[
 					unit vector ratio=1 1 1,
 					xlabel={$x$},
@@ -11793,7 +11794,7 @@
 		\begin{align*}
 			\log(z) = \ln(r) + i\theta
 		\end{align*}
-		The Riemann surface of \(\log(z)\) is then the complex plane with a deleted origin, and a cut made along the positive real axis. The first sheet \(R_1\) is defined from \(\theta \in [0, 2\pi]\), the second sheet \(R_2\) consists of \(\theta \in [2\pi, 4\pi]\), the third sheet \(R_3\) consists of \(\theta \in [4\pi, 6\pi]\), and so on. Likewise, the sheet \(R_{-1}\) consists of \(\theta \in [-2\pi, 0]\). 
+		The Riemann surface of \(\log(z)\) is then the complex plane with a deleted origin, and a cut made along the positive real axis. The first sheet \(R_0\) is defined from \(\theta \in [0, 2\pi]\), the second sheet \(R_1\) consists of \(\theta \in [2\pi, 4\pi]\), the third sheet \(R_3\) consists of \(\theta \in [4\pi, 6\pi]\), and so on. Likewise, the sheet \(R_{-1}\) consists of \(\theta \in [-2\pi, 0]\). 
 		
 		Essentially, we get an infinite ``spiral staircase'' with sheets in multiples of \(2\pi\). The radial component, of course, is also infinite.
 		
@@ -11818,8 +11819,9 @@
 					scale uniformly strategy=units only,
 					]
 					
-					\addplot3[surf,
-						shader=interp,
+					\addplot3[patch,
+						patch refines=1,
+						shader=faceted interp,
 						opacity = 0.2,
 						domain = -4*pi:4*pi,
 						domain y = 0:1,
@@ -11839,14 +11841,223 @@
 			\end{tikzpicture}
 		\end{figure}
 	
-		The transformation \(w = \log(z)\)
+		The transformation \(w = \log(z)\) maps the Riemann surface onto the \(w\)-plane in an 1-1 manner. 
 		
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					axis equal,
+					width=10cm,
+					axis lines = center,
+					xlabel = {$x$},
+					ylabel = {$y$},
+					zlabel = {$\theta$},
+					xmin=-2, xmax=2,
+					ymin=-2, ymax=2,
+					zmin=-2.5, zmax=2.5,
+					ticks = none,
+					axis lines = middle,
+					axis line style = Black,
+					%				enlargelimits=0.3,
+					view/h=45,
+					scale uniformly strategy=units only,
+					]
+					
+					\addplot3[patch,
+					patch refines=1,
+					shader=faceted interp,
+					opacity = 0.2,
+					domain = -4*pi:4*pi,
+					domain y = 0:1,
+					samples = 101,
+					samples y = 2,
+					]
+					({y*cos(deg(x))},
+					{y*sin(deg(x))},
+					{deg(x)}/360);
+					
+					\draw[dashed] (axis cs: 0,0,2) -- (axis cs: 1.9,0,2);
+					\draw[dashed] (axis cs: 0,0,1) -- (axis cs: 1.9,0,1);
+					\draw[dashed, color=White] (axis cs: 0,0,0) -- (axis cs: 1.9,0,0);
+					\draw[dashed] (axis cs: 0,0,-1) -- (axis cs: 1.9,0,-1);
+					\draw[dashed] (axis cs: 0,0,-2) -- (axis cs: 1.9,0,-2);
+				\end{axis}
+			\end{tikzpicture}
+			{\Large \(\xrightarrow{\mathmakebox[3cm] {F(z)=\log(z) }}\)}
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-3, xmax=3,
+					ymin=-2.5, ymax=3,
+					axis lines = middle,
+					ticks = none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(0, 2) [\(4\pi i\)]
+						(0, 1) [\(2\pi i\)]
+						(0,-1) [\(-2\pi i\)]
+						(0,-2) [\(-4\pi i\)]
+					};
+					
+					
+					\draw[dashed]
+					(axis cs: -3, 2)--(axis cs: 3, 2);
+					
+					\draw[dashed]
+					(axis cs: -3, 1)--(axis cs: 3, 1);
+					
+					\draw[dashed]
+					(axis cs: -3,-1)--(axis cs: 3,-1);
+					
+					\draw[dashed]
+					(axis cs: -3,-2)--(axis cs: 3,-2);
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+		\(\log(z)\) on \(R_1\) is an analytic continuation of \(f(z) = \ln(r) + i\theta\), \(\theta \in (0, 2\pi)\). \(\log(z)\) is then not only single-valued on all points \(z\) on the Riemann surface, but also analytic at all points. 
+		
+		The ``spiral staircase'' can be cut along any ray from the origin to for other Riemann surfaces.
+	\end{example}
+
+	\begin{example}
+		Consider the square root function on the \(z\)-plane with a deleted origin:
+		\begin{align*}
+			z^2 = \sqrt{r}e^{i\theta/2}
+		\end{align*}
+		The function maps \(\theta \in [0, 2\pi]\) to \(\phi \in [0, \pi]\), and \(\theta \in [2\pi, 4\pi]\) to \(\phi \in [\pi, 2\pi]\). Thus the Riemann surface is composed of two sheets, \(R_1\) and \(R_2\).
+		
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					axis equal,
+					width=10cm,
+					axis lines = center,
+					xlabel = {$x$},
+					ylabel = {$y$},
+					zlabel = {$\theta$},
+					xmin=-2, xmax=2,
+					ymin=-2, ymax=2,
+					zmin=-2, zmax=2,
+					ticks = none,
+					axis lines = middle,
+					axis line style = Black,
+					%				enlargelimits=0.3,
+					view/h=45,
+					scale uniformly strategy=units only,
+					]
+					
+					\addplot3[patch,
+					patch refines=1,
+					shader=faceted interp,
+					opacity = 0.2,
+					domain = -4*pi:4*pi,
+					domain y = 0:1,
+					samples = 101,
+					samples y = 2,
+					]
+					({y*cos(deg(x))},
+					{y*sin(deg(x))},
+					{y*sin(deg(x/2))});
+					
+					
+					\draw[dashed, color=White] (axis cs: 0,0,0) -- (axis cs: 1.9,0,0);
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	
+		The function is now single-valued. The choice of values of \(\theta\) from \(0\) to \(2\pi\) or \(4\pi\) to \(6\pi\) does not affect the value of \(z^{1/2}\). Note, the value of \(z^{1/2}\) a point where the sheet passes from \(R_0\) to \(R_1\) is different than that passing from \(R_1\) to \(R_0\). \(R_0\) for \(\theta \in (0, 2\pi)\), and \(R_1\) for \(\theta \in (2\pi, 4\pi)\).
+		
+		The origin is common to both \(R_0\) and \(R_1\), thus is a branch point of the Riemann Surface.
+		
+		The function is an analytic continuation of the function defined on the other sheet, thus points of \(z^{1/2}\) on the Riemann surface are all analytic except at the origin.
 	\end{example}
 
 	
-
-	
 	\subsection{Surfaces for Related Functions} \label{Surfaces for Related Functions Subsection - Complex}
+	
+	\begin{example}
+		Riemann surface for
+		\begin{align*}
+			f(z) = (z^2 - 1)^{1/2} &= \sqrt{r_1 r_2} \exp(\frac{i(\theta_1 + \theta_2)}{2}) &
+			z - 1 &= r_1 e^{i\theta_1} &
+			z + 1 &= r_2 e^{i\theta_2}
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-2, xmax=2,
+					ymin=-0.2, ymax=2,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(1.5, 1.75) [\(z\)]
+					};
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(1, 0) [\(1\)]
+						(-1, 0) [\(-1\)]
+					};
+					
+					\draw[]
+					(axis cs: 1, 0)--(axis cs: 1.5, 1.75)
+					node[pos=0.5, right] {\(r_1\)};
+					
+					\draw[]
+					(axis cs: -1, 0)--(axis cs: 1.5, 1.75)
+					node[pos=0.5, above] {\(r_2\)};
+					
+					\draw[line width=1pt, dashed, color=White]
+					(axis cs: -1, 0)--(axis cs: 1.9, 0);
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 1.5, 0) arc (0:{atan(1.75/0.5)}:50)
+					node[pos=0.5, right] {\(\theta_1\)};
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -0.5, 0) arc (0:{atan(1.75/2.5)}:50)
+					node[pos=0.5, right] {\(\theta_2\)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	
+		We have a branch cut between the points \(z = \pm 1\), thus the Riemann surface has two sheets cut between the points. 
+		
+	\end{example}
 	
 	
 	
