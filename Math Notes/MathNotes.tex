@@ -12055,109 +12055,207 @@
 			\end{tikzpicture}
 		\end{figure}
 	
-		We have a branch cut between the points \(z = \pm 1\), thus the Riemann surface has two sheets cut between the points. 
+		We have a branch cut between the points \(z = \pm 1\), thus the Riemann surface has two sheets cut between the points. The lower edge of \(R_0\) is connected to the upper edge of \(R_1\), and lower edge of \(R_1\) is connected to the upper edge of \(R_0\). We have two layers where the line between \(z=\pm 1\) serves as a connection between the layers.
+		
+		Any simple closed curve enclosing \(z = \pm 1\) on a sheet will return to its original position as \(\theta_1\) and \(\theta_2\) go from \(0\) to \(2\pi\), and will not cross into the other sheet. 
+		
+		If a contour encircles \(z = 1\) twice, but does not enclose \(z=-1\), then the contour passes from \(R_0\) to \(R_1\) and back to \(R_0\). \(\theta_1\) then changes by \(4\pi\) while \(\theta_2\) changes by \(0\). Likewise for a similar case enclosing \(z = -1\).
 		
 	\end{example}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	\begin{example}
+		Consider the double-valued function:
+		\begin{align*}
+			f(z) = [z(z^2 - 1)]^{1/2} = \sqrt{r r_1 r_2} \exp(\frac{i(\theta + \theta_1 + \theta_2)}{2})
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-2, xmax=2,
+					ymin=-0.5, ymax=2,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(1.5, 1.75) [\(z\)]
+					};
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(1, 0) [\(1\)]
+						(0, 0)
+						(-1, 0) [\(-1\)]
+					};
+					
+					\draw[]
+					(axis cs: 1, 0)--(axis cs: 1.5, 1.75)
+					node[pos=0.5, right] {\(r_1\)};
+					
+					\draw[]
+					(axis cs: -1, 0)--(axis cs: 1.5, 1.75)
+					node[pos=0.5, above] {\(r_2\)};
+					
+					\draw[]
+					(axis cs: 0, 0)--(axis cs: 1.5, 1.75)
+					node[pos=0.5, above] {\(r\)};
+					
+					\draw[line width=1pt, dashed, color=White]
+					(axis cs: -1, 0)--(axis cs: 0, 0)
+					node[pos=0.5, below, color=Black] {\(L_1\)};
+					
+					\draw[line width=1pt, dashed, color=White]
+					(axis cs: 1, 0)--(axis cs: 1.9, 0)
+					node[pos=0.5, below, color=Black] {\(L_2\)};
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 1.5, 0) arc (0:{atan(1.75/0.5)}:50)
+					node[pos=0.5, right] {\(\theta_1\)};
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -0.5, 0) arc (0:{atan(1.75/2.5)}:50)
+					node[pos=0.5, right] {\(\theta_2\)};
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0.5, 0) arc (0:{atan(1.75/1.5)}:50)
+					node[pos=0.5, right] {\(\theta\)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+		The branch points are \(z \in \{0, \pm 1\}\). Since the function is double-valued, we will have two sheets, \(R_0\) and \(R_1\). We can define a cut \(L_1\) from \(-1\) to \(0\) and a cut \(L_2\) from \(1\) to a point at infinity. The sheets \(R_0\) and \(R_1\) is then joined along \(L_1\) and \(L_2\), with the lower edge of \(R_0\) joined to the upper edge of \(R_1\) and the lower edge of \(R_1\) joined to the lower edge of \(R_0\).
+		\begin{question}
+			Is the choice of the cuts \(L_1\) and \(L_2\) arbitrary? Can we define \(L_1\) as the point at infinity to \(-1\) and \(L_2\) from \(0\) to \(1\)?
+		\end{question}
+	\end{example}
+
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
+	
+	\index{Conformal Mapping}
+
+	\section{Preserving Angles and Scale Factors} \label{Preserning Angles and Scale Factors}
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
