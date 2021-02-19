@@ -1,0 +1,169 @@
+\babel@toc {english}{}
+\contentsline {part}{I\hspace {1em}Logic [Empty]}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Proofs}{3}{chapter.1}%
+\contentsline {part}{II\hspace {1em}Numbers [Empty]}{5}{part.2}%
+\contentsline {chapter}{\numberline {2}Natural \(\mathbb {N}\)}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Integers \(\mathbb {Z}\)}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Rationals \(\mathbb {Q}\)}{11}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Constructible}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Algebraic \(\mathbb {A}\)}{15}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Reals \(\mathbb {R}\)}{17}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Complex \(\mathbb {C}\)}{19}{chapter.8}%
+\contentsline {part}{III\hspace {1em}Real Analysis [Empty]}{21}{part.3}%
+\contentsline {chapter}{\numberline {9}Sequences}{23}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Limits}{23}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Limit Theorems}{23}{subsection.9.1.1}%
+\contentsline {section}{\numberline {9.2}Monotone and Cauchy Sequences}{23}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Subsequences}{23}{section.9.3}%
+\contentsline {section}{\numberline {9.4}\(\qopname \relax m{lim}\operatorname {sup}\) and \(\qopname \relax m{lim}\operatorname {inf}\)}{23}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Series}{23}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Alternating Series and Integral Tests}{23}{section.9.6}%
+\contentsline {chapter}{\numberline {10}Continuity}{25}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Continuous Functions}{25}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Properties}{25}{subsection.10.1.1}%
+\contentsline {section}{\numberline {10.2}Uniform Continuity}{25}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Limits of Functions}{25}{section.10.3}%
+\contentsline {chapter}{\numberline {11}Metric Spaces}{27}{chapter.11}%
+\contentsline {part}{IV\hspace {1em}Complex Analysis}{29}{part.4}%
+\contentsline {chapter}{\numberline {12}Basics}{31}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Complex Numbers}{31}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Triangle Inequality}{32}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Polar and Exponential Form}{33}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Properties of Polar and Exponential Form}{35}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Properties of Arguments}{36}{subsection.12.3.2}%
+\contentsline {section}{\numberline {12.4}Roots of \(z\)}{36}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Complex Conjugate}{38}{section.12.5}%
+\contentsline {section}{\numberline {12.6}Operations as Transformations}{39}{section.12.6}%
+\contentsline {section}{\numberline {12.7}Complex Analysis Definitions}{40}{section.12.7}%
+\contentsline {chapter}{\numberline {13}Analytic Functions}{45}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Functions as mappings}{45}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Limits}{47}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Limit Theorems}{49}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.2}Limits of Points at Infinity}{51}{subsection.13.2.2}%
+\contentsline {section}{\numberline {13.3}Continuity}{54}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Exercises}{56}{subsection.13.3.1}%
+\contentsline {section}{\numberline {13.4}Differentiation}{57}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Differentiation Rules}{59}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}Exercises}{62}{subsection.13.4.2}%
+\contentsline {section}{\numberline {13.5}Cauchy-Riemann Equations}{63}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}Complex Form of the Cauchy-Riemann Equations}{69}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.2}Conditions for Differentiability}{70}{subsection.13.5.2}%
+\contentsline {section}{\numberline {13.6}Analytic Functions}{72}{section.13.6}%
+\contentsline {subsection}{\numberline {13.6.1}Examples}{74}{subsection.13.6.1}%
+\contentsline {section}{\numberline {13.7}Harmonic Functions}{75}{section.13.7}%
+\contentsline {section}{\numberline {13.8}Uniquely Determined Analytic Functions}{77}{section.13.8}%
+\contentsline {subsection}{\numberline {13.8.1}Reflection Principle}{79}{subsection.13.8.1}%
+\contentsline {subsection}{\numberline {13.8.2}Examples}{80}{subsection.13.8.2}%
+\contentsline {chapter}{\numberline {14}Elementary Functions}{81}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Exponential Function}{81}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Logarithmic Function}{81}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}Branches and Derivatives of Logarithms}{82}{subsection.14.2.1}%
+\contentsline {subsection}{\numberline {14.2.2}Identities of Logarithms}{83}{subsection.14.2.2}%
+\contentsline {subsection}{\numberline {14.2.3}Power Function}{84}{subsection.14.2.3}%
+\contentsline {section}{\numberline {14.3}Trigonometric Functions}{85}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Zeros and Singularities}{86}{subsection.14.3.1}%
+\contentsline {section}{\numberline {14.4}Hyperbolic Functions}{87}{section.14.4}%
+\contentsline {section}{\numberline {14.5}Inverse Trigonometric and Hyperbolic Functions}{89}{section.14.5}%
+\contentsline {section}{\numberline {14.6}Phasors}{91}{section.14.6}%
+\contentsline {chapter}{\numberline {15}Integrals}{93}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Derivatives of Functions}{93}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Definite Integrals of Functions}{93}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Contours}{94}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Contour Integrals}{96}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}Upper Bounds for the Moduli}{97}{subsection.15.4.1}%
+\contentsline {section}{\numberline {15.5}Antiderivatives}{99}{section.15.5}%
+\contentsline {section}{\numberline {15.6}Cauchy-Goursat Theorem}{102}{section.15.6}%
+\contentsline {subsection}{\numberline {15.6.1}Morera's Theorem}{106}{subsection.15.6.1}%
+\contentsline {subsection}{\numberline {15.6.2}Simply Connected Domains}{107}{subsection.15.6.2}%
+\contentsline {subsection}{\numberline {15.6.3}Multiply Connected Domains}{108}{subsection.15.6.3}%
+\contentsline {subsection}{\numberline {15.6.4}Examples}{109}{subsection.15.6.4}%
+\contentsline {section}{\numberline {15.7}Cauchy Integral Formula}{113}{section.15.7}%
+\contentsline {subsection}{\numberline {15.7.1}Consequences}{116}{subsection.15.7.1}%
+\contentsline {section}{\numberline {15.8}Liouville's Theorem and the Fundamental Theorem of Algebra}{117}{section.15.8}%
+\contentsline {section}{\numberline {15.9}Maximum Modulus Principle}{118}{section.15.9}%
+\contentsline {subsection}{\numberline {15.9.1}Examples}{121}{subsection.15.9.1}%
+\contentsline {section}{\numberline {15.10}Poisson Integral Formula}{122}{section.15.10}%
+\contentsline {chapter}{\numberline {16}Series}{125}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Convergence}{125}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Taylor Series}{130}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Laurent Series}{132}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}Examples}{135}{subsection.16.3.1}%
+\contentsline {section}{\numberline {16.4}Absolute and Uniform Convergence of Power Series}{139}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Continuity of Sums of Power Series}{142}{section.16.5}%
+\contentsline {section}{\numberline {16.6}Integration and Differentiation of Power Series}{143}{section.16.6}%
+\contentsline {section}{\numberline {16.7}Uniqueness of Series Representations}{145}{section.16.7}%
+\contentsline {section}{\numberline {16.8}Multiplication and Division of Power Series}{147}{section.16.8}%
+\contentsline {section}{\numberline {16.9}z-Transform}{149}{section.16.9}%
+\contentsline {subsection}{\numberline {16.9.1}Product of z-Transforms}{150}{subsection.16.9.1}%
+\contentsline {chapter}{\numberline {17}Residues and Poles}{153}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Residues}{153}{section.17.1}%
+\contentsline {subsection}{\numberline {17.1.1}Residue at Infinity}{154}{subsection.17.1.1}%
+\contentsline {section}{\numberline {17.2}Three Types of Isolated Singular Points}{156}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Residue at Poles}{157}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Zeros of Analytic Functions}{160}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Zeros and Poles}{162}{section.17.5}%
+\contentsline {section}{\numberline {17.6}Behaviour of Functions Near Isolated Singular Points}{164}{section.17.6}%
+\contentsline {subsection}{\numberline {17.6.1}Removable Singular Points}{164}{subsection.17.6.1}%
+\contentsline {subsection}{\numberline {17.6.2}Essential Singular Points}{165}{subsection.17.6.2}%
+\contentsline {subsection}{\numberline {17.6.3}Poles of Order \(m\)}{166}{subsection.17.6.3}%
+\contentsline {section}{\numberline {17.7}Application of Residues}{166}{section.17.7}%
+\contentsline {subsection}{\numberline {17.7.1}Evaluation of Improper Integrals}{166}{subsection.17.7.1}%
+\contentsline {subsection}{\numberline {17.7.2}Improper Integrals from Fourier Analysis}{170}{subsection.17.7.2}%
+\contentsline {subsection}{\numberline {17.7.3}Jordan's Lemma}{170}{subsection.17.7.3}%
+\contentsline {subsection}{\numberline {17.7.4}Indented Paths}{174}{subsection.17.7.4}%
+\contentsline {subsection}{\numberline {17.7.5}Integration Along a Branch Cut}{177}{subsection.17.7.5}%
+\contentsline {subsection}{\numberline {17.7.6}Indefinite Integrals Involving Sines and Cosines}{180}{subsection.17.7.6}%
+\contentsline {subsection}{\numberline {17.7.7}Argument Principle}{181}{subsection.17.7.7}%
+\contentsline {subsection}{\numberline {17.7.8}Rouché's Theorem}{184}{subsection.17.7.8}%
+\contentsline {subsection}{\numberline {17.7.9}Inverse Laplace Transforms}{189}{subsection.17.7.9}%
+\contentsline {subsection}{\numberline {17.7.10}Hilbert Transform}{192}{subsection.17.7.10}%
+\contentsline {subsubsection}{Causality}{195}{corollary.17.7.9.1}%
+\contentsline {subsection}{\numberline {17.7.11}Gamma Function}{196}{subsection.17.7.11}%
+\contentsline {chapter}{\numberline {18}Mapping by Elementary Functions}{201}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Linear Transformations}{201}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Transformation \(w = 1/z\)}{201}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}Mapping by \(1/z\)}{202}{subsection.18.2.1}%
+\contentsline {section}{\numberline {18.3}Linear Fractional Transformations}{202}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Implicit Form}{204}{subsection.18.3.1}%
+\contentsline {section}{\numberline {18.4}Mappings of the Upper Half Plane}{206}{section.18.4}%
+\contentsline {section}{\numberline {18.5}Mappings by the Exponential Function}{208}{section.18.5}%
+\contentsline {section}{\numberline {18.6}Mapping by \(w = \sin (z)\)}{209}{section.18.6}%
+\contentsline {subsection}{\numberline {18.6.1}Related Mappings}{211}{subsection.18.6.1}%
+\contentsline {section}{\numberline {18.7}Mappings by \(z^2\)}{211}{section.18.7}%
+\contentsline {section}{\numberline {18.8}Mappings by Branches of \(z^{1/n}\)}{212}{section.18.8}%
+\contentsline {section}{\numberline {18.9}Square Roots of Polynomials}{213}{section.18.9}%
+\contentsline {section}{\numberline {18.10}Riemann Surface}{216}{section.18.10}%
+\contentsline {subsection}{\numberline {18.10.1}Surfaces for Related Functions}{218}{subsection.18.10.1}%
+\contentsline {chapter}{\numberline {19}Conformal Mapping}{221}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Preserving Angles and Scale Factors}{221}{section.19.1}%
+\contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{223}{part.5}%
+\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{225}{part.6}%
+\contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{227}{part.7}%
+\contentsline {paragraph}{Calculus of Variations [Empty]}{228}{theorem.19.1.2}%
+\contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{229}{part.8}%
+\contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{231}{part.9}%
+\contentsline {chapter}{\numberline {20}Markov Chains}{233}{chapter.20}%
+\contentsline {part}{X\hspace {1em}Tensors [Empty]}{235}{part.10}%
+\contentsline {part}{XI\hspace {1em}Riemann Geometry [Empty]}{237}{part.11}%
+\contentsline {part}{XII\hspace {1em}Abstract Algebra [Empty]}{239}{part.12}%
+\contentsline {chapter}{\numberline {21}Groups}{241}{chapter.21}%
+\contentsline {chapter}{\numberline {22}Rings}{243}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Ideals}{243}{section.22.1}%
+\contentsline {chapter}{\numberline {23}Integral Domains}{245}{chapter.23}%
+\contentsline {chapter}{\numberline {24}GCD Domains}{247}{chapter.24}%
+\contentsline {chapter}{\numberline {25}Unique Factorization Domains}{249}{chapter.25}%
+\contentsline {chapter}{\numberline {26}Principal Ideal Domains}{251}{chapter.26}%
+\contentsline {chapter}{\numberline {27}Fields}{253}{chapter.27}%
+\contentsline {part}{XIII\hspace {1em}Galois Theory [Empty]}{255}{part.13}%
+\contentsline {part}{XIV\hspace {1em}Lie Theory [Empty]}{257}{part.14}%
+\contentsline {chapter}{\numberline {28}Lie Groups}{259}{chapter.28}%
+\contentsline {chapter}{\numberline {29}Lie Algebra}{261}{chapter.29}%
+\contentsline {part}{XV\hspace {1em}C-Star Algebra [Empty]}{263}{part.15}%
+\contentsline {part}{XVI\hspace {1em}Set Theory [Empty]}{265}{part.16}%
+\contentsline {part}{XVII\hspace {1em}Model Theory [Empty]}{267}{part.17}%
+\contentsline {part}{XVIII\hspace {1em}Statistics [Empty]}{269}{part.18}%
+\contentsline {part}{XIX\hspace {1em}Tips and Tricks [Empty]}{271}{part.19}%
+\contentsline {chapter}{\numberline {30}Integration Techniques}{273}{chapter.30}%
+\contentsline {section}{\numberline {30.1}DI Method (Integration Table)}{273}{section.30.1}%
+\contentsline {section}{\numberline {30.2}Feynman Integration}{273}{section.30.2}%
+\contentsline {part}{XX\hspace {1em}Index and Bibliography}{275}{part.20}%
