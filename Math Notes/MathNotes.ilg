@@ -2,8 +2,8 @@ This is makeindex, version 2.15 [TeX Live 2020] (kpathsea + Thai support).
 Scanning input file MathNotes.idx....
 !! Input index error (file = MathNotes.idx, line = 83):
    -- Extra `!' at position 30 of first argument.
-done (257 entries accepted, 1 rejected).
-Sorting entries.....done (2125 comparisons).
-Generating output file MathNotes.ind....done (349 lines written, 0 warnings).
+done (261 entries accepted, 1 rejected).
+Sorting entries.....done (2144 comparisons).
+Generating output file MathNotes.ind....done (352 lines written, 0 warnings).
 Output written in MathNotes.ind.
 Transcript written in MathNotes.ilg.

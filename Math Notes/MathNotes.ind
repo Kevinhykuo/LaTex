@@ -9,6 +9,7 @@
   \item Analyticity, 116
     \subitem  Function
       \subsubitem  Integration to Infinity, 196
+  \item Angle of Rotation, 221
   \item Antiderivative, 99, 100
   \item Arc, 94
     \subitem  Differentiable, 95
@@ -64,7 +65,9 @@
   \item Complex-Valued Function, 94
     \subitem  Definite Integral, 93
     \subitem  Derivative, 93
-  \item Conformal Mapping, 221
+  \item Conformal, 222
+  \item Conformal Mapping, 221, 222
+  \item Conformal Transformation, 222
   \item Continuity
     \subitem  Polynomial, 54
   \item Contour, 95

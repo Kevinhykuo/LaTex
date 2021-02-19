@@ -12156,10 +12156,124 @@
 
 	\section{Preserving Angles and Scale Factors} \label{Preserning Angles and Scale Factors}
 	
+	Consider an arc \(C_1\) parameterized by \(z_1(t)\) and a function \(f\) defined by all points in \(C\):
+	\begin{align*}
+		z_1 &= z_1(t) & 
+		w_1 &= f[z_1(t)] &
+		t &\in [a, b] 
+	\end{align*}
+	Thus \(w\) is the parametric representation of image \(\Gamma_1\) of \(C_1\). Suppose there exists \(z_0 = z_1(t_0) \in (a, b)\) such that \(f\) is analytic and \(f'(z_0) \neq 0\). Then
+	\begin{align*}
+		w_1'(t_0) = f'[z_1(t_0)] z_1'(t_0) 
+		&\implies \arg[w_1'(t_0)] = \arg[f'[z_1(t_0)]] + \arg[z_1'(t_0)] \\
+		&\implies \arg[f'[z_1(t_0)]] = \arg[w_1'(t_0)] - \arg[z_1'(t_0)]
+	\end{align*}
+	Hence, we can see that \(w'(t_0)\) and \(z'(t_0)\) differs by an angle of rotation \(\varphi_0 = \arg[f'(z_0)]\).
 	
+	\begin{definition}[Angle of Rotation]
+		\index{Angle of Rotation}
+		\label{Angle of Rotation Definition - Complex}
+		Let \(z_0 = z(t_0)\) be a point in an arc \(C\), and \(w = f(z)\) be a conformal transformation. Then the angle of rotation is the difference between the angle of \(C\) at \(z_0\) and its image \(\Gamma\) under \(w\) at \(f(z_0)\).
+	\end{definition}
 	
+	If we consider another arc \(C_2\) passing through \(z_0 = z_2(t_0)\) with image \(\Gamma_2\) under the same transformation \(w\). We obtain:
+	\begin{align*}
+		\arg[w_2'(t_0)] &= \arg[f'[z_2(t_0)]] + \arg[z_2'(t_0)] & \text{For } C_2 \\
+		\arg[w_1'(t_0)] &= \arg[f'[z_1(t_0)]] + \arg[z_1'(t_0)]  & \text{For } C_1
+	\end{align*}
+	Since we have \(z_1(t_0) = z_2(t_0) = z_0\), if we subtract the two, we have 
+	\begin{align*}
+		\arg[w_1'(t_0)] - \arg[w_2'(t_0)] = \arg[z_1'(t_0)] - \arg[z_2'(t_0)]
+	\end{align*}
+	Hence, the angle between \(C_1\) and \(C_2\) at \(z_0\) is the same as the angle between \(\Gamma_1\) and \(\Gamma_2\) at \(f(z_0)\). The angles between the curves at \(z_0\) and the relative orientation between the curves are preserved in the transformation.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-0.2, xmax=10,
+				ymin=-0.2, ymax=10,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				]
+				
+				\draw[line width=1pt, color=Blue, 
+				decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, 5)--(axis cs: 9, 5)
+				node[pos=0.8, below] {\(C_1\)};
+				
+				\draw[line width=1pt, color=Red,
+				decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 5, 1)--(axis cs: 5, 9) 
+				node[pos=0.8, right] {\(C_2\)};
+				
+				\draw[decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 6, 5) arc (0:90:10)
+				node[pos=0.5, right] {\(\varphi_0\)};
+			\end{axis}
+		\end{tikzpicture}
+		{\Large \(\xrightarrow{\mathmakebox[2cm]{w = f(z)}}\)}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$u$},
+				ylabel={$v$},
+				xmin=-0.2, xmax=10,
+				ymin=-0.2, ymax=10,
+				axis lines = middle,
+				ticks = none,
+				grid=none,
+				]
+				
+				\draw[line width=1pt, color=Blue, 
+				decoration={markings, mark=at position 0.9 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, 1) -- (axis cs: 6, 8)
+				node[pos=0.9, right] {\(\Gamma_1\)};
+				
+				\draw[line width=1pt, color=Red,
+				decoration={markings, mark=at position 0.9 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: {6*cos(20)}, {6*sin(20)}) arc (20:80:60)
+				node[pos=0.9, below] {\(\Gamma_2\)};
+				
+				\draw[decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: {7*cos(atan(8/6))}, {7*sin(atan(8/6))}) 
+				arc ({atan(8/6)}:{atan(8/6) + 90}:10)
+				node[pos=0.5, above] {\(\varphi_0\)};
+				
+				\draw[dashed]
+				(axis cs: {6*cos(atan(8/6))}, {6*sin(atan(8/6))}) 
+				-- (axis cs: {6*cos(atan(8/6)) - 4*0.75}, {6*sin(atan(8/6)) + 3*0.75});
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	\begin{definition}[Conformal]
+		\index{Conformal}
+		\label{Conformal Definition - Complex}
+		A transformation \(w = f(z)\) is conformal at point \(z_0\) if \(f\) is analytic at \(z_0\) and \(f'(z_0) \neq 0 \). That is, the orientation of the angles between curves and the orientation between the curves are preserved.
+	\end{definition}
+	
+	From \cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex} we can see that \(w\) is also conformal in some neighbourhood of \(z_0\). If this applies to an entire domain:
+	
+	\begin{definition}[Conformal Mapping/Transformation]
+		\index{Conformal Mapping} \index{Conformal Transformation}
+		\label{Conformal Mapping Definition - Complex}
+		A transformation \(w = f(z)\) is conformal if \(\forall z \in D\), \(f(z)\) is analytic and \(f'(z) \neq 0\).
+	\end{definition}
 
-
+	\begin{example}
+		content
+	\end{example}
 	
 	
 	
