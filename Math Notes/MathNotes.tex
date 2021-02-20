@@ -12185,7 +12185,7 @@
 	\begin{align*}
 		\arg[w_1'(t_0)] - \arg[w_2'(t_0)] = \arg[z_1'(t_0)] - \arg[z_2'(t_0)]
 	\end{align*}
-	Hence, the angle between \(C_1\) and \(C_2\) at \(z_0\) is the same as the angle between \(\Gamma_1\) and \(\Gamma_2\) at \(f(z_0)\). The angles between the curves at \(z_0\) and the relative orientation between the curves are preserved in the transformation.
+	Hence, the angle between \(C_1\) and \(C_2\) at \(z_0\) is the same as the angle between \(\Gamma_1\) and \(\Gamma_2\) at \(f(z_0)\). The angles between the curves at \(z_0\) and orientation of the angles are preserved in the transformation.
 	
 	\begin{figure}[H]
 		\centering
@@ -12260,7 +12260,11 @@
 	\begin{definition}[Conformal]
 		\index{Conformal}
 		\label{Conformal Definition - Complex}
-		A transformation \(w = f(z)\) is conformal at point \(z_0\) if \(f\) is analytic at \(z_0\) and \(f'(z_0) \neq 0 \). That is, the orientation of the angles between curves and the orientation between the curves are preserved.
+		A transformation \(w = f(z)\) is conformal at point \(z_0\) if \(f\) is analytic at \(z_0\) and \(f'(z_0) \neq 0 \). That is, the orientation and magnitude of the angles between curves are preserved.
+		\begin{align*}
+			[f \text{ analytic at } z_0] \land [f'(z_0) \neq 0]
+			\implies f \text{ Conformal}
+		\end{align*}
 	\end{definition}
 	
 	From \cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex} we can see that \(w\) is also conformal in some neighbourhood of \(z_0\). If this applies to an entire domain:
@@ -12269,14 +12273,37 @@
 		\index{Conformal Mapping} \index{Conformal Transformation}
 		\label{Conformal Mapping Definition - Complex}
 		A transformation \(w = f(z)\) is conformal if \(\forall z \in D\), \(f(z)\) is analytic and \(f'(z) \neq 0\).
+		\begin{align*}
+			\forall z \in D [f \text{ analytic } \land f(z) \neq 0] 
+			\implies f \text{ Conformal Mapping}
+		\end{align*}
 	\end{definition}
 
 	\begin{example}
-		content
+		Consider two smooth arcs that are level curves of 
+		\begin{align*}
+			f(z) = u(x,y) + iv(x,y) 
+		\end{align*}
+		Suppose \(u(x,y) = c_1\) and \(v(x,y) = c_2\) intersect at point \(z_0\), where \(f\) is analytic and nonzero at \(z_0\). Then \(f\) must be conformal at \(z_0\). If the two curves are orthogonal at \(z_0\) then they are orthogonal at \(w_0 = f(z_0)\).
+	\end{example}
+
+	\begin{definition}[Isogonal Mapping]
+		\index{Isogonal Mapping}
+		\label{Isogonal Mapping Definition - Complex}
+		A mapping that preserves the angle between two curves, but not the orientation of the angle.
+	\end{definition}
+	
+	\begin{example}
+		Consider the transformation 
+		\[w = \bar{z}\]
+		It is isogonal, not conformal, due to \(w = \bar{z}\) not being an analytic function. If followed by an conformal map \(f\), the result \(w = f(\bar{z})\) is isognal. That is, \textbf{conformal transformations preserves isogonal transformations}.
 	\end{example}
 	
-	
-	
+	\begin{definition}[Critical Point]
+		\index{Critical Point}
+		\label{Critical Point Definition - Complex}
+		A function \(f\) that is non-constant and analytic at \(z_0\), and \(f(z_0) = 0\). Then \(z_0\) is a critical point of transformation \(w = f(z)\).
+	\end{definition}
 	
 	
 	

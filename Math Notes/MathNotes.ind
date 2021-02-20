@@ -88,6 +88,7 @@
     \subitem  Complex Form, 39, 85
     \subitem  Hyperbolic, 87
       \subsubitem  Zeros, 88
+  \item Critical Point, 222
   \item Curve
     \subitem  Jordan, 94
     \subitem  Simple Closed, 94
@@ -171,6 +172,7 @@
     \subitem  Around Simple Poles, 175
   \item Integration
     \subitem  Along Branch Cut, 177
+  \item Isogonal Mapping, 222
 
   \indexspace
 
