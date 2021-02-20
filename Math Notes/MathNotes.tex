@@ -12153,8 +12153,20 @@
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
 	\index{Conformal Mapping}
+	
+	A map that locally conforms to the original shape of a region.
 
 	\section{Preserving Angles and Scale Factors} \label{Preserning Angles and Scale Factors}
+	
+	\begin{definition}[Conformal]
+		\index{Conformal}
+		\label{Conformal Definition - Complex}
+		A transformation \(w = f(z)\) is conformal at point \(z_0\) if \(f\) is analytic at \(z_0\) and \(f'(z_0) \neq 0 \). That is, the orientation and magnitude of the angles between curves are preserved.
+		\begin{align*}
+			[f \text{ analytic at } z_0] \land [f'(z_0) \neq 0]
+			\implies f \text{ Conformal}
+		\end{align*}
+	\end{definition}
 	
 	Consider an arc \(C_1\) parameterized by \(z_1(t)\) and a function \(f\) defined by all points in \(C\):
 	\begin{align*}
@@ -12257,16 +12269,6 @@
 		\end{tikzpicture}
 	\end{figure}
 	
-	\begin{definition}[Conformal]
-		\index{Conformal}
-		\label{Conformal Definition - Complex}
-		A transformation \(w = f(z)\) is conformal at point \(z_0\) if \(f\) is analytic at \(z_0\) and \(f'(z_0) \neq 0 \). That is, the orientation and magnitude of the angles between curves are preserved.
-		\begin{align*}
-			[f \text{ analytic at } z_0] \land [f'(z_0) \neq 0]
-			\implies f \text{ Conformal}
-		\end{align*}
-	\end{definition}
-	
 	From \cref{f nequiv 0 in some neighbourhood of z_0 implies f neq 0 in some deleted neighbourhood of z_0 Theorem - Complex} we can see that \(w\) is also conformal in some neighbourhood of \(z_0\). If this applies to an entire domain:
 	
 	\begin{definition}[Conformal Mapping/Transformation]
@@ -12304,12 +12306,177 @@
 		\label{Critical Point Definition - Complex}
 		A function \(f\) that is non-constant and analytic at \(z_0\), and \(f(z_0) = 0\). Then \(z_0\) is a critical point of transformation \(w = f(z)\).
 	\end{definition}
+
+	\begin{example}
+		Consider 
+		\begin{align*}
+			w = 1 + z^2
+		\end{align*}
+		Which is a composition of mappings
+		\begin{align*}
+			Z &= z^2	&	w = 1 + Z
+		\end{align*}
+		\(z_0 = 0\) is a critical point of \(w\). We can see that \(z_0 = 0 \mapsto w_0 = 1\), and that \(w\) doubles any angle at \(z_0\). 
+	\end{example}
 	
+	Generally, suppose \(z_0\) is a critical point of \(w = f(z)\). Let \(\Gamma_1\) and \(\Gamma_2\) be the image of curves \(C_1\) and \(C_2\) under the transformation respectively. If the angle between \(C_1\) and \(C_2\) at \(z_0\) is \(\varphi\), then the angle between \(\Gamma_1\) and \(\Gamma_2\) at \(w_0 = f(z_0)\) becomes \(2 \varphi\) under \(w\). Also, \(m\) is the smallest  natural number such that \(f^{(m)}(z_0) \neq 0\).
 	
+	\begin{definition}[Scale Factor]
+		\index{Scale Factor}
+		\label{Scale Factor Definition - Complex}
+		The Scale Factor, \(\abs{f'(z_0)}\), is the amount of scaling inflicted on the distances under the transformation \(w = f(z)\). Consider the modulus of the derivative of the transformation \(w = f(z)\):
+		\begin{align*}
+			\abs{f'(z_0)}
+			= \abs{\lim_{z \rightarrow z_0} \frac{f(z) - f(z_0)}{z - z_0}}
+			= \lim_{z \rightarrow z_0} \frac{\abs{f(z) - f(z_0)}}{\abs{z - z_0}}
+		\end{align*}
+		For any \(z\) close to \(z_0\):
+		\begin{align*}
+			\abs{f'(z_0)} \approx \frac{\abs{f(z) - f(z_0)}}{\abs{z - z_0}}
+		\end{align*}
+		which represents the ratio between the distances \(f(z) - f(z_0)\) and \(z - z_0\) under the transformation.
+	\end{definition}
 	
+	It is clear that \(\abs{f'(z_0)} > 1\) represents an expansion while \(\abs{f'(z_0) < 1}\) represents a contraction.
 	
+	From the continuity of \(f'(z)\) we see that for \(z\) close to \(z_0\):
+	\begin{align*}
+		\arg[f'(z)] &\approx \arg[f'(z_0)] & \abs{f'(z)} &\approx \abs{f'(z_0)}
+	\end{align*}
+	Hence, the image of a conformal transformation approximates that of the original neighbourhood locally. That is, it is \textit{conforms} to the shape of the original region. Notice, it is \textit{locally} not \textit{globally}.
 	
+	\begin{example}
+		Consider 
+		\begin{align*}
+			f(z) = z^2 = x^2 - y^2 + i2xy
+			\implies f'(z) = 2z
+		\end{align*}
+		The function is entire and \(f'(z)\) is zero only at the origin. Consider the half lines 
+		\begin{align*}
+			y &= x & x &= 1 & x, y \geq 0
+		\end{align*}
+		which is denoted as the curves \(C_1\) and \(C_2\) that intersect at \(z_0 = 1 + i\). It is clear that the angle between the curves are \(\pi / 4\). 
+		
+		Under the transformation, \(C_1 \mapsto \Gamma_1\), with \(\Gamma_1\) parameterization:
+		\begin{align*}
+			u &= 0 & v &= 2x & 0 \leq x < \infty
+		\end{align*}
+		\(C_2 \mapsto \Gamma_2\), with \(\Gamma_2\) parameterization:
+		\begin{align*}
+			u &= 1 - y^2 & v &= 2y & 0 \leq y < \infty
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-0.2, xmax=5,
+					ymin=-0.2, ymax=5,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(1, 1) [\(1 + i\)]
+					};
+					
+					\draw[line width=1pt, color=Blue, 
+					decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0, 0)--(axis cs: 4, 4)
+					node[pos=0.8, left] {\(C_1\)};
+					
+					\draw[line width=1pt, color=Red,
+					decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 1, 0)--(axis cs: 1, 4) 
+					node[pos=0.8, left] {\(C_2\)};
+					
+					\draw[decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 2, 2) arc (45:90:{(2^0.5)*100})
+					node[pos=0.5, above] {\(\frac{\pi}{4}\)};
+				\end{axis}
+			\end{tikzpicture}
+			{\Large \(\xrightarrow{\mathmakebox[2cm]{f(z)= z^2} }\)}
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-4, xmax=2,
+					ymin=-0.2, ymax=5,
+					axis lines = middle,
+					ticks = none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(1, 0) [\(1\)]
+						(0, 2) [\(2i\)]
+					};
+					
+					\draw[line width=1pt, color=Blue, 
+					decoration={markings, mark=at position 0.9 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0, 0) -- (axis cs: 0, 4)
+					node[pos=0.9, right] {\(\Gamma_1\)};
+					
+					\addplot [
+						domain=0:2, 
+						samples=100, 
+						color=Red,
+						line width=1pt,
+						postaction = {decorate, 
+							decoration={markings, mark=at position 0.9 with {\arrow{>};} }}
+						]
+						({1-x^2}, {2*x})
+						node[pos=0.9, below] {\(\Gamma_2\)};
+					
+					\draw[decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0, 3) arc (90:135:100)
+					node[pos=0.5, above] {\(\frac{\pi}{4}\)};
+					
+					\draw[dashed]
+					(axis cs: 0, 2) -- (axis cs: -2, 4);
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+		
+		We then have
+		\begin{align*}
+			\dv{v}{u} = \frac{\dv*{v}{y}}{\dv*{u}{y}} = \frac{2}{-2y} = - \frac{2}{v}
+		\end{align*}
+		\(v = 2 \implies \dv*{v}{u} = -1\), so the angle between \(\Gamma_1\) and \(\Gamma_2\) at \(w = f(1+i) = 2i\) is \(\pi/4\). Hence, we have conformality of the mapping.
 	
+		The angle of rotation:
+		\begin{align*}
+			\arg[f'(1+i)] &= \arg[2(1+i)] = \frac{\pi}{4} + 2n \pi	&
+				n \in \mathbb{Z}
+		\end{align*}
+		Scale factor:
+		\begin{align*}
+			\abs{f'(1+i)} = \abs{2(1+i)} = 2\sqrt{2}
+		\end{align*}
+	\end{example}
+	
+	\section{Local Inverses} \label{Local Inverses Section - Complex}
 	
 	
 	

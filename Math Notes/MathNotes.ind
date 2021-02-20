@@ -65,7 +65,7 @@
   \item Complex-Valued Function, 94
     \subitem  Definite Integral, 93
     \subitem  Derivative, 93
-  \item Conformal, 222
+  \item Conformal, 221
   \item Conformal Mapping, 221, 222
   \item Conformal Transformation, 222
   \item Continuity
@@ -88,7 +88,7 @@
     \subitem  Complex Form, 39, 85
     \subitem  Hyperbolic, 87
       \subsubitem  Zeros, 88
-  \item Critical Point, 222
+  \item Critical Point, 223
   \item Curve
     \subitem  Jordan, 94
     \subitem  Simple Closed, 94
@@ -295,6 +295,7 @@
 
   \indexspace
 
+  \item Scale Factor, 223
   \item Sequence
     \subitem  Cenvergence, 125
     \subitem  Divergence, 125
