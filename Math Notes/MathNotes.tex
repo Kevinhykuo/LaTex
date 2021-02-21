@@ -3330,7 +3330,9 @@
 		Let \(F(x,y)\) is a real-valued function in a simply connected domain \(D\). Then there exists a function \(f(z)\) and \(g(z)\) in \(D\) such that \(f(z) = F(x,y) + iv(x,y)\) and \(g(z) = u(x,y) + iF(x,y)\). That is, there exists a function where the real part equals \(F\) and a function where the imaginary part equals \(F\).
 	\end{corollary}
 
-	\begin{definition}[Harmonic Conjugate] \index{Function! Harmonic! Conjugate}
+	\begin{definition}[Harmonic Conjugate] 
+		\index{Function! Harmonic! Conjugate}
+		\index{Harmonic Conjugate}
 		\label{Harmonic Conjugate Definition - Complex}
 		If \(f(z) = u(x,y) + iv(x,y)\) is analytic in a domain \(D\), then \(v(x,y)\) is the harmonic conjugate of \(u(x,y)\). This is not to be confused with the complex conjugate.
 	\end{definition}
@@ -12318,8 +12320,15 @@
 		\end{align*}
 		\(z_0 = 0\) is a critical point of \(w\). We can see that \(z_0 = 0 \mapsto w_0 = 1\), and that \(w\) doubles any angle at \(z_0\). 
 	\end{example}
-	
-	Generally, suppose \(z_0\) is a critical point of \(w = f(z)\). Let \(\Gamma_1\) and \(\Gamma_2\) be the image of curves \(C_1\) and \(C_2\) under the transformation respectively. If the angle between \(C_1\) and \(C_2\) at \(z_0\) is \(\varphi\), then the angle between \(\Gamma_1\) and \(\Gamma_2\) at \(w_0 = f(z_0)\) becomes \(2 \varphi\) under \(w\). Also, \(m\) is the smallest  natural number such that \(f^{(m)}(z_0) \neq 0\).
+
+	\begin{corollary}
+		Suppose \(z_0\) is a critical point of \(w = f(z)\). Let \(\Gamma_1\) and \(\Gamma_2\) be the image of curves \(C_1\) and \(C_2\) under the transformation respectively. If the angle between \(C_1\) and \(C_2\) at \(z_0\) is \(\alpha\), then the angle between \(\Gamma_1\) and \(\Gamma_2\) at \(w_0 = f(z_0)\) becomes \(m \alpha\) under \(w\) for \(m \geq 2\), \(m \in \mathbb{N}\). Also, \(m\) is the smallest natural number such that \(f^{(m)}(z_0) \neq 0\). 
+		
+		That is, if \(z_0\) is a critical point of \(w = f(z)\), then angles between curves \(\alpha\) at \(z_0\) becomes \(m\alpha\) under \(f(z)\) for \(m \geq 2\), \(m \in \mathbb{N}\), and \(f(z)\) has a zero of order \(m\) at \(z_0\).
+	\end{corollary}
+	\begin{proof}
+		\Cref{Zero of order m and critical point Example - Complex}
+	\end{proof}
 	
 	\begin{definition}[Scale Factor]
 		\index{Scale Factor}
@@ -12478,11 +12487,151 @@
 	
 	\section{Local Inverses} \label{Local Inverses Section - Complex}
 	
+	\begin{definition}[Local Inverse]
+		\index{Local Inverse}
+		\label{Local Inverse Definition - Complex}
+		Suppose a transformation \(w = f(z)\) be conformal and \(w_0 = f(z_0)\). Then a local inverse of the transformation is a unique transformation \(z = g(w)\) defined and analytic in a neighbourhood \(N\) of \(w_0\) such that \(\forall w \in N\), \(g(w_0) = z_0\) and \(f[g(w)] = w\). The derivative:
+		\begin{align*}
+			g'(w) = \frac{1}{f'(w)}
+		\end{align*}
+	\end{definition}
+	\begin{proof}
+		{\color{Grey}
+		Prove: 
+		\begin{align*}
+			g'(w) = \frac{1}{f'(w)}
+		\end{align*}
+		Let \(w = f[g(w)]\), then 
+		\begin{align*}
+			\dv{w} w = \dv{w} f[g(w)]
+			&\implies 1 = f'[g(w)] g'(w) 
+			 \implies g'(w) = \frac{1}{f'(w)}
+		\end{align*}}
+	\end{proof}
+	Note: From the definition, \(z = g(w)\) is conformal at \(w_0\).
 	
+	\textbf{Existence of the Inverse:} \newline
+	Conformality of the transformation \(w = f(z)\) at \(z_0\) implies there exist a neighbourhood of \(z_0\) that \(f\) is analytic. Hence
+	\begin{align*}
+		f(z) &= u(x,y) + iv(x,y) &
+		z &= x + iy &
+		z_0 &= x_0 + iy_0
+	\end{align*}
+	Then there exists some neighbourhood of \(x_0, y_0\) where \(u\) and \(v\) and their partial derivatives of all orders are continuous (\cref{Analytic implies existance of high order derivatives theorem - Complex}). The Jacobian is then nonzero at \(z_0\):
+	\begin{align*}
+		\operatorname{J} 
+		&= \mdet{u_x & u_y \\ v_x & v_y} = u_x v_y - v_x u_y 
+	 	 = (u_x)^2 + (v_x)^2 & u_x = v_y, \ u_y = -v_x \\
+		&= \abs{f'(z)}^2 \neq 0 
+			& \text{Conformal at } z_0, \ \text{\Cref{Cauchy-Riemann Differentiablity Conditions Theorem - Complex}}
+	\end{align*}
+	The condition on the Jacobian and derivatives of \(u\) and \(v\) are sufficient conditions to ensure invertibility of transform. So, if 
+	\begin{align*}
+		u_0 &= u(x_0, y_0) & v_0 = v(x_0, y_0)
+	\end{align*}
+	then there exists a unique continuous transformation
+	\begin{align*}
+		x &= x(u,v) & y &= y(u,v)
+	\end{align*}
+	that \((u_0, v_0) \mapsto (x_0, y_0)\) in the neighbourhood \(N\). In addition, the first order partial derivatives throughout \(N\) satisfy
+	\begin{align*}
+		x_u &= \frac{v_y}{\operatorname{J}} &
+		x_v &= -\frac{u_y}{\operatorname{J}} &
+		y_u &= - \frac{v_x}{\operatorname{J}} &
+		y_v &= \frac{u_x}{\operatorname{J}}
+	\end{align*}
+	which shows that \(g(w)\) is analytic in \(N\).
+	\begin{proof}
+		{\color{Grey}
+		Proving \(g(w)\) is analytic in \(N\):\newline
+		We know that \(f(z)\) is analytic, so it satisfies the Cauchy-Riemann equations (\cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}). Hence, we can write the above four equations as:
+		\begin{align*}
+			x_u &= \frac{u_x}{\operatorname{J}} &
+			x_v &= -\frac{u_y}{\operatorname{J}} &
+			y_u &= \frac{u_y}{\operatorname{J}} &
+			y_v &= \frac{u_x}{\operatorname{J}}
+		\end{align*}
+		It is then clear that 
+		\begin{align*}
+			x_u &= y_v & x_v &= -v_u
+		\end{align*}
+		Which are the Cauchy-Riemann equations. Thus \(g(w)\) is analytic in \(N\).
+		}
+	\end{proof}
+	Letting \(z = x + iy\) and \(w = u + iv\):
+	\begin{align*}
+		z &= g(w) = x(u, v) + iy(u,v) \\
+		w &= f(z) = u(x, y) + iv(x,y)
+	\end{align*}
+	Thus the inverse exists.
 	
+	\begin{example}
+		\label{Zero of order m and critical point Example - Complex}
+		{\color{Grey}
+		Suppose that \(f\) has a zero of order \(m \in \mathbb{N}\) at \(z_0\), that is 
+		\begin{align*}
+			f'(z_0) &= f''(z_0) = \cdots = f^{(m-1)}(z_0)	&
+				f^{(m)} &\neq 0
+		\end{align*}
+		Let \(w_0 = f(z_0)\). Using the Taylor expansion of \(f(z)\) about \(z_0\) (\cref{Taylor's Theorem - Complex}):
+		\begin{align*}
+			f(z) 
+			&= \sum_{n=0}^{\infty} \frac{f^{(n)}(z_0)}{n!} (z - z_0)^n
+			 = f(z_0) + \sum_{n=m}^{\infty} \frac{f^{(n)}(z_0)}{n!} (z - z_0)^n \\
+			&= f(z_0) + \frac{f^{(m)}(z_0)}{m!}(z-z_0)^m + \sum_{n=m+1}^{\infty} \frac{f^{(n)}(z_0)}{n!} (z - z_0)^n \\
+		\end{align*}
+		This implies that 
+		\begin{align*}
+			f(z) - f(z_0) = f(z) - w_0
+			&= \frac{f^{(m)}(z_0)}{m!} (z - z_0)^m \left[
+				1 + \sum_{n=m+1}^{\infty} \frac{f^{(n)}(z_0)}{f^{(m)}(z_0)} \cdot \frac{m!}{n!} (z-z_0)^{n-m}
+				\right]\\
+			&= \frac{f^{(m)}(z_0)}{m!} (z - z_0)^m [1 + g(z)]
+		\end{align*}
+		We can see that in \(g(z)\), \(n > m\), so it is a Taylor series which is analytic at \(z_0\). Also, \(g(z_0) = 0\). Let \(C_1\) be a curve with image \(\Gamma_1\) under the transformation \(f\), and \(\theta_0\) be the angle of inclination of \(C_1\) at \(z_0\). Likewise with \(\phi_0\) for \(\Gamma_1\). Then we have 
+		\begin{align*}
+			\theta_0 &= \lim_{z \rightarrow z_0} \arg(z-z_0) &
+			\phi_0 &= \lim_{z \rightarrow z_0} \arg[f(z) - w_0]
+		\end{align*}
+		Using the results obtained previously:
+		\begin{align*}
+			\phi_0 
+			&= \lim_{z \rightarrow z_0} \arg 
+				\left[\frac{f^{(m)}(z_0)}{m!} (z - z_0)^m [1 + g(z)] \right] \\
+			&= \lim_{z \rightarrow z_0} \left[m \arg(z-z_0) + \arg [f^{(m)}(z_0)] + \arg\left(\frac{1 + g(z)}{m!}\right) \right]
+		\end{align*}
+		Since
+		\begin{align*}
+			&\lim_{z \rightarrow z_0}\frac{1 + g(z)}{m!} 
+			 = \frac{1 + g(z_0)}{m!} = \frac{1}{m!} \in \mathbb{R}
+			  \implies \arg\left[\frac{1}{m}\right] = 0&
+				g(z_0) &= 0
+		\end{align*}
+		we have
+		\begin{align*}
+			\phi_0 
+			&= \lim_{z \rightarrow z_0} [m \arg(z-z_0)] + \arg[f^{(m)}(z_0)] 
+			 = m\theta_0 + \arg[f^{(m)}(z_0)] 
+		\end{align*}	
+		Now, let another curve \(C_2\) intersect \(C_1\) at \(z_0\), and \(\Gamma_2\) intersect \(\Gamma_1\) at \(w_0\). Then the angle of inclination of \(\Gamma_2\) at \(w_0\): 
+		\begin{align*}
+			\phi_1 = m \theta_1 + \arg[f^{(m)}(z_0)]
+		\end{align*}
+		Let \(\alpha\) be the angle between \(C_1\) and \(C_2\) at \(z_0\). Since we are still under the transformation \(f\), the angle between \(\Gamma_1\) and \(\Gamma_2\) at \(w_0\):
+		\begin{align*}
+			\phi_1 - \phi_0 
+			&= m(\theta_1 - \theta_0) + \arg[f^{(m)}(z_0)] - \arg[f^{(m)}(z_0)]  = m\alpha
+				& \alpha = \theta_1 - \theta_0
+		\end{align*}
+		If the mapping is conformal, \(\phi_1 - \phi_0 = \theta_1 - \theta_0 = \alpha\), so \(m = 1\).
+		
+		Note: Since \(f\) has a zero of order \(m\), \(f'(z_0) = 0\) for all \(m \geq 2\), so \(z_0\) is a critical point of \(f\) for \(m \geq 2\) by \cref{Critical Point Definition - Complex}. Thus the transformed angle is an natural number multiple of the original angle at a critical point.
+		}
+	\end{example}
 	
-	
-	
+	\section{Harmonic Conjugates} \label{Harmonic Conjugates Section - Complex}
+	\index{Function! Harmonic! Conjugate}
+	\index{Harmonic Conjugate}
 	
 	
 	

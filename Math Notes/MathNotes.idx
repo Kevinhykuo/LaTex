@@ -60,6 +60,7 @@
 \indexentry{Laplace's Equation}{75}
 \indexentry{Function! Harmonic}{75}
 \indexentry{Function! Harmonic! Conjugate}{76}
+\indexentry{Harmonic Conjugate}{76}
 \indexentry{Laplace's Equation! Polar Form}{76}
 \indexentry{Coincidence Principle}{78}
 \indexentry{Analytic Continuation}{78}
@@ -263,3 +264,6 @@
 \indexentry{Isogonal Mapping}{222}
 \indexentry{Critical Point}{223}
 \indexentry{Scale Factor}{223}
+\indexentry{Local Inverse}{225}
+\indexentry{Function! Harmonic! Conjugate}{227}
+\indexentry{Harmonic Conjugate}{227}
