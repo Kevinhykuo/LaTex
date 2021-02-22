@@ -141,7 +141,7 @@
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{229}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{231}{part.6}%
 \contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{233}{part.7}%
-\contentsline {paragraph}{Calculus of Variations [Empty]}{234}{theorem.19.3.2}%
+\contentsline {paragraph}{Calculus of Variations [Empty]}{234}{theorem.19.3.4}%
 \contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{235}{part.8}%
 \contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{237}{part.9}%
 \contentsline {chapter}{\numberline {20}Markov Chains}{239}{chapter.20}%

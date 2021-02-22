@@ -3117,7 +3117,7 @@
 		Therefore, \(f'(z)\) exists only if \(z = i\), and that \(f'(i) = 0\)
 	\end{example}
 	
-	\section{Analytic Functions} \label{Analytic Functions - Complex}
+	\section{Analytic Functions} \label{Analytic Functions Section - Complex}
 	
 	\begin{definition}[Analytic/Regular/Holomorphic]
 		\index{Function! Analytic} \index{Function! Regular} \index{Function! Holomorphic}
@@ -3280,7 +3280,7 @@
 		\label{Abs of analytic function is constant in domain implies that function is constant Example - Complex}
 	\end{example}
 	
-	\section{Harmonic Functions} \label{Harmonic Functions - Complex}
+	\section{Harmonic Functions} \label{Harmonic Functions Section - Complex}
 	
 	Harmonic functions are functions where the curvature in each component direction cancels each other out.
 	
@@ -12633,9 +12633,76 @@
 	\index{Function! Harmonic! Conjugate}
 	\index{Harmonic Conjugate}
 	
+	Review \cref{Harmonic Functions Section - Complex}.
 	
+	Recall from the definition of a Harmonic Conjugate (\cref{Harmonic Conjugate Definition - Complex}). If function \(f(z) = u(x,y) + iv(x,y)\) is analytic in a domain \(D\), then \(v(x,y)\) is a harmonic conjugate of \(u(x,y)\).
 	
+	\begin{theorem}
+		\label{Analytic Implies v harmonic conjugate of u Theorem - Complex}
+		Let \(f(z) = u(x,y) + iv(x,y)\) be a function in domain \(D\).
+		\begin{align*}
+			f \text{ analytic in } D \iff v \text{ is harmonic conjugate of } u
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		\underline{\(\impliedby\)}: \newline
+		\begin{align*}
+			&v \text{ is harmonic conjugate of } u \\
+			&\implies \text{Cauchy-Riemann Equations Satisfied} \\
+			&\implies f \text{ analytic in } D & \text{\Cref{Cauchy-Riemann Differentiablity Conditions Theorem - Complex}}
+		\end{align*}
+		\underline{\(\implies\)}: \newline
+		\begin{align*}
+			&f \text{ analytic in } D \\
+			&\implies u \text{ and } v \text{ harmonic } 
+				& \text{\Cref{Analytic implies Harmonic Theorem - Complex}} \\
+			&\implies \text{Cauchy-Riemann Equations satisfied} 
+				& \text{\Cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}}
+		\end{align*}
+	\end{proof}
 	
+	\begin{example}[\(v\) harmonic conjugate of \(u\) does \textbf{not imply} \(u\) harmonic conjugate of \(v\)]
+		Consider 
+		\begin{align*}
+			u(x,y) &= x^2 - y^2 & v(x,y) &= 2xy
+		\end{align*}
+		We know that \(v\) is a harmonic conjugate of \(u\) since \(f(z) = x^2 - y^2 + i2xy = z^2\) is entire. However, \(u\) is not a harmonic conjugate of \(v\), since \(g(z) = 2xy + i(x^2 - y^2)\) does not satisfy the Cauchy-Riemann equations and are not analytic anywhere:
+		\begin{align*}
+			u_x &= 2y & v_y &= -2y \\
+			u_y &= 2x & -v_x &= -2x
+		\end{align*}
+	\end{example}
+
+	\begin{example}(Finding Harmonic Conjugates)
+		Consider 
+		\begin{align*}
+			u(x,y) &= 2x(1-y)
+		\end{align*}
+		By Cauchy-Riemann equation, we have \(u_x = v_y = 2-2y\). By integrating:
+		\begin{align*}
+			v(x,y) &= 2y - y^2 + g(x)
+		\end{align*}
+		By \(u_y = -v_x = -2x \implies g_x = 2x\), then
+		\begin{align*}
+			v(x,y) &= 2y - y^2 + x^2 + C
+		\end{align*}
+		Therefore
+		\begin{align*}
+			f(z) = 2x(1-y) + i(2y - y^2 + x^2 + C) = 2z + i(z^2 + C)
+		\end{align*}
+		It is customary to write \(C=0\), since \(C\) is arbitrary, so
+		\begin{align*}
+			f(z) = 2z + iz^2
+		\end{align*}
+	\end{example}
+
+	\begin{theorem}
+		\label{Harmonic Function on Simply Connected Domain always have harmonic conjugate v Theorem - Complex}
+		Let \(f(z) = u(x,y) + iv(x,y)\) be a harmonic function in a simply connected domain \(D\), then \(u\) has a harmonic conjugate \(v\) in \(D\).
+	\end{theorem}
+	\begin{proof}
+		content
+	\end{proof}
 	
 	
 	
