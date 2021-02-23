@@ -57,6 +57,7 @@
 \indexentry{Function! Holomorphic}{72}
 \indexentry{Function! Entire}{72}
 \indexentry{Point! Singular}{73}
+\indexentry{Harmonic Function}{75}
 \indexentry{Laplace's Equation}{75}
 \indexentry{Function! Harmonic}{75}
 \indexentry{Function! Harmonic! Conjugate}{76}
@@ -266,4 +267,6 @@
 \indexentry{Scale Factor}{223}
 \indexentry{Local Inverse}{225}
 \indexentry{Function! Harmonic! Conjugate}{227}
+\indexentry{Harmonic Function! Conjugate}{227}
 \indexentry{Harmonic Conjugate}{227}
+\indexentry{Harmonic Function! Transformations}{229}

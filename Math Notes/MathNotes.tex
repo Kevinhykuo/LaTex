@@ -3282,6 +3282,7 @@
 	
 	\section{Harmonic Functions} \label{Harmonic Functions Section - Complex}
 	
+	\index{Harmonic Function}
 	Harmonic functions are functions where the curvature in each component direction cancels each other out.
 	
 	\begin{definition}[Laplace's Equation] 
@@ -12630,7 +12631,7 @@
 	\end{example}
 	
 	\section{Harmonic Conjugates} \label{Harmonic Conjugates Section - Complex}
-	\index{Function! Harmonic! Conjugate}
+	\index{Function! Harmonic! Conjugate} \index{Harmonic Function! Conjugate}
 	\index{Harmonic Conjugate}
 	
 	Review \cref{Harmonic Functions Section - Complex}.
@@ -12701,10 +12702,62 @@
 		Let \(f(z) = u(x,y) + iv(x,y)\) be a harmonic function in a simply connected domain \(D\), then \(u\) has a harmonic conjugate \(v\) in \(D\).
 	\end{theorem}
 	\begin{proof}
-		content
+		Supposes \(P(x,y)\) and \(Q(x,y)\) have continuous first-order partial derivatives in simply connected domain \(D\). If \(P_y = Q_x\) everywhere in \(D\), then the integral over contour \(C\) from \((x_0,y_0)\) to \((x,y)\):
+		\begin{align*}
+			\int_{C} P(s,t) ds + Q(s,t) dt
+		\end{align*}
+		is path independent in \(D\). If \((x_0, y_0)\) is fixed, then 
+		\begin{align*}
+			F(x,y) = \int_{(x_0, y_0)}^{(x,y)} P(s, t) ds + Q(s,t) dt
+		\end{align*}
+		is single-valued, with first-order partial derivatives:
+		\begin{align*}
+			F_x(x,y) &= P(x,y) &
+			F_y(x,y) &= Q(x,y)
+		\end{align*}
+		It follows from Laplace's Equation, that everywhere in \(D\):
+		\begin{align*}
+			u_{xx} + u_{yy} = 0
+			\implies (-u_y)_y = (u_x)_x
+		\end{align*}
+		Since the second-order partial derivatives of \(v\) are continuous in \(D\), the first-order partial derivatives are continuous in \(D\) as well. Then for a fixed \((x_0, y_0) \in D\):
+		\begin{align*}
+			v(x,y) = \int_{(x_0, y_0)}^{(x,y)} - u_t(s,t) ds + u_s(s,t) dt
+		\end{align*}
+		is well defined \(\forall (x,y) \in D\). Therefore 
+		\begin{align*}
+			&[F_x(x,y) = P(x,y)] \land [F_y(x,y) = Q(x,y)] \\
+			&\implies [v_x(x,y) = -u_y(x,y)] \land [v_y (x,y) = u_x(x,y)]
+		\end{align*}
+		Hence, the first-order partial derivatives of \(u\) are also continuous in \(D\). Thus \(u(x,y) + iv(x,y)\) is analytic in \(D\) and \(v\) is a harmonic conjugate of \(u\).
+		
+		Note: \(v\) is not the only harmonic conjugate of \(u\), since the conditions for a harmonic conjugate is satisfied by a family of functions \(v(x,y) + C\) for all \(C \in \mathbb{R}\).
 	\end{proof}
 	
+	\begin{example}
+		{\color{Grey}
+		Consider \(u(r, \theta) = \ln(r)\), we can see that it satisfies the polar form of Laplace's equation:
+		\begin{align*}
+			r^2 u_{rr}(r, \theta) + ru_r(r, \theta) + u_{\theta \theta}(r,\theta) 
+			&= r^2 (-r^{-2}) + r(r^{-1}) = 0
+		\end{align*}
+		Hence it is harmonic in domain \(r>0\), \(\theta \in (0,2\pi)\). By the polar form of the Cauchy-Riemann equations (\cref{Cauchy-Riemann Equations (Polar) Theorem - Complex}):
+		\begin{align*}
+			r u_r &= v_\theta = 1 & u_\theta = -rv_r = 0
+		\end{align*}
+		We can integrate and obtain:
+		\begin{align*}
+			v(r,\theta) &= \theta + C & C \in \mathbb{R}
+		\end{align*}
+		Hence the analytic function is
+		\begin{align*}
+			f(r, \theta) = \ln(r) + i(\theta + C)
+		\end{align*}
+		}	
+	\end{example}
 	
+	\subsection{Transformation of Harmonic Functions} \label{Transformation of Harmonic Functions Subsection - Complex}
+	\index{Harmonic Function! Transformations}
 	
 	
 	
