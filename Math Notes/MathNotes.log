@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  23 FEB 2021 18:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  23 FEB 2021 22:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1831,9 +1831,25 @@ t/12 g\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 u; v\OMX/MnSymbolE/m/n/12 ç$ \OT1
 /cmr/m/n/12 (the-o-rem []19.3.2[]).
  []
 
-[229] [230] [231] [232
+[229] [230] [231]
+===== Image 'tikz/MathNotes-figure76' is up-to-date. ======
+\openout3 = `tikz/MathNotes-figure77.md5'.
 
-] [233] [234] [235
+\openout3 = `MathNotes.auxlock'.
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "tikz/MathNotes-figure77" "\def\tikzext
+ernalrealjob{MathNotes}\input{MathNotes}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "tikz/MathNotes-figure77" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
+}")...executed.
+
+\openout3 = `MathNotes.auxlock'.
+
+[232 <./tikz/MathNotes-figure76.pdf> <./tikz/MathNotes-figure77.pdf>] [233
+
+]
+[234] [235
 
 ] [236
 
@@ -1841,8 +1857,7 @@ t/12 g\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 u; v\OMX/MnSymbolE/m/n/12 ç$ \OT1
 
 ] [240
 
-]
-[241] [242
+] [241] [242
 
 ]
 Chapter 20.
@@ -1931,8 +1946,8 @@ Package rerunfilecheck Info: File `MathNotes.out' has not changed.
 (rerunfilecheck)             Checksum: 1EAE48570CE130530C8457EFAC509C40;28520.
  ) 
 Here is how much of TeX's memory you used:
- 44999 strings out of 479023
- 1003402 string characters out of 5859412
+ 45004 strings out of 479023
+ 1003492 string characters out of 5859412
  1422730 words of memory out of 5000000
  60232 multiletter control sequences out of 15000+600000
  446447 words of font info for 175 fonts, out of 8000000 for 9000
@@ -1968,10 +1983,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (305 pages, 2446124 bytes).
+Output written on MathNotes.pdf (305 pages, 2451969 bytes).
 PDF statistics:
- 9790 PDF objects out of 10688 (max. 8388607)
- 6662 compressed objects within 67 object streams
- 1333 named destinations out of 1440 (max. 500000)
- 1773 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 9821 PDF objects out of 10688 (max. 8388607)
+ 6691 compressed objects within 67 object streams
+ 1336 named destinations out of 1440 (max. 500000)
+ 1783 words of extra memory for PDF output out of 10000 (max. 10000000)
 

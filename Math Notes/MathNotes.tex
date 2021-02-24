@@ -12831,11 +12831,112 @@
 		\end{align*}
 		where \(\dv*{H}{N}\) is the directional derivative of \(H\) normal to \(C\).
 	\end{theorem}
+	\begin{proof}
+		\underline{\textbf{\(h = h_0\) on \(\Gamma\) \(\implies\) \(H=h_0\) on \(C\):}} 
+		\begin{align*}
+			H(x,y) = h[u(x,y), v(x,y)] = h_0
+		\end{align*}
+		
+		\underline{\textbf{\(\dv*{h}{n} = 0\) on \(\Gamma \implies \) \(\dv*{H}{N} = 0\) on \(C\):}}
+		\begin{align*}
+			\dv{h}{n} = \grad{h} \cdot \vec{n}
+		\end{align*}
+		\(\vec{n}\) is unit vector normal to \(\Gamma\) at \((u,v)\). 
+		\begin{align*}
+			\eval{\dv{h}{n}}_{(u,v)} = 0
+			&\implies \grad{h} \text{ orthogonal to } \vec{n} \text{ at } (u,v) \\
+			&\implies \grad{h} \text{ tangent to } \Gamma \text{ at } (u,v) \\
+			&\implies \Gamma \text{ orthogonal to } h(u,v) = c
+		\end{align*}
+		Now
+		\begin{align*}
+			H(x,y) = c
+			\implies h[u(x,y), v(x,y)] = c
+		\end{align*}
+		\(C \mapsto \Gamma\) and \(\Gamma\) orthogonal to \(h(x,y) = c\) implies \(C\) orthogonal to \(H(x,y) = c\) by conformality of transform. Thus \(\grad{H}\) is tangent to \(C\) at \((x,y)\).
+		
+		If \(\vec{N}\) is unit vector normal to \(C\) at \((x,y)\), then \(\grad{H}\) is orthogonal to \(N\):
+		\begin{align*}
+			\grad{H} \cdot \vec{N} = 0
+			\implies \dv{H}{N} = \grad{H}\cdot \vec{N} = 0
+		\end{align*}
+	\end{proof}
 	
+	The proof assumed \(\grad{h} = 0\). If \(\grad{h} = 0\), then 
+	\begin{align*}
+		\abs{\grad{H (x,y)}} = \abs{\grad{h(u,v)}} \abs{f'(z)} = 0 
+		\implies \grad{h(u,v)} = 0
+	\end{align*}
+	We also assumed \(\grad{h}\) and \(\grad{H}\) exists and \(H(x,y) = c\) is smooth when \(\grad{h} \neq 0\) at \((u,v)\), which ensures angles are preserved by \(w = f(z)\).
 	
+	\begin{example}
+		Consider \(h(u,v) = v + 2\), with transformation 
+		\begin{align*}
+			w = iz^2 = i(x + iy)^2 = -2xy + i(x^2 - y^2)
+		\end{align*}
+		which is conformal for \(z \neq 0\). We have \(h = 2\) for \(x = y\) \((x > 0)\), and \(h_u = 0\). Then 
+		\begin{align*}
+			H(x,y) = x^2 - y^2 + 2
+		\end{align*}
+		satisfies \(H = 2\) for \(x = y\) \((x > 0)\) and \(H_y = 0\) for \(x > 0\) by the theorem.
+		
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-0.2, xmax=10,
+					ymin=-0.2, ymax=10,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\draw[line width=1pt, color=Blue, 
+					decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0, 0)--(axis cs: 9, 9)
+					node[pos=0.5, right] {\(H = 2\)};
+					
+					\draw[line width=1pt, color=Red,
+					decoration={markings, mark=at position 0.8 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0, 0)--(axis cs: 9, 0) 
+					node[pos=0.5, above] {\(H_y = 0\)};
+				\end{axis}
+			\end{tikzpicture}
+			{\Large \(\xrightarrow{\mathmakebox[2cm]{w = f(z)}}\)}
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-10, xmax=1,
+					ymin=-0.2, ymax=10,
+					axis lines = middle,
+					ticks = none,
+					grid=none,
+					]
+					
+					\draw[line width=1pt, color=Red, 
+					decoration={markings, mark=at position 0.9 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0, 0) -- (axis cs: 0, 9)
+					node[pos=0.5, left] {\(h_u = 0\)};
+					
+					\draw[line width=1pt, color=Blue,
+					decoration={markings, mark=at position 0.9 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0, 0) -- (axis cs: -9, 0)
+					node[pos=0.5, above] {\(h = 2\)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	\end{example}
 	
-	
-	
+	Under a conformal transformation, the ratio of the directional derivative of \(H\) along a smooth arc \(C\) in the \(z\)-plane to the directional derivative of \(h\) along the image \(\Gamma\) in the \(w\)-plane is \(\abs{f'(z)}\).
 	
 	
 	
