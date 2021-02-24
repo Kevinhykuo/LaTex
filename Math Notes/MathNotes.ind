@@ -160,7 +160,7 @@
   \item Harmonic Conjugate, 76, 227
   \item Harmonic Function, 75
     \subitem  Conjugate, 227
-    \subitem  Transformations, 229
+    \subitem  Transformations, 230
   \item High Order Derivatives, 116
   \item Hilbert Transform, 192
     \subitem  Causal System, 195
@@ -335,6 +335,9 @@
     \subitem  Uniqueness, 145
   \item Taylor's Theorem, 130
   \item Transfer Function, 195
+  \item Transformation
+    \subitem  Boundary Condition, 230
+    \subitem  Harmonic Function, 230
   \item Triangle Inequality, 32
 
   \indexspace

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  22 FEB 2021 21:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  23 FEB 2021 18:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1743,7 +1743,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10931--10932
 ===== Image 'tikz/MathNotes-figure59' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure60' is up-to-date. ======
 [208 <./tikz/MathNotes-figure57.pdf> <./tikz/MathNotes-figure58.pdf>]
-<Python/Mapping_by_Sine_V.pdf, id=3802, 722.7pt x 289.08pt>
+<Python/Mapping_by_Sine_V.pdf, id=3807, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_V.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11181
@@ -1751,7 +1751,7 @@ Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11181
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [209 <./tikz/MathNotes-figure59.pdf> <./tikz/MathNotes-figure60.pdf> <./Python
 /Mapping_by_Sine_V.pdf>]
-<Python/Mapping_by_Sine_H.pdf, id=3860, 722.7pt x 289.08pt>
+<Python/Mapping_by_Sine_H.pdf, id=3865, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_H.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11206
@@ -1761,14 +1761,14 @@ Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11206
 ===== Image 'tikz/MathNotes-figure61' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure62' is up-to-date. ======
 [210 <./Python/Mapping_by_Sine_H.pdf>]
-<Python/Mapping_by_z_Squared_V.pdf, id=3906, 722.7pt x 289.08pt>
+<Python/Mapping_by_z_Squared_V.pdf, id=3912, 722.7pt x 289.08pt>
 File: Python/Mapping_by_z_Squared_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_z_Squared_V.pdf>
 Package pdftex.def Info: Python/Mapping_by_z_Squared_V.pdf  used on input line 
 11368.
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [211 <./tikz/MathNotes-figure61.pdf> <./tikz/MathNotes-figure62.pdf>]
-<Python/Mapping_by_z_Squared_H.pdf, id=3930, 722.7pt x 289.08pt>
+<Python/Mapping_by_z_Squared_H.pdf, id=3935, 722.7pt x 289.08pt>
 File: Python/Mapping_by_z_Squared_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_z_Squared_H.pdf>
 Package pdftex.def Info: Python/Mapping_by_z_Squared_H.pdf  used on input line 
@@ -1821,70 +1821,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 12654--12656
 
  []
 
-[227] [228] [229] [230
+[227] [228]
+Overfull \hbox (7.2143pt too wide) in paragraph at lines 12772--12774
+\OML/cmm/m/it/12 h\OMX/MnSymbolE/m/n/12 ˆ\OML/cmm/m/it/12 u; v\OMX/MnSymbolE/m/
+n/12 $ \OT1/cmr/m/n/12 is har-monic in $\OML/cmm/m/it/12 D[]$ $ \U/MnSymbolA/m
+/n/12 Ô[]^^H $ $\OML/cmm/m/it/12 h\OMX/MnSymbolE/m/n/12 ˆ\OML/cmm/m/it/12 u; v\
+OMX/MnSymbolE/m/n/12 $ \OT1/cmr/m/n/12 has har-monic con-ju-gate $\OML/cmm/m/i
+t/12 g\OMX/MnSymbolE/m/n/12 ˆ\OML/cmm/m/it/12 u; v\OMX/MnSymbolE/m/n/12 $ \OT1
+/cmr/m/n/12 (the-o-rem []19.3.2[]).
+ []
 
-] [231] [232] [233
+[229] [230] [231] [232
 
-] [234
+] [233] [234] [235
 
-] [235] [236] [237
+] [236
 
-] [238
+] [237] [238] [239
+
+] [240
 
 ]
-[239] [240
+[241] [242
 
 ]
 Chapter 20.
-[241] [242
-
-] [243] [244
+[243] [244
 
 ] [245] [246
 
 ] [247] [248
 
-]
-Chapter 21.
-[249] [250
+] [249] [250
 
 ]
-Chapter 22.
+Chapter 21.
 [251] [252
 
 ]
-Chapter 23.
+Chapter 22.
 [253] [254
 
 ]
-Chapter 24.
+Chapter 23.
 [255] [256
 
 ]
-Chapter 25.
+Chapter 24.
 [257] [258
 
 ]
-Chapter 26.
+Chapter 25.
 [259] [260
 
 ]
-Chapter 27.
+Chapter 26.
 [261] [262
 
-] [263] [264
+]
+Chapter 27.
+[263] [264
 
 ] [265] [266
 
+] [267] [268
+
 ]
 Chapter 28.
-[267] [268
+[269] [270
 
 ]
 Chapter 29.
-[269] [270
-
-] [271] [272
+[271] [272
 
 ] [273] [274
 
@@ -1894,22 +1902,24 @@ Chapter 29.
 
 ] [279] [280
 
+] [281] [282
+
 ]
 Chapter 30.
-[281] [282
+[283] [284
 
-] [283
+] [285
 
-] [284
+] [286
 
 ]
 runsystem(makeindex MathNotes.idx)...executed.
 
- (./MathNotes.ind [285
+ (./MathNotes.ind [287
 
-] [286] [287])
+] [288] [289])
 
-(./MathNotes.bbl [288]) [289
+(./MathNotes.bbl [290]) [291
 
 ] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
@@ -1918,13 +1928,13 @@ Package cleveref Info: loaded `english' language definitions on input line 21.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: EC70FCF57841454A3C391A1EC213259A;28261.
+(rerunfilecheck)             Checksum: 1EAE48570CE130530C8457EFAC509C40;28520.
  ) 
 Here is how much of TeX's memory you used:
- 44987 strings out of 479023
- 1003114 string characters out of 5859412
- 1422609 words of memory out of 5000000
- 60229 multiletter control sequences out of 15000+600000
+ 44999 strings out of 479023
+ 1003402 string characters out of 5859412
+ 1422730 words of memory out of 5000000
+ 60232 multiletter control sequences out of 15000+600000
  446447 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,19n,102p,859b,788s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1958,10 +1968,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (303 pages, 2440630 bytes).
+Output written on MathNotes.pdf (305 pages, 2446124 bytes).
 PDF statistics:
- 9767 PDF objects out of 10688 (max. 8388607)
- 6641 compressed objects within 67 object streams
- 1324 named destinations out of 1440 (max. 500000)
- 1765 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 9790 PDF objects out of 10688 (max. 8388607)
+ 6662 compressed objects within 67 object streams
+ 1333 named destinations out of 1440 (max. 500000)
+ 1773 words of extra memory for PDF output out of 10000 (max. 10000000)
 

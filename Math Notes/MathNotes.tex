@@ -12758,6 +12758,85 @@
 	
 	\subsection{Transformation of Harmonic Functions} \label{Transformation of Harmonic Functions Subsection - Complex}
 	\index{Harmonic Function! Transformations}
+	\index{Transformation! Harmonic Function}
+	
+	\begin{theorem}
+		Let \(f(z): D_z \mapsto D_w\) be an analytic function \(w = f(z) = u(x,y) + iv(x,y)\).
+		\begin{align*}
+			h(u, v) \text{ harmonic in } D_w
+			\implies H(x,y) = h[u(x,y), v(x,y)] \text{ harmonic in } D_z
+		\end{align*}
+		That is, a transformation of an analytic function by a harmonic function is harmonic.
+	\end{theorem}
+	\begin{proof}
+		\textbf{\underline{\(D_w\) is simply connected:}} \newline
+		\(h(u,v)\) is harmonic in \(D_w\) \(\implies\) \(h(u,v)\) has harmonic conjugate \(g(u,v)\) (\cref{Harmonic Function on Simply Connected Domain always have harmonic conjugate v Theorem - Complex}). Hence, we have function 
+		\begin{align*}
+			\Phi(w) &= h(u,v) + ig(u,v) &
+			\text{Analytic in } D_w
+		\end{align*}
+		\(f(z)\) is analytic in \(D_w\) \(\implies\) \(\phi[f(z)]\) is analytic in \(D_z\). Hence, \(u(x,y)\) is harmonic in \(H[u(x,y), v(x,y)]\).
+		
+		\textbf{\underline{\(D_w\) is not simply connected:}} \newline
+		\(\forall w_0 \in D_w\), \(w_0\) has a neighbourhood \(\abs{w-w_0}<\epsilon\) lying entirely in \(D_w\). The neighbourhood is simply connected, we have a function:
+		\begin{align*}
+			\Phi(w) &= h(u,v) + ig(u,v) &
+			\text{Analytic in } D_w
+		\end{align*}
+		\(f\) is continuous at \(z_0 \in D_z \implies \forall \epsilon, \exists \delta > 0 [\abs{w - w_0}< \epsilon \implies \abs{z-z_0} < \delta] \). Hence \(\Phi[f(z)]\) is analytic in neighbourhood \(\abs{z-z_0} < \delta\), so \(h[u(x,y), v(x,y)]\) is analytic in the neighbourhood. Since \(\forall z_0 \in D_w\), \(z_0 \mapsto w_0 \in D_w\) by function \(w = f(z)\), \(h[u(x,y), v(x,y)]\) is harmonic in \(D_z\).
+	\end{proof}
+
+	\begin{example}
+		Consider
+		\begin{align*}
+			w = e^z = e^x \cos(y) + ie^x \sin(y)
+		\end{align*}
+		Which maps \(y \in (0,\pi)\) to \(v>0\). \(w^2\) is analytic in the upper-half plane, so the function 
+		\begin{align*}
+			h(u,v) = \Re{w^2} = u^2 - v^2
+		\end{align*}
+		is harmonic in the upper-half plane. By the theorem:
+		\begin{align*}
+			H(x,y) 
+			= (e^x \cos(y))^2 - (e^x \sin(y))^2 
+			= e^{2x} [\cos[2](y) - sin[2](y)] 
+			= e^{2x} \cos(2y)
+		\end{align*}
+		is harmonic throughout \(y \in (0,\pi)\).
+	\end{example}
+	
+	\subsection{Transformation of Boundary Conditions} \label{Transformation of Boundary Conditions Subsection - Complex}
+	
+	\index{Transformation! Boundary Condition}
+	
+	\begin{theorem}
+		Suppose 
+		\begin{itemize}
+			\item[1.] \(w = f(z) = u(x,y) + iv(x,y)\) is conformal \(\forall z \in C\) and \(\Gamma = \operatorname{Img}_f(C)\).
+			\item[2.] \(h(u,v)\) satisfies 
+				\begin{align*}
+					\forall w \in \Gamma 
+					\left[(h = h_0) \lor \left(\dv{h}{n} = 0\right)\right]
+				\end{align*}
+				where \(h_0 \in \mathbb{R}\) and \(\dv*{h}{n}\) is the directional derivative of \(h\) normal to \(\Gamma\).
+		\end{itemize}
+		Then
+		\begin{align*}
+			H(x,y) &= h[u(x,y), v(x,y)]
+		\end{align*}
+		satisfies
+		\begin{align*}
+			\forall z \in C 
+			\left[(H = h_0) \lor \left(\dv{H}{N} = 0\right)\right]
+		\end{align*}
+		where \(\dv*{H}{N}\) is the directional derivative of \(H\) normal to \(C\).
+	\end{theorem}
+	
+	
+	
+	
+	
+	
 	
 	
 	
