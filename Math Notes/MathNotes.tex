@@ -12636,7 +12636,7 @@
 	
 	Review \cref{Harmonic Functions Section - Complex}.
 	
-	Recall from the definition of a Harmonic Conjugate (\cref{Harmonic Conjugate Definition - Complex}). If function \(f(z) = u(x,y) + iv(x,y)\) is analytic in a domain \(D\), then \(v(x,y)\) is a harmonic conjugate of \(u(x,y)\).
+	Recall from the definition of a Harmonic Conjugate (\cref{Harmonic Conjugate Definition - Complex}). If function \(f(z) = u(x,y) + iv(x,y)\) is analytic in a domain \(D\), then \(v(x,y)\) is a harmonic conjugate of \(u(x,y)\). \newline
 	
 	\begin{theorem}
 		\label{Analytic Implies v harmonic conjugate of u Theorem - Complex}
@@ -12761,12 +12761,18 @@
 	\index{Transformation! Harmonic Function}
 	
 	\begin{theorem}
+		\label{Harmonic Function Transformed by Analytic Function is Harmonic Theorem - Complex}
+		\index{Harmonic Function! Transformed by Analytic Function}
 		Let \(f(z): D_z \mapsto D_w\) be an analytic function \(w = f(z) = u(x,y) + iv(x,y)\).
 		\begin{align*}
 			h(u, v) \text{ harmonic in } D_w
 			\implies H(x,y) = h[u(x,y), v(x,y)] \text{ harmonic in } D_z
 		\end{align*}
-		That is, a transformation of an analytic function by a harmonic function is harmonic.
+		That is, a transformation of an harmonic function by an analytic function is harmonic. 
+		
+		(For a more general case of \(h(u,v)\) and alternate proof of the theorem, see \cref{Harmonic Function Transformed by Analytic Function is Harmonic Theorem Alternate Proof Example - Complex}.)
+		
+		(For the case where \(h(u,v)\) satisfies Poisson's Equation, see \cref{Poisson's Equation Transformed by Analytic Function Example - Complex}.)
 	\end{theorem}
 	\begin{proof}
 		\textbf{\underline{\(D_w\) is simply connected:}} \newline
@@ -12809,7 +12815,10 @@
 	
 	\index{Transformation! Boundary Condition}
 	
+	This theorem allows us to transform complex problems in the \(z\)-plane into simpler problems in the \(w\)-plane, solve it there, and transform back.
+	
 	\begin{theorem}
+		\label{Transformation of Boundary Conditions Theorem - Complex}
 		Suppose 
 		\begin{itemize}
 			\item[1.] \(w = f(z) = u(x,y) + iv(x,y)\) is conformal \(\forall z \in C\) and \(\Gamma = \operatorname{Img}_f(C)\).
@@ -12937,6 +12946,220 @@
 	\end{example}
 	
 	Under a conformal transformation, the ratio of the directional derivative of \(H\) along a smooth arc \(C\) in the \(z\)-plane to the directional derivative of \(h\) along the image \(\Gamma\) in the \(w\)-plane is \(\abs{f'(z)}\).
+	
+	\begin{example}
+		The transformation \(w = f(z) = z^2\) which maps the positive \(x\) and \(y\) axis and the origin in the \(z\) plane onto the \(u\) axis in the \(w\) plane. Consider the harmonic function: 
+		\begin{align*}
+			h(u,v) = \Re{e^{-w}} = e^{-u} \cos(v)
+		\end{align*}
+		The normal derivative \(h_v = 0\) along the \(u\) axis. Show the normal derivative of \(H(x,y)\) is zero along both positive axis is the \(z\) plane. Note: \(w = z^2\) is not conformal at the origin.
+		\begin{proof}
+			{\color{Grey}
+			\begin{align*}
+				w = z^2 = x^2 - y^2 + i2xy 
+				\implies H(x,y) = e^{-x^2 + y^2} \cos(2xy)
+			\end{align*}
+			Taking the gradient:
+			\begin{align*}
+				\grad{H} 
+				&= e^{-x^2 + y^2} 
+				\left\{ [(-2x)\cos(2xy) - (2y)\sin(2xy)]\hat{x} 
+				+ [(2y)\cos(2xy) - (2x)\sin(2xy)] \hat{y} \right\} \\
+				&= 2 e^{-x^2 + y^2} 
+				\left\{ [(-x)\cos(2xy) - (y)\sin(2xy)]\hat{x} 
+				+ [(y)\cos(2xy) - (x)\sin(2xy)] \hat{y} \right\}
+			\end{align*}
+			Taking the normal derivative along \((x,0)\):
+			\begin{align*}
+				\dv{h}{x} 
+				= \grad{H} \cdot \hat{y} 
+				= (y)\cos(2xy) - (x)\sin(2xy)
+				\implies \grad{H}(x,0) \cdot \hat{y} = 0
+			\end{align*}
+			Taking the normal derivative along \((0,y)\):
+			\begin{align*}
+				\dv{h}{x} 
+				= \grad{H} \cdot \hat{x} 
+				= (-x)\cos(2xy) - (y)\sin(2xy)
+				\implies \grad{H}(0, y) \cdot \hat{y} = 0
+			\end{align*}
+			Hence, the normal derivative of \(H(x,y)\) along both positives axes in the \(z\) plane is zero.
+			}
+		\end{proof}
+	\end{example}
+
+	\begin{example}
+		Let \(h(u,v) = \Re{-2iw + e^{-w}} = 2v + e^{-u} \cos(v)\) with the transformation \(w = f(z) = z^2\). Show \(h_v = 2\) along the \(u\) axis, but \(H_y = 4x\) along the positive \(x\) axis and \(H_x = 4y\) along the positive \(y\) axis. Then this illustrates:
+		\begin{align*}
+			\dv{h}{n} = h_0 \neq 0 \text{ not neccessarily transformed to } 
+			\dv{H}{N} = h_0
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			Applying the transformation to \(h(u,v)\):
+			\begin{align*}
+				H(x,y) =  4xy + e^{-x^2 + y^2} \cos(2xy)
+			\end{align*}
+			For \(h_v\) along the \(u\) axis:
+			\begin{align*}
+				h_v = 2 - e^{-u} \sin(v) \implies h_v(u, 0) = 2 - e^{-u} \sin(0) = 2
+			\end{align*}
+			For the partial derivatives of \(H\):
+			\begin{align*}
+				H_y &= 4x + 2y e^{-x^2 + y^2} \cos(2xy) - e^{-x^2 + y^2} (2x) \sin(2xy) \\
+				H_x &= 4y + (-2x) e^{-x^2 + y^2} \cos(2xy) - e^{-x^2 + y^2} (2y) \sin(2xy)
+			\end{align*}
+			Hence, \(H_y\) along the positive \(x\) axis and \(H_x\) along the positive \(y\) axis:
+			\begin{align*}
+				H_y (x>0, 0) &= 4x &
+				H_x (0, y>0) &= 4y
+			\end{align*}
+			The statement is proven because despite \(f(z) = z^2\) mapping the positive \(x\) and \(y\) axis in the \(z\) plane to the positive \(u\) axis in the \(w\) plane, the value of the normal derivatives is not preserved in the transformation. That is:
+			\begin{align*}
+				\dv{H}{y} = H_y = 4x &\neq h_v = 2 &
+				\dv{H}{x} = H_x = 4y &\neq h_v = 2
+			\end{align*}
+			}
+		\end{proof}
+	\end{example}
+
+	\begin{example}
+		\label{Harmonic Function Transformed by Analytic Function is Harmonic Theorem Alternate Proof Example - Complex}
+		Suppose an analytic function \(w = f(z) = u(x,y) + iv(x,y)\) maps \(D_z \mapsto D_w\). Let \(h(u,v)\) have continuous first and second order partial derivatives defined on \(D_w\). Show
+		\begin{align*}
+			H(x,y) = h[u(x,y), v(x,y)] 
+			\implies H_{xx}(x,y) + H_{yy}(x,y) = [h_{uu}(u,v) + h_{vv}(u,v)] \abs{f'(z)}^2
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			Calculating \(H_x\):
+			\begin{align*}
+				H_x = h_u u_x + h_v v_x
+			\end{align*}
+			Calculating the second order partials:
+			\begin{align*}
+				H_{xx} 
+				&= h_{uu} u_x^2 + h_u u_{xx} + h_{uv} u_x v_x + h_{vv} v_x^2 + h_v v_{xx} + h_{vu} u_x v_x \\
+				H_{yy}
+				&= h_{uu} u_y^2 + h_u u_{yy} + h_{uv} u_y v_y + h_{vv} v_y^2 + h_v v_{yy} + h_{vu} u_y v_y
+			\end{align*}
+			\(h(u,v)\) have continuous first and second order partial derivatives, so \(h_{uv} = h{vu}\). Since \(f(z)\) is analytic, \(u\) and \(v\) satisfy the Cauchy-Riemann equations (\cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}) and Laplace's equation (\cref{Laplace's Equation Definition - Complex}). Therefore, \(u_x = v_y\), \(u_y = -v_x\), \(u_{xx} + u_{yy} = 0\), and \(v_{xx} + v_{yy} = 0\), and we have
+			\begin{align*}
+				&H_{xx} + H_{yy} \\
+				&= h_{uu} (u_x^2 + u_y^2) + h_u (u_{xx} + u_{yy}) + 2h_{uv} (u_x v_x + u_y v_y) + h_{vv} (v_x^2 + v_y^2) + h_v (v_{xx} + v_{yy}) \\
+				&= h_{uu} (u_x^2 + v_x^2) + h_{vv} (u_x^2 + v_y^2) + 2h_{uv}(u_x v_x - v_x u_y) \\
+				&= (h_{uu} + h_{vv})(u_x^2 + v_x^2)
+			\end{align*}
+			Since
+			\begin{align*}
+				\abs{f'(z)}^2 = \abs{u_x + iv_x}^2 = u_x^2 + v_x^2
+			\end{align*}
+			Hence
+			\begin{align*}
+				H_{xx} + H_{yy} = [h_{uu} + h_{vv}] \abs{f'(z)}^2
+			\end{align*}
+			By extension, this tells us that in the nontrivial case where \(\abs{f'(z)} \neq 0\):
+			\begin{align*}
+				H_{xx} + H_{yy} = 0 \implies h_{uu} + h_{vv} = 0
+			\end{align*}
+			which is another proof for \cref{Harmonic Function Transformed by Analytic Function is Harmonic Theorem - Complex}.
+			}
+		\end{proof}
+	\end{example}
+
+	\begin{example}
+		\label{Poisson's Equation Transformed by Analytic Function Example - Complex}
+		\index{Poisson's Equation! Transformed by Analytic Function}
+		Let \(p(u,v)\) be function with continuous first and second order partial derivatives and satisfies Poisson's Equation:
+		\begin{align*}
+			p_{uu}(u,v) + p_{vv}(u,v) = \Phi(u,v)
+		\end{align*}
+		Show if \(w = f(z) = u(x,y) + iv(x,y)\) where \(f(z): D_z \mapsto D_w\), then 
+		\begin{align*}
+			P(x,y) = p[u(x,y), v(x,y)]
+			\implies P_{xx}(x,y) + P_{yy}(x,y) = \Phi[u(x,y), v(x,y)] \abs{f'(z)}^2
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			By the example above (\cref{Harmonic Function Transformed by Analytic Function is Harmonic Theorem Alternate Proof Example - Complex}), it is clear that
+			\begin{align*}
+				P_{xx} + P_{yy} 
+				= [p_{uu} + p_{vv}] \abs{f'(z)}^2 
+				= \Phi[u(x,y), v(x,y)] \abs{f'(z)}^2
+			\end{align*}}
+		\end{proof}
+	\end{example}
+
+	\begin{example}
+		Let \(w = f(z) = u(x,y) + iv(x,y)\), \(f(z): D_z \mapsto D_w\), conformal map smooth arc \(C\) to smooth arc \(\Gamma\). Let \(h(u,v)\) be defined on \(\Gamma\) and 
+		\begin{align*}
+			H(x,y) = h[u(x,y), v(x,y)]
+		\end{align*}
+		Let \(s\) and \(\sigma\) be distances along \(C\) and \(\Gamma\), respectively, and \(\hat{t}\) and \(\hat{\tau}\) be unit tangent vectors at \((x,y)\) on \(C\) and \((u,v)\) on \(\Gamma\) in direction of increasing distance. Show using fact that 
+		\begin{align*}
+			\dv{H}{s} &= \grad{H} \cdot \hat{t} &
+			\dv{H}{\sigma} &= \grad{H} \cdot \hat{\tau}
+		\end{align*}
+		That the transformed directional derivative along \(\Gamma\) is
+		\begin{align*}
+			\dv{H}{s} = \dv{h}{\sigma} \abs{f'(z)}
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+			Taking the gradient of \(H\) and using the Cauchy-Riemann equations (\cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}):
+			\begin{align*}
+				\grad{H} 
+				&= H_x \hat{x} + H_y \hat{y} \\
+				&= (h_u u_x + h_v v_x) \hat{x} + (h_u u_y + h_v v_y) \hat{y} \\
+				&= (h_u u_x + h_v v_x) \hat{x} + (- h_u v_x + h_v u_x) \hat{y}
+			\end{align*}
+			Taking the modulus of \(\grad{H}\):
+			\begin{align*}
+				\abs{\grad{H}}^2
+				&= (h_u u_x + h_v v_x)^2 + (- h_u v_x + h_v u_x)^2 \\
+				&= (h_u u_x)^2 + (h_v v_x)^2 + 2h_u h_v u_x v_x 
+					+ (h_u v_x)^2 + (h_v u_x)^2 + 2 h_u h_v u_y v_y \\
+				&= (h_u^2 + h_v^2)(u_x^2 + v_x^2) + 2h_u h_v (u_x v_x - u_x v_x) \\
+				&= (h_u^2 + h_v^2) (u_x^2 + v_x^2) = \abs{\grad{h}}^2 \abs{f'(z)}^2
+			\end{align*}
+			It follows that 
+			\begin{align*}
+				\abs{\grad{H}} = \abs{\grad{h}} \abs{f'(z)}
+			\end{align*}
+			Since the mapping is conformal, we know that the angle between \(\grad{H}\) and \(t\) is equal to the angle between \(\grad{h}\) and \(\tau\) at the image \((u,v)\) of point \((x,y)\). Letting \(\theta\) denote the angle:
+			\begin{align*}
+				\dv{H}{s} 
+				&= \grad{H} \cdot t = \abs{\grad{H}} \abs{t} \cos(\theta) \\
+				&= \abs{\grad{h}} \abs{f'(z)} \abs{t} \cos(\theta) 
+				 	& \abs{\grad{H}} = \abs{\grad{h}} \abs{f'(z)} \\
+				&= \abs{f'(z)} [\abs{\grad{h}} \abs{\tau} \cos(\theta)]
+					& \text{Conformality of transform and } \abs{t} = \abs{\tau} = 1 \\
+				&= \abs{f'(z)} [\grad{h} \cdot \tau] 
+				 = \dv{h}{\sigma} \abs{f'(z)}
+			\end{align*}
+			}
+		\end{proof}
+	\end{example}
+	
+	\section{Applications of Conformal Mapping} \label{Applications of Conformal Mapping Section - Complex}
+	
+	\subsection{Time Independent Temperatures} \label{Time Independent Temperatures Subsection - Complex}
+	\index{Temperature! Time Independent}
+	
+	\begin{definition}[Fourier's Law]
+		\label{Fourier's Law Definition - Complex}
+		\index{Fourier's Law}
+		Flux across a surface satisfies 
+		\begin{align*}
+			\Phi = - K \dv{T}{N}
+		\end{align*}
+		In terms of thermal flux, temperature is \(T\), thermal conductivity is \(K\), and surface normal vector is \(N\).
+	\end{definition}
+	
+	
+	
+	
+	
 	
 	
 	
