@@ -13155,6 +13155,230 @@
 		\end{align*}
 		In terms of thermal flux, temperature is \(T\), thermal conductivity is \(K\), and surface normal vector is \(N\).
 	\end{definition}
+
+	Consider a rectangular prism of unit height with base \(\Delta x \Delta y\) perpendicular to the \(xy\) plane within a solid. Here we assume:
+	\begin{itemize}
+		\item[1.] The conservation of energy
+		\item[2.] Flow is in a steady state (temperature is time independent)
+		\item[3.] No heat sources or sinks in the solid
+	\end{itemize}
+	
+	The heat flow across the surface \(\Delta x \Delta y\) from \(x\) to \(x + \Delta x\) is then 
+	\begin{align*}
+		\text{Right-hand side: }& -KT_x (x,y) \Delta y \\
+		\text{Left-hand side: }& -KT_x (x+\Delta x,y) \Delta y
+	\end{align*}
+	The net heat loss though the faces can be written as  
+	\begin{align*}
+		-K \left[\frac{T_x (x + \Delta x, y) - T_x(x, y)}{\Delta x}\right] \Delta x \Delta y
+		= -KT_{xx} (x,y) \Delta x \Delta y
+	\end{align*}
+	Likewise, for the heat flow across \(\Delta x \Delta y\) from \(y\) to \(y + \Delta y\)
+	\begin{align*}
+		-KT_{yy} (x,y) \Delta x \Delta y
+	\end{align*}
+	The flux through the surface is zero since temperatures are steady and no heat sources and sinks exist within \(\Delta x \Delta y\), so the sum is 
+	\begin{align*}
+		-KT_{xx} (x,y) \Delta x \Delta y - KT_{yy} \Delta x \Delta y = 0 
+		\implies T_{xx} (x,y) + T_{yy} (x,y) = 0
+	\end{align*}
+	Hence, \(T\) is harmonic function of \(x\) and \(y\).
+		\begin{figure}[H]
+		\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-0.2, xmax=10,
+					ymin=-0.2, ymax=10,
+					axis lines = middle,
+					ticks = none,
+					grid=none,
+					]
+					
+					\draw[]
+					(axis cs: 3, 3) -- (axis cs: 7, 3)
+					node[pos=0, below] {\((x,y)\)};
+					
+					\draw[]
+					(axis cs: 3, 3) -- (axis cs: 3, 7);
+					
+					\draw[]
+					(axis cs: 3, 7) -- (axis cs: 7, 7)
+					node[pos=0.5, above] {\(\Delta x\)};
+					
+					\draw[]
+					(axis cs: 7, 3) -- (axis cs: 7, 7)
+					node[pos=0.5, right] {\(\Delta y\)};
+					
+					\draw[line width=1pt,
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 3, 5) -- (axis cs: 7, 5)
+					node[pos=0.5, above] {Heat flow};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+
+	\begin{definition}[Isotherm]
+		\index{Isotherm}
+		\label{Isotherm Definition - Complex}
+		Level curves of the function \(T\). Surfaces where 
+		\begin{align*}
+			T(x,y) &= c_1 & c_1 \in \mathbb{R}
+		\end{align*}
+	\end{definition}
+	
+	\begin{definition}[Lines of Flow]
+		\index{Lines of flow}
+		\label{Lines of Flow Definition - Complex}
+		The curves where \(S(x,y) = c_2\), \(c_2 \in \mathbb{R}\), has \(\grad{T}(x,y)\) as the tangent vector where \(T(x,y) + iS(x,y)\) is conformal. \(S(x,y)\) is the harmonic conjugate of \(T(x,y)\). 
+	\end{definition}
+	
+	Note: The normal \(\dv*{T}{N} = 0\) on where the heat flux is zero. The part is thermally insulated and is a line of flow.
+	
+	\subsection{Steady Temperatures in a Half Plane} \label{Steady Temperatures in a Half Plane Subsection - Complex}
+	\index{Temperature! Time Independent! Half Plane}
+	
+	The temperature \(T(x,y)\) in a thin semi-infinite plate \(y \geq 0\) where \(T=0\) for \(y = 0\) except for \(y \in (-1, 1)\) where \(T = 1\). We can consider the half plane as the limiting case of the plate \(0 \leq y \leq y_0\). We can assume \(T(x,y) \rightarrow 0\) as \(y \rightarrow \infty\).
+	
+	We can write the boundary value problem as 
+	\begin{align*}
+		T_{xx}(x,y) + T_{yy}(x,y) &= 0 & x \in (-\infty, \infty), \ y>0 \\
+		T(x,0) &= \begin{cases} 1 & \abs{x}<1 \\ 0 & \abs{x}>1 \end{cases} \\
+	\end{align*}
+	Note: \(\abs{T(x,y)} < M\), \(M \in \mathbb{R}\). That is, \(T\) is bounded.
+	
+	
+	
+	
+	
+	
+	
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-3.25, xmax=3.25,
+				ymin=-0.5, ymax=2.5,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(1.5, 1.75) [\(z\)]
+					(-3 , 0) 
+					(3 , 0)
+				};
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=o,
+				]
+				coordinates {
+					(1, 0) [\(1\)]
+					(-1, 0) [\(-1\)]
+				};
+				
+				\draw[]
+				(axis cs: 1, 0)--(axis cs: 1.5, 1.75)
+				node[pos=0.5, right] {\(r_1\)};
+				
+				\draw[]
+				(axis cs: -1, 0)--(axis cs: 1.5, 1.75)
+				node[pos=0.5, above] {\(r_2\)};
+				
+				\draw[line width=1pt, dashed, color=White]
+				(axis cs: -1, 0)--(axis cs: 1.9, 0);
+				
+				\draw[
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1.5, 0) arc (0:{atan(1.75/0.5)}:50)
+				node[pos=0.5, right] {\(\theta_1\)};
+				
+				\draw[
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: -0.5, 0) arc (0:{atan(1.75/2.5)}:50)
+				node[pos=0.7, right] {\(\theta_2\)};
+				
+				\draw[line width=1]
+				(axis cs: -3, 0)--(axis cs: -1, 0)
+				node[pos=0, below] {\(A\)}
+				node[pos=0.5, below] {\(T=0\)};
+				
+				\draw[line width=1]
+				(axis cs: -1, 0)--(axis cs: 1, 0)
+				node[pos=0, below] {\(B\)}
+				node[pos=0.5, below] {\(T=1\)}
+				node[pos=1, below] {\(C\)};
+				
+				\draw[line width=1]
+				(axis cs: 1, 0)--(axis cs: 3, 0)
+				node[pos=0.5, below] {\(T=0\)}
+				node[pos=1, below] {\(D\)};
+				
+			\end{axis}
+		\end{tikzpicture}
+		{\Large \(\xrightarrow{\mathmakebox[2cm]{w = f(z)}}\)}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$u$},
+				ylabel={$v$},
+				xmin=-1.25, xmax=1.25,
+				ymin=-0.25, ymax=1.5,
+				axis lines = middle,
+				ticks = none,
+				grid=none,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(0, 1) 
+				};
+				
+				\draw[line width=1]
+				(axis cs: -1, 1) -- (axis cs: 1, 1)
+				node[pos=0.5, above] {\(T=1\)}
+				node[pos=0.5, below] {\(\pi i\)};
+				
+				\draw[dashed]
+				(axis cs: 1, 0) -- (axis cs: 1, 2)
+				node[pos=0, below] {\(B'\)};
+				
+				\draw[dashed]
+				(axis cs: -1, 0) -- (axis cs: -1, 2)
+				node[pos=0, below] {\(C'\)};
+				
+				\draw[line width=1]
+				(axis cs: -1, 0) -- (axis cs: 1, 0)
+				node[pos=0.5, below] {\(T=0\)}
+				node[pos=0.5, above] {\(D'\) \(A'\)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
 	
 	
 	

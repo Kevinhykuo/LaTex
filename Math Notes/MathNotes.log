@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  26 FEB 2021 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  27 FEB 2021 19:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1743,7 +1743,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10931--10932
 ===== Image 'tikz/MathNotes-figure59' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure60' is up-to-date. ======
 [208 <./tikz/MathNotes-figure57.pdf> <./tikz/MathNotes-figure58.pdf>]
-<Python/Mapping_by_Sine_V.pdf, id=3817, 722.7pt x 289.08pt>
+<Python/Mapping_by_Sine_V.pdf, id=3822, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_V.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11181
@@ -1751,7 +1751,7 @@ Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11181
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [209 <./tikz/MathNotes-figure59.pdf> <./tikz/MathNotes-figure60.pdf> <./Python
 /Mapping_by_Sine_V.pdf>]
-<Python/Mapping_by_Sine_H.pdf, id=3875, 722.7pt x 289.08pt>
+<Python/Mapping_by_Sine_H.pdf, id=3880, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_H.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11206
@@ -1761,14 +1761,14 @@ Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11206
 ===== Image 'tikz/MathNotes-figure61' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure62' is up-to-date. ======
 [210 <./Python/Mapping_by_Sine_H.pdf>]
-<Python/Mapping_by_z_Squared_V.pdf, id=3922, 722.7pt x 289.08pt>
+<Python/Mapping_by_z_Squared_V.pdf, id=3927, 722.7pt x 289.08pt>
 File: Python/Mapping_by_z_Squared_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_z_Squared_V.pdf>
 Package pdftex.def Info: Python/Mapping_by_z_Squared_V.pdf  used on input line 
 11368.
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [211 <./tikz/MathNotes-figure61.pdf> <./tikz/MathNotes-figure62.pdf>]
-<Python/Mapping_by_z_Squared_H.pdf, id=3945, 722.7pt x 289.08pt>
+<Python/Mapping_by_z_Squared_H.pdf, id=3950, 722.7pt x 289.08pt>
 File: Python/Mapping_by_z_Squared_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_z_Squared_H.pdf>
 Package pdftex.def Info: Python/Mapping_by_z_Squared_H.pdf  used on input line 
@@ -1840,70 +1840,77 @@ t/12 g\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 u; v\OMX/MnSymbolE/m/n/12 ç$ \OT1
 ===== Image 'tikz/MathNotes-figure76' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure77' is up-to-date. ======
 [232 <./tikz/MathNotes-figure76.pdf> <./tikz/MathNotes-figure77.pdf>] [233]
-[234] [235] [236] [237
+[234] [235]
+===== Image 'tikz/MathNotes-figure78' is up-to-date. ======
+[236]
+===== Image 'tikz/MathNotes-figure79' is up-to-date. ======
+===== Image 'tikz/MathNotes-figure80' is up-to-date. ======
 
-] [238] [239
+Underfull \vbox (badness 3148) has occurred while \output is active []
 
-] [240
+ [237 <./tikz/MathNotes-figure78.pdf>] [238 <./tikz/MathNotes-figure79.pdf> <./
+tikz/MathNotes-figure80.pdf>] [239
 
-] [241] [242] [243
+] [240] [241
 
-] [244
+] [242
 
-] [245]
-[246
+] [243] [244] [245
+
+] [246
+
+] [247]
+[248
 
 ]
 Chapter 20.
-[247] [248
-
-] [249] [250
+[249] [250
 
 ] [251] [252
 
 ] [253] [254
 
-]
-Chapter 21.
-[255] [256
+] [255] [256
 
 ]
-Chapter 22.
+Chapter 21.
 [257] [258
 
 ]
-Chapter 23.
+Chapter 22.
 [259] [260
 
 ]
-Chapter 24.
+Chapter 23.
 [261] [262
 
 ]
-Chapter 25.
+Chapter 24.
 [263] [264
 
 ]
-Chapter 26.
+Chapter 25.
 [265] [266
 
 ]
-Chapter 27.
+Chapter 26.
 [267] [268
 
-] [269] [270
+]
+Chapter 27.
+[269] [270
 
 ] [271] [272
 
+] [273] [274
+
 ]
 Chapter 28.
-[273] [274
+[275] [276
 
 ]
 Chapter 29.
-[275] [276
-
-] [277] [278
+[277] [278
 
 ] [279] [280
 
@@ -1913,22 +1920,24 @@ Chapter 29.
 
 ] [285] [286
 
+] [287] [288
+
 ]
 Chapter 30.
-[287] [288
+[289] [290
 
-] [289
+] [291
 
-] [290
+] [292
 
 ]
 runsystem(makeindex MathNotes.idx)...executed.
 
- (./MathNotes.ind [291
+ (./MathNotes.ind [293
 
-] [292] [293])
+] [294] [295])
 
-(./MathNotes.bbl [294]) [295
+(./MathNotes.bbl [296]) [297
 
 ] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
@@ -1937,13 +1946,13 @@ Package cleveref Info: loaded `english' language definitions on input line 21.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 77681C80D8F10F61C7AB477F12A2EE09;28968.
+(rerunfilecheck)             Checksum: 49998F5FE83D8867EE4E5ACDCB7F7598;29223.
  ) 
 Here is how much of TeX's memory you used:
- 45039 strings out of 479023
- 1004789 string characters out of 5859412
- 1423358 words of memory out of 5000000
- 60249 multiletter control sequences out of 15000+600000
+ 45060 strings out of 479023
+ 1005325 string characters out of 5859412
+ 1423666 words of memory out of 5000000
+ 60258 multiletter control sequences out of 15000+600000
  446447 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,19n,102p,859b,788s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1977,10 +1986,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (309 pages, 2463963 bytes).
+Output written on MathNotes.pdf (311 pages, 2474267 bytes).
 PDF statistics:
- 9871 PDF objects out of 10688 (max. 8388607)
- 6736 compressed objects within 68 object streams
- 1354 named destinations out of 1440 (max. 500000)
- 1799 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 9934 PDF objects out of 10688 (max. 8388607)
+ 6794 compressed objects within 68 object streams
+ 1363 named destinations out of 1440 (max. 500000)
+ 1822 words of extra memory for PDF output out of 10000 (max. 10000000)
 
