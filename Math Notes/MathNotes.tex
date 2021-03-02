@@ -13251,11 +13251,23 @@
 	Note: \(\abs{T(x,y)} < M\), \(M \in \mathbb{R}\). That is, \(T\) is bounded.
 	
 	
+	This is a Dirichlet problem for upper half plane \((y>0)\). We will transform this problem into a Dirichlet problem in the \(uv\) plane, while preserving all the properties in that of the \(xy\) plane. The region will be the image of the half plane under the transformation \(w = f(z)\) that is analytic in \(y>0\), conformal along \(y=0\) except at \((0, \pm 1)\), where \(f(z)\) is undefined. 
 	
+	A harmonic function of \(u\) and \(v\) will be transformed into a harmonic function of \(x\) and \(y\), with boundary conditions in the \(uv\) plane preserved on corresponding portions of the boundary in the \(xy\) plane.
 	
-	
-	
-	
+	Let 
+	\begin{align*}
+		z - 1 &= r_1 e^{i\theta_1} & 
+		z + 1 &= r_2 e^{i\theta_2} &
+		0 \leq \theta_k \leq \pi, \ k \in \{1, 2\}
+	\end{align*}
+	Transformation defined for \(y > 0\) except for \(z = \pm 1\)
+	\begin{align*}
+		w &= \log(\frac{z-1}{z+1}) = \ln(\frac{r_1}{r_2}) + i(\theta_1 + \theta_2) &
+		\frac{r_1}{r_2} > 0, \ -\frac{\pi}{2} < \theta_1 - \theta_2 < \frac{3\pi}{2}
+	\end{align*}
+	is analytic and conformal (see \cref{Conformal Definition - Complex}).
+	The value of the logarithm is principle, so the upper half plane \(y > 0\) is mapped to \(v \in (0, \pi)\). The line between \(-1\) and \(1\), (\(x \in (-1, 1), \ y=0\)), is mapped to \(\theta_1 - \theta_2 = \pi\), the upper edge of the strip. The rest of the \(x\) axis, \(y = 0\) is mapped to \(\theta_1 - \theta_2 = 0\), the lower edge of the strip.
 	
 	\begin{figure}[H]
 		\centering
@@ -13379,8 +13391,54 @@
 		\end{tikzpicture}
 	\end{figure}
 	
+	A bounded harmonic function, \(T(u,v)\), with conditions \(T(u,0) = 0\) and \(T(u,\pi) = 1\).
+	\begin{align*}
+		T = \frac{1}{\pi} v
+	\end{align*}
+	Which is harmonic due to it being the imaginary component of the entire function \(w / \pi\). Changing to \(x\) and \(y\) coordinates:
+	\begin{align*}
+		w = \ln\abs{\frac{z-1}{z+1}} + i \arg\left(\frac{z-1}{z+1} \right)
+	\end{align*}
+	Then
+	\begin{align*}
+		v & 
+		= \arg\left[\frac{(z-1)(\bar{z} + 1)}{(z+1)(\overline{z+1})} \right] 
+		= \arg\left[\frac{x^2 + y^3 - 1 + i2y}{(x+1)^2 + y^2} \right] 
+		= \arctan(\frac{2y}{x^2 + y^2 - 1}) &
+		v \in [0,\pi]
+	\end{align*}
+	We have \(v \in [0, \pi]\) since 
+	\begin{align*}
+		\arg\left(\frac{z-1}{z+1}\right) &= \theta_1 - \theta_2
+		& \theta_1 - \theta_2 \in [0, \pi]
+	\end{align*}
+	The transformation
+	\begin{align*}
+		T &= \frac{1}{\pi} \arctan(\frac{2y}{x^2 + y^2 - 1})	&
+		\arctan(t) \in [0, \pi]
+	\end{align*}
+	We can then apply \cref{Harmonic Function Transformed by Analytic Function is Harmonic Theorem - Complex} to show that \(T\) is harmonic in the half plane. Boundary conditions are the same on the boundaries due to they are the type \(h = h_0\) (\cref{Transformation of Boundary Conditions Theorem - Complex}).
 	
+	Isotherms \(T(x,y) = c_1\), \(c_1 \in (0,1)\) are arcs of circles:
+	\begin{align*}
+		x^2 + [y - \cot(\pi c_1)]^2 = \csc[2](\pi c_1)
+	\end{align*}
+	passing through \((\pm 1, 0)\) with centers on the \(y\) axis.
 	
+	Product of harmonic function with a constant is harmonic, so if we replace \(T = 1\) with \(T = T_0\) along the line segment \(x \in (-1, 0)\):
+	\begin{align*}
+		T &= \frac{T_0}{\pi} \arctan(\frac{2y}{x^2 + y^2 - 1}) &
+		\arctan(t) \in [0, \pi]
+	\end{align*}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.45\linewidth]{Python/Steady_Temperatuers_In_Half_Plane}
+		\caption*{}
+		\label{fig:steadytemperatuersinhalfplane}
+	\end{figure}
+	
+	\subsubsection{Related Problem}
 	
 	
 	
