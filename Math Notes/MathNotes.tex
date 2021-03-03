@@ -13671,7 +13671,150 @@
 	\subsection{Temperatures in a Quadrant} \label{Temperatures in a Quadrant Subsection - Complex}
 	\index{Temperature! Time Independent! Quadrant}
 	
+	Consider a quadrant where one edge is kept at a fixed temperature, the end of the other edge is insulated while the rest is kept at another temperature.
 	
+	Boundary conditions:
+	\begin{align*}
+		T_{xx}(x,y) + T_{yy}(x,y) &= 0 &
+			x>0, \ y>0 \\
+		T_y(x,0) &= 0 & x \in (0,1) \\
+		T(x,0) &= 1 & x>1 \\
+		T(0,y) &= 0 & y>0
+	\end{align*}
+	\(T(x,y)\) is bounded in the quadrant.
+	
+	Transformation:
+	\begin{align*}
+		w = f(z) = \sin[-1](z)
+	\end{align*}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-0.75, xmax=2.5,
+				ymin=-0.2, ymax=2.5,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				]
+				
+				\draw[line width=1,]
+				(axis cs: 0, 0)--(axis cs: 0, 2)
+				node[pos=0, above left] {\(C\)}
+				node[pos=1, left] {\(D\)}
+				node[pos=0.5, left] {\(T=0\)};
+				
+				\draw[line width=1, color=Grey]
+				(axis cs: 0, 0)--(axis cs: 0.5, 0);
+				
+				\draw[line width=1,]
+				(axis cs: 0.5, 0)--(axis cs: 2, 0)
+				node[pos=0, above] {\(B\)}
+				node[pos=1, above] {\(A\)}
+				node[pos=0, below] {\(1\)}
+				node[pos=0.5, above] {\(T=1\)};
+				
+				\draw[line width=1,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 2, 0)--(axis cs: 2.3, 0);
+				
+				\draw[line width=1, dashed, color=White]
+				(axis cs: 2, 0)--(axis cs: 2.4, 0);
+				
+				\draw[line width=1,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 2)--(axis cs: 0, 2.3);
+				
+				\draw[line width=1, dashed, color=White]
+				(axis cs: 0, 2)--(axis cs: 0, 2.4);
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=o,
+				]
+				coordinates {
+					(0, 0) 
+					(0.5, 0) 
+				};
+			\end{axis}
+		\end{tikzpicture}
+		{\Large \(\xrightarrow{\mathmakebox[2cm]{w = f(z)}}\)}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$u$},
+				ylabel={$v$},
+				xmin=-0.5, xmax=1.5,
+				ymin=-0.2, ymax=1.6,
+				axis lines = middle,
+				ticks = none,
+				grid=none,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=o,
+				]
+				coordinates {
+					(0, 0) 
+					(1, 0)
+				};
+				
+				\draw[line width=1]
+				(axis cs: 0, 0) -- (axis cs: 0, 1)
+				node[pos=0, above left] {\(C'\)}
+				node[pos=0.5, left] {\(T=0\)}
+				node[pos=1, left] {\(D'\)};
+				
+				\draw[line width=1]
+				(axis cs: 1, 0) -- (axis cs: 1, 1)
+				node[pos=0, above right] {\(B'\)}
+				node[pos=1, right] {\(A'\)}
+				node[pos=0, below] {\(\pi/2\)}
+				node[pos=0.5, right] {\(T=1\)};
+				
+				\draw[line width=1, color=Grey]
+				(axis cs: 0, 0) -- (axis cs: 1, 0);
+				
+				\draw[line width=1,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 1)--(axis cs: 0, 1.5);
+				
+				\draw[line width=1, dashed, color=White]
+				(axis cs: 0, 1) -- (axis cs: 0, 1.4);
+				
+				\draw[line width=1,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, 1)--(axis cs: 1, 1.5);
+				
+				\draw[line width=1, dashed, color=White]
+				(axis cs: 1, 1) -- (axis cs: 1, 1.4);
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=o,
+				]
+				coordinates {
+					(0, 0) 
+					(1, 0) 
+				};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
 	
 	
