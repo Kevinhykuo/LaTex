@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  2 MAR 2021 21:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  2 MAR 2021 22:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1858,19 +1858,7 @@ input line 13436.
 [240 <./tikz/MathNotes-figure81.pdf> <./tikz/MathNotes-figure82.pdf>]
 ===== Image 'tikz/MathNotes-figure83' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure84' is up-to-date. ======
-\openout3 = `tikz/MathNotes-figure85.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure85" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure85" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure85' is up-to-date. ======
 [241 <./tikz/MathNotes-figure83.pdf>] [242 <./tikz/MathNotes-figure84.pdf> <./t
 ikz/MathNotes-figure85.pdf>] [243
 
@@ -2009,7 +1997,7 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (315 pages, 2512576 bytes).
+Output written on MathNotes.pdf (315 pages, 2512564 bytes).
 PDF statistics:
  10091 PDF objects out of 10688 (max. 8388607)
  6908 compressed objects within 70 object streams
