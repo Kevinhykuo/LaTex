@@ -13251,7 +13251,7 @@
 	Note: \(\abs{T(x,y)} < M\), \(M \in \mathbb{R}\). That is, \(T\) is bounded.
 	
 	
-	This is a Dirichlet problem for upper half plane \((y>0)\). We will transform this problem into a Dirichlet problem in the \(uv\) plane, while preserving all the properties in that of the \(xy\) plane. The region will be the image of the half plane under the transformation \(w = f(z)\) that is analytic in \(y>0\), conformal along \(y=0\) except at \((0, \pm 1)\), where \(f(z)\) is undefined. 
+	This is a Dirichlet problem for upper half plane \((y>0)\). We will transform this problem into a Dirichlet problem in the \(w\) plane, while preserving all the properties in that of the \(z\) plane. The region will be the image of the half plane under the transformation \(w = f(z)\) that is analytic in \(y>0\), conformal along \(y=0\) except at \(z = \pm 1\), where \(f(z)\) is undefined. 
 	
 	A harmonic function of \(u\) and \(v\) will be transformed into a harmonic function of \(x\) and \(y\), with boundary conditions in the \(uv\) plane preserved on corresponding portions of the boundary in the \(xy\) plane.
 	
@@ -13440,15 +13440,234 @@
 	
 	\subsubsection{Related Problem}
 	
+	Consider a slab in 3D space that is bounded by planes \(x = \pm \pi/2\) and \(y = 0\), where \(T(x, 0) = 1\) for \(x \in (-\pi/2, \pi/2)\) and \(T(\pi/2, y) = T(-\pi/2, y) = 0\).
 	
+	Boundary value problem for \(T(x,y)\) bounded:
+	\begin{align*}
+		T_{xx}(x,y) + T_{yy}(x,y) &= 0
+			& x &\in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right), \ y>0 \\
+		T\left(-\frac{\pi}{2}, y\right) = T\left(\frac{\pi}{2}, y\right) &= 0
+			& y&>0 \\
+		T(x,0) &= 1
+			& x &\in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)
+	\end{align*}
+
+	We want a transformation that preserves these conditions, so consider the transformation:
+	\begin{align*}
+		w = g(z) = \sin(z) = \sin(x)\cosh(y) + i \cos(x) \sinh(y)
+	\end{align*}
+	This transforms the problem into the one we had previously, \(T(x,0) = 1\) along the line segment \(x = \pm 1\) and \(T(x,0) = 0\) for other values of \(x\).
+	 
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-1.75, xmax=1.75,
+				ymin=-0.5, ymax=2.5,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				]
+				
+				\draw[line width=1, 
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: -1, 0)--(axis cs: -1, 2)
+				node[pos=0.25, left] {\(T=0\)}
+				node[pos=0, below] {\(-\frac{\pi}{2}\)}
+				node[pos=0.5, left] {\(A\)};
+				
+				\draw[line width=1, 
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, 0)--(axis cs: 1, 2)
+				node[pos=0.25, right] {\(T=0\)}
+				node[pos=0, below] {\(\frac{\pi}{2}\)}
+				node[pos=0.5, right] {\(D\)};
+				
+				\draw[line width=1, dashed, color=White]
+				(axis cs: 1, 1)--(axis cs: 1, 1.9);
+				
+				\draw[line width=1, dashed, color=White]
+				(axis cs: -1, 1)--(axis cs: -1, 1.9);
+				
+				\draw[line width=1, dashed, color=Grey]
+				(axis cs: -1, 1)--(axis cs: 1, 1);
+				
+				\draw[line width=1]
+				(axis cs: -1, 0)--(axis cs: 1, 0)
+				node[pos=0, above left] {\(B\)}
+				node[pos=0.5, below] {\(T=1\)}
+				node[pos=1, above right] {\(C\)};
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=o,
+				]
+				coordinates {
+					(1, 0) 
+					(-1, 0) 
+				};
+			\end{axis}
+		\end{tikzpicture}
+		{\Large \(\xrightarrow{\mathmakebox[2cm]{w = g(z)}}\)}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$u$},
+				ylabel={$v$},
+				xmin=-2.5, xmax=2.5,
+				ymin=-0.5, ymax=1.5,
+				axis lines = middle,
+				ticks = none,
+				grid=none,
+				]
+			
+				\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(2, 0) 
+						(1, 0) 
+						(0, 0) 
+						(-1, 0) 
+						(-2, 0) 
+					};
+				
+				\draw[line width=1]
+				(axis cs: -2.5, 0) -- (axis cs: 2.5, 0);
+				
+				\draw[line width=1]
+				(axis cs: -2, 0) -- (axis cs: 2, 0)
+				node[pos=0, below] {\(D'\)}
+				node[pos=0.25, below] {\(C'=-1\)}
+				node[pos=0.75, below] {\(B'=1\)}
+				node[pos=1, below] {\(A'\)}
+				node[pos=0.5, above] {\(T = 1\)}
+				node[pos=0.125, above] {\(T = 0\)}
+				node[pos=0.875, above] {\(T = 0\)};
+				
+				\draw[line width=1, dashed, color=Grey]
+				(axis cs: -2, 0)--(axis cs: -2, 1)--(axis cs: 2, 1)--(axis cs: 2, 0);
+				
+				\draw[line width=1, dashed, color=White]
+				(axis cs: -2.4, 0) -- (axis cs: -2, 0);
+				
+				\draw[line width=1, dashed, color=White]
+				(axis cs: 2, 0) -- (axis cs: 2.4, 0);
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
+	Using the solution of the boundary value problem we obtained previously:
+	\begin{align*}
+		T(u,v) &= \frac{1}{\pi} \arctan(\frac{2v}{u^2 + v^2 - 1})
+			& \arctan(t) \in [0, \pi]
+	\end{align*}
+	Applying the transformation:
+	\begin{align*}
+		T(x,y) 
+		&= \frac{1}{\pi} \arctan(\frac{2\cos(x)\sinh(y)}{\sin[2](x)\cosh[2](y) + \cos[2](x)\sinh[2](y) - 1})
+	\end{align*}
+	Since
+	\begin{align*}
+		&\frac{2\cos(x)\sinh(y)}{\sin[2](x)\cosh[2](y) + \cos[2](x)\sinh[2](y) - 1} \\
+		&= \frac{2 \cos(x) \sinh(y)}{\sinh[2](y) - \cosh[2](x)} 
+		 = \frac{2[\cos(x)/\sinh(y)]}{1 - [\cos(x) / \sinh(y)]^2}
+		 = \tan(\frac{2\cos(x)}{\sinh(y)})
+	\end{align*}
+	Hence 
+	\begin{align*}
+		T &= \frac{2}{\pi} \arctan(\frac{\cos(x)}{\sinh(y)})
+			& \arctan(t) \in \left[0, \frac{\pi}{2} \right]
+	\end{align*}
+	\(\sin(z)\) is entire and \(T(u,v)\) is harmonic in half plane \(v>0\), so \(T(x,y)\) is harmonic in the line \(x \in (-\pi/2, \pi/2)\), \(y>0\). \(T(u,v)\) satisfies boundary condition \(T=1\) for \(\abs{u} < 1\) and \(v=0\), and \(T=0\) for \(\abs{u}>1\) and \(v=0\); hence the boundary conditions for \(T(x,y)\) are satisfied. Moreover, \(\abs{T(x,y)}\leq 1\) in the strip.
 	
+	Isotherms \(T(x,y) = c_1\), \(c_1 \in (0,1)\), within the slab:
+	\begin{align*}
+		\cos(x) = \tan(\frac{\pi c_1}{2}) \sinh(y)
+	\end{align*}
+	The flux of heat into the slab from the surface in \(y=0\) (see \cref{Fourier's Law Definition - Complex}):
+	\begin{align*}
+		-KT_y(x,0) &= \frac{2K}{\pi \cos(x)}
+			& x \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)
+	\end{align*}
+	Outward flux of heat through the plane \(x = \pi/2\):
+	\begin{align*}
+		-KT_x \left(\frac{\pi}{2}, y\right) &= \frac{2K}{\pi \sinh(y)}
+			& y > 0
+	\end{align*}
 	
+	\begin{observation}
+		This problem is solved by two transformations, first by \(g(w) = \sin(w) = U + iV\), then \(f(z) = \log[(z-1)/(z+1)] = u + iv\) on the function \(T(U, V)\). 
+		
+		In order to do so, we transformed the problem into a space where we can solve the problem easily, then transformed it back.
+		
+			\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					width=1.5\linewidth,
+					unit vector ratio=1 1 1,
+					xlabel=none,
+					ylabel=none,
+					xmin=-2, xmax=2,
+					ymin=-1, ymax=1,
+					axis lines = none,
+					ticks=none,
+					grid=none,
+					]
+					
+					\draw[]
+					(axis cs: -1, 0) -- (axis cs: -1, 0)
+					node[pos=0] {\(z\)-plane};
+					
+					\draw[]
+					(axis cs: 0, 0) -- (axis cs: 0, 0)
+					node[pos=0] {\(w\)-plane};
+					
+					\draw[]
+					(axis cs: 1, 0) -- (axis cs: 1, 0)
+					node[pos=0] {\(W\)-plane};
+					
+					\draw[line width=1, 
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -0.9, 0.1) arc (120:60:80)
+					node[pos=0.5, above] {\(w=f(z)\)};
+					
+					\draw[line width=1, 
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0.1, 0.1) arc (120:60:80)
+					node[pos=0.5, above] {\(W = g(w)\)};
+					
+					\draw[line width=1, 
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 0.9, -0.1) arc (-60:-120:80)
+					node[pos=0.5, below] {Sub: \(U(u,v)\) and \(V(u,v)\)};
+					
+					\draw[line width=1, 
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: -0.1, -0.1) arc (-60:-120:80)
+					node[pos=0.5, below] {Sub: \(u(x,y)\) and \(v(x,y)\)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	\end{observation}
 	
-	
-	
-	
-	
+	\subsection{Temperatures in a Quadrant} \label{Temperatures in a Quadrant Subsection - Complex}
+	\index{Temperature! Time Independent! Quadrant}
 	
 	
 	
