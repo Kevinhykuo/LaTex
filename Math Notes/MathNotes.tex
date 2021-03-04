@@ -13681,12 +13681,47 @@
 		T(x,0) &= 1 & x&>1 \\
 		T(0,y) &= 0 & y&>0
 	\end{align*}
-	\(T(x,y)\) is bounded in the quadrant.
+	\(T(x,y)\) is bounded in the quadrant. Boundary conditions are of types \(h = h_0\) and \(\dv*{h}{n} = 0\).
 	
 	Transformation:
 	\begin{align*}
 		w = f(z) = \sin[-1](z)
 	\end{align*}
+	
+	The existence of this inverse is ensured by the bijective nature of the transform. The transformation is conformal except at \(w = \pi/2\), hence it is not conformal at \(z = 1\).
+	
+	Boundary conditions suggest the temperature function:
+	\begin{align*}
+		T = \frac{2}{\pi} u
+	\end{align*}
+	We know that 
+	\begin{align*}
+		x &= \sin(u)\cosh(v)	&
+		y &= \cos(u)\sinh(v)
+	\end{align*}
+	Hence, \(x\) and \(y\) nonzero in \((0, \pi/2)\). Consequently
+	\begin{align*}
+		\cosh[2](v) - \sinh[2](v) = \frac{x^2}{\sin[2](u)} - \frac{y^2}{\cos[2](u)} = 1
+	\end{align*}
+	For fixed \(u\), this is hyperbola with foci
+	\begin{align*}
+		z = \pm \sqrt{\sin[2](u) + \cos[2](u)} = \pm 1
+	\end{align*}
+
+	The length of the transverse axis (length of line joining two vertices \((\pm \sin(u), 0)\)) is \(2\sin(u)\). Distances between a foci and point on hyperbola:
+	\begin{align*}
+		\sqrt{(x+1)^2 + y^2} - \sqrt{(x-1)^2 + y^2} = 2\sin(u)
+	\end{align*}
+	Then
+	\begin{align*}
+		T &= \frac{2}{\pi} \sin[-1](\frac{\sqrt{(x+1)^2 + y^2} - \sqrt{(x-1)^2 + y^2}}{2})
+			& u\in \left[0, \frac{\pi}{2}\right]
+	\end{align*}
+	Temperature along the lower edge of plate:
+	\begin{align*}
+		T(x,0) = \frac{2}{\pi} \sin[-1](x)
+	\end{align*}
+	Isotherms \(T(x,y) = c_1\), \(c_1 \in (0,1)\), are parts of the confocal hyperbola where \(u = \pi c_1 /2\) in the first quadrant. Lines of flow are then the confocal ellipses for constant \(v\), since \(2v/\pi\) is the harmonic conjugate of \(T(u,v) = 2u/\pi\).
 	
 	\begin{figure}[H]
 		\centering
@@ -13816,10 +13851,177 @@
 		\end{tikzpicture}
 	\end{figure}
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{Python/Temperaturues_in_Quadrant_Hyperbola}
+		\caption*{}
+		\label{fig:temperaturuesinquadranthyperbola}
+	\end{figure}
 	
+	\subsection{Electrostatic Potential} \label{Electrostatic Potential Subsection - Complex}
+	\index{Electrostatic! Potential}
 	
+	In any charge free region, the potential in the region due to charges exterior to the region satisfies Laplace's equation for 3D space. Then the potential for 2D space:
+	\begin{align*}
+		V_{xx}(x,y) + V_{yy}(x,y) = 0
+	\end{align*}
+	Lines \(V(x,y) = c_1\) are equipotential lines.
+	If \(U\) is a harmonic conjugate of \(V\), then lines \(U(x,y) = c_2\) are flux lines. At any point \((x,y)\) where \(\dv*{z} [V(x,y) + iU(x,y)] \neq 0\), then the two curves are orthogonal. Boundary value problems from \cref{Time Independent Temperatures Subsection - Complex} can then be applied here.
 	
+	\begin{example}
+		Consider a cylinder of unit radius in the \(z\) plane. The top half (\(y>0\)) has \(V(x,y) = 0\), while the bottom half \(y<0\) has \(V(x,y) = 1\)
+		
+		We are dealing with a circle, so we can use a linear fractional transformation (\cref{Linear Fractional Transformations Section - Complex}). Using the inverse of \(f^{-1}(w)\) we find:
+		\begin{align*}
+			f^{-1}(w) = z = \frac{i - w}{i + w} 
+			\implies f(z) = w = i \frac{1 - z}{1 + z}
+		\end{align*}
+		Now
+		\begin{align*}
+			\frac{1}{\pi} \operatorname{Log}(w)
+			&= \frac{1}{\pi} \ln(\rho) + i \frac{1}{\pi} \phi
+				& \rho > 0, \ \phi \in [0, \pi]
+		\end{align*}
+		which the imaginary part is bounded and satisfies \(V(u,v) = 0\) for \(\phi = 0\) and \(V(u,v) = 1\) for \(\phi = \pi\). The harmonic function for the half plane:
+		\begin{align*}
+			V(u, v) &= \frac{1}{\pi} \tan[-1](\frac{v}{u})
+				& \tan[-1](\frac{u}{v}) \in [0, \pi]
+		\end{align*}
+		Applying transformation:
+		\begin{align*}
+			V(x,y) &= \frac{1}{\pi} \tan[-1](\frac{1-x^2-y^2}{2y})
+				& \tan[-1](\frac{1-x^2-y^2}{2y}) \in [0, \pi]
+		\end{align*}
+		This is the potential function within the cylinder. To verify the solution, note:
+		\begin{align*}
+			\lim_{t\rightarrow0, \ t>0} \tan[-1](t) &= 0 	&
+			\lim_{t\rightarrow0, \ t<0} \tan[-1](t) &= \pi 
+		\end{align*}
+		The equipotential curves \(V(x,y) = c_1\), \(c_1 \in (0, 1)\) are circles that pass through \((\pm 1, 0)\):
+		\begin{align*}
+			x^2 + [y + \tan(\pi c_1)]^2 = \sec[2](\pi c_1)
+		\end{align*}
+		It's clear that for the segment on \(x\) axis \(V(x, 0) = 1/2\), \(x \in (-1, 1)\). \(U\) is the harmonic conjugate of \(V\), hence
+		\begin{align*}
+			U 
+			= -(1/\pi) \ln(\rho) 
+			= \Im{-(i/\pi)\operatorname{Log}(w)} 
+			= - \frac{1}{\pi} \ln\abs{\frac{1-z}{1+z}}
+		\end{align*}
+		The flux lines \(U(x,y) = c_2\) are then circles with centers on the \(x\) axis.
+		
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-1.5, xmax=1.5,
+					ymin=-1.5, ymax=1.5,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\draw[line width=1,]
+					(axis cs: -1, 0) arc (-180:180:100)
+					node[pos=0, 	below left]	{\(A\)}
+					node[pos=0.25, 	below] 		{\(V=1\)}
+					node[pos=0.25, 	above] 		{\(B\)}
+					node[pos=0.5, 	right] 		{\(C\)}
+					node[pos=0.75,	below] 		{\(D\)}
+					node[pos=0.75, 	above] 		{\(V=0\)}
+					node[pos=1, 	above left] {\(E\)};
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(1, 0) 
+						(-1, 0) 
+					};
+				\end{axis}
+			\end{tikzpicture}
+			{\Large \(\xrightarrow{\mathmakebox[2cm]{w = f(z)}}\)}
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-2, xmax=2,
+					ymin=-0.4, ymax=2,
+					axis lines = middle,
+					ticks = none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(0, 0) 
+					};
+				
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(-0.5, 0) 
+						(0.5, 0)
+						(1, 1)
+					};
+					
+					\draw[]
+					(axis cs: 0, 0) -- (axis cs: 1, 1)
+					node[pos=0.5, 	above left] 	{\(\rho\)}
+					node[pos=1, 	above right] 	{\(w\)};
+					
+					\draw[line width=1]
+					(axis cs: -2, 0) -- (axis cs: 2, 0);
+					
+					\draw[line width=1, dashed, color=Grey]
+					(axis cs: 1.5, 0) -- (axis cs: 1.5, 1.75) -- (axis cs: -1.5, 1.75) -- (axis cs: -1.5, 0);
+					
+					\draw[line width=1]
+					(axis cs: -1.5, 0) -- (axis cs: 1.5, 0)
+					node[pos=0, 	above] {\(A'\)}
+					node[pos={1/3}, above] {\(B'\)}
+					node[pos=0.5, 	above] {\(C'\)}
+					node[pos={2/3}, above] {\(D'\)}
+					node[pos=1, 	above] {\(E'\)}
+					node[pos={2/3}, below] {\(1\)}
+					node[pos={1/6}, below] {\(V=1\)}
+					node[pos={5/6}, below] {\(V=0\)};
+					
+					\draw[
+					decoration={markings, mark=at position 1 with {\arrow{>}} },
+					postaction={decorate}]
+					(axis cs: 1, 0) arc (0:45:100)
+					node[pos=0.5, right] {\(\phi\)};
+					
+					\draw[line width=1, dashed, color=White]
+					(axis cs: -1.5, 0) -- (axis cs: -1.9, 0);
+					
+					\draw[line width=1, dashed, color=White]
+					(axis cs: 1.5, 0) -- (axis cs: 1.9, 0);
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	\end{example}
 	
+	\begin{example}
+		content
+	\end{example}
 	
 	
 	
