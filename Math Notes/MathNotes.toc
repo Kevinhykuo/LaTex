@@ -146,34 +146,36 @@
 \contentsline {subsubsection}{Related Problem}{239}{figure.caption.65}%
 \contentsline {subsection}{\numberline {19.4.3}Temperatures in a Quadrant}{241}{subsection.19.4.3}%
 \contentsline {subsection}{\numberline {19.4.4}Electrostatic Potential}{243}{subsection.19.4.4}%
-\contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{245}{part.5}%
-\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{247}{part.6}%
-\contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{249}{part.7}%
-\contentsline {paragraph}{Calculus of Variations [Empty]}{250}{theorem.19.4.2}%
-\contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{251}{part.8}%
-\contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{253}{part.9}%
-\contentsline {chapter}{\numberline {20}Markov Chains}{255}{chapter.20}%
-\contentsline {part}{X\hspace {1em}Tensors [Empty]}{257}{part.10}%
-\contentsline {part}{XI\hspace {1em}Riemann Geometry [Empty]}{259}{part.11}%
-\contentsline {part}{XII\hspace {1em}Abstract Algebra [Empty]}{261}{part.12}%
-\contentsline {chapter}{\numberline {21}Groups}{263}{chapter.21}%
-\contentsline {chapter}{\numberline {22}Rings}{265}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Ideals}{265}{section.22.1}%
-\contentsline {chapter}{\numberline {23}Integral Domains}{267}{chapter.23}%
-\contentsline {chapter}{\numberline {24}GCD Domains}{269}{chapter.24}%
-\contentsline {chapter}{\numberline {25}Unique Factorization Domains}{271}{chapter.25}%
-\contentsline {chapter}{\numberline {26}Principal Ideal Domains}{273}{chapter.26}%
-\contentsline {chapter}{\numberline {27}Fields}{275}{chapter.27}%
-\contentsline {part}{XIII\hspace {1em}Galois Theory [Empty]}{277}{part.13}%
-\contentsline {part}{XIV\hspace {1em}Lie Theory [Empty]}{279}{part.14}%
-\contentsline {chapter}{\numberline {28}Lie Groups}{281}{chapter.28}%
-\contentsline {chapter}{\numberline {29}Lie Algebra}{283}{chapter.29}%
-\contentsline {part}{XV\hspace {1em}C-Star Algebra [Empty]}{285}{part.15}%
-\contentsline {part}{XVI\hspace {1em}Set Theory [Empty]}{287}{part.16}%
-\contentsline {part}{XVII\hspace {1em}Model Theory [Empty]}{289}{part.17}%
-\contentsline {part}{XVIII\hspace {1em}Statistics [Empty]}{291}{part.18}%
-\contentsline {part}{XIX\hspace {1em}Tips and Tricks [Empty]}{293}{part.19}%
-\contentsline {chapter}{\numberline {30}Integration Techniques}{295}{chapter.30}%
-\contentsline {section}{\numberline {30.1}DI Method (Integration Table)}{295}{section.30.1}%
-\contentsline {section}{\numberline {30.2}Feynman Integration}{295}{section.30.2}%
-\contentsline {part}{XX\hspace {1em}Index and Bibliography}{297}{part.20}%
+\contentsline {subsection}{\numberline {19.4.5}2D Fluid Flow}{245}{subsection.19.4.5}%
+\contentsline {subsection}{\numberline {19.4.6}Stream Function}{246}{subsection.19.4.6}%
+\contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{247}{part.5}%
+\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{249}{part.6}%
+\contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{251}{part.7}%
+\contentsline {paragraph}{Calculus of Variations [Empty]}{252}{theorem.19.4.2}%
+\contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{253}{part.8}%
+\contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{255}{part.9}%
+\contentsline {chapter}{\numberline {20}Markov Chains}{257}{chapter.20}%
+\contentsline {part}{X\hspace {1em}Tensors [Empty]}{259}{part.10}%
+\contentsline {part}{XI\hspace {1em}Riemann Geometry [Empty]}{261}{part.11}%
+\contentsline {part}{XII\hspace {1em}Abstract Algebra [Empty]}{263}{part.12}%
+\contentsline {chapter}{\numberline {21}Groups}{265}{chapter.21}%
+\contentsline {chapter}{\numberline {22}Rings}{267}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Ideals}{267}{section.22.1}%
+\contentsline {chapter}{\numberline {23}Integral Domains}{269}{chapter.23}%
+\contentsline {chapter}{\numberline {24}GCD Domains}{271}{chapter.24}%
+\contentsline {chapter}{\numberline {25}Unique Factorization Domains}{273}{chapter.25}%
+\contentsline {chapter}{\numberline {26}Principal Ideal Domains}{275}{chapter.26}%
+\contentsline {chapter}{\numberline {27}Fields}{277}{chapter.27}%
+\contentsline {part}{XIII\hspace {1em}Galois Theory [Empty]}{279}{part.13}%
+\contentsline {part}{XIV\hspace {1em}Lie Theory [Empty]}{281}{part.14}%
+\contentsline {chapter}{\numberline {28}Lie Groups}{283}{chapter.28}%
+\contentsline {chapter}{\numberline {29}Lie Algebra}{285}{chapter.29}%
+\contentsline {part}{XV\hspace {1em}C-Star Algebra [Empty]}{287}{part.15}%
+\contentsline {part}{XVI\hspace {1em}Set Theory [Empty]}{289}{part.16}%
+\contentsline {part}{XVII\hspace {1em}Model Theory [Empty]}{291}{part.17}%
+\contentsline {part}{XVIII\hspace {1em}Statistics [Empty]}{293}{part.18}%
+\contentsline {part}{XIX\hspace {1em}Tips and Tricks [Empty]}{295}{part.19}%
+\contentsline {chapter}{\numberline {30}Integration Techniques}{297}{chapter.30}%
+\contentsline {section}{\numberline {30.1}DI Method (Integration Table)}{297}{section.30.1}%
+\contentsline {section}{\numberline {30.2}Feynman Integration}{297}{section.30.2}%
+\contentsline {part}{XX\hspace {1em}Index and Bibliography}{299}{part.20}%

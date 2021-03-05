@@ -1,0 +1,2934 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  4 MAR 2021 14:46
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**\def\tikzexternalrealjob{MathNotes}\input{MathNotes}
+(./MathNotes.tex (/usr/local/texlive/2020/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@chapter=\count180
+\c@section=\count181
+\c@subsection=\count182
+\c@subsubsection=\count183
+\c@paragraph=\count184
+\c@subparagraph=\count185
+\c@figure=\count186
+\c@table=\count187
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count188
+\Gm@cntv=\count189
+\c@Gm@tempcnt=\count190
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks16
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen147
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen148
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count191
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count192
+\leftroot@=\count193
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count194
+\DOTSCASE@=\count195
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen149
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count196
+\c@MaxMatrixCols=\count197
+\dotsspace@=\muskip16
+\c@parentequation=\count198
+\dspbrk@lvl=\count199
+\tag@help=\toks18
+\row@=\count266
+\column@=\count267
+\maxfields@=\count268
+\andhelp@=\toks19
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen156
+\ar@mcellbox=\box49
+\extrarowheight=\dimen157
+\NC@list=\toks22
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box50
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/01/26 3.53 The Babel package
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/01/26 3.53 Babel common definitions
+\babel@savecnt=\count269
+\U@D=\dimen158
+\l@babelnohyphens=\language86
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count270
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 108.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count271
+\@cmidlb=\count272
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count273
+\@lastruleclass=\count274
+\@thisrulewidth=\dimen171
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen172
+\captionmargin@=\dimen173
+\captionwidth=\dimen174
+\caption@tempdima=\dimen175
+\caption@indent=\dimen176
+\caption@parindent=\dimen177
+\caption@hangindent=\dimen178
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count275
+\c@continuedfloat=\count276
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/censor/censor.sty
+Package: censor 2018/11/15 3.22Provides capability for redaction of sensitive i
+nformation
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pbox/pbox.sty
+Package: pbox 2011/12/07 v1.2 Dynamic parboxes
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count277
+\calc@Bcount=\count278
+\calc@Adimen=\dimen179
+\calc@Bdimen=\dimen180
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count279
+\calc@Cskip=\skip56
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\pb@xlen=\skip57
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/ifnextok/ifnextok.sty
+Package: ifnextok 2011/06/27 v0.3 test next token (UL)
+)
+\censorruledepth=\skip58
+\censorruleheight=\skip59
+\periodrlap=\skip60
+\afterperiodlap=\skip61
+\lletterlap=\skip62
+\rletterlap=\skip63
+\afterspacelap=\skip64
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip65
+\f@nch@O@elh=\skip66
+\f@nch@O@erh=\skip67
+\f@nch@O@olh=\skip68
+\f@nch@O@orh=\skip69
+\f@nch@O@elf=\skip70
+\f@nch@O@erf=\skip71
+\f@nch@O@olf=\skip72
+\f@nch@O@orf=\skip73
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/flafter.sty
+Package: flafter 2018/11/28 v1.4d Standard LaTeX floats after reference (FMi)
+Applying: [2015/01/01] float order in 2-column on input line 49.
+Already applied: [0000/00/00] float order in 2-column on input line 151.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count280
+\float@exts=\toks23
+\float@box=\box51
+\@float@everytoks=\toks24
+\@floatcapt=\box52
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip74
+\fb@frw=\dimen181
+\fb@frh=\dimen182
+\FrameRule=\dimen183
+\FrameSep=\dimen184
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen185
+\Gin@req@width=\dimen186
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
+(/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen187
+\Hy@linkcounter=\count281
+\Hy@pagecounter=\count282
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-10 v7.00j Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-10 v7.00j Hyperref: patches for babel la
+nguages
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count283
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-10 v7.00j Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count284
+(/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen188
+(/usr/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count285
+\Field@Width=\dimen189
+\Fld@charsize=\dimen190
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count286
+\c@Item=\count287
+\c@Hfootnote=\count288
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-10 v7.00j Hyperref driver for pdfTeX
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count289
+\c@bookmark@seq@number=\count290
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip75
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local
+/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count291
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count292
+\mult@box=\box53
+\multicol@leftmargin=\dimen191
+\c@unbalance=\count293
+\c@collectmore=\count294
+\doublecol@number=\count295
+\multicoltolerance=\count296
+\multicolpretolerance=\count297
+\full@width=\dimen192
+\page@free=\dimen193
+\premulticols=\dimen194
+\postmulticols=\dimen195
+\multicolsep=\skip76
+\multicolbaselineskip=\skip77
+\partial@page=\box54
+\last@line=\box55
+\maxbalancingoverflow=\dimen196
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@gfirstbox=\box58
+\mult@firstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count298
+\c@columnbadness=\count299
+\c@finalcolumnbadness=\count300
+\last@try=\dimen197
+\multicolovershoot=\dimen198
+\multicolundershoot=\dimen199
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count301
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+(/usr/local/texlive/2020/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count302
+\l_MT_multwidth_dim=\dimen256
+\origjot=\skip78
+\l_MT_shortvdotswithinadjustabove_dim=\dimen257
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen258
+\l_MT_above_intertext_sep=\dimen259
+\l_MT_below_intertext_sep=\dimen260
+\l_MT_above_shortintertext_sep=\dimen261
+\l_MT_below_shortintertext_sep=\dimen262
+\xmathstrut@box=\box99
+\xmathstrut@dim=\dimen263
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
+Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+LaTeX Info: Redefining \dagger on input line 84.
+LaTeX Info: Redefining \ddagger on input line 84.
+LaTeX Info: Redefining \mathparagraph on input line 84.
+LaTeX Info: Redefining \mathsection on input line 84.
+LaTeX Info: Redefining \mathdollar on input line 84.
+LaTeX Info: Redefining \mathsterling on input line 84.
+LaTeX Info: Redefining \yen on input line 84.
+LaTeX Info: Redefining \circledR on input line 84.
+LaTeX Info: Redefining \circledS on input line 84.
+LaTeX Info: Redefining \Re on input line 84.
+LaTeX Info: Redefining \Im on input line 84.
+LaTeX Info: Redefining \dotplus on input line 84.
+LaTeX Info: Redefining \thicksim on input line 84.
+LaTeX Info: Redefining \thickapprox on input line 84.
+LaTeX Info: Redefining \veebar on input line 84.
+LaTeX Info: Redefining \barwedge on input line 84.
+LaTeX Info: Redefining \doublebarwedge on input line 84.
+LaTeX Info: Redefining \centerdot on input line 84.
+LaTeX Info: Redefining \divideontimes on input line 84.
+\symMnSyA=\mathgroup6
+\symMnSyB=\mathgroup7
+\symMnSyC=\mathgroup8
+\symMnSyD=\mathgroup9
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `MnSyA' in version `bold'
+(Font)                  U/MnSymbolA/m/n --> U/MnSymbolA/b/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `MnSyB' in version `bold'
+(Font)                  U/MnSymbolB/m/n --> U/MnSymbolB/b/n on input line 122.
+LaTeX Font Info:    Overwriting symbol font `MnSyC' in version `bold'
+(Font)                  U/MnSymbolC/m/n --> U/MnSymbolC/b/n on input line 123.
+LaTeX Font Info:    Overwriting symbol font `MnSyD' in version `bold'
+(Font)                  U/MnSymbolD/m/n --> U/MnSymbolD/b/n on input line 124.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/MnSymbolE/m/n --> OMX/MnSymbolE/b/n on input line 1
+25.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  U/MnSymbolF/m/n --> U/MnSymbolF/b/n on input line 126.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 241.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  OMS/MnSymbolS/m/n --> OMS/MnSymbolS/b/n on input line 2
+41.
+LaTeX Info: Redefining \longrightarrow on input line 548.
+LaTeX Info: Redefining \longleftarrow on input line 549.
+LaTeX Info: Redefining \longleftrightarrow on input line 550.
+LaTeX Info: Redefining \Longrightarrow on input line 551.
+LaTeX Info: Redefining \Longleftarrow on input line 552.
+LaTeX Info: Redefining \Longleftrightarrow on input line 553.
+LaTeX Info: Redefining \longmapsto on input line 554.
+LaTeX Info: Redefining \vdots on input line 868.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 1721.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 1722.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 1723.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 1724.
+LaTeX Info: Redefining \downbracefill on input line 1799.
+LaTeX Info: Redefining \upbracefill on input line 1800.
+LaTeX Info: Redefining \overbrace on input line 1819.
+LaTeX Info: Redefining \underbrace on input line 1820.
+LaTeX Info: Redefining \surd on input line 1843.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 1845.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/01/29 v2.7 Span multiple rows of a table
+\multirow@colwidth=\skip79
+\multirow@cntb=\count303
+\multirow@dima=\skip80
+\bigstrutjot=\dimen264
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip81
+\LTright=\skip82
+\LTpre=\skip83
+\LTpost=\skip84
+\LTchunksize=\count304
+\LTcapwidth=\dimen265
+\LT@head=\box100
+\LT@firsthead=\box101
+\LT@foot=\box102
+\LT@lastfoot=\box103
+\LT@cols=\count305
+\LT@rows=\count306
+\c@LT@tables=\count307
+\c@LT@chunks=\count308
+\LT@p@ftn=\toks29
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/ltablex/ltablex.sty
+Package: ltablex 2014/08/13 v1.1 Modified tabularx
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen266
+\TX@old@table=\dimen267
+\TX@old@col=\dimen268
+\TX@target=\dimen269
+\TX@delta=\dimen270
+\TX@cols=\count309
+\TX@ftn=\toks30
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/polynom/polynom.sty
+Package: polynom 2017/07/17 0.19 (CH,HA)
+\pld@currstage=\count310
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/loc
+al/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/
+local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texl
+ive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen271
+\pgfutil@tempdimb=\dimen272
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box104
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+))
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/
+local/texlive/2020/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks34
+))
+\pgf@x=\dimen273
+\pgf@y=\dimen274
+\pgf@xa=\dimen275
+\pgf@ya=\dimen276
+\pgf@xb=\dimen277
+\pgf@yb=\dimen278
+\pgf@xc=\dimen279
+\pgf@yc=\dimen280
+\pgf@xd=\dimen281
+\pgf@yd=\dimen282
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count311
+\c@pgf@countb=\count312
+\c@pgf@countc=\count313
+\c@pgf@countd=\count314
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+\pgf@sys@id@count=\count315
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count316
+\pgfsyssoftpath@bigbuffer@items=\count317
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr
+/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/
+local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen283
+\pgfmath@count=\count318
+\pgfmath@box=\box105
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex))) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/m
+ath/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count319
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen284
+\pgf@picmaxx=\dimen285
+\pgf@picminy=\dimen286
+\pgf@picmaxy=\dimen287
+\pgf@pathminx=\dimen288
+\pgf@pathmaxx=\dimen289
+\pgf@pathminy=\dimen290
+\pgf@pathmaxy=\dimen291
+\pgf@xx=\dimen292
+\pgf@xy=\dimen293
+\pgf@yx=\dimen294
+\pgf@yy=\dimen295
+\pgf@zx=\dimen296
+\pgf@zy=\dimen297
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen298
+\pgf@path@lasty=\dimen299
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen300
+\pgf@shorten@start@additional=\dimen301
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box106
+\pgf@hbox=\box107
+\pgf@layerbox@main=\box108
+\pgf@picture@serial@count=\count320
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen302
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen303
+\pgf@pt@y=\dimen304
+\pgf@pt@temp=\dimen305
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen306
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen307
+\pgf@sys@shading@range@num=\count321
+\pgf@shadingcount=\count322
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box109
+))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box110
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen308
+\pgf@nodesepend=\dimen309
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr
+/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/
+texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/loca
+l/texlive/2020/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/20
+20/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2020/
+texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen310
+\pgffor@skip=\dimen311
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
+))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count323
+\pgfplotmarksize=\dimen312
+)
+\tikz@lastx=\dimen313
+\tikz@lasty=\dimen314
+\tikz@lastxsaved=\dimen315
+\tikz@lastysaved=\dimen316
+\tikz@lastmovetox=\dimen317
+\tikz@lastmovetoy=\dimen318
+\tikzleveldistance=\dimen319
+\tikzsiblingdistance=\dimen320
+\tikz@figbox=\box111
+\tikz@figbox@bg=\box112
+\tikz@tempbox=\box113
+\tikz@tempbox@bg=\box114
+\tikztreelevel=\count324
+\tikznumberofchildren=\count325
+\tikznumberofcurrentchild=\count326
+\tikz@fig@count=\count327
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count328
+\pgfmatrixcurrentcolumn=\count329
+\pgf@matrix@numberofcolumns=\count330
+)
+\tikz@expandcount=\count331
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex 
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks43
+\t@pgfplots@tokb=\toks44
+\t@pgfplots@tokc=\toks45
+\pgfplots@tmpa=\dimen321
+\c@pgfplots@coordindex=\count332
+\c@pgfplots@scanlineindex=\count333
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex
+\c@pgfplotsarray@tmp=\count334
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex
+\c@pgfplotstable@counta=\count335
+\t@pgfplotstable@a=\toks46
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count336
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-pdftex.def)))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
+code.tex)))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen322
+\pgfdecoratedremainingdistance=\dimen323
+\pgfdecoratedinputsegmentcompleteddistance=\dimen324
+\pgfdecoratedinputsegmentremainingdistance=\dimen325
+\pgf@decorate@distancetomove=\dimen326
+\pgf@decorate@repeatstate=\count337
+\pgfdecorationsegmentamplitude=\dimen327
+\pgfdecorationsegmentlength=\dimen328
+)
+\tikz@lib@dec@box=\box115
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count338
+\pgfplots@xmin@reg=\dimen329
+\pgfplots@xmax@reg=\dimen330
+\pgfplots@ymin@reg=\dimen331
+\pgfplots@ymax@reg=\dimen332
+\pgfplots@zmin@reg=\dimen333
+\pgfplots@zmax@reg=\dimen334
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex
+File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/local/texlive/2020/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/us
+r/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count339
+\l__pdf_internal_box=\box116
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-
+01.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.
+tex)))) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count340
+\rotFPtop=\skip85
+\rotFPbot=\skip86
+\rot@float@box=\box117
+\rot@mess@toks=\toks47
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/scalerel/scalerel.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
+ng of objects, relative to a reference object or in absolute terms
+(/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count341
+)
+\thesrwidth=\skip87
+\thesrheight=\skip88
+\srblobheight=\skip89
+\srblobdepth=\skip90
+\mnxsrwidth=\skip91
+\LMex=\skip92
+\LMpt=\skip93
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+(/usr/local/texlive/2020/texmf-dist/tex/generic/listofitems/listofitems.sty (/u
+sr/local/texlive/2020/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count342
+\loi_nestcnt=\count343
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count344
+\@boxshift=\skip94
+\stack@tmplength=\skip95
+\temp@stkl=\skip96
+\@stackedboxwidth=\skip97
+\@addedbox=\box118
+\@anchorbox=\box119
+\stackedbox=\box120
+\@centerbox=\box121
+\c@ROWcellindex@=\count345
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box122
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box123
+\beforetitleunit=\skip98
+\aftertitleunit=\skip99
+\ttl@plus=\dimen335
+\ttl@minus=\dimen336
+\ttl@toksa=\toks48
+\titlewidth=\dimen337
+\titlewidthlast=\dimen338
+\titlewidthfirst=\dimen339
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip100
+\thanksmargin=\skip101
+\droptitle=\skip102
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen340
+\WF@size=\dimen341
+\c@WF@wrappedlines=\count346
+\WF@box=\box124
+\WF@everypar=\toks49
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryintersections.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryinterse
+ctions.code.tex
+\pgf@intersect@solutions=\count347
+))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.markings.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.markings.code.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@layerbox@background=\box125
+\pgf@layerboxsaved@background=\box126
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibrarypattern
+s.code.tex
+File: pgflibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowinset=\dimen342
+\pgfarrowlength=\dimen343
+\pgfarrowwidth=\dimen344
+\pgfarrowlinewidth=\dimen345
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.groupplots.code.tex
+\pgfplots@group@current@plot=\count348
+\pgfplots@group@current@row=\count349
+\pgfplots@group@current@column=\count350
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks50
+\thm@bodyfont=\toks51
+\thm@headfont=\toks52
+\thm@notefont=\toks53
+\thm@headpunct=\toks54
+\thm@preskip=\skip103
+\thm@postskip=\skip104
+\thm@headsep=\skip105
+\dth@everypar=\toks55
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thmtools.sty
+Package: thmtools 2020/08/01 v0.72
+\thmt@toks=\toks56
+\c@thmt@dummyctr=\count351
+(/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-patch.sty
+Package: thm-patch 2020/08/01 v0.72
+(/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/parseargs.sty
+Package: parseargs 2020/08/01 v0.72
+\@parsespec=\toks57
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-kv.sty
+Package: thm-kv 2020/08/01 v0.72
+Package thm-kv Info: Theorem names will be uppercased on input line 42.
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+Package: thm-autoref 2020/08/01 v0.72
+(/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/aliasctr.sty
+Package: aliasctr 2020/08/01 v0.72
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2020/08/01 v0.72
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2020/08/01 v0.72
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2020/08/01 v0.72
+\thmt@style@headstyle=\toks58
+))
+\tikz/MathNotes-figure88@idxfile=\write4
+\openout4 = `tikz/MathNotes-figure88.idx'.
+
+Writing index file tikz/MathNotes-figure88.idx
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.patchplots.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.external.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzl
+ibraryexternal.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzexternalshared.code.tex)))
+No auxiliary output files.
+
+\w@pgfexternal@auxout=\write5
+Package TikZ externalization: calling \geometry{driver=none} during externaliza
+tion.
+
+\c@axiom=\count352
+\c@theorem=\count353
+\c@conjecture=\count354
+\c@lemma=\count355
+\c@proposition=\count356
+\c@corollary=\count357
+\c@definition=\count358
+\c@example=\count359
+No file tikz/MathNotes-figure88.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+*geometry* detected driver: <none>
+*geometry* verbose mode - [ preamble ] result:
+* driver: \Gm@driver 
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-33.0119pt
+* \headheight=15.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count360
+\scratchdimen=\dimen346
+\scratchbox=\box127
+\nofMPsegments=\count361
+\nofMParguments=\count362
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count363
+\MPscratchDim=\dimen347
+\MPnumerator=\count364
+\makeMPintoPDFobject=\count365
+\everyMPtoPDFconversion=\toks60
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\symgns@font=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 140.
+Package gensymb Info: Math companion symbols declared on input line 140.
+LaTeX Info: Redefining \degree on input line 140.
+LaTeX Info: Redefining \celsius on input line 140.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 140.
+LaTeX Info: Redefining \ohm on input line 140.
+Package gensymb Info: Using \textohm for \ohm on input line 140.
+Package gensymb Info: Using \textmu for \micro on input line 140.
+Package hyperref Info: Link coloring OFF on input line 140.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count366
+)
+LaTeX Info: Redefining \ref on input line 140.
+LaTeX Info: Redefining \pageref on input line 140.
+LaTeX Info: Redefining \nameref on input line 140.
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.17} (current compat level: 1.8).
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 161
+.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 161
+.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
+line 275.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 279.
+Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on i
+nput line 283.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
+put line 287.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 291.
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 295.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
+nput line 305.
+Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
+t line 310.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
+ line 313.
+Package hyperref Info: bookmark level for unknown observation defaults to 0 on 
+input line 317.
+Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
+ut line 321.
+Chapter 1.
+Chapter 2.
+Chapter 3.
+Chapter 4.
+Chapter 5.
+Chapter 6.
+Chapter 7.
+Chapter 8.
+
+LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 22 undefined 
+on input line 359.
+
+Chapter 9.
+Chapter 10.
+Chapter 11.
+
+LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 30
+ undefined on input line 400.
+
+
+LaTeX Warning: Citation `Wunsh.A-Complex-Variables-2005' on page 30 undefined o
+n input line 404.
+
+Chapter 12.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Complex Conjugate Section - Complex' on page 1 undefi
+ned on input line 507.
+
+
+LaTeX Warning: Reference `Triange Inequality - Complex' on page 1 undefined on 
+input line 520.
+
+
+LaTeX Warning: Reference `Polar Form of z - Complex' on page 1 undefined on inp
+ut line 583.
+
+
+LaTeX Warning: Reference `Euler's Formula - Complex' on page 1 undefined on inp
+ut line 583.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
+fined on input line 650.
+
+
+LaTeX Warning: Reference `Roots of z Sections - Complex' on page 1 undefined on
+ input line 650.
+
+
+LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
+fined on input line 650.
+
+
+LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
+fined on input line 664.
+
+
+LaTeX Warning: Reference `de Moivre's Formula Theorem - Complex' on page 1 unde
+fined on input line 664.
+
+
+LaTeX Warning: Reference `Properties of Polar and Exponential Form Subsection -
+ Complex' on page 1 undefined on input line 669.
+
+
+LaTeX Warning: Reference `Exponential Form of z - Complex' on page 1 undefined 
+on input line 705.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Exponential Form of z - Complex' on page 1 undefined 
+on input line 921.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+Chapter 13.
+
+LaTeX Warning: Reference `Operations as Transformations Section - Complex' on p
+age 1 undefined on input line 1426.
+
+
+LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
+age 1 undefined on input line 1447.
+
+
+LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 44
+ undefined on input line 1467.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
+put line 1630.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Limit Definition - Complex' on page 1 undefined on in
+put line 1719.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 1 - Complex' on pag
+e 1 undefined on input line 1777.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem Proof Eqn 2 - Complex' on pag
+e 1 undefined on input line 1796.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1837.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1841.
+
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 1855.
+
+
+LaTeX Warning: Citation `Ross.K-Elementary-Analysis-2013' on page 48 undefined 
+on input line 1871.
+
+
+LaTeX Warning: Reference `Limit Theorems Subsection - Real Analysis' on page 1 
+undefined on input line 1871.
+
+
+LaTeX Warning: Reference `Riemann Sphere and Stereographic Projection Figure - 
+Complex' on page 1 undefined on input line 1890.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Properties of Limits at Infinity Theorem - Complex' o
+n page 1 undefined on input line 2019.
+
+
+LaTeX Warning: Reference `Limit Theorems Subsection - Real Analysis' on page 1 
+undefined on input line 2019.
+
+
+LaTeX Warning: Reference `Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - C
+omplex' on page 1 undefined on input line 2052.
+
+
+LaTeX Warning: Reference `Limits of f=u+iv Theorem Corollary - Complex' on page
+ 1 undefined on input line 2060.
+
+
+LaTeX Warning: Reference `Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Theore
+m - Complex' on page 1 undefined on input line 2064.
+
+
+LaTeX Warning: Reference `Continuity of f(z)+g(z) f(z)g(z) and f(z)/g(z) Coroll
+ary - Complex' on page 1 undefined on input line 2064.
+
+
+LaTeX Warning: Reference `Continuous Function Definition - Complex' on page 1 u
+ndefined on input line 2064.
+
+
+LaTeX Warning: Reference `Limit of f(z)+F(z) f(z)F(z) and f(z)/F(z) Theorem - C
+omplex' on page 1 undefined on input line 2066.
+
+
+LaTeX Warning: Reference `Limits of f=u+iv Theorem Corollary - Complex' on page
+ 1 undefined on input line 2066.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Limit of f=u+iv Theorem - Complex' on page 1 undefine
+d on input line 2195.
+
+
+LaTeX Warning: Reference `Riemann Sphere Definition - Complex' on page 1 undefi
+ned on input line 2245.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Derivative Definition - Complex' on page 1 undefined 
+on input line 2316.
+
+
+LaTeX Warning: Reference `Derivative Definition - Complex' on page 1 undefined 
+on input line 2419.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 2662.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 2770.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Polar) Theorem Proof Eqn 1 
+- Complex' on page 1 undefined on input line 2774.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Polar) Theorem Proof Eqn 2 
+- Complex' on page 1 undefined on input line 2774.
+
+
+LaTeX Warning: Reference `f(z) satisfy Cauchy-Riemann but f'(z_0) does not exis
+t Example - Complex' on page 1 undefined on input line 2805.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Differentiablity Conditions Theorem - 
+Complex' on page 1 undefined on input line 2805.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 2809.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 2850.
+
+
+LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 64
+ undefined on input line 2886.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Polar) Theorem - Complex' o
+n page 1 undefined on input line 2989.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 3031.
+
+
+LaTeX Warning: Reference `Conditions for Differentiablity Subsection - Complex'
+ on page 1 undefined on input line 3142.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (5.51305pt too wide) in paragraph at lines 3235--3236
+[]\OT1/cmr/bx/n/12 Example 13.6.2 \OT1/cmr/m/n/12 (De-ter-min-ing an-a-lyt-ic-i
+ty us-ing Cauchy-Rie-mann equa-tions) []\OT1/cmr/m/sl/12 Con-sider $\OML/cmm/m/
+it/12 f\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 z\OMX/MnSymbolE/m/n/12 ç \U/MnSy
+mbolD/m/n/12 ^^@
+ []
+
+
+LaTeX Warning: Reference `Laplace's Equation (Polar) Exercise - Complex' on pag
+e 1 undefined on input line 3300.
+
+
+LaTeX Warning: Reference `Analytic implies Harmonic Theorem - Complex' on page 
+1 undefined on input line 3328.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Uniquely determined analytic functions Theorem - Comp
+lex' on page 1 undefined on input line 3498.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Uniquely determined analytic functions Theorem - Comp
+lex' on page 1 undefined on input line 3539.
+
+
+LaTeX Warning: Reference `f_1 neq f_3 in analytic continuation Example - Comple
+x' on page 1 undefined on input line 3539.
+
+
+LaTeX Warning: Reference `Reflection Principle f(x) purely imaginary Example - 
+Complex' on page 1 undefined on input line 3568.
+
+
+LaTeX Warning: Reference `Uniquely determined analytic functions Theorem - Comp
+lex' on page 1 undefined on input line 3607.
+
+
+LaTeX Warning: Reference `Uniquely determined analytic functions Theorem - Comp
+lex' on page 1 undefined on input line 3607.
+
+
+LaTeX Warning: Reference `Reflection Principle Theorem - Complex' on page 1 und
+efined on input line 3622.
+
+
+LaTeX Warning: Reference `Reflection Principle Theorem - Complex' on page 1 und
+efined on input line 3653.
+
+Chapter 14.
+
+LaTeX Warning: Reference `Polar Form of z - Complex' on page 1 undefined on inp
+ut line 3679.
+
+
+LaTeX Warning: Reference `Trig Identities - Complex' on page 1 undefined on inp
+ut line 3877.
+
+
+LaTeX Warning: Reference `Reflection Principle Theorem - Complex' on page 1 und
+efined on input line 4123.
+
+Chapter 15.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (0.18661pt too wide) detected at line 4759
+[]
+ []
+
+
+LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
+x' on page 1 undefined on input line 4840.
+
+
+LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
+ine 4849.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 4849.
+
+
+LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
+ine 4849.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 4849.
+
+
+LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
+ine 4850.
+
+
+LaTeX Warning: Reference `Accumulation/Limit Point Definition - Complex' on pag
+e 1 undefined on input line 4877.
+
+
+LaTeX Warning: Reference `Derivative Definition - Complex' on page 1 undefined 
+on input line 4879.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4887--4889
+
+ []
+
+
+LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
+x' on page 1 undefined on input line 4913.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4928--4930
+
+ []
+
+
+LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
+ine 4979.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 5019.
+
+
+LaTeX Warning: Reference `Continuity on closed contour implies and zero contour
+ integral implies analycity Theorem - Complex' on page 1 undefined on input lin
+e 5039.
+
+
+LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
+x' on page 1 undefined on input line 5039.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 5042.
+
+
+LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
+x' on page 1 undefined on input line 5058.
+
+
+LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
+x' on page 1 undefined on input line 5058.
+
+
+LaTeX Warning: Reference `Contour integral over Multiply Connected Domains Theo
+rem - Complex' on page 1 undefined on input line 5122.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Polar) Theorem - Complex' o
+n page 1 undefined on input line 5154.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 5277.
+
+
+LaTeX Warning: Reference `int_0^infty e^(-x^2) dx Derivation Example - Complex'
+ on page 1 undefined on input line 5307.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (5.87373pt too wide) detected at line 5382
+[]
+ []
+
+
+LaTeX Warning: Reference `Green's Theorem - ODE' on page 1 undefined on input l
+ine 5383.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 5413.
+
+
+LaTeX Warning: Reference `Principle of Deformation of Paths Corollary - Complex
+' on page 1 undefined on input line 5425.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 5444.
+
+
+LaTeX Warning: Citation `Brown.J;Churchill.R-Complex-Variables-2014' on page 11
+2 undefined on input line 5471.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 5498.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
+e 1 undefined on input line 5582.
+
+
+LaTeX Warning: Reference `Contour integral in simply connected domain Theorem -
+ Complex' on page 1 undefined on input line 5607.
+
+
+LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
+x' on page 1 undefined on input line 5616.
+
+
+LaTeX Warning: Reference `Analytic implies existance of high order derivatives 
+theorem - Complex' on page 1 undefined on input line 5616.
+
+
+LaTeX Warning: Reference `Antiderivative and contour integrals theorem - Comple
+x' on page 1 undefined on input line 5616.
+
+
+LaTeX Warning: Reference `Analytic implies existance of high order derivatives 
+theorem - Complex' on page 1 undefined on input line 5616.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 5629.
+
+
+LaTeX Warning: Reference `Cauchy's Inequality Theorem - Complex' on page 1 unde
+fined on input line 5648.
+
+
+LaTeX Warning: Reference `Maximum Modulus Principle Theorem - Complex' on page 
+1 undefined on input line 5659.
+
+
+LaTeX Warning: Reference `Complex Poly Reciprocal Bounded Corollary - Complex' 
+on page 1 undefined on input line 5678.
+
+
+LaTeX Warning: Reference `Function continuous in closed and bounded region impl
+ies function is bounded Theorem - Complex' on page 1 undefined on input line 56
+82.
+
+
+LaTeX Warning: Reference `Liouville's Theorem - Complex' on page 1 undefined on
+ input line 5683.
+
+
+LaTeX Warning: Reference `Fundamental Theorem of Algebra - Complex' on page 1 u
+ndefined on input line 5686.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
+ line 5710.
+
+
+LaTeX Warning: Reference `Gauss's Mean Value Theorem - Complex' on page 1 undef
+ined on input line 5727.
+
+
+LaTeX Warning: Reference `Abs of analytic function is constant in domain implie
+s that function is constant Example - Complex' on page 1 undefined on input lin
+e 5754.
+
+
+LaTeX Warning: Reference `Analytic function is bounded in neighbourhood implies
+ constant value thoughout neighbourhood Lemma - Complex' on page 1 undefined on
+ input line 5775.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Function continuous in closed and bounded region impl
+ies function is bounded Theorem - Complex' on page 1 undefined on input line 58
+35.
+
+
+LaTeX Warning: Reference `Domain Definition - Complex' on page 1 undefined on i
+nput line 5835.
+
+
+LaTeX Warning: Reference `Region Definition - Complex' on page 1 undefined on i
+nput line 5835.
+
+
+LaTeX Warning: Reference `Minimum of moduli of analytic function in closed and 
+bounded region is only reached at the boundaries of the region Example - Comple
+x' on page 1 undefined on input line 5851.
+
+
+LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
+bounded region is only reached at the boundaries of the region Corollary - Comp
+lex' on page 1 undefined on input line 5853.
+
+
+LaTeX Warning: Reference `Minimum of moduli of analytic function in closed and 
+bounded region is only reached at the boundaries of the region Example - Comple
+x' on page 1 undefined on input line 5853.
+
+
+LaTeX Warning: Reference `Max and Min of Harmonic Real-Valued function only occ
+urs at the boundary of closed bounded region Example - Complex' on page 1 undef
+ined on input line 5853.
+
+
+LaTeX Warning: Reference `Gauss's Mean Value Theorem - Complex' on page 1 undef
+ined on input line 5857.
+
+
+LaTeX Warning: Reference `Cauchy's Inequality Theorem - Complex' on page 1 unde
+fined on input line 5873.
+
+
+LaTeX Warning: Reference `Liouville's Theorem - Complex' on page 1 undefined on
+ input line 5873.
+
+
+LaTeX Warning: Reference `Cauchy's Inequality Theorem - Complex' on page 1 unde
+fined on input line 5873.
+
+
+LaTeX Warning: Reference `Liouville's Theorem - Complex' on page 1 undefined on
+ input line 5873.
+
+
+LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
+bounded region is only reached at the boundaries of the region Corollary - Comp
+lex' on page 1 undefined on input line 5890.
+
+
+LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
+bounded region is only reached at the boundaries of the region Corollary - Comp
+lex' on page 1 undefined on input line 5890.
+
+
+LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
+bounded region is only reached at the boundaries of the region Corollary - Comp
+lex' on page 1 undefined on input line 5900.
+
+
+LaTeX Warning: Reference `Maximum of moduli of analytic function in closed and 
+bounded region is only reached at the boundaries of the region Corollary - Comp
+lex' on page 1 undefined on input line 5900.
+
+
+LaTeX Warning: Reference `Dirichlet Problem Definition - Partial' on page 1 und
+efined on input line 5920.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
+ line 5933.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 5944.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
+ line 5978.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 5982.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 6012.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 6012.
+
+Chapter 16.
+
+LaTeX Warning: Reference `Absolute convergence implies convergence Corollary - 
+Real' on page 1 undefined on input line 6217.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
+ line 6323.
+
+
+LaTeX Warning: Reference `Infinite sum of z^n and remainder for partial sum Exa
+mple - Complex' on page 1 undefined on input line 6327.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
+e 1 undefined on input line 6338.
+
+
+LaTeX Warning: Reference `Maclaurin Series - Complex' on page 1 undefined on in
+put line 6348.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Taylor's Theorem - Complex' on page 1 undefined on in
+put line 6441.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 6519.
+
+
+LaTeX Warning: Reference `Multiply Connected Domains Subsection - Complex' on p
+age 1 undefined on input line 6519.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula' on page 1 undefined on input
+ line 6523.
+
+
+LaTeX Warning: Reference `Infinite sum of z^n and remainder for partial sum Exa
+mple - Complex' on page 1 undefined on input line 6532.
+
+
+LaTeX Warning: Reference `Principle of Deformation of Paths Corollary - Complex
+' on page 1 undefined on input line 6574.
+
+
+LaTeX Warning: Reference `Principle of Deformation of Paths Corollary - Complex
+' on page 1 undefined on input line 6588.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 6670.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
+e 1 undefined on input line 6675.
+
+
+LaTeX Warning: Reference `Fourier Theorem - PDE' on page 1 undefined on input l
+ine 6804.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Uniform Convergence (Power Series) Definition - Compl
+ex' on page 1 undefined on input line 7012.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Local Uniform Convergence of Power Series Theorem - C
+omplex' on page 1 undefined on input line 7114.
+
+
+LaTeX Warning: Reference `Absolute Convergence of Power Series Theorem - Comple
+x' on page 1 undefined on input line 7132.
+
+
+LaTeX Warning: Reference `Local Uniform Convergence of Power Series Theorem - C
+omplex' on page 1 undefined on input line 7132.
+
+
+LaTeX Warning: Reference `Continuity of Sums of Power Series Theorem - Complex'
+ on page 1 undefined on input line 7132.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 7175.
+
+
+LaTeX Warning: Reference `Integration of Power Series Theorem - Complex' on pag
+e 1 undefined on input line 7205.
+
+
+LaTeX Warning: Reference `Morera's Theorem - Complex' on page 1 undefined on in
+put line 7209.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
+e 1 undefined on input line 7230.
+
+
+LaTeX Warning: Reference `Integration of Power Series Theorem - Complex' on pag
+e 1 undefined on input line 7263.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
+e 1 undefined on input line 7269.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 7282.
+
+
+LaTeX Warning: Reference `Uniqueness of Taylor Series Theorem - Complex' on pag
+e 1 undefined on input line 7317.
+
+
+LaTeX Warning: Reference `Leibniz's Rule Proof - Complex' on page 1 undefined o
+n input line 7344.
+
+
+LaTeX Warning: Reference `z-Transform Inverse Derivation Example - Complex' on 
+page 1 undefined on input line 7441.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 7493.
+
+Chapter 17.
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 7561.
+
+
+LaTeX Warning: Reference `Laurent's Theorem - Complex' on page 1 undefined on i
+nput line 7575.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Multiply Connected Domains Subsection - Complex' on p
+age 1 undefined on input line 7644.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 7644.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Residue at Infinity Definition - Complex' on page 1 u
+ndefined on input line 7714.
+
+
+LaTeX Warning: Reference `Principle of Deformation of Paths Corollary - Complex
+' on page 1 undefined on input line 7714.
+
+
+LaTeX Warning: Reference `Laurent's Theorem - Complex' on page 1 undefined on i
+nput line 7749.
+
+
+LaTeX Warning: Reference `Laurent's Theorem - Complex' on page 1 undefined on i
+nput line 7759.
+
+
+LaTeX Warning: Reference `Taylor's Theorem - Complex' on page 1 undefined on in
+put line 7765.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 7884.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 7886.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 7888.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 7902.
+
+
+LaTeX Warning: Reference `Cauchy Integral Formula (Extension) - Complex' on pag
+e 1 undefined on input line 7933.
+
+
+LaTeX Warning: Reference `Analytic implies existance of high order derivatives 
+theorem - Complex' on page 1 undefined on input line 7952.
+
+
+LaTeX Warning: Reference `Zero of Order m Definition - Complex' on page 1 undef
+ined on input line 8017.
+
+
+LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
+mplex' on page 1 undefined on input line 8017.
+
+
+LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
+ 0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
+on input line 8034.
+
+
+LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
+ 0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
+on input line 8045.
+
+
+LaTeX Warning: Reference `f analytic and zero in domain implies identically zer
+o in that domain Theorem - Complex' on page 1 undefined on input line 8045.
+
+
+LaTeX Warning: Reference `Function pole order takes on zero order of quotient c
+onverse example - Complex' on page 1 undefined on input line 8059.
+
+
+LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
+ 0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
+on input line 8068.
+
+
+LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
+ 0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
+on input line 8068.
+
+
+LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
+mplex' on page 1 undefined on input line 8069.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 8082.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 8082.
+
+
+LaTeX Warning: Reference `Zero of Order m Definition - Complex' on page 1 undef
+ined on input line 8102.
+
+
+LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
+mplex' on page 1 undefined on input line 8102.
+
+
+LaTeX Warning: Reference `Zero of Order m Definition - Complex' on page 1 undef
+ined on input line 8102.
+
+
+LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
+mplex' on page 1 undefined on input line 8102.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 8111.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 8111.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 8137.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 8137.
+
+
+LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
+mplex' on page 1 undefined on input line 8142.
+
+
+LaTeX Warning: Reference `Bolzano-Weierstrass Theorem - Complex' on page 1 unde
+fined on input line 8160.
+
+
+LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
+ 0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
+on input line 8164.
+
+
+Overfull \hbox (23.8825pt too wide) in paragraph at lines 8183--8183
+|[]\OT1/cmr/bx/n/17.28 Behaviour of Func-tions Near Iso-lated Sin-gu-lar Points
+| 
+ []
+
+
+LaTeX Warning: Reference `Function continuous in closed and bounded region impl
+ies function is bounded Theorem - Complex' on page 1 undefined on input line 82
+03.
+
+
+LaTeX Warning: Reference `Function continuous in closed and bounded region impl
+ies function is bounded Theorem - Complex' on page 1 undefined on input line 82
+03.
+
+
+LaTeX Warning: Reference `Riemann's Theorem - Complex' on page 1 undefined on i
+nput line 8251.
+
+
+LaTeX Warning: Reference `Function pole order takes on zero order of quotient T
+heorem - Complex' on page 1 undefined on input line 8257.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 8274.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 8274.
+
+
+LaTeX Warning: Reference `Limits of Points at Infinity Subsection - Complex' on
+ page 1 undefined on input line 8282.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 8395.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 8423.
+
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 8448.
+
+
+LaTeX Warning: Reference `Residue of Simple Pole Theorem - Complex' on page 1 u
+ndefined on input line 8452.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 8464.
+
+
+LaTeX Warning: Reference `Evaluation of Improper Integrals Subsection - Complex
+' on page 1 undefined on input line 8504.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Jordan's Inequality Lemma - Complex' on page 1 undefi
+ned on input line 8606.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 8675.
+
+
+LaTeX Warning: Reference `Jordan's Inequality Lemma - Complex' on page 1 undefi
+ned on input line 8705.
+
+
+LaTeX Warning: Reference `Jordan's Inequality Lemma - Complex' on page 1 undefi
+ned on input line 8705.
+
+
+LaTeX Warning: Reference `int_0^infty e^(-x^2) dx Derivation Example - Complex'
+ on page 1 undefined on input line 8714.
+
+
+LaTeX Warning: Reference `int_0^infty e^(-x^2) dx Derivation Example - Complex'
+ on page 1 undefined on input line 8714.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Function continuous in closed and bounded region impl
+ies function is bounded Theorem - Complex' on page 1 undefined on input line 88
+62.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 8866.
+
+
+LaTeX Warning: Reference `Indented Paths Theorem - Complex' on page 1 undefined
+ on input line 8886.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 8976.
+
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 8992.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 9005.
+
+
+LaTeX Warning: Reference `Indented Paths Theorem - Complex' on page 1 undefined
+ on input line 9033.
+
+
+LaTeX Warning: Reference `Indented Paths Theorem - Complex' on page 1 undefined
+ on input line 9033.
+
+
+LaTeX Warning: Reference `Jordan's Lemma - Complex' on page 1 undefined on inpu
+t line 9039.
+
+
+LaTeX Warning: Reference `Jordan's Lemma - Complex' on page 1 undefined on inpu
+t line 9039.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (7.90346pt too wide) detected at line 9124
+[]
+ []
+
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 9125.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 9140.
+
+
+LaTeX Warning: Reference `ML Inequality Theorem - Complex' on page 1 undefined 
+on input line 9149.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 9247.
+
+
+Overfull \hbox (7.25365pt too wide) detected at line 9255
+[]
+ []
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 9262.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Trig Identities - Complex' on page 1 undefined on inp
+ut line 9437.
+
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 9446.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 9560.
+
+
+LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
+mplex' on page 1 undefined on input line 9565.
+
+
+LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
+mplex' on page 1 undefined on input line 9565.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 9575.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 9575.
+
+
+LaTeX Warning: Reference `Isolated zeros implies finite poles in analytic regio
+n Example - Complex' on page 1 undefined on input line 9576.
+
+
+LaTeX Warning: Reference `Function not identically zero in domain implies zeros
+ of function finite in order and number Example - Complex' on page 1 undefined 
+on input line 9576.
+
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 9576.
+
+
+LaTeX Warning: Reference `Logarithmic Function Definition - Complex' on page 1 
+undefined on input line 9597.
+
+
+LaTeX Warning: Reference `Argument Principle Theorem - Complex' on page 1 undef
+ined on input line 9609.
+
+
+LaTeX Warning: Reference `Argument Principle Theorem - Complex' on page 1 undef
+ined on input line 9633.
+
+
+LaTeX Warning: Reference `Closed contour does not enclose origin implies windin
+g number is zero Example - Complex' on page 1 undefined on input line 9653.
+
+
+LaTeX Warning: Reference `Rouche's Theorem - Complex' on page 1 undefined on in
+put line 9659.
+
+
+LaTeX Warning: Reference `Fundamental Theorem of Algebra - Complex' on page 1 u
+ndefined on input line 9664.
+
+
+LaTeX Warning: Reference `Liouville's Theorem - Complex' on page 1 undefined on
+ input line 9692.
+
+
+LaTeX Warning: Reference `Analytic function is zero in domain or line segment i
+n domain implies function is zero throughout domain Lemma - Complex' on page 1 
+undefined on input line 9727.
+
+
+LaTeX Warning: Reference `Analytic function is zero in domain or line segment i
+n domain implies function is zero throughout domain Lemma - Complex' on page 1 
+undefined on input line 9727.
+
+
+LaTeX Warning: Reference `Finite order of zeros in simple closed contour implie
+s finite zeros Example - Complex' on page 1 undefined on input line 9728.
+
+
+LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
+mplex' on page 1 undefined on input line 9746.
+
+
+LaTeX Warning: Reference `Zero of order m iff zero can be factored Theorem - Co
+mplex' on page 1 undefined on input line 9746.
+
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 9758.
+
+
+LaTeX Warning: Reference `Rouche's Theorem - Complex' on page 1 undefined on in
+put line 9778.
+
+
+LaTeX Warning: Reference `Function continuous in closed and bounded region impl
+ies function is bounded Theorem - Complex' on page 1 undefined on input line 98
+54.
+
+
+LaTeX Warning: Reference `Continuity Chapter - Real Analysis' on page 1 undefin
+ed on input line 9858.
+
+
+LaTeX Warning: Reference `Rouche's Theorem - Complex' on page 1 undefined on in
+put line 9860.
+
+
+LaTeX Warning: Reference `Argument Principle Theorem - Complex' on page 1 undef
+ined on input line 9861.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy's Residue Theorem - Complex' on page 1 undefin
+ed on input line 9953.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 9980.
+
+
+LaTeX Warning: Reference `Residue of Simple Pole Theorem - Complex' on page 1 u
+ndefined on input line 10052.
+
+
+LaTeX Warning: Reference `Cauchy-Goursat Theorem - Complex' on page 1 undefined
+ on input line 10108.
+
+
+LaTeX Warning: Reference `Indented Paths Around Simple Poles Theorem - Complex'
+ on page 1 undefined on input line 10115.
+
+
+LaTeX Warning: Reference `Residue of Simple Pole Theorem - Complex' on page 1 u
+ndefined on input line 10115.
+
+
+LaTeX Warning: Reference `Uniform Convergence Definition - Real' on page 1 unde
+fined on input line 10341.
+
+
+LaTeX Warning: Reference `Gamma Function and Factorials Theorem - Complex' on p
+age 1 undefined on input line 10442.
+
+
+LaTeX Warning: Reference `Residue at Poles Theorem - Complex' on page 1 undefin
+ed on input line 10463.
+
+
+LaTeX Warning: Reference `Function real on real axis implies alternating sign a
+cross simple pole on real axis theorem - Complex' on page 1 undefined on input 
+line 10479.
+
+
+LaTeX Warning: Reference `Integration along branch cut Example - Complex' on pa
+ge 1 undefined on input line 10527.
+
+Chapter 18.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10931--10932
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+The command '\includegraphics [width=0.9\linewidth ]{Python/Mapping_by_Sine_V}'
+ has been optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=0.9\linewidth ]{Python/Mapping_by_Sine_H}'
+ has been optimized away. Use '/tikz/external/optimize=false' to disable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+The command '\includegraphics [width=0.9\linewidth ]{Python/Mapping_by_z_Square
+d_V}' has been optimized away. Use '/tikz/external/optimize=false' to disable t
+his.
+The command '\includegraphics [width=0.9\linewidth ]{Python/Mapping_by_z_Square
+d_H}' has been optimized away. Use '/tikz/external/optimize=false' to disable t
+his.
+
+LaTeX Warning: Reference `Roots of z Sections - Complex' on page 1 undefined on
+ input line 11385.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11410--11411
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+Chapter 19.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `f nequiv 0 in some neighbourhood of z_0 implies f neq
+ 0 in some deleted neighbourhood of z_0 Theorem - Complex' on page 1 undefined 
+on input line 12275.
+
+
+LaTeX Warning: Reference `Zero of order m and critical point Example - Complex'
+ on page 1 undefined on input line 12331.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Analytic implies existance of high order derivatives 
+theorem - Complex' on page 1 undefined on input line 12521.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Differentiablity Conditions Theorem - 
+Complex' on page 1 undefined on input line 12528.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Differentiablity Conditions Theorem - 
+Complex' on page 1 undefined on input line 12528.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 12548.
+
+
+LaTeX Warning: Reference `Taylor's Theorem - Complex' on page 1 undefined on in
+put line 12577.
+
+
+LaTeX Warning: Reference `Critical Point Definition - Complex' on page 1 undefi
+ned on input line 12629.
+
+
+LaTeX Warning: Reference `Harmonic Functions Section - Complex' on page 1 undef
+ined on input line 12637.
+
+
+LaTeX Warning: Reference `Harmonic Conjugate Definition - Complex' on page 1 un
+defined on input line 12639.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12639--12640
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12649--12650
+
+ []
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Differentiablity Conditions Theorem - 
+Complex' on page 1 undefined on input line 12654.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Differentiablity Conditions Theorem - 
+Complex' on page 1 undefined on input line 12654.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12654--12656
+
+ []
+
+
+LaTeX Warning: Reference `Analytic implies Harmonic Theorem - Complex' on page 
+1 undefined on input line 12662.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 12662.
+
+
+LaTeX Warning: Reference `Analytic implies Harmonic Theorem - Complex' on page 
+1 undefined on input line 12662.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 12662.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Polar) Theorem - Complex' o
+n page 1 undefined on input line 12744.
+
+
+LaTeX Warning: Reference `Harmonic Function Transformed by Analytic Function is
+ Harmonic Theorem Alternate Proof Example - Complex' on page 1 undefined on inp
+ut line 12773.
+
+
+LaTeX Warning: Reference `Poisson's Equation Transformed by Analytic Function E
+xample - Complex' on page 1 undefined on input line 12775.
+
+
+LaTeX Warning: Reference `Harmonic Function on Simply Connected Domain always h
+ave harmonic conjugate v Theorem - Complex' on page 1 undefined on input line 1
+2779.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 13046.
+
+
+LaTeX Warning: Reference `Laplace's Equation Definition - Complex' on page 1 un
+defined on input line 13046.
+
+
+LaTeX Warning: Reference `Harmonic Function Transformed by Analytic Function is
+ Harmonic Theorem - Complex' on page 1 undefined on input line 13065.
+
+
+LaTeX Warning: Reference `Harmonic Function Transformed by Analytic Function is
+ Harmonic Theorem Alternate Proof Example - Complex' on page 1 undefined on inp
+ut line 13084.
+
+
+LaTeX Warning: Reference `Cauchy-Riemann Equations (Cartesian) Theorem - Comple
+x' on page 1 undefined on input line 13109.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Conformal Definition - Complex' on page 1 undefined o
+n input line 13269.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Harmonic Function Transformed by Analytic Function is
+ Harmonic Theorem - Complex' on page 1 undefined on input line 13420.
+
+
+LaTeX Warning: Reference `Transformation of Boundary Conditions Theorem - Compl
+ex' on page 1 undefined on input line 13420.
+
+The command '\includegraphics [width=0.45\linewidth ]{Python/Steady_Temperatuer
+s_In_Half_Plane}' has been optimized away. Use '/tikz/external/optimize=false' 
+to disable this.
+
+LaTeX Warning: Reference `Mapping by sine Section - Complex' on page 1 undefine
+d on input line 13459.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Reference `Fourier's Law Definition - Complex' on page 1 undefin
+ed on input line 13598.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+The command '\includegraphics [width=0.7\linewidth ]{Python/Temperaturues_in_Qu
+adrant_Hyperbola}' has been optimized away. Use '/tikz/external/optimize=false'
+ to disable this.
+
+LaTeX Warning: Reference `Time Independent Temperatures Subsection - Complex' o
+n page 1 undefined on input line 13869.
+
+
+LaTeX Warning: Reference `Linear Fractional Transformations Section - Complex' 
+on page 1 undefined on input line 13874.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+\openout5 = `tikz/MathNotes-figure88.dpth'.
+
+[235
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+Chapter 20.
+Chapter 21.
+Chapter 22.
+Chapter 23.
+Chapter 24.
+Chapter 25.
+Chapter 26.
+Chapter 27.
+Chapter 28.
+Chapter 29.
+Chapter 30.
+runsystem(makeindex tikz/MathNotes-figure88.idx)...executed.
+
+(./tikz/MathNotes-figure88.ind)
+
+No file tikz/MathNotes-figure88.bbl.
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 43247 strings out of 479023
+ 962634 string characters out of 5859412
+ 1403447 words of memory out of 5000000
+ 59902 multiletter control sequences out of 15000+600000
+ 446748 words of font info for 176 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 106i,19n,105p,898b,2509s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}</
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on tikz/MathNotes-figure88.pdf (1 page, 38453 bytes).
+PDF statistics:
+ 34 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+

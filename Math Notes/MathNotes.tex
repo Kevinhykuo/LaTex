@@ -13906,8 +13906,8 @@
 		\(U\) is the harmonic conjugate of \(V\), hence
 		\begin{align*}
 			U 
-			= -(1/\pi) \ln(\rho) 
-			= \Im{-(i/\pi)\operatorname{Log}(w)} 
+			= -\frac{1}{\pi}\ln(\rho) 
+			= \Im{-\frac{i}{\pi}\operatorname{Log}(w)} 
 			= - \frac{1}{\pi} \ln\abs{\frac{1-z}{1+z}}
 		\end{align*}
 		The flux lines \(U(x,y) = c_2\) are then circles with centers on the \(x\) axis.
@@ -14022,14 +14022,220 @@
 	\end{example}
 	
 	\begin{example}
-		content
+		Consider the following boundary conditions for \(V(r, \theta)\):
+		\begin{align*}
+			V(r_0, \theta) &= 0 
+				& r_0 > 1, \ \theta \in [0,\pi] \\
+			V(1, \theta) &= 0 
+				& r_0 > 1, \ \theta \in [0,\pi] \\
+			V(x, 0) &= 0 
+				& x \in [1, r_0] \\
+			V(x, \pi) &= 1 
+				& x \in [1, r_0] \\
+		\end{align*}
+		We can solve for \(V(r,\theta)\) using separation of variables:
+		\begin{align*}
+			V 
+			&= \frac{4}{\pi} \sum_{n=1}^{\infty} \frac{\sinh(\alpha_n v)}{\sinh(\alpha_n \pi)} \cdot \frac{\sin(\alpha_n)}{2n-1}	&
+			\alpha_n &= \frac{(2n-1)\pi}{\ln(r_0)}	&
+				n \in \mathbb{N}
+		\end{align*}
+		Transformation with branch:
+		\begin{align*}
+			\log(z) &= \ln(r) + i \theta &
+				r>0, \ -\frac{\pi}{2} < \theta < \frac{3\pi}{2}
+		\end{align*}
+		The transformation is a injective mapping of the regions. Since the \(u\) and \(v\) are harmonic:
+		\begin{align*}
+			V(r, \theta)
+			&= \frac{4}{\pi} \sum_{n=1}^{\infty} 
+				\frac{\sinh(\alpha_n \theta)}{\sinh(\alpha_n \pi)} \cdot \frac{\sin(\alpha_n \ln(r))}{2n-1} 	&
+			\alpha_n &= \frac{(2n-1)\pi}{\ln(r_0)}	&
+			n \in \mathbb{N}
+		\end{align*}
+	
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$x$},
+					ylabel={$y$},
+					xmin=-1.5, xmax=1.5,
+					ymin=-0.2, ymax=1.5,
+					axis lines = middle,
+					ticks=none,
+					grid=none,
+					]
+					
+					\draw[line width=1,]
+					(axis cs: 1, 0) arc (0:180:100)
+					node[pos=0.5, above] {\(V = 0\)};
+					
+					\draw[line width=1,]
+					(axis cs: 0.25, 0) arc (0:180:25)
+					node[pos=0.5, above] {\(V = 0\)};
+					
+					\draw[line width=1,]
+					(axis cs: 0.25, 0) -- (axis cs: 1, 0)
+					node[pos=0, below] {1}
+					node[pos=0.5, above] {\(V = 0\)}
+					node[pos=1, below] {\(r_0\)};
+					
+					\draw[line width=1,]
+					(axis cs: -0.25, 0) -- (axis cs: -1, 0)
+					node[pos=0.5, above] {\(V = 1\)};
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(1, 0) 
+						(0.25, 0) 
+					};
+				
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(-1, 0) 
+						(-0.25, 0) 
+					};
+				\end{axis}
+			\end{tikzpicture}
+			{\Large \(\xrightarrow{\mathmakebox[2cm]{w = f(z)}}\)}
+			\begin{tikzpicture}[baseline=(current bounding box.center)]
+				\begin{axis}[
+					unit vector ratio=1 1 1,
+					xlabel={$u$},
+					ylabel={$v$},
+					xmin=-0.5, xmax=2.5,
+					ymin=-0.25, ymax=1.5,
+					axis lines = middle,
+					ticks = none,
+					grid=none,
+					]
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=o,
+					]
+					coordinates {
+						(2, 1) 
+						(0, 1)
+					};
+					
+					\addplot[
+					only marks,
+					nodes near coords,
+					point meta = explicit symbolic, 
+					mark=*,
+					]
+					coordinates {
+						(2, 0) 
+					};
+					
+					\draw[line width=1]
+					(axis cs: 0, 0) -- (axis cs: 2, 0)
+					node[pos=0.5, above] {\(V = 0\)}
+					node[pos=1, below] {\(\ln(r_0)\)};
+					
+					\draw[line width=1]
+					(axis cs: 2, 0) -- (axis cs: 2, 1)
+					node[pos=0.5, right] {\(V = 0\)};
+					
+					\draw[line width=1]
+					(axis cs: 2, 1) -- (axis cs: 0, 1)
+					node[pos=0.5, above] {\(V = 1\)}
+					node[pos=1, left] {\(\pi i\)};
+					
+					\draw[line width=1]
+					(axis cs: 0, 1) -- (axis cs: 0, 0)
+					node[pos=0.5, left] {\(V = 0\)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
 	\end{example}
 	
+	\subsection{2D Fluid Flow} \label{2D Fluid Flow Subsection - Complex}
+	\index{Fluid Flow! 2D}
 	
+	Consider a motion of a sheet of fluid in the \(z\) plane. The velocity of the fluid:
+	\begin{align*}
+		V(x,y) = p(x,y) + iq(x,y)
+	\end{align*}
+	\(p(x,y)\) and \(q(x,y)\) are \(\hat{x}\) and \(\hat{y}\) components of the velocity vector. In a region without sinks or sources, their first-order partial derivatives are continuous. 
 	
+	\begin{definition}[Circulation]
+		\label{Circulation Definition - Complex}
+		\index{Circulation}
+		The line integral with respoct to arc length \(\sigma\) of the tangential component of the velocity vector \(V_T(x,y)\) along contour \(C\).
+		\begin{align*}
+			\int_{C} V_T(x,y) d\sigma = \int_{C} p(x,y) dx + q(x,y) dy
+		\end{align*}
+	\end{definition}
+	If \(C\) is a positively oriented simple closed contour in a simply connected domain with no sources or sinks, we can use Green's Theorem (\cref{Green's Theorem - ODE}):
+	\begin{align*}
+		\int_C V_T(x,y) d\sigma = \iint_{R} [q_x(x,y) + p_y(x,y)] dA
+	\end{align*}
 	
+	For a circular region centered about \((x_0, y_0)\), the mean speed along \(C\) is found by dividing the circulation by \(2\pi r\). Dividing the mean speed by \(r\) gets the mean angular speed:
+	\begin{align*}
+		\frac{l}{\pi r^2} \iint_{R} \frac{1}{2} [q_x(x,y) + p_y(x,y)] dA
+	\end{align*}
 	
+	\begin{definition}[Rotation (Fluid)]
+		\label{Rotation of Fluid Definition - Complex}
+		\index{Rotation! Fluid}
+		The limiting angular speed as the radius \(r \rightarrow 0\).
+		\begin{align*}
+			\omega (x,y) =  \frac{1}{2} [q_x(x,y) + p_y(x,y)]
+		\end{align*}
+	\end{definition}
+	The mean value of the rotation is the mean angular velocity of the fluid. 
+
+	\begin{definition}[Irrotational (Fluid)]
+		\label{Irrotational Fluid Definition - Complex}
+		\label{Irrotational! Fluid}
+		When the rotation is zero.
+		\[w(x,y) = 0\]
+	\end{definition}
 	
+	For a incompressible and non-viscous fluid of uniform density \(\rho\), the fluid pressure \(P(x,y)\) with velocity \(V(x,y)\) satisfies a special case of Bernoulli's Equation \index{Bernoulli's Equation}: 
+	\begin{align*}
+		\frac{P(x,y)}{\rho} + \frac{1}{2} \abs{V(x,y)}^2 = c
+	\end{align*}
+	
+	For an irrotational fluid:
+	\begin{align*}
+		\omega (x,y) =  \frac{1}{2} [q_x(x,y) + p_y(x,y)] = 0
+		\implies \int_{C} p(s,t) ds + q(s,t) dt = 0
+	\end{align*}
+	That is, the contour \(C\) is independent of path. Hence,
+	\begin{align*}
+		\phi(x,y) = \int_{(x_0, y_0)}^{(x,y)} p(s,t) ds + q(s,t) dt
+	\end{align*}
+	is well defined on domain \(D\). Taking the partial derivatives
+	\begin{align*}
+		\phi_x(x,y) &= p(x,y) &
+		\phi_y(x,y) &= q(x,y)
+	\end{align*}
+	shows \(\phi(x,y)\) is the velocity potential of velocity vector \(V = p + iq\).
+	Likewise, in a region of free of sources and sinks, \(\phi(x,y)\) satisfies Laplace's equation and is harmonic:
+	\begin{align*}
+		\phi_{xx}(x,y) + \phi_{yy}(x,y) = 0
+	\end{align*}
+	
+	\subsection{Stream Function} \label{Stream Function Subsection - Complex}
+	\index{Stream Function}
 	
 	
 	

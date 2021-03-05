@@ -23,6 +23,7 @@
 
   \indexspace
 
+  \item Bernoulli's Equation, 246
   \item Bessel Functions
     \subitem  First Kind, 137
   \item Bilinear Transform, 202
@@ -54,6 +55,7 @@
   \item Chain Rule
     \subitem  for Composite Functions, 60
   \item Circle of Convergence, 139
+  \item Circulation, 245
   \item Coincidence Principle, 78
   \item Complex Conjugate, 38
   \item Complex Number
@@ -117,6 +119,8 @@
 
   \indexspace
 
+  \item Fluid Flow
+    \subitem  2D, 245
   \item Fourier Series, 137
   \item Fourier Transform
     \subitem  Analytic Signal, 194
@@ -304,6 +308,8 @@
   \item Riemann Sphere, 51
   \item Riemann Surface, 216
   \item Riemann's Theorem, 165
+  \item Rotation
+    \subitem  Fluid, 246
   \item Rouché's Theorem, 184, 187
 
   \indexspace
@@ -334,6 +340,7 @@
       \subsubitem  Zeros, 88
   \item Smooth, 95
   \item Stereographic Projection, 52
+  \item Stream Function, 246
   \item Sum
     \subitem  Contour, 97
 
