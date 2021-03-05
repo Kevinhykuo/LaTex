@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  4 MAR 2021 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  4 MAR 2021 23:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1873,69 +1873,67 @@ ython/Temperaturues_in_Quadrant_Hyperbola.pdf>]
 ===== Image 'tikz/MathNotes-figure88' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure89' is up-to-date. ======
 [245 <./tikz/MathNotes-figure88.pdf> <./tikz/MathNotes-figure89.pdf>] [246]
-[247
+[247] [248
 
-] [248] [249
+] [249] [250] [251
 
-] [250
+] [252
 
-] [251] [252] [253
+] [253] [254] [255
 
-] [254
+] [256
 
-] [255] [256
+] [257] [258
 
 ]
 Chapter 20.
-[257] [258
-
-] [259] [260
+[259] [260
 
 ] [261] [262
 
 ] [263] [264
 
-]
-Chapter 21.
-[265] [266
+] [265] [266
 
 ]
-Chapter 22.
+Chapter 21.
 [267] [268
 
 ]
-Chapter 23.
+Chapter 22.
 [269] [270
 
 ]
-Chapter 24.
+Chapter 23.
 [271] [272
 
 ]
-Chapter 25.
+Chapter 24.
 [273] [274
 
 ]
-Chapter 26.
+Chapter 25.
 [275] [276
 
 ]
-Chapter 27.
+Chapter 26.
 [277] [278
 
-] [279] [280
+]
+Chapter 27.
+[279] [280
 
 ] [281] [282
 
+] [283] [284
+
 ]
 Chapter 28.
-[283] [284
+[285] [286
 
 ]
 Chapter 29.
-[285] [286
-
-] [287] [288
+[287] [288
 
 ] [289] [290
 
@@ -1945,28 +1943,26 @@ Chapter 29.
 
 ] [295] [296
 
+] [297] [298
+
 ]
 Chapter 30.
-[297] [298
+[299] [300
 
-] [299
+] [301
 
-] [300
+] [302
 
 ]
 runsystem(makeindex MathNotes.idx)...executed.
 
- (./MathNotes.ind [301
+ (./MathNotes.ind [303
 
-] [302] [303]
-Overfull \vbox (11.29378pt too high) has occurred while \output is active []
+] [304] [305] [306])
 
+(./MathNotes.bbl [307] [308
 
-[304])
-
-(./MathNotes.bbl) [305
-
-] (./MathNotes.aux
+]) [309] (./MathNotes.aux
 Package cleveref Info: loaded `english' language definitions on input line 21.
 )
 
@@ -1976,10 +1972,10 @@ Package rerunfilecheck Info: File `MathNotes.out' has not changed.
 (rerunfilecheck)             Checksum: 2B5B5E1E901E7BFD6F43227B59E1A695;29889.
  ) 
 Here is how much of TeX's memory you used:
- 45140 strings out of 479023
- 1007623 string characters out of 5859412
- 1424818 words of memory out of 5000000
- 60297 multiletter control sequences out of 15000+600000
+ 45159 strings out of 479023
+ 1008088 string characters out of 5859412
+ 1425029 words of memory out of 5000000
+ 60304 multiletter control sequences out of 15000+600000
  446447 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,19n,102p,859b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2013,10 +2009,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (319 pages, 2551964 bytes).
+Output written on MathNotes.pdf (323 pages, 2555106 bytes).
 PDF statistics:
- 10247 PDF objects out of 10688 (max. 8388607)
- 7018 compressed objects within 71 object streams
- 1393 named destinations out of 1440 (max. 500000)
+ 10276 PDF objects out of 10688 (max. 8388607)
+ 7043 compressed objects within 71 object streams
+ 1405 named destinations out of 1440 (max. 500000)
  1909 words of extra memory for PDF output out of 10000 (max. 10000000)
 

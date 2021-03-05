@@ -14237,12 +14237,64 @@
 	\subsection{Stream Function} \label{Stream Function Subsection - Complex}
 	\index{Stream Function}
 	
+	The velocity vector in a irrotational simply connected domain:
+	\begin{align*}
+		V = p(x,y) + iq(x,y) = \phi_x(x,y) + i \phi_y(x,y) = \grad{\phi(x,y)}
+	\end{align*}
+
+	\begin{definition}[Stream Function]
+		\label{Stream Function Definition - Complex}
+		\index{Stream Function}
+		The harmonic conjugate of the velocity potential \(\phi(x,y)\):
+		\begin{align*}
+			\psi(x,y)
+		\end{align*}
+	\end{definition}
 	
+	\begin{definition}[Streamlines]
+		\begin{align*}
+			\psi(x,y) = c_2
+		\end{align*}
+	\end{definition}
+	Velocity vectors are tangent to the stream lines.
 	
+	\begin{definition}[Complex Potential (Flow)]
+		\label{Complex Potential (Flow) Definition - Complex}
+		\index{Complex Potential! Flow}
+		\begin{align*}
+			F(z) = \phi(x,y) + i \psi(x,y)
+		\end{align*}
+	\end{definition}
 	
+	Taking the derivative and using Cauchy-Riemann equations (\cref{Cauchy-Riemann Equations (Cartesian) Theorem - Complex}).
+	\begin{align*}
+		F'(z) = \phi_x(x,y) + i\psi_x(x,y) = \phi_x(x,y) - i \phi_y(x,y)
+	\end{align*}
+	Hence the velocity
+	\begin{align*}
+		V = \overline{F'(z)}
+	\end{align*}
 	
+	According to the proof of \cref{Harmonic Function on Simply Connected Domain always have harmonic conjugate v Theorem - Complex}, we can write
+	\begin{align*}
+		\psi(x,y) 
+		&= \int_{(x_0, y_0)}^{(x,y)} - \phi_t(s,t) ds + \phi_s(s,t) dt \\
+		&= \int_C - q(s,t) ds + p(s,t) dt
+		&= \int_{C} V_N (s,t) d\sigma
+	\end{align*}
+	which is independent of path, and \(C\) is any contour in \(D\). \(V_N\) is the normal component of the velocity vector, and \(\sigma\) is te arc length along \(C\). Then \(\psi(x,y)\) is the rate of flow across a surface of unit height perpendicular to the \(z\) plane on the curve \(C\).
 	
-	
+	\begin{example}
+		Consider 
+		\begin{align*}
+			F(z) &= Az & A \in \mathbb{R}_{>0}
+		\end{align*}
+		Then
+		\begin{align*}
+			\phi(x,y) &= Ax &
+			\psi(x,y) &= Ay
+		\end{align*}
+	\end{example}
 	
 	
 	
