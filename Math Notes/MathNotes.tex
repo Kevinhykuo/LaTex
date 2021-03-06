@@ -14252,6 +14252,7 @@
 	\end{definition}
 	
 	\begin{definition}[Streamlines]
+		Curves of equal value in \(\psi(x,y)\):
 		\begin{align*}
 			\psi(x,y) = c_2
 		\end{align*}
@@ -14294,10 +14295,99 @@
 			\phi(x,y) &= Ax &
 			\psi(x,y) &= Ay
 		\end{align*}
+		Streamlines \(\psi(x,y) = c_2 \implies y = c_2 /A\), and velocity \(V = \overline{F'(z)} = A\). The point \((x_0, y_0)\) where \(\psi(x_0, y_0) = 0\) is then any point on the \(x\) axis. 
+		
+		Here we can see a harmonic functions that is not uniquely determined up to an additive constant due to the boundary values. \(\psi(x,y) = Ay\) is harmonic in half plane \(y>0\) and is zero at the boundaries. \(\psi_1(x,y) = Be^x \sin(y)\) also satisfies the boundary conditions, but \(\psi_1(x,y) = 0\) consists of \(y = 0\) and \(y = n \pi\), (\(n \in \mathbb{N}\)). \(F_1(z) = Be^z\) is the complox potential of the flow between \(y \in [0, \pi]\), both boundaries making up \(\psi(x,y) = 0\). If \(B>0\), the fluid flows to the right along \(y = 0\) and left along \(y = \pi\).
+	\end{example}
+
+	\subsection{Flow Around Corner and Cylinder} \label{Flow Around Corner and Cylinder Subsection - Complex}
+	
+	If transformation \(f(z): D_z \rightarrow D_w\), is an analytic function:
+	\begin{align*}
+		w = f(z) = u(x,y) + iv(x,y)
+	\end{align*}
+	Then the functions are harmonic in \(D_z\):
+	\begin{align*}
+		\phi[u(x,y), v(x,y)] &&& \psi[u(x,y), v(x,y)]
+	\end{align*}
+	These are the velocity potential and stream function in the \(z\) plane. Streamline or boundary \(\psi(u,v) = c_2\) in \(D_w\) implies \(\psi[u(x,y), v(x,y)] = c_2\) in \(D_z\).
+	
+	It is often efficient to write the complex potential function in \(D_w\), then use it to obtain the corresponding function in the \(z\) plane. That is use
+	\begin{align*}
+		F(w) = \phi(u,v) + i\psi(u,v)
+	\end{align*}
+	to obtain
+	\begin{align*}
+		F[f(z)] = \phi[u(x,y), v(x,y)] + i \psi[u(x,y), v(x,y)]
+	\end{align*}
+	
+	\begin{example}[Flow around a corner]
+		\label{Flow around a corner Example - Complex}
+		\label{Flow! Around a corner}
+		Consider a flow in the first quadrant, where the flow is comes parallel to the \(y\) axis but has to turn the corner to the \(x\) axis.
+		We use the transformation to map the boundary of the first quadrant to the entire \(u\) axis:
+		\begin{align*}
+			w = z^2 = x^2 - y^2 + i2xy
+		\end{align*}
+		The complex potential function for uniform flow to the right in the \(w\) plane:
+		\begin{align*}
+			F &= Aw &
+			A \in \mathbb{R}
+		\end{align*}
+		Therefore
+		\begin{align*}
+			F = Az^2 = A(x^2 - y^2) + i2Axy
+		\end{align*}
+		Stream function \(\psi\) is then harmonic the first quadrant and vanishes on the boundary:
+		\begin{align*}
+			\psi = 2Axy
+		\end{align*}
+		The streamlines are the hyperbolas \(2Axy = c_2\).
+		Velocity of the fluid:
+		\begin{align*}
+			V = \overline{2Az} = 2A(x - iy)
+		\end{align*}
+		With speed
+		\begin{align*}
+			\abs{V} &= 2A \sqrt{x^2 + y^2} \propto r
+				& r = \sqrt{x^2 + y^2}
+		\end{align*}
+	\end{example}
+
+	\begin{example}[Flow around a cylinder]
+		\label{Flow around a cylinder Example - Complex}
+		\label{Flow! Around a cylinder}
+		Consider a cylinder of unit radius perpendicular to the \(z\) plane and placed at the origin of the \(z\) plane. The flow is steady and in the positive \(x\) direction. Symmetry shows points on the \(x\) axis exterior to the circle may be treated as boundary points, therefore, consider the upper half plane. 
+		
+		We map the upper semicircle and the \(x\) axis exterior to the circle to the entire \(u\) axis, and the region to the upper half plane \(v \geq 0\) by transformation:
+		\begin{align*}
+			w = z + \frac{1}{z}
+		\end{align*}
+		Complex potential for uniform flow:
+		\begin{align*}
+			F = Aw \implies F = A\left( z + \frac{1}{z} \right)
+		\end{align*}
+		Velocity:
+		\begin{align*}
+			V = A \left(1 - \frac{1}{\bar{z}^2}\right)
+		\end{align*}
+		Thus flow is approaches uniformity for large \(\abs{z}\). Since \(V(\bar{z}) = \overline{V(z)}\), we can use the reflection principle (\cref{Reflection Principle Theorem - Complex}) to verify that the expression also represents flow in the lower half plane.
+		
+		The stream function in polar:
+		\begin{align*}
+			\psi = A \left(r - \frac{1}{r}\right) \sin(\theta)
+		\end{align*}
+		Stream lines
+		\begin{align*}
+			A \left( r - \frac{1}{r}\right) \sin(\theta) = c_2
+		\end{align*}
+		are symmetric to the \(y\) axis with asymptotes parallel to the \(x\) axis. Note:
+		\(c_2 = 0\), the stream line consists of circle \(r = 1\) and the \(x\) axis exterior to the circle.
 	\end{example}
 	
+	{\color{Red} \textbf{Note to self:} Need to do questions in chapter 10 of Brown and Churchill - Complex Variables and Applications (9th ed). (Skipped due to time constraints.)}
 	
-	
+	\chapter{Schwarz-Christoffel Transformtion} \label{Schwarz-Christoffel Transformation Chapter - Complex}
 	
 	
 	
