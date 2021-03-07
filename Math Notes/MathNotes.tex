@@ -14448,8 +14448,31 @@
 	
 	\section{Schwarz-Christoffel Transformation} \label{Schwarz-Christoffel Transformation Section - Complex} 
 	
-	
-	
+	\begin{theorem}[Schwarz-Christoffel Transformation]
+		\label{Schwarz-Christoffel Transformations Theorem - Complex}
+		\index{Schwarz-Christoffel Transformation}
+		\begin{align*}
+			w 
+			&= A \int_{z_0}^{z} (s-x_1)^{-k_1} (s-x_2)^{-k_2} \cdots (s-x_{n-1})^{-k_{n-1}} ds + B &
+			B \in \mathbb{C}
+		\end{align*}
+	\end{theorem}
+	\begin{proof}
+		A function mapping the \(x\) axis onto a polygon:
+		\begin{align*}
+			f'(z) &= A(z - x_1)^{-k_1} (z-x_2)^{-k_2} \cdots (z-x_{n-1})^{-k_{n-1}} &
+			A \in \mathbb{C}
+		\end{align*}
+		Let 
+		\begin{align*}
+			(z-x_j)^{-k_j} 
+			&= e^{-k_j \log(z-x_j)} = e^{-k_j(\ln\abs{z-x_j} + i\theta_j)} &
+				\theta_j \in \left(-\frac{\pi}{2}, \frac{3\pi}{2}\right) \\
+			&= \abs{z - x_j}^{-k_j}	e^{-k_j \theta_j} &
+				\theta_j = \arg(z - x_j), \ j \in \{1, 2, \ldots, n-1\}
+		\end{align*}
+		\(f'(z)\) is then analytic everywhere in half plane \(y\geq 0\) except at \(x_j\).
+	\end{proof}
 	
 	
 	
