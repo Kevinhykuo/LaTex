@@ -14393,14 +14393,60 @@
 	
 	\chapter{Schwarz-Christoffel Transformtion} \label{Schwarz-Christoffel Transformation Chapter - Complex}
 	
-	Schwarz-Christoffel transformation is a mapping of the \(x\) axis and the upper half of the \(z\) plane onto a polygon and its interior in the \(w\) plane.
+	Schwarz-Christoffel transformation is a mapping of the \(x\) axis and the upper half of the \(z\) plane onto a polygon and its interior in the \(w\) plane
 	
+	\section{Mapping the Real Axis onto a Polygon} \label{Mapping the Real Axis onto a Polygon Section - Complex}
 	
+	\index{Mapping! Real Axis onto Polygon}
 	
+	Let \(C\) be a smooth arc with image \(\Gamma\) under the transformation \(w = f(z)\). The unit vector tangent to \(C\) at \(z_0\) is denoted by \(t \in \mathbb{C}\), and the corresponding unit vector tangent to \(\Gamma\) at \(w_0\) is \(\tau\). Assuming \(f\) is analytic at \(z_0\) and \(f'(z_0) \neq 0 \):
+	\begin{align*}
+		\arg(\tau) = \arg[f'(z_0)] + \arg(t)
+	\end{align*}
+	If \(C\) is a segment of the \(x\) axis moving in a positive sense to the right, then \(t = 1\) and \(\arg(t) = 0\) for all \(z_0\) on \(C\). The equation becomes:
+	\begin{align*}
+		\arg(\tau) = \arg[f'(x)]
+	\end{align*}
+	\(\arg[f'(z)] = c \implies \arg(\tau) = c\), thus, \(\Gamma\) is also a segment of a straight line. 
 	
+	Let \(x_1, x_2, \ldots, x_{n-1}\) and \(\infty\), \(x_1<x_2<\cdots<x_{n-1}\) be points on the \(x\) axis with the image under \(f(z)\) be vertices of the polygon:
+	\begin{align*}
+		w_j &= f(x_j) &
+		w_n &= f(\infty) &
+		j \in \{1, 2, \ldots , n-1\}
+	\end{align*}
+	\(\arg[f(z)]\) jumps from one constant value to another at \(z=x_j\) as \(z\) traces the \(x\) axis. Choose \(f(z)\) such that:
+	\begin{align*}
+		f'(z) &= A(z - x_1)^{-k_1} (z-x_2)^{-k_2} \cdots (z-x_{n-1})^{-k_{n-1}} &
+		A \in \mathbb{C}, \ k_j \in \mathbb{R}
+	\end{align*}
+	Then \(\arg[f'(z)]\) changes in prescribed manner as \(z\) describes the real axis:
+	\begin{align*}
+		arg[f'(z)] = \arg(A) - k_1 \arg(z - x_1) - k_2 \arg(z-x_2) - \cdots - k_{n-1} \arg(z - x_{n-1})
+	\end{align*}
+	For \(z = x\) and \(x < x_1\):
+	\begin{align*}
+		\arg(z-x_1) = \arg(z-x_2) = \cdots = \arg(z-x_{n-1}) = \pi
+	\end{align*}
+	If \(x_i < x\), then \(\arg(x_i - x) = 0\), and if \(x < x_j\) then \(\arg(x_j - x) = \pi\). \(\arg[f'(z)]\) then jumps by \(k_j \pi\) as \(z\) crosses \(z = x_j\). Likewise, the direction of \(\tau\) changes by \(k_j \pi\) at \(w_j\). The exterior angles are limited to \((-\pi, \pi)\), so \(k_j \in (-1, 1)\).
 	
+	Assuming the sides of the polygon never cross and the polygon is in a positive orientation, the sum of the angles for a closed polygon is \(2\pi\):
+	\begin{align*}
+		k_n \pi = 2\pi - (k_1 + k_2 + \cdots + k_{n-1}) \pi
+	\end{align*}
+	Then \(k_j\) must satisfy
+	\begin{align*}
+		k_1 + k_2 + \cdots + k_{n-1} + k_n &= 2 &
+		k_j &\in (-1, 1) &
+		j &\in \{1, 2, 3, \ldots, n\}
+	\end{align*}
+	Note:
+	\begin{align*}
+		k_1 + k_2 + \cdots + k_{n-1} = 2 \implies k_n = 0
+	\end{align*}
+	So, direction of \(\tau\) does not change at \(w_n\), thus \(w_n\) is not a vertex. The polygon has \(n - 1\) sides. 
 	
-	
+	\section{Schwarz-Christoffel Transformation} \label{Schwarz-Christoffel Transformation Section - Complex} 
 	
 	
 	

@@ -150,10 +150,12 @@
 \contentsline {subsection}{\numberline {19.4.6}Stream Function}{246}{subsection.19.4.6}%
 \contentsline {subsection}{\numberline {19.4.7}Flow Around Corner and Cylinder}{248}{subsection.19.4.7}%
 \contentsline {chapter}{\numberline {20}Schwarz-Christoffel Transformtion}{251}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Mapping the Real Axis onto a Polygon}{251}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Schwarz-Christoffel Transformation}{252}{section.20.2}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{253}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{255}{part.6}%
 \contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{257}{part.7}%
-\contentsline {paragraph}{Calculus of Variations [Empty]}{258}{theorem.20.0.2}%
+\contentsline {paragraph}{Calculus of Variations [Empty]}{258}{theorem.20.2.2}%
 \contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{259}{part.8}%
 \contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{261}{part.9}%
 \contentsline {chapter}{\numberline {21}Markov Chains}{263}{chapter.21}%
