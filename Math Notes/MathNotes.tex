@@ -14471,7 +14471,14 @@
 			&= \abs{z - x_j}^{-k_j}	e^{-k_j \theta_j} &
 				\theta_j = \arg(z - x_j), \ j \in \{1, 2, \ldots, n-1\}
 		\end{align*}
-		\(f'(z)\) is then analytic everywhere in half plane \(y\geq 0\) except at \(x_j\).
+		\(f'(z)\) is then analytic everywhere in half plane \(y\geq 0\) except at \(x_j\). For example, the only factor that is not analytic at \(x_1\) is \((z - x_1)^{-k_j}\), so letting \(\phi(z)\) denote the product of the rest of the factors, we can Taylor expand \(f'(z)\) about \(x_1\) in the analytic region \(R\):
+		\begin{align*}
+			f'(z) 
+			&= (z-x_1)^{-k_1} \phi(z) \\
+			&= (z-x_1)^{-k_1} \left[ \sum_{n=0}^{\infty} \frac{\phi^{(n)}(x_1)}{n!}(z-x_1)^n\right] \\
+			&= \phi(x_1)(z-x_1)^{-k_1} + (z-x_1)^{1-k_1} \psi(z)
+		\end{align*}
+		\(\psi(z)\) is then analytic throughout the open disk \(\abs{z - x_1} < R_1\).
 	\end{proof}
 	
 	
