@@ -14478,17 +14478,183 @@
 			&= (z-x_1)^{-k_1} \left[ \sum_{n=0}^{\infty} \frac{\phi^{(n)}(x_1)}{n!}(z-x_1)^n\right] \\
 			&= \phi(x_1)(z-x_1)^{-k_1} + (z-x_1)^{1-k_1} \psi(z)
 		\end{align*}
-		\(\psi(z)\) is then analytic throughout the open disk \(\abs{z - x_1} < R_1\).
+		\(\psi(z)\) is then analytic throughout the open disk \(\abs{z - x_1} < R_1\). If we assign \(\psi(z = x_1) = 0\), then along a contour from \(Z_1\) to \(z\) in the upper half of the disk:
+		\begin{align*}
+			\int_{Z_1}^{z} (s-x_1)^{1-k_1} \psi(s) ds
+		\end{align*}
+		Then 
+		\begin{align*}
+			\int_{Z_1}^{z} (s-x_1)^{-k_1} ds 
+			= \frac{1}{1-k_1} \left[(z-x_1)^{1-k_1} - (Z_1 - x_1)^{1-k_1}\right]
+		\end{align*}
+		If we define
+		\begin{align*}
+			\lim_{z\rightarrow x_1} \int_{Z_1}^{z} (s-x_1)^{-k_1} ds 
+		\end{align*}
+		Then the integral is continuous at \(z = x_1\), and the technique can be applied at each \(x_j\) to make \(F\) continuous throughout the upper half plane.
+		\begin{align*}
+			F(z) = \int_{z_0}^{z} f'(s) ds
+		\end{align*}
+		We can show
+		\begin{align*}
+			\forall \Im{z}\geq 0, \forall R >0, \exists M>0
+			\left[\abs{z}>R \implies \abs{f'(z)} < \frac{M}{\abs{z}^{2-k_n}}\right]
+		\end{align*}
+		Since \(2-k_n > 1\)
+		\begin{align*}
+			\exists W_n &\left[\lim_{z\rightarrow \infty} F(z) = W_n\right]	&
+			\Im{z} \geq 0
+		\end{align*}
+		Then 
+		\begin{align*}
+			f(z) = F(z) + B 
+			&\implies w = A \int_{z_0}^{z} \prod_{j = 1}^{n-1} (s-x_j)^{-k_j} ds + B &
+			B \in \mathbb{C}
+		\end{align*}
 	\end{proof}
 	
+	Note: If the image \(w_n\) of \(z = \infty\) exist, we can write
+	\begin{align*}
+		w_n = W_n + B
+	\end{align*}
 	
+	If \(z\) is interior to half plane \(y \geq 0\) and \(x_0\) is any point on \(x\) axis other than \(x_j\), then the angle between \(\hat{t}\) and the line joining \(z\) and \(x_0\) is less than \(\pi\). Due to conformality of the mapping, the angle is the same for their images. Thus images of interior points in the half plane lie to the left of the sides of polygon in the positive direction.
 	
+	If we require the \(x\) axis to be mapped into some polygon \(P'\) similar to \(P\), we can choose \(A\) and \(B\) to scale and translate \(P'\) to match \(P\).
 	
+	\(k_j\) are all determined from exterior angles at vertices of \(P\). We need to chose the \(n + 1\) constants \(x_j\). \(P'\) have same angles as \(P\), but if both are similar, then \(n-2\) connected sides must have common ratio to corresponding sides of \(P\). This is \(n-3\) equations in the \(n-1\) real unknowns \(x_j\). Thus, two of \(x_j\) or relations between them, can be chosen arbitrarily, provided \(n-3\) equations in the remaining \(n-3\) unknown have real-valued solutions.
 	
+	If we chose a finite point \(z=x_n\) on the \(x\) axis instead of the point at infinity, then the transformation takes the form:
+	\begin{align*}
+		w = A \int_{z_0}^{z} \prod_{j=1}^{n} (s-x_j)^{-k_j} ds + B
+	\end{align*}
+	where \(\sum_{j=1}^{n} k_j = 2\). The \(n\) constants \(x_j\) must satisfy the \(n-3\) equations above. Thus three of \(x_j\), or conditions on those \(n\) numbers, can be chosen arbitrarily when mapping the \(x\) axis onto a polygon.
 	
+	{\color{Red} \textbf{Note to self}: Do the exercises in section 128 of Brown and Churchill - Complex Variables and Applications (9 ed).}
 	
+	\section{Triangles and Rectangles} \label{Triangles and Rectangls Section - Complex}
 	
+	Limitations of the Schwarz-Christoffel Transformation:
+	\begin{itemize}
+		\item[1.] Only up to three points of \(x_j\) can be chosen arbitrarily, so when polygon has more than three sides, we must determine the remaining points.
+		\item[2.] Integral often cannot be evaluated in terms of a finite number of elementary functions.
+	\end{itemize}
+
+	For triangle with vertices \(w_1\), \(w_2\), and \(w_3\):
+	\begin{align*}
+		w &= A \int_{z_0}^{z} (s-x_1)^{-k_1} (s-x_2)^{-k_2} (s-x_3)^{-k_3} ds + B &
+		k_1 + k_2 + k_3 &= 2 \\
+	\end{align*}
+	In terms of interior angles \(\theta_j\):
+	\begin{align*}
+		k_j = 1 - \frac{\theta_j}{\pi}
+	\end{align*}
+	If \(w_3\) is the image of the point at infinity, then the transformation takes the form:
+	\begin{align*}
+		w &= A \int_{z_0}^{z} (s-x_1)^{-k_1} (s-x_2)^{-k_2} ds + B
+	\end{align*}
+	The integrals do not represent elementary functions unless the triangle is degenerate with one or two vertices at infinity. The latter integral becomes an elliptic integral when the triangle is equilateral or is a right triangle with one angle equal to \(\pi/3\) or \(\pi/4\).
 	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-2, xmax=2,
+				ymin=-0.2, ymax=1.5,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				]
+				
+				\draw[line width=1,]
+				(axis cs: -2, 0) -- (axis cs: 2, 0);
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(1.5, 0) 	[\(x_3\)]
+					(1, 0) 		[\(x_2\)]
+					(-1, 0) 	[\(x_1\)]
+				};
+			\end{axis}
+		\end{tikzpicture}
+		{\Large \(\xrightarrow{\mathmakebox[1cm]{w}}\)}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$u$},
+				ylabel={$v$},
+				xmin=-2.5, xmax=3.5,
+				ymin=-1.5, ymax=2.5,
+				axis lines = middle,
+				ticks = none,
+				grid=none,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(-1, 1)
+					(2, 1)
+					(2, -1) 
+				};
+				
+				\draw[line width=1]
+				(axis cs: 2, -1) -- (axis cs: -1, 1)
+				node[pos=1, above] 	{\(w_3\)};
+				
+				\draw[line width=1]
+				(axis cs: -1, 1) -- (axis cs: 2, 1)
+				node[pos=1, right] 	{\(w_2\)};
+				
+				\draw[line width=1]
+				(axis cs: 2, 1) -- (axis cs: 2, -1)
+				node[pos=1, below left] {\(w_1\)};
+				
+				\draw[]
+				(axis cs: 2, -1) -- (axis cs: 2, 2);
+				
+				\draw[]
+				(axis cs: 2, 1) -- (axis cs: -2, 1);
+				
+				\draw[]
+				(axis cs: -1, 1) -- (axis cs: {2 + 3/(13^0.5) }, {-1 - 2/(13^0.5)});
+				
+				\draw[decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 2, 1.5) arc (90:180:50)
+				node[pos=0.5, above left] {\(k_2 \pi\)};
+				
+				\draw[decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: -1.5, 1) arc (180:{180+143}:50)
+				node[pos=0.5, below left] {\(k_3 \pi\)};
+				
+				\draw[decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: {2 + 1.5/(13^0.5) }, {-1 - 1/(13^0.5)}) arc ({180+143}:450:50)
+				node[pos=0.5, above right] {\(k_1 \pi\)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	\begin{example}
+		Consider equilateral triangle \(k_1 = k_2 = k_3 = 2/3\). Convenient to choose \(x_1 = -1\), \(x_2 = 1\), and \(x_3 = \infty\), with \(z_0 = 1\), \(A = 1\), and \(B=0\), the transformation:
+		\begin{align*}
+			w = \int_{1}^{z} (s+1)^{-2/3} (s-1)^{-2/3} ds
+		\end{align*}
+	\end{example}
 	
 	
 	
