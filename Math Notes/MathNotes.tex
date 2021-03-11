@@ -9401,9 +9401,11 @@
 	
 	\begin{example}[Beta Function]
 		\label{Beta Function Example - Complex}
+		\index{Beta Function}
 		Show that the Beta Function
 		\begin{align*}
-			B(p,q) &= \int_{0}^{1} t^{p-1} (1-t)^{q-1} dt = \frac{\pi}{\sin(p\pi)}
+			B(p,q=1-p) 
+			&= \int_{0}^{1} t^{p-1} (1-t)^{q-1} dt = \frac{\pi}{\sin(p\pi)}
 				& p,q \in \mathbb{R}_{>0}
 		\end{align*}
 		\begin{proof}
@@ -14622,13 +14624,13 @@
 				(axis cs: 2, 1) -- (axis cs: 2, -1)
 				node[pos=1, below left] {\(w_1\)};
 				
-				\draw[]
+				\draw[dashed]
 				(axis cs: 2, -1) -- (axis cs: 2, 2);
 				
-				\draw[]
+				\draw[dashed]
 				(axis cs: 2, 1) -- (axis cs: -2, 1);
 				
-				\draw[]
+				\draw[dashed]
 				(axis cs: -1, 1) -- (axis cs: {2 + 3/(13^0.5) }, {-1 - 2/(13^0.5)});
 				
 				\draw[decoration={markings, mark=at position 1 with {\arrow{>}} },
@@ -14654,8 +14656,110 @@
 		\begin{align*}
 			w = \int_{1}^{z} (s+1)^{-2/3} (s-1)^{-2/3} ds
 		\end{align*}
+		\(z = x_2 = 1 \implies w = 0 \implies w_2 = 0\)
+		
+		For \(z = -1\), we can write \(s = x\) for \(x \in (-1, 1)\). We have:
+		\begin{align*}
+			x + 1 &> 0 & \arg(x + 1) &= 0 \\
+			\abs{x-1} &= 1-x & \arg(x - 1) &= \pi
+		\end{align*}
+		Hence, we can write the integral as
+		\begin{align*}
+			w_1 = \int_{1}^{-1} (x+1)^{-2/3} (1-x)^{-2/3} e^{-2\pi i/3} dx = e^{\pi i/3} \int_{0}^{1} \frac{2}{(1-x^2)^{2/3}} dx
+		\end{align*}
+		Let \(x = \sqrt{t}\):
+		\begin{align*}
+			b 
+			= \int_{0}^{1} \frac{2}{(1-x^2)^{2/3}} dx 
+			= \int_{0}^{1} t^{-1/2} (1-t)^{-2/3} dt
+			= B \left(\frac{1}{2}, \frac{1}{3}\right)
+		\end{align*}
+		where \(B\) is the Beta Function (\cref{Beta Function Example - Complex}). We then obtain 
+		\begin{align*}
+			w_1 = b e^{\pi i/3}
+		\end{align*}
+		Since \(z = x_3\) is the point at infinity:
+		\begin{align*}
+			w_3 
+			= \int_{1}^{\infty} (x+1)^{-2/3} (x-1)^{-2/3} dx 
+			= \int_{1}^{\infty} \frac{1}{(x^2 - 1)^{2/3}} dx
+		\end{align*}
+		\(w_3\) is also represented by the integral as \(z \rightarrow -\infty\):
+		\begin{align*}
+			w_3 
+			&= \int_{1}^{-1} (\abs{x+1} \abs{x-1})^{-2/3} e^{-2\pi i/3} dx 
+			 + \int_{1}^{-\infty} (\abs{x+1} \abs{x-1})^{-2/3} e^{-4\pi i/3} dx \\
+			&= w_1 + e^{-4\pi i/3} \int_{-1}^{-\infty} (\abs{x+1} \abs{x-1})^{-2/3} dx \\
+			&= b e^{\pi i/3} + e^{-\pi i/3} \int_{1}^{\infty} \frac{1}{(x^2 - 1)^{2/3}} dx \\
+			&= be^{\pi i} + w_3 e^{-\pi i/3} = b
+		\end{align*}
+		In summary, we have:
+		\begin{align*}
+			w_1 &= b e^{\pi i/3} & 
+			w_2 &= 0 &
+			w_3 &= b & b = B\left(\frac{1}{2}, \frac{1}{3}\right) \in \mathbb{R}
+		\end{align*}
+		The image of the \(x\) axis is the equilateral triangle with side \(b\), with 
+		\begin{align*}
+			z = 0 \implies w = \frac{b}{2} e^{\pi i/3}
+		\end{align*}
+	\end{example}
+
+	\begin{example}
+		Suppose the polygon is a rectangle with \(k_j = 1/2\) with \(x_j \in \{\pm 1, \pm a\}\). The transformation:
+		\begin{align*}
+			w 
+			&= - \int_{0}^{z} (s+a)^{-1/2} (s-a)^{-1/2} (s+1)^{-1/2} (s-1)^{-1/2} ds &
+				\arg(s - x_j) \in [0, \pi] \\
+			&= - \int_{0}^{z} (1-s^2)^{-1/2} \left(1- \frac{s^2}{a^2}\right)^{-1/2} ds
+		\end{align*}
+		Let \(a > 1\), with \(x_1 = -a\), \(x_2 = -1\), \(x_3 = 1\), \(x_4 = a\). All the vertices depend on values of \(a\) and \(b\):
+		\begin{align*}
+			b 
+			&= \int_{0}^{1} \abs{(x+a)^{-1/2} (x-a)^{-1/2} (x+1)^{-1/2} (x-1)^{-1/2}} dx
+			 = \int_{0}^{1} \frac{1}{\sqrt{(1-x^2)(a^2 - x^2)}} dx \\
+			c 
+			&= \int_{1}^{a} \abs{(x+a)^{-1/2} (x-a)^{-1/2} (x+1)^{-1/2} (x-1)^{-1/2}} dx
+			= \int_{1}^{a} \frac{1}{\sqrt{(x^2-1)(a^2 - x^2)}} dx 
+		\end{align*}
+		Letting 
+		\begin{align*}
+			g(x) = (x+a)^{-1/2} (x-a)^{-1/2} (x+1)^{-1/2} (x-1)^{-1/2}
+		\end{align*}
+		For \(x \in (-1, 0)\):
+		\begin{align*}
+			\arg(x+a) &= \arg(x+1) = 0 &
+			\arg(x-a) &= \arg(x-1) = \pi
+		\end{align*}
+		Hence
+		\begin{align*}
+			g(x) = \abs{e^{-\pi i /2}}^2 \abs{g(x)} = - \abs{g(x)}
+		\end{align*}
+		Likewise for \(x \in (-a, -1)\):
+		{\color{Grey}
+		\begin{align*}
+			\arg(x+a) &= 0 &
+			\arg(x-a) &= \arg(x-1) = \arg(x+1) = \pi
+		\end{align*}}
+		Hence
+		\begin{align*}
+			g(x) = \abs{e^{-\pi i /2}}^3 \abs{g(x)} = i \abs{g(x)}
+		\end{align*}
+		Thus
+		\begin{align*}
+			w_1 
+			&= - \int_{0}^{a} g(x) dx = -\int_{0}^{-1} g(x)dx - \int_{-1}^{-a} g(x) dx \\
+			&= \int_{0}^{-1} \abs{g(x)} dx - i \int_{-1}^{-a} \abs{g(x)} dx = -b + ic
+		\end{align*}
+		Repeating the process we have:
+		\begin{align*}
+			w_2 &= -b &
+			w_3 &= b &
+			w_4 &= b + ic
+		\end{align*}
 	\end{example}
 	
+	\section{Degenerate Polygons} \label{Degenerate Polygons Section - Complex}
 	
 	
 	
