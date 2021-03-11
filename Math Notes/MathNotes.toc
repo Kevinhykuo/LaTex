@@ -154,10 +154,11 @@
 \contentsline {section}{\numberline {20.2}Schwarz-Christoffel Transformation}{252}{section.20.2}%
 \contentsline {section}{\numberline {20.3}Triangles and Rectangles}{254}{section.20.3}%
 \contentsline {section}{\numberline {20.4}Degenerate Polygons}{257}{section.20.4}%
+\contentsline {section}{\numberline {20.5}Fluid Flow in a Channel Through a Slit}{258}{section.20.5}%
 \contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{259}{part.5}%
 \contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{261}{part.6}%
 \contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{263}{part.7}%
-\contentsline {paragraph}{Calculus of Variations [Empty]}{264}{theorem.20.4.2}%
+\contentsline {paragraph}{Calculus of Variations [Empty]}{264}{theorem.20.5.2}%
 \contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{265}{part.8}%
 \contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{267}{part.9}%
 \contentsline {chapter}{\numberline {21}Markov Chains}{269}{chapter.21}%

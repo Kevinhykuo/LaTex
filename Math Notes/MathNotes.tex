@@ -14761,7 +14761,66 @@
 	
 	\section{Degenerate Polygons} \label{Degenerate Polygons Section - Complex}
 	
+	\begin{example}
+		Mapping upper half plane \(y \geq 0\) onto the semi-infinite strip
+		\begin{align*}
+			\frac{\pi}{2} &\leq u \leq \frac{\pi}{2} &
+			v \geq 0
+		\end{align*}
+		We consider the strip as the limit case of triangle with vertices \(w_1, w_2, w_3\) as \(w_3 \rightarrow \infty\).
+		Limiting case of exterior angles:
+		\begin{align*}
+			k_1 \pi &= k_2 \pi = \frac{\pi}{2} &
+			k_3 \pi = \pi
+		\end{align*}
+		Letting \(x_1 = -1\), \(x_2 = 1\), and \(x_3 = \infty\):
+		\begin{align*}
+			\dv{w}{z} &= A(z+1)^{-1/2}(z-1)^{-1/2} = A'(1-z^2)^{-1/2}
+			\implies A' \sin[-1](z) + B
+		\end{align*}
+		Letting \(A' = 1/a\) and \(B = b/a\):
+		\begin{align*}
+			z = \sin(aw - b)
+		\end{align*}
+		If \(a=1\) and \(b = 0\), \(z = \sin(w)\), we can verify:
+		\begin{align*}
+			w = -\frac{\pi}{2} &\implies z = -1 &
+			w = \frac{\pi}{2} &\implies z = 1
+		\end{align*}
+	\end{example}
+
+	\begin{example}
+		Consider mapping to the horizontal infinite strip \(0 < v < \pi\). We consider this as the limiting case of a rhombus with points \(w_1 = \pi i\), \(w_2\), \(w_3 = 0\), and \(w_4\) where \(w_2 \rightarrow - \infty\) and \(w_4 \rightarrow \infty\). The exterior angles:
+		\begin{align*}
+			k_1 \pi &= 0 &
+			k_2 \pi &= \pi &
+			k_3 \pi &= 0 &
+			k_4 \pi &= \pi
+		\end{align*}
+		Since we can only arbitrary chose three point, we chose 
+		\begin{align*}
+			x_2 &= 0 &
+			x_3 &= 1 &
+			x_4 &= \infty
+		\end{align*}
+		leaving \(x_1\) to be determined. The derivative of the transform:
+		\begin{align*}
+			\dv{w}{z} = A(z-x_1)^0 z^{-1} (z-1)^0 = \frac{A}{z}
+			\implies w = A \operatorname{Log}(z) + B
+		\end{align*}
+		\(z = 1 \implies w = 0\), so \(B = 0\). \(w \in \mathbb{R}\) when \(z = x\) and \(x > 0\), so \(A \in \mathbb{R}\). For \(z = x_1\), \(w = \pi i\), so 
+		\begin{align*}
+			\pi i = A \operatorname{Log}(x_1) = A \ln \abs{x_1} + A \pi i 
+			\implies [\abs{x_1} = 1] \land [A = 1]
+		\end{align*}
+		The transformation
+		\begin{align*}
+			w = \operatorname{Log}(z)
+		\end{align*}
+		We then have \(x_1 = -1\).
+	\end{example}
 	
+	\section{Fluid Flow in a Channel Through a Slit} \label{Fluid Flow in a Channel Through a Slit Section - Complex}
 	
 	
 	

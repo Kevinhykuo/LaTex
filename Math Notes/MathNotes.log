@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.9)  10 MAR 2021 19:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.9)  10 MAR 2021 21:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1749,7 +1749,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10933--10934
 ===== Image 'tikz/MathNotes-figure59' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure60' is up-to-date. ======
 [208 <./tikz/MathNotes-figure57.pdf> <./tikz/MathNotes-figure58.pdf>]
-<Python/Mapping_by_Sine_V.pdf, id=3872, 722.7pt x 289.08pt>
+<Python/Mapping_by_Sine_V.pdf, id=3877, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_V.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11183
@@ -1757,7 +1757,7 @@ Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11183
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [209 <./tikz/MathNotes-figure59.pdf> <./tikz/MathNotes-figure60.pdf> <./Python
 /Mapping_by_Sine_V.pdf>]
-<Python/Mapping_by_Sine_H.pdf, id=3931, 722.7pt x 289.08pt>
+<Python/Mapping_by_Sine_H.pdf, id=3936, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_H.pdf>
 Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11208
@@ -1767,14 +1767,14 @@ Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11208
 ===== Image 'tikz/MathNotes-figure61' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure62' is up-to-date. ======
 [210 <./Python/Mapping_by_Sine_H.pdf>]
-<Python/Mapping_by_z_Squared_V.pdf, id=3977, 722.7pt x 289.08pt>
+<Python/Mapping_by_z_Squared_V.pdf, id=3982, 722.7pt x 289.08pt>
 File: Python/Mapping_by_z_Squared_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_z_Squared_V.pdf>
 Package pdftex.def Info: Python/Mapping_by_z_Squared_V.pdf  used on input line 
 11370.
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [211 <./tikz/MathNotes-figure61.pdf> <./tikz/MathNotes-figure62.pdf>]
-<Python/Mapping_by_z_Squared_H.pdf, id=4000, 722.7pt x 289.08pt>
+<Python/Mapping_by_z_Squared_H.pdf, id=4005, 722.7pt x 289.08pt>
 File: Python/Mapping_by_z_Squared_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_z_Squared_H.pdf>
 Package pdftex.def Info: Python/Mapping_by_z_Squared_H.pdf  used on input line 
@@ -1852,7 +1852,7 @@ t/12 g\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 u; v\OMX/MnSymbolE/m/n/12 ç$ \OT1
 ===== Image 'tikz/MathNotes-figure79' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure80' is up-to-date. ======
 [238 <./tikz/MathNotes-figure79.pdf> <./tikz/MathNotes-figure80.pdf>]
-<Python/Steady_Temperatuers_In_Half_Plane.pdf, id=9363, 289.08pt x 289.08pt>
+<Python/Steady_Temperatuers_In_Half_Plane.pdf, id=9368, 289.08pt x 289.08pt>
 File: Python/Steady_Temperatuers_In_Half_Plane.pdf Graphic file (type pdf)
 <use Python/Steady_Temperatuers_In_Half_Plane.pdf>
 Package pdftex.def Info: Python/Steady_Temperatuers_In_Half_Plane.pdf  used on 
@@ -1866,7 +1866,7 @@ input line 13438.
 [241 <./tikz/MathNotes-figure83.pdf>]
 ===== Image 'tikz/MathNotes-figure84' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure85' is up-to-date. ======
-<Python/Temperaturues_in_Quadrant_Hyperbola.pdf, id=9478, 433.62pt x 289.08pt>
+<Python/Temperaturues_in_Quadrant_Hyperbola.pdf, id=9483, 433.62pt x 289.08pt>
 File: Python/Temperaturues_in_Quadrant_Hyperbola.pdf Graphic file (type pdf)
 <use Python/Temperaturues_in_Quadrant_Hyperbola.pdf>
 Package pdftex.def Info: Python/Temperaturues_in_Quadrant_Hyperbola.pdf  used o
@@ -1888,9 +1888,9 @@ Chapter 20.
 ===== Image 'tikz/MathNotes-figure90' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure91' is up-to-date. ======
 [255 <./tikz/MathNotes-figure90.pdf> <./tikz/MathNotes-figure91.pdf>] [256]
-[257] [258
+[257] [258] [259
 
-] [259] [260] [261
+] [260] [261
 
 ] [262
 
@@ -1984,13 +1984,13 @@ Package cleveref Info: loaded `english' language definitions on input line 21.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: DF046BDFAF95421FEACBC41FB38B4CF7;31168.
+(rerunfilecheck)             Checksum: 641516071DD0D31B24301AA9583A4130;31437.
  ) 
 Here is how much of TeX's memory you used:
- 45217 strings out of 479023
- 1009684 string characters out of 5859413
- 1425946 words of memory out of 5000000
- 60332 multiletter control sequences out of 15000+600000
+ 45225 strings out of 479023
+ 1009905 string characters out of 5859413
+ 1426054 words of memory out of 5000000
+ 60335 multiletter control sequences out of 15000+600000
  446447 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,19n,102p,859b,792s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2024,10 +2024,10 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (333 pages, 2584439 bytes).
+Output written on MathNotes.pdf (333 pages, 2588069 bytes).
 PDF statistics:
- 10384 PDF objects out of 10688 (max. 8388607)
- 7138 compressed objects within 72 object streams
- 1433 named destinations out of 1440 (max. 500000)
- 1967 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 10394 PDF objects out of 10688 (max. 8388607)
+ 7148 compressed objects within 72 object streams
+ 1438 named destinations out of 1440 (max. 500000)
+ 1975 words of extra memory for PDF output out of 10000 (max. 10000000)
 
