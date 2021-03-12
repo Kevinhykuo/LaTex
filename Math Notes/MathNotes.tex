@@ -14822,6 +14822,183 @@
 	
 	\section{Fluid Flow in a Channel Through a Slit} \label{Fluid Flow in a Channel Through a Slit Section - Complex}
 	
+	Accounting for sources and sinks in fluid flow.
+	
+	Consider a steady flow of liquid entering parallel plates \(v = 0\) and \(v = \pi\) at a narrow slit at te origin. The rate of flow through the origin is \(Q\), thus the flow out of either end is \(Q/2\). We know 
+	\begin{align*}
+		w = \operatorname{Log}(z)
+	\end{align*}
+	is an injective mapping of the upper half plane \(y > 0\) onto the strip \(v \in (0,\pi)\). Then an inverse mapping exists and maps the strip into the upper half plane:
+	\begin{align*}
+		z = e^w = e^u e^{iv}
+	\end{align*}
+	The mapping maps line \(v = 0\) onto the positive \(x\) axis, and line \(v = \pi\) onto the negative \(x\) axis. Boundary of strip is mapped to the boundary of the half plane. The point \(w = 0 \mapsto z = 1\), and \(w = u_0 > 0 \mapsto z = x_0 > 1\). We have the stream function:
+	\begin{align*}
+		\psi(u,v)
+	\end{align*} 
+	This is the rate of flow across \(u_0\) to \((u,v)\) within the strip, so for any \(u_1 < 0\) on the \(u\) axis, that is the flow across the source, we have
+	\begin{align*}
+		\psi(u_1, 0) = Q
+	\end{align*}
+	We know
+	\begin{align*}
+		\psi(u,v) = \psi[u(x,y), v(x,y)]
+	\end{align*}
+	So the rate of flow is the same across corresponding curves in the transformation, hence we have a source at \(z=1\) equal to that at \(w =0\).
+	
+	\begin{corollary}
+		Conformal transformation preserves the magnitude of the sources and sinks. That is, the sources and sinks are equal to their image after the transformation.
+	\end{corollary}
+
+	As \(\Re{w} \rightarrow -\infty\), image of \(w\) approaches \(z=0\). Hence we have a sink at \(z = 0\) with strength \(Q/2\). The sink at \(\Re{w} = \infty\) corresponds to a sink at \(z = \infty\).
+	
+	Because we have a sink at \(z = 0\) and a source at \(z = 1\), we must have \(\psi\) be constant along three parts of the \(x\) axis. \(\psi\) must decrease by \(Q/2\) across the sink \(z = 0\), and increase by \(Q\) across \(z = 1\). Hence the function:
+	\begin{align*}
+		\psi 
+		= \frac{Q}{\pi} \left[\operatorname{Arg}(z-1) - \frac{1}{2}\operatorname{Arg}(z)\right]
+	\end{align*}
+	which is harmonic in half plane \(\Im(z) > 0\) and \(\psi = \Im(F)\):
+	\begin{align*}
+		F(z)
+		= \frac{Q}{\pi} \left[\operatorname{Log}(z-1) - \frac{1}{2}\operatorname{Log}(z)\right]
+		= \frac{Q}{2} \operatorname{Log}(z^{1/2} - z^{-1/2})
+	\end{align*}
+	Hence
+	\begin{align*}
+		F(w)
+		= \frac{Q}{\pi} \operatorname{Log}(e^{w/2} - e^{-w/2})
+		= \frac{Q}{\pi} \operatorname{Log}\left[\sinh(\frac{w}{2})\right] + 
+		  \frac{Q}{\pi} \operatorname{Log}(2)
+	\end{align*}
+	By dropping the constant term, we can write the velocity vector:
+	\begin{align*}
+		V = \overline{F'(w)} = \frac{Q}{2\pi} \coth(\frac{\bar{w}}{2})
+		\implies \lim_{\abs{u} \rightarrow \infty} V = \frac{Q}{2\pi}
+	\end{align*}
+	We have a stagnation point at \(w = \pi i\), hence pressure is greatest at the point opposite to the source at \(w = \pi i\).
+	
+	\begin{definition}[Stagnation Point]
+		\label{Stagnation Point Definition - Complex}
+		\index{Stagnation Point}
+		Point were the velocity vector \(V = 0\).
+	\end{definition}
+
+	Streamlines:
+	\begin{align*}
+		\psi(u,v) = \frac{Q}{2}\operatorname{Arg}\left[\sinh(\frac{w}{2})\right] = c_2
+		&\implies \tan(\frac{v}{2}) = c \tanh(\frac{u}{2})
+		& c \in \mathbb{R}
+	\end{align*}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-1, xmax=2,
+				ymin=-0.2, ymax=1,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				]
+				
+				\draw[line width=2,]
+				(axis cs: -1, 0) -- (axis cs: -0.1, 0)
+				(axis cs: 0.1, 0) -- (axis cs: 0.9, 0)
+				(axis cs: 1.1, 0) -- (axis cs: 2, 0);
+				
+				\draw[line width=1, color=Blue,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, 0.25) -- (axis cs: 1, 0.5);
+				
+				\draw[line width=1, color=Blue,
+				decoration={markings, mark=at position 0 with {\arrow{<}} },
+				postaction={decorate}]
+				(axis cs: 0, 0.1) -- (axis cs: 0, 0.25);
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=|,
+				]
+				coordinates {
+					(0.5, 0) 	[\(x_1\)]
+					(1.5, 0) 	[\(x_0\)]
+					(1, 0) 	[\(1\)]
+				};
+			\end{axis}
+		\end{tikzpicture}
+		{\Large \(\xrightarrow{\mathmakebox[1cm]{w}}\)}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$u$},
+				ylabel={$v$},
+				xmin=-2, xmax=2,
+				ymin=-0.2, ymax=1.5,
+				axis lines = middle,
+				ticks = none,
+				grid=none,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=|,
+				]
+				coordinates {
+					(-0.5, 0) [\(u_1\)]
+					(0, 0)
+					(0.5,  0) [\(u_0\)]
+				};
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=|,
+				]
+				coordinates {
+					(0, 1)
+				};
+				
+				\draw[line width=2]
+				(axis cs: -2, 1) -- (axis cs: 2, 1)
+				node[pos=0.5, above right] 	{\(\pi i\)};
+				
+				\draw[line width=2]
+				(axis cs: -2, 0) -- (axis cs: -0.1, 0)
+				(axis cs: 0.1, 0) -- (axis cs: 2, 0);
+				
+				\draw[line width=1, color=Blue,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1.75, 0.5) -- (axis cs: 1.9, 0.5);
+				
+				\draw[line width=1, color=Blue,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: -1.75, 0.5) -- (axis cs: -1.9, 0.5);
+				
+				\draw[line width=1, color=Blue,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 0) -- (axis cs: 0, 0.25);
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+
+	\section{Flow in a Channel with an Offset} \label{Flow in a Channel with an Offset Section - Complex}
+	
+	
+	
+	
+	
 	
 	
 	
