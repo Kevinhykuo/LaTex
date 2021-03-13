@@ -14995,16 +14995,179 @@
 
 	\section{Flow in a Channel with an Offset} \label{Flow in a Channel with an Offset Section - Complex}
 	
+	Fluid flow in a channel with abrupt change in breadth. 
 	
+	Let the channel be \(\pi\) wide, then abruptly change to \(h\pi\) wide, \(h \in (0, 1)\), at \(u = 0\). The velocity of the fluid far to the left of the offset in the wide part is 
+	\begin{align*}
+		\lim_{u \rightarrow -\infty} V = V_0
+	\end{align*}
+	The strength of the source to the far left or the strength of the sink to the far right is then 
+	\begin{align*}
+		Q = \pi V_0
+	\end{align*}
+	We can think of the channel as the limiting case of a quadrilateral with vertices \(w_1\), \(w_2\), \(w_3\), and \(w_4\) with exterior angles
+	\begin{align*}
+		k_1 \pi &= \pi &
+		k_2 \pi &= \frac{\pi}{2} &
+		k_3 \pi &= -\frac{\pi}{2} &
+		k_4 \pi &= \pi
+	\end{align*}
+	We choose the points \(x_1 = 0\), \(x_3 = 1\), and \(x_4 = \infty\), with \(x_2 \in (0, 1)\) to be determined. The derivative of the transform:
+	\begin{align*}
+		\dv{w}{z} = Az^{-1} (z - x_2)^{-1/2} (z-1)^{1/2}
+	\end{align*}
+	The source of the flow is the channel infinitely far to the left corresponds to an equal source at \(z=0\), hence the potential flow in the upper half \(z\) plane with \(Q = \pi V_0\):
+	\begin{align*}
+		F = V_0 \operatorname{Log}(z) = V_0 \ln(r) + iV_0 \theta
+	\end{align*}
+	Complex conjugate of the velocity in the \(w\) plane:
+	\begin{align*}
+		\overline{V(w)} = \frac{F}{w} = \dv{F}{z} \dv{z}{w}
+		\implies \overline{V(w)} = \frac{V_0}{A} \left(\frac{z - x_2}{z - 1}\right)^\frac{1}{2}
+	\end{align*}
+	The limiting position of \(w_1\), corresponding to \(z = 0\), has the velocity \(V_0\), hence
+	\begin{align*}
+		v_0 = \frac{V_0}{A} \sqrt{x_2}
+	\end{align*}
+	The limiting position of \(w_4\), corresponding to \(z = \infty\), has the velocity \(V_4\), hence
+	\begin{align*}
+		\pi h V_4 = \pi V_0 = Q \implies V_4 = \frac{V_0}{h}
+	\end{align*}
+	Note we can verify \(V \rightarrow V_4\) as we move the channel infinitely far to the right by finding \(w(z)\) from \(\dv*{w}{z}\).
 	
+	Finding the limit as \(z \rightarrow \infty\):
+	\begin{align*}
+		\lim_{z \rightarrow \infty} \overline{V(w)}
+		= \frac{V_0}{A} = V_4 =  \frac{V_0}{h}
+	\end{align*}
+	Hence 
+	\begin{align*}
+		[A = h] \land [x_2 = h^2] 
+		\implies \overline{V(w)} = \frac{V_0}{h} \left(\frac{z-h^2}{z-1}\right)^\frac{1}{2}
+	\end{align*}
+	We then know the \(\abs{V(w_3)} = \infty\) since the image af \(w_3\) is \(z = 1\), and that \(\abs{V(w_2)} = 0\) is a stagnation point.
 	
+	The derivative of the transform can now be written as
+	\begin{align*}
+		\dv{w}{z} = \frac{h}{z} \left(\frac{z - 1}{z - h^2}\right)^\frac{1}{2}
+	\end{align*}
+	Letting 
+	\begin{align*}
+		\frac{z - 1}{z - h^2} = s^2
+	\end{align*}
+	We have
+	\begin{align*}
+		\dv{w}{s} = 2h \left(\frac{1}{1-s^2} - \frac{1}{h^2 - s^2}\right)
+		\implies w = h \operatorname{Log}\left(\frac{1+s}{1-s}\right) - \operatorname{Log}\left(\frac{h+s}{h-s}\right)
+	\end{align*}
+	Constant of integration is zero because \(z = h^2 \implies s = 0 \implies w = 0\).
+	The potential unction is then 
+	\begin{align*}
+		F = V_0 \operatorname{Log}\left(\frac{h^2 - s^2}{1-s^2}\right)
+		\implies s^2 = \frac{e^{F/V_0} - h^2}{e^{F/V_0} - 1}
+	\end{align*}
+	We then have 
+	\begin{align*}
+		w &= h \operatorname{Log}\left(\frac{1+s}{1-s}\right) - \operatorname{Log}\left(\frac{h+s}{h-s}\right) &
+		s^2 &= \frac{e^{F/V_0} - h^2}{e^{F/V_0} - 1}
+	\end{align*}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-0.5, xmax=1.5,
+				ymin=-0.2, ymax=0.75,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				]
+				
+				\draw[line width=2,]
+				(axis cs: -1, 0) -- (axis cs: -0.1, 0)
+				(axis cs: 0.1, 0) -- (axis cs: 1, 0)
+				node[pos=1, below] {\(1\)}
+				(axis cs: 1, 0) -- (axis cs: 2, 0);
+				
+				\draw[line width=1, color=Blue,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 0, 0.25) -- (axis cs: 0, 0.4);
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=|,
+				]
+				coordinates {
+					(0, 0) 	[\(x_1\)]
+					(0.7, 0) 	[\(x_2\)]
+					(1, 0) 	[\(x_3\)]
+				};
+			\end{axis}
+		\end{tikzpicture}
+		{\Large \(\xrightarrow{\mathmakebox[1cm]{w}}\)}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$u$},
+				ylabel={$v$},
+				xmin=-2, xmax=2,
+				ymin=-0.2, ymax=1.5,
+				axis lines = middle,
+				ticks = none,
+				grid=none,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(0, 0)
+					(0, 0.5)
+					(-1.7, 1)
+					(1.7, 1)
+				};
+				
+				\draw[line width=2]
+				(axis cs: -2, 1) -- (axis cs: 2, 1)
+				node[pos=0.5, above right] 	{\(\pi i\)};
+				
+				\draw[line width=2]
+				(axis cs: -2, 0) -- (axis cs: 0, 0) 
+				-- (axis cs: 0, 0.5) -- (axis cs: 2, 0.5);
+				
+				\draw[dashed]
+				(axis cs: 0, 0) -- (axis cs: -1.7, 1)
+				node[pos=0, above right] {\(w_2\)}
+				node[pos=1, above] {\(w_1\)};
+				
+				\draw[dashed]
+				(axis cs: 0, 0.5) -- (axis cs: 1.7, 1)
+				node[pos=0, above left] {\(w_3\)}
+				node[pos=1, above] {\(w_4\)};
+				
+				\draw[<->]
+				(axis cs: 1.9, 0.5) -- (axis cs: 1.9, 1)
+				node[pos=0.5, left] {\(h\pi\)};
+				
+				\draw[line width=1, color=Blue,
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: -1.9, 0.5) -- (axis cs: -1.5, 0.5)
+				node[pos=0.5, below] {\(V_0\)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
-	
-	
-	
-	
-	
-	
+	\section{Electrostatic Potential About an Edge of Conducting Plate} \label{Electrostatic Potential About an Edge of Conducting Plate Section - Complex}
 	
 	
 	
