@@ -28,6 +28,9 @@
 % and \norm resizes the size of the brackets, and the 
 % starred version does not.
 
+\DeclareMathOperator\Log{Log}
+\DeclareMathOperator\Arg{Arg}
+
 
 \declaretheoremstyle[
 	spaceabove=6pt, 		
@@ -553,7 +556,7 @@
 		Consider any $z \in \mathbb{C}$ where $z \neq 0$.
 		Let $\theta$ be the angle in radians between $z$ and the real axis .
 		Then $\forall n \in \mathbb{N}$, $-\pi < \theta \leq \pi$, the argument of $z$:
-		$$ \operatorname{arg}(z) = \theta + 2 n \pi$$
+		$$ \arg(z) = \theta + 2 n \pi$$
 		\label{Argument - Complex}
 	\end{definition}
 	
@@ -562,13 +565,13 @@
 		Consider any $z \in \mathbb{C}$ where $z \neq 0$.
 		Let $\theta$ be the angle in radians between $z$ and the real axis.
 		Then for $-pi < \theta \leq \pi$, the principal argument of $z$:
-		$$\operatorname{Arg}(z) = \theta$$
+		$$\Arg(z) = \theta$$
 		\label{Principal Argument - Complex}
 	\end{definition}
-	It is clear that $\operatorname{arg}(z) = \operatorname{Arg}(z) + 2n \pi$. It is common for the principal argument to be defined $-\pi < \theta \leq \pi$, although other definitions use $0 \leq \theta < 2\pi$.
+	It is clear that $\arg(z) = \Arg(z) + 2n \pi$. It is common for the principal argument to be defined $-\pi < \theta \leq \pi$, although other definitions use $0 \leq \theta < 2\pi$.
 	
 	\begin{definition}[Polar Form of $z$ \index{Complex Number! Polar Form}]
-		Consider $z \in \mathbb{C}$. Let $r = \abs{z}$, and $\theta = \operatorname{arg}(z)$. 
+		Consider $z \in \mathbb{C}$. Let $r = \abs{z}$, and $\theta = \arg(z)$. 
 		Then $\forall z \in \mathbb{C}, z \neq 0$:
 		$$z = x + iy = r(\cos(\theta) + i \sin(\theta))$$
 		\label{Polar Form of z - Complex}
@@ -583,7 +586,7 @@
 	Combining \cref{Polar Form of z - Complex} with \cref{Euler's Formula - Complex}, we obtain the Exponential Form of $z$: 
 	
 	\begin{definition}[Exponential Form of $z$ \index{Complex Number! Exponential Form}]
-	Consider any $z \in \mathbb{C}$, and let $r = \abs{z}$ and $\theta = \operatorname{Arg}(z)$. Then the exponential form of $z$:
+	Consider any $z \in \mathbb{C}$, and let $r = \abs{z}$ and $\theta = \Arg(z)$. Then the exponential form of $z$:
 		$$z = r e^{i \theta}$$
 		\label{Exponential Form of z - Complex}
 	\end{definition}
@@ -675,9 +678,9 @@
 	\begin{corollary}[Arguments of Products \index{Argument! Product of Complex Numbers}]
 		\begin{align*}
 			\arg(z_1 z_2) &= \arg(z_1) + \arg(z_2)
-				& \operatorname{Arg}(z_1 z_2) = \operatorname{Arg}(z_1) + \operatorname{Arg}(z_2) \\
+				& \Arg(z_1 z_2) = \Arg(z_1) + \Arg(z_2) \\
 			\arg(z^n) &= n\arg(z)  
-				& \operatorname{Arg}(z^n) = n\operatorname{Arg}(z)
+				& \Arg(z^n) = n\Arg(z)
 		\end{align*}
 		\label{Arguments of Products Corollary - Complex}
 	\end{corollary}
@@ -687,18 +690,18 @@
 			&\implies \arg(z_1 z_2) = \arg(z_1) + 2n_1 \pi + \arg(z_2) + 2n_2\pi
 				& n_1, n_2 \in \mathbb{Z} \\
 			&\implies \arg(z_1 z_2) = \arg(z_1) + \arg(z_2) & \\
-			&\implies \operatorname{Arg}(z_1 z_2) = \operatorname{Arg}(z_1) = \operatorname{Arg}(z_2)  \\
+			&\implies \Arg(z_1 z_2) = \Arg(z_1) = \Arg(z_2)  \\
 			\\
 			z^n &= r^n e^{i n\theta} & \\
 			&\implies \arg(z^n) = n\arg(z) + 2n\pi & n \in \mathbb{Z} \\
 			&\implies \arg(z^n) = n\arg(z)  \\
-			&\implies \operatorname{z^n} = n\operatorname{Arg}(z)
+			&\implies \operatorname{z^n} = n\Arg(z)
 		\end{align*}
 	\end{proof}
 	It is clear that: 
 	\begin{align*}
 		\arg\left(\frac{z_1}{z_2}\right) &= \arg(z_1) - \arg(z_2)
-			& \operatorname{Arg}\left(\frac{z_1}{z_2}\right) &= \operatorname{Arg}(z_1) - \operatorname{Arg}(z_2)
+			& \Arg\left(\frac{z_1}{z_2}\right) &= \Arg(z_1) - \Arg(z_2)
 	\end{align*}
 
 	\section{Roots of \texorpdfstring{\(z\)}{TEXT}} \label{Roots of z Sections - Complex}
@@ -3682,7 +3685,7 @@
 	\[\{e^{1/n} : n \in \mathbb{N} \} \]
 	and 
 	\begin{align*}
-		\abs{e^z} &= e^x & \operatorname{arg}(e^z) &= y + 2n\pi & n \in \mathbb{N}\cup \{0\}
+		\abs{e^z} &= e^x & \arg(e^z) &= y + 2n\pi & n \in \mathbb{N}\cup \{0\}
 	\end{align*}
 	The exponential function follows from the usual properties of exponentials. We also know that 
 	\begin{align*}
@@ -3704,17 +3707,17 @@
 	
 	\begin{definition}[Principal Value of the Logarithmic Function]
 		\label{Principal Value of the Logarithmic Function Definition - Complex}
-		Let \(z \in \mathbb{C}\), the principal value of the logarithmic function is denoted by \(\operatorname{Log}(z)\).
+		Let \(z \in \mathbb{C}\), the principal value of the logarithmic function is denoted by \(\Log(z)\).
 		\begin{align*}
-			\operatorname{Log}(z) = \ln(r) + i\theta
+			\Log(z) = \ln(r) + i\theta
 		\end{align*}
 	\end{definition}
 	
 	It is clear that 
-	\[\log(z) = \operatorname{Log}(z) + 2n \pi \qquad n \in \mathbb{Z}\]
+	\[\log(z) = \Log(z) + 2n \pi \qquad n \in \mathbb{Z}\]
 	
 	and for any \(z\) on the real axis, the logarithmic function reduces to 
-	\[\operatorname{Log}(z) = \ln(x) \qquad x \in \mathbb{R}\]
+	\[\Log(z) = \ln(x) \qquad x \in \mathbb{R}\]
 	
 	\subsection{Branches and Derivatives of Logarithms} \label{Branches and Derivatives of Logarithms Subsection - Complex}
 	
@@ -3734,7 +3737,7 @@
 	\begin{align*}
 		\dv{z} \log(z) &= e^{-i\theta} (u_r + iv_r) = e^{i\theta} \left(\frac{1}{r} + i0\right) = \frac{1}{re^{i\theta}} \\
 		&\implies \dv{z} \log(z) = \frac{1}{z} & \abs{z}>0,& \ \alpha < \arg(z) < \alpha + 2\pi\\
-		&\implies \dv{z} \operatorname{Log}(z) = \frac{1}{z} & \abs{z}>0,& \ -\pi < \operatorname{Arg}(z) < \pi
+		&\implies \dv{z} \Log(z) = \frac{1}{z} & \abs{z}>0,& \ -\pi < \Arg(z) < \pi
 	\end{align*}
 
 	\begin{definition}[Branch]
@@ -3747,7 +3750,7 @@
 		\index{Branch! Principal}
 		\label{Principal Branch Definition - Complex}
 		\begin{align*}
-			\operatorname{Log}(z) &= \ln(r) + i\theta & r>0, \ -\pi < \theta < \pi
+			\Log(z) &= \ln(r) + i\theta & r>0, \ -\pi < \theta < \pi
 		\end{align*}
 	\end{definition}
 
@@ -3764,7 +3767,7 @@
 	\end{definition}
 
 	\begin{example}
-		The branch cut for \(\operatorname{Log}(z) = \ln(r) + i\theta\), \(r>0,\ -\pi<\theta<\pi\), is the origin and \(\theta = \pi\).
+		The branch cut for \(\Log(z) = \ln(r) + i\theta\), \(r>0,\ -\pi<\theta<\pi\), is the origin and \(\theta = \pi\).
 		
 		Branch points for all branches of \(\log(z)\) is the origin.
 	\end{example}
@@ -3820,7 +3823,7 @@
 	\begin{example}
 		Show \(\forall z_1, z_2 \in \mathbb{C}\)
 		\begin{align*}
-			\operatorname{Log}(z_1 z_2) &= \operatorname{Log}(z_1) + \operatorname{Log}(z_2) + 2N\pi i & N &\in \{0, \pm 1\}
+			\Log(z_1 z_2) &= \Log(z_1) + \Log(z_2) + 2N\pi i & N &\in \{0, \pm 1\}
 		\end{align*}
 		{\color{Grey}
 		Consider:
@@ -3829,13 +3832,13 @@
 			&= \ln\abs{z_1 z_2} + i\arg(z_1 z_2) \\
 			&= \ln(r_1) + \ln(r_2) + i\arg(z_1) + i\arg(z_2) \\
 			&= \ln(r_1) + \ln(r_2) + i\theta_1 + i\theta_2 + 2n\pi i & \ n\in \mathbb{Z} \\
-			&= \ln(r_1) + \ln(r_2) + i\operatorname{Arg}(z_1) + i\operatorname{Arg}(z_2) + 2n \pi i & \ n\in \mathbb{Z}
+			&= \ln(r_1) + \ln(r_2) + i\Arg(z_1) + i\Arg(z_2) + 2n \pi i & \ n\in \mathbb{Z}
 		\end{align*}
-		Then, since \(-\pi < \operatorname{Arg}(z_1)<\pi\) and \(-\pi < \operatorname{Arg}(z_2)<\pi\):
+		Then, since \(-\pi < \Arg(z_1)<\pi\) and \(-\pi < \Arg(z_2)<\pi\):
 		\begin{align*}
-			\operatorname{Log}(z_1 z_2) 
-			&= \ln(r_1) + \ln(r_2) + i\operatorname{Arg}(z_1) + i\operatorname{Arg}(z_2) + 2N \pi i & \ N\in \{0, \pm 1\} \\
-			&=\operatorname{Log}(z_1) + \operatorname{Log}(z_2) + 2N \pi i & \ N\in \{0, \pm 1\} 
+			\Log(z_1 z_2) 
+			&= \ln(r_1) + \ln(r_2) + i\Arg(z_1) + i\Arg(z_2) + 2N \pi i & \ N\in \{0, \pm 1\} \\
+			&=\Log(z_1) + \Log(z_2) + 2N \pi i & \ N\in \{0, \pm 1\} 
 		\end{align*}
 		}
 	\end{example}
@@ -3856,10 +3859,10 @@
 	\end{definition}
 	The logarithm is multi-valued \(\implies\) the power function is multi-valued.
 	
-	The principle branch of the Power Function is \(\log\) being replaced by \(\operatorname{Log}\):
+	The principle branch of the Power Function is \(\log\) being replaced by \(\Log\):
 	\begin{align*}
-		z^c &= e^{c \operatorname{Log}(z)} & z\neq 0 \\
-		c^z &= e^{z \operatorname{Log}(c)} & c\neq 0
+		z^c &= e^{c \Log(z)} & z\neq 0 \\
+		c^z &= e^{z \Log(c)} & c\neq 0
 	\end{align*}
 
 	When a branch is specified, \(\log(z)\) becomes single-valued and analytic. Hence the derivatives: 
@@ -4816,7 +4819,7 @@
 		Then  
 		\begin{align*}
 			\int_{C_1} z^{-1} dz
-			&= \int_{-i}^{i} z^{-1} dz = \eval{\operatorname{Log}(z)}_{-i}^{i} = \operatorname{Log}(i) - \operatorname{Log}(-i) \\
+			&= \int_{-i}^{i} z^{-1} dz = \eval{\Log(z)}_{-i}^{i} = \Log(i) - \Log(-i) \\
 			&= \left(\ln(1) + i\frac{\pi}{2}\right) - \left(\ln(1) - i\frac{\pi}{2}\right) = \pi i
 		\end{align*}
 		Now consider \(C_2\):
@@ -6117,7 +6120,7 @@
 		\end{align*}
 		Converting to polar: 
 		\begin{align*}
-			r_n &= \abs{z_n} & \Theta_n &= \operatorname{Arg}(z_n) 
+			r_n &= \abs{z_n} & \Theta_n &= \Arg(z_n) 
 				& n \in \mathbb{N}, \ -\pi < \Theta_n \leq \pi
 		\end{align*}
 		Then 
@@ -10427,7 +10430,7 @@
 		Consider \(z \in \mathbb{C}\):
 		\begin{align*}
 			\Gamma (z) &= \int_{0}^{\infty} t^{z-1} e^{-t} dt 
-				= \int_{0}^{\infty} e^{(z-1) \operatorname{Log}(z)} e^{-t} dt
+				= \int_{0}^{\infty} e^{(z-1) \Log(z)} e^{-t} dt
 				& t \in \mathbb{C}
 		\end{align*}
 		Note the principal part of the logarithm.
@@ -10436,8 +10439,8 @@
 	Consistent with the real definition, the complex Gamma function is analytic for \(t>0\) and \(\Re{z}>0\). By differentiating under the integral sign:
 	\begin{align*}
 		\Gamma '(z) = \dv{z} \int_{0}^{\infty} t^{z-1} e^{-t} dt  
-			= \int_{0}^{\infty} \dv{z} e^{(z-1) \operatorname{Log}(z)} e^{-t} dt
-			= \int_{0}^{\infty} t^{z-1} e^{-t} \operatorname{Log}(t) dt
+			= \int_{0}^{\infty} \dv{z} e^{(z-1) \Log(z)} e^{-t} dt
+			= \int_{0}^{\infty} t^{z-1} e^{-t} \Log(t) dt
 	\end{align*}
 	Hence, \(\Gamma(z)\) and its derivatives are continuous for \(\Re{z}>0\).
 	
@@ -10961,15 +10964,15 @@
 	\begin{example}
 		Consider 
 		\begin{align*}
-			w = \operatorname{Log}\left(\frac{z-1}{z+1}\right)
+			w = \Log\left(\frac{z-1}{z+1}\right)
 		\end{align*}
 		This is composed of the two transformations:
 		\begin{align*}
-			Z &= \frac{z-1}{z+1} & w = \operatorname{Log}(Z)
+			Z &= \frac{z-1}{z+1} & w = \Log(Z)
 		\end{align*}
 		The first mapping follows from the previous example. The second mapping:
 		\begin{align*}
-			\operatorname{Log}(Z) &= \ln(R) + i \Theta
+			\Log(Z) &= \ln(R) + i \Theta
 				& R>0, \ -\pi < \Theta < \pi
 		\end{align*}
 		So letting \(Z = X + iY\). The second mapping maps \(Y>0 \mapsto v \in [0,\pi]\) and \(X, Y \mapsto \ln(R)\), and \(Y<0 \mapsto v \in [-\pi, 0]\) and \(X, Y \mapsto \ln(R)\). (The upper and lower half plane is mapped to values between \(-\pi i\) and \(\pi i\), and real values to \(\ln \abs{z}\)).
@@ -11438,7 +11441,7 @@
 		By writing 
 		\begin{align*}
 			R &= \abs{z-z_0} &
-			\Theta &= \operatorname{Arg}(z - z_0) &
+			\Theta &= \Arg(z - z_0) &
 			\theta &= \arg(z-z_0)
 		\end{align*}
 		We have the two branches of \((z-z_0)^{1/2}\):
@@ -11451,8 +11454,8 @@
 		We can see that for \(w = G_0\), there is a 1-1 mapping:
 		\begin{align*}
 			\abs{z-z_0} &\mapsto \sqrt{\abs{z-z_0}}
-				& \left[-\pi < \operatorname{Arg}(z-z_0) < \pi \right] &\mapsto
-					\left[-\frac{\pi}{2} < \frac{\operatorname{Arg}(z-z_0)}{2} < \frac{\pi}{2}\right]
+				& \left[-\pi < \Arg(z-z_0) < \pi \right] &\mapsto
+					\left[-\frac{\pi}{2} < \frac{\Arg(z-z_0)}{2} < \frac{\pi}{2}\right]
 		\end{align*}
 		For \(w = g_0(z)\), the 1-1 mapping:
 		\begin{align*}
@@ -11562,7 +11565,7 @@
 		We need to show \(F\) is analytic on \(r_1>0\), \(\theta_1 =0\), since \(f(z) = F(z)\) everywhere except there. Consider:
 		\begin{align*}
 			G(z) &= \sqrt{r_1 r_2} \exp(\frac{i(\Theta_1 \Theta_2)}{2})	&
-				r_1 &= \abs{z-1}, \ r_2 = \abs{z+1}, \ \Theta_1 = \operatorname{Arg}(z-1), \Theta_2 = \operatorname{Arg}(z+1) \\
+				r_1 &= \abs{z-1}, \ r_2 = \abs{z+1}, \ \Theta_1 = \Arg(z-1), \Theta_2 = \Arg(z+1) \\
 			&&
 				r_k &> 0, \ \Theta_k \in (-\pi, \pi), \ k \in \{1,2\}
 		\end{align*}
@@ -13880,7 +13883,7 @@
 		\end{align*}
 		Now
 		\begin{align*}
-			\frac{1}{\pi} \operatorname{Log}(w)
+			\frac{1}{\pi} \Log(w)
 			&= \frac{1}{\pi} \ln(\rho) + i \frac{1}{\pi} \phi
 				& \rho > 0, \ \phi \in [0, \pi]
 		\end{align*}
@@ -13909,7 +13912,7 @@
 		\begin{align*}
 			U 
 			= -\frac{1}{\pi}\ln(\rho) 
-			= \Im{-\frac{i}{\pi}\operatorname{Log}(w)} 
+			= \Im{-\frac{i}{\pi}\Log(w)} 
 			= - \frac{1}{\pi} \ln\abs{\frac{1-z}{1+z}}
 		\end{align*}
 		The flux lines \(U(x,y) = c_2\) are then circles with centers on the \(x\) axis.
@@ -14806,16 +14809,16 @@
 		leaving \(x_1\) to be determined. The derivative of the transform:
 		\begin{align*}
 			\dv{w}{z} = A(z-x_1)^0 z^{-1} (z-1)^0 = \frac{A}{z}
-			\implies w = A \operatorname{Log}(z) + B
+			\implies w = A \Log(z) + B
 		\end{align*}
 		\(z = 1 \implies w = 0\), so \(B = 0\). \(w \in \mathbb{R}\) when \(z = x\) and \(x > 0\), so \(A \in \mathbb{R}\). For \(z = x_1\), \(w = \pi i\), so 
 		\begin{align*}
-			\pi i = A \operatorname{Log}(x_1) = A \ln \abs{x_1} + A \pi i 
+			\pi i = A \Log(x_1) = A \ln \abs{x_1} + A \pi i 
 			\implies [\abs{x_1} = 1] \land [A = 1]
 		\end{align*}
 		The transformation
 		\begin{align*}
-			w = \operatorname{Log}(z)
+			w = \Log(z)
 		\end{align*}
 		We then have \(x_1 = -1\).
 	\end{example}
@@ -14826,7 +14829,7 @@
 	
 	Consider a steady flow of liquid entering parallel plates \(v = 0\) and \(v = \pi\) at a narrow slit at te origin. The rate of flow through the origin is \(Q\), thus the flow out of either end is \(Q/2\). We know 
 	\begin{align*}
-		w = \operatorname{Log}(z)
+		w = \Log(z)
 	\end{align*}
 	is an injective mapping of the upper half plane \(y > 0\) onto the strip \(v \in (0,\pi)\). Then an inverse mapping exists and maps the strip into the upper half plane:
 	\begin{align*}
@@ -14855,20 +14858,20 @@
 	Because we have a sink at \(z = 0\) and a source at \(z = 1\), we must have \(\psi\) be constant along three parts of the \(x\) axis. \(\psi\) must decrease by \(Q/2\) across the sink \(z = 0\), and increase by \(Q\) across \(z = 1\). Hence the function:
 	\begin{align*}
 		\psi 
-		= \frac{Q}{\pi} \left[\operatorname{Arg}(z-1) - \frac{1}{2}\operatorname{Arg}(z)\right]
+		= \frac{Q}{\pi} \left[\Arg(z-1) - \frac{1}{2}\Arg(z)\right]
 	\end{align*}
 	which is harmonic in half plane \(\Im(z) > 0\) and \(\psi = \Im(F)\):
 	\begin{align*}
 		F(z)
-		= \frac{Q}{\pi} \left[\operatorname{Log}(z-1) - \frac{1}{2}\operatorname{Log}(z)\right]
-		= \frac{Q}{2} \operatorname{Log}(z^{1/2} - z^{-1/2})
+		= \frac{Q}{\pi} \left[\Log(z-1) - \frac{1}{2}\Log(z)\right]
+		= \frac{Q}{2} \Log(z^{1/2} - z^{-1/2})
 	\end{align*}
 	Hence
 	\begin{align*}
 		F(w)
-		= \frac{Q}{\pi} \operatorname{Log}(e^{w/2} - e^{-w/2})
-		= \frac{Q}{\pi} \operatorname{Log}\left[\sinh(\frac{w}{2})\right] + 
-		  \frac{Q}{\pi} \operatorname{Log}(2)
+		= \frac{Q}{\pi} \Log(e^{w/2} - e^{-w/2})
+		= \frac{Q}{\pi} \Log\left[\sinh(\frac{w}{2})\right] + 
+		  \frac{Q}{\pi} \Log(2)
 	\end{align*}
 	By dropping the constant term, we can write the velocity vector:
 	\begin{align*}
@@ -14885,7 +14888,7 @@
 
 	Streamlines:
 	\begin{align*}
-		\psi(u,v) = \frac{Q}{2}\operatorname{Arg}\left[\sinh(\frac{w}{2})\right] = c_2
+		\psi(u,v) = \frac{Q}{2}\Arg\left[\sinh(\frac{w}{2})\right] = c_2
 		&\implies \tan(\frac{v}{2}) = c \tanh(\frac{u}{2})
 		& c \in \mathbb{R}
 	\end{align*}
@@ -15018,7 +15021,7 @@
 	\end{align*}
 	The source of the flow is the channel infinitely far to the left corresponds to an equal source at \(z=0\), hence the potential flow in the upper half \(z\) plane with \(Q = \pi V_0\):
 	\begin{align*}
-		F = V_0 \operatorname{Log}(z) = V_0 \ln(r) + iV_0 \theta
+		F = V_0 \Log(z) = V_0 \ln(r) + iV_0 \theta
 	\end{align*}
 	Complex conjugate of the velocity in the \(w\) plane:
 	\begin{align*}
@@ -15058,17 +15061,17 @@
 	We have
 	\begin{align*}
 		\dv{w}{s} = 2h \left(\frac{1}{1-s^2} - \frac{1}{h^2 - s^2}\right)
-		\implies w = h \operatorname{Log}\left(\frac{1+s}{1-s}\right) - \operatorname{Log}\left(\frac{h+s}{h-s}\right)
+		\implies w = h \Log\left(\frac{1+s}{1-s}\right) - \Log\left(\frac{h+s}{h-s}\right)
 	\end{align*}
 	Constant of integration is zero because \(z = h^2 \implies s = 0 \implies w = 0\).
 	The potential unction is then 
 	\begin{align*}
-		F = V_0 \operatorname{Log}\left(\frac{h^2 - s^2}{1-s^2}\right)
+		F = V_0 \Log\left(\frac{h^2 - s^2}{1-s^2}\right)
 		\implies s^2 = \frac{e^{F/V_0} - h^2}{e^{F/V_0} - 1}
 	\end{align*}
 	We then have 
 	\begin{align*}
-		w &= h \operatorname{Log}\left(\frac{1+s}{1-s}\right) - \operatorname{Log}\left(\frac{h+s}{h-s}\right) &
+		w &= h \Log\left(\frac{1+s}{1-s}\right) - \Log\left(\frac{h+s}{h-s}\right) &
 		s^2 &= \frac{e^{F/V_0} - h^2}{e^{F/V_0} - 1}
 	\end{align*}
 
@@ -15169,9 +15172,31 @@
 	
 	\section{Electrostatic Potential About an Edge of Conducting Plate} \label{Electrostatic Potential About an Edge of Conducting Plate Section - Complex}
 	
+	Consider two parallel infinite plates with \(V=0\), and a parallel semi-infinite plate placed midway in between them at \(V=1\). The plates are chosen to lie in the planes \(v=0\), \(v = \pi\), and \(v = \pi/2\).
 	
-	
-	
+	We will consider a limiting case of a quadrilateral with points \(w_1\) and \(w_3\) moving infinitely to the right, while \(w_4\) moves infinitely to the left. We let \(x_1 = -1\), \(x_3 = 1\), and \(x_4\) be the point at infinity leaving \(x_2\) to be determined. The exterior angles of the quadrilateral 
+	\begin{align*}
+		k_1 \pi &= \pi &
+		k_2 \pi &= -\pi &
+		k_3 \pi &= k_4 \pi = \pi
+	\end{align*}
+	The derivative of the transform is then 
+	\begin{align*}
+		\dv{w}{z}
+		&= A (z + 1)^{-1} (z-x_2) (z-1)^{-1}
+		 = A \left(\frac{z-x_2}{z^2 - 1}\right)
+		 = \frac{A}{2} \left(\frac{1 + x_2}{z + 1} + \frac{1 - x_2}{z - 1}\right)
+	\end{align*}
+	Hence the transformation:
+	\begin{align*}
+		w = \frac{A}{2}[(1 + x_2) \Log(z+1) + (1-x_2) \Log(z-1)] + B
+	\end{align*}
+	Letting \(A = A_1 + i A_2\) and \(B = B_1 + i B_2\):
+	\begin{align*}
+		u + iv
+		=& \frac{A_1 + iA_2}{2}\{(1 + x_2)
+		[\ln\abs{x+1} + i \arg(x+1)] + (1-x_2)[\ln\abs{x-1} + i \arg(x-1)]\} \\ &+ B_1 + i B_2
+	\end{align*}
 	
 	
 	

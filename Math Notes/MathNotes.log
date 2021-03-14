@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.9)  12 MAR 2021 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.9)  13 MAR 2021 17:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1310,24 +1310,24 @@ s/tikzexternalshared.code.tex)))
  (./MathNotes.aux)
 \openout1 = `MathNotes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1399,16 +1399,16 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 140.
-Package gensymb Info: Math companion symbols declared on input line 140.
-LaTeX Info: Redefining \degree on input line 140.
-LaTeX Info: Redefining \celsius on input line 140.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 143.
+Package gensymb Info: Math companion symbols declared on input line 143.
+LaTeX Info: Redefining \degree on input line 143.
+LaTeX Info: Redefining \celsius on input line 143.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 140.
-LaTeX Info: Redefining \ohm on input line 140.
-Package gensymb Info: Using \textohm for \ohm on input line 140.
-Package gensymb Info: Using \textmu for \micro on input line 140.
-Package hyperref Info: Link coloring OFF on input line 140.
+erthousand on input line 143.
+LaTeX Info: Redefining \ohm on input line 143.
+Package gensymb Info: Using \textohm for \ohm on input line 143.
+Package gensymb Info: Using \textmu for \micro on input line 143.
+Package hyperref Info: Link coloring OFF on input line 143.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1422,9 +1422,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count366
 )
-LaTeX Info: Redefining \ref on input line 140.
-LaTeX Info: Redefining \pageref on input line 140.
-LaTeX Info: Redefining \nameref on input line 140.
+LaTeX Info: Redefining \ref on input line 143.
+LaTeX Info: Redefining \pageref on input line 143.
+LaTeX Info: Redefining \nameref on input line 143.
  (./MathNotes.out) (./MathNotes.out)
 \@outlinefile=\write5
 \openout5 = `MathNotes.out'.
@@ -1433,12 +1433,12 @@ LaTeX Info: Redefining \nameref on input line 140.
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.17} (current compat level: 1.8).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 161
+LaTeX Font Info:    Trying to load font information for U+msa on input line 164
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 161
+LaTeX Font Info:    Trying to load font information for U+msb on input line 164
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1449,28 +1449,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
-line 275.
+line 278.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 279.
+t line 282.
 Package hyperref Info: bookmark level for unknown conjecture defaults to 0 on i
-nput line 283.
+nput line 286.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 287.
+put line 290.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 291.
+line 294.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 295.
+input line 298.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 305.
+nput line 308.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 310.
+t line 313.
  [4]
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 313.
+ line 316.
 Package hyperref Info: bookmark level for unknown observation defaults to 0 on 
-input line 317.
+input line 320.
 Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
-ut line 321.
+ut line 324.
  [5]
 [6
 
@@ -1576,7 +1576,7 @@ hNotes-figure13.pdf>]
 Chapter 13.
 
 LaTeX Warning: Reference `Real-Valued Function Definition - Real Analysis' on p
-age 1 undefined on input line 1447.
+age 1 undefined on input line 1450.
 
 [45
 
@@ -1604,7 +1604,7 @@ hNotes-figure26.pdf>] [56]
 [67] [68 <./tikz/MathNotes-figure28.pdf>] [69] [70] [71] [72]
 ===== Image 'tikz/MathNotes-figure29' is up-to-date. ======
 [73 <./tikz/MathNotes-figure29.pdf>]
-Overfull \hbox (5.51305pt too wide) in paragraph at lines 3235--3236
+Overfull \hbox (5.51305pt too wide) in paragraph at lines 3238--3239
 []\OT1/cmr/bx/n/12 Example 13.6.2 \OT1/cmr/m/n/12 (De-ter-min-ing an-a-lyt-ic-i
 ty us-ing Cauchy-Rie-mann equa-tions) []\OT1/cmr/m/sl/12 Con-sider $\OML/cmm/m/
 it/12 f\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 z\OMX/MnSymbolE/m/n/12 ç \U/MnSy
@@ -1628,17 +1628,17 @@ Chapter 15.
 [97 <./tikz/MathNotes-figure32.pdf>]
 ===== Image 'tikz/MathNotes-figure33' is up-to-date. ======
 [98 <./tikz/MathNotes-figure33.pdf>] [99]
-Overfull \hbox (0.18661pt too wide) detected at line 4759
+Overfull \hbox (0.18661pt too wide) detected at line 4762
 []
  []
 
 [100] [101] [102]
-Underfull \hbox (badness 10000) in paragraph at lines 4887--4889
+Underfull \hbox (badness 10000) in paragraph at lines 4890--4892
 
  []
 
 [103]
-Underfull \hbox (badness 10000) in paragraph at lines 4928--4930
+Underfull \hbox (badness 10000) in paragraph at lines 4931--4933
 
  []
 
@@ -1647,7 +1647,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4928--4930
 [110 <./tikz/MathNotes-figure34.pdf>] [111]
 ===== Image 'tikz/MathNotes-figure35' is up-to-date. ======
 
-Overfull \hbox (5.87373pt too wide) detected at line 5382
+Overfull \hbox (5.87373pt too wide) detected at line 5385
 []
  []
 
@@ -1656,7 +1656,7 @@ Overfull \hbox (5.87373pt too wide) detected at line 5382
 [115 <./tikz/MathNotes-figure36.pdf>] [116] [117] [118] [119]
 ===== Image 'tikz/MathNotes-figure37' is up-to-date. ======
 [120 <./tikz/MathNotes-figure37.pdf>]
-Overfull \hbox (5.2982pt too wide) detected at line 5873
+Overfull \hbox (5.2982pt too wide) detected at line 5876
 []
  []
 
@@ -1688,7 +1688,7 @@ Chapter 17.
 ===== Image 'tikz/MathNotes-figure44' is up-to-date. ======
 [154 <./tikz/MathNotes-figure43.pdf>] [155 <./tikz/MathNotes-figure44.pdf>]
 [156] [157] [158] [159] [160] [161] [162] [163]
-Overfull \hbox (23.8825pt too wide) in paragraph at lines 8183--8183
+Overfull \hbox (23.8825pt too wide) in paragraph at lines 8186--8186
 |[]\OT1/cmr/bx/n/17.28 Behaviour of Func-tions Near Iso-lated Sin-gu-lar Points
 | 
  []
@@ -1708,14 +1708,14 @@ Overfull \hbox (23.8825pt too wide) in paragraph at lines 8183--8183
 [175 <./tikz/MathNotes-figure50.pdf>] [176]
 ===== Image 'tikz/MathNotes-figure51' is up-to-date. ======
 
-Overfull \hbox (7.90346pt too wide) detected at line 9124
+Overfull \hbox (7.90346pt too wide) detected at line 9127
 []
  []
 
 [177 <./tikz/MathNotes-figure51.pdf>]
 ===== Image 'tikz/MathNotes-figure52' is up-to-date. ======
 [178 <./tikz/MathNotes-figure52.pdf>]
-Overfull \hbox (7.25365pt too wide) detected at line 9255
+Overfull \hbox (7.25365pt too wide) detected at line 9258
 []
  []
 
@@ -1729,14 +1729,14 @@ Overfull \hbox (7.25365pt too wide) detected at line 9255
 [189 <./tikz/MathNotes-figure56.pdf>] [190] [191] [192] [193] [194] [195]
 
 LaTeX Warning: Reference `Uniform Convergence Definition - Real' on page 1 unde
-fined on input line 10343.
+fined on input line 10346.
 
 [196] [197] [198] [199] [200]
 Chapter 18.
 [201
 
 ] [202] [203] [204] [205] [206]
-Underfull \hbox (badness 10000) in paragraph at lines 10933--10934
+Underfull \hbox (badness 10000) in paragraph at lines 10936--10937
 
  []
 
@@ -1749,7 +1749,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10933--10934
 <Python/Mapping_by_Sine_V.pdf, id=3888, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_V.pdf>
-Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11183
+Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11186
 .
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [209 <./tikz/MathNotes-figure59.pdf> <./tikz/MathNotes-figure60.pdf> <./Python
@@ -1757,7 +1757,7 @@ Package pdftex.def Info: Python/Mapping_by_Sine_V.pdf  used on input line 11183
 <Python/Mapping_by_Sine_H.pdf, id=3946, 722.7pt x 289.08pt>
 File: Python/Mapping_by_Sine_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_Sine_H.pdf>
-Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11208
+Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11211
 .
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
 
@@ -1768,14 +1768,14 @@ Package pdftex.def Info: Python/Mapping_by_Sine_H.pdf  used on input line 11208
 File: Python/Mapping_by_z_Squared_V.pdf Graphic file (type pdf)
 <use Python/Mapping_by_z_Squared_V.pdf>
 Package pdftex.def Info: Python/Mapping_by_z_Squared_V.pdf  used on input line 
-11370.
+11373.
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [211 <./tikz/MathNotes-figure61.pdf> <./tikz/MathNotes-figure62.pdf>]
 <Python/Mapping_by_z_Squared_H.pdf, id=4015, 722.7pt x 289.08pt>
 File: Python/Mapping_by_z_Squared_H.pdf Graphic file (type pdf)
 <use Python/Mapping_by_z_Squared_H.pdf>
 Package pdftex.def Info: Python/Mapping_by_z_Squared_H.pdf  used on input line 
-11378.
+11381.
 (pdftex.def)             Requested size: 424.82523pt x 169.92935pt.
  [212 <./Python/Mapping_by_z_Squared_V.pdf> <./Python/Mapping_by_z_Squared_H.pd
 f
@@ -1784,7 +1784,7 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Python/Mapping_by_z_Square
 d_H.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 11412--11413
+Underfull \hbox (badness 10000) in paragraph at lines 11415--11416
 
  []
 
@@ -1815,22 +1815,22 @@ Chapter 19.
 ===== Image 'tikz/MathNotes-figure75' is up-to-date. ======
 [224 <./tikz/MathNotes-figure74.pdf> <./tikz/MathNotes-figure75.pdf>] [225]
 [226]
-Underfull \hbox (badness 10000) in paragraph at lines 12641--12642
+Underfull \hbox (badness 10000) in paragraph at lines 12644--12645
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12651--12652
+Underfull \hbox (badness 10000) in paragraph at lines 12654--12655
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12656--12658
+Underfull \hbox (badness 10000) in paragraph at lines 12659--12661
 
  []
 
 [227] [228] [229]
-Overfull \hbox (7.2143pt too wide) in paragraph at lines 12780--12782
+Overfull \hbox (7.2143pt too wide) in paragraph at lines 12783--12785
 \OML/cmm/m/it/12 h\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 u; v\OMX/MnSymbolE/m/
 n/12 ç$ \OT1/cmr/m/n/12 is har-monic in $\OML/cmm/m/it/12 D[]$ $ \U/MnSymbolA/m
 /n/12 ‘[]^^H $ $\OML/cmm/m/it/12 h\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 u; v\
@@ -1853,7 +1853,7 @@ t/12 g\OMX/MnSymbolE/m/n/12 à\OML/cmm/m/it/12 u; v\OMX/MnSymbolE/m/n/12 ç$ \OT1
 File: Python/Steady_Temperatuers_In_Half_Plane.pdf Graphic file (type pdf)
 <use Python/Steady_Temperatuers_In_Half_Plane.pdf>
 Package pdftex.def Info: Python/Steady_Temperatuers_In_Half_Plane.pdf  used on 
-input line 13438.
+input line 13441.
 (pdftex.def)             Requested size: 212.41261pt x 212.41168pt.
  [239 <./Python/Steady_Temperatuers_In_Half_Plane.pdf>]
 ===== Image 'tikz/MathNotes-figure81' is up-to-date. ======
@@ -1867,7 +1867,7 @@ input line 13438.
 File: Python/Temperaturues_in_Quadrant_Hyperbola.pdf Graphic file (type pdf)
 <use Python/Temperaturues_in_Quadrant_Hyperbola.pdf>
 Package pdftex.def Info: Python/Temperaturues_in_Quadrant_Hyperbola.pdf  used o
-n input line 13858.
+n input line 13861.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
 [242 <./tikz/MathNotes-figure84.pdf> <./tikz/MathNotes-figure85.pdf>] [243 <./P
 ython/Temperaturues_in_Quadrant_Hyperbola.pdf>]
@@ -1889,25 +1889,12 @@ Chapter 20.
 ===== Image 'tikz/MathNotes-figure92' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure93' is up-to-date. ======
 [259 <./tikz/MathNotes-figure92.pdf> <./tikz/MathNotes-figure93.pdf>] [260]
-\openout3 = `tikz/MathNotes-figure94.md5'.
-
-\openout3 = `MathNotes.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "tikz/MathNotes-figure94" "\def\tikzext
-ernalrealjob{MathNotes}\input{MathNotes}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "tikz/MathNotes-figure94" "\def\tikzexternalrealjob{MathNotes}\input{MathNotes
-}")...executed.
-
-\openout3 = `MathNotes.auxlock'.
-
+===== Image 'tikz/MathNotes-figure94' is up-to-date. ======
 ===== Image 'tikz/MathNotes-figure95' is up-to-date. ======
-[261 <./tikz/MathNotes-figure94.pdf> <./tikz/MathNotes-figure95.pdf>] [262
+[261 <./tikz/MathNotes-figure94.pdf> <./tikz/MathNotes-figure95.pdf>] [262]
+[263
 
-]
-[263] [264] [265
+] [264] [265
 
 ] [266
 
@@ -2004,10 +1991,10 @@ Package rerunfilecheck Info: File `MathNotes.out' has not changed.
 (rerunfilecheck)             Checksum: 703914333264108312EBE5ACB025BE75;32037.
  ) 
 Here is how much of TeX's memory you used:
- 45250 strings out of 479023
- 1010558 string characters out of 5859413
- 1426383 words of memory out of 5000000
- 60344 multiletter control sequences out of 15000+600000
+ 45254 strings out of 479023
+ 1010572 string characters out of 5859413
+ 1426411 words of memory out of 5000000
+ 60348 multiletter control sequences out of 15000+600000
  446447 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,19n,102p,859b,792s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2041,7 +2028,7 @@ pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MathNotes.pdf (337 pages, 2605560 bytes).
+Output written on MathNotes.pdf (337 pages, 2607386 bytes).
 PDF statistics:
  10469 PDF objects out of 10688 (max. 8388607)
  7214 compressed objects within 73 object streams
