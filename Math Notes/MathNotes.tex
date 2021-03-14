@@ -15195,17 +15195,226 @@
 	\begin{align*}
 		u + iv
 		=& \frac{A_1 + iA_2}{2}\{(1 + x_2)
-		[\ln\abs{x+1} + i \arg(x+1)] + (1-x_2)[\ln\abs{x-1} + i \arg(x-1)]\} \\ &+ B_1 + i B_2
+		[\ln\abs{x+1} + i \arg(x+1)] + (1-x_2)[\ln\abs{x-1} + i \arg(x-1)]\} \\
+		 &+ B_1 + i B_2
 	\end{align*}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	The line joining \(w_1\) and \(w_4\) corresponds to the \(x\) axis to the left of \(x_3 = -1\), and the line joining \(w_3\) and \(w_4\) corresponds to the \(x\) axis to the right of \(x_3 = 1\). When \(v=0\) and \(u \rightarrow \infty\), \(x\) approaches \(z=-1\) from the left, thus
+	\begin{align*}
+		\arg(x+1) &= \pi &
+		\arg(x-1) &= \pi &
+		\ln \abs{x+1} \rightarrow -\infty
+	\end{align*}
+	Since \(x_2 \in (-1, 1)\), for \(v = 1\) and \(u \rightarrow \infty\):
+	\begin{align*}
+		(1 + x_2)\ln\abs{x + 1} + (1-x_2) \ln \abs{x-1} \rightarrow -\infty
+	\end{align*}
+	\(v=0 \implies A_2 = 0\), otherwise the imaginary part of \(u + iv\) will be infinite. Equating the imaginary parts:
+	\begin{align*}
+		0 = \frac{A_1}{2} [(1+x_2)\pi + (1-x_2)\pi] + B_2
+		\implies[-\pi A_1 = B_2] \land [A_2 = 0]
+	\end{align*}
+	Limiting position of line joining \(w_1\) and \(w_2\) is the half line \(v = \pi/2\), \(u \geq 0\). Points on the half line are points \(z = x\) where \(x \in (-1, x_2]\), thus
+	\begin{align*}
+		\arg(x+1) &= 0 &
+		\arg(x-1) &= \pi
+	\end{align*}
+	Equating the imaginary parts of \(u + iv\):
+	\begin{align*}
+		\frac{\pi}{2}
+		&= \frac{A_1}{2} (1-x_2)\pi + B_2
+	\end{align*}
+	Limiting position of line joining \(w_3\) and \(w_4\) are points \(u + \pi i\), which is images of \(x > x_3 = 1\). By equating the imaginary parts in \(u + iv\):
+	\begin{align*}
+		\pi = B_2
+	\end{align*}
+	This allows us to find 
+	\begin{align*}
+		A_1 &= -1 &
+		x_2 &= 0
+	\end{align*}
+	The image of \(x_2 = 0\) is then \(w_2 = \pi i/2\). Substituting this into \(u + iv\) and equating the real parts:
+	\begin{align*}
+		B_1 = 0
+	\end{align*}
+	Thus the transformation becomes
+	\begin{align*}
+		w = -\frac{1}{2} [\Log(z+1) + \Log(z-1)] + \pi i
+		\implies z^2 = 1 + e^{-2w}
+	\end{align*}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-1.5, xmax=1.5,
+				ymin=-0.2, ymax=0.5,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				]
+				
+				\draw[line width=2,]
+				(axis cs: -2, 0) -- (axis cs: 2, 0);
+				
+				\draw[line width=2,]
+				(axis cs: -1, 0) -- (axis cs: 1, 0)
+				node[pos=0, below] {\(-1\)}
+				node[pos=1, below] {\(1\)};
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=|,
+				]
+				coordinates {
+					(-1, 0) 	[\(x_1\)]
+					(1, 0) 	[\(x_3\)]
+					(0.5, 0) 	[\(x_2\)]
+				};
+			\end{axis}
+		\end{tikzpicture}
+		{\Large \(\xrightarrow{\mathmakebox[1cm]{w}}\)}
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$u$},
+				ylabel={$v$},
+				xmin=-2, xmax=2,
+				ymin=-0.4, ymax=1.5,
+				axis lines = middle,
+				ticks = none,
+				grid=none,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(1.7, 0)
+					(0, 0.5)
+					(-1.7, 0.5)
+					(1.7, 1)
+				};
+				
+				\draw[line width=2]
+				(axis cs: -2, 1) -- (axis cs: 2, 1)
+				node[pos=0.5, above right] 	{\(\pi i\)}
+				node[pos=0.25, above]		{\(V=0\)};
+				
+				\draw[line width=2]
+				(axis cs: -2, 0) -- (axis cs: 2, 0)
+				node[pos=0.25, below]		{\(V=0\)};
+				
+				\draw[line width=2]
+				(axis cs: 0, 0.5) -- (axis cs: 2, 0.5)
+				node[pos=0.75, above]		{\(V=1\)};
+				
+				\draw[dashed]
+				(axis cs: 1.7, 0) -- (axis cs: 0, 0.5)
+				node[pos=0, below] {\(w_1\)}
+				node[pos=1, above right] {\(w_2\)}
+				node[pos=1, left]	{\(\frac{\pi}{2} i\)};
+				
+				\draw[dashed]
+				(axis cs: 0, 0.5) -- (axis cs: 1.7, 1)
+				node[pos=1, above] {\(w_3\)};
+				
+				\draw[dashed]
+				(axis cs: 1.7, 1) -- (axis cs: -1.7, 0.5) -- (axis cs: 1.7, 0)
+				node[pos=0, above] {\(w_4\)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+
+	\(V(u, v)\) is then a harmonic function of \(x\) and \(y\) under the transformation in the half plane \(y > 0\), which satisfies the boundary conditions. \(V\) is the imaginary component of the analytic function:
+	\begin{align*}
+		\frac{1}{\pi} \Log \left(\frac{z-1}{z+1}\right)
+		&= \frac{1}{\pi} \ln(\frac{r_1}{r_2}) + \frac{i}{\pi} (\theta_1 - \theta_2) &
+		\theta_1, \theta_2 \in [0, \pi]
+	\end{align*}
+	Writing the tangent of \(\theta_1\) and \(\theta_2\):
+	\begin{align*}
+		\tan(\pi V) = \tan(\theta_1 - \theta_2) = \frac{2y}{x^2 + y^2 - 1}
+	\end{align*}
+	Using \(z^2 = 1 + e^{-2w}\) obtained previously:
+	\begin{align*}
+		\tan(\pi V) &= \frac{1}{s} \sqrt{e^{-4u} - s^2} &
+		s &= -1 + \sqrt{1 + 2 e^{-2u} \cos(2v) + e^{-4u}}
+	\end{align*}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-3, xmax=3,
+				ymin=-0.5, ymax=2.5,
+				axis lines = middle,
+				ticks=none,
+				grid=none,
+				]
+				
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(1.5, 1.75) [\(z\)]
+					(1, 0) 
+					(-1, 0)
+					(0, 0)
+				};
+				
+				\draw[]
+				(axis cs: 1, 0)--(axis cs: 1.5, 1.75)
+				node[pos=0.5, right] {\(r_1\)};
+				
+				\draw[]
+				(axis cs: -1, 0)--(axis cs: 1.5, 1.75)
+				node[pos=0.5, above] {\(r_2\)};
+				
+				\draw[
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1.5, 0) arc (0:{atan(1.75/0.5)}:50)
+				node[pos=0.5, right] {\(\theta_1\)};
+				
+				\draw[
+				decoration={markings, mark=at position 1 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: -0.5, 0) arc (0:{atan(1.75/2.5)}:50)
+				node[pos=0.7, right] {\(\theta_2\)};
+				
+				\draw[line width=2]
+				(axis cs: -3, 0)--(axis cs: -1, 0)
+				node[pos=0.5, below] {\(V=0\)};
+				
+				\draw[line width=2]
+				(axis cs: -1, 0)--(axis cs: 1, 0)
+				node[pos=0, below] {\(-1\)}
+				node[pos=0, above] {\(x_1\)}
+				node[pos=0.5, below] {\(V=1\)}
+				node[pos=0.5, above right] {\(x_2\)}
+				node[pos=1, below] {\(1\)}
+				node[pos=1, above] {\(x_3\)};
+				
+				\draw[line width=2]
+				(axis cs: 1, 0)--(axis cs: 3, 0)
+				node[pos=0.5, below] {\(V=0\)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 	
 	
 	
