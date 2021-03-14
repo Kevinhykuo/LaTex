@@ -115,76 +115,78 @@
 \contentsline {subsection}{\numberline {17.7.6}Indefinite Integrals Involving Sines and Cosines}{180}{subsection.17.7.6}%
 \contentsline {subsection}{\numberline {17.7.7}Argument Principle}{181}{subsection.17.7.7}%
 \contentsline {subsection}{\numberline {17.7.8}Rouché's Theorem}{184}{subsection.17.7.8}%
-\contentsline {subsection}{\numberline {17.7.9}Inverse Laplace Transforms}{189}{subsection.17.7.9}%
-\contentsline {subsection}{\numberline {17.7.10}Hilbert Transform}{192}{subsection.17.7.10}%
-\contentsline {subsubsection}{Causality}{195}{corollary.17.7.9.1}%
-\contentsline {subsection}{\numberline {17.7.11}Gamma Function}{196}{subsection.17.7.11}%
-\contentsline {chapter}{\numberline {18}Mapping by Elementary Functions}{201}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Linear Transformations}{201}{section.18.1}%
-\contentsline {section}{\numberline {18.2}Transformation \(w = 1/z\)}{201}{section.18.2}%
-\contentsline {subsection}{\numberline {18.2.1}Mapping by \(1/z\)}{202}{subsection.18.2.1}%
-\contentsline {section}{\numberline {18.3}Linear Fractional Transformations}{202}{section.18.3}%
-\contentsline {subsection}{\numberline {18.3.1}Implicit Form}{204}{subsection.18.3.1}%
-\contentsline {section}{\numberline {18.4}Mappings of the Upper Half Plane}{206}{section.18.4}%
-\contentsline {section}{\numberline {18.5}Mappings by the Exponential Function}{208}{section.18.5}%
-\contentsline {section}{\numberline {18.6}Mapping by \(w = \sin (z)\)}{209}{section.18.6}%
-\contentsline {subsection}{\numberline {18.6.1}Related Mappings}{211}{subsection.18.6.1}%
-\contentsline {section}{\numberline {18.7}Mappings by \(z^2\)}{211}{section.18.7}%
-\contentsline {section}{\numberline {18.8}Mappings by Branches of \(z^{1/n}\)}{212}{section.18.8}%
-\contentsline {section}{\numberline {18.9}Square Roots of Polynomials}{213}{section.18.9}%
-\contentsline {section}{\numberline {18.10}Riemann Surface}{216}{section.18.10}%
-\contentsline {subsection}{\numberline {18.10.1}Surfaces for Related Functions}{218}{subsection.18.10.1}%
-\contentsline {chapter}{\numberline {19}Conformal Mapping}{221}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Preserving Angles and Scale Factors}{221}{section.19.1}%
-\contentsline {section}{\numberline {19.2}Local Inverses}{225}{section.19.2}%
-\contentsline {section}{\numberline {19.3}Harmonic Conjugates}{227}{section.19.3}%
-\contentsline {subsection}{\numberline {19.3.1}Transformation of Harmonic Functions}{230}{subsection.19.3.1}%
-\contentsline {subsection}{\numberline {19.3.2}Transformation of Boundary Conditions}{231}{subsection.19.3.2}%
-\contentsline {section}{\numberline {19.4}Applications of Conformal Mapping}{236}{section.19.4}%
-\contentsline {subsection}{\numberline {19.4.1}Time Independent Temperatures}{236}{subsection.19.4.1}%
-\contentsline {subsection}{\numberline {19.4.2}Steady Temperatures in a Half Plane}{237}{subsection.19.4.2}%
-\contentsline {subsubsection}{Related Problem}{239}{figure.caption.65}%
-\contentsline {subsection}{\numberline {19.4.3}Temperatures in a Quadrant}{241}{subsection.19.4.3}%
-\contentsline {subsection}{\numberline {19.4.4}Electrostatic Potential}{243}{subsection.19.4.4}%
-\contentsline {subsection}{\numberline {19.4.5}2D Fluid Flow}{245}{subsection.19.4.5}%
-\contentsline {subsection}{\numberline {19.4.6}Stream Function}{246}{subsection.19.4.6}%
-\contentsline {subsection}{\numberline {19.4.7}Flow Around Corner and Cylinder}{248}{subsection.19.4.7}%
-\contentsline {chapter}{\numberline {20}Schwarz-Christoffel Transformtion}{251}{chapter.20}%
-\contentsline {section}{\numberline {20.1}Mapping the Real Axis onto a Polygon}{251}{section.20.1}%
-\contentsline {section}{\numberline {20.2}Schwarz-Christoffel Transformation}{252}{section.20.2}%
-\contentsline {section}{\numberline {20.3}Triangles and Rectangles}{254}{section.20.3}%
-\contentsline {section}{\numberline {20.4}Degenerate Polygons}{257}{section.20.4}%
-\contentsline {section}{\numberline {20.5}Fluid Flow in a Channel Through a Slit}{258}{section.20.5}%
-\contentsline {section}{\numberline {20.6}Flow in a Channel with an Offset}{260}{section.20.6}%
-\contentsline {section}{\numberline {20.7}Electrostatic Potential About an Edge of Conducting Plate}{261}{section.20.7}%
-\contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{265}{part.5}%
-\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{267}{part.6}%
-\contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{269}{part.7}%
-\contentsline {paragraph}{Calculus of Variations [Empty]}{270}{theorem.20.7.2}%
-\contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{271}{part.8}%
-\contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{273}{part.9}%
-\contentsline {chapter}{\numberline {21}Markov Chains}{275}{chapter.21}%
-\contentsline {part}{X\hspace {1em}Tensors [Empty]}{277}{part.10}%
-\contentsline {part}{XI\hspace {1em}Riemann Geometry [Empty]}{279}{part.11}%
-\contentsline {part}{XII\hspace {1em}Abstract Algebra [Empty]}{281}{part.12}%
-\contentsline {chapter}{\numberline {22}Groups}{283}{chapter.22}%
-\contentsline {chapter}{\numberline {23}Rings}{285}{chapter.23}%
-\contentsline {section}{\numberline {23.1}Ideals}{285}{section.23.1}%
-\contentsline {chapter}{\numberline {24}Integral Domains}{287}{chapter.24}%
-\contentsline {chapter}{\numberline {25}GCD Domains}{289}{chapter.25}%
-\contentsline {chapter}{\numberline {26}Unique Factorization Domains}{291}{chapter.26}%
-\contentsline {chapter}{\numberline {27}Principal Ideal Domains}{293}{chapter.27}%
-\contentsline {chapter}{\numberline {28}Fields}{295}{chapter.28}%
-\contentsline {part}{XIII\hspace {1em}Galois Theory [Empty]}{297}{part.13}%
-\contentsline {part}{XIV\hspace {1em}Lie Theory [Empty]}{299}{part.14}%
-\contentsline {chapter}{\numberline {29}Lie Groups}{301}{chapter.29}%
-\contentsline {chapter}{\numberline {30}Lie Algebra}{303}{chapter.30}%
-\contentsline {part}{XV\hspace {1em}C-Star Algebra [Empty]}{305}{part.15}%
-\contentsline {part}{XVI\hspace {1em}Set Theory [Empty]}{307}{part.16}%
-\contentsline {part}{XVII\hspace {1em}Model Theory [Empty]}{309}{part.17}%
-\contentsline {part}{XVIII\hspace {1em}Statistics [Empty]}{311}{part.18}%
-\contentsline {part}{XIX\hspace {1em}Tips and Tricks [Empty]}{313}{part.19}%
-\contentsline {chapter}{\numberline {31}Integration Techniques}{315}{chapter.31}%
-\contentsline {section}{\numberline {31.1}DI Method (Integration Table)}{315}{section.31.1}%
-\contentsline {section}{\numberline {31.2}Feynman Integration}{315}{section.31.2}%
-\contentsline {part}{XX\hspace {1em}Index and Bibliography}{317}{part.20}%
+\contentsline {subsection}{\numberline {17.7.9}Hilbert Transform}{189}{subsection.17.7.9}%
+\contentsline {subsubsection}{Causality}{192}{corollary.17.7.9.1}%
+\contentsline {subsection}{\numberline {17.7.10}Gamma Function}{193}{subsection.17.7.10}%
+\contentsline {section}{\numberline {17.8}Laplace Transforms}{198}{section.17.8}%
+\contentsline {subsection}{\numberline {17.8.1}Inverse Laplace Transforms}{198}{subsection.17.8.1}%
+\contentsline {chapter}{\numberline {18}Mapping by Elementary Functions}{203}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Linear Transformations}{203}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Transformation \(w = 1/z\)}{203}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}Mapping by \(1/z\)}{204}{subsection.18.2.1}%
+\contentsline {section}{\numberline {18.3}Linear Fractional Transformations}{204}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Implicit Form}{206}{subsection.18.3.1}%
+\contentsline {section}{\numberline {18.4}Mappings of the Upper Half Plane}{208}{section.18.4}%
+\contentsline {section}{\numberline {18.5}Mappings by the Exponential Function}{210}{section.18.5}%
+\contentsline {section}{\numberline {18.6}Mapping by \(w = \sin (z)\)}{211}{section.18.6}%
+\contentsline {subsection}{\numberline {18.6.1}Related Mappings}{213}{subsection.18.6.1}%
+\contentsline {section}{\numberline {18.7}Mappings by \(z^2\)}{213}{section.18.7}%
+\contentsline {section}{\numberline {18.8}Mappings by Branches of \(z^{1/n}\)}{214}{section.18.8}%
+\contentsline {section}{\numberline {18.9}Square Roots of Polynomials}{215}{section.18.9}%
+\contentsline {section}{\numberline {18.10}Riemann Surface}{218}{section.18.10}%
+\contentsline {subsection}{\numberline {18.10.1}Surfaces for Related Functions}{220}{subsection.18.10.1}%
+\contentsline {chapter}{\numberline {19}Conformal Mapping}{223}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Preserving Angles and Scale Factors}{223}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Local Inverses}{227}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Harmonic Conjugates}{230}{section.19.3}%
+\contentsline {subsection}{\numberline {19.3.1}Transformation of Harmonic Functions}{232}{subsection.19.3.1}%
+\contentsline {subsection}{\numberline {19.3.2}Transformation of Boundary Conditions}{233}{subsection.19.3.2}%
+\contentsline {section}{\numberline {19.4}Applications of Conformal Mapping}{238}{section.19.4}%
+\contentsline {subsection}{\numberline {19.4.1}Time Independent Temperatures}{238}{subsection.19.4.1}%
+\contentsline {subsection}{\numberline {19.4.2}Steady Temperatures in a Half Plane}{239}{subsection.19.4.2}%
+\contentsline {subsubsection}{Related Problem}{241}{figure.caption.65}%
+\contentsline {subsection}{\numberline {19.4.3}Temperatures in a Quadrant}{243}{subsection.19.4.3}%
+\contentsline {subsection}{\numberline {19.4.4}Electrostatic Potential}{245}{subsection.19.4.4}%
+\contentsline {subsection}{\numberline {19.4.5}2D Fluid Flow}{247}{subsection.19.4.5}%
+\contentsline {subsection}{\numberline {19.4.6}Stream Function}{249}{subsection.19.4.6}%
+\contentsline {subsection}{\numberline {19.4.7}Flow Around Corner and Cylinder}{250}{subsection.19.4.7}%
+\contentsline {chapter}{\numberline {20}Schwarz-Christoffel Transformtion}{253}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Mapping the Real Axis onto a Polygon}{253}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Schwarz-Christoffel Transformation}{254}{section.20.2}%
+\contentsline {section}{\numberline {20.3}Triangles and Rectangles}{256}{section.20.3}%
+\contentsline {section}{\numberline {20.4}Degenerate Polygons}{259}{section.20.4}%
+\contentsline {section}{\numberline {20.5}Fluid Flow in a Channel Through a Slit}{260}{section.20.5}%
+\contentsline {section}{\numberline {20.6}Flow in a Channel with an Offset}{262}{section.20.6}%
+\contentsline {section}{\numberline {20.7}Electrostatic Potential About an Edge of Conducting Plate}{263}{section.20.7}%
+\contentsline {chapter}{\numberline {21}Infinite Series and Products}{267}{chapter.21}%
+\contentsline {part}{V\hspace {1em}Ordinary Differential Equations [Empty]}{269}{part.5}%
+\contentsline {part}{VI\hspace {1em}Nonlinear Dynamics [Empty]}{271}{part.6}%
+\contentsline {part}{VII\hspace {1em}Partial Differential Equations [Empty]}{273}{part.7}%
+\contentsline {paragraph}{Calculus of Variations [Empty]}{274}{theorem.21.0.2}%
+\contentsline {part}{VIII\hspace {1em}Integral Equations [Empty]}{275}{part.8}%
+\contentsline {part}{IX\hspace {1em}Linear Algebra [Empty]}{277}{part.9}%
+\contentsline {chapter}{\numberline {22}Markov Chains}{279}{chapter.22}%
+\contentsline {part}{X\hspace {1em}Tensors [Empty]}{281}{part.10}%
+\contentsline {part}{XI\hspace {1em}Riemann Geometry [Empty]}{283}{part.11}%
+\contentsline {part}{XII\hspace {1em}Abstract Algebra [Empty]}{285}{part.12}%
+\contentsline {chapter}{\numberline {23}Groups}{287}{chapter.23}%
+\contentsline {chapter}{\numberline {24}Rings}{289}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Ideals}{289}{section.24.1}%
+\contentsline {chapter}{\numberline {25}Integral Domains}{291}{chapter.25}%
+\contentsline {chapter}{\numberline {26}GCD Domains}{293}{chapter.26}%
+\contentsline {chapter}{\numberline {27}Unique Factorization Domains}{295}{chapter.27}%
+\contentsline {chapter}{\numberline {28}Principal Ideal Domains}{297}{chapter.28}%
+\contentsline {chapter}{\numberline {29}Fields}{299}{chapter.29}%
+\contentsline {part}{XIII\hspace {1em}Galois Theory [Empty]}{301}{part.13}%
+\contentsline {part}{XIV\hspace {1em}Lie Theory [Empty]}{303}{part.14}%
+\contentsline {chapter}{\numberline {30}Lie Groups}{305}{chapter.30}%
+\contentsline {chapter}{\numberline {31}Lie Algebra}{307}{chapter.31}%
+\contentsline {part}{XV\hspace {1em}C-Star Algebra [Empty]}{309}{part.15}%
+\contentsline {part}{XVI\hspace {1em}Set Theory [Empty]}{311}{part.16}%
+\contentsline {part}{XVII\hspace {1em}Model Theory [Empty]}{313}{part.17}%
+\contentsline {part}{XVIII\hspace {1em}Statistics [Empty]}{315}{part.18}%
+\contentsline {part}{XIX\hspace {1em}Tips and Tricks [Empty]}{317}{part.19}%
+\contentsline {chapter}{\numberline {32}Integration Techniques}{319}{chapter.32}%
+\contentsline {section}{\numberline {32.1}DI Method (Integration Table)}{319}{section.32.1}%
+\contentsline {section}{\numberline {32.2}Feynman Integration}{319}{section.32.2}%
+\contentsline {part}{XX\hspace {1em}Index and Bibliography}{321}{part.20}%

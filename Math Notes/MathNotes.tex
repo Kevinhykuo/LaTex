@@ -9883,201 +9883,7 @@
 		\end{proof}
 	\end{example}
 
-	\subsection{Inverse Laplace Transforms} \label{Inverse Laplace Transforms Subsection - Complex}
 	
-	\begin{definition}[Bromwich Integral]
-		\index{Bromwich Integral}
-		\label{Bromwich Integral Definition - Complex}
-		Let \(F(s)\) be a complex function, and \(L_R\) be a vertical line segment from \(s = \gamma - iR\) to \(s = \gamma + iR\) large enough that singularities of \(F\) lie to the left of \(L_R\). Consider 
-		\begin{align*}
-			f(t) &= \frac{1}{2\pi i} \lim_{R \rightarrow \infty} \int_{L_R} e^{st} F(s) ds 
-			& t>0
-		\end{align*}
-		If the limit exists, then the Bromwich Integral:
-		\begin{align*}
-			f(t) &= \frac{1}{2\pi i} \operatorname{P.V.} \int_{\gamma - i\infty}^{\gamma + i\infty} e^{st} F(s) ds 
-				& t>0
-		\end{align*}
-		The Bromwich integral is the inverse Laplace transform.
-	\end{definition}
-	
-	\begin{definition}[Laplace Transform]
-		\index{Laplace Transform}
-		\label{Laplace Transform Definition - Complex}
-		\begin{align*}
-			F(s) = \int_{0}^{\infty} e^{st} f(s) dt
-		\end{align*}
-	\end{definition}
-	
-	\begin{figure}[H]
-		\centering
-		\begin{tikzpicture}
-			\begin{axis}[
-				unit vector ratio=1 1 1,
-				xlabel={$\Re$},
-				ylabel={$\Im$},
-				xmin=-3, xmax=3,
-				ymin=-3, ymax=3,
-				ticks=none,
-				axis lines = middle,
-				axis line style = Black,
-				]
-				\addplot[
-				only marks,
-				nodes near coords,
-				point meta = explicit symbolic, 
-				mark=*,
-				]
-				coordinates {
-					(1, 0) [\(\gamma\)]
-					(1, 2) [\(\gamma + i R\)]
-					(1,-2) [\(\gamma - i R\)]
-					(-0.3, 0.5) [\(s_N\)]
-				};
-				
-				
-				\draw[line width=1pt, 
-				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
-				postaction={decorate}]
-				(axis cs: 1, 2) arc (90:270:200)
-				node[pos=0.75, left] {\(C_R\)};
-				
-				\draw[ line width=1pt,
-				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
-				postaction={decorate}]
-				(axis cs: 1, -2) -- (axis cs: 1, 2)
-				node[pos=0.75, right] {\(L_R\)};
-			\end{axis}
-		\end{tikzpicture}
-	\end{figure}
-	
-	\textbf{Deriving the Inverse Laplace Transform.}
-	
-		\index{Laplace Transform! Inverse! Derivation}
-
-		Let \(F(s)\) and \(L_R\) be defined as above, and \(C_R\) be a semicircular contour from \(\gamma + iR\) to \(\gamma - iR\) enveloping the zeros of \(F(s)\) (\(s_k\), \(k = 1, 2, \ldots, n\)). By Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
-		\begin{align*}
-			\int_{L_R} e^{st} F(s) ds &= 2\pi i \sum_{n=1}^{N} \Res[e^{st} F(s), s_n] - \int_{C_R} e^{st} F(s) ds
-		\end{align*}
-		Assuming
-		\begin{align*}
-			\lim_{R \rightarrow \infty} \int_{C_R} e^{st} F(s) ds = 0
-		\end{align*}
-		Then
-		\begin{align*}
-			f(t) 
-			&= \frac{1}{2\pi i} \lim_{R \rightarrow \infty} \int_{L_R} e^{st} F(s) ds  
-			= \sum_{n=1}^{N} \Res[e^{st} F(s), s_n]
-				& t>0
-		\end{align*}
-	
-	\begin{example}
-		Let 
-		\begin{align*}
-			F(s) = \frac{s}{s^2 + 4} = \frac{s}{(s+2i)(s-2i)}
-		\end{align*}
-		Then
-		\begin{align*}
-			f(t) 
-			= \sum_{n=1}^{N} \Res[e^{st} F(s), s_n]
-			= \Res[\frac{e^{st} s}{(s+2i)(s-2i)}, 2i] + \Res[\frac{e^{st} s}{(s+2i)(s-2i)}, -2i]
-		\end{align*}
-		The singularities are simple poles, so by \cref{Residue at Poles Theorem - Complex}:
-		\begin{align*}
-			f(t) 
-			&= \Res[\frac{\phi_1 (s)}{s-2i}, 2i] + \Res[\frac{\phi_2 (s)}{s+2i}, -2i] &
-				\phi_1 (s) &= \frac{e^{st} s}{s + 2i} &
-				\phi_1 (s) &= \frac{e^{st} s}{s - 2i} \\
-			&= \phi_1(2i) + \phi(-2i) = \frac{e^{2it} (2i)}{4i} + \frac{e^{-2it} (-2i)}{-4i} \\
-			&= \frac{e^{i2t} + e^{-i2t}}{2} = \cos(2t)
-		\end{align*}
-	\end{example}
-
-	\begin{example}
-		Find the inverse Laplace transform of
-		\begin{align*}
-			F(s) = \frac{1}{s^2} - \frac{1}{s \sinh(s)}
-		\end{align*}
-		\begin{proof}
-			{\color{Grey}
-			The isolated singularities of \(F(s)\):
-			\begin{align*}
-				s_0 &= 0 & s_n &= n\pi i & \overline{s_n} &= -n\pi i & n \in \mathbb{N}
-			\end{align*}
-			Obtaining the series expansion:
-			\begin{align*}
-				\sinh(z) = \frac{e^z - e^{-z}}{2} = \frac{1}{2}\left[\sum_{n=0}^{N} \frac{z^n}{n!} - \frac{(-z^n)}{n!}\right] = \frac{1}{2}\left[\sum_{n=0}^{N} \frac{z^n}{n!}[1-(-1)^n])\right] = \sum_{n=0}^{N} \frac{z^{2n+1}}{(2n+1)!}
-			\end{align*}
-			Then 
-			\begin{align*}
-				\frac{1}{z\sinh(z)} 
-				&= \frac{1}{z} \left[ \sum_{n=0}^{N} \frac{z^{2n+1}}{(2n+1)!} \right]^{-1}
-				 = \frac{1}{z} \left(\frac{1}{z} - \frac{z}{3!} - \frac{z^4}{5! - 3!3!} - \cdots \right)
-				 = \frac{1}{z^2} - \frac{1}{3!} - \cdots 
-			\end{align*}
-			Hence
-			\begin{align*}
-				F(s) = \frac{1}{s^2} - \frac{1}{s \sinh(s)} = \frac{1}{3!} - \frac{z^3}{5! - 3!3!} - \cdots
-			\end{align*}
-			Thus, we can see that \(F(s)\) has a removable singularity at \(s_0 = 0\) with \(\Res[F(s), 0] = 0\).
-			
-			Now, let \(p(s) = e^{st}\) and \(q(s) = [F(s)]^{-1}\), then
-			\begin{align*}
-				q'(s) 
-				&= \dv{s} [F(s)]^{-1} = \dv{s} \frac{s^2 \sinh(s)}{\sinh(s) - s} \\
-				&= \frac{2s\sinh(s) + s^2 \cosh(s)}{\sinh(s) - s}
-					- \frac{[s^2 \sinh(s)][\cosh(s) - 1]}{[\sinh(s) - s]^{2}} \\
-%				&= [2s\sinh[2](s) - 2s^2 \sinh(s) + s^2 \cosh(s) \sinh(s) - s^3 \cosh(s)][\sinh(s) - s]^{-2} - [s^2 \sinh(s)$\cosh(s) - s^2 \sinh(s)][\sinh(s) - s]^{-2}\\
-				&= \frac{2s\sinh[2](s) - s^2 \sinh(s) - s^3 \cosh(s)}{[\sinh(s) - s]^{2}}
-			\end{align*}
-			Therefore
-			\begin{align*}
-				\frac{1}{q'(n\pi i)}
-				&= \frac{[\sinh(s) - s]^{2}}{2s\sinh[2](s) - s^2 \sinh(s) - s^3 \cosh(s)} \\
-				&= \frac{[\sinh(n\pi i) - n\pi i]^{2}}{2(n\pi i)\sinh[2](n\pi i) - (n\pi i)^2 \sinh(n\pi i) - (n\pi i)^3 \cosh(n\pi i)} \\
-				&= \frac{(n\pi i)^2}{-(n\pi i)^3 \cosh(n\pi i)} 
-				 = \frac{-1}{(n\pi i)(-1)^n} = \frac{(-1)^{n} i}{n\pi} \\
-				\frac{1}{q'(- n\pi i)} 
-				&= - \frac{(-1)^{n} i}{n\pi}
-			\end{align*}
-			Since
-			\begin{align*}
-				\sinh(n\pi i) &= \sin(n\pi) = 0 	&
-				\cosh(n\pi i) &= \cos(n\pi) = (-1)^n
-			\end{align*}
-			Also
-			\begin{align*}
-				p(n\pi i)  &= e^{n\pi i} \neq 0 &
-				q(n\pi i) 
-				&= \frac{(n\pi i)^2 \sinh(n\pi i)}{\sinh(n\pi i) - n\pi i} = 0 \\
-				p(-n\pi i) &= e^{-n\pi i} \neq 0 &
-				q(-n\pi i) 
-				&= \frac{(-n\pi i)^2 \sinh(-n\pi i)}{\sinh(-n\pi i) + n\pi i} = 0 
-			\end{align*}
-			Thus, we can see that \(e^{st} F(s)\) has a simple pole at \(s_n = n\pi i\) and \(\overline{s_n} = -n\pi i\) (\(n\in \mathbb{N}\)), so by \cref{Residue of Simple Pole Theorem - Complex}: 
-			\begin{align*}
-				\Res[e^{st}F(s), n\pi i] 
-				&= \Res[\frac{p(s)}{q(s)}, n\pi i] 
-				 = \frac{p(n\pi i)}{q'(n\pi i)} 
-				 = e^{n\pi i t} \frac{(-1)^{n} i}{n\pi}  \\
-				\Res[e^{st}F(s), n\pi i] 
-				&= \Res[\frac{p(s)}{q(s)}, -n\pi i] 
-				 = \frac{p(-n\pi i)}{q'(-n\pi i)} 
-				 = - e^{-n\pi i t} \frac{(-1)^{n} i}{n\pi}
-			\end{align*}
-			The inverse Laplace transform of \(F(s)\) is then
-			\begin{align*}
-				f(t) 
-				&= \sum_{n=1}^{\infty} \Res[e^{st} F(s), s_n]
-						& t>0 \\
-				&= \sum_{n=1}^{\infty} \left(\Res[e^{st}F(s), n\pi i] + \Res[e^{st}F(s), -n\pi i] \right) \\
-				&= \sum_{n=1}^{\infty} \left(e^{n\pi i t} \frac{(-1)^{n} i}{n\pi} - e^{-n\pi i t} \frac{(-1)^{n} i}{n\pi}\right) 
-				 = \sum_{n=1}^{\infty} \frac{(-1)^{n} i}{n\pi} (2i) \sin(n\pi t) \\
-				&= \frac{2}{\pi} \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} \sin(n\pi t)
-			\end{align*}
-			}
-		\end{proof}
-	\end{example}
 
 	\subsection{Hilbert Transform} \label{Hilbert Transform Subsection - Complex}
 	
@@ -10598,6 +10404,206 @@
 		\Gamma(z) = \frac{\Gamma(z+1)}{z}
 	\end{align*}
 	We can quickly compute \(\Gamma(z)\) for \(z \in \{\pm 1/2, \pm 3/2, \pm 5/2, \ldots\}\)
+	
+	\section{Laplace Transforms} \label{Laplace Transforms Section - Complex}
+	
+	{\color{Red}\textbf{Note to Self:} Need to incorporate material from Wunsch - Complex Variables with Applications (3 ed) chapter 7 \cite{Wunsh.A-Complex-Variables-2005}}
+	
+	\subsection{Inverse Laplace Transforms} \label{Inverse Laplace Transforms Subsection - Complex}
+	
+	\begin{definition}[Bromwich Integral]
+		\index{Bromwich Integral}
+		\label{Bromwich Integral Definition - Complex}
+		Let \(F(s)\) be a complex function, and \(L_R\) be a vertical line segment from \(s = \gamma - iR\) to \(s = \gamma + iR\) large enough that singularities of \(F\) lie to the left of \(L_R\). Consider 
+		\begin{align*}
+			f(t) &= \frac{1}{2\pi i} \lim_{R \rightarrow \infty} \int_{L_R} e^{st} F(s) ds 
+			& t>0
+		\end{align*}
+		If the limit exists, then the Bromwich Integral:
+		\begin{align*}
+			f(t) &= \frac{1}{2\pi i} \operatorname{P.V.} \int_{\gamma - i\infty}^{\gamma + i\infty} e^{st} F(s) ds 
+			& t>0
+		\end{align*}
+		The Bromwich integral is the inverse Laplace transform.
+	\end{definition}
+	
+	\begin{definition}[Laplace Transform]
+		\index{Laplace Transform}
+		\label{Laplace Transform Definition - Complex}
+		\begin{align*}
+			F(s) = \int_{0}^{\infty} e^{st} f(s) dt
+		\end{align*}
+	\end{definition}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				unit vector ratio=1 1 1,
+				xlabel={$\Re$},
+				ylabel={$\Im$},
+				xmin=-3, xmax=3,
+				ymin=-3, ymax=3,
+				ticks=none,
+				axis lines = middle,
+				axis line style = Black,
+				]
+				\addplot[
+				only marks,
+				nodes near coords,
+				point meta = explicit symbolic, 
+				mark=*,
+				]
+				coordinates {
+					(1, 0) [\(\gamma\)]
+					(1, 2) [\(\gamma + i R\)]
+					(1,-2) [\(\gamma - i R\)]
+					(-0.3, 0.5) [\(s_N\)]
+				};
+				
+				
+				\draw[line width=1pt, 
+				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, 2) arc (90:270:200)
+				node[pos=0.75, left] {\(C_R\)};
+				
+				\draw[ line width=1pt,
+				decoration={markings, mark=at position 0.75 with {\arrow{>}} },
+				postaction={decorate}]
+				(axis cs: 1, -2) -- (axis cs: 1, 2)
+				node[pos=0.75, right] {\(L_R\)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	\textbf{Deriving the Inverse Laplace Transform.}
+	
+	\index{Laplace Transform! Inverse! Derivation}
+	
+	Let \(F(s)\) and \(L_R\) be defined as above, and \(C_R\) be a semicircular contour from \(\gamma + iR\) to \(\gamma - iR\) enveloping the zeros of \(F(s)\) (\(s_k\), \(k = 1, 2, \ldots, n\)). By Cauchy's Residue Theorem (\cref{Cauchy's Residue Theorem - Complex}):
+	\begin{align*}
+		\int_{L_R} e^{st} F(s) ds &= 2\pi i \sum_{n=1}^{N} \Res[e^{st} F(s), s_n] - \int_{C_R} e^{st} F(s) ds
+	\end{align*}
+	Assuming
+	\begin{align*}
+		\lim_{R \rightarrow \infty} \int_{C_R} e^{st} F(s) ds = 0
+	\end{align*}
+	Then
+	\begin{align*}
+		f(t) 
+		&= \frac{1}{2\pi i} \lim_{R \rightarrow \infty} \int_{L_R} e^{st} F(s) ds  
+		= \sum_{n=1}^{N} \Res[e^{st} F(s), s_n]
+		& t>0
+	\end{align*}
+	
+	\begin{example}
+		Let 
+		\begin{align*}
+			F(s) = \frac{s}{s^2 + 4} = \frac{s}{(s+2i)(s-2i)}
+		\end{align*}
+		Then
+		\begin{align*}
+			f(t) 
+			= \sum_{n=1}^{N} \Res[e^{st} F(s), s_n]
+			= \Res[\frac{e^{st} s}{(s+2i)(s-2i)}, 2i] + \Res[\frac{e^{st} s}{(s+2i)(s-2i)}, -2i]
+		\end{align*}
+		The singularities are simple poles, so by \cref{Residue at Poles Theorem - Complex}:
+		\begin{align*}
+			f(t) 
+			&= \Res[\frac{\phi_1 (s)}{s-2i}, 2i] + \Res[\frac{\phi_2 (s)}{s+2i}, -2i] &
+			\phi_1 (s) &= \frac{e^{st} s}{s + 2i} &
+			\phi_1 (s) &= \frac{e^{st} s}{s - 2i} \\
+			&= \phi_1(2i) + \phi(-2i) = \frac{e^{2it} (2i)}{4i} + \frac{e^{-2it} (-2i)}{-4i} \\
+			&= \frac{e^{i2t} + e^{-i2t}}{2} = \cos(2t)
+		\end{align*}
+	\end{example}
+	
+	\begin{example}
+		Find the inverse Laplace transform of
+		\begin{align*}
+			F(s) = \frac{1}{s^2} - \frac{1}{s \sinh(s)}
+		\end{align*}
+		\begin{proof}
+			{\color{Grey}
+				The isolated singularities of \(F(s)\):
+				\begin{align*}
+					s_0 &= 0 & s_n &= n\pi i & \overline{s_n} &= -n\pi i & n \in \mathbb{N}
+				\end{align*}
+				Obtaining the series expansion:
+				\begin{align*}
+					\sinh(z) = \frac{e^z - e^{-z}}{2} = \frac{1}{2}\left[\sum_{n=0}^{N} \frac{z^n}{n!} - \frac{(-z^n)}{n!}\right] = \frac{1}{2}\left[\sum_{n=0}^{N} \frac{z^n}{n!}[1-(-1)^n])\right] = \sum_{n=0}^{N} \frac{z^{2n+1}}{(2n+1)!}
+				\end{align*}
+				Then 
+				\begin{align*}
+					\frac{1}{z\sinh(z)} 
+					&= \frac{1}{z} \left[ \sum_{n=0}^{N} \frac{z^{2n+1}}{(2n+1)!} \right]^{-1}
+					= \frac{1}{z} \left(\frac{1}{z} - \frac{z}{3!} - \frac{z^4}{5! - 3!3!} - \cdots \right)
+					= \frac{1}{z^2} - \frac{1}{3!} - \cdots 
+				\end{align*}
+				Hence
+				\begin{align*}
+					F(s) = \frac{1}{s^2} - \frac{1}{s \sinh(s)} = \frac{1}{3!} - \frac{z^3}{5! - 3!3!} - \cdots
+				\end{align*}
+				Thus, we can see that \(F(s)\) has a removable singularity at \(s_0 = 0\) with \(\Res[F(s), 0] = 0\).
+				
+				Now, let \(p(s) = e^{st}\) and \(q(s) = [F(s)]^{-1}\), then
+				\begin{align*}
+					q'(s) 
+					&= \dv{s} [F(s)]^{-1} = \dv{s} \frac{s^2 \sinh(s)}{\sinh(s) - s} \\
+					&= \frac{2s\sinh(s) + s^2 \cosh(s)}{\sinh(s) - s}
+					- \frac{[s^2 \sinh(s)][\cosh(s) - 1]}{[\sinh(s) - s]^{2}} \\
+					%				&= [2s\sinh[2](s) - 2s^2 \sinh(s) + s^2 \cosh(s) \sinh(s) - s^3 \cosh(s)][\sinh(s) - s]^{-2} - [s^2 \sinh(s)$\cosh(s) - s^2 \sinh(s)][\sinh(s) - s]^{-2}\\
+					&= \frac{2s\sinh[2](s) - s^2 \sinh(s) - s^3 \cosh(s)}{[\sinh(s) - s]^{2}}
+				\end{align*}
+				Therefore
+				\begin{align*}
+					\frac{1}{q'(n\pi i)}
+					&= \frac{[\sinh(s) - s]^{2}}{2s\sinh[2](s) - s^2 \sinh(s) - s^3 \cosh(s)} \\
+					&= \frac{[\sinh(n\pi i) - n\pi i]^{2}}{2(n\pi i)\sinh[2](n\pi i) - (n\pi i)^2 \sinh(n\pi i) - (n\pi i)^3 \cosh(n\pi i)} \\
+					&= \frac{(n\pi i)^2}{-(n\pi i)^3 \cosh(n\pi i)} 
+					= \frac{-1}{(n\pi i)(-1)^n} = \frac{(-1)^{n} i}{n\pi} \\
+					\frac{1}{q'(- n\pi i)} 
+					&= - \frac{(-1)^{n} i}{n\pi}
+				\end{align*}
+				Since
+				\begin{align*}
+					\sinh(n\pi i) &= \sin(n\pi) = 0 	&
+					\cosh(n\pi i) &= \cos(n\pi) = (-1)^n
+				\end{align*}
+				Also
+				\begin{align*}
+					p(n\pi i)  &= e^{n\pi i} \neq 0 &
+					q(n\pi i) 
+					&= \frac{(n\pi i)^2 \sinh(n\pi i)}{\sinh(n\pi i) - n\pi i} = 0 \\
+					p(-n\pi i) &= e^{-n\pi i} \neq 0 &
+					q(-n\pi i) 
+					&= \frac{(-n\pi i)^2 \sinh(-n\pi i)}{\sinh(-n\pi i) + n\pi i} = 0 
+				\end{align*}
+				Thus, we can see that \(e^{st} F(s)\) has a simple pole at \(s_n = n\pi i\) and \(\overline{s_n} = -n\pi i\) (\(n\in \mathbb{N}\)), so by \cref{Residue of Simple Pole Theorem - Complex}: 
+				\begin{align*}
+					\Res[e^{st}F(s), n\pi i] 
+					&= \Res[\frac{p(s)}{q(s)}, n\pi i] 
+					= \frac{p(n\pi i)}{q'(n\pi i)} 
+					= e^{n\pi i t} \frac{(-1)^{n} i}{n\pi}  \\
+					\Res[e^{st}F(s), n\pi i] 
+					&= \Res[\frac{p(s)}{q(s)}, -n\pi i] 
+					= \frac{p(-n\pi i)}{q'(-n\pi i)} 
+					= - e^{-n\pi i t} \frac{(-1)^{n} i}{n\pi}
+				\end{align*}
+				The inverse Laplace transform of \(F(s)\) is then
+				\begin{align*}
+					f(t) 
+					&= \sum_{n=1}^{\infty} \Res[e^{st} F(s), s_n]
+					& t>0 \\
+					&= \sum_{n=1}^{\infty} \left(\Res[e^{st}F(s), n\pi i] + \Res[e^{st}F(s), -n\pi i] \right) \\
+					&= \sum_{n=1}^{\infty} \left(e^{n\pi i t} \frac{(-1)^{n} i}{n\pi} - e^{-n\pi i t} \frac{(-1)^{n} i}{n\pi}\right) 
+					= \sum_{n=1}^{\infty} \frac{(-1)^{n} i}{n\pi} (2i) \sin(n\pi t) \\
+					&= \frac{2}{\pi} \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} \sin(n\pi t)
+				\end{align*}
+			}
+		\end{proof}
+	\end{example}
 
 	\chapter{Mapping by Elementary Functions} \label{Mapping by Elementary Functions Chapter - Complex}
 	
@@ -12161,6 +12167,7 @@
 	\chapter{Conformal Mapping} \label{Conformal Mapping Chapter - Complex}
 	
 	\index{Conformal Mapping}
+	{\color{Red}\textbf{Note to Self:} Need to incorporate material from Wunsch - Complex Variables with Applications (3 ed) chapter 8 \cite{Wunsh.A-Complex-Variables-2005}}
 	
 	A map that locally conforms to the original shape of a region.
 
@@ -14398,6 +14405,8 @@
 	
 	\chapter{Schwarz-Christoffel Transformtion} \label{Schwarz-Christoffel Transformation Chapter - Complex}
 	
+	{\color{Red}\textbf{Note to Self:} Need to incorporate material from Wunsch - Complex Variables with Applications (3 ed) chapter 8.7 and 8.8 \cite{Wunsh.A-Complex-Variables-2005}}
+	
 	Schwarz-Christoffel transformation is a mapping of the \(x\) axis and the upper half of the \(z\) plane onto a polygon and its interior in the \(w\) plane
 	
 	\section{Mapping the Real Axis onto a Polygon} \label{Mapping the Real Axis onto a Polygon Section - Complex}
@@ -15416,7 +15425,8 @@
 		\end{tikzpicture}
 	\end{figure}
 	
-	
+	\chapter{Infinite Series and Products} \label{Infinite Series and Products Chapter - Complex}
+	{\color{Red}\textbf{Note to Self:} Need to study Wunsch - Complex Variables with Applications (3 ed) chapter 9 \cite{Wunsh.A-Complex-Variables-2005}}
 	
 	
 	
